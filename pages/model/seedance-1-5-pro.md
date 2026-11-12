@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-12 · proprietary
 
-**score 57.5** ±1.5 · #32 of 93 · from 7 benchmark results across 5 sources
+**score 57.0** ±1.5 · #33 of 94 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,32 +14,32 @@ ByteDance Seed · released 2025-12 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅█●▂▂▂▄   #16 of 68*     45%      2
-image to video  ▁▂·▂▅●▅▄▅▆▃▄    #37 of 50     47%      4
+text to video   ▆▄▃▆▆█▇●▄·▄▅   #18 of 70*     48%      2
+image to video  ▁▂·▂▅●▅▄▅▅▃▅    #37 of 51     44%      4
 </pre>
 
-<details><summary>text to video · #16 of 68 · 45% of its score</summary>
+<details><summary>text to video · #18 of 70 · 48% of its score</summary>
 
 Beats [Wan 2.5 Preview](wan-2-5-preview.md), [Kling 2.6 Pro](kling-2-6-pro.md), [PixVerse V5.6](pixverse-v5-6.md) here, though they rank higher overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1256.0  ▂▂▃▆█●·▆▅▁▂▇ beats 23/41  avg 1147           39%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   90.0%  █▄▄··▄▄▄▄●·▄ beats 8/9    easy · avg 85%    6.0%  typical
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1256.1  ▂▂▃▆█●·▇▂▁█▃ beats 23/44  avg 1154                43%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   90.0%  █▄▄··▄▄▄▄●·▄ beats 8/9    very easy · avg 85%    5.9%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #37 of 50 · 47% of its score</summary>
+<details><summary>image to video · #37 of 51 · 44% of its score</summary>
 
-Trails [Cosmos3-Nano](cosmos3-nano.md), [Kling 2.1 Master](kling-2-1-master.md), [Hailuo 02](hailuo-02.md) here, though they rank lower overall.
+Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 02](hailuo-02.md), [Hailuo 2.3](hailuo-2-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1307.2  ▁▁▁▁▄▇▃●▃▂▄█ beats 20/40  avg 1189           26%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   697.0  ●··▂▂▆█▆▂▂▆▄ beats 0/19   avg 741            15%  sharp
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   87.6%  ▄·█··▄··●▄▄█ beats 4/8    easy · avg 84%    4.9%  typical
-<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   32.4%  █·●····▄···█ beats 2/5    hard · avg 27%    2.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1306.6  ▁▁▁▁▄▇▃●▂▃▅█ beats 20/42  avg 1197           25%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   697.0  ●··▂▂▆█▆▂▂▆▄ beats 0/19   avg 764            12%  sharp
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   87.6%  ▄·█··▄··●▄▄█ beats 4/8    easy · avg 84%    4.8%  typical
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   32.4%  █·●····▄···█ beats 2/5    hard · avg 28%    2.0%  blunt · at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   29.3%  ▅·▃▅·●·▃···▃ beats 7/9    hard · avg 21%    6.5%  at its level
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   29.3%  ▅·▃▅·●·▃···▃ beats 7/9    hard · avg 22%    6.5%  at its level
 </pre>
 
 </details>
@@ -59,13 +59,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   15% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   68% ▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   12% ▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   11% ▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    7% ▇
 <a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

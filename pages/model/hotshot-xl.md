@@ -6,7 +6,7 @@
 
 Hotshot · released 2023-10 · 2.8B params · openrail++
 
-**score 27.0** ±1.9 · #86 of 93 · from 6 benchmark results across 2 sources
+**score 27.5** ±1.9 · #86 of 94 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,20 +14,18 @@ Hotshot · released 2023-10 · 2.8B params · openrail++
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆●▃▄▆▅█▃▂▂▂▄   #60 of 68     98%      6
+text to video  ▆●▃▆▆█▇▂▄·▄▅   #62 of 70     99%      6
 </pre>
 
-<details><summary>text to video · #60 of 68 · 98% of its score</summary>
-
-Beats [ZeroScope v2 576w](zeroscope-v2-576w.md) here, though they rank higher overall.
+<details><summary>text to video · #62 of 70 · 99% of its score</summary>
 
 <pre>
 test                                     result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>        42.7%  ▄▄·●··█▄▄▄▄▄ beats 3/10   easy · avg 73%               20%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     52.98 / 100  ▄····▄●█··▄▄ beats 2/7    very easy · avg 85.14 /…     18%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     60.38 / 100  ▄█·····▄·●▄▄ beats 4/7    very easy · avg 87.87 /…     17%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  59.96 / 100  ▄···▄▄▄●▄··█ beats 4/7    very easy · avg 88.67 /…     17%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  61.52 / 100  ▂··▂▂·····▂● beats 5/7    very easy · avg 87.86 /…     15%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>        42.7%  ▄▄·●··█▄▄▄▄▄ beats 3/10   easy · avg 74%               21%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     52.98 / 100  ▄····▄●█··▄▄ beats 2/7    easy · avg 84.73 / 100       17%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     60.38 / 100  ▄█·····▄·●▄▄ beats 4/7    very easy · avg 87.51 /…     17%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  59.96 / 100  ▄···▄▄▄●▄··█ beats 4/7    very easy · avg 88.32 /…     16%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  61.52 / 100  ▂··▂▂·····▂● beats 5/7    very easy · avg 87.52 /…     15%  at its level
 <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>        47.8%  ▄▄·●▄█▄··▄▄▄ beats 3/10   easy · avg 70%               12%  at its level
 </pre>
 
@@ -39,10 +37,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   67% ▇▇▇▇▇▇▇▇
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   31% ▇▇▇▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 27.0
+<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   66% ▇▇▇▇▇▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   33% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 27.5
 </pre>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>

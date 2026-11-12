@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 46.9** ±9.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.8** ±9.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">CAIL charge prediction, zero-shot…</a>   49.8%  █···█··●···█ beats 2/3    medium · avg 54%     58%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">CAIL charge prediction, zero-shot…</a>   49.8%  █···█··●···█ beats 2/3    medium · avg 54%     59%  blunt · at its level
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2023-findings-emnlp-490"></a><a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">A Comprehensive Evaluation of Large Lan…</a>        1   58% ▇▇▇▇▇▇▇
-prior: pull toward the middle                       42% ▇▇▇▇▇
-weighted average                                   = 46.9
+<a name="acl-2023-findings-emnlp-490"></a><a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">A Comprehensive Evaluation of Large Lan…</a>        1   59% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       41% ▇▇▇▇▇
+weighted average                                   = 46.8
 </pre>
 
 <sub>Licences: A Comprehensive Evaluation of Large Language Models on Legal Judgment Prediction ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-490-CC-BY-4-0.txt))</sub>

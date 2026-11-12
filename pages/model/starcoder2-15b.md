@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 40.5** ±0.5 · #556 of 732 · from 17 benchmark results across 5 sources
+**score 40.4** ±0.5 · #564 of 740 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,36 +16,36 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #399 of 469     87%      9
-math    ▁▁▃▅█●▄█▄▂▁▁   #242 of 431*    2.8%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #402 of 472     87%      9
+math    ▁▁▃▅█●▄█▅▂▁▁   #249 of 440*    2.8%      1
 </pre>
 
-<details><summary>coding · #399 of 469 · 87% of its score</summary>
+<details><summary>coding · #402 of 472 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            46.3%  ▁·▁▁▃▄●▅█▃▁▁ beats 30/99  easy · avg 76%       45%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           37.8%  ▁·▁▁▁▃●▄▄█▃▁ beats 27/99  easy · avg 70%       18%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            46.3%  ▁·▁▁▃▄●▅█▃▁▁ beats 30/99  easy · avg 77%       45%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           37.8%  ▁·▁▁▁▃●▄▄█▃▁ beats 27/99  easy · avg 71%       18%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 51.2%  █·▅▃▃▃▅▃▃▅·● beats 14/15  easy · avg 81%      6.0%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.4%  ▁·▂▁▂▆▅█●▄▁▂ beats 26/35  medium · avg 62%    4.8%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      33.8%  ▄▄·▄██▄█·●·▄ beats 10/12  medium · avg 49%    2.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 12/35  medium · avg 46%    2.9%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 56%    2.8%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 51%    2.7%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 57%    2.8%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 52%    2.7%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           46.7%  ▃·▃██▅▃·▃▃▅● beats 15/15  medium · avg 54%    2.2%  blunt · at its level · several runs
 </pre>
 
 </details>
 
-<details><summary>math · #242 of 431 · 2.8% of its score</summary>
+<details><summary>math · #249 of 440 · 2.8% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>   65.1%  ▄▄▄·▄█·██·█● beats 12/12  easy · avg 75%    2.8%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>   65.1%  ▄▄▄·▄█·██·█● beats 12/12  easy · avg 76%    2.8%  sharp · at its level
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ test           result  vs the others in its run  difficulty      counts  why
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                 29.0%  ▂▂▃▄●█▁▄▅▃▁▃ beats 13/42  medium · avg 52%    7.2%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 22/58  medium · avg 48%    3.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 22/58  medium · avg 49%    3.0%  at its level
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   17% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.5
+weighted average                                   = 40.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

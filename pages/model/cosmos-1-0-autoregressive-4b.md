@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 4B params · nvidia-open-model
 
-**score 34.1** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 34.0** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ NVIDIA · released 2025-01 · 4B params · nvidia-open-model
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅●▆█▆▇▂▃▃▂▄   #75 of 94*     91%      2
+text to video  ▆▅●█▆▇▆▂▅▁▄▃   #78 of 97*     91%      2
 </pre>
 
-<details><summary>text to video · #75 of 94 · 91% of its score</summary>
+<details><summary>text to video · #78 of 97 · 91% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2501.03575v3-cosmos"></a><a href="https://arxiv.org/html/2501.03575v3">Cosmos World Foundation Model Platform …</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 34.1
+weighted average                                   = 34.0
 </pre>
 
 <sub>Licences: Cosmos World Foundation Model Platform for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

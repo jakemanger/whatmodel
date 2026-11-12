@@ -6,7 +6,7 @@
 
 Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
-**score 52.7** ±2.1 · #44 of 93 · from 8 benchmark results across 8 sources
+**score 52.1** ±2.1 · #44 of 94 · from 8 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
 <pre>
 task            vs the others       rank  counts  tests
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #39 of 50     77%      5
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #40 of 51     76%      5
 </pre>
 
-<details><summary>image to video · #39 of 50 · 77% of its score</summary>
+<details><summary>image to video · #40 of 51 · 76% of its score</summary>
 
 Trails [Cosmos3-Nano](cosmos3-nano.md), [Kling 2.1 Master](kling-2-1-master.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   911.0  ▃▃··●··▃▃▃·▃ beats 3/8    avg 875            52%  sharp
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   911.0  ▃▃··●··▃▃▃·▃ beats 3/8    avg 889            51%  sharp
 <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   85.6%  ▄·█··●··▄▄▄█ beats 3/8    easy · avg 84%     11%  typical
-<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     19.1%  ●▄···▄▄█·█·▄ beats 0/8    hard · avg 20%    7.2%  typical
-<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   27.0%  ●·▄····▄···█ beats 0/5    hard · avg 27%    3.9%  blunt · at its level
-<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   33.4%  ██···█··█·●█ beats 4/5    hard · avg 25%    3.0%  blunt · at its level
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     19.1%  ●▄···▄▄█·█·▄ beats 0/8    hard · avg 20%    7.3%  typical
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   27.0%  ●·▄····▄···█ beats 0/5    hard · avg 28%    3.8%  blunt · at its level
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   33.4%  ██···█··█·●█ beats 4/5    hard · avg 25%    3.1%  blunt · at its level
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   23.0%  ▅·▃●·█·▃···▃ beats 4/9    hard · avg 21%       11%  typical
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   81.1%  █··▄▄●▄····▄ beats 4/6    easy · avg 77%      6.3%  blunt
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.6%  ▂···▂······● beats 2/5    medium · avg 65%    4.1%  blunt · at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   23.0%  ▅·▃●·█·▃···▃ beats 4/9    hard · avg 22%     11%  typical
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   81.1%  █··▄▄●▄····▄ beats 4/6    easy · avg 77%    6.4%  blunt
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.6%  ▂···▂······● beats 2/5    easy · avg 65%    4.2%  blunt · at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   52% ▇▇▇▇▇▇
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   51% ▇▇▇▇▇▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   11% ▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1   11% ▇
 <a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    7% ▇
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    4% ▇
 <a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 52.7
+weighted average                                   = 52.1
 </pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>

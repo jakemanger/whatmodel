@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-01 · closed weights
 
-**score 55.2** ±6.9 · #37 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±6.9 · #37 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Alibaba · released 2026-01 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂▅█●▄▅▆▃▄   #30 of 50*     80%      1
+image to video  ▁▂·▂▅█●▄▅▅▃▅   #31 of 51*     80%      1
 </pre>
 
-<details><summary>image to video · #30 of 50 · 80% of its score</summary>
+<details><summary>image to video · #31 of 51 · 80% of its score</summary>
 
 Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   56.0%  ●··▄······▄█ beats 1/5    medium · avg 50%     80%  at its level
+<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   56.0%  ●··▄······▄█ beats 1/5    medium · avg 51%     80%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       20% ▇▇
-weighted average                                   = 55.2
+weighted average                                   = 54.6
 </pre>
 
 <sub>Licences: From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt))</sub>

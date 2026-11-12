@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.783B params · apache-2.0
 
-**score 31.6** ±1.1 · #653 of 732 · from 18 benchmark results across 11 sources
+**score 31.5** ±1.1 · #661 of 740 · from 18 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▂▁▁   #423 of 431*     19%      2
+math  ▁●▃▅█▆▄█▅▂▁▁   #432 of 440*     19%      2
 </pre>
 
-<details><summary>math · #423 of 431 · 19% of its score</summary>
+<details><summary>math · #432 of 440 · 19% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2301.12726v1">GSM8K</a>           6.9%  ▂▂▂●▃▄▅▇██▆▄ beats 28/206  medium · avg 49%     13%  sharp · too hard for it
+<a href="https://arxiv.org/html/2301.12726v1">GSM8K</a>           6.9%  ▂▂▂●▃▄▅▇██▆▄ beats 28/206  medium · avg 50%     13%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    0.7%  ●·▂·▄▂▂▂▂█▄▆ beats 2/18    medium · avg 48%    5.4%  sharp · too hard for it
 </pre>
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               37.5%  ▂▂▂▂·●·▃▂█▃▃ beats 6/18   medium · avg 60%       6.1%  sharp
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   12.3%  ▂··▂·●▄▄·███ beats 2/18   medium · avg 61%       4.7%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   56.0%  █···█·····●█ beats 2/3    medium · avg 68%       4.0%  typical
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   62.4%  ▃····▃·▃●█▅▅ beats 3/10   easy · avg 81%         3.5%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   62.4%  ▃····▃·▃●█▅▅ beats 3/10   easy · avg 82%         3.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    33.6%  ▂▂··▂·●··▂█▄ beats 3/10   medium · avg 56%       3.0%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   32.6%  █···▄●·▄▄▄·▄ beats 3/7    medium · avg 51%       2.7%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   81.7%  ▁●▂▃▄▄█▆▃▂▂▁ beats 6/140  very easy · avg 94%    1.8%  blunt · noisy
@@ -71,7 +71,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-700"></a><a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">InstructSafety: A Unified Framework for…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 31.6
+weighted average                                   = 31.5
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Model-Generated Pretraining Signals Improves Zero-Shot Generalization of Text-to-Text Transformers ([CC BY 4.0](../../licenses/acl-2023-acl-long-724-CC-BY-4-0.txt)) · Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In ([CC BY 4.0](../../licenses/acl-2023-acl-long-136-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

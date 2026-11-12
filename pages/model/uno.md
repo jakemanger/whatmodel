@@ -6,7 +6,7 @@
 
 ByteDance · released 2025-04 · cc-by-nc-4.0
 
-**score 43.2** ±4.0 · #97 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.0** ±3.9 · #98 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅●▄▄█▃▂▂▁▁   #79 of 126*     79%      1
-image to image / edit…  ▁▁·●▂▃█▅▄▅▂▁    #58 of 62*     14%      1
+text to image           ▂▅▅●▄▄█▂▂▁▁▁   #81 of 128*     79%      1
+image to image / edit…  ▁▁·●▂▃█▆▃▅▂▂    #60 of 64*     14%      1
 </pre>
 
-<details><summary>text to image · #79 of 126 · 79% of its score</summary>
+<details><summary>text to image · #81 of 128 · 79% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
 
@@ -31,13 +31,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>image to image / editing · #58 of 62 · 14% of its score</summary>
+<details><summary>image to image / editing · #60 of 64 · 14% of its score</summary>
 
 Trails [OmniGen2](omnigen2.md), [Stable Diffusion 3.5 Large](sd-3-5-large.md), [BAGEL](bagel.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   47.1%  ▃▃●··▃·····█ beats 2/6    medium · avg 65%     14%  at its level · noisy
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   47.1%  ▃▃●··▃·····█ beats 2/6    easy · avg 65%     14%  at its level · noisy
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   79% ▇▇▇▇▇▇▇▇▇▇
 <a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI</a>                                            1   14% ▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 43.2
+weighted average                                   = 43.0
 </pre>
 
 <sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>

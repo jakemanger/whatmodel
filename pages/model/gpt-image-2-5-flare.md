@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · proprietary
 
-**score 88.2** ±2.0 · #2 of 144 · from 4 benchmark results across 3 sources
+**score 86.9** ±1.9 · #2 of 146 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,25 +16,27 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄█▃▂▂▁●   #2 of 126*     66%      2
-image to image / edit…  ▁▁·▃▂▃█▅▄▅▂●    #2 of 62*     23%      1
+text to image           ▂▅▅▃▄▄█▂▂▁▁●   #3 of 128*     67%      2
+image to image / edit…  ▁▁·▃▂▃█▆▃▅▂●    #2 of 64*     22%      1
 </pre>
 
-<details><summary>text to image · #2 of 126 · 66% of its score</summary>
+<details><summary>text to image · #3 of 128 · 67% of its score</summary>
+
+Trails [GPT-Image-2.6 Sunburst](gpt-image-2-6-sunburst.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1401.3  ▁▂▃▃▆█▃▂▂▂▁● beats 74/75  avg 1027           61%  typical
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   94.6%  ▆▆·▂▂····▂▂● beats 12/13  hard · avg 20%    4.9%  sharp · maxed out · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1400.2  ▁▁▃▃▆█▃▂▂▂▁● beats 75/77  avg 1030           62%  typical
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   94.6%  ▆▆·▂▂····▂▂● beats 12/13  hard · avg 21%    4.6%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #2 of 62 · 23% of its score</summary>
+<details><summary>image to image / editing · #2 of 64 · 22% of its score</summary>
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1481.8  ▂▁▁▃▆█▄█▇▄▂● beats 52/53  avg 1153       23%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1484.5  ▂▁▁▃▆█▆▆▇▄▃● beats 54/55  avg 1158       22%  typical
 </pre>
 
 </details>
@@ -43,7 +45,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1207.1  ▁▁▁▄▂█▂▁▁▂▁● beats 33/34  avg 875        10%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1207.1  ▁▁▁▄▂█▂▁▁▂▁● beats 33/34  avg 878       9.1%  typical
 </pre>
 
 </details>
@@ -54,11 +56,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   10% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    9% ▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1    5% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 88.2
+weighted average                                   = 86.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE))</sub>

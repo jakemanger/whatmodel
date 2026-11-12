@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▃▁▁▁   #513 of 530*    5.6%      1
+math  ▁●▃▆██▅▇▄▁▁▁   #523 of 540*    5.6%      1
 </pre>
 
-<details><summary>math · #513 of 530 · 5.6% of its score</summary>
+<details><summary>math · #523 of 540 · 5.6% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -37,9 +37,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union)</a>               3.5%  ▅▃●···▅·▃▃▃▅ beats 4/12    very easy · avg 94%     32%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                 3.6%  ▅▃●▅··▃▃·▃▃█ beats 3/12    easy · avg 83%          17%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                 3.1%  ▃▅●···▅·▃▃▃▅ beats 4/12    easy · avg 82%          14%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding</a>          8.9%  ▃·▅·●▃▅·▃▃·█ beats 4/12    medium · avg 52%       6.3%  too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding</a>          8.9%  ▃·▅·●▃▅·▃▃·█ beats 4/12    medium · avg 53%       6.3%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   67.9%  ●·▃·····▃▃▃█ beats 0/7     easy · avg 87%         3.9%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   20.4%  ●·····▃··▅·▃ beats 0/6     medium · avg 71%       3.7%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   20.4%  ●·····▃··▅·▃ beats 0/6     medium · avg 72%       3.7%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        19.0%  ●······▁·▁▁▃ beats 3/12    easy · avg 88%         3.5%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.81.pdf">OpenBookQA</a>                           30.6%  ▅▁▁▁●▂▃█▃▁▃▁ beats 30/107  medium · avg 70%       3.0%  too hard for it · small run
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>        0.0%  ●·····▃·▁·▄▁ beats 3/12    medium · avg 81%       2.5%  sharp · too hard for it
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         41.7%  ▂▆·▄●█▂·▂··▂ beats 7/14    medium · avg 65%       1.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   53.5%  ▂▂●··▂▂█▄··▂ beats 3/12    easy · avg 90%         1.2%  noisy
 <a href="https://aclanthology.org/2023.findings-eacl.31.pdf">CREPE event likelihood change (3-…</a>   35.6%  █●····█····█ beats 1/3     medium · avg 52%       0.9%  blunt
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             13.4%  ●▁·▁▁·····▂▁ beats 4/12    medium · avg 48%       0.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             13.4%  ●▁·▁▁·····▂▁ beats 4/12    medium · avg 49%       0.5%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   21.0%  ●·····▂····▁ beats 2/11    very hard · avg 55%    0.0%  sharp · too hard for it · noisy
 </pre>
 

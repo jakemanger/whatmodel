@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 10.5** ±2.4 · #718 of 732 · from 3 benchmark results across 1 source
+**score 10.5** ±2.4 · #726 of 740 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▅▇█▇▅▄▃▁   #469 of 469     97%      3
+coding  ●▁▁▃▆▇█▆▆▃▃▁   #472 of 472     97%      3
 </pre>
 
-<details><summary>coding · #469 of 469 · 97% of its score</summary>
+<details><summary>coding · #472 of 472 · 97% of its score</summary>
 
 Trails [StableLM-Base-Alpha 7B](stablelm-base-alpha-7b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     2.4%  ●·▁▁▃▄▆▅█▃▁▁ beats 0/99   easy · avg 76%     39%  sharp · too hard for it
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     2.4%  ●·▁▁▃▄▆▅█▃▁▁ beats 0/99   easy · avg 77%     39%  sharp · too hard for it
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>         7.5%  ●···▁▁▂▅▇█▆▂ beats 0/75   easy · avg 66%     30%  typical
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>    1.8%  ●·▁▁▁▃▄▄▄█▃▁ beats 0/99   easy · avg 70%     29%  sharp · too hard for it
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>    1.8%  ●·▁▁▁▃▄▄▄█▃▁ beats 0/99   easy · avg 71%     29%  sharp · too hard for it
 </pre>
 
 </details>

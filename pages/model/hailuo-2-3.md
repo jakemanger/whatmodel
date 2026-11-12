@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · proprietary
 
-**score 54.7** ±1.8 · #40 of 93 · from 3 benchmark results across 2 sources
+**score 53.9** ±1.7 · #41 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,28 +14,28 @@ MiniMax · released 2025-10 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #24 of 68*     54%      1
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #31 of 50*     36%      1
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #26 of 70*     57%      1
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #32 of 51*     34%      1
 </pre>
 
-<details><summary>text to video · #24 of 68 · 54% of its score</summary>
+<details><summary>text to video · #26 of 70 · 57% of its score</summary>
 
 Beats [Seedance 1.0 Pro](seedance-1-0-pro.md), [Kling O1 Pro](kling-o1-pro.md) here, though they rank higher overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1206.0  ▂▂▃▆●▆·▆▅▁▂▇ beats 15/41  avg 1147       54%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1205.4  ▂▂▃▆●▃·▇▂▁█▃ beats 15/44  avg 1154       57%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #31 of 50 · 36% of its score</summary>
+<details><summary>image to video · #32 of 51 · 34% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md), [P-Video](p-video.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md), [Vidu Q2 Turbo](vidu-q2-turbo.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1262.0  ▁▁▁▁▄▇●▆▃▂▄█ beats 15/40  avg 1189       36%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1262.6  ▁▁▁▁▄▇●▇▂▃▅█ beats 15/42  avg 1197       34%  typical
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ test                  result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   13.0%  ●·▃▅·█·▃···▃ beats 1/9    hard · avg 21%    8.5%  at its level
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   13.0%  ●·▃▅·█·▃···▃ beats 1/9    hard · avg 22%    8.1%  at its level
 </pre>
 
 </details>
@@ -55,10 +55,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   91% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    8% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.7
+weighted average                                   = 53.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 StepFun · released 2025-09 · apache-2.0
 
-**score 49.9** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 49.4** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁▁▃▃●█▅▃▄▂▁   #60 of 81*     91%      2
+image to image / edit…  ▁▁▁▃▃●█▅▃▄▂▁   #62 of 83*     91%      2
 </pre>
 
-<details><summary>image to image / editing · #60 of 81 · 91% of its score</summary>
+<details><summary>image to image / editing · #62 of 83 · 91% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           52.5%  █●·········█ beats 1/2    medium · avg 54%     46%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           52.5%  █●·········█ beats 1/2    medium · avg 55%     46%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   74.2%  █·······●··█ beats 1/2    easy · avg 73%       45%  at its level · small run
 </pre>
 
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 49.9
+weighted average                                   = 49.4
 </pre>
 
 <sub>Licences: stepfun-ai/Step1X-Edit-v1p2 model card ([Apache-2.0](../../licenses/stepfun-ai--Step1X-Edit-v1p2.txt))</sub>

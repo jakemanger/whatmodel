@@ -6,7 +6,7 @@
 
 Peking University / Kuaishou · released 2024-10 · 2B params · stabilityai-ai-community
 
-**score 42.0** ±3.2 · #67 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±3.2 · #68 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Peking University / Kuaishou · released 2024-10 · 2B params · stabilityai-ai-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #43 of 68*     96%      1
+text to video  ▆▄▃▆●█▇▂▄·▄▅   #45 of 70*     96%      1
 </pre>
 
-<details><summary>text to video · #43 of 68 · 96% of its score</summary>
+<details><summary>text to video · #45 of 70 · 96% of its score</summary>
 
 Beats [Open-Sora 2.0](open-sora-2-0.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1113.9  ▃▃···▅▃·▃▅·● beats 8/10   avg 1229       96%  sharp
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1113.9  ▃▃···▅▃·▃▅·● beats 8/10   avg 1231       96%  sharp
 </pre>
 
 </details>

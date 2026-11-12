@@ -6,7 +6,7 @@
 
 Tencent · released 2026-01 · 80B params · tencent-hunyuan-community
 
-**score 62.1** ±3.1 · #32 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.5** ±3.0 · #34 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁   #22 of 62*     54%      1
+image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂   #25 of 64*     55%      1
 </pre>
 
-<details><summary>image to image / editing · #22 of 62 · 54% of its score</summary>
+<details><summary>image to image / editing · #25 of 64 · 55% of its score</summary>
 
-Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall.
+Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1301.8  ▂▁▁▃▆█▄●▇▄▂▂ beats 29/53  avg 1153       54%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1301.4  ▂▁▁▃▆█●▆▇▄▃▃ beats 29/55  avg 1158       55%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    3.2%  ▄··●█····▄▄▄ beats 1/6    very hard · avg 1.4%     42%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    3.2%  ▄··●█····▄▄▄ beats 1/6    very hard · avg 1.5%     41%  sharp · too hard for it
 </pre>
 
 </details>
@@ -45,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   54% ▇▇▇▇▇▇
-<a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   42% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   55% ▇▇▇▇▇▇▇
+<a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   41% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 62.1
+weighted average                                   = 61.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

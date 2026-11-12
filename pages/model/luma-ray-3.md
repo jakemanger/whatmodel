@@ -6,7 +6,7 @@
 
 Luma AI · released 2025-09 · proprietary
 
-**score 54.5** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 53.8** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,29 +14,29 @@ Luma AI · released 2025-09 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▇▅▄▆█▆●▂▃▃▂▄   #28 of 94*     60%      2
-image to video  ▁▁▂▂█●▄▃▃▄▂▂   #45 of 74*     38%      1
+text to video   ▆▅▃█▆▇●▂▅▁▄▃   #31 of 97*     63%      2
+image to video  ▁▁▂▂█●▅▃▃▃▃▃   #48 of 76*     36%      1
 </pre>
 
-<details><summary>text to video · #28 of 94 · 60% of its score</summary>
+<details><summary>text to video · #31 of 97 · 63% of its score</summary>
 
 Beats [Seedance 1.0 Pro](seedance-1-0-pro.md), [Kling O1 Pro](kling-o1-pro.md), [P-Video](p-video.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1206.2  ▂▂▃▆●▆·▆▅▁▂▇ beats 16/41  avg 1147           58%  typical
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   87.7%  ▂··▂··█▄●··▆ beats 8/11   easy · avg 84%    1.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1206.2  ▂▂▃▆●▃·▇▂▁█▃ beats 16/44  avg 1154           61%  typical
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   87.7%  ▂··▂··█▄●··▆ beats 8/11   easy · avg 85%    1.7%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to video · #45 of 74 · 38% of its score</summary>
+<details><summary>image to video · #48 of 76 · 36% of its score</summary>
 
 Trails [Cosmos3-Nano](cosmos3-nano.md), [Kling 2.1 Master](kling-2-1-master.md), [Hailuo 02](hailuo-02.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1225.9  ▁▁▁▁▄●▃▆▃▂▄█ beats 10/40  avg 1189       38%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1227.0  ▁▁▁▁▄●▃▇▂▃▅█ beats 10/42  avg 1197       36%  typical
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.5
+weighted average                                   = 53.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

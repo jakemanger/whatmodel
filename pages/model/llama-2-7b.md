@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 31.8** ±0.5 · #652 of 732 · from 73 benchmark results across 12 sources
+**score 31.8** ±0.5 · #659 of 740 · from 73 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #459 of 469     12%      3
-math    ▁▁▃●█▆▄█▄▂▁▁   #379 of 431    8.5%      2
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #462 of 472     12%      3
+math    ▁▁▃●█▆▄█▅▂▁▁   #384 of 440    8.5%      2
 </pre>
 
-<details><summary>coding · #459 of 469 · 12% of its score</summary>
+<details><summary>coding · #462 of 472 · 12% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [GPT-J 6B](gpt-j-6b.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
@@ -28,19 +28,19 @@ Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepse
 test                       result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                   11.6%  ●···█·███··█ beats 0/5    medium · avg 61%    6.1%  sharp · several runs
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                        26.1%  ●··▄·▄··█··▄ beats 0/5    easy · avg 69%      3.6%  at its level · several runs
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   26.8%  ●▃▃·▆▃▃█▃▂▂▅ beats 1/25   easy · avg 83%      1.8%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   26.8%  ●▃▃·▆▃▃█▃▂▂▅ beats 1/25   easy · avg 84%      1.8%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #379 of 431 · 8.5% of its score</summary>
+<details><summary>math · #384 of 440 · 8.5% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 2/25   easy · avg 82%    6.8%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     3.9%  ●·█·█·██···█ beats 0/5    hard · avg 27%    1.7%  too hard for it · several runs
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 2/25   easy · avg 82%    6.7%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     3.9%  ●·█·█·██···█ beats 0/5    hard · avg 28%    1.7%  too hard for it · several runs
 </pre>
 
 </details>
@@ -50,18 +50,18 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Challenge</a>                        46.2%  ▁·▁··▁▁▇▂█●▃ beats 21/26   easy · avg 82%          25%  sharp · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                           69.6%  ▁····▁··▁▂█● beats 22/26   easy · avg 86%         8.9%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                           69.6%  ▁····▁··▁▂█● beats 22/26   easy · avg 87%         8.8%  at its level · several runs
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.8%  ▁▁●▃▄█▄▁█··▁ beats 3/25    easy · avg 82%         6.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">HellaSwag</a>                            75.9%  ▃···▁▇▅█●▃▁▁ beats 19/26   very easy · avg 91%    6.0%  at its level · several runs
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       39.3%  ▁·····●█▂▅·▁ beats 2/25    medium · avg 65%       4.7%  sharp · several runs
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       39.3%  ▁·····●█▂▅·▁ beats 2/25    medium · avg 65%       4.8%  sharp · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">BoolQ</a>                                77.7%  ▂▃▂▅▆▂▅▆█●▂▂ beats 24/26   easy · avg 88%         4.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Easy</a>                             74.5%  ▁▁·▁▁▄▅▄█▅●▃ beats 24/26   easy · avg 85%         4.1%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2024-02-11%2021%3A35%3A55.239271.json">Natural Questions (closed book)</a>      27.1%  ▁·▁·▁▂▁▂·▅▂● beats 23/28   medium · avg 48%       3.8%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">OpenBookQA</a>                           31.4%  █·▁▁▃·▁▃▅●▃▄ beats 19/26   easy · avg 81%         3.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                                 77.7%  ▁·▁··▁▁▃█●█▂ beats 17/26   easy · avg 87%         2.8%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-22%2004%3A21%3A19.624624.json">TriviaQA</a>                              9.2%  ▁··▁●▃▃▁▄▅▄█ beats 4/28    easy · avg 83%         2.4%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                                 93.6%  ▁·▁·▁·▃▅▃●▄▁ beats 17/26   very easy · avg 97%    1.9%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                           43.5%  ▁···▁▃█●▁▁·▁ beats 21/26   medium · avg 60%       1.3%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                                 93.6%  ▁·▁·▁·▃▅▃●▄▁ beats 17/26   very easy · avg 98%    1.9%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                           43.5%  ▁···▁▃█●▁▁·▁ beats 21/26   medium · avg 61%       1.3%  blunt · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.4%  ▁····▁▁·▁·▃● beats 7/11    hard · avg 63%         1.0%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), last-wo…</a>   73.5%  ▁··▂▁▁▁▂▆█●▃ beats 21/26   very easy · avg 86%    0.6%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   48.9%  ▃▁▁▁▁▁▁●▂█▅▁ beats 65/276  medium · avg 72%       0.5%  noisy
@@ -70,8 +70,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.2%  ▂··▁▃▂▂▂●▅▁▂ beats 12/25   medium · avg 59%       0.4%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   31.3%  ▃·▁▁●▁▂▅█▇▄▁ beats 13/100  medium · avg 67%       0.3%  sharp · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-08%2020%3A10%3A43.772045.json">TruthfulQA MC2</a>                       39.0%  ▅●█▆▁▂▅···▁▁ beats 7/31    medium · avg 55%       0.2%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 82.6%  ▅·▃·▃··●▃··▃ beats 4/8     easy · avg 92%         0.1%  at its level · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-13%2008%3A15%3A43.958836.json">HaluEval QA hallucination detecti…</a>   45.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 5/27    hard · avg 66%         0.1%  too hard for it · noisy
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 82.6%  ▅·▃·▃··●▃··▃ beats 4/8     easy · avg 92%         0.1%  at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   61.4%  ●▅▃█·▃··▃·▃▃ beats 0/11    hard · avg 66%         0.0%  blunt · at its level
 </pre>
 

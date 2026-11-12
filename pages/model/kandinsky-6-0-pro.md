@@ -6,7 +6,7 @@
 
 Sber · released 2026-10 · 29B params · mit
 
-**score 48.2** ±7.3 · #55 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 47.6** ±7.1 · #56 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Sber · released 2026-10 · 29B params · mit
 
 <pre>
 task           vs the others      rank  counts  tests
-text to video  ●····█·····█   #3 of 3*     77%      1
+text to video  ●····█·····█   #3 of 3*     78%      1
 </pre>
 
-<details><summary>text to video · #3 of 3 · 77% of its score</summary>
+<details><summary>text to video · #3 of 3 · 78% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA (mak…</a>   65.2%  ▄●··▄·▄···▄█ beats 2/7    easy · avg 68%     77%  at its level · small run
+<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA (mak…</a>   65.2%  ▄●··▄·▄···▄█ beats 2/7    easy · avg 69%     78%  at its level · small run
 </pre>
 
 </details>
@@ -32,9 +32,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   77% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       23% ▇▇▇
-weighted average                                   = 48.2
+<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   78% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       22% ▇▇▇
+weighted average                                   = 47.6
 </pre>
 
 <sub>Licences: Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

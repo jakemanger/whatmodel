@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 62.0** ±1.2 · #182 of 732 · from 13 benchmark results across 2 sources
+**score 61.7** ±1.2 · #190 of 740 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ······●·····       #1 of 1*    8.9%      3
+agent tasks     ······●·····       #1 of 1*    9.0%      3
 coding          ······●·····       #1 of 1*     13%      2
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #151 of 402*     16%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #153 of 404*     16%      1
 math            ······●·····        #1 of 1     25%      3
 </pre>
 
-<details><summary>agent tasks · #1 of 1 · 8.9% of its score</summary>
+<details><summary>agent tasks · #1 of 1 · 9.0% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (maker)</a>           56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/138  hard · avg 23%    8.9%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (maker)</a>           56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/140  hard · avg 24%    9.0%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Airline (GPT-4.1 user) (m…</a>   62.0%  █··········● beats 1/1                          —  not counted yet: no other model in the …
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Retail (GPT-4.1 user) (ma…</a>   63.5%  ●··········█ beats 0/1                          —  not counted yet: no other model in the …
 </pre>
@@ -37,19 +37,19 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (maker)</a>           56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/138  hard · avg 23%      8.9%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (maker)</a>           56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/140  hard · avg 24%      9.0%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   65.0%  ▃···●··▅··▃▃ beats 3/7     medium · avg 43%    3.8%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #151 of 402 · 16% of its score</summary>
+<details><summary>chat &amp; writing · #153 of 404 · 16% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1363.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 208/385  avg 1260       16%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1363.7  ▁▁▁▂▃▂▃▆●▇█▃ beats 208/387  avg 1261       16%  blunt
 </pre>
 
 </details>
@@ -58,9 +58,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test               result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (maker)</a>   76.9%  ▁·▁▁▁▂▅▆●▇▅▁ beats 77/133  medium · avg 41%        10%  sharp · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (maker)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 61/85   medium · avg 56%       9.2%  sharp · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (maker)</a>    96.8%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 65/85   very easy · avg 89%    5.2%  maxed out · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (maker)</a>   76.9%  ▁·▁▁▁▃▅▇●▆▃▁ beats 77/134  medium · avg 42%        10%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (maker)</a>   86.0%  ▁▂·▂▁▂▂▄█●▆▁ beats 61/86   medium · avg 56%       9.2%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (maker)</a>    96.8%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 65/85   very easy · avg 90%    5.1%  maxed out · small run
 </pre>
 
 </details>
@@ -69,13 +69,13 @@ test               result  vs the others in its run   difficulty           count
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (maker)</a>           70.0%  ▁▁▁▁▂▄▅▅●██▄ beats 156/322  hard · avg 41%           13%  sharp · at its level · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (maker)</a>           61.5%  ▂·▁·▂▃▁▄▄▃●▄ beats 28/33    hard · avg 39%          6.5%  at its level · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (maker)</a>    8.4%  ▁▁▁●▆▆▇██▆▁▃ beats 13/111   very hard · avg 3.1%    6.4%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (maker)</a>             86.8%  █·▁▁▁▇·●▄▁▄▁ beats 14/24    medium · avg 59%        5.8%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (maker)</a>               81.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 131/188  medium · avg 59%        5.7%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (maker)</a>               18.5%  ▄▄▄▆█▆●██·▂█ beats 19/32    very hard · avg 7.5%    5.6%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (maker)</a>         44.7%  ▁·▁·▁▃●▅▃▂█▅ beats 9/30     hard · avg 27%          3.6%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (maker)</a>           70.0%  ▁▁▁▁▂▃▅▆●▇█▂ beats 156/336  hard · avg 42%           13%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (maker)</a>    8.4%  ▁▁▁●▆▇▅█▆▁▂▁ beats 13/115   very hard · avg 3.1%    6.7%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (maker)</a>           61.5%  ▂·▁·▂▂▂▃▃▃●▃ beats 29/35    hard · avg 40%          6.5%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (maker)</a>             86.8%  █·▁▁▁▇·●▄▁▄▁ beats 14/24    medium · avg 60%        5.8%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (maker)</a>               81.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 131/189  medium · avg 59%        5.8%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (maker)</a>               18.5%  ▄▄▄▆█▆●██·▂█ beats 19/32    very hard · avg 7.6%    5.6%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (maker)</a>         44.7%  ▁·▁·▁▅●▃▅▃█▃ beats 10/33    hard · avg 28%          3.6%  at its level · small run
 </pre>
 
 </details>
@@ -86,10 +86,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-minimaxai--minimax-m1-80k"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MiniMaxAI/MiniMax-M1-80k model card (su…</a>       12   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
+<a name="card-minimaxai--minimax-m1-80k"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MiniMaxAI/MiniMax-M1-80k model card (su…</a>       12   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.0
+weighted average                                   = 61.7
 </pre>
 
 <sub>Licences: MiniMaxAI/MiniMax-M1-80k model card ([apache-2.0](../../licenses/MiniMaxAI--MiniMax-M1-80k.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

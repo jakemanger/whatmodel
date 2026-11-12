@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▆██▅█▃▁▁▁   #503 of 530    9.3%      3
+math  ▁▂●▆██▅▇▄▁▁▁   #511 of 540    9.3%      3
 </pre>
 
-<details><summary>math · #503 of 530 · 9.3% of its score</summary>
+<details><summary>math · #511 of 540 · 9.3% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Qwen2 1.5B Instruct](qwen2-1-5b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -41,8 +41,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        25.2%  ▅▃▃▅··▃●·▃▃█ beats 7/12    easy · avg 83%           11%  sharp
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         24.3%  ●···▁··▃▁▅▅█ beats 0/18    easy · avg 74%          4.2%  several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                19.8%  ●······▁·▁▁▃ beats 6/12    easy · avg 88%          4.1%  sharp
-<a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (maker)</a>                   69.3%  ▄····▄··▄·●█ beats 3/6     easy · avg 85%          2.7%  at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   12.9%  ▃·▅·▅▃●·▃▃·█ beats 6/12    medium · avg 52%        2.7%  typical
+<a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (maker)</a>                   69.3%  ▄····▄··▄·●█ beats 3/6     easy · avg 86%          2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   12.9%  ▃·▅·▅▃●·▃▃·█ beats 6/12    medium · avg 53%        2.7%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   55.1%  █·····●·▁·▄▁ beats 6/12    medium · avg 81%        2.2%  sharp
 <a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     39.5%  ▁▁▂▂▄▄▃●▅█▅▂ beats 36/80   easy · avg 81%          2.0%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (maker)</a>                    68.7%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 65/135  easy · avg 88%          1.5%  at its level
@@ -51,8 +51,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.02311v5">COPA (maker)</a>                         86.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 49/67   very easy · avg 96%     1.2%  at its level · small run
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               30.8%  ▂●▂▂·▅·▃▂█▃▃ beats 1/18    medium · avg 60%        1.1%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   25.0%  ▂··▂·▂▄●·███ beats 6/18    medium · avg 61%        1.1%  typical
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   22.0%  ●······▄▄·▄█ beats 0/5     medium · avg 62%        1.1%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     21.7%  █▁·●▁·····▂▁ beats 8/12    medium · avg 48%        1.0%  sharp · too hard for it
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   22.0%  ●······▄▄·▄█ beats 0/5     medium · avg 63%        1.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     21.7%  █▁·●▁·····▂▁ beats 8/12    medium · avg 49%        1.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   55.6%  █·····▅▃●▅▃█ beats 6/12    medium · avg 70%        1.0%  typical
 <a href="https://arxiv.org/html/2204.02311v5">SQuAD 2.0 (prompted, F1) (maker)</a>     56.4%  ▃▃···▃▃●▃▃▃▃ beats 5/10    very easy · avg 85%     1.0%  at its level · small run
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (make…</a>   26.7%  ●·····▄··█·█ beats 0/5     medium · avg 56%        1.0%  too hard for it
@@ -74,12 +74,12 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (maker)</a>          1.5%  ●·····▄█··▄▄ beats 0/5     hard · avg 15%          0.5%  too hard for it
 <a href="https://arxiv.org/html/2204.02311v5">RACE-middle (maker)</a>                  57.9%  ▄▄····▄●·███ beats 4/10    easy · avg 74%          0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">DROP (maker)</a>                         45.1%  ▃▅█▅·●·▆▄▂▁▃ beats 26/44   medium · avg 62%        0.4%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          33.1%  ▅··▃▃●··▃▅·▃ beats 4/10    medium · avg 53%        0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          33.1%  ▅··▃▃●··▃▅·▃ beats 4/10    medium · avg 54%        0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">WiC (prompted) (maker)</a>               47.0%  ●·▂▁······▁▁ beats 6/13    hard · avg 60%          0.3%  sharp · too hard for it · noisy · small…
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (maker)</a>                    42.3%  ▂▄·▂▂▂▂▂▆●▂█ beats 11/17   medium · avg 53%        0.3%  blunt · small run
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 3 (prompted) (maker)</a>      34.5%  ▂·▆●██·▄··▂▂ beats 4/16    hard · avg 44%          0.3%  too hard for it · small run
-<a href="https://arxiv.org/html/2204.02311v5">OpenBookQA (maker)</a>                   48.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 63/107  medium · avg 59%        0.2%  noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">CommitmentBank (prompted) (maker)</a>    41.1%  ▂▃·▂●▂▂▂·▂·▂ beats 5/13    medium · avg 60%        0.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">OpenBookQA (maker)</a>                   48.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 63/107  medium · avg 59%        0.2%  noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">WebQuestions (closed book) (maker)</a>    6.7%  ▅▅▃▅▃·▃▃●█▅▃ beats 10/17   very hard · avg 4.1%    0.0%  blunt · too hard for it · small run
 </pre>
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params · apache-2.0
 
-**score 55.8** ±1.8 · #34 of 93 · from 9 benchmark results across 8 sources
+**score 55.2** ±1.8 · #35 of 94 · from 9 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,22 +14,22 @@ Alibaba · released 2025-07 · 27B params · apache-2.0
 
 <pre>
 task            vs the others       rank  counts  tests
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #32 of 50     86%      7
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #33 of 51     86%      7
 </pre>
 
-<details><summary>image to video · #32 of 50 · 86% of its score</summary>
+<details><summary>image to video · #33 of 51 · 86% of its score</summary>
 
 Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 2.3](hailuo-2-3.md), [Wan 2.6 Flash](wan-2-6-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   953.0  ▃▃··●··▃▃▃·▃ beats 4/8    avg 875                 39%  sharp
-<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>   20.0%  █·····█··█·● beats 3/3    very hard · avg 12%     17%  sharp
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1082.6  ▄······██··● beats 5/6    avg 1002                12%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   88.4%  ▄·█··▄··▄●▄█ beats 5/8    easy · avg 84%         7.4%  typical
-<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     21.6%  ▄●···▄▄█·█·▄ beats 1/8    hard · avg 20%         5.8%  typical
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.3%  ▃······▅·█▅● beats 10/10  easy · avg 81%         3.3%  blunt
-<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   32.2%  ██···█··●·██ beats 3/5    hard · avg 25%         2.3%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   953.0  ▃▃··●··▃▃▃·▃ beats 4/8    avg 889                 38%  sharp
+<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>   20.0%  █·····█··█·● beats 3/3    very hard · avg 12%     16%  sharp
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1082.6  ▄······██··● beats 5/6    avg 1008                12%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   88.4%  ▄·█··▄··▄●▄█ beats 5/8    easy · avg 84%         7.5%  typical
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     21.6%  ▄●···▄▄█·█·▄ beats 1/8    hard · avg 20%         5.9%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.3%  ▃······▅·█▅● beats 10/10  easy · avg 81%         3.4%  blunt
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   32.2%  ██···█··●·██ beats 3/5    hard · avg 25%         2.4%  blunt · at its level
 </pre>
 
 </details>
@@ -38,8 +38,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   28.7%  ▅·▃▅·●·▃···▃ beats 6/9    hard · avg 21%      9.0%  at its level
-<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   65.6%  █▄▄··▄···▄·● beats 7/7    medium · avg 57%    3.5%  blunt · at its level
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   28.7%  ▅·▃▅·●·▃···▃ beats 6/9    hard · avg 22%      9.2%  at its level
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   65.6%  █▄▄··▄···▄·● beats 7/7    medium · avg 58%    3.5%  blunt · at its level
 </pre>
 
 </details>
@@ -50,16 +50,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   39% ▇▇▇▇▇
-<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   17% ▇▇
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   38% ▇▇▇▇▇
+<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   16% ▇▇
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   15% ▇▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    9% ▇
-<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    7% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    8% ▇
 <a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    6% ▇
-<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    3% ▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    4% ▇
 <a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.8
+weighted average                                   = 55.2
 </pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>

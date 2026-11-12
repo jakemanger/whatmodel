@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 2.5B params · stabilityai-community
 
-**score 40.8** ±2.6 · #105 of 144 · from 3 benchmark results across 3 sources
+**score 40.6** ±2.6 · #108 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #89 of 126*     76%      2
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #91 of 128*     76%      2
 </pre>
 
-<details><summary>text to image · #89 of 126 · 76% of its score</summary>
+<details><summary>text to image · #91 of 128 · 76% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall. Trails [Playground v2.5](playground-v2-5.md) here, though they rank lower overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.8%  ▃·●▅▃·▅▃···▃ beats 2/10   very hard · avg 7.6%     21%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.8%  ▃·●▅▃·▅▃···▃ beats 2/10   very hard · avg 8.0%     21%  sharp · too hard for it
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   62% ▇▇▇▇▇▇▇
-<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   21% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   21% ▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   14% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 40.8
+weighted average                                   = 40.6
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-01 · closed weights
 
-**score 67.1** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 66.8** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,33 +16,33 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▄▅▄●▃▁▁    #72 of 354     48%      4
-coding       ▁▁▁▃▄▆█▇●▄▃▁   #138 of 539     68%      3
+agent tasks  ▁▁▂▆█▄▅▅●▄▁▁    #75 of 357     49%      4
+coding       ▁▁▁▃▅▇█▇●▃▂▁   #142 of 542     68%      3
 </pre>
 
-<details><summary>agent tasks · #72 of 354 · 48% of its score</summary>
+<details><summary>agent tasks · #75 of 357 · 49% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
+Beats [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (maker)</a>           64.0%  ██···█●··███ beats 3/6    hard · avg 15%           18%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 16%           13%  at its level
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14  very hard · avg 2.8%     10%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 29%          7.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (maker)</a>           64.0%  ██···█●··███ beats 3/6    hard · avg 16%           18%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 17%           13%  at its level
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14  very hard · avg 2.9%     10%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 29%          7.5%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #138 of 539 · 68% of its score</summary>
+<details><summary>coding · #142 of 542 · 68% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
+Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.7  ▁▁▃▂●█▃▆▅▅▁▂ beats 25/129  avg 981                  51%  sharp
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.8%     10%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 29%          7.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.5  ▁▂▄▃●█▅▆█▅▂▁ beats 25/133  avg 990                  50%  sharp
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.9%     10%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 29%          7.5%  blunt · at its level
 </pre>
 
 </details>
@@ -53,11 +53,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   51% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   50% ▇▇▇▇▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-3-codex">OpenAI vendor-reported benchmark scores…</a>        3   38% ▇▇▇▇▇
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1   10% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.1
+weighted average                                   = 66.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

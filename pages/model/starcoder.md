@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 36.4** ±0.7 · #616 of 732 · from 7 benchmark results across 4 sources
+**score 36.3** ±0.7 · #624 of 740 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #423 of 469     89%      3
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #426 of 472     89%      3
 </pre>
 
-<details><summary>coding · #423 of 469 · 89% of its score</summary>
+<details><summary>coding · #426 of 472 · 89% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    34.1%  ▁·▁▁▃●▆▅█▃▁▁ beats 19/99  easy · avg 76%     58%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 19/99  easy · avg 70%     26%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    34.1%  ▁·▁▁▃●▆▅█▃▁▁ beats 19/99  easy · avg 77%     58%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 19/99  easy · avg 71%     26%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        46.1%  ▁···▁▁▂●▇█▆▂ beats 13/75  easy · avg 66%    5.7%  at its level
 </pre>
 
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2305.06161v2-starcoder"></a><a href="https://arxiv.org/html/2305.06161v2">StarCoder: may the source be with you! …</a>        1    2% ▇
 <a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 36.4
+weighted average                                   = 36.3
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder: may the source be with you! ([CC BY-SA 4.0](../../licenses/paper-2305.06161v2-starcoder-CC-BY-SA-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>

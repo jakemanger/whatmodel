@@ -6,7 +6,7 @@
 
 ByteDance · closed weights
 
-**score 61.7** ±10.6 · #25 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.4** ±10.5 · #26 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ ByteDance · closed weights
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄▆▅█▃●▂▂▄   #15 of 68*     53%      1
+text to video  ▆▄▃▆▆█▇●▄·▄▅   #17 of 70*     53%      1
 </pre>
 
-<details><summary>text to video · #15 of 68 · 53% of its score</summary>
+<details><summary>text to video · #17 of 70 · 53% of its score</summary>
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   91.1%  ▂··▂··█▄▂··● beats 11/11  easy · avg 84%     53%  blunt
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   91.1%  ▂··▂··█▄▂··● beats 11/11  easy · avg 85%     53%  blunt
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1   53% ▇▇▇▇▇▇
 prior: pull toward the middle                       47% ▇▇▇▇▇▇
-weighted average                                   = 61.7
+weighted average                                   = 61.4
 </pre>
 
 <sub>Licences: HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

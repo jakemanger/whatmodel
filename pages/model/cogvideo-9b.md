@@ -6,7 +6,7 @@
 
 Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
-**score 23.2** ±6.8 · #93 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.4** ±6.7 · #94 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ●▄▃▄▆▅█▃▂▂▂▄   #68 of 68*     81%      1
+text to video  ●▄▃▆▆█▇▂▄·▄▅   #70 of 70*     81%      1
 </pre>
 
-<details><summary>text to video · #68 of 68 · 81% of its score</summary>
+<details><summary>text to video · #70 of 70 · 81% of its score</summary>
 
 <pre>
 test                                  result  vs the others in its run  difficulty                counts  why
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-fetv-ccby"></a><a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV: A Benchmark for Fine-Grained Eval…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 23.2
+weighted average                                   = 23.4
 </pre>
 
 <sub>Licences: FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

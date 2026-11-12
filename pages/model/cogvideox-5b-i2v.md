@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
-**score 46.4** ±3.9 · #60 of 93 · from 4 benchmark results across 4 sources
+**score 45.9** ±3.8 · #61 of 94 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -20,10 +20,10 @@ Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
 <pre>
 test                                   result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>      27.7%  ▅·▃▅·●·▃···▃ beats 5/9    hard · avg 21%           31%  typical
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>      27.7%  ▅·▃▅·●·▃···▃ beats 5/9    hard · avg 22%           31%  typical
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       6.75 / 10  ▅··▅●···▃··█ beats 4/8    easy · avg 7.74 / 10     24%  at its level
 <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>      72.9%  ●··▄▄▄▄····▄ beats 1/6    easy · avg 77%           24%  blunt · at its level
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       6.75 / 10  ▅··▅●···▃··█ beats 4/8    easy · avg 7.71 / 10     24%  at its level
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>      57.9%  ●···▂······█ beats 0/5    medium · avg 65%         15%  blunt · at its level
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>      57.9%  ●···▂······█ beats 0/5    easy · avg 65%           15%  blunt · at its level
 </pre>
 
 </details>
@@ -35,14 +35,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   31% ▇▇▇▇
-<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   24% ▇▇▇
 <a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   24% ▇▇▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   24% ▇▇▇
 <a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1   15% ▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 46.4
+weighted average                                   = 45.9
 </pre>
 
-<sub>Licences: MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

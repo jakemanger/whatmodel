@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 39.9** ±3.4 · #570 of 732 · from 5 benchmark results across 3 sources
+**score 39.9** ±3.4 · #577 of 740 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▅█▆▄█▄▂▁▁   #387 of 431*     43%      2
+math  ▁▁●▅█▆▄█▅▂▁▁   #397 of 440*     43%      2
 </pre>
 
-<details><summary>math · #387 of 431 · 43% of its score</summary>
+<details><summary>math · #397 of 440 · 43% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 70%     27%  at its level · noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 70%     26%  at its level · noisy
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 19%     17%  typical
 </pre>
 

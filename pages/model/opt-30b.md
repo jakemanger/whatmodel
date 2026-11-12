@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 28.0** ±0.7 · #676 of 732 · from 48 benchmark results across 11 sources
+**score 28.0** ±0.7 · #684 of 740 · from 48 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,12 +29,12 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     77.3%  ▂▂▄▂·▂·▆·▂●▂ beats 12/14   easy · avg 89%         4.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.01296v2">TriviaQA</a>                             45.9%  ▁▁▂▂▄▄▃▆●█▅▂ beats 43/80   easy · avg 77%         4.0%  at its level · small run · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   53.2%  ▂·▄·▂█▄▄●▄▂▆ beats 15/21   easy · avg 74%         3.7%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">MMLU</a>                                 25.9%  ▁●▁▁▁▂▂▅██▆▄ beats 4/214   medium · avg 59%       3.6%  too hard for it · small run · several r…
+<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">MMLU</a>                                 25.9%  ▁●▁▁▁▂▂▅██▆▄ beats 4/215   medium · avg 59%       3.6%  too hard for it · small run · several r…
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   71.5%  ▃··▅▃▃▅▅▅██● beats 18/19   very easy · avg 87%    3.1%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 91.1%  ▂··▂▃▂▂▆▃▃●▂ beats 18/19   very easy · avg 98%    2.7%  blunt · several runs
 <a href="https://arxiv.org/html/2212.12017v3">COPA (maker)</a>                         84.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 39/67   very easy · avg 95%    2.4%  at its level · small run · several runs
-<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (maker)</a>               28.4%  ▁▁▁●▂▄▅▆█▃▃▁ beats 7/155   medium · avg 59%       2.0%  sharp · too hard for it · noisy · small…
-<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (maker)</a>                   57.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 87/107  hard · avg 48%         1.9%  too hard for it · small run · several r…
+<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (maker)</a>               28.4%  ▁▁▁●▂▄▅▆█▃▃▁ beats 7/155   medium · avg 60%       2.0%  sharp · too hard for it · noisy · small…
+<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (maker)</a>                   57.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 87/107  hard · avg 49%         1.8%  too hard for it · small run · several r…
 <a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (maker)</a>               58.1%  ▅▃·▃··▅·●▅▃█ beats 6/13    medium · avg 75%       1.6%  small run
 <a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (maker)</a>               50.2%  ●·▂▁······▁▁ beats 0/13    medium · avg 71%       1.3%  sharp · too hard for it · noisy · small…
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            54.3%  ●█······▃▃·▅ beats 1/8     easy · avg 86%         1.3%  at its level

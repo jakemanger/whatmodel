@@ -6,7 +6,7 @@
 
 Sand AI · released 2025-04 · 4.5B params · apache-2.0
 
-**score 36.5** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.2** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ Sand AI · released 2025-04 · 4.5B params · apache-2.0
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁●▂██▄▃▃▄▂▂   #68 of 74*     89%      2
+image to video  ▁▁●▂█▇▅▃▃▃▃▃   #70 of 76*     89%      2
 </pre>
 
-<details><summary>image to video · #68 of 74 · 89% of its score</summary>
+<details><summary>image to video · #70 of 76 · 89% of its score</summary>
 
 Beats [Runway Gen-4 Turbo](runway-gen-4-turbo.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>    2.0%  ●·····█··█·█ beats 0/3    very hard · avg 12%     53%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   77.5%  ▃······●·█▅█ beats 1/10   easy · avg 81%          36%  blunt · at its level
+<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>    2.0%  ●·····█··█·█ beats 0/3    very hard · avg 12%     52%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   77.5%  ▃······●·█▅█ beats 1/10   easy · avg 81%          37%  blunt · at its level
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   53% ▇▇▇▇▇▇
-<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1   36% ▇▇▇▇
+<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   52% ▇▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1   37% ▇▇▇▇
 prior: pull toward the middle                       11% ▇
-weighted average                                   = 36.5
+weighted average                                   = 36.2
 </pre>
 
 <sub>Licences: CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

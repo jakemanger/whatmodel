@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 6.7B params · llama-1-noncommercial-research
 
-**score 30.3** ±0.5 · comparison only: no current run option verified · from 96 benchmark results across 23 sources
+**score 30.2** ±0.5 · comparison only: no current run option verified · from 96 benchmark results across 23 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▄▆█▇▅▄▃▁   #524 of 539    6.4%      2
-math    ▁▁▃●██▅█▃▁▁▁   #464 of 530     11%      3
+coding  ▁▁●▃▅▇█▇▆▃▂▁   #527 of 542    6.4%      2
+math    ▁▂▃●██▅▇▄▁▁▁   #471 of 540     11%      3
 </pre>
 
-<details><summary>coding · #524 of 539 · 6.4% of its score</summary>
+<details><summary>coding · #527 of 542 · 6.4% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test          result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #464 of 530 · 11% of its score</summary>
+<details><summary>math · #471 of 540 · 11% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
@@ -50,7 +50,7 @@ test          result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">ARC Challenge</a>                        44.6%  ▁·▁··▁▁▇▂█●▃ beats 20/26  easy · avg 82%           24%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">WinoGrande</a>                           69.9%  ▁····▁··▁▂█● beats 23/26  easy · avg 88%           11%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">WinoGrande</a>                           69.9%  ▁····▁··▁▂█● beats 23/26  easy · avg 88%           10%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">HellaSwag</a>                            76.2%  ▃···▁▇▅█●▃▁▁ beats 21/26  easy · avg 81%          7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">BoolQ</a>                                75.0%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 22/26  easy · avg 88%          5.2%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">OpenBookQA</a>                           34.4%  █·▁▁▃·▁▃▅▇●▄ beats 23/26  easy · avg 81%          5.1%  at its level · several runs
@@ -58,12 +58,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       30.9%  █●█··█·█·█·█ beats 1/6    medium · avg 68%        4.1%  sharp · several runs
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 35.2%  ▄▄·▄···●▄·██ beats 3/8    easy · avg 74%          3.8%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">PIQA</a>                                 78.7%  ▁·▁··▁▁▃█▅●▂ beats 19/26  easy · avg 87%          3.5%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 23/26  very easy · avg 97%     1.6%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 23/26  very easy · avg 98%     1.6%  blunt · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   55.7%  ▂·▄·▂█▄▄█●▂▆ beats 16/21  easy · avg 74%          1.6%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   19.0%  ▄···●·▄█··▄▄ beats 1/7    medium · avg 56%        1.4%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">Social IQA</a>                           44.8%  ▁···▁▃█▁●▁·▁ beats 22/26  medium · avg 60%        1.3%  blunt · several runs
-<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (maker)</a>                     56.3%  ▁▁▂▂▄▄▃▆●█▅▂ beats 50/80  easy · avg 84%          1.0%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 52%        0.9%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">Social IQA</a>                           44.8%  ▁···▁▃█▁●▁·▁ beats 22/26  medium · avg 61%        1.3%  blunt · several runs
+<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (maker)</a>                     56.3%  ▁▁▂▂▄▄▃▆●█▅▂ beats 50/80  easy · avg 85%          1.0%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 53%        0.9%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_common_sense_reasoning_0-shot.json">COPA</a>                                 84.0%  ▄··█▄▄···●·█ beats 5/7    very easy · avg 95%     0.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   22.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 46/68  medium · avg 53%        0.8%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.8%  ▁····▁▁·▁·▃● beats 10/11  hard · avg 63%          0.7%  typical
@@ -76,7 +76,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   32.3%  █···●▄·▄▄▄·▄ beats 2/7    medium · avg 51%        0.4%  blunt · at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_reading_comprehension_0-shot.json">DROP</a>                                 11.3%  ▄▄···█·▄·●·▄ beats 5/6    hard · avg 34%          0.4%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Spider dev execution accuracy, ze…</a>    4.1%  ●·█▄··▄····▄ beats 0/6    medium · avg 54%        0.3%  sharp · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.4%  █●····▃▁·▁·▁ beats 8/14   hard · avg 66%          0.2%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.4%  █●····▃▁·▁·▁ beats 8/14   hard · avg 67%          0.2%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   23.4%  ▂····▂··▂·●▄ beats 4/8    medium · avg 36%        0.1%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_question_answering_0-shot.json">TruthfulQA MC2</a>                       34.1%  ●······▄▄▄▄█ beats 0/6    medium · avg 58%        0.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 25.3%  ▅▃●··▃···▃▃█ beats 4/10   hard · avg 37%          0.0%  blunt · too hard for it · noisy
@@ -111,8 +111,8 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    2% ▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    1% ▇
 <a name="acl-2023-emnlp-industry-17"></a><a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">Investigating Table-to-Text Generation …</a>        1    1% ▇
-<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    1% ▇
 <a name="acl-2023-emnlp-main-844"></a><a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Aligning Large Language Models through …</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    1% ▇
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-483"></a><a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SCITAB: A Challenging Benchmark for Com…</a>        1    0% ▇
 <a name="acl-2023-findings-emnlp-750"></a><a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Battle of the Large Language Models: Do…</a>        1    0% ▇
@@ -121,10 +121,10 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    0% ▇
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 30.3
+weighted average                                   = 30.2
 </pre>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources ([CC BY 4.0](../../licenses/paper-2306.04751v2-tulu1-CC-BY-4-0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · LLM-FP4: 4-Bit Floating-Point Quantized Transformers ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-39-CC-BY-4-0.txt)) · A Frustratingly Easy Post-Training Quantization Scheme for LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-892-CC-BY-4-0.txt)) · Coverage-based Example Selection for In-Context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-930-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-17-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Aligning Large Language Models through Synthetic Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-844-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-750-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources ([CC BY 4.0](../../licenses/paper-2306.04751v2-tulu1-CC-BY-4-0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · LLM-FP4: 4-Bit Floating-Point Quantized Transformers ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-39-CC-BY-4-0.txt)) · A Frustratingly Easy Post-Training Quantization Scheme for LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-892-CC-BY-4-0.txt)) · Coverage-based Example Selection for In-Context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-930-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-17-CC-BY-4-0.txt)) · Aligning Large Language Models through Synthetic Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-844-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-750-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt))</sub>
 
 <details><summary>Not counted (12)</summary>
 

@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-03 · 22B params · ltx-2-community
 
-**score 36.3** ±2.5 · #75 of 93 · from 4 benchmark results across 4 sources
+**score 35.8** ±2.5 · #78 of 94 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,28 +14,26 @@ Lightricks · released 2026-03 · 22B params · ltx-2-community
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃●▆▅█▃▂▂▂▄   #47 of 68*    7.0%      1
-image to video  ▁●·▂▅█▅▄▅▆▃▄   #48 of 50*     76%      1
+text to video   ▆▄▃●▆█▇▂▄·▄▅   #49 of 70*    7.2%      1
+image to video  ▁●·▂▅█▅▄▅▅▃▅   #50 of 51*     75%      1
 </pre>
 
-<details><summary>text to video · #47 of 68 · 7.0% of its score</summary>
+<details><summary>text to video · #49 of 70 · 7.2% of its score</summary>
 
 Beats [Mochi 1](mochi-1.md), [HunyuanVideo](hunyuanvideo.md), [T2V-Turbo (VC2)](t2v-turbo-vc2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   38.4%  ●·▃█▃·▅▃▅▃▃▃ beats 0/14   hard · avg 44%    7.0%  blunt
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   38.4%  ●·▃█▃·▅▃▅▃▃▃ beats 0/14   hard · avg 45%    7.2%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to video · #48 of 50 · 76% of its score</summary>
-
-Beats [Runway Gen-4 Turbo](runway-gen-4-turbo.md) here, though they rank higher overall.
+<details><summary>image to video · #50 of 51 · 75% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   587.0  ●▃··█··▃▃▃·▃ beats 0/8    avg 875        76%  sharp
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   587.0  ●▃··█··▃▃▃·▃ beats 0/8    avg 889        75%  sharp
 </pre>
 
 </details>
@@ -44,8 +42,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   11.9%  ●·▃▅·█·▃···▃ beats 0/9    hard · avg 21%      8.1%  typical
-<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   53.8%  █▄●··▄···▄·█ beats 3/7    medium · avg 57%    6.2%  blunt · at its level
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   11.9%  ●·▃▅·█·▃···▃ beats 0/9    hard · avg 22%      8.3%  typical
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   53.8%  █▄●··▄···▄·█ beats 3/7    medium · avg 58%    6.3%  blunt · at its level
 </pre>
 
 </details>
@@ -56,12 +54,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   76% ▇▇▇▇▇▇▇▇▇
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   75% ▇▇▇▇▇▇▇▇▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    8% ▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    7% ▇
 <a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    6% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 36.3
+weighted average                                   = 35.8
 </pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

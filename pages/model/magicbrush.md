@@ -6,7 +6,7 @@
 
 Ohio State University (OSU NLP) · released 2023-07 · creativeml-openrail-m
 
-**score 28.7** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.5** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   19.4%  ▂·●▃·▂·▃▂·▃█ beats 1/14   medium · avg 42%     78%  blunt
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   19.4%  ▂·●▃·▂·▃▂·▃█ beats 1/14   medium · avg 43%     79%  blunt
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   78% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       22% ▇▇▇
-weighted average                                   = 28.7
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   79% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       21% ▇▇▇
+weighted average                                   = 28.5
 </pre>
 
 <sub>Licences: EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-11 · 13.02B params · cc-by-nc-nd-4.0
 
-**score 35.8** ±0.9 · #827 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.7** ±0.9 · #838 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #438 of 482*    100%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #442 of 486*    100%      2
 </pre>
 
-<details><summary>coding · #438 of 482 · 100% of its score</summary>
+<details><summary>coding · #442 of 486 · 100% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    32.9%  ▁·▁▁▃●▆▅█▃▁▁ beats 17/99  easy · avg 76%     58%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   30.5%  ▁·▁▁▁▃●▄▄█▃▁ beats 21/99  easy · avg 70%     42%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    32.9%  ▁·▁▁▃●▆▅█▃▁▁ beats 17/99  easy · avg 77%     58%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   30.5%  ▁·▁▁▁▃●▄▄█▃▁ beats 21/99  easy · avg 71%     42%  sharp · at its level
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 35.8
+weighted average                                   = 35.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

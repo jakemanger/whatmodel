@@ -6,7 +6,7 @@
 
 Pika · released 2023-11 · proprietary
 
-**score 32.0** ±3.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 31.9** ±3.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,18 +14,16 @@ Pika · released 2023-11 · proprietary
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▇●▄▆█▆▇▂▃▃▂▄   #78 of 94     96%      3
+text to video  ▆●▃█▆▇▆▂▅▁▄▃   #81 of 97     96%      3
 </pre>
 
-<details><summary>text to video · #78 of 94 · 96% of its score</summary>
-
-Trails [LTX-Video 0.9 (2B)](ltx-video-0-9.md), [LaVie (base T2V)](lavie.md) here, though they rank lower overall.
+<details><summary>text to video · #81 of 97 · 96% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        19.7%  ▄▄▄·▄▄●····▄ beats 6/7    medium · avg 48%     60%  sharp
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    29.0%  ●·▃▅··▃█···▃ beats 1/9    medium · avg 56%     20%  at its level
-<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   49.6%  ▄·●█▄▄▄·▄·▄█ beats 1/10   medium · avg 71%     16%  at its level
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        19.7%  ▄▄▄·▄▄●····▄ beats 6/7    medium · avg 48%     58%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    29.0%  ●·▃▅··▃█···▃ beats 1/9    medium · avg 56%     21%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   49.6%  ▄·●█▄▄▄·▄·▄█ beats 1/10   medium · avg 71%     18%  at its level
 </pre>
 
 </details>
@@ -36,10 +34,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   16% ▇▇
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   79% ▇▇▇▇▇▇▇▇▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   18% ▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 32.0
+weighted average                                   = 31.9
 </pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>

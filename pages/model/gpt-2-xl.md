@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 6.5** ±0.9 · #722 of 732 · from 52 benchmark results across 15 sources
+**score 6.5** ±0.9 · #730 of 740 · from 52 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▂▁▁   #384 of 431*    0.7%      1
+math  ▁▁▃●█▆▄█▅▂▁▁   #392 of 440*    0.7%      1
 </pre>
 
-<details><summary>math · #384 of 431 · 0.7% of its score</summary>
+<details><summary>math · #392 of 440 · 0.7% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test    result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        25.0%  ●····▃▃···▅█ beats 0/8     very hard · avg 27%     20%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        25.0%  ●····▃▃···▅█ beats 0/8     very hard · avg 27%     21%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            40.0%  ●▃▃··▅····▃█ beats 0/8     easy · avg 87%          15%  several runs
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           22.4%  ●······▂·▆·▂ beats 0/8     very hard · avg 26%     13%  too hard for it · several runs
 <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             58.3%  ●·▃▃··▃··▃·█ beats 1/8     easy · avg 87%         8.6%  blunt · at its level · several runs
@@ -44,8 +44,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 70.5%  ▄●··▄·▄·▄·██ beats 1/8     easy · avg 88%         4.6%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   37.0%  ▃···▃▃·▃·●·█ beats 4/7     easy · avg 81%         3.2%  typical
 <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 1/8     easy · avg 88%         3.1%  several runs
-<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           58.3%  ●··█···█▄▄·▄ beats 1/8     easy · avg 88%         3.0%  several runs
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 71%       2.5%  blunt · several runs
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           58.3%  ●··█···█▄▄·▄ beats 1/8     easy · avg 88%         2.9%  several runs
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 72%       2.5%  blunt · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   51.2%  ●·▄··█··█··▄ beats 0/7     very easy · avg 88%    2.5%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.345.pdf">TriviaQA</a>                             11.8%  ▁▁▂▂●▄▃▆▅█▅▂ beats 14/80   easy · avg 77%         1.9%  small run
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   41.8%  ▂●··▂·█···▂▂ beats 1/8     easy · avg 79%         1.6%  blunt · at its level
@@ -57,7 +57,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.9%  ●▁▁▁▁▁▁▁▂█▅▁ beats 23/276  medium · avg 72%       0.3%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   29.3%  █●····█·██·█ beats 1/5     medium · avg 42%       0.0%  blunt · at its level
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.1%  ●·······▁··▁ beats 3/7     very hard · avg 52%    0.0%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····▂●▃▂▄▄ beats 18/38   easy · avg 87%         0.0%  sharp · too hard for it · noisy · sever…
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····▂●▃▂▄▄ beats 18/38   easy · avg 88%         0.0%  sharp · too hard for it · noisy · sever…
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 55.0** ±4.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.4** ±4.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>   50.6%  ▂··▂●▂▄▂▂·▂▂ beats 3/12   medium · avg 41%     92%  at its level
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>   50.6%  ▂··▂●▂▄▂▂·▂▂ beats 3/12   medium · avg 42%     93%  at its level
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        8% ▇
-weighted average                                   = 55.0
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 54.4
 </pre>
 
 <sub>Licences: ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

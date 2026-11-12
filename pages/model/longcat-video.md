@@ -6,7 +6,7 @@
 
 Meituan · released 2025-10 · 13.6B params · mit
 
-**score 51.1** ±2.4 · #50 of 93 · from 4 benchmark results across 4 sources
+**score 50.5** ±2.4 · #52 of 94 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,26 +14,28 @@ Meituan · released 2025-10 · 13.6B params · mit
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆●█▃▂▂▂▄   #33 of 68*    7.5%      1
-image to video  ▁▂·▂●█▅▄▅▆▃▄   #40 of 50*     67%      1
+text to video   ▆▄▃▆▆●▇▂▄·▄▅   #34 of 70*    7.8%      1
+image to video  ▁▂·▂●█▅▄▅▅▃▅   #41 of 51*     67%      1
 </pre>
 
-<details><summary>text to video · #33 of 68 · 7.5% of its score</summary>
+<details><summary>text to video · #34 of 70 · 7.8% of its score</summary>
+
+Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   45.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 5/14   hard · avg 44%    7.5%  blunt · at its level
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   45.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 5/14   hard · avg 45%    7.8%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #40 of 50 · 67% of its score</summary>
+<details><summary>image to video · #41 of 51 · 67% of its score</summary>
 
 Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   904.0  ▃▃··●··▃▃▃·▃ beats 2/8    avg 875        67%  sharp
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   904.0  ▃▃··●··▃▃▃·▃ beats 2/8    avg 889        67%  sharp
 </pre>
 
 </details>
@@ -42,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   22.2%  ▅·▃●·█·▃···▃ beats 3/9    hard · avg 21%     14%  typical
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   81.1%  █▄·●█▄▄····▄ beats 3/8    easy · avg 82%    9.1%  blunt
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   22.2%  ▅·▃●·█·▃···▃ beats 3/9    hard · avg 22%     14%  typical
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   81.1%  █▄·●█▄▄····▄ beats 3/8    easy · avg 82%    9.3%  blunt
 </pre>
 
 </details>
@@ -59,7 +61,7 @@ source                                    results  share of the score
 <a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    9% ▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 51.1
+weighted average                                   = 50.5
 </pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>

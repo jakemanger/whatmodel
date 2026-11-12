@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-07 · 3.5B params · openrail++
 
-**score 34.1** ±1.3 · #122 of 144 · from 15 benchmark results across 14 sources
+**score 34.2** ±1.3 · #124 of 146 · from 15 benchmark results across 14 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,27 +16,27 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #106 of 126     82%     12
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #108 of 128     82%     12
 </pre>
 
-<details><summary>text to image · #106 of 126 · 82% of its score</summary>
+<details><summary>text to image · #108 of 128 · 82% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [IF-XL](deepfloyd-if-xl.md) here, though they rank higher overall. Trails [SDXL-Turbo](sdxl-turbo.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>    1001.0  ▃▃··▃·●·█·▃▃ beats 3/8    avg 1237                13%  sharp
-<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.99 / 5  █▄·▄██●▄█▄▄▄ beats 8/14   easy · avg 3.83 / 5     12%  at its level
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>    1001.0  ▃▃··▃·●·█·▃▃ beats 3/8    avg 1235                13%  sharp
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.99 / 5  █▄·▄██●▄█▄▄▄ beats 8/14   easy · avg 3.84 / 5     12%  at its level
 <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                                55.0%  ▅█···▅▃▃●··▃ beats 9/10   easy · avg 79%          11%  at its level
-<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>     64.0%  ●··█▄·▄··▄·▄ beats 0/6    easy · avg 84%          10%  at its level
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>     64.0%  ●··█▄·▄··▄·▄ beats 0/6    easy · avg 84%          11%  at its level
 <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       43.0%  ▄·▄·█▄●▄···▄ beats 5/7    easy · avg 66%          10%  at its level
-<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>     59.0%  ▄▄·●·······▄ beats 2/4    easy · avg 80%         5.4%  at its level
+<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>     59.0%  ▄▄·●·······▄ beats 2/4    easy · avg 80%         5.3%  at its level
 <a href="https://arxiv.org/html/2406.14774v3#S5.T2">GeckoNum Task 1: exact number gen…</a>     22.8%  █●·█·······█ beats 1/3    medium · avg 51%       5.1%  typical
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>       15.7%  ●·····▄█▄·▄█ beats 0/7    medium · avg 41%       3.7%  typical
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>       15.7%  ●·····▄█▄·▄█ beats 0/7    medium · avg 42%       3.9%  typical
 <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins again…</a>     35.0%  █·●········█ beats 1/2    medium · avg 58%       3.6%  at its level · small run
 <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>     41.0%  ●····█·····█ beats 0/2    easy · avg 66%         3.5%  at its level · small run
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>     15.9%  ▃··▃·█▃●▅··▃ beats 6/9    hard · avg 24%         3.2%  typical
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    8.2000  ▃·····●··▃·█ beats 1/5    avg 10.058             0.6%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    8.2000  ▃·····●··▃·█ beats 1/5    avg 10.064             0.6%  sharp · noisy
 </pre>
 
 </details>
@@ -45,9 +45,9 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0300 mean human alignment score  █▄▄·█·●█▄▄·▄ beats 6/11   avg 6.286 mean human al…     11%  typical
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        18.4900 FID  █··██······● beats 3/3    avg 11.694 FID              3.8%  typical
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>                               0.0%  ●·█▅▃·▅▃···▃ beats 0/10   very hard · avg 7.6%        2.4%  sharp · too hard for it
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0300 mean human alignment score  █▄▄·█·●█▄▄·▄ beats 6/11   avg 6.275 mean human al…     11%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        18.4900 FID  █··██······● beats 3/3    avg 11.831 FID              3.7%  typical
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>                               0.0%  ●·█▅▃·▅▃···▃ beats 0/10   very hard · avg 8.0%        2.4%  sharp · too hard for it
 </pre>
 
 </details>
@@ -62,21 +62,21 @@ source                                    results  share of the score
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   12% ▇
 <a name="visual-geneval"></a><a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval authors' results: djghosh13/gen…</a>        1   11% ▇
 <a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   11% ▇
-<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   10% ▇
+<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   11% ▇
 <a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   10% ▇
 <a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>                                   2    7% ▇
 <a name="visual-imagenhub"></a><a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub: Standardizing the evaluation…</a>        1    5% ▇
 <a name="visual-geckonum"></a><a href="https://arxiv.org/html/2406.14774v3#S5.T2">Evaluating Numerical Reasoning in Text-…</a>        1    5% ▇
-<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1    4% ▇
 <a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    4% ▇
+<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1    4% ▇
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1    3% ▇
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1    2% ▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 34.1
+weighted average                                   = 34.2
 </pre>
 
-<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · Evaluating Numerical Reasoning in Text-to-Image Models ([CC-BY-4.0](../../licenses/visual-geckonum.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · Evaluating Numerical Reasoning in Text-to-Image Models ([CC-BY-4.0](../../licenses/visual-geckonum.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>
 
 ## How to run it
 

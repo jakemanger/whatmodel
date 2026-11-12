@@ -6,7 +6,7 @@
 
 Tencent · released 2024-12 · 13B params · tencent-hunyuan-community
 
-**score 39.0** ±2.5 · #71 of 93 · from 6 benchmark results across 4 sources
+**score 38.7** ±2.4 · #72 of 94 · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Tencent · released 2024-12 · 13B params · tencent-hunyuan-community
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄▃●▆▅█▃▂▂▂▄   #49 of 68     97%      6
+text to video  ▆▄▃●▆█▇▂▄·▄▅   #51 of 70     97%      6
 </pre>
 
-<details><summary>text to video · #49 of 68 · 97% of its score</summary>
+<details><summary>text to video · #51 of 70 · 97% of its score</summary>
 
 Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
 
 <pre>
 test                                       result  vs the others in its run  difficulty                counts  why
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>           17.2%  ▄···●·▄·█··▄ beats 1/5    hard · avg 33%               26%  typical
-<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>           56.4%  ▄····●···█·▄ beats 1/4    medium · avg 66%             18%  at its level
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>           17.2%  ▄···●·▄·█··▄ beats 1/5    hard · avg 33%               25%  typical
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>           56.4%  ▄····●···█·▄ beats 1/4    medium · avg 67%             18%  at its level
 <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>           35.0%  ▅·▃●··▃█···▃ beats 4/9    medium · avg 56%             15%  at its level
-<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  898.07 / 1608  ●·▄··▄·····█ beats 1/5    easy · avg 1103.17 / 16…     15%  at its level
-<a href="https://arxiv.org/pdf/2505.16864v2#page=8">VBench (T2V total)</a>                          82.7%  █···●▄▄····▄ beats 2/5    very easy · avg 90%          13%  small run
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  898.07 / 1608  ●·▄··▄·····█ beats 1/5    easy · avg 1111.45 / 16…     15%  at its level
+<a href="https://arxiv.org/pdf/2505.16864v2#page=8">VBench (T2V total)</a>                          82.7%  █···●▄▄····▄ beats 2/5    very easy · avg 90%          12%  small run
 <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          82.7%  █···█···●··█ beats 2/3    very easy · avg 88%          11%  typical
 </pre>
 
@@ -40,11 +40,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   41% ▇▇▇▇▇
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        2   29% ▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        2   29% ▇▇▇
 <a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   15% ▇▇
-<a name="visual-gap-jenga"></a><a href="https://arxiv.org/pdf/2505.16864v2#page=8">Training-Free Efficient Video Generatio…</a>        1   13% ▇▇
+<a name="visual-gap-jenga"></a><a href="https://arxiv.org/pdf/2505.16864v2#page=8">Training-Free Efficient Video Generatio…</a>        1   12% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 39.0
+weighted average                                   = 38.7
 </pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · Training-Free Efficient Video Generation via Dynamic Token Carving ([CC-BY-SA-4.0](../../licenses/visual-gap-jenga.txt))</sub>

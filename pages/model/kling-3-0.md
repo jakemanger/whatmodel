@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2026-02 · proprietary
 
-**score 67.7** ±4.2 · #19 of 93 · from 3 benchmark results across 3 sources
+**score 66.9** ±4.1 · #20 of 94 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Kuaishou (Kling AI) · released 2026-02 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂▅█▅▄▅●▃▄   #10 of 50*     38%      1
+image to video  ▁▂·▂▅█▅▄▅●▃▅   #11 of 51*     38%      1
 </pre>
 
-<details><summary>image to video · #10 of 50 · 38% of its score</summary>
+<details><summary>image to video · #11 of 51 · 38% of its score</summary>
 
 Beats [HappyHorse 1.1](happyhorse-1-1.md), [HappyHorse 1.0](happyhorse-1-0.md), [Wan 2.2 I2V Plus](wan-2-2-i2v-plus.md) here, though they rank higher overall.
 
@@ -33,7 +33,7 @@ test                              result  vs the others in its run  difficulty  
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   37.4%  ██●··█·····█ beats 2/4    very hard · avg 28%     41%  typical
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   76.6%  ▂···▂······● beats 5/5    medium · avg 65%        13%  blunt
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   76.6%  ▂···▂······● beats 5/5    easy · avg 65%          14%  blunt
 </pre>
 
 </details>
@@ -46,9 +46,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1   41% ▇▇▇▇▇
 <a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1   38% ▇▇▇▇▇
-<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1   13% ▇▇
+<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1   14% ▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 67.7
+weighted average                                   = 66.9
 </pre>
 
 <sub>Licences: SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

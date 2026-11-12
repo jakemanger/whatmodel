@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 37.2** ±0.9 · #606 of 732 · from 22 benchmark results across 14 sources
+**score 37.1** ±0.9 · #614 of 740 · from 22 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▅█▆▄█▄▂▁▁   #407 of 431     24%      2
+math  ▁▁●▅█▆▄█▅▂▁▁   #413 of 440     24%      2
 </pre>
 
-<details><summary>math · #407 of 431 · 24% of its score</summary>
+<details><summary>math · #413 of 440 · 24% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>          13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/206  medium · avg 49%     17%  sharp · several runs
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>          13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/206  medium · avg 50%     17%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    1.9%  ▆·●·▄▂▂▂▂█▄▆ beats 3/18    medium · avg 48%    7.0%  sharp
 </pre>
 
@@ -39,16 +39,16 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 68%        24%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   16.6%  ▂··▂·▂●▄·███ beats 3/18   medium · avg 61%       4.3%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.3%  typical
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.6%  ▃····▃·▃▃●▅▅ beats 6/10   easy · avg 81%         2.6%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.6%  ▃····▃·▃▃●▅▅ beats 6/10   easy · avg 82%         2.6%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    46.6%  ▂▂··▂·▂··●█▄ beats 4/10   medium · avg 56%       2.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   38.0%  █···▄▄·▄▄●·▄ beats 6/7    medium · avg 51%       2.0%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   81.4%  ▃·▃·····▃●▃█ beats 3/7    easy · avg 87%         1.9%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.782.pdf">BIG-Bench Hard, 27 subsets, zero-…</a>   37.1%  █····█··●··█ beats 2/3    medium · avg 56%       1.8%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.136.pdf">PopQA</a>                                11.3%  ▁▂●▃▃█▂█▆▅▁▆ beats 3/40   hard · avg 31%         1.5%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.782.pdf">BIG-Bench Hard, 27 subsets, zero-…</a>   37.1%  █····█··●··█ beats 2/3    medium · avg 57%       1.8%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.136.pdf">PopQA</a>                                11.3%  ▁▂●▃▃█▂█▆▅▁▆ beats 3/40   hard · avg 31%         1.6%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">HateCheck functional tests, zero-…</a>   77.7%  █·····█·●··█ beats 2/3    easy · avg 84%         1.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   21.6%  ▃··▃·█●·█▃·▃ beats 5/10   hard · avg 29%         1.1%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   91.5%  ▂▂▄··▂▂█●··▂ beats 11/12  easy · avg 90%         1.0%  at its level · noisy
-<a href="https://aclanthology.org/2023.findings-acl.50.pdf">Zero-shot relation extraction, va…</a>   46.6%  █····▄····●▄ beats 4/5    medium · avg 50%       0.9%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-acl.50.pdf">Zero-shot relation extraction, va…</a>   46.6%  █····▄····●▄ beats 4/5    medium · avg 51%       0.9%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   42.8%  ▄·█··██·▄●▄▄ beats 8/10   medium · avg 43%       0.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   30.5%  ●·····▂····▁ beats 8/11   very hard · avg 55%    0.2%  sharp · too hard for it · noisy
 </pre>
@@ -76,7 +76,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-50"></a><a href="https://aclanthology.org/2023.findings-acl.50.pdf">Aligning Instruction Tasks Unlocks Larg…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 37.2
+weighted average                                   = 37.1
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In ([CC BY 4.0](../../licenses/acl-2023-acl-long-136-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-782-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

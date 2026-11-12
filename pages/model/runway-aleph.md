@@ -6,7 +6,7 @@
 
 Runway · released 2025-07 · closed weights
 
-**score 56.3** ±5.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.0** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Runway · released 2025-07 · closed weights
 
 <pre>
 task           vs the others        rank  counts  tests
-video editing  ●··█··▄··█▄█   #10 of 10*     89%      1
+video editing  ●··▂▂·▂··█▂▄   #12 of 12*     91%      1
 </pre>
 
-<details><summary>video editing · #10 of 10 · 89% of its score</summary>
+<details><summary>video editing · #12 of 12 · 91% of its score</summary>
 
 Trails [Kling O1 Pro](kling-o1-pro.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1182.2  ●··█··▄··█▄█ beats 0/9    avg 1117       89%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1181.6  ●··▂▂·▂··█▂▄ beats 0/11   avg 1119       91%  typical
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            11% ▇
-weighted average                        = 56.3
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             9% ▇
+weighted average                        = 56.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

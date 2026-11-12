@@ -23,7 +23,7 @@ coding  █···▄·●·▄··▄   #3 of 6*     81%      1
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    6.3%  ██··█··●·█·█ beats 3/5    medium · avg 59%     81%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    6.3%  ██··█··●·█·█ beats 3/5    medium · avg 60%     81%  sharp · too hard for it
 </pre>
 
 </details>

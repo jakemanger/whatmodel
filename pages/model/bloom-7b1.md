@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 20.6** ±0.7 · #700 of 732 · from 56 benchmark results across 13 sources
+**score 20.6** ±0.7 · #708 of 740 · from 56 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··█·█·█●··█       #2 of 6*    5.1%      1
-math    ▁●▃▅█▆▄█▄▂▁▁   #418 of 431*    5.5%      1
+math    ▁●▃▅█▆▄█▅▂▁▁   #427 of 440*    5.5%      1
 </pre>
 
 <details><summary>coding · #2 of 6 · 5.1% of its score</summary>
@@ -29,7 +29,7 @@ test               result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #418 of 431 · 5.5% of its score</summary>
+<details><summary>math · #427 of 440 · 5.5% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -46,13 +46,13 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Challenge</a>                        33.5%  ▁·▁··▁▁●▂█▆▃ beats 5/26    easy · avg 82%           22%  sharp · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">WinoGrande</a>                           64.6%  ▁····▁··▁▂●▄ beats 11/26   easy · avg 88%          9.1%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                             57.4%  ▁▁·▁▁●▅▄█▅▁▃ beats 4/26    easy · avg 83%          8.8%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                             57.4%  ▁▁·▁▁●▅▄█▅▁▃ beats 4/26    easy · avg 84%          8.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                            62.3%  ▃···▁●▅█▇▃▁▁ beats 5/26    easy · avg 81%          7.8%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                                 72.7%  ▁·▁··▁●▃█▅█▂ beats 3/26    easy · avg 87%          5.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                                62.8%  ▂▃▂●▆▂▅▆█▂▂▂ beats 4/26    easy · avg 88%          5.5%  at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         69.0%  ▃··█▅▃▃●·▃▃▃ beats 8/12    very easy · avg 95%     4.1%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2023-12-23%2002%3A01%3A26.108634.json">TriviaQA</a>                             26.3%  ▁··▁█▃▃●▄▅▄█ beats 12/28   medium · avg 45%        3.8%  too hard for it · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 7/26    very easy · avg 97%     2.9%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 7/26    very easy · avg 98%     2.9%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                           25.2%  ●·▁▁▃·▁▃▅▇▃▄ beats 2/26    easy · avg 77%          2.9%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), last-wo…</a>   57.6%  ▁··▂▁●▁▂▆█▅▃ beats 4/26    very easy · avg 87%     2.7%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2024-02-26%2019%3A43%3A19.008314.json">Natural Questions (closed book)</a>       8.1%  ▁·▁·▁▂▁●·▅▂█ beats 7/28    medium · avg 48%        2.5%  several runs
@@ -60,7 +60,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_reading_comprehension_0-shot.json">CoQA</a>                                 68.8%  ▄····▄▄·▄●·█ beats 4/6     very easy · avg 92%     1.5%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   81.3%  ▄▄·▄·▄··●··█ beats 5/7     very easy · avg 93%     1.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   41.0%  ●█···██···██ beats 0/5     easy · avg 74%          1.1%  blunt · at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.2%  ●····▃▅·██·█ beats 0/13    medium · avg 52%        1.0%  too hard for it
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.2%  ●····▃▅·██·█ beats 0/13    medium · avg 53%        1.0%  too hard for it
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   18.1%  ●▅▃··▅▃·█▃▃▅ beats 0/13    medium · avg 61%        1.0%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_reading_comprehension_0-shot.json">RACE-high</a>                            36.6%  ▄···█··▄●··█ beats 4/6     medium · avg 51%        0.8%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 14/26   hard · avg 56%          0.8%  blunt

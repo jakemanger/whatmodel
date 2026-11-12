@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 49.6** ±1.6 · #381 of 732 · from 7 benchmark results across 2 sources
+**score 49.5** ±1.6 · #385 of 740 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅●▆▄█▄▂▁▁   #329 of 431*     37%      2
+math  ▁▁▃▅●▆▄█▅▂▁▁   #341 of 440*     36%      2
 </pre>
 
-<details><summary>math · #329 of 431 · 37% of its score</summary>
+<details><summary>math · #341 of 440 · 36% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (maker)</a>                       86.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 158/206  very easy · avg 88%     23%  sharp
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (maker)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 56%        14%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (maker)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 57%        14%  at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ test                               result  vs the others in its run    difficult
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (maker)</a>               71.6%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 121/155  medium · avg 72%     20%  sharp · at its level · small run
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (maker)</a>                         72.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 149/214  easy · avg 77%       18%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (maker)</a>    38.4%  ▂▁▂▂▄▃●▃▅█▃▃ beats 35/106   hard · avg 38%       14%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (maker)</a>                         72.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 149/215  easy · avg 77%       18%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (maker)</a>    38.4%  ▂▁▂▂▄▃●▃▅█▃▃ beats 35/106   hard · avg 39%       14%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 72%    6.2%  at its level · noisy
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (maker)</a>                        78.0%  ▅·▅····●▃▅█▅ beats 5/14     medium · avg 73%    4.4%  at its level · noisy
 </pre>
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards …</a>        6   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.6
+weighted average                                   = 49.5
 </pre>
 
 <sub>Licences: InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

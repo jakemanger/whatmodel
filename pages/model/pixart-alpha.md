@@ -6,7 +6,7 @@
 
 PixArt (Huawei Noah's Ark Lab et al.) · released 2023-11 · 0.6B params · openrail++
 
-**score 35.7** ±2.1 · #119 of 144 · from 4 benchmark results across 4 sources
+**score 35.9** ±2.1 · #121 of 146 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #97 of 126     69%      3
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #99 of 128     69%      3
 </pre>
 
-<details><summary>text to image · #97 of 126 · 69% of its score</summary>
+<details><summary>text to image · #99 of 128 · 69% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1052.0  ▃▃··▃·▃·●·▃▃ beats 4/8    avg 1237             34%  sharp
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1052.0  ▃▃··▃·▃·●·▃▃ beats 4/8    avg 1235             34%  sharp
 <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>     37.0%  ▄·▄·●▄▄▄···▄ beats 3/7    easy · avg 66%       26%  at its level
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   47.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 12/22  medium · avg 60%    8.9%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   47.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 12/22  medium · avg 60%    9.0%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1100 mean human alignment score  █▄▄·█·▄●▄▄·▄ beats 8/11   avg 6.286 mean human al…     29%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1100 mean human alignment score  █▄▄·█·▄●▄▄·▄ beats 8/11   avg 6.275 mean human al…     29%  typical
 </pre>
 
 </details>
@@ -48,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   34% ▇▇▇▇
-<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   29% ▇▇▇
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   29% ▇▇▇▇
 <a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   26% ▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1    9% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 35.7
+weighted average                                   = 35.9
 </pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

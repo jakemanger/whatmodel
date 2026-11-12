@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 43.9** ±1.3 · #504 of 732 · from 4 benchmark results across 4 sources
+**score 43.8** ±1.3 · #512 of 740 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▂▁▁   #340 of 431*    4.6%      1
+math  ▁▁▃●█▆▄█▅▂▁▁   #349 of 440*    4.6%      1
 </pre>
 
-<details><summary>math · #340 of 431 · 4.6% of its score</summary>
+<details><summary>math · #349 of 440 · 4.6% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (maker)</a>   56.6%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 33/80  medium · avg 63%    4.6%  at its level · noisy
+<a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (maker)</a>   56.6%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 33/80  medium · avg 64%    4.6%  at its level · noisy
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 24.5%  ▁▁▁▂▂▃●█▆▃▅▃ beats 18/61  medium · avg 38%     58%  at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                             42.0%  ▃▂▅●▃·█▃▅··▂ beats 9/23   medium · avg 54%     26%  at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    9.0%  ▁▁●▆██▁▁·▁▁▁ beats 7/57   hard · avg 15%       11%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 24.5%  ▁▁▁▂▂▃●█▆▃▅▃ beats 18/61  medium · avg 39%     58%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                             42.0%  ▃▂▅●▃·█▃▅··▂ beats 9/23   medium · avg 55%     27%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    9.0%  ▁▁●▆██▁▁·▁▁▁ beats 7/57   hard · avg 16%       10%  sharp · too hard for it
 </pre>
 
 </details>
@@ -48,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   58% ▇▇▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   26% ▇▇▇
-<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1   11% ▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   27% ▇▇▇
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1   10% ▇
 <a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">Mistral AI vendor-reported benchmark sc…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.9
+weighted average                                   = 43.8
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt))</sub>

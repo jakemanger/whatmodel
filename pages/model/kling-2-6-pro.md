@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2025-12 · proprietary
 
-**score 59.3** ±1.6 · #27 of 93 · from 4 benchmark results across 3 sources
+**score 58.1** ±1.6 · #28 of 94 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,30 +14,30 @@ Kuaishou (Kling AI) · released 2025-12 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #21 of 68*     52%      2
-image to video  ▁▂·▂▅█▅▄●▆▃▄   #20 of 50*     47%      2
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #24 of 70*     56%      2
+image to video  ▁▂·▂▅█▅●▅▅▃▅   #22 of 51*     43%      2
 </pre>
 
-<details><summary>text to video · #21 of 68 · 52% of its score</summary>
+<details><summary>text to video · #24 of 70 · 56% of its score</summary>
 
 Trails [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Seedance 1.5 Pro](seedance-1-5-pro.md), [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1216.2  ▂▂▃▆●▆·▆▅▁▂▇ beats 18/41  avg 1147       45%  typical
-<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1572.0  █···██·█··●█ beats 4/5    avg 1470      6.5%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1216.0  ▂▂▃▆●▃·▇▂▁█▃ beats 18/44  avg 1154       49%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1572.0  █···██·█··●█ beats 4/5    avg 1477      6.4%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #20 of 50 · 47% of its score</summary>
+<details><summary>image to video · #22 of 51 · 43% of its score</summary>
 
-Beats [HappyHorse 1.1](happyhorse-1-1.md), [Vidu Q3 Pro](vidu-q3-pro.md), [Wan 2.5 Preview](wan-2-5-preview.md) here, though they rank higher overall. Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
+Beats [HappyHorse 1.1](happyhorse-1-1.md), [Wan 2.5 Preview](wan-2-5-preview.md) here, though they rank higher overall. Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1294.0  ▁▁▁▁▄▇▃●▃▂▄█ beats 18/40  avg 1189       30%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1034.0  ▂··▂▂▆●▆▂▂▆▄ beats 6/19   avg 741        17%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1293.8  ▁▁▁▁▄▇▃●▂▃▅█ beats 18/42  avg 1197       29%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1034.0  ▂··▂▂▆●▆▂▂▆▄ beats 6/19   avg 764        14%  sharp
 </pre>
 
 </details>
@@ -48,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   17% ▇▇
-<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    7% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   14% ▇▇
+<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 59.3
+weighted average                                   = 58.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 5B params · apache-2.0
 
-**score 47.1** ±2.4 · #57 of 93 · from 10 benchmark results across 9 sources
+**score 46.5** ±2.3 · #59 of 94 · from 10 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,34 +14,34 @@ Alibaba · released 2025-07 · 5B params · apache-2.0
 
 <pre>
 task            vs the others       rank  counts  tests
-text to video   ▆▄▃▄●▅█▃▂▂▂▄   #41 of 68     40%      4
-image to video  ▁▂·▂●█▅▄▅▆▃▄   #43 of 50     38%      4
+text to video   ▆▄▃▆●█▇▂▄·▄▅   #44 of 70     40%      4
+image to video  ▁▂·▂●█▅▄▅▅▃▅   #44 of 51     38%      4
 </pre>
 
-<details><summary>text to video · #41 of 68 · 40% of its score</summary>
+<details><summary>text to video · #44 of 70 · 40% of its score</summary>
 
-Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [Cosmos-1.0-Diffusion-7B-Text2World](cosmos-1-0-diffusion-7b-text2world.md), [LTX-2 19B Distilled](ltx-2-19b-distilled.md) here, though they rank lower overall.
+Trails [CogVideoX-5B](cogvideox-5b.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [Cosmos-1.0-Diffusion-7B-Text2World](cosmos-1-0-diffusion-7b-text2world.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   80.8%  ●▄▄··▄▄▄▄▄·▄ beats 0/9    easy · avg 85%     21%  typical
-<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>         63.6%  ●····▄····▄█ beats 0/4    easy · avg 68%     12%  at its level
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   44.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 3/14   hard · avg 44%    7.0%  blunt · at its level
-<a href="https://arxiv.org/html/2607.06173v1#A1.T10">VBench T2V total (MobileWan 480p …</a>   81.3%  no other model yet                             —  not counted yet: no other model in the …
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   80.8%  ●▄▄··▄▄▄▄▄·▄ beats 0/9    very easy · avg 85%     21%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>         63.6%  ●····▄····▄█ beats 0/4    easy · avg 69%          12%  at its level
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   44.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 3/14   hard · avg 45%         7.1%  blunt · at its level
+<a href="https://arxiv.org/html/2607.06173v1#A1.T10">VBench T2V total (MobileWan 480p …</a>   81.3%  no other model yet                                  —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>image to video · #43 of 50 · 38% of its score</summary>
+<details><summary>image to video · #44 of 51 · 38% of its score</summary>
 
 Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   80.4%  ●·█··▄··▄▄▄█ beats 0/8    easy · avg 84%           16%  typical
-<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    8.4%  ▃·●···▃▃█·▃▃ beats 1/8    very hard · avg 9.6%     11%  typical
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    8.4%  ▃·●···▃▃█·▃▃ beats 1/8    very hard · avg 9.9%     11%  typical
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   81.3%  ▃······▅·█●█ beats 7/10   easy · avg 81%          6.6%  blunt
-<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   28.4%  ●·▄····▄···█ beats 1/5    hard · avg 27%          4.5%  blunt · at its level
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   28.4%  ●·▄····▄···█ beats 1/5    hard · avg 28%          4.4%  blunt · at its level
 </pre>
 
 </details>
@@ -51,8 +51,8 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   78.2%  █··●▄▄▄····▄ beats 2/6    easy · avg 77%      8.8%  blunt · at its level
-<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   52.6%  █●▄··▄···▄·█ beats 2/7    medium · avg 57%    5.8%  blunt · at its level
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   65.6%  ▂···●······█ beats 1/5    medium · avg 65%    5.5%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   52.6%  █●▄··▄···▄·█ beats 2/7    medium · avg 58%    5.8%  blunt · at its level
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   65.6%  ▂···●······█ beats 1/5    easy · avg 65%      5.5%  blunt · at its level
 </pre>
 
 </details>
@@ -71,9 +71,9 @@ source                                    results  share of the score
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1    7% ▇
 <a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    6% ▇
 <a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1    5% ▇
-<a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    5% ▇
+<a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    4% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 47.1
+weighted average                                   = 46.5
 </pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

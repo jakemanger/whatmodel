@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 21B params (3B active) · apache-2.0
 
-**score 52.6** ±1.2 · comparison only: no current run option verified · from 21 benchmark results across 3 sources
+**score 52.4** ±1.2 · comparison only: no current run option verified · from 21 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▄▅▄▄▃▁▁   #323 of 354*    3.7%      1
+agent tasks     ▁▁▂●█▄▅▅▄▄▁▁   #326 of 357*    3.7%      1
 coding          ●··········█        #2 of 2     14%      3
 chat &amp; writing  ●··········█       #2 of 2*    2.9%      1
 math            ●··········█        #2 of 2     30%      4
 </pre>
 
-<details><summary>agent tasks · #323 of 354 · 3.7% of its score</summary>
+<details><summary>agent tasks · #326 of 357 · 3.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -58,8 +58,8 @@ test                                result  vs the others in its run   difficult
 <pre>
 test               result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (maker)</a>       93.3%  ▂▂▂▂▃▄▅▇██●▄ beats 189/206  very easy · avg 88%    9.2%  sharp · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (maker)</a>   19.7%  ▁·▁▁▁●▅▆█▇▅▁ beats 10/133   hard · avg 18%         8.5%  sharp · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (maker)</a>   27.9%  ▁▁▁▂▁●▁▅███▃ beats 15/85    hard · avg 29%         8.2%  sharp · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (maker)</a>   19.7%  ▁·▁▁●▃▅▇█▆▃▁ beats 10/134   hard · avg 18%         8.5%  sharp · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (maker)</a>   27.9%  ▁▂·▂▁●▂▄█▅▆▁ beats 15/86    hard · avg 29%         8.2%  sharp · at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (maker)</a>    87.2%  ▁▃▂▃▄●▅▇█▄▂▁ beats 31/85    very easy · avg 87%    4.4%  small run
 </pre>
 
@@ -70,15 +70,15 @@ test               result  vs the others in its run    difficulty           coun
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (maker)</a>               83.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 141/155  easy · avg 78%      8.2%  sharp · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (maker)</a>                         76.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 155/214  medium · avg 72%    7.0%  at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (maker)</a>                     66.0%  ▁▁·▁▁▁▃▂●▅█▁ beats 76/188   medium · avg 59%    5.4%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (maker)</a>                         76.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 155/215  medium · avg 72%    7.1%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (maker)</a>                     66.0%  ▁▁·▁▁▁▃▂●▅█▁ beats 76/189   medium · avg 59%    5.5%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (maker)</a>                       85.4%  ▁···▁▁▂▁▂▂●█ beats 15/33    easy · avg 79%      5.1%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (maker)</a>                     24.2%  ▄▄▄▆█▆█●█·▂█ beats 23/32    hard · avg 17%      4.3%  small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (maker)</a>                        84.8%  ▅·▅····█▃●█▅ beats 9/14     easy · avg 79%      4.1%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (maker)</a>                        84.8%  ▅·▅····█▃●█▅ beats 9/14     easy · avg 79%      4.0%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (maker)</a>              48.9%  ●··▄▄▄··▄··█ beats 0/6      medium · avg 52%    3.1%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspecified…</a>   48.0%  ●··█····█··█ beats 0/3      medium · avg 52%    2.9%  at its level · small run
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   83.0%  ▃·▁▁▂▁▂▅█●▄▁ beats 79/100   medium · avg 67%    2.6%  sharp · at its level · noisy
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   61.0%  ▁▁▁▁▁●▃▄█▄▁▂ beats 6/41     medium · avg 61%    2.4%  at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   83.0%  ▃·▁▁▂▁▂▅█●▄▁ beats 79/100   medium · avg 67%    2.7%  sharp · at its level · noisy
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   61.0%  ▁▁▁▁▁●▃▄█▄▁▂ beats 6/41     medium · avg 62%    2.4%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (maker)</a>                         67.7%  █·██······●█ beats 3/4      medium · avg 57%    1.7%  blunt · at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.7%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 90/146   easy · avg 82%      1.5%  noisy
 </pre>
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    4% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 52.6
+weighted average                                   = 52.4
 </pre>
 
 <sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6B params · apache-2.0
 
-**score 53.4** ±3.5 · #71 of 144 · from 3 benchmark results across 3 sources
+**score 53.0** ±3.4 · #73 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▂▂▁▁   #59 of 126     95%      7
+text to image  ▂▅▅▃▄●█▂▂▁▁▁   #61 of 128     95%      7
 </pre>
 
-<details><summary>text to image · #59 of 126 · 95% of its score</summary>
+<details><summary>text to image · #61 of 128 · 95% of its score</summary>
 
 Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md), [LLaDA-Image-Turbo](llada-image-turbo.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 82%       69%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 83%       69%  typical
 <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>   65.0%  ▄·▆▂▆█▄▆▂●·▄ beats 20/22  medium · avg 60%     23%  at its level
-<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.3%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.2%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">GenEval (maker)</a>                      87.0%  ▇▃▅▇▁▄▅▃█▃●▅ beats 35/39  easy · avg 79%         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">DPG-Bench (maker)</a>                    86.8%  ▄·▂·▂▆█●▂▄▂▂ beats 12/17                         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy (maker)</a>        86.6%  ▄▄▄●▄▄·▄···▄ beats 3/8                           —  not counted yet: no other model in the …
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   23% ▇▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (submitted / maker-repo…</a>        1    3% ▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 53.4
+weighted average                                   = 53.0
 </pre>
 
 <sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt))</sub>

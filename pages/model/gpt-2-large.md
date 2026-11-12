@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-08 · 0.774B params · mit
 
-**score -3.0** ±1.3 · #727 of 732 · from 35 benchmark results across 9 sources
+**score -3.0** ±1.3 · #735 of 740 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▂▁▁   #431 of 431*    0.4%      1
+math  ●▁▃▅█▆▄█▅▂▁▁   #440 of 440*    0.4%      1
 </pre>
 
-<details><summary>math · #431 of 431 · 0.4% of its score</summary>
+<details><summary>math · #440 of 440 · 0.4% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-2 Medium (355M)](gpt-2-medium.md), [GPT-Neo 125M](gpt-neo-125m.md) here, though they rank lower overall.
 
@@ -43,18 +43,18 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.4%  █···█●·█···█ beats 2/4     easy · avg 86%         5.5%  too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   33.8%  ▃···▃▃·●·▃·█ beats 3/7     easy · avg 81%         3.8%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   36.4%  ●▂··▂·█···▂▂ beats 0/8     easy · avg 79%         2.8%  blunt · at its level
-<a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           42.0%  ▁·▁█●▄▅▁▂▃▇▁ beats 17/59   medium · avg 71%       2.3%  blunt
+<a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           42.0%  ▁·▁█●▄▅▁▂▃▇▁ beats 17/59   medium · avg 72%       2.3%  blunt
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">PIQA</a>                                 70.3%  ▁▁▁▂●▃▅█▅▃▁▁ beats 20/123  easy · avg 89%         1.8%  blunt · at its level
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">BoolQ</a>                                61.2%  ▁····▁▂●▆▅▆▄ beats 19/103  easy · avg 91%         1.7%  noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   11.3%  ▄···█···█●·▄ beats 5/7     hard · avg 22%         0.5%  blunt · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 0.0%  ●·▆▂▄▂▂····▂ beats 0/12    easy · avg 70%         0.4%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                         0.2%  ●····▁·····▁ beats 0/9     easy · avg 75%         0.4%  sharp · too hard for it · several runs
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                         0.2%  ●····▁·····▁ beats 0/9     easy · avg 76%         0.4%  sharp · too hard for it · several runs
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           35.1%  ●········▁▃▁ beats 0/9     hard · avg 62%         0.4%  too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 25/276  medium · avg 72%       0.2%  too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.5%  ▁▁●▁▁▁▁▂▄█▄▃ beats 3/146   easy · avg 82%         0.2%  too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.0%  ●·▁▁▂▁▂▅█▇▄▁ beats 2/100   medium · avg 67%       0.0%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.2%  ●·······▁··▁ beats 4/7     very hard · avg 52%    0.0%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                              0.4%  ●·····▁·▁··▁ beats 0/9     medium · avg 53%       0.0%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                              0.4%  ●·····▁·▁··▁ beats 0/9     medium · avg 54%       0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="acl-2022-acl-long-565"></a><a href="https://aclanthology.org/2022.acl-long.565.pdf">Coherence boosting: When your pretraine…</a>        9   34% ▇▇▇▇
 <a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   26% ▇▇▇
 <a name="acl-2023-findings-emnlp-180"></a><a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">CASE: Commonsense-Augmented Score with …</a>        6   25% ▇▇▇
-<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    6% ▇
+<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    5% ▇
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3    4% ▇
 <a name="acl-2023-findings-emnlp-152"></a><a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">Generative Calibration for In-context L…</a>        1    3% ▇
 <a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5    2% ▇

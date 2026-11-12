@@ -6,7 +6,7 @@
 
 Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
-**score 24.1** ±5.4 · #141 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.1** ±5.3 · #143 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ●▁·▃▂▃█▅▄▅▂▁   #61 of 62*     88%      1
+image to image / edit…  ●▁·▃▂▃█▆▃▅▂▂   #63 of 64*     88%      1
 </pre>
 
-<details><summary>image to image / editing · #61 of 62 · 88% of its score</summary>
+<details><summary>image to image / editing · #63 of 64 · 88% of its score</summary>
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why

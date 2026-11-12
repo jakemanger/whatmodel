@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · flux-dev-nc
 
-**score 44.1** ±1.4 · #95 of 144 · from 11 benchmark results across 11 sources
+**score 43.9** ±1.3 · #97 of 146 · from 11 benchmark results across 11 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅●▄▄█▃▂▂▁▁   #80 of 126     90%      9
+text to image  ▂▅▅●▄▄█▂▂▁▁▁   #82 of 128     91%      9
 </pre>
 
-<details><summary>text to image · #80 of 126 · 90% of its score</summary>
+<details><summary>text to image · #82 of 128 · 91% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [UNO](uno.md) here, though they rank lower overall.
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                 969.4  ▁●▃▃▆█▃▂▂▂▁▁ beats 4/75   avg 1027             28%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                 969.4  ▁●▃▃▆█▃▂▂▂▁▁ beats 4/77   avg 1030             30%  typical
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>             54.9%  ▅▂●▂▂▂····▂▂ beats 6/13   easy · avg 69%       16%  at its level
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     76.2%  ●····▄█▄▄█▄█ beats 0/10   easy · avg 82%       15%  typical
-<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    72.6%  ▂●····▄▄▄··▂ beats 4/11   easy · avg 79%       13%  at its level
-<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    19.1%  ▃··▃·█▃▃●··▃ beats 7/9    hard · avg 24%      5.4%  typical
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>    17.6%  ●▆·▂▂····▂▂█ beats 1/13   hard · avg 20%      4.7%  sharp · noisy
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    18.2%  ▁●▂█▃▁▂▃·▁·▁ beats 1/22   hard · avg 28%      4.3%  sharp · noisy
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>    50.0%  ▄·▆▂▆█●▆▂▄·▄ beats 14/22  medium · avg 60%    3.9%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  10.4300  ▃·····▃··▃·● beats 4/5    avg 10.058          0.6%  sharp · noisy
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     76.2%  ●····▄█▄▄█▄█ beats 0/10   easy · avg 83%       14%  typical
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    72.6%  ▂●····▄▄▄··▂ beats 4/11   easy · avg 80%       13%  at its level
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    19.1%  ▃··▃·█▃▃●··▃ beats 7/9    hard · avg 24%      5.2%  typical
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>    17.6%  ●▆·▂▂····▂▂█ beats 1/13   hard · avg 21%      4.5%  sharp · noisy
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    18.2%  ▁●▂█▃▁▂▃·▁·▁ beats 1/22   hard · avg 29%      4.3%  sharp · noisy
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>    50.0%  ▄·▆▂▆█●▆▂▄·▄ beats 14/22  medium · avg 60%    3.8%  at its level
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  10.4300  ▃·····▃··▃·● beats 4/5    avg 10.064          0.6%  sharp · noisy
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ test                                 result  vs the others in its run  difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    3.9%  ▃·█●▃·▅▃···▃ beats 4/10   very hard · avg 7.6%    8.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    3.9%  ▃·█●▃·▅▃···▃ beats 4/10   very hard · avg 8.0%    7.9%  sharp · too hard for it
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   33.9%  ▅·▃·▃··▃·●▃▃ beats 5/9    hard · avg 28%          0.8%  blunt
 </pre>
 
@@ -54,19 +54,19 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   28% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   16% ▇▇
-<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   15% ▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   14% ▇▇
 <a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   13% ▇▇
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1    8% ▇
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1    5% ▇
-<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1    5% ▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1    4% ▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    4% ▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1    4% ▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.1
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 61.2** ±1.5 · #193 of 732 · from 12 benchmark results across 4 sources
+**score 60.9** ±1.5 · #201 of 740 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,34 +16,34 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #163 of 402*     23%      1
-vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #95 of 153     68%      8
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #164 of 404*     22%      1
+vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #96 of 154     69%      8
 </pre>
 
-<details><summary>chat &amp; writing · #163 of 402 · 23% of its score</summary>
+<details><summary>chat &amp; writing · #164 of 404 · 22% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1352.1  ▁▁▁▂▃▃▃▆●▇█▃ beats 196/385  avg 1260       23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1352.0  ▁▁▁▂▃▂▃▆●▇█▃ beats 197/387  avg 1261       22%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #95 of 153 · 68% of its score</summary>
+<details><summary>vision &amp; documents · #96 of 154 · 69% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md), [Apriel 1.6 15B Thinker](apriel-1-6-15b-thinker.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>        63.0%  ▄·····▄▄·●·█ beats 3/5     hard · avg 31%       16%  at its level · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1153.1  ▁▁▂▂▂▂▃●▅▅█▇ beats 49/152  avg 1061             15%  blunt
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>        63.0%  ▄·····▄▄·●·█ beats 3/5     hard · avg 32%       16%  at its level · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1152.8  ▁▁▂▂▂▂▃●▅▅█▇ beats 49/152  avg 1063             16%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.8%  ▁·▁·▃▃▁▇▃●·▄ beats 14/22   hard · avg 27%       12%  blunt · at its level
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (maker)</a>                   75.4%  ▁····▁▁▃█▆●▅ beats 39/53   medium · avg 57%    6.5%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (maker)</a>                     65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.2%  at its level · small run
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 67%      5.1%  noisy
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (maker)</a>                       75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 21/35   medium · avg 62%    4.8%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (maker)</a>                   75.4%  ▁····▁▁▃█▆●▅ beats 39/53   medium · avg 58%    6.5%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (maker)</a>                     65.2%  ▁▂▁▂▅▃▃●▂█▄▃ beats 24/55   medium · avg 46%    6.2%  at its level · small run
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 67%      5.3%  noisy
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (maker)</a>                       75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 21/35   medium · avg 63%    4.8%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (maker)</a>                     86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 20/37   easy · avg 82%      1.5%  blunt · small run
 </pre>
 
@@ -53,8 +53,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (maker)</a>        53.8%  ▇·●▅▅▄▄··▃▁▁ beats 6/28   hard · avg 48%      4.3%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (maker)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 10/24  medium · avg 40%    3.9%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (maker)</a>        53.8%  ▇·●▅▅▄▄··▃▁▁ beats 6/28   hard · avg 48%      4.2%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (maker)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 10/24  medium · avg 41%    3.9%  at its level · small run
 </pre>
 
 </details>
@@ -65,12 +65,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   38% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   38% ▇▇▇▇▇
 <a name="glm-v-github-bench-image"></a><a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">Z.ai GLM-V GitHub repository benchmark …</a>        7   35% ▇▇▇▇
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        2   14% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.2
+weighted average                                   = 60.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

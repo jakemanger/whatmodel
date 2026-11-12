@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · closed weights
 
-**score 55.5** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 55.2** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆●▄▅▄▄▃▁▁   #246 of 354*    3.2%      1
-coding          ▃●······▃·▃▃       #4 of 7*    7.9%      1
-chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #265 of 474*     17%      1
-math            ▁▁▃▆█●▅█▃▁▁▁   #236 of 530*     45%      2
+agent tasks     ▁▁▂▆●▄▅▅▄▄▁▁   #249 of 357*    3.2%      1
+coding          ▃●······▃·▃▃       #4 of 7*    7.8%      1
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #267 of 476*     17%      1
+math            ▁▂▃▆█●▅▇▄▁▁▁   #249 of 540*     45%      2
 </pre>
 
-<details><summary>agent tasks · #246 of 354 · 3.2% of its score</summary>
+<details><summary>agent tasks · #249 of 357 · 3.2% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,34 +33,34 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #4 of 7 · 7.9% of its score</summary>
+<details><summary>coding · #4 of 7 · 7.8% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.4%  ▄█●······▄·▄ beats 3/5    medium · avg 50%    7.9%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.4%  ▄█●······▄·▄ beats 3/5    medium · avg 50%    7.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #265 of 474 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #267 of 476 · 17% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1304.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 132/385  avg 1260       17%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1304.8  ▁▁▁▂▃▂▃●▆▇█▃ beats 132/387  avg 1261       17%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #236 of 530 · 45% of its score</summary>
+<details><summary>math · #249 of 540 · 45% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 48%     26%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   73.6%  █●·····▃···▃ beats 3/5    medium · avg 60%     19%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 49%     26%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   73.6%  █●·····▃···▃ beats 3/5    medium · avg 61%     19%  sharp · at its level
 </pre>
 
 </details>
@@ -69,7 +69,7 @@ test               result  vs the others in its run  difficulty        counts  w
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   70.8%  █·█·█●█····█ beats 3/5    medium · avg 52%     26%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   70.8%  █·█·█●█····█ beats 3/5    medium · avg 53%     26%  sharp · at its level
 </pre>
 
 </details>
@@ -80,11 +80,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   79% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   17% ▇▇
+<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   79% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   17% ▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                       1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.5
+weighted average                                   = 55.2
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

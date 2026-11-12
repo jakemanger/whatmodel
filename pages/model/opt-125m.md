@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 0.125B params · opt-175b-license-noncommercial
 
-**score -3.2** ±1.2 · #728 of 732 · from 31 benchmark results across 7 sources
+**score -3.1** ±1.2 · #736 of 740 · from 31 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▅█▆▄█▄▂▁▁   #396 of 431*    1.1%      1
+math  ▁▁●▅█▆▄█▅▂▁▁   #405 of 440*    1.1%      1
 </pre>
 
-<details><summary>math · #396 of 431 · 1.1% of its score</summary>
+<details><summary>math · #405 of 440 · 1.1% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     60.0%  ●▂▄▂·▂·▆·▂█▂ beats 0/14    easy · avg 89%         5.1%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 66.0%  ▁·▁▁▁●▅█▆▂▁▁ beats 8/67    very easy · avg 96%    4.2%  at its level
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        18.9%  ●··▁·▁▁·▁▂▁▂ beats 2/19    easy · avg 81%         4.0%  sharp · too hard for it · several runs
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">HellaSwag</a>                            29.2%  ●·······▄·█▄ beats 1/5     easy · avg 82%         3.5%  too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">HellaSwag</a>                            29.2%  ●·······▄·█▄ beats 1/5     easy · avg 83%         3.5%  too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   50.2%  ●····▁▁·▁·▃█ beats 0/11    hard · avg 63%         0.6%  too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             37.1%  ●·····▅█▅▆▆█ beats 0/24    medium · avg 73%       0.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   24.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 16/276  medium · avg 72%       0.2%  too hard for it · noisy
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = -3.2
+weighted average                                   = -3.1
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

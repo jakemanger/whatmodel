@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · proprietary
 
-**score 58.4** ±5.3 · #30 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.7** ±5.3 · #30 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,14 +14,16 @@ Alibaba · released 2025-01 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂▅█●▄▅▆▃▄   #25 of 50*     88%      1
+image to video  ▁▂·▂▅█●▄▅▅▃▅   #26 of 51*     88%      1
 </pre>
 
-<details><summary>image to video · #25 of 50 · 88% of its score</summary>
+<details><summary>image to video · #26 of 51 · 88% of its score</summary>
+
+Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   15.7%  ▃·▃···●▃█·▃▃ beats 2/8    very hard · avg 9.6%     88%  typical
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   15.7%  ▃·▃···●▃█·▃▃ beats 2/8    very hard · avg 9.9%     88%  typical
 </pre>
 
 </details>
@@ -34,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       12% ▇
-weighted average                                   = 58.4
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt))</sub>

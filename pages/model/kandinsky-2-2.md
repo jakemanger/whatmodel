@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.7** ±4.6 · #115 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 36.7** ±4.6 · #117 of 146 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,11 +15,11 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <sub>● marks Kandinsky 2.2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #99 of 126*     91%      2
+task           vs the others          rank  counts  tests
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #101 of 128*     91%      2
 </pre>
 
-<details><summary>text to image · #99 of 126 · 91% of its score</summary>
+<details><summary>text to image · #101 of 128 · 91% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
 

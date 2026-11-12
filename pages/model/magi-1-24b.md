@@ -6,7 +6,7 @@
 
 Sand AI · released 2025-04 · 24B params · apache-2.0
 
-**score 48.3** ±4.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.8** ±4.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Sand AI · released 2025-04 · 24B params · apache-2.0
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂●█▄▃▃▄▂▂   #54 of 74*     92%      2
+image to video  ▁▁▂▂●▇▅▃▃▃▃▃   #57 of 76*     92%      2
 </pre>
 
-<details><summary>image to video · #54 of 74 · 92% of its score</summary>
+<details><summary>image to video · #57 of 76 · 92% of its score</summary>
 
-Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
+Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   988.9  ▄······█●··█ beats 3/6    avg 1002           69%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   988.9  ▄······█●··█ beats 3/6    avg 1008           69%  typical
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   79.4%  ▃······▅·●▅█ beats 3/10   easy · avg 81%     23%  blunt
 </pre>
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 48.3
+weighted average                                   = 47.8
 </pre>
 
 <sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Perplexity · closed weights
 
-**score 61.0** ±4.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.8** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task        vs the others         rank  counts  tests
-web search  ▂▁▂●▅█▄▄▁▂▁▁   #81 of 100*     89%      1
+web search  ▂▁▂●▅█▄▄▁▂▁▁   #82 of 101*     88%      1
 </pre>
 
-<details><summary>web search · #81 of 100 · 89% of its score</summary>
+<details><summary>web search · #82 of 101 · 88% of its score</summary>
 
 Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1138.5  ▁·▁●▂▂▂█▆▃▂▂ beats 2/36   avg 1069       89%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1138.5  ▁·▁●▂▂▁█▅▃▃▂ beats 2/38   avg 1081       88%  blunt
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/search_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            11% ▇
-weighted average                        = 61.0
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/search_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            12% ▇
+weighted average                        = 59.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

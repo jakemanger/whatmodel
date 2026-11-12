@@ -6,7 +6,7 @@
 
 PixVerse · released 2025-12 · closed weights
 
-**score 51.6** ±10.0 · #49 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±9.9 · #49 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ PixVerse · released 2025-12 · closed weights
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄▆●█▃▂▂▂▄   #31 of 68*     57%      1
+text to video  ▆▄▃▆▆●▇▂▄·▄▅   #33 of 70*     58%      1
 </pre>
 
-<details><summary>text to video · #31 of 68 · 57% of its score</summary>
+<details><summary>text to video · #33 of 70 · 58% of its score</summary>
 
-Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall.
+Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   85.5%  ▂··▂··●▄▂··▆ beats 3/11   easy · avg 84%     57%  blunt
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   85.5%  ▂··▂··●▄▂··▆ beats 3/11   easy · avg 85%     58%  blunt
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1   57% ▇▇▇▇▇▇▇
-prior: pull toward the middle                       43% ▇▇▇▇▇
-weighted average                                   = 51.6
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1   58% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       42% ▇▇▇▇▇
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

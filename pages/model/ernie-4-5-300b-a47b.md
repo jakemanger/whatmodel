@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 300B params (47B active) · apache-2.0
 
-**score 60.1** ±1.3 · #200 of 732 · from 18 benchmark results across 1 source · † no independently run results verified
+**score 59.9** ±1.3 · #207 of 740 · from 18 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -45,8 +45,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test               result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (maker)</a>   35.1%  ▁·▁▁▁▂●▆█▇▅▁ beats 22/133   hard · avg 18%          11%  sharp · at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (maker)</a>   54.8%  ▁▁▁▂▁▃▁●███▃ beats 25/85    hard · avg 29%          10%  sharp · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (maker)</a>   35.1%  ▁·▁▁▁▃●▇█▆▃▁ beats 22/134   hard · avg 18%          11%  sharp · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (maker)</a>   54.8%  ▁▂·▂▁▂▂●█▅▆▁ beats 25/86    hard · avg 29%          10%  sharp · at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (maker)</a>       96.6%  ▂▂▂▂▃▄▅▇██▆● beats 205/206  very easy · avg 88%    8.4%  sharp · maxed out · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (maker)</a>    96.4%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 62/85    very easy · avg 87%    4.0%  maxed out · small run
 </pre>
@@ -57,15 +57,15 @@ test               result  vs the others in its run    difficulty           coun
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (maker)</a>               94.3%  ▁▁▁▁▂▄▅▆█▃▃● beats 155/155  easy · avg 78%      8.0%  sharp · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (maker)</a>                         86.5%  ▁▁▁▁▁▂▂▅██▆● beats 197/214  medium · avg 72%    7.2%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (maker)</a>               94.3%  ▁▁▁▁▂▄▅▆█▃▃● beats 155/155  easy · avg 78%      8.1%  sharp · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (maker)</a>                         86.5%  ▁▁▁▁▁▂▂▅██▆● beats 197/215  medium · avg 72%    7.3%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (maker)</a>                     45.9%  ▄▄▄▆█▆███·●█ beats 28/32    hard · avg 17%      6.0%  at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (maker)</a>                     78.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 117/188  medium · avg 59%    5.9%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (maker)</a>                     78.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 117/189  medium · avg 59%    5.9%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (maker)</a>                       90.6%  ▁···▁▁▂▁▂▂▃● beats 26/33    easy · avg 79%      5.1%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (maker)</a>                        90.2%  ▅·▅····█▃▅█● beats 14/14    easy · avg 79%      4.2%  small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (maker)</a>              77.1%  ▄··▄▄▄··●··█ beats 4/6      medium · avg 52%    3.5%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (maker)</a>              77.1%  ▄··▄▄▄··●··█ beats 4/6      medium · avg 52%    3.4%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspecified…</a>   69.8%  █··●····█··█ beats 1/3      medium · avg 52%    3.3%  at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   76.6%  ▁▁▁▁▁▁▃▄●▄▁▂ beats 23/41    medium · avg 61%    2.6%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   76.6%  ▁▁▁▁▁▁▃▄●▄▁▂ beats 23/41    medium · avg 62%    2.6%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (maker)</a>                         69.9%  █·██······█● beats 4/4      medium · avg 57%    2.0%  blunt · at its level · small run
 </pre>
 
@@ -79,7 +79,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-ernie-45-posttrained-final"></a><a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A47B benchm…</a>       18   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.1
+weighted average                                   = 59.9
 </pre>
 
 <sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt))</sub>

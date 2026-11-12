@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 72.9** ±1.1 · #51 of 732 · from 9 benchmark results across 3 sources
+**score 72.1** ±1.0 · #58 of 740 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,75 +16,76 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅▅●▄▂▁    #61 of 313     47%      4
-coding              ▁▁▁▃▅▇█▇▅●▃▁   #46 of 469*     23%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇▇●   #11 of 402*     13%      1
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●   #10 of 153*    8.7%      1
-web search          ●··········█      #2 of 2*    2.9%      1
+agent tasks         ▁▁▃▆█▅▅▅●▅▂▁    #64 of 316     42%      4
+coding              ▁▁▁▃▆▇█▆▆●▃▁   #49 of 472*     18%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▇▇▇●   #11 of 404*     10%      1
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●    #9 of 154*    7.1%      1
+web search          ●··········█      #2 of 2*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #61 of 313 · 47% of its score</summary>
+<details><summary>agent tasks · #64 of 316 · 42% of its score</summary>
 
-Beats [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Claude Opus 4.5](claude-opus-4-5.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
+Beats [Muse Spark 1.1](muse-spark-1-1.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Claude Opus 4.5](claude-opus-4-5.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0754 IPS  ▁▁▁●▃▂█▁▂▂▁▁ beats 9/59   avg -0.379 IPS       33%  sharp
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (maker)</a>                82.9%  ▁·▁·▁▁▄▃▆█●█ beats 48/63  hard · avg 26%      6.4%  sharp · small run
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (maker)</a>                          61.6%  ●·█····█···█ beats 0/3    hard · avg 25%      4.3%  at its level
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>                      85.9%  ▄·▄▄···▄●··█ beats 4/6    medium · avg 54%    2.9%  small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0802 IPS  ▁▁▁▁●▄█▄▂▁▁▁ beats 7/61   avg -0.395 IPS       31%  sharp
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (maker)</a>                82.9%  ▁·▁·▁▁▄▃▅█●█ beats 51/68  hard · avg 27%      5.2%  sharp · small run
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (maker)</a>                          61.6%  ●·█····█···█ beats 0/3    hard · avg 26%      3.4%  at its level
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>                      85.9%  ▃·▃▃···▃●··█ beats 4/7    medium · avg 55%    2.3%  small run
 </pre>
 
 </details>
 
-<details><summary>coding · #46 of 469 · 23% of its score</summary>
+<details><summary>coding · #49 of 472 · 18% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1533.7  ▁▁▃▂▅█▃●▅▅▁▂ beats 82/129  avg 981        23%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1533.5  ▁▂▄▃▇█▅●█▅▂▁ beats 82/133  avg 990        18%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #11 of 402 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #11 of 404 · 10% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1492.2  ▁▁▁▂▃▃▃▆▆▇█● beats 375/385  avg 1260       13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1493.5  ▁▁▁▂▃▂▃▆▆▇█● beats 377/387  avg 1261       10%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #10 of 153 · 8.7% of its score</summary>
+<details><summary>vision &amp; documents · #9 of 154 · 7.1% of its score</summary>
 
-Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall.
+Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1292.7  ▁▁▂▂▂▂▃▄▅▅█● beats 144/152  avg 1061      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1293.5  ▁▁▂▂▂▂▃▅▅▅█● beats 145/152  avg 1063      7.1%  blunt
 </pre>
 
 </details>
 
-<details><summary>web search · #2 of 2 · 2.9% of its score</summary>
+<details><summary>web search · #2 of 2 · 2.3% of its score</summary>
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>   85.9%  ▄·▄▄···▄●··█ beats 4/6    medium · avg 54%    2.9%  small run
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>   85.9%  ▃·▃▃···▃●··█ beats 4/7    medium · avg 55%    2.3%  small run
 </pre>
 
 </details>
 
-<details><summary>other tests (2)</summary>
+<details><summary>other tests (3)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 67/81  very hard · avg 8.0%    5.1%  at its level
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">AutomationBench public set (Zapie…</a>   38.2%  ●······▄█··█ beats 1/6    very hard · avg 13%     2.2%  at its level · small run
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                27.0%  █▁▁▁▁▂▄●▃▃▂▁ beats 101/157  very hard · avg 5.6%     16%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.3%  ▁▂▂▂▅█●▃▂··▁ beats 73/91    very hard · avg 7.2%    4.7%  at its level
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">AutomationBench public set (Zapie…</a>   38.2%  ●······▄█··█ beats 1/6      very hard · avg 13%     1.8%  at its level · small run
 </pre>
 
 </details>
@@ -95,11 +96,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   79% ▇▇▇▇▇▇▇▇▇
-<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Meta vendor-reported benchmark scores f…</a>        4   16% ▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                                        1    5% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 72.9
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   67% ▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                                        2   20% ▇▇
+<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Meta vendor-reported benchmark scores f…</a>        4   13% ▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 72.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

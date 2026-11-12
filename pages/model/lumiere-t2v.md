@@ -6,7 +6,7 @@
 
 Google · released 2024-01 · proprietary
 
-**score 26.9** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.1** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2024-01 · proprietary
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ●▅▄▆█▆▇▂▃▃▂▄   #86 of 94*     94%      2
+text to video  ●▅▃█▆▇▆▂▅▁▄▃   #89 of 97*     94%      2
 </pre>
 
-<details><summary>text to video · #86 of 94 · 94% of its score</summary>
+<details><summary>text to video · #89 of 97 · 94% of its score</summary>
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        9.0%  ▄●▄·▄▄█····▄ beats 1/7    medium · avg 48%     66%  sharp
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>   33.0%  ▅·●▅··▃█···▃ beats 2/9    medium · avg 56%     28%  at its level
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        9.0%  ▄●▄·▄▄█····▄ beats 1/7    medium · avg 48%     65%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>   33.0%  ▅·●▅··▃█···▃ beats 2/9    medium · avg 56%     29%  at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 26.9
+weighted average                                   = 27.1
 </pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt))</sub>

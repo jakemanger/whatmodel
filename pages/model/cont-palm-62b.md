@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 43.0** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † no independently run results verified
+**score 42.9** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █·█······●·█       #2 of 4*     14%      2
-math    ▁▁▃▆█●▅█▃▁▁▁   #299 of 530*     23%      2
+math    ▁▂▃▆█●▅▇▄▁▁▁   #301 of 540*     23%      2
 </pre>
 
 <details><summary>coding · #2 of 4 · 14% of its score</summary>
@@ -30,14 +30,14 @@ test               result  vs the others in its run   difficulty        counts  
 
 </details>
 
-<details><summary>math · #299 of 530 · 23% of its score</summary>
+<details><summary>math · #301 of 540 · 23% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 48%     13%  sharp · at its level
-<a href="https://arxiv.org/html/2204.02311v5">GSM8K (maker)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 84/206  easy · avg 69%       10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">GSM8K (maker)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 84/206  easy · avg 70%       10%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   45.7%  ▂··▂·▂▄▄·●██ beats 10/18    medium · avg 61%    5.7%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     71.8%  ▁▁▂▂▄▄▃▆▅█●▂ beats 71/80    easy · avg 81%      4.4%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.8%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 45/68    hard · avg 32%      4.4%  typical
-<a href="https://arxiv.org/html/2204.02311v5">WinoGrande (maker)</a>                   77.0%  ▁▁▁▁▂▁▁▅▇█●▁ beats 118/131  easy · avg 85%      4.3%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">WinoGrande (maker)</a>                   77.0%  ▁▁▁▁▂▁▁▅▇█●▁ beats 118/131  easy · avg 86%      4.3%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (maker)</a>                        83.9%  ▁····▁▂█▆▅●▄ beats 87/103   easy · avg 89%      3.2%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (maker)</a>                    80.6%  ▁▁▁▂▂▂▄▆█●▄▂ beats 112/135  easy · avg 88%      2.9%  typical
 <a href="https://arxiv.org/html/2204.02311v5">LAMBADA (OpenAI version), last-wo…</a>   76.3%  ▁·····▁▁▃▃█● beats 81/86    easy · avg 85%      1.3%  blunt
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="paper-2204.02311v5"></a><a href="https://arxiv.org/html/2204.02311v5">PaLM: Scaling Language Modeling with Pa…</a>       11   52% ▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 43.0
+weighted average                                   = 42.9
 </pre>
 
 <sub>Licences: PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>

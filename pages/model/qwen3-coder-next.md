@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 
-**score 66.8** ±1.7 · #115 of 732 · from 5 benchmark results across 2 sources
+**score 66.4** ±1.7 · #123 of 740 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,43 +17,43 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task         vs the others            rank  counts  tests
 agent tasks                 not ranked yet       —      4
-coding       ▁▁▁▃▅▇█●▅▄▃▁     #179 of 469*    8.9%      4
-math         ▁▁▃▅█▆▄█●▂▁▁      #65 of 431*     16%      1
+coding       ▁▁▁▃▆▇█●▆▃▃▁     #181 of 472*    9.0%      4
+math         ▁▁▃▅█▆▄█●▂▁▁      #70 of 440*     16%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (maker)</a>           70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 83/138  hard · avg 19%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (maker)</a>       62.8%  ▁··▁▃▁▅●█▂▂▁ beats 24/65   hard · avg 18%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▂·▁▁▁▁▂▃●▇▂▁ beats 22/58   very hard · avg 3.9%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">Terminal-Bench 2.0 (maker)</a>           36.2%  ▂▂▅▅●███▆▂▃▃ beats 10/36   very hard · avg 10%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (maker)</a>           70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 83/140  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (maker)</a>       62.8%  ▁··▂▂▃●█▃▂▁▁ beats 24/69   hard · avg 17%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▁·▁▁▁▁▁●█▁▁▁ beats 22/64   very hard · avg 3.9%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">Terminal-Bench 2.0 (maker)</a>           36.2%  ▁▁▄▄●█▇█▅▁▃▃ beats 10/38   very hard · avg 10%        —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #179 of 469 · 8.9% of its score</summary>
+<details><summary>coding · #181 of 472 · 9.0% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, Insp…</a>   91.5%  ▄·▄·█·●·█·▄▄ beats 5/9     easy · avg 77%          8.9%  sharp · maxed out
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (maker)</a>           70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 83/138  hard · avg 19%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (maker)</a>       62.8%  ▁··▁▃▁▅●█▂▂▁ beats 24/65   hard · avg 18%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▂·▁▁▁▁▂▃●▇▂▁ beats 22/58   very hard · avg 3.9%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, Insp…</a>   91.5%  ▄·▄·█·●·█·▄▄ beats 5/9     easy · avg 77%          9.0%  sharp · maxed out
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (maker)</a>           70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 83/140  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (maker)</a>       62.8%  ▁··▂▂▃●█▃▂▁▁ beats 24/69   hard · avg 17%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▁·▁▁▁▁▁●█▁▁▁ beats 22/64   very hard · avg 3.9%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>math · #65 of 431 · 16% of its score</summary>
+<details><summary>math · #70 of 440 · 16% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspect E…</a>   97.8%  ▄··██▄··▄·▄● beats 9/9    medium · avg 50%     16%  sharp · maxed out
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspect E…</a>   97.8%  ▄··██▄··▄·▄● beats 9/9    medium · avg 51%     16%  sharp · maxed out
 </pre>
 
 </details>
@@ -62,9 +62,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>   75.6%  ▃··▃▃▃▃·▃·▃● beats 9/9    hard · avg 40%       36%  sharp · at its level
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   50.5%  ▅··▃▅·█·●██▃ beats 8/15   hard · avg 23%       21%  at its level
-<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>   82.5%  ▃····▃▅·▃▅·● beats 7/9    medium · avg 58%     17%  typical
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>   75.6%  ▃··▃▃▃▃·▃·▃● beats 9/9    hard · avg 40%       35%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   50.5%  ▅··▃▅·█·●██▃ beats 8/15   hard · avg 23%       22%  at its level
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>   82.5%  ▃····▃▅·▃▅·● beats 7/9    medium · avg 59%     17%  typical
 </pre>
 
 </details>
@@ -76,9 +76,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="vector-inspect-evals-leaderboard"></a><a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">Vector Institute Evaluation Leaderboard</a>         4   77% ▇▇▇▇▇▇▇▇▇
-<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   21% ▇▇▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.8
+weighted average                                   = 66.4
 </pre>
 
 <sub>Licences: Vector Institute Evaluation Leaderboard ([Apache-2.0](../../licenses/vector-inspect-evals-leaderboard-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

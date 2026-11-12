@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▆██▅█▃▁▁▁   #479 of 530*    9.1%      1
+math  ▁▂●▆██▅▇▄▁▁▁   #488 of 540*    9.1%      1
 </pre>
 
-<details><summary>math · #479 of 530 · 9.1% of its score</summary>
+<details><summary>math · #488 of 540 · 9.1% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
@@ -38,9 +38,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        18.8%  ▃▅█···●·▃▃▃▅ beats 7/12   easy · avg 82%          18%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        23.1%  ▅▃▃▅··●▃·▃▃█ beats 6/12   easy · avg 83%          17%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                37.0%  █······●·▁▁▃ beats 7/12   easy · avg 88%         6.8%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   15.5%  ▃·▅·▅▃●·▃▃·█ beats 7/12   medium · avg 52%       4.1%  typical
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   15.5%  ▃·▅·▅▃●·▃▃·█ beats 7/12   medium · avg 53%       4.1%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   55.2%  █·····●·▁·▄▁ beats 7/12   medium · avg 81%       3.6%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     20.2%  ●▁·▁▁·····▂▁ beats 0/12   medium · avg 48%       1.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     20.2%  ●▁·▁▁·····▂▁ beats 0/12   medium · avg 49%       1.8%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   59.6%  █·····▅▃▃●▃█ beats 8/12   medium · avg 70%       1.5%  typical
 </pre>
 

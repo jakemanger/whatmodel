@@ -6,7 +6,7 @@
 
 Google · released 2022-04 · 540.35B params · proprietary
 
-**score 46.6** ±0.4 · comparison only: no current run option verified · from 94 benchmark results across 11 sources · † no independently run results verified
+**score 46.5** ±0.4 · comparison only: no current run option verified · from 94 benchmark results across 11 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  █·█······█·●      #1 of 4*    2.5%      2
-math    ▁▁▃▆█●▅█▃▁▁▁   #271 of 530     21%      3
+math    ▁▂▃▆█●▅▇▄▁▁▁   #276 of 540     21%      3
 </pre>
 
 <details><summary>coding · #1 of 4 · 2.5% of its score</summary>
@@ -30,9 +30,9 @@ test               result  vs the others in its run   difficulty        counts  
 
 </details>
 
-<details><summary>math · #271 of 530 · 21% of its score</summary>
+<details><summary>math · #276 of 540 · 21% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -47,7 +47,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     35.8%  █▁·▁▁·····●▁ beats 10/12    medium · avg 48%         10%  sharp · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     35.8%  █▁·▁▁·····●▁ beats 10/12    medium · avg 49%         10%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        79.0%  ▃▅█···▅·▃▃▃● beats 12/12    easy · avg 82%          7.2%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                78.1%  █······▁·▁▁● beats 10/12    easy · avg 88%          6.9%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        73.9%  ▅▃▃▅··▃▃·▃▃● beats 11/12    easy · avg 83%          5.4%  sharp · several runs
@@ -59,8 +59,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (maker)</a>                   80.1%  ▄····▄··▄·█● beats 6/6      easy · avg 85%          2.4%  at its level · several runs
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.2%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 43/68    hard · avg 32%          1.9%  at its level · several runs
 <a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     76.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 75/80    easy · avg 80%          1.7%  several runs
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   49.0%  ▃·▅·▅▃▅·▃▃·● beats 11/12    medium · avg 52%        1.7%  at its level
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   58.7%  ▄······▄▄·▄● beats 4/5      medium · avg 62%        1.4%  sharp · at its level
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   49.0%  ▃·▅·▅▃▅·▃▃·● beats 11/12    medium · avg 53%        1.7%  at its level
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   58.7%  ▄······▄▄·▄● beats 4/5      medium · avg 63%        1.4%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (maker)</a>                        88.0%  ▁····▁▂█▆▅▆● beats 97/103   easy · avg 90%          1.4%  several runs
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   68.6%  █·····▅▃▃▅▃● beats 12/12    medium · avg 70%        1.4%  at its level · several runs
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   58.9%  ▄······▄▄▄·● beats 4/5      medium · avg 58%        1.3%  at its level
@@ -80,14 +80,14 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2203.11171v4">AddSub (maker)</a>                       91.9%  █·········█● beats 2/2      very easy · avg 89%     0.5%  small run
 <a href="https://arxiv.org/html/2204.02311v5">LAMBADA (OpenAI version), last-wo…</a>   77.9%  ▁·····▁▁▃▃█● beats 84/86    easy · avg 84%          0.4%  blunt · several runs
 <a href="https://arxiv.org/html/2204.02311v5">MultiRC (SuperGLUE, prompted, F1a…</a>   83.5%  ▃·▃██···▅··● beats 10/10    very easy · avg 85%     0.4%  small run
-<a href="https://arxiv.org/html/2203.11171v4">MultiArith (maker)</a>                   94.7%  █·········●█ beats 1/2      very easy · avg 93%     0.3%  sharp · noisy · small run
 <a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (mak…</a>   55.0%  ▄·······●▄▄█ beats 1/5      medium · avg 75%        0.3%  at its level · noisy
+<a href="https://arxiv.org/html/2203.11171v4">MultiArith (maker)</a>                   94.7%  █·········●█ beats 1/2      very easy · avg 93%     0.3%  sharp · noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">SQuAD 2.0 (prompted, F1) (maker)</a>     80.8%  ▃▃···▃▃█▃▃▃● beats 10/10    very easy · avg 85%     0.3%  small run
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 3 (prompted) (maker)</a>      45.7%  ▂·▆▂██·▄··▂● beats 16/16    hard · avg 44%          0.3%  small run
 <a href="https://arxiv.org/html/2204.02311v5">SuperGLUE WSC (prompted) (maker)</a>     89.1%  █··▁·▃·▄▂▁▅● beats 26/26    medium · avg 82%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">Winograd Schema Challenge (WSC273…</a>   90.1%  █▃·▅▃▃█▅██▅● beats 21/21    easy · avg 92%          0.2%  blunt · small run
 <a href="https://arxiv.org/html/2204.02311v5">CoQA (maker)</a>                         77.6%  ▂···▃▂▂·▆▅▂● beats 16/17    very easy · avg 88%     0.2%  small run
-<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          45.2%  ▅··▃▃█··▃▅·● beats 10/10    medium · avg 53%        0.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          45.2%  ▅··▃▃█··▃▅·● beats 10/10    medium · avg 54%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">RACE-middle (maker)</a>                  68.1%  ▄▄····▄█·██● beats 10/10    easy · avg 74%          0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (maker)</a>                    49.1%  ▂▄·▂▂▂▂▂▆▄▂● beats 17/17    medium · avg 53%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">DROP (maker)</a>                         69.4%  ▃▅█▅·▃·▆●▂▁▃ beats 35/44    medium · avg 62%        0.2%  blunt · at its level · small run
@@ -116,7 +116,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-824-bbh"></a><a href="https://aclanthology.org/2023.findings-acl.824.pdf">Challenging BIG-Bench Tasks and Whether…</a>        1    1% ▇
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.6
+weighted average                                   = 46.5
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt)) · Self-Consistency Improves Chain of Thought Reasoning in Language Models ([CC BY 4.0](../../licenses/paper-2203.11171v4-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt)) · Universal Self-Adaptive Prompting ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-461-CC-BY-4-0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt)) · Better Zero-Shot Reasoning with Self-Adaptive Prompting ([CC BY 4.0](../../licenses/acl-2023-findings-acl-216-CC-BY-4-0.txt)) · Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them ([CC BY 4.0](../../licenses/acl-2023-findings-acl-824-bbh-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 61.4** ±1.2 · #192 of 732 · from 7 benchmark results across 1 source · † no independently run results verified
+**score 61.0** ±1.2 · #200 of 740 · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▃▁   #161 of 469*     15%      2
-math    ▁▁▃▅█▆▄●▄▂▁▁   #125 of 431*     10%      1
+coding  ▁▁▁▃▆▇█●▆▃▃▁   #163 of 472*     15%      2
+math    ▁▁▃▅█▆▄●▅▂▁▁   #136 of 440*     10%      1
 </pre>
 
-<details><summary>coding · #161 of 469 · 15% of its score</summary>
+<details><summary>coding · #163 of 472 · 15% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.9%  ▄··●····▄▄·█ beats 1/6    medium · avg 47%    8.4%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.9%  ▄··●····▄▄·█ beats 1/6    medium · avg 47%    8.3%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (make…</a>   24.1%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 16%      6.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #125 of 431 · 10% of its score</summary>
+<details><summary>math · #136 of 440 · 10% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (maker)</a>   91.3%  ▄·▄·●▄··█··▄ beats 2/6    medium · avg 57%     10%  sharp · noisy
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (maker)</a>   91.3%  ▄·▄·●▄··█··▄ beats 2/6    medium · avg 58%     10%  sharp · noisy
 </pre>
 
 </details>
@@ -48,9 +48,9 @@ test               result  vs the others in its run  difficulty        counts  w
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (maker)</a>                 76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 44%           41%  sharp · at its level
-<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (maker)</a>             77.8%  ●······▅··█▃ beats 0/6    medium · avg 61%         17%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (maker)</a>             77.8%  ●······▅··█▃ beats 0/6    medium · avg 62%         17%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 45%        8.7%  at its level
-<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (maker)</a>          8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.3%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (maker)</a>          8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.6%  typical
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (submitted / ma…</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.4
+weighted average                                   = 61.0
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

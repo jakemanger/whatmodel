@@ -6,7 +6,7 @@
 
 Tencent · released 2026-03 · 8.3B params · tencent-hy-community
 
-**score 52.4** ±4.0 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 52.0** ±3.9 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -20,10 +20,10 @@ Tencent · released 2026-03 · 8.3B params · tencent-hy-community
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1268.5  ●····██···▄█ beats 0/7    avg 1299             29%  noisy
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.0%  █▄·▄●▄▄····▄ beats 4/8    easy · avg 82%       25%  blunt
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   79.9%  █··▄●▄▄····▄ beats 3/6    easy · avg 77%       23%  blunt
-<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   62.0%  █▄▄··▄···●·█ beats 5/7    medium · avg 57%     17%  blunt · at its level
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1268.5  ●····██···▄█ beats 0/7    avg 1296             30%  noisy
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.0%  █▄·▄●▄▄····▄ beats 4/8    easy · avg 82%       24%  blunt
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   79.9%  █··▄●▄▄····▄ beats 3/6    easy · avg 77%       22%  blunt
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   62.0%  █▄▄··▄···●·█ beats 5/7    medium · avg 58%     17%  blunt · at its level
 </pre>
 
 </details>
@@ -34,11 +34,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        2   48% ▇▇▇▇▇▇
-<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   29% ▇▇▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        2   47% ▇▇▇▇▇▇
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   30% ▇▇▇▇
 <a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1   17% ▇▇
-prior: pull toward the middle                        7% ▇
-weighted average                                   = 52.4
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 52.0
 </pre>
 
 <sub>Licences: VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

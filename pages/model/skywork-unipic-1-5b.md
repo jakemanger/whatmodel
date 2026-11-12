@@ -6,7 +6,7 @@
 
 Skywork AI · released 2025-07 · 1.5B params · mit
 
-**score 39.9** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.6** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -21,8 +21,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   51.1%  █▄▄·●▄▄▄█·▄█ beats 4/12   medium · avg 65%     83%  at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   51.1%  █▄▄·●▄▄▄█·▄█ beats 4/12   easy · avg 65%     84%  at its level
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       17% ▇▇
-weighted average                                   = 39.9
+<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
+weighted average                                   = 39.6
 </pre>
 
 <sub>Licences: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

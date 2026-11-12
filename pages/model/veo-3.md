@@ -6,7 +6,7 @@
 
 Google · released 2025-07 · proprietary
 
-**score 64.3** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 63.6** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,30 +14,30 @@ Google · released 2025-07 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▇▅▄▆█▆▇▂●▃▂▄   #16 of 94*     51%      1
-image to video  ▁▁▂▂██●▃▃▄▂▂    #29 of 74     47%      3
+text to video   ▆▅▃█▆▇▆▂●▁▄▃   #18 of 97*     54%      1
+image to video  ▁▁▂▂█▇●▃▃▃▃▃    #31 of 76     44%      3
 </pre>
 
-<details><summary>text to video · #16 of 94 · 51% of its score</summary>
+<details><summary>text to video · #18 of 97 · 54% of its score</summary>
 
-Beats [Wan 2.7](wan-2-7.md), [Wan 2.6](wan-2-6.md) here, though they rank higher overall.
+Beats [Grok Imagine Video](grok-imagine-video.md), [Wan 2.7](wan-2-7.md), [Wan 2.6](wan-2-6.md) here, though they rank higher overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.2  ▂▂▃▆█▆·●▅▁▂▇ beats 26/41  avg 1147       51%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.3  ▂▂▃▆█▃·●▂▁█▃ beats 26/44  avg 1154       54%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #29 of 74 · 47% of its score</summary>
+<details><summary>image to video · #31 of 76 · 44% of its score</summary>
 
-Trails [Wan 2.1 I2V Plus](wan-2-1-i2v-plus.md), [Runway Gen-4.5](runway-gen-4-5.md), [PixVerse V5.6](pixverse-v5-6.md) here, though they rank lower overall.
+Trails [Runway Gen-4.5](runway-gen-4-5.md), [Wan 2.1 I2V Plus](wan-2-1-i2v-plus.md), [PixVerse V5.6](pixverse-v5-6.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1331.5  ▁▁▁▁▄▇▃▆●▂▄█ beats 24/40  avg 1189           34%  typical
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1112.2  ▄······██··● beats 6/6    avg 1002           11%  typical
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.2%  ▃······▅·█▅● beats 9/10   easy · avg 81%    2.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1331.3  ▁▁▁▁▄▇▃●▂▃▅█ beats 24/42  avg 1197           32%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1112.2  ▄······██··● beats 6/6    avg 1008           10%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.2%  ▃······▅·█▅● beats 9/10   easy · avg 81%    2.5%  blunt
 </pre>
 
 </details>
@@ -57,11 +57,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   13% ▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.3
+weighted average                                   = 63.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

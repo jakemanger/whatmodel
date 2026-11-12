@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 70B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 47.3** ±1.7 · #422 of 732 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 47.1** ±1.7 · #432 of 740 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #389 of 469*     14%      1
-math    ▁▁▃▅█●▄█▄▂▁▁   #212 of 431*     21%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #392 of 472*     14%      1
+math    ▁▁▃▅█●▄█▅▂▁▁   #212 of 440*     20%      1
 </pre>
 
-<details><summary>coding · #389 of 469 · 14% of its score</summary>
+<details><summary>coding · #392 of 472 · 14% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (maker)</a>   68.5%  ▃▃▃·▆▃▃●▃▂▂▅ beats 14/25  easy · avg 83%     14%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (maker)</a>   68.5%  ▃▃▃·▆▃▃●▃▂▂▅ beats 14/25  easy · avg 84%     14%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #212 of 431 · 21% of its score</summary>
+<details><summary>math · #212 of 440 · 20% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (maker)</a>   73.0%  ▆▂▅█▅▅▃●···▂ beats 22/25  easy · avg 72%     21%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (maker)</a>   73.0%  ▆▂▅█▅▅▃●···▂ beats 22/25  easy · avg 72%     20%  sharp · at its level
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (submitted / maker-reported)</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 47.3
+weighted average                              = 47.1
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>

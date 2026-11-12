@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2025-03 · 11B params · apache-2.0
 
-**score 42.4** ±4.7 · #66 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 42.1** ±4.7 · #67 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ HPC-AI Tech · released 2025-03 · 11B params · apache-2.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #45 of 68*     91%      2
+text to video  ▆▄▃●▆█▇▂▄·▄▅   #47 of 70*     91%      2
 </pre>
 
-<details><summary>text to video · #45 of 68 · 91% of its score</summary>
+<details><summary>text to video · #47 of 70 · 91% of its score</summary>
 
 Trails [T2V-Turbo-v2](t2v-turbo-v2.md), [Pyramid Flow (SD3)](pyramid-flow-sd3.md) here, though they rank lower overall.
 
 <pre>
 test                                       result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  988.92 / 1608  █·●··▄·····█ beats 2/5    easy · avg 1103.17 / 16…     53%  at its level
-<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          81.5%  █···●···█··█ beats 1/3    very easy · avg 88%          38%  typical
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  988.92 / 1608  █·●··▄·····█ beats 2/5    easy · avg 1111.45 / 16…     53%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          81.5%  █···●···█··█ beats 1/3    very easy · avg 88%          37%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   53% ▇▇▇▇▇▇
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   38% ▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   37% ▇▇▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 42.4
+weighted average                                   = 42.1
 </pre>
 
 <sub>Licences: VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>

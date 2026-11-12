@@ -22,7 +22,7 @@ Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmode
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2203.15556v1">MMLU (maker)</a>                         67.6%  ▁▁▁▁▁▂▂▅█●▆▄ beats 121/214  very hard · avg 31%      31%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">MMLU (maker)</a>                         67.6%  ▁▁▁▁▁▂▂▅█●▆▄ beats 121/215  very hard · avg 31%      31%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">WinoGrande (maker)</a>                   74.9%  ▁▁▁▁▂▁▁▅▇█●▁ beats 112/131  hard · avg 58%          8.7%  at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">BoolQ (maker)</a>                        83.7%  ▁····▁▂█▆▅●▄ beats 86/103   hard · avg 64%          8.7%  at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">TriviaQA (maker)</a>                     67.0%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 63/80    hard · avg 25%          8.5%  at its level · small run

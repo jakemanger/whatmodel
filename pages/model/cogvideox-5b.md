@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 5B params · cogvideox
 
-**score 43.8** ±1.8 · #64 of 93 · from 7 benchmark results across 5 sources
+**score 43.7** ±1.8 · #65 of 94 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,18 +14,20 @@ Zhipu AI (THUDM) · released 2024-08 · 5B params · cogvideox
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #42 of 68     87%      5
+text to video  ▆▄▃▆●█▇▂▄·▄▅   #43 of 70     87%      5
 </pre>
 
-<details><summary>text to video · #42 of 68 · 87% of its score</summary>
+<details><summary>text to video · #43 of 70 · 87% of its score</summary>
+
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        39.6%  ▄▄▄·▄▄█····● beats 7/7    medium · avg 48%     32%  sharp · at its level
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1125.6  ▃▃···▅▃·▃▅·● beats 10/10  avg 1229             29%  sharp
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1125.6  ▃▃···▅▃·▃▅·● beats 10/10  avg 1231             29%  sharp
 <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>    25.0%  ▄···▄·▄·●··▄ beats 4/5    hard · avg 33%       16%  typical
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    49.0%  ▅·▃▅··▃█···● beats 9/9    medium · avg 56%    7.9%  at its level
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     74.8%  ●··▂··█▄▂··▆ beats 0/11   easy · avg 84%      2.1%  blunt
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    49.0%  ▅·▃▅··▃█···● beats 9/9    medium · avg 56%    8.3%  at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     74.8%  ●··▂··█▄▂··▆ beats 0/11   easy · avg 85%      2.1%  blunt
 </pre>
 
 </details>
@@ -34,8 +36,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                   result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>      73.9%  ●▄·▄█▄▄····▄ beats 0/8    easy · avg 82%          6.0%  blunt
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       7.31 / 10  ▅··▅▃···●··█ beats 5/8    easy · avg 7.71 / 10    5.2%  at its level
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>      73.9%  ●▄·▄█▄▄····▄ beats 0/8    easy · avg 82%          6.1%  blunt
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       7.31 / 10  ▅··▅▃···●··█ beats 5/8    easy · avg 7.74 / 10    5.4%  at its level
 </pre>
 
 </details>
@@ -52,7 +54,7 @@ source                                    results  share of the score
 <a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1    5% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.8
+weighted average                                   = 43.7
 </pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

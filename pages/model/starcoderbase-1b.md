@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 1.14B params · bigcode-openrail-m
 
-**score 27.2** ±1.2 · #904 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.1** ±1.2 · #914 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #468 of 482*     99%      2
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #472 of 486*     99%      2
 </pre>
 
-<details><summary>coding · #468 of 482 · 99% of its score</summary>
+<details><summary>coding · #472 of 486 · 99% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    14.6%  ▁·▁●▃▄▆▅█▃▁▁ beats 4/99   easy · avg 76%     59%  sharp
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   12.2%  ▁·▁●▁▃▄▄▄█▃▁ beats 4/99   easy · avg 70%     41%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    14.6%  ▁·▁●▃▄▆▅█▃▁▁ beats 4/99   easy · avg 77%     59%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   12.2%  ▁·▁●▁▃▄▄▄█▃▁ beats 4/99   easy · avg 71%     41%  sharp
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 27.2
+weighted average                                   = 27.1
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

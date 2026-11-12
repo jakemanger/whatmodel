@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 6.74B params · deepseek
 
-**score 40.8** ±0.6 · #551 of 732 · from 12 benchmark results across 5 sources
+**score 40.7** ±0.6 · #559 of 740 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,34 +16,34 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #394 of 469     85%      7
-math    ▁▁▃▅●▆▄█▄▂▁▁   #313 of 431*    3.2%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #398 of 472     85%      7
+math    ▁▁▃▅●▆▄█▅▂▁▁   #315 of 440*    3.2%      1
 </pre>
 
-<details><summary>coding · #394 of 469 · 85% of its score</summary>
+<details><summary>coding · #398 of 472 · 85% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    47.6%  ▁·▁▁▃▄●▅█▃▁▁ beats 32/99  easy · avg 76%       51%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   39.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 30/99  easy · avg 70%       20%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    47.6%  ▁·▁▁▃▄●▅█▃▁▁ beats 32/99  easy · avg 77%       51%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   39.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 30/99  easy · avg 71%       20%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        58.7%  ▁···▁▁▂▅●█▆▂ beats 34/75  easy · avg 66%      4.0%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         70.2%  ▄▄▄██▄·▄█·●▄ beats 11/12  easy · avg 81%      3.7%  at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      28.9%  ▄▄·▄██▄●·█·▄ beats 9/12   medium · avg 49%    3.4%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      28.9%  ▄▄·▄██▄●·█·▄ beats 9/12   medium · avg 49%    3.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   41.9%  ▁··▁▅▂●▇▁··▁ beats 13/22  medium · avg 52%    1.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   43.5%  ▁·▂▃▁●▁▂···▁ beats 17/22  medium · avg 51%    1.1%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #313 of 431 · 3.2% of its score</summary>
+<details><summary>math · #315 of 440 · 3.2% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   41.9%  ▄▄▄·▄█·█●·█▄ beats 9/12   easy · avg 75%    3.2%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   41.9%  ▄▄▄·▄█·█●·█▄ beats 9/12   easy · avg 76%    3.2%  sharp · at its level
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         32.9%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 19/42  medium · avg 52%    8.3%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   41.8%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 31/58  medium · avg 48%    3.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   41.8%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 31/58  medium · avg 49%    3.4%  at its level
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.8
+weighted average                                   = 40.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

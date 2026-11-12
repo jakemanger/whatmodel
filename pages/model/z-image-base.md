@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
-**score 58.0** ±2.0 · #54 of 144 · from 11 benchmark results across 3 sources
+**score 57.5** ±2.0 · #56 of 146 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #47 of 126     98%     11
+text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #49 of 128     98%     11
 </pre>
 
-<details><summary>text to image · #47 of 126 · 98% of its score</summary>
+<details><summary>text to image · #49 of 128 · 98% of its score</summary>
 
 Beats [Wan 2.7 Image](wan-2-7-image.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    88.1%  ▄····▄█▄▄█●█ beats 8/10   easy · avg 82%          18%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   61.9%  ▁▂▂█●▁▂▃·▁·▁ beats 14/22  hard · avg 28%          16%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (maker)</a>          93.5%  ▃·····▅█●▅▃▃ beats 6/12   very easy · avg 88%     11%  maxed out · small run
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>          93.6%  ▃·······██●█ beats 7/12   very easy · avg 89%    8.3%  maxed out · small run
-<a href="https://arxiv.org/html/2511.22699v5">GenEval (maker)</a>                      84.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 32/39  easy · avg 77%         7.8%  small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (maker)</a>             53.5%  ▃·▃█▃·▃··●·▃ beats 7/8    medium · avg 39%       6.9%  at its level · small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (maker)</a>             54.6%  ▃······▃▅█●▃ beats 8/9    medium · avg 41%       6.8%  at its level · small run
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    88.1%  ▄····▄█▄▄█●█ beats 8/10   easy · avg 83%          18%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   61.9%  ▁▂▂█●▁▂▃·▁·▁ beats 14/22  hard · avg 29%          17%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (maker)</a>          93.5%  ▃·····▅█●▅▃▃ beats 6/12   very easy · avg 88%     10%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>          93.6%  ▃·······██●█ beats 7/12   very easy · avg 90%    8.2%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">GenEval (maker)</a>                      84.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 32/39  easy · avg 78%         8.0%  small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (maker)</a>             53.5%  ▃·▃█▃·▃··●·▃ beats 7/8    medium · avg 40%       6.8%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (maker)</a>             54.6%  ▃······▃▅█●▃ beats 8/9    medium · avg 42%       6.7%  at its level · small run
 <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (maker)</a>        86.7%  ▄▄▄●▄▄·▄···▄ beats 4/8    easy · avg 81%         6.7%  small run
-<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (maker)</a>                    88.1%  ▄·▂·▂▆█▄▂●▂▂ beats 14/17  very easy · avg 85%    5.8%  small run
-<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>   83.0%  ▄······●··▄▄ beats 1/4    easy · avg 74%         5.5%  small run
-<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>   80.2%  █···●···██·█ beats 1/4    easy · avg 71%         5.5%  small run
+<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (maker)</a>                    88.1%  ▄·▂·▂▆█▄▂●▂▂ beats 14/17  very easy · avg 86%    5.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>   83.0%  ▄······●··▄▄ beats 1/4    easy · avg 75%         5.4%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>   80.2%  █···●···██·█ beats 1/4    easy · avg 71%         5.4%  small run
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   64% ▇▇▇▇▇▇▇▇
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   63% ▇▇▇▇▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   16% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   17% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 58.0
+weighted average                                   = 57.5
 </pre>
 
 <sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

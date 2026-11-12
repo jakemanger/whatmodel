@@ -6,7 +6,7 @@
 
 Genmo · released 2024-10 · 10B params · apache-2.0
 
-**score 39.9** ±1.7 · #69 of 93 · from 6 benchmark results across 6 sources
+**score 39.5** ±1.6 · #70 of 94 · from 6 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,19 +14,19 @@ Genmo · released 2024-10 · 10B params · apache-2.0
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄▃●▆▅█▃▂▂▂▄   #48 of 68     88%      4
+text to video  ▆▄▃●▆█▇▂▄·▄▅   #50 of 70     88%      4
 </pre>
 
-<details><summary>text to video · #48 of 68 · 88% of its score</summary>
+<details><summary>text to video · #50 of 70 · 88% of its score</summary>
 
 Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1006.6  ●▂▃▆█▆·▆▅▁▂▇ beats 0/41   avg 1147             49%  typical
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1121.3  ▃▃···▅▃·▃▅·● beats 9/10   avg 1229             26%  sharp
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    41.0%  ▅·▃▅··▃●···▃ beats 8/9    medium · avg 56%    7.0%  at its level
-<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   34.0%  █··█·●·····█ beats 2/3    medium · avg 46%    5.7%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1007.0  ●▂▃▆█▃·▇▂▁█▃ beats 0/44   avg 1154             52%  typical
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1121.3  ▃▃···▅▃·▃▅·● beats 9/10   avg 1231             24%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    41.0%  ▅·▃▅··▃●···▃ beats 8/9    medium · avg 56%    6.9%  at its level
+<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   34.0%  █··█·●·····█ beats 2/3    medium · avg 47%    5.3%  at its level
 </pre>
 
 </details>
@@ -35,8 +35,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                   result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-Bench (Wan2.1 release) weight…</a>      63.9%  ●·······█··█ beats 0/2    easy · avg 78%          6.0%  at its level · small run
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       7.62 / 10  ▅··▅▃···▃··● beats 7/8    easy · avg 7.71 / 10    5.0%  at its level
+<a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-Bench (Wan2.1 release) weight…</a>      63.9%  ●·······█··█ beats 0/2    easy · avg 78%          5.6%  at its level · small run
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       7.62 / 10  ▅··▅▃···▃··● beats 7/8    easy · avg 7.74 / 10    4.9%  at its level
 </pre>
 
 </details>
@@ -47,14 +47,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   49% ▇▇▇▇▇▇
-<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   52% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   24% ▇▇▇
 <a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1    7% ▇
 <a name="card2-wan-ai-wan2-1-t2v-14b"></a><a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-AI/Wan2.1-T2V-14B model card</a>                1    6% ▇
-<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    6% ▇
+<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    5% ▇
 <a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 39.9
+weighted average                                   = 39.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · Wan-AI/Wan2.1-T2V-14B model card ([Apache-2.0](../../licenses/Wan-AI--Wan2.1-T2V-14B.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>

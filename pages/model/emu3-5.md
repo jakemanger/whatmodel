@@ -6,7 +6,7 @@
 
 BAAI · released 2025-10 · 34.1B params · apache-2.0
 
-**score 57.0** ±4.5 · #60 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.5** ±4.4 · #62 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▂▂▁▁   #54 of 126*     91%      1
+text to image  ▂▅▅▃▄●█▂▂▁▁▁   #56 of 128*     92%      1
 </pre>
 
-<details><summary>text to image · #54 of 126 · 91% of its score</summary>
+<details><summary>text to image · #56 of 128 · 92% of its score</summary>
 
 Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher overall. Trails [Qwen-Image-2512](qwen-image-2512.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   85.9%  ▂█····●▄▄··▂ beats 5/11   easy · avg 79%     91%  typical
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   85.9%  ▂█····●▄▄··▂ beats 5/11   easy · avg 80%     92%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        9% ▇
-weighted average                                   = 57.0
+<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 56.5
 </pre>
 
 <sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>

@@ -6,7 +6,7 @@
 
 Sber · released 2025-09 · 2B params · MIT
 
-**score 47.0** ±2.4 · #58 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.5** ±2.2 · #60 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Sber · released 2025-09 · 2B params · MIT
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄▆●█▃▂▂▂▄   #37 of 68*     98%      1
+text to video  ▆▄▃▆●█▇▂▄·▄▅   #40 of 70*     98%      1
 </pre>
 
-<details><summary>text to video · #37 of 68 · 98% of its score</summary>
+<details><summary>text to video · #40 of 70 · 98% of its score</summary>
 
 Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1112.6  ▂▂●▆█▆·▆▅▁▂▇ beats 4/41   avg 1147       98%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1112.6  ▂▂●▆█▃·▇▂▁█▃ beats 4/44   avg 1154       98%  typical
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 47.0
+weighted average                        = 46.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

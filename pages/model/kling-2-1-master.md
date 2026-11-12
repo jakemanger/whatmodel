@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2025-05 · closed weights
 
-**score 52.5** ±1.9 · #45 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±1.8 · #46 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,28 +14,28 @@ Kuaishou (Kling AI) · released 2025-05 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆●█▃▂▂▂▄   #32 of 68*     59%      1
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #36 of 50*     39%      1
+text to video   ▆▄▃▆▆●▇▂▄·▄▅   #35 of 70*     62%      1
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #38 of 51*     37%      1
 </pre>
 
-<details><summary>text to video · #32 of 68 · 59% of its score</summary>
+<details><summary>text to video · #35 of 70 · 62% of its score</summary>
 
-Trails [PixVerse 5.5](pixverse-v5-5.md), [Cosmos3-Nano](cosmos3-nano.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank lower overall.
+Trails [LongCat-Video](longcat-video.md), [Cosmos3-Nano](cosmos3-nano.md), [PixVerse 5.5](pixverse-v5-5.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1162.9  ▂▂▃●█▆·▆▅▁▂▇ beats 8/41   avg 1147       59%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1163.0  ▂▂▃●█▃·▇▂▁█▃ beats 8/44   avg 1154       62%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #36 of 50 · 39% of its score</summary>
+<details><summary>image to video · #38 of 51 · 37% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.1 Standard](kling-2-1-standard.md), [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+Beats [Kling 2.1 Standard](kling-2-1-standard.md), [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1235.0  ▁▁▁▁▄●▃▆▃▂▄█ beats 12/40  avg 1189       39%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1236.0  ▁▁▁▁▄●▃▇▂▃▅█ beats 12/42  avg 1197       37%  typical
 </pre>
 
 </details>
@@ -46,9 +46,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 52.5
+weighted average                        = 51.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

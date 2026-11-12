@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2024-12 · closed weights
 
-**score 51.5** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.1** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ Kuaishou (Kling AI) · released 2024-12 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂█●▄▃▃▄▂▂   #46 of 74*     92%      2
+image to video  ▁▁▂▂█●▅▃▃▃▃▃   #46 of 76*     92%      2
 </pre>
 
-<details><summary>image to video · #46 of 74 · 92% of its score</summary>
+<details><summary>image to video · #46 of 76 · 92% of its score</summary>
 
-Beats [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
+Beats [Kling 2.1 Standard](kling-2-1-standard.md), [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>    68.0%  ▄···▄······● beats 3/3    medium · avg 66%     54%  at its level
-<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1065.0  ▄·····▄█··▄● beats 5/5    avg 1043             39%  typical
+<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>    68.0%  ▄···▄······● beats 3/3    medium · avg 67%     53%  at its level
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1065.0  ▄·····▄█··▄● beats 5/5    avg 1047             39%  typical
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   54% ▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   53% ▇▇▇▇▇▇
 <a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1   39% ▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 51.5
+weighted average                                   = 51.1
 </pre>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>

@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.5** ±1.6 · #362 of 732 · from 8 benchmark results across 1 source · † no independently run results verified
+**score 50.2** ±1.6 · #372 of 740 · from 8 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #188 of 313*     10%      2
-coding          ▁▁▁▃▅●█▇▅▄▃▁   #332 of 469*     25%      2
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #248 of 402*    4.0%      1
+agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #190 of 316*     10%      2
+coding          ▁▁▁▃▆●█▆▆▃▃▁   #335 of 472*     25%      2
+chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #250 of 404*    4.0%      1
 </pre>
 
-<details><summary>agent tasks · #188 of 313 · 10% of its score</summary>
+<details><summary>agent tasks · #190 of 316 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -33,25 +33,25 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #332 of 469 · 25% of its score</summary>
+<details><summary>coding · #335 of 472 · 25% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   37.2%  ▂▃●▄▅██▆▄▇▄▆ beats 6/67   hard · avg 33%       20%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   37.2%  ▂▃●▄▅██▆▄▇▄▆ beats 6/67   hard · avg 34%       20%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (maker)</a>                    67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 54%    4.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #248 of 402 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #250 of 404 · 4.0% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecified) …</a>   75.8%  ▁▂▄▂▂●▆██▅▂▁ beats 45/145  easy · avg 75%    4.0%  typical
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecified) …</a>   75.8%  ▁▂▄▂▂●▆██▅▂▁ beats 45/145  easy · avg 76%    4.0%  typical
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                  result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (maker)</a>   40.9%  ▁▁▁▁▂●▅▅███▄ beats 53/322  hard · avg 46%     36%  sharp · at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (maker)</a>     78.1%  ▁▁▃▁●▃▄▅▇▅█▄ beats 8/63    easy · avg 78%     19%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (maker)</a>   40.9%  ▁▁▁▁▂●▅▆▇▇█▂ beats 53/336  hard · avg 47%     36%  sharp · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (maker)</a>     78.1%  ▁▁▃▁●▄▄▅▇▅█▄ beats 8/64    easy · avg 78%     19%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (maker)</a>       80.5%  ▁··▁▁▁·●▁▄█▁ beats 5/16    easy · avg 82%    3.9%  blunt
 </pre>
 
@@ -75,7 +75,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">JetBrains/Mellum2-12B-A2.5B-Instruct mo…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.5
+weighted average                                   = 50.2
 </pre>
 
 <sub>Licences: JetBrains/Mellum2-12B-A2.5B-Instruct model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md))</sub>

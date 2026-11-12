@@ -6,7 +6,7 @@
 
 Runway · released 2025-03 · closed weights
 
-**score 49.7** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.2** ±4.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Runway · released 2025-03 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂█●▄▃▃▄▂▂   #41 of 74*     53%      1
+image to video  ▁▁▂▂█●▅▃▃▃▃▃   #41 of 76*     52%      1
 </pre>
 
-<details><summary>image to video · #41 of 74 · 53% of its score</summary>
+<details><summary>image to video · #41 of 76 · 52% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.1 Standard](kling-2-1-standard.md), [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md) here, though they rank higher overall.
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [P-Video](p-video.md), [Kling 2.1 Standard](kling-2-1-standard.md) here, though they rank higher overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>   67.8%  ▄···▄······● beats 2/3    medium · avg 66%     53%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>   67.8%  ▄···▄······● beats 2/3    medium · avg 67%     52%  at its level
 </pre>
 
 </details>
@@ -32,7 +32,7 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   18.6%  ▅·●▅·█·▃···▃ beats 2/9    hard · avg 21%     40%  typical
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   18.6%  ▅·●▅·█·▃···▃ beats 2/9    hard · avg 22%     41%  typical
 </pre>
 
 </details>
@@ -43,10 +43,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   53% ▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   40% ▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   52% ▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   41% ▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 49.7
+weighted average                                   = 49.2
 </pre>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

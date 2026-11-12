@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · 2.57B params · openrail++
 
-**score 34.0** ±2.5 · #123 of 144 · from 3 benchmark results across 3 sources
+**score 34.1** ±2.5 · #125 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #109 of 126*     44%      1
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #111 of 128*     44%      1
 </pre>
 
-<details><summary>text to image · #109 of 126 · 44% of its score</summary>
+<details><summary>text to image · #111 of 128 · 44% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [IF-L](deepfloyd-if-l.md), [SDXL-Turbo](sdxl-turbo.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.77 / 5  █▄·▄●█▄▄█▄▄▄ beats 4/14   easy · avg 3.83 / 5     44%  at its level
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.77 / 5  █▄·▄●█▄▄█▄▄▄ beats 4/14   easy · avg 3.84 / 5     44%  at its level
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1800 mean human alignment score  █▄▄·█·▄█●▄·▄ beats 9/11   avg 6.286 mean human al…     40%  typical
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.694 FID               14%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1800 mean human alignment score  █▄▄·█·▄█●▄·▄ beats 9/11   avg 6.275 mean human al…     40%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.831 FID               13%  typical
 </pre>
 
 </details>
@@ -48,9 +48,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   44% ▇▇▇▇▇
 <a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   40% ▇▇▇▇▇
-<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   14% ▇▇
+<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   13% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 34.0
+weighted average                                   = 34.1
 </pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 68.3** ±2.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 67.3** ±2.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ OpenAI · released 2025-10 · proprietary
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅▄▆█▆▇▂▃●▂▄   #11 of 94*     96%      1
+text to video  ▆▅▃█▆▇▆▂▅●▄▃   #14 of 97*     96%      1
 </pre>
 
-<details><summary>text to video · #11 of 94 · 96% of its score</summary>
+<details><summary>text to video · #14 of 97 · 96% of its score</summary>
 
-Beats [Grok Imagine Video](grok-imagine-video.md), [Veo 3.1](veo-3-1.md) here, though they rank higher overall.
+Beats [Veo 3.1](veo-3-1.md), [Grok Imagine Video](grok-imagine-video.md), [Veo 3.1 Fast](veo-3-1-fast.md) here, though they rank higher overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1367.8  ▂▂▃▆█▆·▆●▁▂▇ beats 32/41  avg 1147       96%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1367.0  ▂▂▃▆█▃·▇●▁█▃ beats 32/44  avg 1154       96%  typical
 </pre>
 
 </details>
@@ -32,7 +32,7 @@ test           result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   17.8%  ●··█·······█ beats 0/2    hard · avg 16%    1.8%  blunt · at its level · noisy · small run
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   17.8%  ●··█·······█ beats 0/2    hard · avg 16%    1.6%  blunt · at its level · noisy · small run
 </pre>
 
 </details>
@@ -43,10 +43,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    2% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 68.3
+weighted average                                   = 67.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Recraft · released 2024-10 · closed weights
 
-**score 50.5** ±1.9 · #80 of 144 · from 4 benchmark results across 3 sources
+**score 50.2** ±1.9 · #82 of 146 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▂▂▁▁   #71 of 126     84%      3
+text to image  ▂▅▅▃●▄█▂▂▁▁▁   #72 of 128     85%      3
 </pre>
 
-<details><summary>text to image · #71 of 126 · 84% of its score</summary>
+<details><summary>text to image · #72 of 128 · 85% of its score</summary>
 
-Trails [Runway Gen-4 Image](runway-gen-4-image.md), [GLM-Image](glm-image.md), [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lower overall.
+Trails [Runway Gen-4 Image](runway-gen-4-image.md), [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1021.6  ▁▂●▃▆█▃▂▂▂▁▁ beats 10/75  avg 1027             56%  typical
-<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              73.2%  ██·▄·▄·●···▄ beats 6/8    easy · avg 71%       18%  at its level
-<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   44.1%  █··●▄▄·▄▄·▄▄ beats 3/9    medium · avg 51%     10%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1022.0  ▁▁●▃▆█▃▂▂▂▁▁ beats 10/77  avg 1030             58%  typical
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              73.2%  ██·▄·▄·●···▄ beats 6/8    easy · avg 72%       17%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   44.1%  █··●▄▄·▄▄·▄▄ beats 3/9    medium · avg 52%     10%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1105.1  ▃··▅▃··▃▃··● beats 6/8    avg 1012       14%  typical
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1105.1  ▃··▅▃··▃▃··● beats 6/8    avg 1016       14%  typical
 </pre>
 
 </details>
@@ -47,11 +47,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   56% ▇▇▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   28% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   58% ▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   27% ▇▇▇
 <a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   14% ▇▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 50.5
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>

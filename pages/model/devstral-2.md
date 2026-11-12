@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 61.5** ±1.6 · #191 of 732 · from 5 benchmark results across 3 sources
+**score 61.2** ±1.6 · #198 of 740 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #112 of 313     34%      3
-coding       ▁▁▁▃▅▇█●▅▄▃▁   #194 of 469     70%      3
+agent tasks  ▁▁▃▆█▅▅●▄▅▂▁   #116 of 316     35%      3
+coding       ▁▁▁▃▆▇█●▆▃▃▁   #200 of 472     70%      3
 </pre>
 
-<details><summary>agent tasks · #112 of 313 · 34% of its score</summary>
+<details><summary>agent tasks · #116 of 316 · 35% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%          15%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (maker)</a>       32.6%  ▂▂▅●████▆▂▃▃ beats 7/36    very hard · avg 11%     11%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%         9.3%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/140  hard · avg 34%          15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (maker)</a>       32.6%  ▁▁▄●▇█▇█▅▁▃▃ beats 7/38    very hard · avg 11%     11%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▂▂▃●█▃▂▁▁ beats 23/69   hard · avg 30%          10%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #194 of 469 · 70% of its score</summary>
+<details><summary>coding · #200 of 472 · 70% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Command A Reasoning (08-2025)](command-a-reasoning-08-2025.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1197.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 5/129   avg 981            46%  sharp
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%     15%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%    9.3%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1195.5  ▁●▄▃▇█▅▆█▅▂▁ beats 5/133   avg 990            45%  sharp
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/140  hard · avg 34%     15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▂▂▃●█▃▂▁▁ beats 23/69   hard · avg 30%     10%  at its level · small run
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   43.0%  ▅··▃▅·●·▃██▃ beats 7/15   hard · avg 23%     18%  at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   43.0%  ▅··▃▅·●·▃██▃ beats 7/15   hard · avg 23%     19%  at its level
 </pre>
 
 </details>
@@ -61,11 +61,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   46% ▇▇▇▇▇▇
-<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   34% ▇▇▇▇
-<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   18% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   45% ▇▇▇▇▇
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   35% ▇▇▇▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   19% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.5
+weighted average                                   = 61.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

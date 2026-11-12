@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.6** ±1.0 · #485 of 732 · from 14 benchmark results across 2 sources
+**score 44.4** ±1.0 · #493 of 740 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▄▂▁▁   #299 of 431*     12%      1
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #139 of 153    100%     14
+math                ▁▁▃▅●▆▄█▅▂▁▁   #308 of 440*     12%      1
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #140 of 154    100%     14
 </pre>
 
-<details><summary>math · #299 of 431 · 12% of its score</summary>
+<details><summary>math · #308 of 440 · 12% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -31,19 +31,19 @@ test                          result  vs the others in its run  difficulty      
 
 </details>
 
-<details><summary>vision &amp; documents · #139 of 153 · 100% of its score</summary>
+<details><summary>vision &amp; documents · #140 of 154 · 100% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md) here, though they rank higher overall. Trails [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2502.13923v1">CharXiv descriptive questions (ma…</a>   58.6%  ●··▂▂▂·▂▄▄▂█ beats 0/14   easy · avg 74%          19%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">CharXiv (reasoning questions) (ma…</a>   31.3%  ●▂▄▆▄▄▆··▄█▂ beats 1/21   medium · avg 38%        15%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">CharXiv (reasoning questions) (ma…</a>   31.3%  ●▂▄▆▄▄▆··▄█▂ beats 1/21   medium · avg 39%        15%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (maker)</a>                   53.1%  ▂···●▂▂▂▄▄▄█ beats 1/16   medium · avg 61%        14%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (maker)</a>         62.3%  ▃··▃●·▃█▅▅▅█ beats 3/16   medium · avg 69%        12%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMStar (maker)</a>                       55.9%  ▂··●▂▂·▄█▂▄▆ beats 1/16   medium · avg 65%        10%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (maker)</a>                     31.6%  ●·█·▅▃▃▃▅▅▃█ beats 0/16   medium · avg 46%       6.8%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">HallusionBench (maker)</a>               46.3%  ▃·●·▅▃▅▅▃▅█▅ beats 1/16   medium · avg 54%       4.1%  blunt · at its level
+<a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (maker)</a>                     31.6%  ●·█·▅▃▃▃▅▅▃█ beats 0/16   medium · avg 46%       6.9%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">HallusionBench (maker)</a>               46.3%  ▃·●·▅▃▅▅▃▅█▅ beats 1/16   medium · avg 55%       4.1%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">ChartQA (maker)</a>                      84.0%  ▂··▂·▂●·▅▂▆█ beats 3/17   easy · avg 85%         4.0%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (maker)</a>                       93.9%  ▃··▅●▅▃█▃█▅▅ beats 3/17   very easy · avg 94%    3.9%  blunt · maxed out
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   21.4%  ▁·▁·●▃▁▇▃█·▄ beats 2/22   hard · avg 27%         3.7%  blunt
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1">Qwen (submitted / maker-reported)</a>              13   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.4
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

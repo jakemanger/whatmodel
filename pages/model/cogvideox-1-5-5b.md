@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-11 · 5.57B params · cogvideox
 
-**score 36.1** ±2.4 · #76 of 93 · from 6 benchmark results across 5 sources
+**score 35.9** ±2.4 · #77 of 94 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Zhipu AI (THUDM) · released 2024-11 · 5.57B params · cogvideox
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄●▄▆▅█▃▂▂▂▄   #53 of 68     85%      5
+text to video  ▆▄●▆▆█▇▂▄·▄▅   #55 of 70     85%      5
 </pre>
 
-<details><summary>text to video · #53 of 68 · 85% of its score</summary>
+<details><summary>text to video · #55 of 70 · 85% of its score</summary>
 
-Trails [Pika 2.2](pika-2-2.md), [CogVideoX-2B](cogvideox-2b.md) here, though they rank lower overall.
+Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md) here, though they rank lower overall.
 
 <pre>
 test                                       result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>          50.6%  ▄▄·█··█●▄▄▄▄ beats 6/10   easy · avg 73%               33%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>          50.6%  ▄▄·█··█●▄▄▄▄ beats 6/10   easy · avg 74%               34%  at its level
 <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>          49.7%  ▄▄·█▄●▄··▄▄▄ beats 5/10   easy · avg 70%               19%  at its level
-<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  894.05 / 1608  ●·▄··▄·····█ beats 0/5    easy · avg 1103.17 / 16…     14%  at its level
-<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          80.3%  ●···█···█··█ beats 0/3    very easy · avg 88%          12%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>          38.6%  ●·▃█▃·▅▃▅▃▃▃ beats 1/14   hard · avg 44%              6.4%  blunt
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  894.05 / 1608  ●·▄··▄·····█ beats 0/5    easy · avg 1111.45 / 16…     14%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          80.3%  ●···█···█··█ beats 0/3    very easy · avg 88%          11%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>          38.6%  ●·▃█▃·▅▃▅▃▃▃ beats 1/14   hard · avg 45%              6.4%  blunt
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test                                       result  vs the others in its run  dif
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   75.2%  ●▄·▄█▄▄····▄ beats 1/8    easy · avg 82%     13%  blunt · at its level
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   75.2%  ●▄·▄█▄▄····▄ beats 1/8    easy · avg 82%     12%  blunt · at its level
 </pre>
 
 </details>
@@ -49,11 +49,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   53% ▇▇▇▇▇▇
 <a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   14% ▇▇
-<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   13% ▇▇
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   12% ▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   12% ▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   11% ▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    6% ▇
-prior: pull toward the middle                        3% ▇
-weighted average                                   = 36.1
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 35.9
 </pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>

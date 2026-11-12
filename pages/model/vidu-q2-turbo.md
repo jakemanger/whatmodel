@@ -6,7 +6,7 @@
 
 ShengShu (Vidu) · released 2025-09 · closed weights
 
-**score 55.0** ±2.9 · #39 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.4** ±2.9 · #39 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ ShengShu (Vidu) · released 2025-09 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #33 of 50*     96%      1
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #34 of 51*     96%      1
 </pre>
 
-<details><summary>image to video · #33 of 50 · 96% of its score</summary>
+<details><summary>image to video · #34 of 51 · 96% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [P-Video](p-video.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 2.3](hailuo-2-3.md) here, though they rank lower overall.
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 2.3](hailuo-2-3.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1243.6  ▁▁▁▁▄●▃▆▃▂▄█ beats 13/40  avg 1189       96%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1244.4  ▁▁▁▁▄●▃▇▂▃▅█ beats 14/42  avg 1197       96%  typical
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 55.0
+weighted average                        = 54.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

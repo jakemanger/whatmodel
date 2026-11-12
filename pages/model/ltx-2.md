@@ -6,7 +6,7 @@
 
 Lightricks · released 2025-10 · 19B params · ltx-2-community
 
-**score 49.0** ±1.8 · #53 of 93 · from 4 benchmark results across 3 sources
+**score 48.6** ±1.7 · #54 of 94 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,29 +14,29 @@ Lightricks · released 2025-10 · 19B params · ltx-2-community
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆●█▃▂▂▂▄   #34 of 68*     61%      2
-image to video  ▁▂·●▅█▅▄▅▆▃▄   #47 of 50*     35%      1
+text to video   ▆▄▃▆▆●▇▂▄·▄▅   #36 of 70*     63%      2
+image to video  ▁▂·●▅█▅▄▅▅▃▅   #48 of 51*     33%      1
 </pre>
 
-<details><summary>text to video · #34 of 68 · 61% of its score</summary>
+<details><summary>text to video · #36 of 70 · 63% of its score</summary>
 
 Beats [Wan 2.2 A14B](wan-2-2-a14b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1154.1  ▂▂▃●█▆·▆▅▁▂▇ beats 7/41   avg 1147       53%  typical
-<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1479.0  █···█●·█··██ beats 2/5    avg 1470      7.6%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1156.1  ▂▂▃●█▃·▇▂▁█▃ beats 7/44   avg 1154       56%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1479.0  █···█●·█··██ beats 2/5    avg 1477      7.2%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #47 of 50 · 35% of its score</summary>
+<details><summary>image to video · #48 of 51 · 33% of its score</summary>
 
 Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1159.4  ▁▁▁●▄▇▃▆▃▂▄█ beats 3/40   avg 1189       35%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1160.8  ▁▁▁●▄▇▃▇▂▃▅█ beats 3/42   avg 1197       33%  typical
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test                  result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   51.2%  ●▄▄··▄···▄·█ beats 0/7    medium · avg 57%    3.3%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   51.2%  ●▄▄··▄···▄·█ beats 0/7    medium · avg 58%    3.1%  blunt · at its level
 </pre>
 
 </details>
@@ -56,11 +56,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   88% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    7% ▇
 <a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.0
+weighted average                                   = 48.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

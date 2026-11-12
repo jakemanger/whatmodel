@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 53.5** ±1.2 · #309 of 732 · from 14 benchmark results across 2 sources
+**score 53.3** ±1.2 · #317 of 740 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #229 of 469*     27%      1
+coding          ▁▁▁▃▆▇●▆▆▃▃▁   #232 of 472*     27%      1
 chat &amp; writing  █········█·●       #1 of 3*    2.4%      1
 </pre>
 
-<details><summary>coding · #229 of 469 · 27% of its score</summary>
+<details><summary>coding · #232 of 472 · 27% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▂▄▂▂▄▆●█▅▂▁ beats 72/145  easy · avg 77%    2.4%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▂▄▂▂▄▆●█▅▂▁ beats 72/145  easy · avg 78%    2.4%  small run
 </pre>
 
 </details>
@@ -46,13 +46,13 @@ test                                result  vs the others in its run   difficult
 test                               result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (maker)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▃▃ beats 48/106   hard · avg 38%       13%  sharp · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>              75.4%  ▁▁▁▁▂▄▅▆█●▃▁ beats 129/155  medium · avg 68%     12%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.6%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/214  easy · avg 78%      8.3%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 48%    7.4%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 49%      5.0%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      4.9%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 87%      3.6%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 68%    8.6%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/215  easy · avg 78%      8.3%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/189   medium · avg 48%    7.4%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 50%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 84%      4.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 88%      3.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.4%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (maker)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (maker)</a>                        86.0%  ▁▁▁▂▂▃▅█▅▃●▁ beats 121/123  easy · avg 85%      1.4%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (maker)</a>              65.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 64/79    medium · avg 59%    0.4%  blunt · at its level · small run
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   72% ▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   27% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 53.5
+weighted average                                   = 53.3
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

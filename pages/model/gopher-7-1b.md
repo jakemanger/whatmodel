@@ -22,7 +22,7 @@ Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmode
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2112.11446v2">MMLU (maker)</a>                         29.5%  ▁▁▁▁●▂▂▅██▆▄ beats 13/214  very hard · avg 30%     70%  sharp · too hard for it
+<a href="https://arxiv.org/html/2112.11446v2">MMLU (maker)</a>                         29.5%  ▁▁▁▁●▂▂▅██▆▄ beats 13/215  very hard · avg 30%     70%  sharp · too hard for it
 <a href="https://arxiv.org/html/2112.11446v2">LAMBADA (OpenAI version), last-wo…</a>   68.5%  █··█·█··█·●█ beats 4/5     medium · avg 58%        25%  at its level
 </pre>
 

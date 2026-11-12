@@ -6,7 +6,7 @@
 
 Alibaba-ATH · released 2026-04 · proprietary
 
-**score 72.7** ±1.6 · #13 of 93 · from 5 benchmark results across 3 sources
+**score 72.0** ±1.5 · #14 of 94 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,37 +14,37 @@ Alibaba-ATH · released 2026-04 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃▂▂●▄    #9 of 68*     43%      1
-image to video  ▁▂·▂▅█▅▄▅●▃▄   #12 of 50*     45%      2
-video editing   ▄··█··●··█▄█     #6 of 9*    8.8%      1
+text to video   ▆▄▃▆▆█▇▂▄·●▅   #11 of 70*     47%      1
+image to video  ▁▂·▂▅█▅▄▅●▃▅   #14 of 51*     41%      2
+video editing   ▃··▅·●···█▃▅    #7 of 10*     10%      1
 </pre>
 
-<details><summary>text to video · #9 of 68 · 43% of its score</summary>
+<details><summary>text to video · #11 of 70 · 47% of its score</summary>
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1427.2  ▂▂▃▆█▆·▆▅●▂▇ beats 33/41  avg 1147       43%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1428.7  ▂▂▃▆█▃·▇▂●█▃ beats 33/44  avg 1154       47%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #12 of 50 · 45% of its score</summary>
+<details><summary>image to video · #14 of 51 · 41% of its score</summary>
 
-Beats [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md), [Grok Imagine Video](grok-imagine-video.md) here, though they rank lower overall.
+Beats [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md), [Grok Imagine Video](grok-imagine-video.md), [Wan 2.2 I2V Plus](wan-2-2-i2v-plus.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1441.7  ▁▁▁▁▄▇▃▆▃▂●█ beats 31/40  avg 1189       29%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1085.0  ▂··▂▂▆●▆▂▂▆▄ beats 9/19   avg 741        16%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1442.9  ▁▁▁▁▄▇▃▇▂▃●█ beats 31/42  avg 1197       28%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1085.0  ▂··▂▂▆●▆▂▂▆▄ beats 9/19   avg 764        13%  sharp
 </pre>
 
 </details>
 
-<details><summary>video editing · #6 of 9 · 8.8% of its score</summary>
+<details><summary>video editing · #7 of 10 · 10% of its score</summary>
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1306.7  █··█··●··█▄█ beats 4/9    avg 1117      8.8%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1305.7  ▄··▂▂·●··█▂▄ beats 4/11   avg 1119       10%  typical
 </pre>
 
 </details>
@@ -52,8 +52,8 @@ test              result  vs the others in its run  difficulty  counts  why
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.6%  ▂···▂······● beats 3/5    medium · avg 65%    1.8%  blunt
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.6%  ▂···▂······● beats 3/5    easy · avg 65%    1.7%  blunt
 </pre>
 
 </details>
@@ -64,11 +64,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   13% ▇▇
 <a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 72.7
+weighted average                                   = 72.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6.27B params · apache-2.0
 
-**score 56.4** ±1.9 · #61 of 144 · from 7 benchmark results across 6 sources
+**score 55.7** ±1.8 · #63 of 146 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #35 of 62     73%      6
+image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #37 of 64     73%      6
 </pre>
 
-<details><summary>image to image / editing · #35 of 62 · 73% of its score</summary>
+<details><summary>image to image / editing · #37 of 64 · 73% of its score</summary>
 
-Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           53.0%  ▃▃▂·▃▆▂●·▃·▃ beats 14/20  hard · avg 45%       40%  at its level
-<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   76.5%  ▃·········●▂ beats 6/7    medium · avg 42%     16%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   76.5%  ▃·········●▂ beats 6/7    medium · avg 44%     15%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   76.7%  ▄·▄···▄█●··▄ beats 6/7    easy · avg 66%       10%  at its level
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1001.0  ▃▂····▂●▂▃▂▃ beats 5/14   avg 956             7.8%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1001.0  ▃▂····▂●▂▃▂▃ beats 5/14   avg 960             8.1%  blunt
 <a href="https://arxiv.org/html/2512.07584v1">GEdit-Bench-EN overall (G_O, GPT-…</a>   76.4%  ▄·····█·▄▄·● beats 5/5                           —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">ImgEdit-Bench overall (GPT-4.1 ju…</a>   90.0%  no other model yet                               —  not counted yet: no other model in the …
 </pre>
@@ -39,9 +39,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    47.3%  ▂··▂●▂▄▂▂·▂▂ beats 2/12   medium · avg 41%         18%  at its level
-<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.6%  ▃·····●▅▃·▃▅ beats 2/9    very hard · avg 4.3%    4.2%  too hard for it
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 8/15   hard · avg 31%          3.1%  at its level
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    47.3%  ▂··▂●▂▄▂▂·▂▂ beats 2/12   medium · avg 42%         18%  at its level
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.6%  ▃·····●▅▃·▃▅ beats 2/9    very hard · avg 4.4%    4.2%  too hard for it
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 8/15   hard · avg 31%          3.2%  at its level
 </pre>
 
 </details>
@@ -53,13 +53,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   40% ▇▇▇▇▇
-<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (submitted / maker-repo…</a>        2   26% ▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (submitted / maker-repo…</a>        2   25% ▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   18% ▇▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
 <a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    4% ▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 56.4
+weighted average                                   = 55.7
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

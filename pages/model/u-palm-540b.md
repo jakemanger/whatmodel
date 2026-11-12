@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 540B params · proprietary
 
-**score 47.9** ±0.9 · comparison only: no current run option verified · from 21 benchmark results across 2 sources · † no independently run results verified
+**score 47.8** ±0.9 · comparison only: no current run option verified · from 21 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆█●▅█▃▁▁▁   #223 of 530     26%      2
+math  ▁▂▃▆█●▅▇▄▁▁▁   #230 of 540     26%      2
 </pre>
 
-<details><summary>math · #223 of 530 · 26% of its score</summary>
+<details><summary>math · #230 of 540 · 26% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    49.9%  ▆·▂·▄▂▂▂▂█▄● beats 16/18   medium · avg 48%     18%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11399v2">GSM8K (maker)</a>   58.5%  ▂▂▂▂▃▄▅●██▆▄ beats 98/206  easy · avg 67%      8.1%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2210.11399v2">GSM8K (maker)</a>   58.5%  ▂▂▂▂▃▄▅●██▆▄ beats 98/206  easy · avg 68%      8.1%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11399v2">CommonsenseQA (maker)</a>                80.1%  █·····▂▂▃▂▄● beats 36/38    easy · avg 83%         8.3%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   54.6%  ▂··▂·▂▄▄·█●█ beats 14/18    medium · avg 61%       4.4%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">ARC Challenge (maker)</a>                60.3%  ▄▁▁▂▁▄█▇●▂▃▂ beats 107/140  medium · avg 65%       4.2%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 29%         3.4%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 30%         3.4%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">WinoGrande (maker)</a>                   82.6%  ▁▁▁▁▂▁▁▅▇█▃● beats 127/131  easy · avg 85%         3.4%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">TriviaQA (maker)</a>                     76.4%  ▁▁▂▂▄▄▃▆▅█●▂ beats 74/80    easy · avg 80%         3.1%  typical
 <a href="https://arxiv.org/html/2210.11399v2">OpenBookQA (maker)</a>                   53.6%  ▅▁▁▁▂▂▃█●▁▃▁ beats 84/107   medium · avg 55%       2.8%  at its level · small run
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>       17   58% ▇▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   41% ▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 47.9
+weighted average                                   = 47.8
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>

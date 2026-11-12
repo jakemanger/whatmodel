@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 12.43B params · apache-2.0
 
-**score 48.2** ±3.2 · #87 of 144 · from 4 benchmark results across 3 sources
+**score 47.8** ±3.1 · #89 of 146 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃●▃█▅▄▅▂▁   #50 of 62     76%      4
+image to image / edit…  ▁▁·▃●▃█▆▃▅▂▂   #53 of 64     75%      4
 </pre>
 
-<details><summary>image to image / editing · #50 of 62 · 76% of its score</summary>
-
-Beats [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank higher overall.
+<details><summary>image to image / editing · #53 of 64 · 75% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              69.2%  ▂····▂▄▂●·█▂ beats 5/11   easy · avg 73%       30%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           51.6%  ●█·········█ beats 0/2    medium · avg 54%     23%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   69.7%  ●·······█··█ beats 0/2    easy · avg 73%       23%  at its level · small run
+<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              69.2%  ▂····▂▄▂●·█▂ beats 5/11   easy · avg 74%       31%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           51.6%  ●█·········█ beats 0/2    medium · avg 55%     23%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   69.7%  ●·······█··█ beats 0/2    easy · avg 73%       22%  at its level · small run
 <a href="https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md">GEdit-Bench-EN overall (G_O, GPT-…</a>   69.7%  ▄·····█·●▄·▄ beats 3/5                           —  not counted yet: no other model in the …
 </pre>
 
@@ -36,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   66.9%  █▄▄·▄▄▄▄█·▄● beats 11/12  medium · avg 65%     20%  at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   66.9%  █▄▄·▄▄▄▄█·▄● beats 11/12  easy · avg 65%     20%  at its level
 </pre>
 
 </details>
@@ -48,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   46% ▇▇▇▇▇
-<a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   30% ▇▇▇▇
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   45% ▇▇▇▇▇
+<a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   31% ▇▇▇▇
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   20% ▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 48.2
+weighted average                                   = 47.8
 </pre>
 
 <sub>Licences: stepfun-ai/Step1X-Edit-v1p2 model card ([Apache-2.0](../../licenses/stepfun-ai--Step1X-Edit-v1p2.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

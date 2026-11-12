@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · proprietary
 
-**score 79.7** ±6.7 · #2 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 79.4** ±6.4 · #3 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Alibaba · released 2026-08 · proprietary
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1723.6  ▄····██···▄● beats 6/7    avg 1299       81%  noisy
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1723.6  ▄····██···▄● beats 6/7    avg 1296       82%  noisy
 </pre>
 
 </details>
@@ -31,9 +31,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 79.7
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       18% ▇▇
+weighted average                                   = 79.4
 </pre>
 
 <sub>Licences: Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

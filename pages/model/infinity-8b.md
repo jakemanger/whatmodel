@@ -6,7 +6,7 @@
 
 ByteDance (FoundationVision) · released 2025-02 · 8B params · mit
 
-**score 46.0** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.8** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂██●▆██▂▃▁▁   #91 of 157*     88%      1
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #93 of 159*     88%      1
 </pre>
 
-<details><summary>text to image · #91 of 157 · 88% of its score</summary>
+<details><summary>text to image · #93 of 159 · 88% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            12% ▇
-weighted average                        = 46.0
+weighted average                        = 45.8
 </pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

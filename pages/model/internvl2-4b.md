@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 42.5** ±1.9 · #526 of 732 · from 19 benchmark results across 4 sources
+**score 42.3** ±1.8 · #535 of 740 · from 19 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▄▂▁▁   #261 of 431*     14%      1
-vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄    #148 of 153     84%     13
+math                ▁▁▃▅●▆▄█▅▂▁▁   #268 of 440*     14%      1
+vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄    #149 of 154     84%     13
 </pre>
 
-<details><summary>math · #261 of 431 · 14% of its score</summary>
+<details><summary>math · #268 of 440 · 14% of its score</summary>
 
-Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Mistral Large 2 (2411)](mistral-large-2.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -31,13 +31,13 @@ test                  result  vs the others in its run  difficulty        counts
 
 </details>
 
-<details><summary>vision &amp; documents · #148 of 153 · 84% of its score</summary>
+<details><summary>vision &amp; documents · #149 of 154 · 84% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      958.4  ▁▁●▂▂▂▃▄▅▅█▇ beats 2/152  avg 1061                24%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      958.5  ▁▁●▂▂▂▃▅▅▅█▇ beats 2/152  avg 1063                24%  blunt
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                           44.2%  ▁····▁▁●█▆▆▅ beats 6/53   medium · avg 51%        19%  several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>                 53.7%  ▁··▁▄▄●▇▄▅█▄ beats 12/48  medium · avg 65%        14%  at its level · small run · several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                              78.8%  ▁··▁▁▁▁▁▂●▅█ beats 17/44  easy · avg 82%         4.6%  blunt · small run · several runs
@@ -48,8 +48,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (maker)</a>                  60.7%  ▁▃●▇▃▇▇▅█▁▅▅ beats 3/39   easy · avg 71%         2.9%  blunt · at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                            77.3%  ▁▁▅▇●▇·▄·█·▃ beats 11/28  easy · avg 84%         2.6%  blunt · small run · several runs
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (maker)</a>                     78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.4%  blunt · small run
-<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv (reasoning questions) (ma…</a>   24.5%  ●▅▃▅▅▆▆▅▆█▆▂ beats 1/101  hard · avg 34%            —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descriptive questions (ma…</a>   48.0%  ●▄▄▅▇▄██▇▂▁▂ beats 0/59   easy · avg 69%            —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv (reasoning questions) (ma…</a>   24.5%  ●▄▃▄▅▅▅▅▅█▆▂ beats 1/105  hard · avg 35%            —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descriptive questions (ma…</a>   48.0%  ●▄▄▅▇▄██▇▃▂▂ beats 0/61   easy · avg 70%            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (maker)</a>   53.4%  ●▁▁▁▁·▁▃▁▁▁█ beats 0/16   medium · avg 66%    6.5%  at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (maker)</a>   53.4%  ●▁▁▁▁·▁▃▁▁▁█ beats 0/16   medium · avg 67%    6.5%  at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (without subtitles) (ma…</a>   51.4%  ●▃▁▃▁·█▄▄▅·▇ beats 0/27   medium · avg 63%    5.0%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MVBench (maker)</a>                      63.7%  ▁··▃●▁▃▄▄▄█▄ beats 3/26   medium · avg 67%    2.6%  blunt · at its level · small run
 </pre>
@@ -72,11 +72,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OpenGVLab InternVL2 model cards (submit…</a>       12   52% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
 <a name="microsoft-phi35-vision-card-benchmarks"></a><a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">Microsoft Phi-3.5-vision-instruct model…</a>        5   19% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    4% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 42.5
+weighted average                                   = 42.3
 </pre>
 
 <sub>Licences: OpenGVLab InternVL2 model cards ([MIT](https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft Phi-3.5-vision-instruct model card: Benchmarks table ([MIT](https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/LICENSE)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

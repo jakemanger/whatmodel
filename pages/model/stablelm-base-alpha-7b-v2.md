@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-08 · 6.89B params · cc-by-sa-4.0
 
-**score 29.5** ±1.0 · #667 of 732 · from 12 benchmark results across 2 sources
+**score 29.4** ±1.0 · #676 of 740 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,11 +23,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">ARC Challenge (maker)</a>                40.5%  ▁·▁··▁▁▇▂●▆▃ beats 14/26   easy · avg 82%          48%  sharp
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">WinoGrande (maker)</a>                   68.8%  ▁····▁··▁▂█● beats 21/26   easy · avg 86%          11%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">WinoGrande (maker)</a>                   68.8%  ▁····▁··▁▂█● beats 21/26   easy · avg 87%          11%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">BoolQ (maker)</a>                        70.3%  ▂▃▂▅▆▂●▆█▂▂▂ beats 13/26   easy · avg 88%         8.5%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">HellaSwag (maker)</a>                    74.3%  ▃···▁▇▅●▇▃▁▁ beats 17/26   very easy · avg 91%    6.2%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">ARC Easy (maker)</a>                     69.1%  ▁▁·▁▁▄▅▄●▅▁▃ beats 16/26   easy · avg 85%         5.8%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">SciQ (maker)</a>                         93.9%  ▁·▁·▁·▃▅▃●▄▁ beats 20/26   very easy · avg 97%    4.8%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">SciQ (maker)</a>                         93.9%  ▁·▁·▁·▃▅▃●▄▁ beats 20/26   very easy · avg 98%    4.8%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">PIQA (maker)</a>                         78.5%  ▁·▁··▁▁▃█▅●▂ beats 18/26   easy · avg 87%         4.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">OpenBookQA (maker)</a>                   30.4%  █·▁▁▃·▁▃●▇▃▄ beats 15/26   hard · avg 49%         3.8%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">LAMBADA (OpenAI version), last-wo…</a>   74.2%  ▁··▂▁▁▁▂▆█●▃ beats 23/26   very easy · avg 86%    2.6%  blunt · at its level
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">Stability AI (submitted / maker-reporte…</a>       11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.5
+weighted average                                   = 29.4
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

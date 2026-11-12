@@ -6,7 +6,7 @@
 
 HiDream · released 2025-07 · mit
 
-**score 25.8** ±10.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.6** ±10.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>    1.7%  ●···▂·▂█▆▅·▂ beats 0/15   hard · avg 31%     51%  typical
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>    1.7%  ●···▂·▂█▆▅·▂ beats 0/15   hard · avg 31%     52%  typical
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1   51% ▇▇▇▇▇▇
-prior: pull toward the middle                       49% ▇▇▇▇▇▇
-weighted average                                   = 25.8
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1   52% ▇▇▇▇▇▇
+prior: pull toward the middle                       48% ▇▇▇▇▇▇
+weighted average                                   = 25.6
 </pre>
 
 <sub>Licences: ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

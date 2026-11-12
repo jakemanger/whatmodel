@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 46.6** ±0.9 · #444 of 732 · from 27 benchmark results across 6 sources
+**score 46.4** ±0.9 · #453 of 740 · from 27 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅●█▇▅▄▃▁   #329 of 469*    2.3%      1
-math                ▁▁▃●█▆▄█▄▂▁▁    #354 of 431     19%      3
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #133 of 153     79%     17
+coding              ▁▁▁▃▆●█▆▆▃▃▁   #329 of 472*    2.3%      1
+math                ▁▁▃●█▆▄█▅▂▁▁    #364 of 440     19%      3
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #134 of 154     79%     17
 </pre>
 
-<details><summary>coding · #329 of 469 · 2.3% of its score</summary>
+<details><summary>coding · #329 of 472 · 2.3% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run    difficulty      counts  why
@@ -32,20 +32,20 @@ test       result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>math · #354 of 431 · 19% of its score</summary>
+<details><summary>math · #364 of 440 · 19% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (maker)</a>   58.2%  ▃··●▅·▃█▅▅▅█ beats 1/16   medium · avg 69%     12%  at its level · several runs
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>            16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24   hard · avg 25%      3.8%  small run
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>            16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24   hard · avg 26%      3.8%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>      27.9%  ▂▄●▃█▇▅▆▄▃▄▁ beats 11/80  medium · avg 51%    2.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #133 of 153 · 79% of its score</summary>
+<details><summary>vision &amp; documents · #134 of 154 · 79% of its score</summary>
 
 Beats [Nova Pro](nova-pro.md), [Nova Lite](nova-lite.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
@@ -54,19 +54,19 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (maker)</a>                                            54.1%  ▂···●▂▂▂▄▄▄█ beats 3/16    medium · avg 61%             15%  at its level · several runs
 <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (maker)</a>                                  58.2%  ▃··●▅·▃█▅▅▅█ beats 1/16    medium · avg 69%             12%  at its level · several runs
 <a href="https://arxiv.org/html/2409.12191v2">MMStar (maker)</a>                                                60.7%  ▂··▄●▂·▄█▂▄▆ beats 3/16    medium · avg 65%            8.9%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (maker)</a>                                              43.5%  ▃·█·●▃▃▃▅▅▃█ beats 5/16    medium · avg 46%            6.4%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1030.6  ▁▁▂▂●▂▃▄▅▅█▇ beats 18/152  avg 1061                    5.9%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>                                           16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24    hard · avg 25%              3.8%  small run
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -49.0000  ▃●▃·▃█·▅▃▃▃▃ beats 1/12    avg -4.498                  3.7%  typical
-<a href="https://arxiv.org/html/2409.12191v2">HallusionBench (maker)</a>                                        50.6%  ▃·▃·●▃▅▅▃▅█▅ beats 2/16    medium · avg 54%            3.6%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (maker)</a>                                              43.5%  ▃·█·●▃▃▃▅▅▃█ beats 5/16    medium · avg 46%            6.5%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1031.0  ▁▁▂▂●▂▃▅▅▅█▇ beats 18/152  avg 1063                    6.0%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>                                           16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24    hard · avg 26%              3.8%  small run
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -49.0000  ▃●▃·▃█·▅▃▃▃▃ beats 1/12    avg -3.627                  3.7%  typical
+<a href="https://arxiv.org/html/2409.12191v2">HallusionBench (maker)</a>                                        50.6%  ▃·▃·●▃▅▅▃▅█▅ beats 2/16    medium · avg 55%            3.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (maker)</a>                                               83.0%  ▂··▂·●▃·▅▂▆█ beats 2/17    easy · avg 85%              3.5%  blunt · several runs
 <a href="https://arxiv.org/html/2409.12191v2">DocVQA (maker)</a>                                                94.5%  ▃··▅▃●▃█▃█▅▅ beats 5/17    very easy · avg 94%         3.2%  blunt · maxed out
 <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (maker)</a>                                        76.5%  ▃·▃▅█●▃▃▃▃▃▃ beats 7/13    easy · avg 80%              3.0%  small run
 <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (maker)</a>                                           70.1%  ▅▃·▃●▅·█·▃▅█ beats 5/16    easy · avg 70%              2.8%  blunt · at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.4500 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 3/9     avg 5.605 MM-MT-Bench s…    2.7%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.4500 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 3/9     avg 5.633 MM-MT-Bench s…    2.7%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.9%  ▃···█▃··●▃▃▃ beats 6/9     easy · avg 73%              1.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">OCRBench (maker)</a>                                              86.6%  ▅█·▃▃●▃▅▅▃·▃ beats 9/16    easy · avg 84%              1.1%  blunt
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1025.0  ▄▄·▄·▄●▄·▄·█ beats 4/8     avg 1032                    0.9%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1025.0  ▄▄·▄·▄●▄·▄·█ beats 4/8     avg 1033                    0.9%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">TextVQA (maker)</a>                                               84.3%  █······▄·●▄▄ beats 3/5     easy · avg 80%              0.6%  blunt
 </pre>
 
@@ -76,7 +76,7 @@ test                                                         result  vs the othe
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▂▅█●▆▄ beats 127/214  easy · avg 75%         6.0%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▂▅█●▆▄ beats 127/215  easy · avg 76%         6.0%  at its level
 <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (ma…</a>   63.3%  ▃··●··▅█▃▃▅▃ beats 3/13     medium · avg 66%       4.9%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (maker)</a>   69.0%  ▁▁▁▁●·▁▃▁▁▁█ beats 4/16     medium · avg 73%       2.1%  at its level · small run
 <a href="https://arxiv.org/html/2409.12191v2">MVBench (maker)</a>                      67.0%  ▂▂▂·●█··▆▄·▂ beats 3/13     medium · avg 67%       2.0%  blunt · at its level
@@ -91,14 +91,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (submitted / maker-reported)</a>              15   70% ▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (submitted / maker-reported)</a>              15   69% ▇▇▇▇▇▇▇▇
 <a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B</a>                                     8   19% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    4% ▇
 <a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.6
+weighted average                                   = 46.4
 </pre>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

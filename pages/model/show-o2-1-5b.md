@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 1.5B params · apache-2.0
 
-**score 44.8** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 44.6** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂██●▆██▂▃▁▁   #93 of 157*     89%      2
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #95 of 159*     89%      2
 </pre>
 
-<details><summary>text to image · #93 of 157 · 89% of its score</summary>
+<details><summary>text to image · #95 of 159 · 89% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
 <pre>
 test               result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (maker)</a>     73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 20/39  easy · avg 80%          50%  at its level · small run
-<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (maker)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     39%  small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (maker)</a>     73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 20/39  easy · avg 80%          51%  at its level · small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (maker)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     38%  small run
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (submitted / mak…</a>        2   89% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       11% ▇
-weighted average                                   = 44.8
+weighted average                                   = 44.6
 </pre>
 
 ## How to run it

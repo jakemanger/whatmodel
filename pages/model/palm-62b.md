@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  █·●······█·█      #3 of 4*    2.5%      2
-math    ▁▁▃▆●█▅█▃▁▁▁   #378 of 530     18%      3
+coding  █·●······█·█      #3 of 4*    2.6%      2
+math    ▁▂▃▆●█▅▇▄▁▁▁   #385 of 540     18%      3
 </pre>
 
-<details><summary>coding · #3 of 4 · 2.5% of its score</summary>
+<details><summary>coding · #3 of 4 · 2.6% of its score</summary>
 
 <pre>
 test               result  vs the others in its run   difficulty        counts  why
@@ -30,9 +30,9 @@ test               result  vs the others in its run   difficulty        counts  
 
 </details>
 
-<details><summary>math · #378 of 530 · 18% of its score</summary>
+<details><summary>math · #385 of 540 · 18% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -48,22 +48,22 @@ test                  result  vs the others in its run  difficulty        counts
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>      80.3%  ▅▃█···▅·▃●▃▅ beats 9/12     very easy · avg 94%      11%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        46.7%  ▃▅█···▅·▃●▃▅ beats 9/12     easy · avg 82%          9.3%  sharp · at its level
+<a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        46.7%  ▃▅█···▅·▃●▃▅ beats 9/12     easy · avg 82%          9.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        61.9%  ▅▃▃▅··▃▃·▃●█ beats 9/12     easy · avg 83%          7.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                65.4%  █······▁·▁●▃ beats 9/12     easy · avg 88%          5.9%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     22.4%  █▁·▁●·····▂▁ beats 9/12     medium · avg 48%        4.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     22.4%  █▁·▁●·····▂▁ beats 9/12     medium · avg 49%        4.5%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         55.1%  ▁···▁··▃▁●▅█ beats 7/18     easy · avg 74%          4.4%  at its level · several runs
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (maker)</a>                   76.6%  ▄····▄··▄·█● beats 5/6      easy · avg 85%          3.3%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   72.1%  █·····▃·▁·●▁ beats 11/12    medium · avg 81%        2.8%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     67.3%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 64/80    easy · avg 80%          2.6%  at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               37.4%  ▂▂▂▂·●·▃▂█▃▃ beats 5/18     medium · avg 60%        2.1%  sharp
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (maker)</a>                        84.8%  ▁····▁▂█▆▅●▄ beats 90/103   easy · avg 90%          2.0%  at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   29.8%  ▃·▅·▅▃▅·▃●·█ beats 9/12     medium · avg 52%        2.0%  at its level
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   29.8%  ▃·▅·▅▃▅·▃●·█ beats 9/12     medium · avg 53%        2.0%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   18.1%  ▂▁▁▁▂▄▄▃●█▅▁ beats 40/68    hard · avg 32%          2.0%  several runs
 <a href="https://arxiv.org/html/2204.02311v5">ARC Challenge (maker)</a>                52.5%  ▄▁▁▂▁▄█●▃▂▃▂ beats 91/140   medium · avg 66%        1.6%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (maker)</a>                    79.7%  ▁▁▁▂▂▂▄▆█●▄▂ beats 109/135  easy · avg 87%          1.5%  at its level · several runs
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   39.1%  ▄······▄●·▄█ beats 2/5      medium · avg 62%        1.4%  sharp
-<a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   40.9%  ▄······▄●▄·█ beats 2/5      medium · avg 58%        1.3%  typical
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   39.1%  ▄······▄●·▄█ beats 2/5      medium · avg 63%        1.4%  sharp
+<a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   40.9%  ▄······▄●▄·█ beats 2/5      medium · avg 58%        1.2%  typical
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (maker)</a>      36.4%  █▁▃·▃·●·▃··▁ beats 13/16    hard · avg 51%          1.2%  sharp · small run
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (make…</a>   43.4%  ▄·····▄··●·█ beats 2/5      medium · avg 56%        1.1%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   40.5%  ▂··▂·▂▄▄·●██ beats 7/18     medium · avg 61%        1.1%  at its level
@@ -75,8 +75,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2204.02311v5">LAMBADA (OpenAI version), last-wo…</a>   75.4%  ▁·····▁▁▃▃█● beats 77/86    easy · avg 84%          0.7%  blunt · several runs
 <a href="https://arxiv.org/html/2204.02311v5">MultiRC (SuperGLUE, prompted, F1a…</a>   72.1%  ▃·▃██···●··▃ beats 8/10     very easy · avg 85%     0.6%  at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">ARC Easy (maker)</a>                     75.2%  ▁▃▂▄▆█●▃▁··▁ beats 84/100   easy · avg 85%          0.6%  blunt · at its level · small run · seve…
-<a href="https://arxiv.org/html/2204.02311v5">RTE (prompted) (maker)</a>               67.9%  ▅▃·▃··▅·▅▅▃● beats 12/13    medium · avg 75%        0.6%  at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">Story Cloze Test (maker)</a>             83.5%  ▃▃▃▂▅█●▂▁··▂ beats 42/50    easy · avg 89%          0.6%  blunt · at its level · small run · seve…
+<a href="https://arxiv.org/html/2204.02311v5">RTE (prompted) (maker)</a>               67.9%  ▅▃·▃··▅·▅▅▃● beats 12/13    medium · avg 75%        0.6%  at its level · small run
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (maker)</a>          5.9%  ▄·····●█··▄▄ beats 1/5      hard · avg 15%          0.5%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.9.pdf">ARCADE New Tasks pass@1 (notebook…</a>    7.2%  ●·█········█ beats 0/2      hard · avg 23%          0.5%  small run
 <a href="https://arxiv.org/html/2204.02311v5">SQuAD 2.0 (prompted, F1) (maker)</a>     75.6%  ▃▃···▃▃█▃▃●▃ beats 9/10     very easy · avg 85%     0.4%  at its level · small run
@@ -88,7 +88,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2204.02311v5">OpenBookQA (maker)</a>                   50.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 74/107   medium · avg 59%        0.3%  noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">RACE-middle (maker)</a>                  64.3%  ▄▄····▄█·█●█ beats 8/10     easy · avg 74%          0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">ReCoRD (SuperGLUE, prompted) (mak…</a>   91.4%  ▄·▄···▄███●▄ beats 9/10     very easy · avg 95%     0.2%  blunt · maxed out · small run
-<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          40.0%  ▅··▃▃█··▃●·▃ beats 8/10     medium · avg 53%        0.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (maker)</a>          40.0%  ▅··▃▃█··▃●·▃ beats 8/10     medium · avg 54%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">DROP (maker)</a>                         57.9%  ▃▅█▅·▃·●▄▂▁▃ beats 29/44    medium · avg 62%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (maker)</a>                    47.5%  ▂▄·▂▂▂▂▂▆▄▂● beats 16/17    medium · avg 53%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">CommitmentBank (prompted) (maker)</a>    57.1%  ▂▃·▂█▂▂▂·●·▂ beats 12/13    medium · avg 60%        0.1%  blunt · at its level · small run

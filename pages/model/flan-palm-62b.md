@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 44.4** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
+**score 44.3** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆●█▅█▃▁▁▁   #320 of 530*     21%      1
+math  ▁▂▃▆█●▅▇▄▁▁▁   #318 of 540*     21%      1
 </pre>
 
-<details><summary>math · #320 of 530 · 21% of its score</summary>
+<details><summary>math · #318 of 540 · 21% of its score</summary>
 
-Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty        counts  why
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   75% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3   24% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.4
+weighted average                                   = 44.3
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt))</sub>

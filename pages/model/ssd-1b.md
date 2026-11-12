@@ -6,7 +6,7 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 36.1** ±3.6 · #118 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.2** ±3.6 · #119 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #100 of 126*     94%      1
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #102 of 128*     95%      1
 </pre>
 
-<details><summary>text to image · #100 of 126 · 94% of its score</summary>
+<details><summary>text to image · #102 of 128 · 95% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 6/14   easy · avg 3.83 / 5     94%  at its level
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 6/14   easy · avg 3.84 / 5     95%  at its level
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        6% ▇
-weighted average                                   = 36.1
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 36.2
 </pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>

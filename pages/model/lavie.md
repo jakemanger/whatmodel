@@ -6,7 +6,7 @@
 
 Shanghai AI Lab (Vchitect) · released 2023-09 · lavie-weights
 
-**score 31.8** ±1.9 · #82 of 93 · from 6 benchmark results across 4 sources
+**score 31.9** ±1.8 · #82 of 94 · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,21 +14,19 @@ Shanghai AI Lab (Vchitect) · released 2023-09 · lavie-weights
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆●▃▄▆▅█▃▂▂▂▄   #56 of 68     99%      6
+text to video  ▆●▃▆▆█▇▂▄·▄▅   #58 of 70     99%      6
 </pre>
 
-<details><summary>text to video · #56 of 68 · 99% of its score</summary>
-
-Beats [Open-Sora 1.1](open-sora-1-1.md) here, though they rank higher overall.
+<details><summary>text to video · #58 of 70 · 99% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   964.0  ▃▃···●▃·▃▅·█ beats 3/10   avg 1229             31%  sharp
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        15.7%  ▄▄▄·●▄█····▄ beats 3/7    medium · avg 48%     23%  sharp
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   49.3%  ▄▄·█··●▄▄▄▄▄ beats 5/10   easy · avg 73%       19%  at its level
-<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   48.2%  ▄▄·█●█▄··▄▄▄ beats 4/10   easy · avg 70%       11%  at its level
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    41.0%  ▅·▃▅··▃●···▃ beats 6/9    medium · avg 56%    7.8%  at its level
-<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   50.0%  ▄·▄●▄▄▄·▄·▄█ beats 3/10   medium · avg 71%    6.2%  at its level
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   964.0  ▃▃···●▃·▃▅·█ beats 3/10   avg 1231             30%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        15.7%  ▄▄▄·●▄█····▄ beats 3/7    medium · avg 48%     22%  sharp
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   49.3%  ▄▄·█··●▄▄▄▄▄ beats 5/10   easy · avg 74%       20%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   48.2%  ▄▄·█●█▄··▄▄▄ beats 4/10   easy · avg 70%       12%  at its level
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    41.0%  ▅·▃▅··▃●···▃ beats 6/9    medium · avg 56%    8.0%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   50.0%  ▄·▄●▄▄▄·▄·▄█ beats 3/10   medium · avg 71%    6.6%  at its level
 </pre>
 
 </details>
@@ -39,15 +37,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   31% ▇▇▇▇
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   31% ▇▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   32% ▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   30% ▇▇▇▇
 <a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   30% ▇▇▇▇
-<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1    6% ▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 31.8
+weighted average                                   = 31.9
 </pre>
 
-<sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
+<sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
 ## How to run it
 

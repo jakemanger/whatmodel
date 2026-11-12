@@ -6,7 +6,7 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 27.8** ±0.8 · #678 of 732 · from 32 benchmark results across 7 sources
+**score 27.8** ±0.8 · #685 of 740 · from 32 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,12 +23,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                        40.8%  ▁·▁··▁▁▇▂●▆▃ beats 15/26   easy · avg 82%          34%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                           66.1%  ▁····▁··▁▂●▄ beats 15/26   easy · avg 86%          11%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                           66.1%  ▁····▁··▁▂●▄ beats 15/26   easy · avg 87%          11%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                            71.4%  ▃···▁▇▅●▇▃▁▁ beats 14/26   very easy · avg 91%    7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                             68.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 15/26   easy · avg 85%         5.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                                69.5%  ▂▃▂▅▆▂●▆█▂▂▂ beats 12/26   easy · avg 88%         5.0%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.9%  too hard for it · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 97%    4.5%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 50%         4.9%  too hard for it · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 98%    4.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                                 77.4%  ▁·▁··▁▁▃█●█▂ beats 16/26   easy · avg 87%         3.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (maker)</a>                     25.9%  █···█·██●··█ beats 4/5     easy · avg 68%         3.2%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness) (maker)</a>             23.0%  ······●····· beats 4/5     very hard · avg 25%    3.0%  too hard for it
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted) (maker)</a>      34.3%  ██·██●·····█ beats 4/5     very hard · avg 43%    1.1%  too hard for it · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.530.pdf">Anthropic HH helpful preference c…</a>   55.0%  ●········█·█ beats 0/2     hard · avg 65%         1.0%  small run
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness) (maker)</a>        36.3%  ▄····●█▄···▄ beats 1/5     medium · avg 57%       1.0%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.3%  ●▁▁▁▁▁▁▁▂█▅▁ beats 19/276  medium · avg 72%       0.9%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.3%  ●▁▁▁▁▁▁▁▂█▅▁ beats 19/276  medium · avg 72%       1.0%  noisy
 <a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy) (…</a>   29.6%  ▃······█···● beats 5/5     very hard · avg 35%    0.9%  blunt · too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">SuperGLUE WSC (prompted) (maker)</a>     50.0%  ●··········▄ beats 2/5     hard · avg 62%         0.6%  blunt
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   83.6%  ▄·▄▄·······● beats 4/4     very easy · avg 92%    0.6%  blunt

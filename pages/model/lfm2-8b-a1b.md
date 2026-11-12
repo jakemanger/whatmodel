@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
-**score 46.5** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
+**score 46.3** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▄▅▄▄▃▁▁    #342 of 354    3.8%      4
-chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #291 of 474*    4.9%      2
-math            ▁▁▃▆█●▅█▃▁▁▁    #296 of 530     30%      7
+agent tasks     ▁▁●▆█▄▅▅▄▄▁▁    #345 of 357    3.8%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #293 of 476*    4.9%      2
+math            ▁▂▃▆█●▅▇▄▁▁▁    #305 of 540     30%      7
 </pre>
 
-<details><summary>agent tasks · #342 of 354 · 3.8% of its score</summary>
+<details><summary>agent tasks · #345 of 357 · 3.8% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (maker)</a>               7.0%  ●····▂▁▃▆█▃▁ beats 0/44    hard · avg 29%      1.2%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (maker)</a>               7.0%  ●····▂▁▃▆█▃▁ beats 0/44    hard · avg 30%      1.2%  small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archive) (…</a>   25.5%  ▁▁▁▂●▆▅▆█▂▄▃ beats 17/114  medium · avg 38%    1.1%  at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (maker)</a>                      45.1%  ▁▁▁▁▁●▅█▆▅▄▁ beats 25/171  medium · avg 57%    0.7%  blunt · at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (maker)</a>             13.6%  ●█▄········█ beats 0/5     hard · avg 25%      0.7%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (maker)</a>             13.6%  ●█▄········█ beats 0/5     hard · avg 26%      0.7%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #291 of 474 · 4.9% of its score</summary>
+<details><summary>chat &amp; writing · #293 of 476 · 4.9% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -47,16 +47,16 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #296 of 530 · 30% of its score</summary>
+<details><summary>math · #305 of 540 · 30% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                84.6%  █····●··▄·▄█ beats 3/7     very easy · avg 86%     11%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            82.6%  █▄··●█▄····▄ beats 3/7     easy · avg 80%         5.1%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            82.6%  █▄··●█▄····▄ beats 3/7     easy · avg 81%         5.1%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MATH-500 (maker)</a>                     74.2%  ▃····▃·●···▃ beats 4/5     easy · avg 79%         4.4%  at its level · several runs
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (maker)</a>                    20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  hard · avg 34%         4.0%  sharp · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (maker)</a>                    20.0%  ▁·▁▁▁●▅▇█▆▃▁ beats 11/134  hard · avg 35%         4.0%  sharp · small run
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              56.5%  ▄·●·▄▄▄·▄··█ beats 1/7     easy · avg 69%         2.8%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          26.5%  ▄··▄●█··▄··▄ beats 3/7     hard · avg 29%         2.4%  typical
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (m…</a>   84.4%  █·█··██●···█ beats 4/5     easy · avg 83%         0.4%  blunt
@@ -68,19 +68,19 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 72.1%  ▄···▄●·▄█··█ beats 2/7    easy · avg 74%       15%  at its level · several runs
-<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.9%  ▄···●·▄·█·▄▄ beats 2/7    hard · avg 37%       11%  sharp · several runs
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 1/7    medium · avg 54%    9.4%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 72.1%  ▄···▄●·▄█··█ beats 2/7    easy · avg 75%       15%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.9%  ▄···●·▄·█·▄▄ beats 2/7    hard · avg 37%       12%  sharp · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 1/7    medium · avg 55%    9.4%  at its level · several runs
 <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   25.9%  █··███··●··█ beats 4/5    hard · avg 31%      4.6%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               33.8%  █··●··█··█·▄ beats 2/7    medium · avg 42%    4.0%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        49.0%  ▃··▃●··▅···█ beats 2/7    medium · avg 56%    2.9%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        49.0%  ▃··▃●··▅···█ beats 2/7    medium · avg 57%    2.9%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (make…</a>   58.2%  ▄··●▄··▄···▄ beats 1/5    easy · avg 70%      2.8%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (m…</a>   55.3%  ▄·█····●···▄ beats 3/5    medium · avg 59%    2.7%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             56.5%  ▄···▄·●·▄·▄█ beats 3/7    medium · avg 59%    2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    45.2%  ▄··▄█●··▄··█ beats 4/7    medium · avg 46%    2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   72.4%  ▄·▄·●···▄··▄ beats 2/5    easy · avg 81%      1.8%  typical
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspecified…</a>   58.5%  ▁▁▁▁●▁▃▄█▄▁▂ beats 5/41   easy · avg 66%      1.0%  at its level · small run
-<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (maker)</a>                     64.8%  █·····███·●█ beats 4/5    easy · avg 71%      0.6%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (maker)</a>                     64.8%  █·····███·●█ beats 4/5    easy · avg 71%      0.7%  blunt · at its level
 </pre>
 
 </details>
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (submitted / make…</a>       11   32% ▇▇▇▇
 <a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (subm…</a>        9   13% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.5
+weighted average                                   = 46.3
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 73.4** ±0.9 · #47 of 732 · from 14 benchmark results across 5 sources
+**score 72.8** ±0.9 · #52 of 740 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,48 +16,48 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅▅●▄▂▁    #51 of 313     34%      4
-coding              ▁▁▁▃▅▇█▇▅▄●▁    #23 of 469     37%      6
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●   #13 of 153*     10%      2
+agent tasks         ▁▁▃▆█▅▅▅●▅▂▁    #56 of 316     36%      4
+coding              ▁▁▁▃▆▇█▆▆▃●▁    #27 of 472     36%      6
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●   #15 of 154*    9.3%      2
 </pre>
 
-<details><summary>agent tasks · #51 of 313 · 34% of its score</summary>
+<details><summary>agent tasks · #56 of 316 · 36% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0402 IPS  ▁▁▁▃●▂█▁▂▂▁▁ beats 17/59  avg -0.379 IPS     23%  sharp
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>            81.0%  ▁··▁▃▁▅██●▂▁ beats 56/65  hard · avg 29%    5.2%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>        62.5%  ▂·····▂·▂█▃● beats 11/12  hard · avg 21%    3.9%  at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>           58.7%  ▂····▂▁▁●███ beats 7/31   hard · avg 16%    1.2%  at its level · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0466 IPS  ▁▁▁▁▄●█▄▂▁▁▁ beats 15/61  avg -0.395 IPS     26%  sharp
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>            81.0%  ▁··▂▂▃▆█●▂▁▁ beats 58/69  hard · avg 29%    5.3%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>        62.5%  ▂·····▂·▂█▃● beats 11/12  hard · avg 21%    3.8%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>           58.7%  ▂····▃▁▁●█▆█ beats 8/36   hard · avg 18%    1.0%  at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>coding · #23 of 469 · 37% of its score</summary>
+<details><summary>coding · #27 of 472 · 36% of its score</summary>
 
-Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 
 <pre>
-test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1628.3  ▁▁▃▂▅█▃▆▅●▁▂ beats 108/129  avg 981            16%  sharp
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   76.4%  ▁▁▁▁·▁▂▃▅●█▇ beats 26/49    hard · avg 17%    6.7%  sharp · at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>       81.0%  ▁··▁▃▁▅██●▂▁ beats 56/65    hard · avg 29%    5.2%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   62.5%  ▂·····▂·▂█▃● beats 11/12    hard · avg 21%    3.9%  at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   91.9%  ▃▅█▅▅▃▅···▃● beats 15/16    hard · avg 35%    3.7%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>      58.7%  ▂····▂▁▁●███ beats 7/31     hard · avg 16%    1.2%  at its level · noisy
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1623.5  ▁▂▄▃▇█▅▆●▅▂▁ beats 108/133  avg 990              15%  sharp
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   76.4%  ▁▁▁▁·▁▂▃▅●█▇ beats 26/49    hard · avg 17%      6.5%  sharp · at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>       81.0%  ▁··▂▂▃▆█●▂▁▁ beats 58/69    hard · avg 29%      5.3%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   62.5%  ▂·····▂·▂█▃● beats 11/12    hard · avg 21%      3.8%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   91.9%  ▃▅█▅▅▃▅···▃● beats 15/16    medium · avg 35%    3.5%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>      58.7%  ▂····▃▁▁●█▆█ beats 8/36     hard · avg 18%      1.0%  at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #13 of 153 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #15 of 154 · 9.3% of its score</summary>
 
-Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
+Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md">CharXiv (reasoning questions) (ma…</a>   84.6%  ▄▂▄▆▄▄▆··▄●▂ beats 20/21  medium · avg 38%    9.4%  typical
+<a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md">CharXiv (reasoning questions) (ma…</a>   84.6%  ▄▂▄▆▄▄▆··▄●▂ beats 20/21  medium · avg 39%    9.2%  typical
 <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   68.5%  ▂·▁·▂▂●█·▁▂▂ beats 10/22  medium · avg 62%    0.2%  blunt · at its level
 </pre>
 
@@ -67,10 +67,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (maker)</a>                 91.7%  ▁▁▁▁▂▄▅▅██●▄ beats 294/322  hard · avg 40%           12%  sharp
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (maker)</a>         35.9%  ▁▁▁▄▆▆▇█●▆▁▃ beats 87/111   very hard · avg 5.2%    6.2%  at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   46.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 97/97    hard · avg 31%          5.8%  blunt · at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   81.3%  ▂▆▂▄▄▄▂▄▄▆█● beats 83/86    medium · avg 43%        3.5%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (maker)</a>                 91.7%  ▁▁▁▁▂▃▅▆▇▇●▂ beats 302/336  hard · avg 41%           11%  sharp
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (maker)</a>         35.9%  ▁▁▁▄▆▇▅█●▁▂▁ beats 89/115   very hard · avg 5.3%    6.1%  at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   46.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 97/97    hard · avg 32%          5.7%  blunt · at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   81.3%  ▂▆▂▃▄▄▂▃▄▆█● beats 85/88    medium · avg 44%        3.4%  typical
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   90.7%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 17/49    easy · avg 77%          2.3%  maxed out
 </pre>
 
@@ -82,13 +82,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (submitted / maker-reported)</a>               8   45% ▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   40% ▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (submitted / maker-reported)</a>               8   44% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   41% ▇▇▇▇▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    9% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    6% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 73.4
+weighted average                                   = 72.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

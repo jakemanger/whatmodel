@@ -6,7 +6,7 @@
 
 Salesforce Research · released 2025-05 · 8B params · apache-2.0
 
-**score 38.4** ±2.8 · #111 of 144 · from 3 benchmark results across 3 sources
+**score 38.2** ±2.8 · #114 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #95 of 126     97%      3
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #97 of 128     97%      3
 </pre>
 
-<details><summary>text to image · #95 of 126 · 97% of its score</summary>
+<details><summary>text to image · #97 of 128 · 97% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md) here, though they rank lower overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    6.7%  ●█▂▂▂▂▆▄·▂·▂ beats 0/16   hard · avg 26%       64%  sharp
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   52.0%  ▄·▆▂▆█▄●▂▄·▄ beats 15/22  medium · avg 60%     17%  at its level
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    6.7%  ●█▂▂▂▂▆▄·▂·▂ beats 0/16   hard · avg 27%       64%  sharp
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   52.0%  ▄·▆▂▆█▄●▂▄·▄ beats 15/22  medium · avg 60%     16%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   54.5%  ▄█·●·······▄ beats 3/4    easy · avg 70%       16%  at its level
 </pre>
 
@@ -39,10 +39,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   64% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   17% ▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   16% ▇▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   16% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 38.4
+weighted average                                   = 38.2
 </pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 540B params · proprietary
 
-**score 50.9** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
+**score 50.7** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆██●█▃▁▁▁   #201 of 530*     23%      1
+math  ▁▂▃▆██●▇▄▁▁▁   #207 of 540*     23%      1
 </pre>
 
-<details><summary>math · #201 of 530 · 23% of its score</summary>
+<details><summary>math · #207 of 540 · 23% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   74% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3   25% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.9
+weighted average                                   = 50.7
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt))</sub>

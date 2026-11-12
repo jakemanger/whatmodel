@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 16.2** ±2.6 · #709 of 732 · from 11 benchmark results across 5 sources
+**score 16.2** ±2.6 · #717 of 740 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▂▁▁   #427 of 431*    3.9%      1
+math  ●▁▃▅█▆▄█▅▂▁▁   #436 of 440*    3.9%      1
 </pre>
 
-<details><summary>math · #427 of 431 · 3.9% of its score</summary>
+<details><summary>math · #436 of 440 · 3.9% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 1.7%  █·●▂▄▂▂····▂ beats 5/12   easy · avg 70%       20%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         28.7%  ▁···●··▃▁▅▅█ beats 1/18   easy · avg 74%       20%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    18.5%  ▂●··▂·▂··▂█▄ beats 1/10   medium · avg 56%     11%  blunt
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   34.6%  ▃····●·▃▃█▅▅ beats 1/10   easy · avg 81%       10%  typical
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   34.6%  ▃····●·▃▃█▅▅ beats 1/10   easy · avg 82%       10%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>    1.1%  ●··▂·▂▄▄·███ beats 0/18   medium · avg 61%    7.5%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   51.0%  █···●·····██ beats 1/3    medium · avg 68%    7.3%  too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               29.1%  ●▂▂▂·▅·▃▂█▃▃ beats 0/18   medium · avg 60%    5.7%  sharp · too hard for it

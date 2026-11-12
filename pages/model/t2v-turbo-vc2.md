@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 37.8** ±2.7 · #73 of 93 · from 3 benchmark results across 3 sources · † no independently run results verified
+**score 37.7** ±2.7 · #74 of 94 · from 3 benchmark results across 3 sources · † no independently run results verified
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ UC Santa Barbara · released 2024-05 · cc-by-4.0
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄▃●▆▅█▃▂▂▂▄   #51 of 68     97%      2
+text to video  ▆▄▃●▆█▇▂▄·▄▅   #52 of 70     97%      2
 </pre>
 
-<details><summary>text to video · #51 of 68 · 97% of its score</summary>
+<details><summary>text to video · #52 of 70 · 97% of its score</summary>
 
-Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md) here, though they rank lower overall.
+Trails [LTX-2.3](ltx-2-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1054.7  ▃▃···▅▃·▃●·█ beats 7/10   avg 1229                67%  sharp
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1054.7  ▃▃···▅▃·▃●·█ beats 7/10   avg 1231                67%  sharp
 <a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (maker)</a>           80.5%  ●···▄▄▄····▄ beats 1/5    very easy · avg 90%     30%  small run · several runs
 </pre>
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="paper-2405.18750v2-t2vturbo"></a><a href="https://arxiv.org/html/2405.18750v2">T2V-Turbo: Breaking the Quality Bottlen…</a>        1   15% ▇▇
 <a name="paper-2410.05677v3-t2vturbo2"></a><a href="https://arxiv.org/html/2410.05677v3#S4.T1">T2V-Turbo-v2: Enhancing Video Generatio…</a>        1   15% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 37.8
+weighted average                                   = 37.7
 </pre>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

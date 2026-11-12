@@ -6,7 +6,7 @@
 
 HiDream · released 2026-05 · 8B params · mit
 
-**score 54.2** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.8** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂██▇●██▂▃▁▁   #67 of 157*     90%      1
+text to image  ▁▂█▇▇●█▇▂▃▁▂   #70 of 159*     91%      1
 </pre>
 
-<details><summary>text to image · #67 of 157 · 90% of its score</summary>
+<details><summary>text to image · #70 of 159 · 91% of its score</summary>
 
-Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall.
+Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [LongCat-Image](longcat-image.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   40.4%  ▁▂▂●▃▁▂▃·▁·▁ beats 6/22   hard · avg 28%     90%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   40.4%  ▁▂▂●▃▁▂▃·▁·▁ beats 6/22   hard · avg 29%     91%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       10% ▇
-weighted average                                   = 54.2
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 53.8
 </pre>
 
 <sub>Licences: UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

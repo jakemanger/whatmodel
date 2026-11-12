@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-06 · 14B params · nvidia-open-model-license
 
-**score 48.3** ±7.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±7.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ NVIDIA · released 2025-06 · 14B params · nvidia-open-model-license
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂●█▄▃▃▄▂▂   #51 of 74*     73%      1
+image to video  ▁▁▂▂●▇▅▃▃▃▃▃   #53 of 76*     74%      1
 </pre>
 
-<details><summary>image to video · #51 of 74 · 73% of its score</summary>
+<details><summary>image to video · #53 of 76 · 74% of its score</summary>
 
 Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   80.0%  ▃······▅·●▅█ beats 5/10   easy · avg 81%     73%  blunt
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   80.0%  ▃······▅·●▅█ beats 5/10   easy · avg 81%     74%  blunt
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1   73% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       27% ▇▇▇
-weighted average                                   = 48.3
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1   74% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       26% ▇▇▇
+weighted average                                   = 48.0
 </pre>
 
 <sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

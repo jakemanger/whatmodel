@@ -6,7 +6,7 @@
 
 Microsoft / Rutgers / Duke · released 2017-11
 
-**score 16.2** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 16.6** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ●▂██▇▆██▂▃▁▁   #157 of 157*     94%      1
+text to image  ●▂█▇▇▅█▇▂▃▁▂   #159 of 159*     94%      1
 </pre>
 
-<details><summary>text to image · #157 of 157 · 94% of its score</summary>
+<details><summary>text to image · #159 of 159 · 94% of its score</summary>
 
 Trails [CogView2](cogview2.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-tifa"></a><a href="https://arxiv.org/html/2303.11897v3">TIFA: Accurate and Interpretable Text-t…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 16.2
+weighted average                                   = 16.6
 </pre>
 
 <sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt))</sub>

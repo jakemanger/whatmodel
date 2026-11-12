@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 33.5** ±0.8 · #639 of 732 · from 14 benchmark results across 7 sources
+**score 33.4** ±0.8 · #647 of 740 · from 14 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁●▃▆█▄▅▅▄▄▂▁   #308 of 313*    1.3%      1
+agent tasks     ▁●▃▆█▅▅▅▄▅▂▁   #311 of 316*    1.3%      1
 coding          █··········●       #1 of 2*    3.9%      1
 chat &amp; writing  █··········●       #1 of 2*    1.3%      1
-math            ▁▁●▅█▆▄█▄▂▁▁    #412 of 431     45%      4
+math            ▁▁●▅█▆▄█▅▂▁▁    #422 of 440     44%      4
 </pre>
 
-<details><summary>agent tasks · #308 of 313 · 1.3% of its score</summary>
+<details><summary>agent tasks · #311 of 316 · 1.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -46,12 +46,12 @@ test               result  vs the others in its run   difficulty      counts  wh
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (maker)</a>   29.0%  ▁●··▂··▂▇█▃▃ beats 1/26   medium · avg 64%    1.3%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (maker)</a>   29.0%  ▁●··▂··▂▇█▃▃ beats 1/26   medium · avg 65%    1.3%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #412 of 431 · 45% of its score</summary>
+<details><summary>math · #422 of 440 · 44% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -69,10 +69,10 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   41.1%  ●·▁▁▄▄▄▅█▄▂▁ beats 0/53    easy · avg 75%       26%  at its level
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 10.3%  ▁▁●▂▂▃▂█▆▃▅▃ beats 4/61    medium · avg 38%     12%  typical
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   41.1%  ●·▁▁▄▄▄▅█▄▂▁ beats 0/53    easy · avg 76%       26%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 10.3%  ▁▁●▂▂▃▂█▆▃▅▃ beats 4/61    medium · avg 39%     12%  typical
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      15.3%  ▁··●▁▂▂▆▅▆█▆ beats 1/70    medium · avg 62%    3.1%  at its level
-<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (maker)</a>                         52.4%  ▁▁▁▁▁▂▂●██▆▄ beats 58/214  easy · avg 80%      3.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (maker)</a>                         52.4%  ▁▁▁▁▁▂▂●██▆▄ beats 58/215  easy · avg 80%      3.0%  at its level · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 10/81   medium · avg 57%    2.9%  blunt · at its level
 <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (maker)</a>                       63.8%  ▁···▁▁▂▁●▂▃█ beats 9/33    easy · avg 81%      2.0%  at its level · small run
 </pre>
@@ -93,7 +93,7 @@ source                                    results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.5
+weighted average                                   = 33.4
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

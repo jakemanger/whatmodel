@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 40.3** ±0.6 · #559 of 732 · from 19 benchmark results across 8 sources
+**score 40.2** ±0.6 · #567 of 740 · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #383 of 469     70%      6
-chat &amp; writing  ▁●▁▃▆▄▆█▆▇▇▃   #398 of 402*    8.0%      2
-math            ▁▁▃▅█●▄█▄▂▁▁   #219 of 431*    2.8%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #386 of 472     70%      6
+chat &amp; writing  ▁●▁▃▆▄▆█▇▇▇▃   #400 of 404*    8.0%      2
+math            ▁▁▃▅█●▄█▅▂▁▁   #222 of 440*    2.8%      1
 </pre>
 
-<details><summary>coding · #383 of 469 · 70% of its score</summary>
+<details><summary>coding · #386 of 472 · 70% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    49.4%  ▁·▁▁▃▄●▅█▃▁▁ beats 35/99  easy · avg 76%       43%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.1%  ▁·▁▁▁▃▄●▄█▃▁ beats 37/99  easy · avg 70%       19%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    49.4%  ▁·▁▁▃▄●▅█▃▁▁ beats 35/99  easy · avg 77%       43%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.1%  ▁·▁▁▁▃▄●▄█▃▁ beats 37/99  easy · avg 71%       19%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.2%  ▁···▁▁▂▅●█▆▂ beats 25/75  easy · avg 66%      3.8%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>         55.0%  ▁▁▁▄▅█●▅▄▁▂▁ beats 46/86  easy · avg 68%      1.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   31.6%  ▁··▁●▂█▇▁··▁ beats 5/22   medium · avg 52%    1.1%  at its level
@@ -37,19 +37,19 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #398 of 402 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #400 of 404 · 8.0% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.4%  ▁●▂▃▆▆█▆▄▄▁▁ beats 7/122  medium · avg 35%       7.4%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.4%  ▁●▂▃▆▆█▆▄▄▁▁ beats 7/122  medium · avg 36%       7.4%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   30.7%  ▂●·▆·▇▃▆█▆▄▂ beats 3/45   very easy · avg 94%    0.6%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #219 of 431 · 2.8% of its score</summary>
+<details><summary>math · #222 of 440 · 2.8% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 
@@ -67,7 +67,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    31.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 16/42    medium · avg 52%       7.9%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▆█▃▃▁ beats 44/155   medium · avg 65%       4.7%  sharp
 <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        71.3%  ▄▁▁▂▁▄█▇▃●▃▂ beats 120/140  easy · avg 85%         2.3%  sharp · at its level
-<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 52.7%  ▁▁▁▁▁▂▂●██▆▄ beats 60/214   easy · avg 79%         2.2%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 52.7%  ▁▁▁▁▁▂▂●██▆▄ beats 60/215   easy · avg 80%         2.2%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.5%  ▃▁▁▁●▁▁▁▂█▅▁ beats 45/276   medium · avg 72%       0.7%  at its level · noisy
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               23.4%  ●···▁▁▂▁▂▂▃█ beats 0/33     medium · avg 59%       0.7%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   93.3%  ▁▁▂▃▄●█▆▃▂▂▁ beats 45/140   very easy · avg 94%    0.3%  blunt · noisy
@@ -91,7 +91,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.3
+weighted average                                   = 40.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 49.8** ±1.6 · #52 of 93 · from 6 benchmark results across 5 sources
+**score 49.1** ±1.6 · #53 of 94 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,31 +14,31 @@ Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆●█▃▂▂▂▄    #35 of 68     65%      4
-image to video  ▁▂·●▅█▅▄▅▆▃▄   #46 of 50*     29%      1
+text to video   ▆▄▃▆▆●▇▂▄·▄▅    #37 of 70     67%      4
+image to video  ▁▂·●▅█▅▄▅▅▃▅   #47 of 51*     28%      1
 </pre>
 
-<details><summary>text to video · #35 of 68 · 65% of its score</summary>
+<details><summary>text to video · #37 of 70 · 67% of its score</summary>
 
 Trails [LTX-2](ltx-2.md) here, though they rank lower overall.
 
 <pre>
 test                                        result  vs the others in its run  difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                               1131.6  ▂▂●▆█▆·▆▅▁▂▇ beats 6/41   avg 1147                     44%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>           88.2%  █▄▄··▄▄●▄▄·▄ beats 6/9    easy · avg 85%              9.0%  typical
-<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>          1518.0  █···██·●··██ beats 3/5    avg 1470                    6.4%  typical
-<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  1085.08 / 1608  █·▄··●·····█ beats 3/5    easy · avg 1103.17 / 16…    5.7%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                               1131.8  ▂▂●▆█▃·▇▂▁█▃ beats 6/44   avg 1154                     47%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>           88.2%  █▄▄··▄▄●▄▄·▄ beats 6/9    very easy · avg 85%         8.6%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>          1518.0  █···██·●··██ beats 3/5    avg 1477                    6.1%  typical
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  1085.08 / 1608  █·▄··●·····█ beats 3/5    easy · avg 1111.45 / 16…    5.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #46 of 50 · 29% of its score</summary>
+<details><summary>image to video · #47 of 51 · 28% of its score</summary>
 
 Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1170.2  ▁▁▁▁●▇▃▆▃▂▄█ beats 5/40   avg 1189       29%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1171.3  ▁▁▁▁●▇▃▇▂▃▅█ beats 5/42   avg 1197       28%  typical
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test                  result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.1%  █▄·▄●▄▄····▄ beats 5/8    easy · avg 82%    4.3%  blunt
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.1%  █▄·▄●▄▄····▄ beats 5/8    easy · avg 82%    4.1%  blunt
 </pre>
 
 </details>
@@ -58,13 +58,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   74% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    9% ▇
 <a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    6% ▇
 <a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1    6% ▇
 <a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

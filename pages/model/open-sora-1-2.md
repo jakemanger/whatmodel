@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2024-06 · 1.1B params · apache-2.0
 
-**score 26.6** ±2.8 · #87 of 93 · from 3 benchmark results across 3 sources
+**score 26.8** ±2.7 · #88 of 94 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ HPC-AI Tech · released 2024-06 · 1.1B params · apache-2.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ●▄▃▄▆▅█▃▂▂▂▄   #64 of 68*     82%      2
+text to video  ●▄▃▆▆█▇▂▄·▄▅   #66 of 70*     82%      2
 </pre>
 
-<details><summary>text to video · #64 of 68 · 82% of its score</summary>
+<details><summary>text to video · #66 of 70 · 82% of its score</summary>
 
 Trails [Show-1](show-1.md), [VideoCrafter1 T2V](videocrafter1-t2v.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   871.5  ▃●···▅▃·▃▅·█ beats 1/10   avg 1229             69%  sharp
-<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   50.0%  ▄·▄●▄▄▄·▄·▄█ beats 2/10   medium · avg 71%     13%  at its level
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   871.5  ▃●···▅▃·▃▅·█ beats 1/10   avg 1231             68%  sharp
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   50.0%  ▄·▄●▄▄▄·▄·▄█ beats 2/10   medium · avg 71%     14%  at its level
 </pre>
 
 </details>
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                              result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.11 / 10  ●··▅▃···▃··█ beats 0/8    easy · avg 7.71 / 10     15%  at its level
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.11 / 10  ●··▅▃···▃··█ beats 0/8    easy · avg 7.74 / 10     15%  at its level
 </pre>
 
 </details>
@@ -44,11 +44,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   69% ▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   68% ▇▇▇▇▇▇▇▇
 <a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   15% ▇▇
-<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   13% ▇▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   14% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 26.6
+weighted average                                   = 26.8
 </pre>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2021-12 · 0.3B params · mit
 
-**score 46.5** ±14.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.3** ±14.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂●█▇▆██▂▃▁▁   #148 of 157*    6.1%      1
+text to image  ▁▂●▇▇▅█▇▂▃▁▂   #150 of 159*    6.6%      1
 </pre>
 
-<details><summary>text to image · #148 of 157 · 6.1% of its score</summary>
+<details><summary>text to image · #150 of 159 · 6.6% of its score</summary>
 
 Trails [CogView2](cogview2.md), [DALL·E Mega (minDALL-E)](dall-e-mega-min-dalle.md), [Versatile Diffusion v1.0](versatile-diffusion.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   23.5%  ●··▃▅·▅·▅▅█▅ beats 0/14   hard · avg 27%    6.1%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   23.5%  ●··▃▅·▅·▅▅█▅ beats 0/14   hard · avg 28%    6.6%  blunt · at its level
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>        1    6% ▇
-prior: pull toward the middle              94% ▇▇▇▇▇▇▇▇▇▇▇
-weighted average                          = 46.5
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>        1    7% ▇
+prior: pull toward the middle              93% ▇▇▇▇▇▇▇▇▇▇▇
+weighted average                          = 46.3
 </pre>
 
 <sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>

@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 37.3** ±0.5 · #604 of 732 · from 59 benchmark results across 10 sources
+**score 37.2** ±0.5 · #612 of 740 · from 59 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #433 of 469     40%      4
-math    ▁▁▃▅●▆▄█▄▂▁▁   #282 of 431    8.7%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #436 of 472     40%      4
+math    ▁▁▃▅●▆▄█▅▂▁▁   #283 of 440    8.7%      2
 </pre>
 
-<details><summary>coding · #433 of 469 · 40% of its score</summary>
+<details><summary>coding · #436 of 472 · 40% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>      28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 11/99  easy · avg 76%     22%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>     23.8%  ▁·▁▁▁●▄▄▄█▃▁ beats 12/99  easy · avg 70%     12%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>      28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 11/99  easy · avg 77%     22%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>     23.8%  ▁·▁▁▁●▄▄▄█▃▁ beats 12/99  easy · avg 71%     12%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (maker)</a>   50.2%  ▄··▄·▄··●··▄ beats 4/5    easy · avg 69%    3.9%  at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>          42.1%  ▁···▁▁●▅▇█▆▂ beats 8/75   easy · avg 66%    2.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #282 of 431 · 8.7% of its score</summary>
+<details><summary>math · #283 of 440 · 8.7% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (maker)</a>   50.0%  █···█·█●··██ beats 3/5    easy · avg 82%    6.9%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    12.7%  █·█·█·●█···█ beats 3/5    hard · avg 27%    1.9%  several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (maker)</a>   50.0%  █···█·█●··██ beats 3/5    easy · avg 82%    6.8%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    12.7%  █·█·█·●█···█ beats 3/5    hard · avg 28%    1.9%  several runs
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test           result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">ARC Challenge</a>                        54.4%  ▁·▁··▁▁▇▂█▆● beats 26/26   easy · avg 82%          17%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (maker)</a>                         62.5%  ▄····▄▄·●··█ beats 3/5     easy · avg 82%         4.5%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">WinoGrande</a>                           74.0%  ▁····▁··▁▂█● beats 26/26   easy · avg 86%         4.2%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">WinoGrande</a>                           74.0%  ▁····▁··▁▂█● beats 26/26   easy · avg 87%         4.2%  at its level · several runs
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       41.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 78/155  medium · avg 65%       4.1%  sharp · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Natural Questions (closed book)</a>      30.1%  ▁·▁·▁▂▁▂·▅▂● beats 26/28   medium · avg 48%       3.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">HellaSwag</a>                            81.1%  ▃···▁▇▅█▇●▁▁ beats 24/26   very easy · avg 91%    2.3%  at its level · several runs
@@ -62,10 +62,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA</a>                        66.3%  █·····▂▂▃▂●▄ beats 30/38   very easy · avg 94%    1.6%  sharp · at its level · small run
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">PIQA</a>                                 80.8%  ▁·▁··▁▁▃█▅█● beats 26/26   easy · avg 87%         1.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">OpenBookQA</a>                           32.8%  █·▁▁▃·▁▃▅▇●▄ beats 22/26   hard · avg 49%         1.2%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 52%       1.2%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 53%       1.1%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Social IQA</a>                           42.7%  ▁···▁▃●▁▁▁·▁ beats 19/26   hard · avg 56%         0.8%  blunt · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.8%  ▃▅▃··▅▃·●▃▃▅ beats 7/13    medium · avg 61%       0.6%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">SciQ</a>                                 95.9%  ▁·▁·▁·▃▅▃█▄● beats 26/26   very easy · avg 97%    0.6%  blunt · maxed out
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">SciQ</a>                                 95.9%  ▁·▁·▁·▃▅▃█▄● beats 26/26   very easy · avg 98%    0.6%  blunt · maxed out
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report)</a>       41.2%  ▄··········● beats 1/2     medium · avg 62%       0.5%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   61.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 92/276  medium · avg 72%       0.5%  at its level · noisy
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               46.1%  ▁···▁▁●▁▂▂▃█ beats 6/33    medium · avg 59%       0.4%  noisy
@@ -94,7 +94,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 37.3
+weighted average                                   = 37.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Gemma report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

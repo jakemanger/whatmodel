@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 23.7** ±0.7 · #693 of 732 · from 40 benchmark results across 11 sources
+**score 23.7** ±0.7 · #701 of 740 · from 40 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ●▁▁▃▅▇█▇▅▄▃▁   #467 of 469*    1.8%      1
-math    ▁▁●▅█▆▄█▄▂▁▁   #413 of 431*    5.2%      1
+coding  ●▁▁▃▆▇█▆▆▃▃▁   #470 of 472*    1.8%      1
+math    ▁▁●▅█▆▄█▅▂▁▁   #419 of 440*    5.2%      1
 </pre>
 
-<details><summary>coding · #467 of 469 · 1.8% of its score</summary>
+<details><summary>coding · #470 of 472 · 1.8% of its score</summary>
 
 Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](pythia-6-9b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2306.04751v2">HumanEval</a>    0.6%  ●······▄·▄▄█ beats 0/5    medium · avg 59%    1.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2306.04751v2">HumanEval</a>    0.6%  ●······▄·▄▄█ beats 0/5    medium · avg 60%    1.8%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>math · #413 of 431 · 5.2% of its score</summary>
+<details><summary>math · #419 of 440 · 5.2% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -50,16 +50,16 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">WinoGrande</a>                           65.4%  ▁····▁··▁▂●▄ beats 12/26   easy · avg 88%          12%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Easy</a>                             60.1%  ▁▁·▁▁●▅▄█▅▁▃ beats 6/26    easy · avg 87%          11%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 13/26   easy · avg 87%         7.3%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 6/26    very easy · avg 97%    5.5%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 6/26    very easy · avg 98%    5.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">LAMBADA (OpenAI version), last-wo…</a>   67.6%  ▁··▂▁▁▁▂●█▅▃ beats 10/26   very easy · avg 87%    4.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">BoolQ</a>                                66.0%  ▂▃▂▅●▂▅▆█▂▂▂ beats 10/26   easy · avg 88%         3.4%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   48.5%  ▂·▄·▂█▄●█▄▂▆ beats 11/21   easy · avg 74%         3.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">HellaSwag</a>                            67.2%  ▃···▁▇●█▇▃▁▁ beats 9/26    very easy · avg 91%    2.9%  at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     74.6%  ▂▂▄▂·▂·▆·●█▂ beats 9/14    easy · avg 89%         2.4%  blunt · at its level
-<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.5%  ●···▄··▄··▄▄ beats 1/5     easy · avg 74%         2.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.5%  ●···▄··▄··▄▄ beats 1/5     easy · avg 75%         2.1%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   29.8%  ██···█●····█ beats 3/4     easy · avg 66%         1.6%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                           27.6%  █·▁▁▃·●▃▅▇▃▄ beats 10/26   hard · avg 49%         1.1%  too hard for it
-<a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 24.6%  ●·▄····▄·▄·█ beats 0/5     easy · avg 75%         1.0%  noisy
+<a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 24.6%  ●·▄····▄·▄·█ beats 0/5     easy · avg 76%         1.0%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                           42.6%  ▁···▁▃●▁▁▁·▁ beats 18/26   hard · avg 56%         0.9%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.617.pdf">COPA</a>                                 81.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 33/67   very easy · avg 96%    0.7%  at its level · small run
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   27.2%  ▄····▄···▄·● beats 4/4     medium · avg 48%       0.5%  blunt

@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 19.4** ±1.9 · #703 of 732 · from 12 benchmark results across 2 sources
+**score 19.4** ±1.9 · #711 of 740 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,9 +29,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            46.6%  ▃▃▃··●····▃█ beats 3/8    easy · avg 81%       11%  at its level
 <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             63.3%  ▅·▃●··▃··▃·█ beats 3/8    easy · avg 87%       10%  blunt · at its level
 <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 74.7%  ▄▄··▄·●·▄·██ beats 3/8    easy · avg 87%      6.4%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.5%  █●····█▄▄··▄ beats 2/7    medium · avg 60%    6.0%  blunt
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.5%  █●····█▄▄··▄ beats 2/7    medium · avg 61%    6.0%  blunt
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.4%  ●······▂·▆·▂ beats 3/8    hard · avg 49%      4.4%  too hard for it · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-20%2023%3A51%3A12.755266.json">TriviaQA</a>                             31.4%  ▁··▁█▃▃▁●▅▄█ beats 13/28  easy · avg 73%      2.9%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-20%2023%3A51%3A12.755266.json">TriviaQA</a>                             31.4%  ▁··▁█▃▃▁●▅▄█ beats 13/28  easy · avg 74%      2.9%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-08%2010%3A44%3A07.732591.json">TruthfulQA MC2</a>                       36.0%  ●▃█▆▁▂▅···▁▁ beats 4/31   medium · avg 57%    1.0%  blunt · at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-13%2004%3A45%3A23.642544.json">HaluEval QA hallucination detecti…</a>   42.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 0/27   hard · avg 66%      0.5%  too hard for it · noisy
 </pre>

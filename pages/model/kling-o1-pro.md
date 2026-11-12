@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 55.5** ±2.2 · #36 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.5** ±2.0 · #38 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,26 +14,26 @@ Kuaishou (Kling AI) · closed weights
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄▆▅●▃▂▂▂▄   #25 of 68*     81%      1
-video editing  ●··█··▄··█▄█     #9 of 9*     17%      1
+text to video  ▆▄▃▆▆█●▂▄·▄▅   #27 of 70*     81%      1
+video editing  ●··▅·▃···█▃▅   #10 of 10*     17%      1
 </pre>
 
-<details><summary>text to video · #25 of 68 · 81% of its score</summary>
+<details><summary>text to video · #27 of 70 · 81% of its score</summary>
 
 Beats [Seedance 1.0 Pro](seedance-1-0-pro.md) here, though they rank higher overall. Trails [Hailuo 2.3](hailuo-2-3.md), [P-Video](p-video.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1204.6  ▂▂▃▆●▆·▆▅▁▂▇ beats 14/41  avg 1147       81%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1201.1  ▂▂▃▆●▃·▇▂▁█▃ beats 14/44  avg 1154       81%  typical
 </pre>
 
 </details>
 
-<details><summary>video editing · #9 of 9 · 17% of its score</summary>
+<details><summary>video editing · #10 of 10 · 17% of its score</summary>
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1197.3  ●··█··▄··█▄█ beats 1/9    avg 1117       17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1189.7  ●··▂▂·▂··█▂▄ beats 1/11   avg 1119       17%  typical
 </pre>
 
 </details>
@@ -44,9 +44,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 55.5
+weighted average                        = 54.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

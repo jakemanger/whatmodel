@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
-**score 53.1** ±6.1 · #43 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.5** ±6.0 · #47 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
 <pre>
 task           vs the others      rank  counts  tests
-text to video  █····●·····█   #2 of 3*     49%      1
+text to video  █····●·····█   #2 of 3*     53%      1
 </pre>
 
-<details><summary>text to video · #2 of 3 · 49% of its score</summary>
+<details><summary>text to video · #2 of 3 · 53% of its score</summary>
 
 Trails [Kandinsky 6.0 Video Lite](kandinsky-6-0-lite.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA</a>   61.7%  ●█··▄·▄···▄█ beats 0/7    easy · avg 68%     49%  at its level · small run
+<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA</a>   61.7%  ●█··▄·▄···▄█ beats 0/7    easy · avg 69%     53%  at its level · small run
 </pre>
 
 </details>
@@ -32,7 +32,7 @@ test                          result  vs the others in its run  difficulty      
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overall El…</a>   978.4  ▃▃·●·▃·▃··▃█ beats 2/9    avg 889        36%  blunt
+<a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overall El…</a>   978.4  ▃▃·●·▃·▃··▃█ beats 2/9    avg 899        31%  blunt
 </pre>
 
 </details>
@@ -43,10 +43,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   49% ▇▇▇▇▇▇
-<a name="visual-datapoint-video-bench"></a><a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench leaderboard</a>               1   36% ▇▇▇▇
+<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   53% ▇▇▇▇▇▇
+<a name="visual-datapoint-video-bench"></a><a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench leaderboard</a>               1   31% ▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 53.1
+weighted average                                   = 51.5
 </pre>
 
 <sub>Licences: Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

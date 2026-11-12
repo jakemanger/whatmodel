@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 8.63B params · proprietary
 
-**score 37.4** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
+**score 37.3** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●██▅█▃▁▁▁   #462 of 530*     17%      1
+math  ▁▂▃●██▅▇▄▁▁▁   #467 of 540*     17%      1
 </pre>
 
-<details><summary>math · #462 of 530 · 17% of its score</summary>
+<details><summary>math · #467 of 540 · 17% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty        counts  why
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   35.4%  ▄······●▄▄·█ beats 1/5    medium · avg 58%     11%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   47.5%  ▂··▂·▂▄▄·█●█ beats 11/18  medium · avg 61%     10%  at its level
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (make…</a>   34.5%  ▄·····●··█·█ beats 1/5    medium · avg 56%     10%  typical
-<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (mak…</a>   67.6%  ▄·······▄▄●█ beats 3/5    medium · avg 75%    4.0%  at its level · noisy
+<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (mak…</a>   67.6%  ▄·······▄▄●█ beats 3/5    medium · avg 75%    3.9%  at its level · noisy
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   74% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3   25% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 37.4
+weighted average                                   = 37.3
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt))</sub>

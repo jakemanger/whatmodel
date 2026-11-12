@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7B params · deepseek
 
-**score 37.6** ±2.3 · #113 of 144 · from 6 benchmark results across 5 sources
+**score 37.5** ±2.2 · #115 of 146 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,11 +15,11 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <sub>● marks Janus-Pro-7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #98 of 126     98%      6
+task           vs the others         rank  counts  tests
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #100 of 128     98%      6
 </pre>
 
-<details><summary>text to image · #98 of 126 · 98% of its score</summary>
+<details><summary>text to image · #100 of 128 · 98% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 4/9    hard · avg 24%          11%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   35.0%  ▄·▆●▆█▄▆▂▄·▄ beats 5/22   medium · avg 60%        10%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 2/4    easy · avg 70%          10%  at its level
-<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.5%  small run
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.4%  small run
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   10% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 37.6
+weighted average                                   = 37.5
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

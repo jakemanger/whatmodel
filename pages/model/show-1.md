@@ -6,7 +6,7 @@
 
 Show Lab / NUS · released 2023-10 · 6B params · cc-by-nc-4.0
 
-**score 25.2** ±2.3 · #89 of 93 · from 4 benchmark results across 1 source
+**score 25.7** ±2.3 · #90 of 94 · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,19 +14,19 @@ Show Lab / NUS · released 2023-10 · 6B params · cc-by-nc-4.0
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ●▄▃▄▆▅█▃▂▂▂▄   #63 of 68     98%      4
+text to video  ●▄▃▆▆█▇▂▄·▄▅   #65 of 70     98%      4
 </pre>
 
-<details><summary>text to video · #63 of 68 · 98% of its score</summary>
+<details><summary>text to video · #65 of 70 · 98% of its score</summary>
 
 Beats [Open-Sora 1.2](open-sora-1-2.md) here, though they rank higher overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     53.74 / 100  ▄····▄█●··▄▄ beats 5/7    very easy · avg 85.14 /…     26%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     52.19 / 100  ●█·····▄·█▄▄ beats 0/7    very easy · avg 87.87 /…     25%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  60.83 / 100  ▄···▄▄▄▄●··█ beats 5/7    very easy · avg 88.67 /…     24%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  62.07 / 100  ▂··▂▂·····▂● beats 7/7    very easy · avg 87.86 /…     23%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     53.74 / 100  ▄····▄█●··▄▄ beats 5/7    easy · avg 84.73 / 100       26%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     52.19 / 100  ●█·····▄·█▄▄ beats 0/7    very easy · avg 87.51 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  60.83 / 100  ▄···▄▄▄▄●··█ beats 5/7    very easy · avg 88.32 /…     24%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  62.07 / 100  ▂··▂▂·····▂● beats 7/7    very easy · avg 87.52 /…     23%  at its level
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 25.2
+weighted average                                   = 25.7
 </pre>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt))</sub>

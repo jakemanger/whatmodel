@@ -6,7 +6,7 @@
 
 Lightricks · released 2024-11 · 2B params · ltxv-rail-m
 
-**score 31.8** ±3.2 · #83 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.9** ±3.2 · #83 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,14 @@ Lightricks · released 2024-11 · 2B params · ltxv-rail-m
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆●▃▄▆▅█▃▂▂▂▄   #57 of 68*     96%      1
+text to video  ▆●▃▆▆█▇▂▄·▄▅   #59 of 70*     96%      1
 </pre>
 
-<details><summary>text to video · #57 of 68 · 96% of its score</summary>
-
-Beats [Open-Sora 1.1](open-sora-1-1.md) here, though they rank higher overall.
+<details><summary>text to video · #59 of 70 · 96% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   964.0  ▃▃···●▃·▃▅·█ beats 2/10   avg 1229       96%  sharp
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   964.0  ▃▃···●▃·▃▅·█ beats 2/10   avg 1231       96%  sharp
 </pre>
 
 </details>
@@ -36,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                          1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 31.8
+weighted average                        = 31.9
 </pre>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt))</sub>

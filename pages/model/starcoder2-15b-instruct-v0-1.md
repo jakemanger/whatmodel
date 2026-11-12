@@ -6,7 +6,7 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 47.0** ±0.8 · #438 of 732 · from 5 benchmark results across 2 sources
+**score 46.8** ±0.8 · #446 of 740 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #331 of 469     86%      3
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #334 of 472     86%      3
 </pre>
 
-<details><summary>coding · #331 of 469 · 86% of its score</summary>
+<details><summary>coding · #334 of 472 · 86% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.7%  ▁·▁▁▃▄▆●█▃▁▁ beats 53/99  easy · avg 76%     42%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 52/99  easy · avg 70%     36%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.7%  ▁·▁▁▃▄▆●█▃▁▁ beats 53/99  easy · avg 77%     42%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 52/99  easy · avg 71%     36%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        65.1%  ▁···▁▁▂▅▇●▆▂ beats 52/75  easy · avg 66%    7.1%  at its level
 </pre>
 
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty      counts  why
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 39%    7.1%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 48%    7.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 49%    7.0%  at its level
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   86% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   14% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 47.0
+weighted average                                   = 46.8
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

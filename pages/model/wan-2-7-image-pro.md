@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 63.4** ±1.8 · #28 of 144 · from 5 benchmark results across 4 sources
+**score 62.5** ±1.7 · #30 of 146 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄●▃▂▂▁▁   #40 of 126*     58%      2
-image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁    #23 of 62*     18%      1
+text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #43 of 128*     60%      2
+image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂    #23 of 64*     17%      1
 </pre>
 
-<details><summary>text to image · #40 of 126 · 58% of its score</summary>
+<details><summary>text to image · #43 of 128 · 60% of its score</summary>
 
-Trails [ERNIE-Image](ernie-image.md), [Krea 2 Medium](krea-2-medium.md), [Emu3.5-Image](emu3-5-image.md) here, though they rank lower overall.
+Trails [Imagen 4](imagen-4.md), [ERNIE-Image](ernie-image.md), [Krea 2 Medium](krea-2-medium.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1103.0  ▁▂▃▃●█▃▂▂▂▁▁ beats 26/75  avg 1027           47%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   85.7%  ▁▂▂█▃▁●▃·▁·▁ beats 17/22  hard · avg 28%     12%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1103.3  ▁▁▃▃●█▃▂▂▂▁▁ beats 26/77  avg 1030           49%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   85.7%  ▁▂▂█▃▁●▃·▁·▁ beats 17/22  hard · avg 29%     11%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #23 of 62 · 18% of its score</summary>
+<details><summary>image to image / editing · #23 of 64 · 17% of its score</summary>
 
-Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank higher overall. Trails [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md) here, though they rank lower overall.
+Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.0  ▂▁▁▃▆█▄●▇▄▂▂ beats 30/53  avg 1153       18%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.1  ▂▁▁▃▆█▆●▇▄▃▃ beats 30/55  avg 1158       17%  typical
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    74.5%  ▂··▂█▂▄▂●·▂▂ beats 10/12  medium · avg 41%     15%  at its level
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1007.6  ▁▁▁▄▂●▂▁▁▂▁▁ beats 19/34  avg 875             7.4%  typical
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    74.5%  ▂··▂█▂▄▂●·▂▂ beats 10/12  medium · avg 42%     14%  at its level
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1007.6  ▁▁▁▄▂●▂▁▁▂▁▁ beats 19/34  avg 878             7.1%  typical
 </pre>
 
 </details>
@@ -59,12 +59,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
-<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   15% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   66% ▇▇▇▇▇▇▇▇
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   14% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.4
+weighted average                                   = 62.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

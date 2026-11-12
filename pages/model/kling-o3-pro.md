@@ -6,22 +6,24 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 63.7** ±4.2 · #24 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 64.2** ±3.9 · #24 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
 <sub>● marks Kling O3 Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-task           vs the others      rank  counts  tests
-video editing  ▄··●··▄··█▄█   #8 of 9*     61%      1
+task           vs the others       rank  counts  tests
+video editing  ▃··●·▃···█▃▅   #8 of 10*     63%      1
 </pre>
 
-<details><summary>video editing · #8 of 9 · 61% of its score</summary>
+<details><summary>video editing · #8 of 10 · 63% of its score</summary>
+
+Beats [Grok Imagine Video](grok-imagine-video.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1255.3  █··●··▄··█▄█ beats 2/9    avg 1117       61%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1265.7  ▄··▂●·▂··█▂▄ beats 3/11   avg 1119       63%  typical
 </pre>
 
 </details>
@@ -30,7 +32,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1471.3  ▄····●█···▄█ beats 1/7    avg 1299       32%  noisy
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1471.3  ▄····●█···▄█ beats 1/7    avg 1296       30%  noisy
 </pre>
 
 </details>
@@ -41,10 +43,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   61% ▇▇▇▇▇▇▇
-<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   32% ▇▇▇▇
-prior: pull toward the middle                        7% ▇
-weighted average                                   = 63.7
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   63% ▇▇▇▇▇▇▇▇
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   30% ▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 64.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

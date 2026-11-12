@@ -6,7 +6,7 @@
 
 BAAI · released 2024-09 · 8B params · apache-2.0
 
-**score 35.6** ±2.3 · #120 of 144 · from 4 benchmark results across 4 sources
+**score 35.5** ±2.3 · #122 of 146 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #103 of 126     98%      6
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #107 of 128     98%      6
 </pre>
 
-<details><summary>text to image · #103 of 126 · 98% of its score</summary>
+<details><summary>text to image · #107 of 128 · 98% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [SDXL-Turbo](sdxl-turbo.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            41.7%  ●▂█▂▂▂····▂▂ beats 0/13   easy · avg 69%       45%  at its level
-<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    8.8%  ●█▂▂▂▂▆▄·▂·▂ beats 1/16   hard · avg 26%       32%  sharp · too hard for it
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    8.8%  ●█▂▂▂▂▆▄·▂·▂ beats 1/16   hard · avg 27%       32%  sharp · too hard for it
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    6.1%  ●··▃·█▃▃▅··▃ beats 0/9    hard · avg 24%       10%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   39.0%  ▄·▆▂●█▄▆▂▄·▄ beats 6/22   medium · avg 60%     10%  at its level
 <a href="https://arxiv.org/html/2409.18869v1">GenEval (maker)</a>                      54.0%  ▇▃●▇▁▄▅▃█▃▃▅ beats 8/39   easy · avg 79%         —  not counted yet: no other model in the …
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   10% ▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 35.6
+weighted average                                   = 35.5
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 43.7** ±1.1 · #506 of 732 · from 16 benchmark results across 4 sources
+**score 43.5** ±1.1 · #515 of 740 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #366 of 469*     23%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁   #370 of 472*     24%      1
 chat &amp; writing  ●········█·█       #3 of 3*    2.8%      1
 </pre>
 
-<details><summary>coding · #366 of 469 · 23% of its score</summary>
+<details><summary>coding · #370 of 472 · 24% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   30.1%  ▁·▁●▄▁▆▄█▆▂▂ beats 2/62   medium · avg 51%     23%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   30.1%  ▁·▁●▄▁▆▄█▆▂▂ beats 2/62   medium · avg 51%     24%  sharp · at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   62.3%  ▁▂▄●▂▄▆██▅▂▁ beats 23/145  easy · avg 77%    2.8%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   62.3%  ▁▂▄●▂▄▆██▅▂▁ beats 23/145  easy · avg 78%    2.8%  at its level · small run
 </pre>
 
 </details>
@@ -45,15 +45,15 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>               52.9%  ▁▁▁▁▂▄▅●█▃▃▁ beats 73/155   medium · avg 68%     11%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                         64.8%  ▁▁▁▁▁▂▂▅●█▆▄ beats 104/214  easy · avg 78%       10%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>                58.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 104/140  medium · avg 67%    8.3%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                         64.8%  ▁▁▁▁▁▂▂▅●█▆▄ beats 104/215  easy · avg 78%       10%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>                58.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 104/140  medium · avg 68%    8.3%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (maker)</a>    29.4%  ▂▁▂▂●▃▆▃▅█▃▃ beats 17/106   hard · avg 38%      7.2%  sharp · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 31/81    medium · avg 57%    6.4%  blunt · at its level
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                     32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 48%    6.1%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                   77.7%  ▁▁▁▁▂▁▁▅▇█●▁ beats 123/131  easy · avg 83%      5.3%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                    82.8%  ▁▁▁▂▂▂▄▆█▇●▂ beats 120/135  easy · avg 87%      4.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                     32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/189   medium · avg 48%    6.1%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                   77.7%  ▁▁▁▁▂▁▁▅▇█●▁ beats 123/131  easy · avg 84%      5.2%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                    82.8%  ▁▁▁▂▂▂▄▆█▇●▂ beats 120/135  easy · avg 88%      4.4%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                        85.0%  ▁····▁▂█▆▅▆● beats 92/103   easy · avg 88%      4.0%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                   47.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 61/107   hard · avg 49%      3.7%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                   47.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 61/107   hard · avg 50%      3.6%  small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 154/276  medium · avg 72%    3.2%  at its level · noisy
 <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (maker)</a>                         43.5%  ●······█···█ beats 0/2      medium · avg 51%    2.1%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (maker)</a>                         80.3%  ▁▁▁▂▂▃▅█●▃▁▁ beats 95/123   easy · avg 85%      1.4%  blunt · at its level · small run
@@ -69,11 +69,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   66% ▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   23% ▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   24% ▇▇▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    6% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.7
+weighted average                                   = 43.5
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

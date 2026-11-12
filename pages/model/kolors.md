@@ -6,7 +6,7 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 38.6** ±3.2 · #110 of 144 · from 3 benchmark results across 3 sources
+**score 38.6** ±3.2 · #113 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #96 of 126     96%      3
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #98 of 128     96%      3
 </pre>
 
-<details><summary>text to image · #96 of 126 · 96% of its score</summary>
+<details><summary>text to image · #98 of 128 · 96% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md), [BLIP3-o 8B](blip3o-8b.md) here, though they rank lower overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [BLIP3-o 8B](blip3o-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 7/14   easy · avg 3.83 / 5     73%  at its level
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 7/14   easy · avg 3.84 / 5     74%  at its level
 <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.59 / 5  ▄·▄········● beats 3/3    easy · avg 3.87 / 5     19%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.5500  ▃·····▃··▃·● beats 5/5    avg 10.058             3.4%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.5500  ▃·····▃··▃·● beats 5/5    avg 10.064             3.4%  sharp · noisy
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   74% ▇▇▇▇▇▇▇▇▇
 <a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README (s…</a>        1   19% ▇▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    3% ▇
 prior: pull toward the middle                        4% ▇

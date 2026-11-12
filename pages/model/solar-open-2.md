@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 70.5** ±1.2 · #75 of 732 · from 13 benchmark results across 1 source · † no independently run results verified
+**score 70.1** ±1.2 · #81 of 740 · from 13 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,46 +16,46 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅▅●▄▂▁    #75 of 313     29%      5
-coding       ▁▁▁▃▅▇█▇▅●▃▁   #67 of 469*    8.4%      2
-math         ▁▁▃▅█▆▄█●▂▁▁   #66 of 431*     11%      2
+agent tasks  ▁▁▃▆█▅▅▅●▅▂▁    #77 of 316     29%      5
+coding       ▁▁▁▃▆▇█▆▆●▃▁   #70 of 472*    8.3%      2
+math         ▁▁▃▅█▆▄█●▂▁▁   #74 of 440*     11%      2
 </pre>
 
-<details><summary>agent tasks · #75 of 313 · 29% of its score</summary>
+<details><summary>agent tasks · #77 of 316 · 29% of its score</summary>
 
 Beats [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (maker)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.6%    9.3%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (maker)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.9%    8.8%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (maker)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.1%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>       70.4%  ▄··········● beats 3/5    hard · avg 15%          3.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (maker)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.3%    2.0%  blunt
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (maker)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.8%    9.2%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (maker)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 2.0%    8.7%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (maker)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 20%          5.0%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>       70.4%  ▄··········● beats 3/5    hard · avg 16%          3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (maker)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.4%    2.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>coding · #67 of 469 · 8.4% of its score</summary>
+<details><summary>coding · #70 of 472 · 8.3% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 50%    4.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>           70.4%  ▄··········● beats 3/5    hard · avg 15%      3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>           70.4%  ▄··········● beats 3/5    hard · avg 16%      3.8%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #66 of 431 · 11% of its score</summary>
+<details><summary>math · #74 of 440 · 11% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (maker)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 65%    7.1%  sharp · maxed out
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (maker)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%      4.0%  sharp · noisy
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (maker)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    easy · avg 66%    7.1%  sharp · maxed out
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (maker)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 32%    4.0%  sharp · noisy
 </pre>
 
 </details>
@@ -81,7 +81,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (submitte…</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 70.5
+weighted average                                   = 70.1
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

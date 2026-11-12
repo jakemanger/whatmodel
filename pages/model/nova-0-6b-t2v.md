@@ -6,7 +6,7 @@
 
 BAAI · released 2024-12 · 0.6B params · apache-2.0
 
-**score 29.2** ±3.3 · #84 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.3** ±3.2 · #85 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ BAAI · released 2024-12 · 0.6B params · apache-2.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆●▃▄▆▅█▃▂▂▂▄   #59 of 68*     95%      2
+text to video  ▆●▃▆▆█▇▂▄·▄▅   #61 of 70*     96%      2
 </pre>
 
-<details><summary>text to video · #59 of 68 · 95% of its score</summary>
+<details><summary>text to video · #61 of 70 · 96% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   41.2%  ▄▄·●··█▄▄▄▄▄ beats 2/10   easy · avg 73%     60%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   41.2%  ▄▄·●··█▄▄▄▄▄ beats 2/10   easy · avg 74%     60%  at its level
 <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   47.2%  ▄▄·●▄█▄··▄▄▄ beats 2/10   easy · avg 70%     35%  at its level
 </pre>
 
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        5% ▇
-weighted average                                   = 29.2
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 29.3
 </pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>

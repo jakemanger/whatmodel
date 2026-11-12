@@ -6,7 +6,7 @@
 
 Peking University (PKU-YuanGroup) · released 2024-10 · 2.78B params · mit
 
-**score 39.3** ±6.8 · #70 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.1** ±6.6 · #71 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Peking University (PKU-YuanGroup) · released 2024-10 · 2.78B params · mit
 
 <pre>
 test                              result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.62 / 10  ▅··●▃···▃··█ beats 3/8    easy · avg 7.71 / 10     81%  at its level
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.62 / 10  ▅··●▃···▃··█ beats 3/8    easy · avg 7.74 / 10     81%  at its level
 </pre>
 
 </details>
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 39.3
+weighted average                                   = 39.1
 </pre>
 
 <sub>Licences: WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>

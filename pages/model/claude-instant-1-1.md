@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-05 · proprietary
 
-**score 44.5** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 44.3** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▆█▇▅▄▃▁   #432 of 539*     20%      1
-math    ▁▁▃▆●█▅█▃▁▁▁   #371 of 530*     28%      1
+coding  ▁▁▁▃●▇█▇▆▃▂▁   #436 of 542*     20%      1
+math    ▁▂▃▆●█▅▇▄▁▁▁   #386 of 540*     28%      1
 </pre>
 
-<details><summary>coding · #432 of 539 · 20% of its score</summary>
+<details><summary>coding · #436 of 542 · 20% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run   difficulty      counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (maker)</a>   52.8%  ▁▁▁▁▂▂▆●█▅▂▁ beats 99/205  easy · avg 71%     20%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (maker)</a>   52.8%  ▁▁▁▁▂▂▆●█▅▂▁ beats 99/205  easy · avg 72%     20%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #371 of 530 · 28% of its score</summary>
+<details><summary>math · #386 of 540 · 28% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run    difficulty           counts  why
@@ -47,7 +47,7 @@ test           result  vs the others in its run    difficulty           counts  
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (maker)</a>                85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 133/140  very easy · avg 90%     21%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/214  easy · avg 81%          18%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/215  easy · avg 81%          18%  at its level · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (maker)</a>                     78.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 76/80    easy · avg 85%         9.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   65.7%  ▂▂▄··●▂█▄··▂ beats 4/12     easy · avg 90%         2.6%  at its level · noisy
 </pre>
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">Anthropic system cards and model announ…</a>        7   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.5
+weighted average                                   = 44.3
 </pre>
 
 <sub>Licences: An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

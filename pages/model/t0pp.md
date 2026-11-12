@@ -22,13 +22,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.724.pdf">MMLU</a>                                 30.9%  ▁▁▁▁●▂▂▅██▆▄ beats 14/214  medium · avg 74%     33%  small run
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   21.4%  ●····▃·▃▃█▅▅ beats 0/10    easy · avg 81%       13%  typical
-<a href="https://aclanthology.org/2023.acl-long.806.pdf">Super-NaturalInstructions English…</a>   40.3%  ▄·▄······▄●█ beats 3/5     easy · avg 77%       13%  at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.724.pdf">MMLU</a>                                 30.9%  ▁▁▁▁●▂▂▅██▆▄ beats 14/215  easy · avg 74%       33%  small run
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   21.4%  ●····▃·▃▃█▅▅ beats 0/10    easy · avg 82%       13%  typical
+<a href="https://aclanthology.org/2023.acl-long.806.pdf">Super-NaturalInstructions English…</a>   40.3%  ▄·▄······▄●█ beats 3/5     easy · avg 77%       12%  at its level · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    25.0%  ▂▂··●·▂··▂█▄ beats 2/10    medium · avg 56%     12%  blunt
-<a href="https://aclanthology.org/2023.acl-long.806.pdf">BIG-Bench Hard</a>                       13.9%  ●▁▁▁▂▄▅▆█▃▃▁ beats 1/155   medium · avg 58%     11%  sharp · too hard for it · small run
+<a href="https://aclanthology.org/2023.acl-long.806.pdf">BIG-Bench Hard</a>                       13.9%  ●▁▁▁▂▄▅▆█▃▃▁ beats 1/155   medium · avg 59%     11%  sharp · too hard for it · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   18.7%  ▃··▃·●▃·█▃·▃ beats 2/10    hard · avg 29%      5.9%  blunt
-<a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         49.9%  ▂▆·▄▄●▂·▂··▂ beats 11/14   medium · avg 65%    4.1%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         49.9%  ▂▆·▄▄●▂·▂··▂ beats 11/14   medium · avg 65%    4.0%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-eacl.31.pdf">CREPE event likelihood change (3-…</a>   33.7%  ●█····█····█ beats 0/3     medium · avg 52%    3.8%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   35.3%  ▄·█··█●·▄▄▄▄ beats 5/10    medium · avg 43%    2.1%  blunt · at its level
 </pre>

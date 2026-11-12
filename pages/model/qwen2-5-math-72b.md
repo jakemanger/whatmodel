@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 72.71B params · qwen
 
-**score 55.2** ±2.1 · #279 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
+**score 55.0** ±2.1 · #285 of 740 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▄▂▁▁   #237 of 431     98%      3
+math  ▁▁▃▅█●▄█▅▂▁▁   #244 of 440     98%      3
 </pre>
 
-<details><summary>math · #237 of 431 · 98% of its score</summary>
+<details><summary>math · #244 of 440 · 98% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>        3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                 2% ▇
-weighted average                            = 55.2
+weighted average                            = 55.0
 </pre>
 
 ## How to run it

@@ -6,7 +6,7 @@
 
 Google · released 2026-05 · proprietary
 
-**score 79.5** ±1.6 · #3 of 93 · from 5 benchmark results across 3 sources
+**score 78.5** ±1.5 · #4 of 94 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,40 +14,40 @@ Google · released 2026-05 · proprietary
 
 <pre>
 task            vs the others       rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃▂▂▂●   #2 of 68*     46%      2
-image to video  ▁▂·▂▅█▅▄▅▆▃●   #3 of 50*     44%      2
-video editing   ▄··█··▄··●▄█    #4 of 9*    8.6%      1
+text to video   ▆▄▃▆▆█▇▂▄·▄●   #3 of 70*     49%      2
+image to video  ▁▂·▂▅█▅▄▅▅▃●   #5 of 51*     40%      2
+video editing   ▃··▅·▃···●▃▅   #4 of 10*     10%      1
 </pre>
 
-<details><summary>text to video · #2 of 68 · 46% of its score</summary>
+<details><summary>text to video · #3 of 70 · 49% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1512.9  ▂▂▃▆█▆·▆▅▁▂● beats 40/41  avg 1147           42%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   63.6%  ▅·▃█▃·▅▃▅▃▃● beats 14/14  hard · avg 44%    3.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1509.4  ▂▂▃▆█▃·▇▂▁█● beats 42/44  avg 1154           46%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   63.6%  ▅·▃█▃·▅▃▅▃▃● beats 14/14  hard · avg 45%    3.8%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #3 of 50 · 44% of its score</summary>
+<details><summary>image to video · #5 of 51 · 40% of its score</summary>
 
-Trails [MiniMax H3](minimax-h3.md) here, though they rank lower overall.
+Trails [MiniMax H3](minimax-h3.md), [Dreamina Seedance 2.0](seedance-2-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1464.8  ▁▁▁▁▄▇▃▆▃▂▄● beats 35/40  avg 1189       28%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1286.0  ▂··▂▂▆█▆▂▂●▄ beats 17/19  avg 741        16%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1462.8  ▁▁▁▁▄▇▃▇▂▃▅● beats 35/42  avg 1197       27%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1286.0  ▂··▂▂▆█▆▂▂●▄ beats 17/19  avg 764        13%  sharp
 </pre>
 
 </details>
 
-<details><summary>video editing · #4 of 9 · 8.6% of its score</summary>
+<details><summary>video editing · #4 of 10 · 10% of its score</summary>
 
-Trails [Dreamina Seedance 2.5](seedance-2-5.md), [MiniMax H3](minimax-h3.md), [Wan 3.0](wan-3-0.md) here, though they rank lower overall.
+Trails [Dreamina Seedance 2.5](seedance-2-5.md), [Wan 3.0](wan-3-0.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1366.6  █··█··▄··●▄█ beats 6/9    avg 1117      8.6%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1380.5  ▄··▂▂·▂··●▂▄ beats 8/11   avg 1119       10%  typical
 </pre>
 
 </details>
@@ -58,11 +58,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   79% ▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   13% ▇▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 79.5
+weighted average                                   = 78.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>

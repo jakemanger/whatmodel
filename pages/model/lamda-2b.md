@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▃▁▁▁   #516 of 530*    5.7%      1
+math  ▁●▃▆██▅▇▄▁▁▁   #527 of 540*    5.7%      1
 </pre>
 
-<details><summary>math · #516 of 530 · 5.7% of its score</summary>
+<details><summary>math · #527 of 540 · 5.7% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -37,11 +37,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>       3.1%  ▅▃●···▅·▃▃▃▅ beats 3/12   very easy · avg 94%     37%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                         3.8%  ▅▃▃●··▃▃·▃▃█ beats 4/12   easy · avg 83%          21%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                         2.4%  ▃▅●···▅·▃▃▃▅ beats 3/12   easy · avg 82%          16%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>    8.0%  ▃·▅·●▃▅·▃▃·█ beats 3/12   medium · avg 52%       8.5%  too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>    8.0%  ▃·▅·●▃▅·▃▃·█ beats 3/12   medium · avg 53%       8.5%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                20.2%  ●······▁·▁▁▃ beats 1/12   easy · avg 88%         3.9%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   52.6%  █·····●▃▃▅▃█ beats 3/12   medium · avg 70%       3.1%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   49.3%  ●·····▃·▁·▄▁ beats 1/12   medium · avg 81%       3.0%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     17.7%  ●▁·▁▁·····▂▁ beats 2/12   medium · avg 48%       0.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     17.7%  ●▁·▁▁·····▂▁ beats 2/12   medium · avg 49%       0.5%  sharp · too hard for it
 </pre>
 
 </details>

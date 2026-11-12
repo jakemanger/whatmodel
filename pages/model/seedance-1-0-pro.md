@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-06 · closed weights
 
-**score 55.7** ±1.9 · #35 of 93 · from 3 benchmark results across 2 sources
+**score 54.9** ±1.8 · #36 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,28 +14,28 @@ ByteDance Seed · released 2025-06 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #26 of 68*     59%      1
-image to video  ▁▂·▂▅█●▄▅▆▃▄   #28 of 50*     39%      1
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #28 of 70*     61%      1
+image to video  ▁▂·▂▅█●▄▅▅▃▅   #29 of 51*     36%      1
 </pre>
 
-<details><summary>text to video · #26 of 68 · 59% of its score</summary>
+<details><summary>text to video · #28 of 70 · 61% of its score</summary>
 
 Trails [Hailuo 2.3](hailuo-2-3.md), [P-Video](p-video.md), [Kling O1 Pro](kling-o1-pro.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1190.9  ▂▂▃▆●▆·▆▅▁▂▇ beats 13/41  avg 1147       59%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1191.6  ▂▂▃▆●▃·▇▂▁█▃ beats 13/44  avg 1154       61%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #28 of 50 · 39% of its score</summary>
+<details><summary>image to video · #29 of 51 · 36% of its score</summary>
 
 Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1273.0  ▁▁▁▁▄▇●▆▃▂▄█ beats 16/40  avg 1189       39%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1273.8  ▁▁▁▁▄▇●▇▂▃▅█ beats 16/42  avg 1197       36%  typical
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ test                  result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   29.6%  █··█·······● beats 2/2    hard · avg 16%    1.0%  blunt · noisy · small run
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   29.6%  █··█·······● beats 2/2    hard · avg 16%    0.9%  blunt · noisy · small run
 </pre>
 
 </details>
@@ -55,10 +55,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.7
+weighted average                                   = 54.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

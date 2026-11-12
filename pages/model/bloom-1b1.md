@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 6.9** ±1.1 · #721 of 732 · from 36 benchmark results across 6 sources
+**score 6.9** ±1.1 · #729 of 740 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··●·█·██··█       #5 of 6*    3.0%      1
-math    ▁●▃▅█▆▄█▄▂▁▁   #425 of 431*    1.4%      1
+math    ▁●▃▅█▆▄█▅▂▁▁   #434 of 440*    1.4%      1
 </pre>
 
 <details><summary>coding · #5 of 6 · 3.0% of its score</summary>
@@ -29,7 +29,7 @@ test               result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #425 of 431 · 1.4% of its score</summary>
+<details><summary>math · #434 of 440 · 1.4% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Sber · released 2025-11 · 19B params · mit
 
-**score 52.4** ±2.4 · #46 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.8** ±2.2 · #45 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ Sber · released 2025-11 · 19B params · mit
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄▆▅●▃▂▂▂▄   #28 of 68*     98%      2
+text to video  ▆▄▃▆▆●▇▂▄·▄▅   #31 of 70*     98%      2
 </pre>
 
-<details><summary>text to video · #28 of 68 · 98% of its score</summary>
+<details><summary>text to video · #31 of 70 · 98% of its score</summary>
 
-Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall.
+Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1175.2  ▂▂▃●█▆·▆▅▁▂▇ beats 11/41  avg 1147           95%  typical
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   86.5%  ▂··▂··█●▂··▆ beats 7/11   easy · avg 84%    3.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1175.2  ▂▂▃●█▃·▇▂▁█▃ beats 11/44  avg 1154           95%  typical
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   86.5%  ▂··▂··█●▂··▆ beats 7/11   easy · avg 85%    2.8%  blunt
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 52.4
+weighted average                                   = 51.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

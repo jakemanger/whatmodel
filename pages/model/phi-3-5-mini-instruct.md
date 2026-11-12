@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 44.7** ±0.5 · #484 of 732 · from 38 benchmark results across 10 sources
+**score 44.6** ±0.5 · #490 of 740 · from 38 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #238 of 313*    0.4%      1
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #339 of 469     12%      5
+agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #241 of 316*    0.4%      1
+coding          ▁▁▁▃▆●█▆▆▃▃▁    #342 of 472     12%      5
 chat &amp; writing  ●··········█       #2 of 2*    0.4%      1
-math            ▁▁▃●█▆▄█▄▂▁▁    #362 of 431     21%      5
+math            ▁▁▃●█▆▄█▅▂▁▁    #373 of 440     21%      5
 </pre>
 
-<details><summary>agent tasks · #238 of 313 · 0.4% of its score</summary>
+<details><summary>agent tasks · #241 of 316 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,16 +33,16 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>coding · #339 of 469 · 12% of its score</summary>
+<details><summary>coding · #342 of 472 · 12% of its score</summary>
 
 Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   42.1%  ▁▂●▃▆█▆▃▂·▁▁ beats 6/47     medium · avg 57%    7.7%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   42.1%  ▁▂●▃▆█▆▃▂·▁▁ beats 6/47     medium · avg 58%    7.7%  sharp · at its level
 <a href="https://arxiv.org/html/2503.01743v2">HumanEval (maker)</a>                   70.1%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 133/205  easy · avg 82%      1.7%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (maker)</a>                  62.8%  ▁·▁▁▂▃▄●█▅▄▃ beats 62/145   easy · avg 78%      1.6%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2503.01743v2">MBPP (maker)</a>                        70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 69/86    easy · avg 74%      0.9%  at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">MBPP (maker)</a>                        70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 69/86    easy · avg 75%      0.9%  at its level · small run
 <a href="https://arxiv.org/html/2503.01743v2">MBPP+ (maker)</a>                       63.8%  ▁··▁▁▃▄●▆▄▁▁ beats 57/120   easy · avg 70%      0.6%  at its level · small run
 </pre>
 
@@ -57,17 +57,17 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #362 of 431 · 21% of its score</summary>
+<details><summary>math · #373 of 440 · 21% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM (maker)</a>                         49.6%  ▅●▃█·▅···▃·▃ beats 2/10   easy · avg 72%         6.1%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM (maker)</a>                         49.6%  ▅●▃█·▅···▃·▃ beats 2/10   easy · avg 72%         6.0%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          82.0%  ▁▄·▁▄●▅▅▅███ beats 13/43  very easy · avg 87%    5.5%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (maker)</a>                        76.9%  ●·█▄▄█···█·▄ beats 1/10   very easy · avg 90%    5.3%  sharp
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   18.7%  ▁▁▁●█▂▇▇▄··▂ beats 6/38   hard · avg 30%         2.2%  sharp
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (maker)</a>                         49.8%  █▄█●···▄▄▄·▄ beats 5/10   medium · avg 61%       2.0%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   18.7%  ▁▁▁●█▂▇▇▄··▂ beats 6/38   hard · avg 31%         2.2%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (maker)</a>                         49.8%  █▄█●···▄▄▄·▄ beats 5/10   medium · avg 62%       2.0%  at its level
 </pre>
 
 </details>
@@ -76,26 +76,26 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   67.7%  ▁·▁▁▄●▄▅█▄▂▁ beats 12/53    easy · avg 75%          14%  at its level
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 28.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 23/61    medium · avg 38%        10%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   67.7%  ▁·▁▁▄●▄▅█▄▂▁ beats 12/53    easy · avg 76%          14%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 28.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 23/61    medium · avg 39%        10%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (maker)</a>                84.6%  ▂▂▂█●···▄··▂ beats 7/10     very easy · avg 89%    5.1%  sharp
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           43.0%  ●▄▄▄█▄▂·▄█·▄ beats 1/23     medium · avg 56%       4.7%  at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           43.0%  ●▄▄▄█▄▂·▄█·▄ beats 1/23     medium · avg 56%       4.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (maker)</a>                         65.5%  █▄█●▄▄·▄▄··▄ beats 5/10     easy · avg 75%         4.4%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.2%  ●▄▄▂▂█▂▄▂█▂▄ beats 0/22     medium · avg 61%       4.3%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (maker)</a>               63.1%  ██▄·●▄·▄▄··▄ beats 5/10     medium · avg 71%       3.5%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (maker)</a>                   81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 85%         2.8%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (maker)</a>                     47.4%  █▄▄·█●▄▄·▄·▄ beats 6/10     medium · avg 54%       2.5%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (maker)</a>               63.1%  ██▄·●▄·▄▄··▄ beats 5/10     medium · avg 72%       3.5%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (maker)</a>                   81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 86%         2.8%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (maker)</a>                     47.4%  █▄▄·█●▄▄·▄·▄ beats 6/10     medium · avg 55%       2.5%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   40.2%  ▁▂●▂▃█▃▆▅▄▂▃ beats 9/95     medium · avg 65%       2.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (ma…</a>   51.8%  █▄●██··█···▄ beats 3/10     medium · avg 63%       2.2%  at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    6.4%  ▁▁●▆██▁▁·▁▁▁ beats 3/57     hard · avg 15%         1.9%  sharp · too hard for it
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.4%  ▁▁▁▁▁▂●▃▄▆█▃ beats 20/97    hard · avg 31%         1.4%  blunt · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    6.4%  ▁▁●▆██▁▁·▁▁▁ beats 3/57     hard · avg 16%         1.9%  sharp · too hard for it
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.4%  ▁▁▁▁▁▂●▃▄▆█▃ beats 20/97    hard · avg 32%         1.5%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (maker)</a>                    72.2%  ▃●█·▃▃▃···▃▃ beats 1/10     easy · avg 82%         1.1%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (maker)</a>                   72.2%  ▃····▃▃█▃·●▅ beats 8/10     medium · avg 71%       0.9%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (maker)</a>                   72.2%  ▃····▃▃█▃·●▅ beats 8/10     medium · avg 72%       0.9%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA (maker)</a>                   75.1%  ▃·▃▅▅●·▃···▃ beats 6/10     medium · avg 76%       0.8%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (maker)</a>                        77.7%  ▃··▃··●█▃·▃▃ beats 2/10     easy · avg 83%         0.7%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 131/276  medium · avg 72%       0.7%  at its level · noisy
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (maker)</a>    26.6%  █··▄●··▂▂··▄ beats 6/10     very hard · avg 32%    0.6%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (maker)</a>      40.4%  ▂▁▁▃▂▅●█▅▂▂▂ beats 29/60    medium · avg 49%       0.5%  at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (maker)</a>      40.4%  ▂▁▁▃▂▅●█▅▂▂▂ beats 29/60    medium · avg 50%       0.5%  at its level · small run
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.0%  ●···▁▁▁▂▃·▆▂ beats 4/23     very hard · avg 29%    0.4%  sharp · too hard for it
 <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (maker)</a>      14.3%  ▁●··▁▁▂▅█▅▅▅ beats 1/49     hard · avg 34%         0.3%  at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (maker)</a>                         78.2%  ▃·▅·▃●·▃▅··▃ beats 5/10     medium · avg 82%       0.3%  blunt · at its level
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 <a name="libra-leaderboard"></a><a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">ai-forever LIBRA leaderboard</a>                    1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.7
+weighted average                                   = 44.6
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

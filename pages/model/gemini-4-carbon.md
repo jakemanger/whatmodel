@@ -4,9 +4,9 @@
 
 # Gemini 4 Carbon
 
-Google · released 2026-10 · closed weights
+Google · released 2026-10 · proprietary
 
-**score 83.4** ±1.3 · #4 of 732 · from 3 benchmark results across 1 source
+**score 84.3** ±0.8 · #2 of 740 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,50 +16,71 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others        rank  counts  tests
-agent tasks     ▁▁▃▆█▄▅▅▄▄▂●   #2 of 313*     48%      1
-coding          ▁▁▁▃▅▇█▇▅▄▃●   #3 of 469*     33%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█▆▇▇●   #1 of 402*     19%      1
+agent tasks     ▁▁▃▆█▅▅▅▄▅▂●   #3 of 316*     18%      1
+coding          ▁▁▁▃▆▇█▆▆▃▃●   #3 of 472*     10%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█▇▇▇●   #1 of 404*    5.8%      1
+math            ▁▁▃▅█▆▄█▅▂▁●    #5 of 440     19%      4
 </pre>
 
-<details><summary>agent tasks · #2 of 313 · 48% of its score</summary>
+<details><summary>agent tasks · #3 of 316 · 18% of its score</summary>
 
-Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall.
+Trails [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1604 IPS  ▁▁▁▃▃▂█▁▂▂●▁ beats 58/59  avg -0.379 IPS     48%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1663 IPS  ▁▁▁▁▄▄█▄▂▁▁● beats 60/61  avg -0.395 IPS     18%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #3 of 469 · 33% of its score</summary>
+<details><summary>coding · #3 of 472 · 10% of its score</summary>
 
-Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall.
+Trails [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1768.2  ▁▁▃▂▅█▃▆▅▅▁● beats 126/129  avg 981        33%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1768.2  ▁▂▄▃▇█▅▆█▅●▁ beats 130/133  avg 990        10%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 402 · 19% of its score</summary>
-
-Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank higher overall.
+<details><summary>chat &amp; writing · #1 of 404 · 5.8% of its score</summary>
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1527.5  ▁▁▁▂▃▃▃▆▆▇█● beats 385/385  avg 1260       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1526.0  ▁▁▁▂▃▂▃▆▆▇█● beats 387/387  avg 1261      5.8%  blunt
 </pre>
 
 </details>
 
-<details><summary>other tests (2)</summary>
+<details><summary>math · #5 of 440 · 19% of its score</summary>
+
+Trails [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6 Astra](gpt-6-astra.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run  counts  why
-<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">SEC-Bench Pro (pass@1) (maker)</a>   88.2%  ▄·▄·▄·█▄···● beats 6/6         —  not counted yet: no other model in the …
-<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">ExploitGym (pass@1) (maker)</a>      54.8%  ▄·▄··█·▄▄··● beats 6/6         —  not counted yet: no other model in the …
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>         95.1%  ▁▂▁▁█▅▂▃▁●▁▁ beats 69/72    very hard · avg 0.1%    9.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>      90.5%  ▁··▁▁▂▅▃█▅●▂ beats 86/91    very hard · avg 1.3%    6.4%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv">FrontierMath: Erdős problems</a>    2.9%  █····▂···●·▁ beats 11/14    very hard · avg 0.0%    3.8%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 194/207  very hard · avg 7.3%    0.1%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                            result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                87.6%  ▃▂▅▆▃█▅▆▃▃▂● beats 29/30    very hard · avg 0.2%     13%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     73.0%  █·▂▁▆▆▆▆▅▂●▁ beats 79/83    very hard · avg 9.4%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       77.5%  █▇██▁▇▁▃●▄▁▁ beats 33/38    very hard · avg 1.0%     11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            78.0%  █▁▁▁▁▂▄▂▃▃▂● beats 156/157  very hard · avg 5.6%    8.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                77.7%  ▁▂▂▂▅█▄▃●··▁ beats 90/91    very hard · avg 7.2%    2.1%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     96.5%  ▁▁▁▁▂▃▅▄▄▆█● beats 221/221  hard · avg 39%          1.0%  sharp · maxed out
+<a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf#page=61">HealthBench Hard (maker)</a>         45.4%  ▁····▁▁▂█·▁● beats 13/14                               —  not counted yet: no other model in the …
+<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">SEC-Bench Pro (pass@1) (maker)</a>   88.2%  ▄·▄·▄·█▄···● beats 6/6                                 —  not counted yet: no other model in the …
+<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">ExploitGym (pass@1) (maker)</a>      54.8%  ▄·▄··█·▄▄··● beats 6/6                                 —  not counted yet: no other model in the …
+<a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf#page=76">FACTS Grounding (maker)</a>          83.2%  ▄▄·····▄·█·● beats 5/5                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -70,25 +91,32 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 83.4
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                            10   66% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   34% ▇▇▇▇
+prior: pull toward the middle             0% ▇
+weighted average                        = 84.3
 </pre>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-<details><summary>Not counted (2)</summary>
+<details><summary>Not counted (4)</summary>
 
 <pre>
 source                  test                    score  why
 Google DeepMind Gemin…  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">SEC-Bench Pro (pass@1)</a>  88.2%  too few models have it yet
 Google DeepMind Gemin…  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon">ExploitGym (pass@1)</a>     54.8%  too few models have it yet
+Google DeepMind Gemin…  <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf#page=76">FACTS Grounding</a>         83.2%  too few models have it yet
+Google DeepMind Gemin…  <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf#page=61">HealthBench Hard</a>        45.4%  too few models have it yet
 </pre>
 
 </details>
 
 ## How to run it
 
-No verified API or local download yet.
+### Through an API
+
+api (Google) · $4.00/M blended · $2 in / $10 out per 1M tokens · [ai.google.dev](https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon)
+
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per 1M tokens, Gemini API Standard paid tier for gemini-4-carbon, introductory price through 2026-11-30 (output includes thinking tokens); it rises to $4.00 input and $20.00 output on 2026-12-01. Cached input $0.10 (implicit caching only) and batch, flex and priority prices excluded; no prompt-length tiers; not on the Free tier. Google official pricing page, observed 2026-11-12. · [context source](https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon)</sub>
 
 [interactive version](https://whatmodel.sh/model/gemini-4-carbon) · [JSON](https://whatmodel.sh/api?format=json&all=1)

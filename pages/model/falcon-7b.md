@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 30.6** ±0.7 · #658 of 732 · from 37 benchmark results across 10 sources
+**score 30.6** ±0.7 · #666 of 740 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,22 +23,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Challenge</a>                        43.7%  ▁·▁··▁▁▇▂█●▃ beats 19/26   easy · avg 82%          35%  sharp · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">WinoGrande</a>                           67.2%  ▁····▁··▁▂●▄ beats 17/26   easy · avg 86%          12%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">WinoGrande</a>                           67.2%  ▁····▁··▁▂●▄ beats 17/26   easy · avg 87%          12%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">BoolQ</a>                                73.5%  ▂▃▂▅▆▂▅●█▂▂▂ beats 18/26   easy · avg 88%         7.9%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">HellaSwag</a>                            76.3%  ▃···▁▇▅█●▃▁▁ beats 22/26   very easy · avg 91%    7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">OpenBookQA</a>                           30.6%  █·▁▁▃·▁▃▅●▃▄ beats 17/26   easy · avg 81%         6.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Easy</a>                             70.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 20/26   easy · avg 85%         5.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">PIQA</a>                                 79.5%  ▁·▁··▁▁▃█▅█● beats 25/26   easy · avg 87%         4.0%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-29%2010%3A59%3A00.762080.json">Natural Questions (closed book)</a>      22.1%  ▁·▁·▁▂▁▂·▅●█ beats 17/28   medium · avg 48%       3.8%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">SciQ</a>                                 94.0%  ▁·▁·▁·▃▅▃●▄▁ beats 21/26   very easy · avg 97%    3.7%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">SciQ</a>                                 94.0%  ▁·▁·▁·▃▅▃●▄▁ beats 21/26   very easy · avg 98%    3.7%  blunt · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   55.7%  ▂·▄·▂█▄▄█●▂▆ beats 17/21   easy · avg 74%         3.7%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 13/26   medium · avg 60%       2.3%  blunt · several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.6%  ▅····▃▅·●█·█ beats 7/13    medium · avg 52%       2.1%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 13/26   medium · avg 61%       2.3%  blunt · several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.6%  ▅····▃▅·●█·█ beats 7/13    medium · avg 53%       2.1%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 5/13    medium · avg 61%       1.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">LAMBADA (OpenAI version), last-wo…</a>   74.6%  ▁··▂▁▁▁▂▆█▅● beats 24/26   very easy · avg 86%    1.2%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.9%  ▃▁▁▁●▁▁▁▂█▅▁ beats 46/276  medium · avg 72%       0.9%  noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-14%2018%3A50%3A25.663061.json">TriviaQA</a>                             58.7%  ▁··▁█▃▃▁▄▅●█ beats 22/28   easy · avg 73%         0.6%  at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 6/14    hard · avg 66%         0.5%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-14%2018%3A50%3A25.663061.json">TriviaQA</a>                             58.7%  ▁··▁█▃▃▁▄▅●█ beats 22/28   easy · avg 74%         0.6%  at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 6/14    hard · avg 67%         0.5%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 53.8%  ●·▃·▃··█▃··▃ beats 1/8     easy · avg 92%         0.3%  at its level · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-16%2002%3A54%3A38.742566.json">HaluEval QA hallucination detecti…</a>   46.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 2/27    hard · avg 66%         0.2%  too hard for it · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-13%2021%3A49%3A09.998773.json">TruthfulQA MC2</a>                       34.3%  ●▃█▆▁▂▅···▁▁ beats 2/31    medium · avg 57%       0.1%  blunt · at its level

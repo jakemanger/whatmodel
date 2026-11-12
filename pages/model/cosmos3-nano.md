@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 16B params · openmdw-1.1
 
-**score 51.8** ±2.6 · #48 of 93 · from 6 benchmark results across 5 sources
+**score 51.3** ±2.6 · #50 of 94 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,30 +14,30 @@ NVIDIA · released 2026-05 · 16B params · openmdw-1.1
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #29 of 68*     32%      2
-image to video  ▁▂·▂▅█●▄▅▆▃▄   #27 of 50*     22%      2
+text to video   ▆▄▃▆▆●▇▂▄·▄▅   #30 of 70*     32%      2
+image to video  ▁▂·▂▅█●▄▅▅▃▅   #28 of 51*     23%      2
 </pre>
 
-<details><summary>text to video · #29 of 68 · 32% of its score</summary>
+<details><summary>text to video · #30 of 70 · 32% of its score</summary>
 
-Beats [Kling 2.1 Master](kling-2-1-master.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
+Beats [Kandinsky 5.0 Pro](kandinsky-5-0-pro.md), [Kling 2.1 Master](kling-2-1-master.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   87.6%  █▄▄··▄●▄▄▄·▄ beats 5/9    easy · avg 85%     23%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   44.6%  ▅·▃●▃·▅▃▅▃▃▃ beats 4/14   hard · avg 44%    9.3%  blunt · at its level
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   87.6%  █▄▄··▄●▄▄▄·▄ beats 5/9    very easy · avg 85%     23%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   44.6%  ▅·▃●▃·▅▃▅▃▃▃ beats 4/14   hard · avg 45%          10%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #27 of 50 · 22% of its score</summary>
+<details><summary>image to video · #28 of 51 · 23% of its score</summary>
 
 Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   88.6%  ▄·█··▄··▄▄●█ beats 6/8    easy · avg 84%     18%  typical
-<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   29.1%  ██···●··█·██ beats 2/5    hard · avg 25%    4.6%  blunt · at its level
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   29.1%  ██···●··█·██ beats 2/5    hard · avg 25%    4.8%  blunt · at its level
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera movement…</a>   717.5  ●···▄▄██·█▄█ beats 1/12   avg 661        28%  sharp · noisy
-<a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video realism (…</a>   717.1  ●······▃▂▃▃█ beats 0/12   avg 871        15%  sharp · noisy
+<a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera movement…</a>   717.5  ●···▄▄██·█▄█ beats 1/12   avg 674        28%  sharp · noisy
+<a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video realism (…</a>   717.1  ●······▃▂▃▃█ beats 0/12   avg 884        14%  sharp · noisy
 </pre>
 
 </details>
@@ -58,13 +58,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   40% ▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   41% ▇▇▇▇▇
 <a name="visual-rapid-relative-camera"></a><a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata/relative-camera-movement-human…</a>        1   28% ▇▇▇
-<a name="visual-rapid-i2v-realism"></a><a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata/image-to-video-realism publish…</a>        1   15% ▇▇
-<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    9% ▇
+<a name="visual-rapid-i2v-realism"></a><a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata/image-to-video-realism publish…</a>        1   14% ▇▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1   10% ▇
 <a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    5% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 51.8
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/image-to-video-realism published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>

@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 60.5** ±3.0 · #40 of 144 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 60.0** ±3.0 · #42 of 146 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #32 of 126     96%      5
+text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #33 of 128     96%      5
 </pre>
 
-<details><summary>text to image · #32 of 126 · 96% of its score</summary>
+<details><summary>text to image · #33 of 128 · 96% of its score</summary>
 
-Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md), [Imagen 4 Ultra](imagen-4-ultra.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Cosmos3-Super-Text2Image](cosmos3-super-text2image.md), [Imagen 4 Ultra](imagen-4-ultra.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (maker)</a>   96.0%  ▃·····▅██●▃▃ beats 10/12  very easy · avg 90%     25%  maxed out · small run
 <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (maker)</a>   96.8%  ▃·······███● beats 10/12  very easy · avg 91%     20%  maxed out · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (maker)</a>               86.7%  ▇▃▅▇▁▄▅▃█▃●▅ beats 34/39  easy · avg 78%          19%  small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (maker)</a>      50.6%  ▃·▃●▃·▃··▃·▃ beats 2/8    medium · avg 37%        16%  at its level · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (maker)</a>      53.4%  ▃······▃▅●▅▃ beats 4/9    medium · avg 39%        16%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (maker)</a>               86.7%  ▇▃▅▇▁▄▅▃█▃●▅ beats 34/39  easy · avg 79%          19%  small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (maker)</a>      50.6%  ▃·▃●▃·▃··▃·▃ beats 2/8    medium · avg 38%        16%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (maker)</a>      53.4%  ▃······▃▅●▅▃ beats 4/9    medium · avg 40%        16%  at its level · small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-ernie-image"></a><a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository evaluation…</a>        5   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 60.5
+weighted average                                   = 60.0
 </pre>
 
 <sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt))</sub>

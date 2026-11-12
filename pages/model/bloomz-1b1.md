@@ -23,7 +23,7 @@ coding  ●···▄·▄·▄··▄   #5 of 6*     71%      1
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    2.6%  █●··█··█·█·█ beats 1/5    medium · avg 59%     71%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    2.6%  █●··█··█·█·█ beats 1/5    medium · avg 60%     71%  sharp · too hard for it
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   94% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    2% ▇
+<a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    1% ▇
 prior: pull toward the middle                        5% ▇
 weighted average                                   = 17.8
 </pre>

@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 0.9B params · deepfloyd-if-license
 
-**score 32.5** ±2.5 · #126 of 144 · from 3 benchmark results across 3 sources
+**score 32.7** ±2.5 · #128 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #108 of 126*     43%      1
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #110 of 128*     44%      1
 </pre>
 
-<details><summary>text to image · #108 of 126 · 43% of its score</summary>
+<details><summary>text to image · #110 of 128 · 44% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [LCM-SDXL](lcm-sdxl.md) here, though they rank higher overall.
 
 <pre>
 test     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>   54.0%  ▅█···▅▃●▃··▃ beats 8/10   easy · avg 79%     43%  at its level
+<a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>   54.0%  ▅█···▅▃●▃··▃ beats 8/10   easy · avg 79%     44%  at its level
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test     result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.2300 mean human alignment score  █▄▄·█·▄█▄●·▄ beats 10/11  avg 6.286 mean human al…     42%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.2300 mean human alignment score  █▄▄·█·▄█▄●·▄ beats 10/11  avg 6.275 mean human al…     42%  typical
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              51.4%  ▁····●▁·▁··▁ beats 1/9    very easy · avg 92%          12%  sharp · at its level · noisy
 </pre>
 
@@ -46,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-geneval"></a><a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval authors' results: djghosh13/gen…</a>        1   43% ▇▇▇▇▇
+<a name="visual-geneval"></a><a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval authors' results: djghosh13/gen…</a>        1   44% ▇▇▇▇▇
 <a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   42% ▇▇▇▇▇
 <a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   12% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 32.5
+weighted average                                   = 32.7
 </pre>
 
 <sub>Licences: GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

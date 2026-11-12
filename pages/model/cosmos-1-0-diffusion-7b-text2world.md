@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 45.9** ±3.1 · #61 of 93 · from 3 benchmark results across 2 sources
+**score 45.8** ±3.1 · #62 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #39 of 68     96%      3
+text to video  ▆▄▃▆●█▇▂▄·▄▅   #41 of 70     96%      3
 </pre>
 
-<details><summary>text to video · #39 of 68 · 96% of its score</summary>
+<details><summary>text to video · #41 of 70 · 96% of its score</summary>
 
 Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1   52% ▇▇▇▇▇▇
 <a name="paper-2501.03575v3-cosmos"></a><a href="https://arxiv.org/html/2501.03575v3">Cosmos World Foundation Model Platform …</a>        2   44% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 45.9
+weighted average                                   = 45.8
 </pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · Cosmos World Foundation Model Platform for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

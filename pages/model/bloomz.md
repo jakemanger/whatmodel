@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 32.7** ±1.5 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
+**score 32.6** ±1.5 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ coding  █···▄·▄·▄··●   #1 of 6*     57%      1
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>   12.1%  ██··█··█·█·● beats 5/5    medium · avg 59%     57%  sharp
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>   12.1%  ██··█··█·█·● beats 5/5    medium · avg 60%     57%  sharp
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            57.1%  ▅●······▃▃·▅ beats 4/8    easy · avg 86%         5.9%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">LAMBADA (OpenAI version), last-wo…</a>   67.8%  ▁·····▁▁▃▃●█ beats 46/86  very easy · avg 85%    2.5%  blunt · at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         88.0%  ▃··█▅▃▃▅·▃●▃ beats 11/12  easy · avg 91%         2.0%  at its level · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (maker)</a>             95.7%  █·▂··▃··▂▂▂● beats 12/12  easy · avg 88%         0.5%  blunt · at its level · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (maker)</a>             95.7%  █·▂··▃··▂▂▂● beats 12/12  easy · avg 88%         0.4%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        3   27% ▇▇▇
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 32.7
+weighted average                                   = 32.6
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt))</sub>

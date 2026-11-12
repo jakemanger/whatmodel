@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 35.0** ±1.3 · #628 of 732 · from 8 benchmark results across 3 sources
+**score 35.0** ±1.3 · #634 of 740 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #421 of 469     82%      6
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #424 of 472     82%      6
 </pre>
 
-<details><summary>coding · #421 of 469 · 82% of its score</summary>
+<details><summary>coding · #424 of 472 · 82% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   33.1%  ▁·▂▁▂●▅█▄▄▁▂ beats 11/35  medium · avg 62%     24%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         36.0%  █·▅●▃▃▅▃▃▅·▅ beats 5/15   easy · avg 67%       15%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         36.0%  █·▅●▃▃▅▃▃▅·▅ beats 5/15   easy · avg 68%       15%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   21.9%  ▄▇█▃●▇▄▁▇▃·▁ beats 18/35  medium · avg 46%     12%  typical
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   30.6%  ▃▅●▃▃▅·▃▃▅·▅ beats 3/15   medium · avg 56%     11%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   19.3%  ▁·▁▁▄██●█▁▅▅ beats 18/35  medium · avg 51%     10%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   30.6%  ▃▅●▃▃▅·▃▃▅·▅ beats 3/15   medium · avg 57%     11%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   19.3%  ▁·▁▁▄██●█▁▅▅ beats 18/35  medium · avg 52%     10%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (maker)</a>                   31.4%  ▃·●██▅▃·▃▃▅▃ beats 1/15   medium · avg 54%    9.3%  blunt · at its level
 </pre>
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 48%     15%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 49%     15%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   33.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 8/146  easy · avg 82%      2.8%  at its level · noisy
 </pre>
 

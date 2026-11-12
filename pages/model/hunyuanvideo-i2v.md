@@ -6,7 +6,7 @@
 
 Tencent · released 2025-03 · tencent-hunyuan-community
 
-**score 44.6** ±3.5 · #63 of 93 · from 3 benchmark results across 2 sources
+**score 44.2** ±3.4 · #64 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ Tencent · released 2025-03 · tencent-hunyuan-community
 
 <pre>
 task            vs the others       rank  counts  tests
-image to video  ▁▂·▂●█▅▄▅▆▃▄   #45 of 50     95%      3
+image to video  ▁▂·▂●█▅▄▅▅▃▅   #45 of 51     95%      3
 </pre>
 
-<details><summary>image to video · #45 of 50 · 95% of its score</summary>
+<details><summary>image to video · #45 of 51 · 95% of its score</summary>
 
-Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md) here, though they rank lower overall.
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   964.3  ▄······●█··█ beats 1/6    avg 1002             43%  typical
-<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>    56.8%  ●···▄······█ beats 0/3    medium · avg 66%     37%  at its level
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   964.3  ▄······●█··█ beats 1/6    avg 1008             43%  typical
+<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>    56.8%  ●···▄······█ beats 0/3    medium · avg 67%     37%  at its level
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   77.6%  ▃······●·█▅█ beats 2/10   easy · avg 81%       15%  blunt
 </pre>
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   58% ▇▇▇▇▇▇▇
 <a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   37% ▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.2
 </pre>
 
 <sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>

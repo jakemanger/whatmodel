@@ -6,7 +6,7 @@
 
 PixVerse · released 2026-02 · proprietary
 
-**score 58.9** ±1.6 · #28 of 93 · from 5 benchmark results across 4 sources
+**score 57.9** ±1.5 · #29 of 94 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,29 +14,29 @@ PixVerse · released 2026-02 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅█●▂▂▂▄   #18 of 68*     41%      1
-image to video  ▁▂·▂▅█▅●▅▆▃▄   #23 of 50*     43%      2
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #20 of 70*     45%      1
+image to video  ▁▂·▂▅█▅●▅▅▃▅   #25 of 51*     40%      2
 </pre>
 
-<details><summary>text to video · #18 of 68 · 41% of its score</summary>
+<details><summary>text to video · #20 of 70 · 45% of its score</summary>
 
 Beats [Kling 2.6 Pro](kling-2-6-pro.md) here, though they rank higher overall. Trails [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1239.7  ▂▂▃▆█●·▆▅▁▂▇ beats 21/41  avg 1147       41%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1237.6  ▂▂▃▆█●·▇▂▁█▃ beats 21/44  avg 1154       45%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #23 of 50 · 43% of its score</summary>
+<details><summary>image to video · #25 of 51 · 40% of its score</summary>
 
-Beats [Wan 2.5 Preview](wan-2-5-preview.md) here, though they rank higher overall. Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
+Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1299.3  ▁▁▁▁▄▇▃●▃▂▄█ beats 19/40  avg 1189       27%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   942.0  ▂··▂●▆█▆▂▂▆▄ beats 2/19   avg 741        16%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1299.0  ▁▁▁▁▄▇▃●▂▃▅█ beats 19/42  avg 1197       27%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   942.0  ▂··▂●▆█▆▂▂▆▄ beats 2/19   avg 764        13%  sharp
 </pre>
 
 </details>
@@ -45,8 +45,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera movement…</a>   703.5  ●···▄▄██·█▄█ beats 0/12   avg 661        10%  sharp · noisy
-<a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video realism (…</a>  1085.7  ▂······●▂▃▃█ beats 2/12   avg 871       5.2%  sharp · noisy
+<a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera movement…</a>   703.5  ●···▄▄██·█▄█ beats 0/12   avg 674        10%  sharp · noisy
+<a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video realism (…</a>  1085.7  ▂······●▂▃▃█ beats 2/12   avg 884       4.8%  sharp · noisy
 </pre>
 
 </details>
@@ -57,12 +57,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   68% ▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   72% ▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   13% ▇▇
 <a name="visual-rapid-relative-camera"></a><a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata/relative-camera-movement-human…</a>        1   10% ▇
 <a name="visual-rapid-i2v-realism"></a><a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata/image-to-video-realism publish…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 58.9
+weighted average                                   = 57.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/image-to-video-realism published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

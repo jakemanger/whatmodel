@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 1.5B params · apache-2.0
 
-**score 40.0** ±3.2 · #107 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.8** ±3.2 · #109 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▂▂▁▁   #90 of 126*     96%      1
+text to image  ▂▅●▃▄▄█▂▂▁▁▁   #92 of 128*     96%      1
 </pre>
 
-<details><summary>text to image · #90 of 126 · 96% of its score</summary>
+<details><summary>text to image · #92 of 128 · 96% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   10.1%  ▄●▂▂▂▂▆▄·▂·▂ beats 2/16   hard · avg 26%     96%  sharp
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   10.1%  ▄●▂▂▂▂▆▄·▂·▂ beats 2/16   hard · avg 27%     96%  sharp
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 40.0
+weighted average                                   = 39.8
 </pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt))</sub>

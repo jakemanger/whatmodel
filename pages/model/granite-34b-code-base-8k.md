@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 43.3** ±1.2 · #512 of 732 · from 7 benchmark results across 2 sources
+**score 43.2** ±1.1 · #520 of 740 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #360 of 469     85%      6
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #363 of 472     85%      6
 </pre>
 
-<details><summary>coding · #360 of 469 · 85% of its score</summary>
+<details><summary>coding · #363 of 472 · 85% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -27,9 +27,9 @@ Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-V
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 62%     23%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 46%     15%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 51%     15%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 67%       13%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 56%     10%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 52%     15%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 68%       13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 57%     10%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (maker)</a>                   44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 54%    8.3%  blunt · at its level
 </pre>
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 48%     15%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 49%     15%  at its level
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   15% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.3
+weighted average                                   = 43.2
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

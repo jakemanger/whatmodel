@@ -6,7 +6,7 @@
 
 Shengshu · released 2026-01 · closed weights
 
-**score 53.8** ±11.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.9** ±11.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Shengshu · released 2026-01 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂█●▄▃▃▄▂▂   #36 of 74*     42%      1
+image to video  ▁▁▂▂█▇●▃▃▃▃▃   #37 of 76*     44%      1
 </pre>
 
-<details><summary>image to video · #36 of 74 · 42% of its score</summary>
+<details><summary>image to video · #37 of 76 · 44% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md), [P-Video](p-video.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md), [Vidu Q2 Turbo](vidu-q2-turbo.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>   877.6  ▄···●▄▄█··▄█ beats 1/8    avg 794        42%  noisy
+<a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>   877.6  ▄···●▄▄█··▄█ beats 1/8    avg 791        44%  noisy
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-rapid-camera"></a><a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata/camera-movement published data…</a>        1   42% ▇▇▇▇▇
-prior: pull toward the middle                       58% ▇▇▇▇▇▇▇
-weighted average                                   = 53.8
+<a name="visual-rapid-camera"></a><a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata/camera-movement published data…</a>        1   44% ▇▇▇▇▇
+prior: pull toward the middle                       56% ▇▇▇▇▇▇▇
+weighted average                                   = 53.9
 </pre>
 
 <sub>Licences: Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>

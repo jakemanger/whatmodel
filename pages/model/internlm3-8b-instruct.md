@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2025-01 · 8.8B params · apache-2.0
 
-**score 54.7** ±10.1 · #351 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±10.1 · #357 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   55% ▇▇▇▇▇▇▇
 prior: pull toward the middle                45% ▇▇▇▇▇
-weighted average                            = 54.7
+weighted average                            = 54.6
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

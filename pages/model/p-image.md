@@ -6,7 +6,7 @@
 
 Pruna · released 2025-12 · proprietary
 
-**score 50.7** ±2.4 · #78 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.3** ±2.2 · #81 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▂▂▁▁   #67 of 126*     84%      1
+text to image  ▂▅▅▃●▄█▂▂▁▁▁   #69 of 128*     85%      1
 </pre>
 
-<details><summary>text to image · #67 of 126 · 84% of its score</summary>
+<details><summary>text to image · #69 of 128 · 85% of its score</summary>
 
-Beats [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank higher overall. Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md), [Photon](luma-photon.md) here, though they rank lower overall.
+Beats [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank higher overall. Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1032.4  ▁▂▃●▆█▃▂▂▂▁▁ beats 13/75  avg 1027       84%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1032.6  ▁▁▃●▆█▃▂▂▂▁▁ beats 13/77  avg 1030       85%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                   result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   890.2  ▁▁●▄▂█▂▁▁▂▁▁ beats 2/34   avg 875        13%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   890.2  ▁▁●▄▂█▂▁▁▂▁▁ beats 2/34   avg 878        12%  typical
 </pre>
 
 </details>
@@ -45,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 50.7
+weighted average                                   = 50.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

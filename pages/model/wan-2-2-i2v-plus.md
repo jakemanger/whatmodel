@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · proprietary
 
-**score 71.1** ±4.5 · #14 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.2** ±4.4 · #15 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Alibaba · released 2025-07 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂▅█▅▄▅●▃▄   #13 of 50*     92%      1
+image to video  ▁▂·▂▅█▅▄▅●▃▅   #13 of 51*     92%      1
 </pre>
 
-<details><summary>image to video · #13 of 50 · 92% of its score</summary>
+<details><summary>image to video · #13 of 51 · 92% of its score</summary>
 
-Beats [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md), [Grok Imagine Video](grok-imagine-video.md) here, though they rank lower overall.
+Beats [HappyHorse 1.1](happyhorse-1-1.md), [HappyHorse 1.0](happyhorse-1-0.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md), [Grok Imagine Video](grok-imagine-video.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   29.0%  ▃·▃···▃▃█·●▃ beats 7/8    very hard · avg 9.6%     92%  at its level
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   29.0%  ▃·▃···▃▃█·●▃ beats 7/8    very hard · avg 9.9%     92%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 71.1
+weighted average                                   = 70.2
 </pre>
 
 <sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt))</sub>

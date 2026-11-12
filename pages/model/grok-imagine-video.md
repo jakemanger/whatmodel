@@ -6,7 +6,7 @@
 
 xAI · released 2026-01 · proprietary
 
-**score 68.9** ±1.6 · #15 of 93 · from 6 benchmark results across 4 sources
+**score 67.5** ±1.5 · #18 of 94 · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,41 +14,43 @@ xAI · released 2026-01 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃▂●▂▄   #12 of 68*     42%      1
-image to video  ▁▂·▂▅█▅▄▅●▃▄    #11 of 50     48%      4
-video editing   ▄··●··▄··█▄█     #7 of 9*    8.5%      1
+text to video   ▆▄▃▆▆█▇▂●·▄▅   #14 of 70*     45%      1
+image to video  ▁▂·▂▅█▅▄▅●▃▅    #12 of 51     44%      4
+video editing   ▃··●·▃···█▃▅    #9 of 10*     10%      1
 </pre>
 
-<details><summary>text to video · #12 of 68 · 42% of its score</summary>
+<details><summary>text to video · #14 of 70 · 45% of its score</summary>
 
-Trails [Veo 3.1 Fast](veo-3-1-fast.md), [Veo 3.1](veo-3-1.md) here, though they rank lower overall.
+Trails [Veo 3.1 Fast](veo-3-1-fast.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1342.2  ▂▂▃▆█▆·●▅▁▂▇ beats 27/41  avg 1147       42%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.9  ▂▂▃▆█▃·●▂▁█▃ beats 27/44  avg 1154       45%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #11 of 50 · 48% of its score</summary>
+<details><summary>image to video · #12 of 51 · 44% of its score</summary>
 
 Beats [HappyHorse 1.1](happyhorse-1-1.md), [HappyHorse 1.0](happyhorse-1-0.md), [Wan 2.2 I2V Plus](wan-2-2-i2v-plus.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1415.3  ▁▁▁▁▄▇▃▆▃▂●█ beats 29/40  avg 1189           28%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1118.0  ▂··▂▂▆█●▂▂▆▄ beats 10/19  avg 741            16%  sharp
-<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   51.7%  █·▄····▄···● beats 5/5    hard · avg 27%    2.5%  blunt · at its level
-<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   34.8%  ██···█··█·█● beats 5/5    hard · avg 25%    1.9%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1410.9  ▁▁▁▁▄▇▃▇▂●▅█ beats 29/42  avg 1197           27%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1118.0  ▂··▂▂▆█●▂▂▆▄ beats 10/19  avg 764            13%  sharp
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   51.7%  █·▄····▄···● beats 5/5    hard · avg 28%    2.3%  blunt · at its level
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   34.8%  ██···█··█·█● beats 5/5    hard · avg 25%    2.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>video editing · #7 of 9 · 8.5% of its score</summary>
+<details><summary>video editing · #9 of 10 · 10% of its score</summary>
+
+Trails [Kling O3 Pro](kling-o3-pro.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1257.8  █··●··▄··█▄█ beats 3/9    avg 1117      8.5%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1249.8  ▄··●▂·▂··█▂▄ beats 2/11   avg 1119       10%  typical
 </pre>
 
 </details>
@@ -59,12 +61,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   79% ▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   13% ▇▇
 <a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    2% ▇
 <a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 68.9
+weighted average                                   = 67.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>

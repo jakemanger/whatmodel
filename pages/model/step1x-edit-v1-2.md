@@ -6,7 +6,7 @@
 
 StepFun · released 2025-11 · 12.44B params · apache-2.0
 
-**score 53.0** ±1.9 · #72 of 144 · from 7 benchmark results across 6 sources
+**score 52.5** ±1.9 · #75 of 146 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #44 of 62     72%      5
+image to image / edit…  ▁▁·▃▂●█▆▃▅▂▂   #47 of 64     72%      5
 </pre>
 
-<details><summary>image to image / editing · #44 of 62 · 72% of its score</summary>
+<details><summary>image to image / editing · #47 of 64 · 72% of its score</summary>
 
-Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank lower overall.
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           51.6%  ▃▃▂·▃▆▂●·▃·▃ beats 12/20  hard · avg 45%       41%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           60.9%  ██·········● beats 2/2    medium · avg 54%    8.5%  at its level · small run
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (make…</a>   996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 956             8.5%  blunt
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      7.9%  small run
-<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.2%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (make…</a>   996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 960             8.7%  blunt
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           60.9%  ██·········● beats 2/2    medium · avg 55%    8.2%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      7.7%  small run
+<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.3%  blunt
 </pre>
 
 </details>
@@ -38,8 +38,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    45.9%  ▂··●█▂▄▂▂·▂▂ beats 1/12   medium · avg 41%     19%  at its level
-<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   60.5%  █▄▄·▄▄▄▄●·▄█ beats 8/12   medium · avg 65%    7.1%  at its level
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    45.9%  ▂··●█▂▄▂▂·▂▂ beats 1/12   medium · avg 42%     19%  at its level
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   60.5%  █▄▄·▄▄▄▄●·▄█ beats 8/12   easy · avg 65%      7.1%  at its level
 </pre>
 
 </details>
@@ -53,11 +53,11 @@ source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   41% ▇▇▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   19% ▇▇
 <a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   16% ▇▇
-<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    9% ▇
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1    7% ▇
 <a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.5
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · stepfun-ai/Step1X-Edit-v1p2 model card ([Apache-2.0](../../licenses/stepfun-ai--Step1X-Edit-v1p2.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

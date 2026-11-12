@@ -6,7 +6,7 @@
 
 Floor33 Pictures · released 2023-08 · closed weights
 
-**score 23.7** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 24.3** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,17 +14,19 @@ Floor33 Pictures · released 2023-08 · closed weights
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ●▅▄▆█▆▇▂▃▃▂▄   #92 of 94     98%      4
+text to video  ●▅▃█▆▇▆▂▅▁▄▃   #94 of 97     98%      4
 </pre>
 
-<details><summary>text to video · #92 of 94 · 98% of its score</summary>
+<details><summary>text to video · #94 of 97 · 98% of its score</summary>
+
+Beats [LVDM (text-to-video)](lvdm-t2v.md) here, though they rank higher overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     49.16 / 100  ●····▄██··▄▄ beats 0/7    very easy · avg 85.14 /…     26%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     58.78 / 100  ▄█·····●·█▄▄ beats 3/7    very easy · avg 87.87 /…     25%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  50.24 / 100  ●···▄▄▄▄▄··█ beats 0/7    very easy · avg 88.67 /…     24%  at its level
-<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  61.32 / 100  ▂··▂▂·····▂● beats 4/7    very easy · avg 87.86 /…     23%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     49.16 / 100  ●····▄██··▄▄ beats 0/7    easy · avg 84.73 / 100       26%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     58.78 / 100  ▄█·····●·█▄▄ beats 3/7    very easy · avg 87.51 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  50.24 / 100  ●···▄▄▄▄▄··█ beats 0/7    very easy · avg 88.32 /…     24%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  61.32 / 100  ▂··▂▂·····▂● beats 4/7    very easy · avg 87.52 /…     23%  at its level
 </pre>
 
 </details>
@@ -37,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 23.7
+weighted average                                   = 24.3
 </pre>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt))</sub>

@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-04 · closed weights
 
-**score 56.1** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
+**score 55.6** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▁▂██▇▆●█▂▃▁▁   #64 of 157     86%      3
-image to image / edit…  ▁▁▁▃▃▃●▅▃▄▂▁   #44 of 81*     20%      1
+text to image           ▁▂█▇▇▅●▇▂▃▁▂   #66 of 159     87%      3
+image to image / edit…  ▁▁▁▃▃▃●▅▃▄▂▁   #46 of 83*     19%      1
 </pre>
 
-<details><summary>text to image · #64 of 157 · 86% of its score</summary>
+<details><summary>text to image · #66 of 159 · 87% of its score</summary>
 
 Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher overall. Trails [LLaDA-Image](llada-image.md), [Z-Image-Turbo](z-image-turbo.md), [Qwen-Image-2512](qwen-image-2512.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1081.5  ▁▂▃▃●█▃▂▂▂▁▁ beats 21/75  avg 1027           49%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.4%  ▂▃··▂··▃●··▂ beats 9/11   hard · avg 17%     20%  sharp · at its level
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   23.4%  ▆●·▂▂····▂▂█ beats 3/13   hard · avg 20%     17%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1081.2  ▁▁▃▃●█▃▂▂▂▁▁ beats 21/77  avg 1030           52%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.4%  ▂▃··▂··▃●··▂ beats 9/11   hard · avg 18%     19%  sharp · at its level
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   23.4%  ▆●·▂▂····▂▂█ beats 3/13   hard · avg 21%     16%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #44 of 81 · 20% of its score</summary>
+<details><summary>image to image / editing · #46 of 83 · 19% of its score</summary>
 
 Beats [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.4%  ▂▃··▂··▃●··▂ beats 9/11   hard · avg 17%     20%  sharp · at its level
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.4%  ▂▃··▂··▃●··▂ beats 9/11   hard · avg 18%     19%  sharp · at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1123.6  ▃··▅▃··▃▃··● beats 8/8    avg 1012       13%  typical
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1123.6  ▃··▅▃··▃▃··● beats 8/8    avg 1016       12%  typical
 </pre>
 
 </details>
@@ -59,12 +59,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   49% ▇▇▇▇▇▇
-<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   20% ▇▇
-<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   17% ▇▇
-<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   52% ▇▇▇▇▇▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   19% ▇▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   16% ▇▇
+<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 56.1
+weighted average                                   = 55.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>

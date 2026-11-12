@@ -6,7 +6,7 @@
 
 Google · released 2025-01 · closed weights
 
-**score 51.6** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 51.3** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▁▂██▇●██▂▃▁▁   #75 of 157     98%      3
+text to image  ▁▂█▇▇●█▇▂▃▁▂   #77 of 159     98%      3
 </pre>
 
-<details><summary>text to image · #75 of 157 · 98% of its score</summary>
+<details><summary>text to image · #77 of 159 · 98% of its score</summary>
 
 Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▁▂▃●▆█▃▂▂▂▁▁ beats 17/75  avg 1027             66%  typical
-<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              70.7%  ██·▄·●·█···▄ beats 5/8    easy · avg 71%       20%  at its level
-<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   47.4%  █··█●▄·▄▄·▄▄ beats 4/9    medium · avg 51%     12%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▁▁▃●▆█▃▂▂▂▁▁ beats 17/77  avg 1030             68%  typical
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              70.7%  ██·▄·●·█···▄ beats 5/8    easy · avg 72%       19%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   47.4%  █··█●▄·▄▄·▄▄ beats 4/9    medium · avg 52%     11%  at its level
 </pre>
 
 </details>
@@ -38,10 +38,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   66% ▇▇▇▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   68% ▇▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   30% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 51.6
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

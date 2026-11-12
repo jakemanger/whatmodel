@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 41.6** ±2.3 · #101 of 144 · from 4 benchmark results across 4 sources
+**score 41.4** ±2.3 · #103 of 146 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅●▄▄█▃▂▂▁▁   #83 of 126*     59%      3
+text to image  ▂▅▅●▄▄█▂▂▁▁▁   #85 of 128*     59%      3
 </pre>
 
-<details><summary>text to image · #83 of 126 · 59% of its score</summary>
+<details><summary>text to image · #85 of 128 · 59% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
 
@@ -36,8 +36,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>   885.1  ●··▅▃··▃▃··█ beats 0/8    avg 1012                 21%  typical
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.9%  ▃·●▅▃·▅▃···▃ beats 3/10   very hard · avg 7.6%     18%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>   885.1  ●··▅▃··▃▃··█ beats 0/8    avg 1016                 21%  typical
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.9%  ▃·●▅▃·▅▃···▃ beats 3/10   very hard · avg 8.0%     18%  sharp · too hard for it
 </pre>
 
 </details>
@@ -49,11 +49,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   48% ▇▇▇▇▇▇
-<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   21% ▇▇▇
+<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   21% ▇▇
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   18% ▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   11% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 41.6
+weighted average                                   = 41.4
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

@@ -6,7 +6,7 @@
 
 Luma AI · released 2025-01 · closed weights
 
-**score 42.7** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 42.2** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,26 +14,28 @@ Luma AI · released 2025-01 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▇▅▄▆●▆▇▂▃▃▂▄   #55 of 94*     61%      2
-image to video  ▁▁●▂██▄▃▃▄▂▂   #67 of 74*     38%      2
+text to video   ▆▅▃●▆▇▆▂▅▁▄▃   #60 of 97*     63%      2
+image to video  ▁▁●▂█▇▅▃▃▃▃▃   #69 of 76*     36%      2
 </pre>
 
-<details><summary>text to video · #55 of 94 · 61% of its score</summary>
+<details><summary>text to video · #60 of 97 · 63% of its score</summary>
+
+Trails [T2V-Turbo-v2](t2v-turbo-v2.md), [Pyramid Flow (SD3)](pyramid-flow-sd3.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                      1065.4  ▂●▃▆█▆·▆▅▁▂▇ beats 2/41   avg 1147           48%  typical
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>   20.3%  ▄···▄·●·█··▄ beats 2/5    hard · avg 33%     14%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                      1065.7  ▂●▃▆█▃·▇▂▁█▃ beats 2/44   avg 1154           51%  typical
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>   20.3%  ▄···▄·●·█··▄ beats 2/5    hard · avg 33%     13%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #67 of 74 · 38% of its score</summary>
+<details><summary>image to video · #69 of 76 · 36% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1108.5  ▁▁●▁▄▇▃▆▃▂▄█ beats 2/40   avg 1189       31%  typical
-<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1003.0  ▄·····▄●··▄▄ beats 3/5    avg 1043      6.1%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1109.8  ▁▁●▁▄▇▃▇▂▃▅█ beats 2/42   avg 1197       30%  typical
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1003.0  ▄·····▄●··▄▄ beats 3/5    avg 1047      5.8%  typical
 </pre>
 
 </details>
@@ -44,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   79% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1   14% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1   13% ▇▇
 <a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 42.7
+weighted average                                   = 42.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>

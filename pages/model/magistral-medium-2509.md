@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · proprietary
 
-**score 62.0** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
+**score 61.7** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃█······●·▃▃       #3 of 7*     12%      1
-math    ▁▁▃▆██●█▃▁▁▁   #165 of 530*     53%      2
+math    ▁▂▃▆██●▇▄▁▁▁   #174 of 540*     53%      2
 </pre>
 
 <details><summary>coding · #3 of 7 · 12% of its score</summary>
@@ -31,14 +31,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #165 of 530 · 53% of its score</summary>
+<details><summary>math · #174 of 540 · 53% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 48%     32%  sharp
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     21%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 49%     32%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 61%     21%  sharp
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test               result  vs the others in its run  difficulty        counts  w
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     34%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 53%     34%  sharp
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.0
+weighted average                                   = 61.7
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>

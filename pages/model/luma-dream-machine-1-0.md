@@ -6,7 +6,7 @@
 
 Luma AI · released 2024-06 · proprietary
 
-**score 41.8** ±6.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.5** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Luma AI · released 2024-06 · proprietary
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅▄●█▆▇▂▃▃▂▄   #60 of 94*     81%      1
+text to video  ▆▅▃●▆▇▆▂▅▁▄▃   #63 of 97*     83%      1
 </pre>
 
-<details><summary>text to video · #60 of 94 · 81% of its score</summary>
+<details><summary>text to video · #63 of 97 · 83% of its score</summary>
 
 Trails [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   62.2%  ▄·▄█▄▄▄·▄·▄● beats 10/10  medium · avg 71%     81%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   62.2%  ▄·▄█▄▄▄·▄·▄● beats 10/10  medium · avg 71%     83%  at its level
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 41.8
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       17% ▇▇
+weighted average                                   = 41.5
 </pre>
 
 <sub>Licences: ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-02 · proprietary
 
-**score 42.9** ±7.1 · #65 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.4** ±7.0 · #66 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Alibaba · released 2025-02 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▂·▂●█▅▄▅▆▃▄   #44 of 50*     79%      1
+image to video  ▁▂·▂●█▅▄▅▅▃▅   #46 of 51*     79%      1
 </pre>
 
-<details><summary>image to video · #44 of 50 · 79% of its score</summary>
+<details><summary>image to video · #46 of 51 · 79% of its score</summary>
 
-Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md) here, though they rank higher overall.
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    5.9%  ●·▃···▃▃█·▃▃ beats 0/8    very hard · avg 9.6%     79%  too hard for it
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    5.9%  ●·▃···▃▃█·▃▃ beats 0/8    very hard · avg 9.9%     79%  too hard for it
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1   79% ▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       21% ▇▇▇
-weighted average                                   = 42.9
+weighted average                                   = 42.4
 </pre>
 
 <sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt))</sub>

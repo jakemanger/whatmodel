@@ -6,7 +6,7 @@
 
 Runway · released 2024-06 · closed weights
 
-**score 39.7** ±2.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 39.5** ±2.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,30 +14,30 @@ Runway · released 2024-06 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▇▅▄●█▆▇▂▃▃▂▄    #67 of 94     82%      3
-image to video  ▁▁▂●██▄▃▃▄▂▂   #63 of 74*     15%      1
+text to video   ▆▅▃●▆▇▆▂▅▁▄▃    #69 of 97     82%      3
+image to video  ▁▁▂●█▇▅▃▃▃▃▃   #65 of 76*     15%      1
 </pre>
 
-<details><summary>text to video · #67 of 94 · 82% of its score</summary>
+<details><summary>text to video · #69 of 97 · 82% of its score</summary>
 
-Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md), [HunyuanVideo](hunyuanvideo.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   59.2%  ▄▄·█··█▄▄▄●▄ beats 9/10   easy · avg 73%       39%  at its level
-<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   55.7%  ▄▄·█▄█▄··●▄▄ beats 8/10   easy · avg 70%       22%  at its level
-<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>    50.6%  ●····▄···█·▄ beats 0/4    medium · avg 66%     21%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   59.2%  ▄▄·█··█▄▄▄●▄ beats 9/10   easy · avg 74%       39%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   55.7%  ▄▄·█▄█▄··●▄▄ beats 8/10   easy · avg 70%       23%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>    50.6%  ●····▄···█·▄ beats 0/4    medium · avg 67%     20%  at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #63 of 74 · 15% of its score</summary>
+<details><summary>image to video · #65 of 76 · 15% of its score</summary>
 
 Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1000.0  ▄·····▄●··▄▄ beats 2/5    avg 1043       15%  typical
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1000.0  ▄·····▄●··▄▄ beats 2/5    avg 1047       15%  typical
 </pre>
 
 </details>
@@ -48,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   61% ▇▇▇▇▇▇▇
-<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        1   21% ▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   62% ▇▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        1   20% ▇▇
 <a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1   15% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 39.7
+weighted average                                   = 39.5
 </pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>

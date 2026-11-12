@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-11 · 3B params · apache-2.0
 
-**score 48.4** ±10.5 · #86 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.3** ±10.3 · #87 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▂▂▁▁   #72 of 126*     54%      7
+text to image  ▂▅▅▃●▄█▂▂▁▁▁   #74 of 128*     55%      7
 </pre>
 
-<details><summary>text to image · #72 of 126 · 54% of its score</summary>
+<details><summary>text to image · #74 of 128 · 55% of its score</summary>
 
-Beats [Lucid Origin](lucid-origin.md), [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2I (a…</a>   63.2%  █··········● beats 2/2    easy · avg 65%     54%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2I (a…</a>   63.2%  █··········● beats 2/2    easy · avg 65%     55%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   52.0%  no other model yet                             —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   36.0%  no other model yet                             —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   53.0%  no other model yet                             —  not counted yet: no other model in the …
@@ -42,9 +42,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2502.10663v1-real"></a><a href="https://arxiv.org/html/2502.10663v1">REAL: Realism Evaluation of Text-to-Ima…</a>        1   54% ▇▇▇▇▇▇
-prior: pull toward the middle                       46% ▇▇▇▇▇▇
-weighted average                                   = 48.4
+<a name="paper-2502.10663v1-real"></a><a href="https://arxiv.org/html/2502.10663v1">REAL: Realism Evaluation of Text-to-Ima…</a>        1   55% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       45% ▇▇▇▇▇
+weighted average                                   = 48.3
 </pre>
 
 <sub>Licences: REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

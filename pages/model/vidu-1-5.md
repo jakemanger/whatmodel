@@ -6,7 +6,7 @@
 
 ShengShu (Vidu) · released 2024-11 · proprietary
 
-**score 37.9** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.8** ±3.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ ShengShu (Vidu) · released 2024-11 · proprietary
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅▄●█▆▇▂▃▃▂▄   #69 of 94*     95%      2
+text to video  ▆▅▃●▆▇▆▂▅▁▄▃   #72 of 97*     96%      2
 </pre>
 
-<details><summary>text to video · #69 of 94 · 95% of its score</summary>
+<details><summary>text to video · #72 of 97 · 96% of its score</summary>
 
 Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md), [T2V-Turbo (VC2)](t2v-turbo-vc2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   54.6%  ▄▄·█··█▄●▄▄▄ beats 7/10   easy · avg 73%     61%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   54.6%  ▄▄·█··█▄●▄▄▄ beats 7/10   easy · avg 74%     61%  at its level
 <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   58.3%  ▄▄·█▄█▄··▄●▄ beats 9/10   easy · avg 70%     35%  at its level
 </pre>
 
@@ -35,9 +35,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        5% ▇
-weighted average                                   = 37.9
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 37.8
 </pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>

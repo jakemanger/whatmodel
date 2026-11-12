@@ -14,10 +14,10 @@ NVIDIA · released 2025-01 · 5B params · nvidia-open-model
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇●▄▆█▆▇▂▃▃▂▄   #80 of 94*     91%      2
+text to video  ▆●▃█▆▇▆▂▅▁▄▃   #83 of 97*     91%      2
 </pre>
 
-<details><summary>text to video · #80 of 94 · 91% of its score</summary>
+<details><summary>text to video · #83 of 97 · 91% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

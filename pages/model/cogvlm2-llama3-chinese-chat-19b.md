@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 47.3** ±6.5 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † no independently run results verified
+**score 47.1** ±6.5 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄   #153 of 189     81%      3
+vision &amp; documents  ▁▁▃▃●▃▅▄▇██▄   #154 of 190     81%      3
 </pre>
 
-<details><summary>vision &amp; documents · #153 of 189 · 81% of its score</summary>
+<details><summary>vision &amp; documents · #154 of 190 · 81% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                 results  share of the score
 <a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (submitted / maker-reported)</a>        3   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                    19% ▇▇
-weighted average                                = 47.3
+weighted average                                = 47.1
 </pre>
 
 ## How to run it

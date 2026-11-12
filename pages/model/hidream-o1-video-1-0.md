@@ -6,24 +6,24 @@
 
 HiDream · proprietary
 
-**score 75.0** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.4** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
 <sub>● marks HiDream-O1-Video 1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-task            vs the others       rank  counts  tests
-image to video  ▁▁▂▂██▄▃▃▄●▂   #8 of 74*     96%      1
+task            vs the others        rank  counts  tests
+image to video  ▁▁▂▂█▇▅▃▃▃●▃   #10 of 76*     96%      1
 </pre>
 
-<details><summary>image to video · #8 of 74 · 96% of its score</summary>
+<details><summary>image to video · #10 of 76 · 96% of its score</summary>
 
-Beats [HappyHorse 1.1](happyhorse-1-1.md), [Grok Imagine Video 1.5](grok-imagine-video-1-5.md) here, though they rank higher overall.
+Beats [Grok Imagine Video 1.5](grok-imagine-video-1-5.md), [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1456.5  ▁▁▁▁▄▇▃▆▃▂▄● beats 34/40  avg 1189       96%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1457.9  ▁▁▁▁▄▇▃▇▂▃●█ beats 34/42  avg 1197       96%  typical
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 75.0
+weighted average                        = 74.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

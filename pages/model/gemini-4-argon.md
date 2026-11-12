@@ -6,7 +6,7 @@
 
 Google · released 2026-09 · proprietary
 
-**score 80.6** ±1.3 · #9 of 732 · from 5 benchmark results across 2 sources
+**score 80.9** ±0.7 · #9 of 740 · from 16 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,54 +15,74 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <sub>● marks Gemini 4 Argon among every model on that task or test, worst to best.</sub>
 
 <pre>
-task            vs the others        rank  counts  tests
-agent tasks     ▁▁▃▆█▄▅▅▄▄●▁   #7 of 313*     48%      4
-coding          ▁▁▁▃▅▇█▇▅▄●▁   #9 of 469*     35%      2
-chat &amp; writing  ▁▁▁▃▆▄▆█▆▇▇●   #2 of 402*     17%      1
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▅▅▅▄▅●▁    #9 of 316*     15%      4
+coding          ▁▁▁▃▆▇█▆▆▃●▁   #11 of 472*    9.1%      2
+chat &amp; writing  ▁▁▁▃▆▄▆█▇▇▇●    #2 of 404*    4.5%      1
+math            ▁▁▃▅█▆▄█▅▂●▁    #14 of 440     25%      4
 </pre>
 
-<details><summary>agent tasks · #7 of 313 · 48% of its score</summary>
-
-Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [Muse Wonder Full](muse-wonder-full.md) here, though they rank higher overall.
+<details><summary>agent tasks · #9 of 316 · 15% of its score</summary>
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1073 IPS  ▁▁▁▃▃▂█▁▂●▁▁ beats 53/59  avg -0.379 IPS           43%  sharp
-<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>          77.9%  ▂····▂▁▁▆██● beats 31/31  hard · avg 25%          4.4%  small run
-<a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (maker)</a>               57.4%  ▁·▁··▁▆▆▅█●▃ beats 27/33  very hard · avg 0.5%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1083 IPS  ▁▁▁▁▄▄█▄▂●▁▁ beats 54/61  avg -0.395 IPS           14%  sharp
+<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>          77.9%  ▂····▃▁▁▄█▆● beats 36/36  hard · avg 28%          1.1%  small run
+<a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (maker)</a>               57.4%  ▁·▁··▁▅▅▅█●▄ beats 29/36  very hard · avg 0.6%       —  not counted yet: no other model in the …
 <a href="https://deepmind.google/models/model-cards/gemini-4-argon/">Agents' Last Exam (pass@1, offici…</a>       39.5%  █····▄·····● beats 3/3                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #9 of 469 · 35% of its score</summary>
+<details><summary>coding · #11 of 472 · 9.1% of its score</summary>
 
-Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Claude Opus 5](claude-opus-5.md) here, though they rank lower overall.
+Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Kimi K3.1 Pro](kimi-k3-1-pro.md), [Claude Opus 5](claude-opus-5.md), [Muse Wonder Full](muse-wonder-full.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>        1679.2  ▁▁▃▂▅█▃▆▅●▁▂ beats 120/129  avg 981            30%  sharp
-<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>   77.9%  ▂····▂▁▁▆██● beats 31/31    hard · avg 25%    4.4%  small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>        1682.1  ▁▂▄▃▇█▅▆█●▂▁ beats 123/133  avg 990           8.1%  sharp
+<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>   77.9%  ▂····▃▁▁▄█▆● beats 36/36    hard · avg 28%    1.1%  small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #2 of 402 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #2 of 404 · 4.5% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1520.3  ▁▁▁▂▃▃▃▆▆▇█● beats 384/385  avg 1260       17%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1522.4  ▁▁▁▂▃▂▃▆▆▇█● beats 386/387  avg 1261      4.5%  blunt
 </pre>
 
 </details>
 
-<details><summary>other tests (1)</summary>
+<details><summary>math · #14 of 440 · 25% of its score</summary>
+
+Trails [Claude Fable 5](claude-fable-5.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/#performance">LVBench (maker)</a>   91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28  medium · avg 59%    4.2%  typical
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>         78.0%  ▁▂▁▁█▅▂●▁▁▁▁ beats 60/72    very hard · avg 0.1%     14%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>      86.0%  ▁··▁▁▂▅▃█▅●▂ beats 78/91    very hard · avg 1.3%    9.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv">FrontierMath: Erdős problems</a>    1.5%  █····●···▄·▁ beats 9/14     very hard · avg 0.0%    1.8%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 193/207  very hard · avg 7.3%    0.1%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              64.8%  ▃▂▅▆▃█▅▆●▃▂▃ beats 25/30    very hard · avg 0.2%     12%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   64.0%  █·▂▁▆▆▆▆▅●▂▁ beats 76/83    very hard · avg 9.4%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     72.5%  █▇██▁▇▁●▃▄▁▁ beats 31/38    very hard · avg 1.0%     10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          59.0%  █▁▁▁▁▂▄▂▃▃●▁ beats 146/157  very hard · avg 5.6%    8.0%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              76.0%  ▁▂▂▂▅█▄▃●··▁ beats 89/91    very hard · avg 7.2%    1.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>             58.9%  ▁▁▁▆█▆●▂▁▁▁▁ beats 26/38    very hard · avg 2.0%    1.6%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   96.4%  ▁▁▁▁▂▃▅▄▄▆█● beats 220/221  hard · avg 39%          1.3%  sharp · maxed out
+<a href="https://deepmind.google/models/gemini/#performance">LVBench (maker)</a>                91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28    medium · avg 59%        1.1%  typical
 </pre>
 
 </details>
@@ -73,13 +93,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="first-party-google-scores"></a><a href="https://deepmind.google/models/gemini/#performance">Google DeepMind Gemini model page and m…</a>        2    9% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 80.6
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                       11   71% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   26% ▇▇▇
+<a name="first-party-google-scores"></a><a href="https://deepmind.google/models/gemini/#performance">Google DeepMind Gemini model page and m…</a>        2    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 80.9
 </pre>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 

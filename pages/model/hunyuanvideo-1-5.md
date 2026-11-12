@@ -6,7 +6,7 @@
 
 Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
-**score 51.9** ±1.6 · #47 of 93 · from 7 benchmark results across 6 sources
+**score 51.3** ±1.6 · #48 of 94 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,32 +14,32 @@ Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄    #30 of 68     65%      5
-image to video  ▁▂·▂●█▅▄▅▆▃▄   #42 of 50*     30%      1
+text to video   ▆▄▃▆▆●▇▂▄·▄▅    #32 of 70     67%      5
+image to video  ▁▂·▂●█▅▄▅▅▃▅   #43 of 51*     28%      1
 </pre>
 
-<details><summary>text to video · #30 of 68 · 65% of its score</summary>
+<details><summary>text to video · #32 of 70 · 67% of its score</summary>
 
 Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1168.8  ▂▂▃●█▆·▆▅▁▂▇ beats 10/41  avg 1147           45%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   86.5%  █▄▄··●▄▄▄▄·▄ beats 4/9    easy · avg 85%    8.5%  typical
-<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1462.0  █···●█·█··██ beats 1/5    avg 1470          6.5%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   46.8%  ▅·▃█●·▅▃▅▃▃▃ beats 6/14   hard · avg 44%    3.5%  blunt · at its level
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     91.1%  ▂··▂··█▄▂··● beats 10/11  easy · avg 84%    1.5%  blunt
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1168.4  ▂▂▃●█▃·▇▂▁█▃ beats 10/44  avg 1154                48%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   86.5%  █▄▄··●▄▄▄▄·▄ beats 4/9    very easy · avg 85%    8.1%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1462.0  █···●█·█··██ beats 1/5    avg 1477               6.2%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   46.8%  ▅·▃█●·▅▃▅▃▃▃ beats 6/14   hard · avg 45%         3.4%  blunt · at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     91.1%  ▂··▂··█▄▂··● beats 10/11  easy · avg 85%         1.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to video · #42 of 50 · 30% of its score</summary>
+<details><summary>image to video · #43 of 51 · 28% of its score</summary>
 
 Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [LongCat-Video](longcat-video.md), [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1197.8  ▁▁▁▁●▇▃▆▃▂▄█ beats 7/40   avg 1189       30%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1198.7  ▁▁▁▁●▇▃▇▂▃▅█ beats 7/42   avg 1197       28%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                  result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   85.4%  █▄·▄█●▄····▄ beats 6/8    easy · avg 82%    4.2%  blunt
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   85.4%  █▄·▄█●▄····▄ beats 6/8    easy · avg 82%    4.0%  blunt
 </pre>
 
 </details>
@@ -59,14 +59,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    9% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   76% ▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    8% ▇
 <a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    6% ▇
 <a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    4% ▇
-<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    4% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    3% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.9
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

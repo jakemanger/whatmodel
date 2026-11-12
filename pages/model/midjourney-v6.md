@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂██●▆██▂▃▁▁   #94 of 157*     80%      1
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #96 of 159*     81%      1
 </pre>
 
-<details><summary>text to image · #94 of 157 · 80% of its score</summary>
+<details><summary>text to image · #96 of 159 · 81% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.58 / 5  ▄·▄········● beats 2/3    easy · avg 3.87 / 5     80%  at its level
+<a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.58 / 5  ▄·▄········● beats 2/3    easy · avg 3.87 / 5     81%  at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   20% ▇▇
+<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   19% ▇▇
 weighted average                               = 45.0
 </pre>
 

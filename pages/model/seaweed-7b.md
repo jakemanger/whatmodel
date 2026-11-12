@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-04 · 7B params · proprietary
 
-**score 50.3** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 49.9** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ ByteDance Seed · released 2025-04 · 7B params · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁▂▂●█▄▃▃▄▂▂   #53 of 74*     84%      1
+image to video  ▁▁▂▂●▇▅▃▃▃▃▃   #55 of 76*     84%      1
 </pre>
 
-<details><summary>image to video · #53 of 74 · 84% of its score</summary>
+<details><summary>image to video · #55 of 76 · 84% of its score</summary>
 
 Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1047.0  ▄·····▄█··●▄ beats 4/5    avg 1043       84%  typical
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1047.0  ▄·····▄█··●▄ beats 4/5    avg 1047       84%  typical
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 50.3
+weighted average                                   = 49.9
 </pre>
 
 <sub>Licences: Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>

@@ -6,7 +6,7 @@
 
 Google · released 2025-10 · proprietary
 
-**score 68.1** ±1.3 · #18 of 93 · from 8 benchmark results across 7 sources
+**score 67.3** ±1.3 · #19 of 94 · from 8 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,34 +14,34 @@ Google · released 2025-10 · proprietary
 
 <pre>
 task            vs the others       rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃▂●▂▄   #11 of 68     38%      4
-image to video  ▁▂·▂▅█▅▄●▆▃▄   #15 of 50     61%      4
+text to video   ▆▄▃▆▆█▇▂●·▄▅   #13 of 70     42%      4
+image to video  ▁▂·▂▅█▅▄●▅▃▅   #16 of 51     58%      4
 </pre>
 
-<details><summary>text to video · #11 of 68 · 38% of its score</summary>
+<details><summary>text to video · #13 of 70 · 42% of its score</summary>
 
 Beats [Grok Imagine Video](grok-imagine-video.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1361.9  ▂▂▃▆█▆·▆●▁▂▇ beats 30/41  avg 1147           31%  typical
-<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1614.0  █···██·█··█● beats 5/5    avg 1470          4.4%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   55.8%  ▅·▃█▃·▅▃●▃▃▃ beats 10/14  hard · avg 44%    2.7%  blunt · at its level
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     85.9%  ▂··▂··●▄▂··▆ beats 5/11   easy · avg 84%    0.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1361.1  ▂▂▃▆█▃·●▂▁█▃ beats 30/44  avg 1154           34%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1614.0  █···██·█··█● beats 5/5    avg 1477          4.4%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   55.8%  ▅·▃█▃·▅▃●▃▃▃ beats 10/14  hard · avg 45%    2.7%  blunt · at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     85.9%  ▂··▂··●▄▂··▆ beats 5/11   easy · avg 85%    0.7%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to video · #15 of 50 · 61% of its score</summary>
+<details><summary>image to video · #16 of 51 · 58% of its score</summary>
 
 Beats [HappyHorse 1.1](happyhorse-1-1.md), [Veo 3.1](veo-3-1.md) here, though they rank higher overall. Trails [Kling 3.0](kling-3-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1253.0  ▃▃··█··▃▃●·▃ beats 7/8    avg 875                  21%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1385.1  ▁▁▁▁▄▇▃▆▃●▄█ beats 27/40  avg 1189                 20%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1068.0  ▂··▂▂▆●▆▂▂▆▄ beats 7/19   avg 741                  12%  sharp
-<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   19.2%  ▃·▃···▃●█·▃▃ beats 3/8    very hard · avg 9.6%    7.7%  typical
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1253.0  ▃▃··█··▃▃●·▃ beats 7/8    avg 889                  21%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1386.0  ▁▁▁▁▄▇▃▇▂●▅█ beats 27/42  avg 1197                 20%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1068.0  ▂··▂▂▆●▆▂▂▆▄ beats 7/19   avg 764                  10%  sharp
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   19.2%  ▃·▃···▃●█·▃▃ beats 3/8    very hard · avg 9.9%    7.5%  typical
 </pre>
 
 </details>
@@ -52,15 +52,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   51% ▇▇▇▇▇▇
-<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   21% ▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   54% ▇▇▇▇▇▇
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   21% ▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   10% ▇
 <a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1    8% ▇
 <a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    4% ▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    3% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 68.1
+weighted average                                   = 67.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

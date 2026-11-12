@@ -6,7 +6,7 @@
 
 HKUST / Tencent AI Lab · released 2023-05 · mit
 
-**score 24.6** ±3.4 · #90 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.9** ±3.3 · #92 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,17 +14,15 @@ HKUST / Tencent AI Lab · released 2023-05 · mit
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ●▄▃▄▆▅█▃▂▂▂▄   #66 of 68*     95%      2
+text to video  ●▄▃▆▆█▇▂▄·▄▅   #68 of 70*     95%      2
 </pre>
 
-<details><summary>text to video · #66 of 68 · 95% of its score</summary>
-
-Trails [ModelScope T2V 1.7B](modelscope-t2v-1-7b.md) here, though they rank lower overall.
+<details><summary>text to video · #68 of 70 · 95% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   33.8%  ●▄·█··█▄▄▄▄▄ beats 0/10   easy · avg 73%     60%  at its level
-<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   42.2%  ●▄·█▄█▄··▄▄▄ beats 0/10   easy · avg 70%     35%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   33.8%  ●▄·█··█▄▄▄▄▄ beats 0/10   easy · avg 74%     60%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   42.2%  ●▄·█▄█▄··▄▄▄ beats 0/10   easy · avg 70%     36%  at its level
 </pre>
 
 </details>
@@ -37,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 24.6
+weighted average                                   = 24.9
 </pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>

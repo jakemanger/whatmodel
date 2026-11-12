@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 39.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 38.9** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ UC Santa Barbara · released 2024-05 · cc-by-4.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅▄●█▆▇▂▃▃▂▄   #64 of 94*     83%      1
+text to video  ▆▅▃●▆▇▆▂▅▁▄▃   #66 of 97*     83%      1
 </pre>
 
-<details><summary>text to video · #64 of 94 · 83% of its score</summary>
+<details><summary>text to video · #66 of 97 · 83% of its score</summary>
 
-Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+Beats [Mochi 1](mochi-1.md) here, though they rank higher overall. Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty           counts  why
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2405.18750v2-t2vturbo"></a><a href="https://arxiv.org/html/2405.18750v2">T2V-Turbo: Breaking the Quality Bottlen…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       17% ▇▇
-weighted average                                   = 39.1
+weighted average                                   = 38.9
 </pre>
 
 <sub>Licences: T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

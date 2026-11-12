@@ -6,7 +6,7 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 28.7** ±3.8 · #134 of 144 · from 3 benchmark results across 3 sources
+**score 29.0** ±3.8 · #136 of 146 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #119 of 126*     64%      2
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #121 of 128*     64%      2
 </pre>
 
-<details><summary>text to image · #119 of 126 · 64% of its score</summary>
+<details><summary>text to image · #121 of 128 · 64% of its score</summary>
 
 Trails [CogView2](cogview2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>       79.4%  █·······▄▄●▄ beats 4/5    very easy · avg 95%     64%  typical
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 5/14   hard · avg 27%         0.4%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 5/14   hard · avg 28%         0.4%  blunt · at its level
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   30% ▇▇▇▇
 <a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">tgxs002/HPSv2 repository README</a>                 1    0% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 28.7
+weighted average                                   = 29.0
 </pre>
 
 <sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>

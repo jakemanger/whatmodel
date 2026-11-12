@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 16.3** ±3.6 · #708 of 732 · from 5 benchmark results across 3 sources
+**score 16.3** ±3.6 · #716 of 740 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #347 of 402*     44%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #349 of 404*     44%      1
 </pre>
 
-<details><summary>chat &amp; writing · #347 of 402 · 44% of its score</summary>
+<details><summary>chat &amp; writing · #349 of 404 · 44% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 67%       2.7%  sharp · too hard for it · noisy
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (maker)</a>                28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (maker)</a>                    37.7%  ▁▁▁●▂▂▄▆█▇▄▂ beats 11/135  very easy · avg 91%       —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (maker)</a>                   52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 86%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (maker)</a>                   52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 87%            —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA (maker)</a>                         66.2%  ▁▁▁●▂▃▅█▅▃▁▁ beats 10/123  easy · avg 87%            —  not counted yet: no other model in the …
 </pre>
 

@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 8.03B params · llama3.1
 
-**score 46.5** ±3.4 · #588 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.3** ±3.4 · #599 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             5% ▇
-weighted average                        = 46.5
+weighted average                        = 46.3
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

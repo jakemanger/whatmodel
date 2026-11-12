@@ -6,7 +6,7 @@
 
 Skywork AI · released 2025-08 · 9B params · mit
 
-**score 40.2** ±5.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.9** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -21,9 +21,9 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   58.2%  █▄▄·▄▄▄●█·▄█ beats 7/12   medium · avg 65%     66%  at its level
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>    8.0%  ▂···●·▂█▆▅·▂ beats 1/15   hard · avg 31%       21%  typical
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   58.2%  █▄▄·▄▄▄●█·▄█ beats 7/12   easy · avg 65%     66%  at its level
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>    8.0%  ▂···●·▂█▆▅·▂ beats 1/15   hard · avg 31%     21%  typical
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ source                                    results  share of the score
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   66% ▇▇▇▇▇▇▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1   21% ▇▇▇
 prior: pull toward the middle                       13% ▇▇
-weighted average                                   = 40.2
+weighted average                                   = 39.9
 </pre>
 
 <sub>Licences: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

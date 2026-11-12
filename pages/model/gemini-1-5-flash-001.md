@@ -6,7 +6,7 @@
 
 Google · released 2024-05 · proprietary
 
-**score 51.3** ±0.7 · comparison only: no current run option verified · from 26 benchmark results across 9 sources
+**score 51.1** ±0.7 · comparison only: no current run option verified · from 26 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,57 +16,57 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▄▆●▇▅▄▃▁   #295 of 539*     16%      2
-chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #287 of 474*    5.1%      1
-math                ▁▁▃▆●█▅█▃▁▁▁    #395 of 530     23%      4
-vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄    #156 of 189     12%      4
+coding              ▁▁▁▃▅▇●▇▆▃▂▁   #296 of 542*     16%      2
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #289 of 476*    4.9%      1
+math                ▁▂▃▆●█▅▇▄▁▁▁    #408 of 540     23%      4
+vision &amp; documents  ▁▁▃▃●▃▅▄▇██▄    #157 of 190     12%      4
 </pre>
 
-<details><summary>coding · #295 of 539 · 16% of its score</summary>
+<details><summary>coding · #296 of 542 · 16% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   63.7%  ▁▂▆▃▆●▆▃▂·▁▁ beats 22/47  medium · avg 57%     13%  sharp · at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>    57.0%  ▃▁▁█▁●▅▃▄▇▁▄ beats 13/31  medium · avg 40%    2.4%  sharp · at its level · noisy
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   63.7%  ▁▂▆▃▆●▆▃▂·▁▁ beats 22/47  medium · avg 58%     13%  sharp · at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>    57.0%  ▃▁▁█▁●▅▃▄▇▁▄ beats 13/31  medium · avg 41%    2.4%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #287 of 474 · 5.1% of its score</summary>
+<details><summary>chat &amp; writing · #289 of 476 · 4.9% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.5  ▁▁▁▂▃▃●▆▆▇█▃ beats 115/385  avg 1260      5.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.6  ▁▁▁▂▃▂●▆▆▇█▃ beats 115/387  avg 1261      4.9%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #395 of 530 · 23% of its score</summary>
+<details><summary>math · #408 of 540 · 23% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.1%  ▂▂▅●▄█▆▃▅▂▃▄ beats 23/92   hard · avg 28%           10%  sharp · at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   34.8%  ▁▁▁▆█●▇▇▄··▂ beats 17/38   hard · avg 30%          6.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.1%  ▂▂▅●▄█▆▃▅▂▃▄ beats 23/92   hard · avg 29%           10%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   34.8%  ▁▁▁▆█●▇▇▄··▂ beats 17/38   hard · avg 31%          6.2%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          91.4%  ▁▄·▁▄█▅▅●███ beats 23/43   very easy · avg 87%     5.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 26/197  very hard · avg 7.2%    1.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▆█▄▃▆ beats 26/207  very hard · avg 7.3%    1.4%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #156 of 189 · 12% of its score</summary>
+<details><summary>vision &amp; documents · #157 of 190 · 12% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1059.1  ▁▁▂▂▂●▃▄▅▅█▇ beats 22/152  avg 1061            3.4%  blunt
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        33.9%  ▂▂▂█●▂·▂▂··▂ beats 8/13    hard · avg 34%      3.2%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1059.5  ▁▁▂▂●▂▃▅▅▅█▇ beats 22/152  avg 1063            3.4%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        33.9%  ▂▂▂█●▂·▂▂··▂ beats 8/13    hard · avg 35%      3.2%  at its level
 <a href="https://arxiv.org/html/2410.07112v2">MMMU val (VHELM, zero-shot exact …</a>   56.6%  ▄▄··▄▄●··▄▄█ beats 5/9     medium · avg 50%    2.9%  at its level
 <a href="https://arxiv.org/html/2410.07112v2">MathVista testmini (VHELM, zero-s…</a>   51.2%  ▃·▅···▃▃●·▃█ beats 5/9     medium · avg 42%    2.5%  at its level
 </pre>
@@ -77,10 +77,10 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   77.4%  ▁·▁▁▄▄▄●█▄▂▁ beats 24/53    easy · avg 75%          21%  at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   19.4%  ▁▁▃▆●█▁▁·▁▁▁ beats 29/57    hard · avg 15%         7.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         40.4%  ▁▁▁▁▂●▆▄▅▇█▅ beats 38/211   hard · avg 39%         5.8%  sharp
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   49.8%  ▂·●··▆▄·▂▂·▄ beats 1/13     avg 34%                3.6%  typical
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   77.4%  ▁·▁▁▄▄▄●█▄▂▁ beats 24/53    easy · avg 76%          21%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   19.4%  ▁▁▃▆●█▁▁·▁▁▁ beats 29/57    hard · avg 16%         7.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         40.4%  ▁▁▁▁▂●▅▄▄▆█▃ beats 38/221   hard · avg 39%         5.8%  sharp
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   49.8%  ▂·●··▆▄·▂▂·▄ beats 1/13     avg 33%                3.6%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   72.2%  ▂·▄··▂▂·▄●█▄ beats 7/13     medium · avg 52%       1.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 254/276  medium · avg 72%       1.2%  at its level · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   34.2%  ●···▃·█▃▅▃▅█ beats 0/13     avg 11%                0.9%  typical
@@ -88,9 +88,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   52.2%  ▂·▂·●█▂▄▄··▄ beats 2/13     very hard · avg 54%    0.6%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   48.3%  ●█▃▅▃·▃·▃▅▃▃ beats 0/13     medium · avg 57%       0.3%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   93.4%  ▁▁▂▃▄●█▆▃▂▂▁ beats 46/140   very easy · avg 94%    0.3%  blunt · maxed out · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   47.1%  ▃··▃▃▃·▃▅▅●▅ beats 9/13     medium · avg 39%       0.3%  blunt · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   72.3%  ▄▂···▂●▂█▂·▂ beats 4/13     avg 83%                0.2%  blunt · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>    8.8%  ▂▂▂··▂▂·▂●█▆ beats 6/13     avg 14%                0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   47.1%  ▃··▃▃▃·▃▅▅●▅ beats 9/13     medium · avg 40%       0.3%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   72.3%  ▄▂···▂●▂█▂·▂ beats 4/13     avg 82%                0.2%  blunt · noisy
+<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>    8.8%  ▂▂▂··▂▂·▂●█▆ beats 6/13     avg 13%                0.0%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VocalSound human-sound reco…</a>   46.3%  ●█▄▄·█·█·█▄▄ beats 1/13     easy · avg 67%         0.0%  blunt · at its level · noisy
 </pre>
 
@@ -104,7 +104,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   53% ▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   17% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    8% ▇
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10    8% ▇
 <a name="paper-2410.07112v2-vhelm"></a><a href="https://arxiv.org/html/2410.07112v2">VHELM: A Holistic Evaluation of Vision …</a>        2    5% ▇
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             1    3% ▇
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.3
+weighted average                                   = 51.1
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VHELM: A Holistic Evaluation of Vision Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

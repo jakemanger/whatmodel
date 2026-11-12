@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 45.7** ±0.7 · #457 of 732 · from 26 benchmark results across 4 sources
+**score 45.5** ±0.7 · #466 of 740 · from 26 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #298 of 402    9.0%      3
-math            ▁▁▃●█▆▄█▄▂▁▁   #338 of 431     29%      4
+chat &amp; writing  ▁▁▁▃▆●▆█▇▇▇▃   #300 of 404    8.9%      3
+math            ▁▁▃●█▆▄█▅▂▁▁   #346 of 440     29%      4
 </pre>
 
-<details><summary>chat &amp; writing · #298 of 402 · 9.0% of its score</summary>
+<details><summary>chat &amp; writing · #300 of 404 · 8.9% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1220.5  ▁▁▁▂▃●▃▆▆▇█▃ beats 76/385  avg 1260            5.1%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (m…</a>   34.0%  ▃▃·▁▁●▇▅·▁·▁ beats 10/22   medium · avg 39%    2.8%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (maker)</a>    82.4%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 14/22   easy · avg 78%      1.1%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1220.5  ▁▁▁▂▃●▃▆▆▇█▃ beats 76/387  avg 1261            5.0%  blunt
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (m…</a>   34.0%  ▃▃·▁▁●▇▅·▁·▁ beats 10/22   medium · avg 40%    2.8%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (maker)</a>    82.4%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 14/22   easy · avg 79%      1.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #338 of 431 · 29% of its score</summary>
+<details><summary>math · #346 of 440 · 29% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K (maker)</a>                       87.6%  ▂▃··▃▂▅█●▃▂▃ beats 17/22  very easy · avg 90%     13%  sharp · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                                58.6%  ▅▃▃●·▅···▃·▃ beats 6/10   easy · avg 72%          11%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                46.1%  █●██···▄▄▄·▄ beats 2/10   medium · avg 61%       3.7%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                46.1%  █●██···▄▄▄·▄ beats 2/10   medium · avg 62%       3.7%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (maker)</a>   43.7%  ▃▃●▂▂▆·····▁ beats 12/22  medium · avg 58%       1.9%  at its level
 </pre>
 
@@ -51,19 +51,19 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MMLU (maker)</a>                         68.2%  ▁▂·▁·▁▁●·▃▃▅ beats 6/22    easy · avg 75%          16%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (maker)</a>               69.0%  ▁▄·▁▁·▅●·▄▄▁ beats 10/22   medium · avg 72%        13%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (maker)</a>                         68.2%  ▁▂·▁·▁▁●·▃▃▅ beats 6/22    easy · avg 76%          16%  at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (maker)</a>               69.0%  ▁▄·▁▁·▅●·▄▄▁ beats 10/22   medium · avg 73%        13%  sharp · at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        79.4%  ▂●▂█▂···▄··▂ beats 1/10    very easy · avg 89%    8.7%  sharp
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.8%  ▂··▄●▂·▂···▄ beats 4/10    easy · avg 85%         4.8%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             40.9%  █▄●·█▄▄▄·▄·▄ beats 3/10    medium · avg 54%       4.5%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.8%  ▂··▄●▂·▂···▄ beats 4/10    easy · avg 86%         4.9%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             40.9%  █▄●·█▄▄▄·▄·▄ beats 3/10    medium · avg 55%       4.5%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        54.5%  █▄▄●█··█···▄ beats 5/10    medium · avg 63%       3.9%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            80.9%  ▃▅█·▃▃●···▃▃ beats 8/10    easy · avg 82%         1.9%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           65.4%  ▃····▃▃●▃·▅▅ beats 5/10    medium · avg 71%       1.7%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           65.4%  ▃····▃▃●▃·▅▅ beats 5/10    medium · avg 72%       1.7%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           73.4%  ▃·▃●▅█·▃···▃ beats 3/10    medium · avg 76%       1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (maker)</a>                        29.1%  ▁▁▁▃▃▃▁●▁▃·▄ beats 13/21   hard · avg 31%         1.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                79.3%  ▃··▃··●█▃·▃▃ beats 3/10    easy · avg 83%         1.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            29.9%  █··▄▂··●▂··▄ beats 7/10    very hard · avg 32%    1.1%  sharp · too hard for it · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 92/146  easy · avg 82%         0.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 92/146  easy · avg 82%         0.8%  at its level · noisy
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                                 78.3%  ▃·▅·▃●·▃▅··▃ beats 6/10    medium · avg 82%       0.5%  blunt · at its level
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (maker)</a>               55.0%  ▃▃▂·●▃·▅█▂▅▂ beats 5/21    medium · avg 64%       0.4%  blunt · at its level · several runs
 </pre>
@@ -78,10 +78,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-microsoft-phi-4-mini-instruct"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">microsoft/Phi-4-mini-instruct model card</a>       16   67% ▇▇▇▇▇▇▇▇
 <a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (submitted / maker-rep…</a>        8   27% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.7
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

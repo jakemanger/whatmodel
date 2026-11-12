@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 61.5** ±1.2 · #189 of 732 · from 15 benchmark results across 7 sources
+**score 61.1** ±1.2 · #199 of 740 · from 15 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,54 +16,54 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▄▅▅▄▄▂▁   #222 of 313*    3.8%      1
-coding              ▁▁▁▃▅▇█●▅▄▃▁   #181 of 469*     27%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█▆●▇▃   #101 of 402*     20%      2
-vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄    #87 of 153*     15%      2
+agent tasks         ▁▁▃▆●▅▅▅▄▅▂▁   #225 of 316*    4.0%      1
+coding              ▁▁▁▃▆▇█●▆▃▃▁   #185 of 472*     26%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃   #102 of 404*     19%      2
+vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄    #86 of 154*     15%      2
 </pre>
 
-<details><summary>agent tasks · #222 of 313 · 3.8% of its score</summary>
+<details><summary>agent tasks · #225 of 316 · 4.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>    4.7%  ●··▃·▃·█▃▅██ beats 0/15   very hard · avg 5.1%    3.8%  sharp
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>    4.7%  ●··▃·▃·█▃▅██ beats 0/15   very hard · avg 5.1%    4.0%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #181 of 469 · 27% of its score</summary>
+<details><summary>coding · #185 of 472 · 26% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1232.6  ▁▁●▂▅█▃▆▅▅▁▂ beats 8/129  avg 981        27%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1233.3  ▁▂●▃▇█▅▆█▅▂▁ beats 8/133  avg 990        26%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #101 of 402 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #102 of 404 · 19% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall.
+Beats [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1414.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 263/385  avg 1260             15%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge unspeci…</a>   66.7%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 17/30    medium · avg 47%    4.5%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1414.7  ▁▁▁▂▃▂▃▆▆●█▃ beats 265/387  avg 1261             15%  blunt
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge unspeci…</a>   66.7%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 17/30    medium · avg 48%    4.5%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #87 of 153 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #86 of 154 · 15% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1199.1  ▁▁▂▂▂▂▃▄●▅█▇ beats 72/152  avg 1061           10%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (maker)</a>                  54.0%  ▂▃▁▃▆●▃▇▇██▅ beats 16/52   hard · avg 41%    4.8%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1200.3  ▁▁▂▂▂▂▃▅●▅█▇ beats 73/152  avg 1063           10%  blunt
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (maker)</a>                  54.0%  ▁▂▁▂▅●▃▆▂█▄▃ beats 16/55   hard · avg 42%    4.9%  at its level · small run
 </pre>
 
 </details>
@@ -72,11 +72,11 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (maker)</a>                 64.1%  ▁▁▁▁▂▄▅●███▄ beats 129/322  hard · avg 42%         9.4%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (maker)</a>                     80.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 130/188  medium · avg 59%       5.4%  small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (maker)</a>                 64.1%  ▁▁▁▁▂▃▅●▇▇█▂ beats 129/336  hard · avg 42%         9.5%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (maker)</a>                     80.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 130/189  medium · avg 60%       5.4%  small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   42.0%  ▆▂·▄●·▂▂·▄▄▂ beats 9/16     very hard · avg 36%    4.9%  blunt
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   25.7%  ▁▁▃▂▂●▁▃▄▄▄█ beats 9/38     very hard · avg 14%    4.6%  at its level
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   37.8%  ▂▆▂▄●▄▂▄▄▆█▇ beats 25/86    hard · avg 29%         4.1%  at its level · small run
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   25.7%  ▁▁▃▂▂●▁▃▄▄▄█ beats 9/38     very hard · avg 14%    4.8%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   37.8%  ▂▆▂▃●▄▂▃▄▆█▇ beats 25/88    hard · avg 30%         4.1%  at its level · small run
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   91.2%  ▂·▂··▂·▄▂·█● beats 11/12    medium · avg 63%       3.1%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              78.3%  █·▃·●▅▃···▃▃ beats 4/10     easy · avg 70%         1.4%  blunt
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   81.6%  ▄·▄▄▄·▄██▄●▄ beats 11/12    medium · avg 65%       1.2%  blunt · at its level
@@ -91,7 +91,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   52% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   52% ▇▇▇▇▇▇
 <a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        5   28% ▇▇▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                                          3    6% ▇
 <a name="paper-2610.04118v1-longsocialbench"></a><a href="https://arxiv.org/html/2610.04118v1">LongSocialBench: Do Long-Context LLMs U…</a>        1    5% ▇
@@ -99,7 +99,7 @@ source                                    results  share of the score
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.5
+weighted average                                   = 61.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

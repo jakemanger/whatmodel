@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-10 · 1.3B params · deepseek
 
-**score 31.7** ±3.8 · #130 of 144 · from 3 benchmark results across 2 sources
+**score 31.7** ±3.8 · #132 of 146 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #117 of 126     94%      3
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #120 of 128     94%      3
 </pre>
 
-<details><summary>text to image · #117 of 126 · 94% of its score</summary>
+<details><summary>text to image · #120 of 128 · 94% of its score</summary>
 
-Beats [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
+Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.17811v1">GenEval (maker)</a>                      61.0%  ▇▃▅●▁▄▅▃█▃▃▅ beats 13/39  easy · avg 83%          35%  at its level · small run
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (maker)</a>                      61.0%  ▇▃▅●▁▄▅▃█▃▃▅ beats 13/39  easy · avg 83%          36%  at its level · small run
 <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    79.7%  ●·▂·▂▆█▄▂▄▂▂ beats 0/17   very easy · avg 89%     31%  at its level · small run
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   23.0%  ●·▆▂▆█▄▆▂▄·▄ beats 0/22   medium · avg 60%        28%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   23.0%  ●·▆▂▆█▄▆▂▄·▄ beats 0/22   medium · avg 60%        27%  at its level
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (submitted / maker-reported)</a>        2   66% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   28% ▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   27% ▇▇▇
 prior: pull toward the middle                        6% ▇
 weighted average                                   = 31.7
 </pre>

@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-10 · apache-2.0
 
-**score 37.9** ±4.9 · #72 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.7** ±4.8 · #73 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ UC Santa Barbara · released 2024-10 · apache-2.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #44 of 68*     48%      1
+text to video  ▆▄▃●▆█▇▂▄·▄▅   #46 of 70*     47%      1
 </pre>
 
-<details><summary>text to video · #44 of 68 · 48% of its score</summary>
+<details><summary>text to video · #46 of 70 · 47% of its score</summary>
 
 Beats [Open-Sora 2.0](open-sora-2-0.md), [Wan 2.1 T2V 1.3B](wan-2-1-1-3b.md), [Mochi 1](mochi-1.md) here, though they rank higher overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (maker)</a>   83.5%  █···▄●▄····▄ beats 3/5    very easy · avg 90%     48%  small run
+<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (maker)</a>   83.5%  █···▄●▄····▄ beats 3/5    very easy · avg 90%     47%  small run
 </pre>
 
 </details>
@@ -32,7 +32,7 @@ test                        result  vs the others in its run  difficulty        
 
 <pre>
 test                              result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10  ●··▅▃···▃··█ beats 1/8    easy · avg 7.71 / 10     42%  at its level
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10  ●··▅▃···▃··█ beats 1/8    easy · avg 7.74 / 10     43%  at its level
 </pre>
 
 </details>
@@ -43,10 +43,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2410.05677v3-t2vturbo2"></a><a href="https://arxiv.org/html/2410.05677v3#S4.T1">T2V-Turbo-v2: Enhancing Video Generatio…</a>        1   48% ▇▇▇▇▇▇
-<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   42% ▇▇▇▇▇
+<a name="paper-2410.05677v3-t2vturbo2"></a><a href="https://arxiv.org/html/2410.05677v3#S4.T1">T2V-Turbo-v2: Enhancing Video Generatio…</a>        1   47% ▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   43% ▇▇▇▇▇
 prior: pull toward the middle                       10% ▇
-weighted average                                   = 37.9
+weighted average                                   = 37.7
 </pre>
 
 <sub>Licences: T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>

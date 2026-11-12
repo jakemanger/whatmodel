@@ -6,7 +6,7 @@
 
 PKU-YuanGroup · released 2025-06 · 20.37B params
 
-**score 40.2** ±2.3 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
+**score 39.9** ±2.2 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▁▂██●▆██▂▃▁▁   #85 of 157*     11%      2
-image to image / edit…  ▁▁▁●▃▃█▅▃▄▂▁     #75 of 81     65%      5
+text to image           ▁▂█▇●▅█▇▂▃▁▂   #86 of 159*     10%      2
+image to image / edit…  ▁▁▁●▃▃█▅▃▄▂▁     #77 of 83     65%      5
 </pre>
 
-<details><summary>text to image · #85 of 157 · 11% of its score</summary>
+<details><summary>text to image · #86 of 159 · 10% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Krea \[dev\]](flux-1-krea-dev.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Ovis-Image-7B](ovis-image-7b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   55.0%  ▄·▆▂▆█▄●▂▄·▄ beats 17/22  medium · avg 60%     11%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   55.0%  ▄·▆▂▆█▄●▂▄·▄ beats 17/22  medium · avg 60%     10%  at its level
 <a href="https://arxiv.org/html/2506.03147v4">GenEval (maker)</a>                      80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 26/39  easy · avg 79%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #75 of 81 · 65% of its score</summary>
+<details><summary>image to image / editing · #77 of 83 · 65% of its score</summary>
 
 Trails [OmniGen (v1)](omnigen-v1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           34.2%  ▃▃▂·●▆▂█·▃·▃ beats 5/20   hard · avg 45%     37%  typical
-<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              56.0%  ▂····●▄▂▄·█▂ beats 1/11   easy · avg 73%     18%  at its level
+<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              56.0%  ▂····●▄▂▄·█▂ beats 1/11   easy · avg 74%     18%  at its level
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   65.4%  ●█▄··█··▄·▄▄ beats 0/8    easy · avg 74%     10%  blunt · at its level
 <a href="https://arxiv.org/html/2506.03147v4">GEdit-Bench-EN overall (G_O, GPT-…</a>   48.5%  ●·····█·▄▄·▄ beats 0/5                         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2506.03147v4">ImgEdit-Bench overall (GPT-4.1 ju…</a>   65.2%  no other model yet                             —  not counted yet: no other model in the …
@@ -66,11 +66,11 @@ source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   37% ▇▇▇▇
 <a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1   19% ▇▇
 <a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   18% ▇▇
-<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   11% ▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
 <a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1   10% ▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 40.2
+weighted average                                   = 39.9
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 67.6** ±1.6 · #20 of 93 · from 6 benchmark results across 5 sources
+**score 66.7** ±1.5 · #21 of 94 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,28 +14,28 @@ Alibaba · released 2026-04 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃●▂▂▄   #13 of 68*     42%      1
-image to video  ▁▂·▂▅█▅▄●▆▃▄    #17 of 50     49%      3
+text to video   ▆▄▃▆▆█▇▂●·▄▅   #15 of 70*     46%      1
+image to video  ▁▂·▂▅█▅▄●▅▃▅    #18 of 51     46%      3
 </pre>
 
-<details><summary>text to video · #13 of 68 · 42% of its score</summary>
+<details><summary>text to video · #15 of 70 · 46% of its score</summary>
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1337.2  ▂▂▃▆█▆·●▅▁▂▇ beats 25/41  avg 1147       42%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1336.9  ▂▂▃▆█▃·●▂▁█▃ beats 25/44  avg 1154       46%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #17 of 50 · 49% of its score</summary>
+<details><summary>image to video · #18 of 51 · 46% of its score</summary>
 
 Beats [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1428.2  ▁▁▁▁▄▇▃▆▃▂●█ beats 30/40  avg 1189           28%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1009.0  ▂··▂▂●█▆▂▂▆▄ beats 4/19   avg 741            16%  sharp
-<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     35.7%  ▄▄···▄●█·█·▄ beats 3/8    hard · avg 20%    5.4%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1427.1  ▁▁▁▁▄▇▃▇▂▃●█ beats 30/42  avg 1197           27%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1009.0  ▂··▂▂●█▆▂▂▆▄ beats 4/19   avg 764            13%  sharp
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     35.7%  ▄▄···▄●█·█·▄ beats 3/8    hard · avg 20%    5.3%  at its level
 </pre>
 
 </details>
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   34.4%  ●██··█·····█ beats 0/4    very hard · avg 28%    5.9%  typical
-<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.9%  ▂···▂······● beats 4/5    medium · avg 65%       1.9%  blunt
+<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   34.4%  ●██··█·····█ beats 0/4    very hard · avg 28%    5.5%  typical
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.9%  ▂···▂······● beats 4/5    easy · avg 65%         1.9%  blunt
 </pre>
 
 </details>
@@ -56,13 +56,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   70% ▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   13% ▇▇
 <a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1    6% ▇
 <a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    5% ▇
 <a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.6
+weighted average                                   = 66.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

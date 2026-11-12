@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-03 · proprietary
 
-**score 78.5** ±1.3 · #5 of 93 · from 12 benchmark results across 9 sources
+**score 77.7** ±1.3 · #6 of 94 · from 12 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,46 +14,46 @@ ByteDance Seed · released 2026-03 · proprietary
 
 <pre>
 task            vs the others       rank  counts  tests
-text to video   ▆▄▃▄▆▅█▃▂▂▂●   #4 of 68*     30%      2
-image to video  ▁▂·▂▅█▅▄▅▆▃●    #4 of 50     56%      6
-video editing   ▄··█··▄··●▄█    #5 of 9*    5.7%      1
+text to video   ▆▄▃▆▆█▇▂▄·▄●   #6 of 70*     33%      2
+image to video  ▁▂·▂▅█▅▄▅▅▃●    #4 of 51     53%      6
+video editing   ▃··▅·▃···●▃▅   #6 of 10*    6.5%      1
 </pre>
 
-<details><summary>text to video · #4 of 68 · 30% of its score</summary>
+<details><summary>text to video · #6 of 70 · 33% of its score</summary>
 
-Beats [Wan 3.0](wan-3-0.md) here, though they rank higher overall. Trails [FLUX 3 Video](flux-3-video.md) here, though they rank lower overall.
+Beats [Wan 3.0](wan-3-0.md) here, though they rank higher overall. Trails [FLUX 3 Video](flux-3-video.md), [Grok Imagine Video 1.5](grok-imagine-video-1-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1479.2  ▂▂▃▆█▆·▆▅▁▂● beats 38/41  avg 1147           28%  typical
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   58.8%  ▅·▃█▃·▅▃▅●▃▃ beats 12/14  hard · avg 44%    2.5%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1483.4  ▂▂▃▆█▃·▇▂▁●▃ beats 39/44  avg 1154           31%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   58.8%  ▅·▃█▃·▅▃▅●▃▃ beats 12/14  hard · avg 45%    2.5%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to video · #4 of 50 · 56% of its score</summary>
+<details><summary>image to video · #4 of 51 · 53% of its score</summary>
 
-Beats [Wan 3.0](wan-3-0.md) here, though they rank higher overall. Trails [MiniMax H3](minimax-h3.md) here, though they rank lower overall.
+Beats [Gemini Omni Flash](gemini-omni-flash.md), [Wan 3.0](wan-3-0.md) here, though they rank higher overall. Trails [MiniMax H3](minimax-h3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1471.0  ▃▃··█··▃▃▃·● beats 8/8    avg 875              19%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1474.6  ▁▁▁▁▄▇▃▆▃▂▄● beats 36/40  avg 1189             18%  typical
-<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1268.0  ▂··▂▂▆█▆▂▂●▄ beats 16/19  avg 741              11%  sharp
-<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     51.0%  ▄▄···▄▄█·█·● beats 8/8    hard · avg 20%      3.8%  at its level
-<a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">VWG-Bench think-with-video reason…</a>   70.4%  █··▄······▄● beats 4/5    medium · avg 50%    2.4%  at its level
-<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   41.8%  █·▄····●···█ beats 3/5    hard · avg 27%      1.7%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1471.0  ▃▃··█··▃▃▃·● beats 8/8    avg 889              19%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1480.0  ▁▁▁▁▄▇▃▇▂▃▅● beats 37/42  avg 1197             18%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1268.0  ▂··▂▂▆█▆▂▂●▄ beats 16/19  avg 764             8.6%  sharp
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     51.0%  ▄▄···▄▄█·█·● beats 8/8    hard · avg 20%      3.7%  at its level
+<a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">VWG-Bench think-with-video reason…</a>   70.4%  █··▄······▄● beats 4/5    medium · avg 51%    2.3%  at its level
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   41.8%  █·▄····●···█ beats 3/5    hard · avg 28%      1.6%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>video editing · #5 of 9 · 5.7% of its score</summary>
+<details><summary>video editing · #6 of 10 · 6.5% of its score</summary>
 
-Trails [Dreamina Seedance 2.5](seedance-2-5.md), [MiniMax H3](minimax-h3.md) here, though they rank lower overall.
+Trails [MiniMax H3](minimax-h3.md), [Dreamina Seedance 2.5](seedance-2-5.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1364.6  █··█··▄··●▄█ beats 5/9    avg 1117      5.7%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1368.0  ▄··▂▂·▂··●▂▄ beats 6/11   avg 1119      6.5%  typical
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   52.8%  ███··█·····● beats 4/4    very hard · avg 28%    4.7%  at its level
+<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   52.8%  ███··█·····● beats 4/4    very hard · avg 28%    4.4%  at its level
 <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   89.7%  █··▄▄▄▄····● beats 6/6    easy · avg 77%         1.2%  blunt
 <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   93.4%  █▄·▄█▄▄····● beats 8/8    easy · avg 82%         1.2%  blunt · maxed out
 </pre>
@@ -75,17 +75,17 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   52% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   55% ▇▇▇▇▇▇▇
 <a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   19% ▇▇
-<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   11% ▇
-<a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1    5% ▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1    9% ▇
+<a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1    4% ▇
 <a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    4% ▇
-<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    2% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    3% ▇
 <a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        2    2% ▇
 <a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">From Evaluation to Enhancement: Benchma…</a>        1    2% ▇
 <a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 78.5
+weighted average                                   = 77.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

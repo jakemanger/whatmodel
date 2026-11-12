@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-11 · 2.57B params · sai-nc-community
 
-**score 33.5** ±2.1 · #125 of 144 · from 4 benchmark results across 4 sources
+**score 33.7** ±2.1 · #127 of 146 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▂▂▁▁   #104 of 126     89%      3
+text to image  ▂●▅▃▄▄█▂▂▁▁▁   #106 of 128     89%      3
 </pre>
 
-<details><summary>text to image · #104 of 126 · 89% of its score</summary>
+<details><summary>text to image · #106 of 128 · 89% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Emu3](emu3.md) here, though they rank higher overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>     935.0  ▃▃··●·▃·█·▃▃ beats 2/8    avg 1237                33%  sharp
-<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.15 / 5  █▄·▄██▄●█▄▄▄ beats 9/14   easy · avg 3.83 / 5     31%  at its level
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>     935.0  ▃▃··●·▃·█·▃▃ beats 2/8    avg 1235                33%  sharp
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.15 / 5  █▄·▄██▄●█▄▄▄ beats 9/14   easy · avg 3.84 / 5     31%  at its level
 <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       35.0%  ▄·▄·●▄▄▄···▄ beats 2/7    easy · avg 66%          25%  at its level
 </pre>
 
@@ -36,7 +36,7 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.694 FID     10%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.831 FID    9.5%  typical
 </pre>
 
 </details>
@@ -50,9 +50,9 @@ source                                    results  share of the score
 <a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   33% ▇▇▇▇
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   31% ▇▇▇▇
 <a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   25% ▇▇▇
-<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   10% ▇
+<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1    9% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 33.5
+weighted average                                   = 33.7
 </pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

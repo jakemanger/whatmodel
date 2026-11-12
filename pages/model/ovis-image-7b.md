@@ -6,7 +6,7 @@
 
 Alibaba (AIDC-AI) · released 2025-11 · 7B params · apache-2.0
 
-**score 47.6** ±6.7 · #89 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±6.5 · #91 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▂▂▁▁   #74 of 126*     81%      1
+text to image  ▂▅▅▃●▄█▂▂▁▁▁   #76 of 128*     82%      1
 </pre>
 
-<details><summary>text to image · #74 of 126 · 81% of its score</summary>
+<details><summary>text to image · #76 of 128 · 82% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>   33.4%  ●·█···▄▄▄▄▄▄ beats 0/8    medium · avg 36%     81%  blunt · at its level
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>   33.4%  ●·█···▄▄▄▄▄▄ beats 0/8    medium · avg 37%     82%  blunt · at its level
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                             1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            19% ▇▇
-weighted average                        = 47.6
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                             1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            18% ▇▇
+weighted average                        = 47.3
 </pre>
 
 <sub>Licences: Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>

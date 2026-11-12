@@ -6,7 +6,7 @@
 
 ByteDance · proprietary
 
-**score 72.2** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 71.9** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,38 +16,38 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ······●·····      #1 of 1*     31%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #53 of 474*     40%      1
-vision &amp; documents  ▁▁▂▃▂▃▅▄▆█●▄   #47 of 189*     27%      1
+agent tasks         ······●·····      #1 of 1*     32%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #52 of 476*     39%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇█●▄   #48 of 190*     27%      1
 </pre>
 
-<details><summary>agent tasks · #1 of 1 · 31% of its score</summary>
+<details><summary>agent tasks · #1 of 1 · 32% of its score</summary>
 
 <pre>
 test                      result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (maker)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 28%     31%  sharp · small run
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (maker)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 29%     32%  sharp · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #53 of 474 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #52 of 476 · 39% of its score</summary>
 
-Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [GLM-5](glm-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1456.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 331/385  avg 1260       40%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1456.6  ▁▁▁▂▃▂▃▆▆▇●▃ beats 332/387  avg 1261       39%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #47 of 189 · 27% of its score</summary>
+<details><summary>vision &amp; documents · #48 of 190 · 27% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1256.5  ▁▁▂▂▂▂▃▄▅▅●▇ beats 112/152  avg 1061       27%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1256.3  ▁▁▂▂▂▂▃▅▅▅●▇ beats 113/152  avg 1063       27%  blunt
 </pre>
 
 </details>
@@ -58,10 +58,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
-<a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (su…</a>        1   31% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (su…</a>        1   32% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 72.2
+weighted average                                   = 71.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

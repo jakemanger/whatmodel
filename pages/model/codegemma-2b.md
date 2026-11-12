@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 33.6** ±0.7 · #638 of 732 · from 12 benchmark results across 4 sources
+**score 33.5** ±0.7 · #646 of 740 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #441 of 469     95%      9
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #445 of 472     95%      9
 </pre>
 
-<details><summary>coding · #441 of 469 · 95% of its score</summary>
+<details><summary>coding · #445 of 472 · 95% of its score</summary>
 
-Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            26.8%  ▁·▁▁●▄▆▅█▃▁▁ beats 10/99  easy · avg 76%       39%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           20.7%  ▁·▁▁▁●▄▄▄█▃▁ beats 9/99   easy · avg 70%       24%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            26.8%  ▁·▁▁●▄▆▅█▃▁▁ beats 10/99  easy · avg 77%       39%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           20.7%  ▁·▁▁▁●▄▄▄█▃▁ beats 9/99   easy · avg 71%       24%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   30.4%  ▁·▂▁▂●▅█▄▄▁▂ beats 6/35   medium · avg 62%    7.1%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 30.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 1/15   easy · avg 67%      7.1%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 30.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 1/15   easy · avg 68%      7.1%  at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.6%  ▁···▁▁▂●▇█▆▂ beats 15/75  easy · avg 66%      5.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.3%  ▄▇█●▄▇▄▁▇▃·▁ beats 14/35  medium · avg 46%    3.4%  typical
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           29.6%  ▃●█▃▃▅·▃▃▅·▅ beats 1/15   medium · avg 56%    3.4%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           29.6%  ▃●█▃▃▅·▃▃▅·▅ beats 1/15   medium · avg 57%    3.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 3/15   medium · avg 54%    2.8%  blunt · at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    4.4%  ▁·●▁▄██▄█▁▅▅ beats 1/35   medium · avg 51%    2.7%  sharp
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    4.4%  ▁·●▁▄██▄█▁▅▅ beats 1/35   medium · avg 52%    2.7%  sharp
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   23.9%  ▂●▁▄▂▅▇█▆▂▂▂ beats 3/58   medium · avg 48%    4.4%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   23.9%  ▂●▁▄▂▅▇█▆▂▂▂ beats 3/58   medium · avg 49%    4.4%  typical
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="paper-2406.11409v2"></a><a href="https://arxiv.org/html/2406.11409v2">CodeGemma: Open Code Models Based on Ge…</a>        2    9% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.6
+weighted average                                   = 33.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

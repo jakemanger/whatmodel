@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 11.8** ±2.9 · #716 of 732 · from 8 benchmark results across 2 sources
+**score 11.8** ±2.9 · #724 of 740 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▂▁▁   #419 of 431*     13%      1
+math  ▁●▃▅█▆▄█▅▂▁▁   #428 of 440*     13%      1
 </pre>
 
-<details><summary>math · #419 of 431 · 13% of its score</summary>
+<details><summary>math · #428 of 440 · 13% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -35,12 +35,12 @@ test   result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   40.1%  ▃···▃▃·▃·▃·● beats 5/7    easy · avg 81%          41%  typical
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        19.3%  ●····▁·····▁ beats 5/9    easy · avg 75%          18%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        19.3%  ●····▁·····▁ beats 5/9    easy · avg 76%          18%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 1.3%  █·●▂▄▂▂····▂ beats 4/12   easy · avg 70%          15%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           46.0%  ●········▁▃▁ beats 3/9    hard · avg 62%         5.0%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    6.5%  ●···█···██·▄ beats 0/7    hard · avg 22%         3.6%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   53.2%  █·······▁··● beats 7/7    very hard · avg 52%    0.2%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             24.8%  █·····▁·●··▁ beats 8/9    medium · avg 53%       0.1%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             24.8%  █·····▁·●··▁ beats 8/9    medium · avg 54%       0.1%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   12.6%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%          —  failed run: Failed run: average 12.63 v…
 </pre>
 

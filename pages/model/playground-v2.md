@@ -6,7 +6,7 @@
 
 Playground · released 2023-12 · 2.57B params · playground-v2-community
 
-**score 41.2** ±3.5 · #104 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.4** ±3.5 · #104 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅●▄▄█▃▂▂▁▁   #81 of 126*     95%      1
+text to image  ▂▅▅●▄▄█▂▂▁▁▁   #83 of 128*     95%      1
 </pre>
 
-<details><summary>text to image · #81 of 126 · 95% of its score</summary>
+<details><summary>text to image · #83 of 128 · 95% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1101.0  ▃▃··▃·▃·█·●▃ beats 7/8    avg 1237       95%  sharp
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1101.0  ▃▃··▃·▃·█·●▃ beats 7/8    avg 1235       95%  sharp
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 41.2
+weighted average                                   = 41.4
 </pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt))</sub>

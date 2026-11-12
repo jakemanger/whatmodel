@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▃▁▁▁   #514 of 530*    3.8%      1
+math  ▁●▃▆██▅▇▄▁▁▁   #524 of 540*    3.8%      1
 </pre>
 
-<details><summary>math · #514 of 530 · 3.8% of its score</summary>
+<details><summary>math · #524 of 540 · 3.8% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -39,14 +39,14 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   62.4%  █·▄··●··█··▄ beats 4/7    very easy · avg 88%    8.0%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        27.5%  ▄····●···█▄▄ beats 1/5    easy · avg 78%         7.3%  sharp · too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     19.8%  ······●····· beats 2/5    very hard · avg 25%    7.0%  too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        18.7%  ●····▁·····▁ beats 6/9    easy · avg 75%         5.5%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        18.7%  ●····▁·····▁ beats 6/9    easy · avg 76%         5.5%  sharp · too hard for it
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 75.5%  █··▃··●▃·▃·▃ beats 4/7    easy · avg 88%         5.2%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 86.6%  █●····███··█ beats 1/5    very easy · avg 98%    5.0%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             11.5%  █···●·███··█ beats 1/5    easy · avg 68%         4.6%  typical
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             59.8%  ▄···●··█·▄·▄ beats 1/5    easy · avg 87%         4.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 4.3%  █·▆▂●▂▂····▂ beats 9/12   easy · avg 70%         4.1%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.9%  ●·▄······▄·▄ beats 1/4    medium · avg 64%       3.1%  too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           22.4%  ●·······█··▃ beats 0/5    hard · avg 49%         2.7%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           22.4%  ●·······█··▃ beats 0/5    hard · avg 50%         2.7%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                37.0%  ▄····▄●▄···▄ beats 2/5    medium · avg 57%       1.8%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              34.0%  ●······▃█··▃ beats 0/5    hard · avg 43%         1.5%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">HEAD-QA (English, harness)</a>           27.8%  █··●····█··█ beats 1/3    medium · avg 58%       1.4%  blunt · at its level
@@ -54,9 +54,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 1 (prompted)</a>              32.6%  ●··▂·······▂ beats 1/5    hard · avg 46%         1.2%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           46.1%  ●········▁▃▁ beats 4/9    hard · avg 62%         1.1%  too hard for it · noisy
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              30.8%  ●█·███·····█ beats 0/5    very hard · avg 43%    1.1%  too hard for it · noisy
-<a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         25.7%  ▂●·▄▄█▂·▂··▂ beats 2/14   medium · avg 65%       0.9%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">SuperGLUE WSC (prompted)</a>             40.4%  ●··········▄ beats 0/5    hard · avg 62%         0.9%  blunt · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             13.8%  ●·····▁·▁··▁ beats 5/9    medium · avg 53%       0.0%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         25.7%  ▂●·▄▄█▂·▂··▂ beats 2/14   medium · avg 65%       0.9%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             13.8%  ●·····▁·▁··▁ beats 5/9    medium · avg 54%       0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>

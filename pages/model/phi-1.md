@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 22.4** ±4.1 · #696 of 732 · from 3 benchmark results across 2 sources
+**score 22.3** ±4.1 · #704 of 740 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #457 of 469*     75%      4
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #460 of 472*     75%      4
 </pre>
 
-<details><summary>coding · #457 of 469 · 75% of its score</summary>
+<details><summary>coding · #460 of 472 · 75% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
@@ -27,8 +27,8 @@ Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepse
 test               result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>          21.7%  ●·▂▃▁█▁▂···▁ beats 0/22    medium · avg 51%     39%  blunt
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>          13.1%  ●··▁▅▂█▇▁··▁ beats 0/22    medium · avg 52%     36%  typical
-<a href="https://arxiv.org/html/2306.11644v2">HumanEval (maker)</a>   50.6%  ▁▁▁▁▂▂▆●█▅▂▁ beats 94/205  easy · avg 76%         —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2306.11644v2">MBPP (maker)</a>        55.5%  ▁▁▁▄▅█●▅▄▁▂▁ beats 48/86   easy · avg 67%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2306.11644v2">HumanEval (maker)</a>   50.6%  ▁▁▁▁▂▂▆●█▅▂▁ beats 94/205  easy · avg 77%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2306.11644v2">MBPP (maker)</a>        55.5%  ▁▁▁▄▅█●▅▄▁▂▁ beats 48/86   easy · avg 68%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -50,8 +50,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                 results  share of the score
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>        2   75% ▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>              1   18% ▇▇
-prior: pull toward the middle                     8% ▇
-weighted average                                = 22.4
+prior: pull toward the middle                     7% ▇
+weighted average                                = 22.3
 </pre>
 
 <sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

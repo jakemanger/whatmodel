@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2024-12 · closed weights
 
-**score 45.3** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.0** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Kuaishou (Kling AI) · released 2024-12 · closed weights
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▇▅▄▆●▆▇▂▃▃▂▄   #54 of 94*     88%      1
+text to video  ▆▅▃█●▇▆▂▅▁▄▃   #54 of 97*     88%      1
 </pre>
 
-<details><summary>text to video · #54 of 94 · 88% of its score</summary>
+<details><summary>text to video · #54 of 97 · 88% of its score</summary>
 
-Trails [CogVideoX-5B](cogvideox-5b.md) here, though they rank lower overall.
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall. Trails [CogVideoX-5B](cogvideox-5b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>   59.8%  ▄····▄···●·▄ beats 2/4    medium · avg 66%     88%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>   59.8%  ▄····▄···●·▄ beats 2/4    medium · avg 67%     88%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       12% ▇
-weighted average                                   = 45.3
+weighted average                                   = 45.0
 </pre>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>

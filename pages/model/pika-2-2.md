@@ -6,7 +6,7 @@
 
 Pika · released 2025-02 · proprietary
 
-**score 36.0** ±1.8 · #78 of 93 · from 4 benchmark results across 3 sources
+**score 35.6** ±1.7 · #79 of 94 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,28 +14,28 @@ Pika · released 2025-02 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃●▆▅█▃▂▂▂▄    #50 of 68     63%      3
-image to video  ●▂·▂▅█▅▄▅▆▃▄   #50 of 50*     36%      1
+text to video   ▆▄▃●▆█▇▂▄·▄▅    #53 of 70     65%      3
+image to video  ●▂·▂▅█▅▄▅▅▃▅   #51 of 51*     34%      1
 </pre>
 
-<details><summary>text to video · #50 of 68 · 63% of its score</summary>
+<details><summary>text to video · #53 of 70 · 65% of its score</summary>
 
-Beats [T2V-Turbo (VC2)](t2v-turbo-vc2.md), [CogVideoX1.5-5B](cogvideox-1-5-5b.md), [CogVideoX-2B](cogvideox-2b.md) here, though they rank higher overall.
+Beats [CogVideoX-2B](cogvideox-2b.md), [CogVideoX1.5-5B](cogvideox-1-5-5b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1009.0  ●▂▃▆█▆·▆▅▁▂▇ beats 1/41   avg 1147             54%  typical
-<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   32.0%  █··●·█·····█ beats 1/3    medium · avg 46%    5.9%  at its level
-<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     81.6%  ▂··●··█▄▂··▆ beats 1/11   easy · avg 84%      2.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1009.3  ●▂▃▆█▃·▇▂▁█▃ beats 1/44   avg 1154             57%  typical
+<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   32.0%  █··●·█·····█ beats 1/3    medium · avg 47%    5.4%  at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     81.6%  ▂··●··█▄▂··▆ beats 1/11   easy · avg 85%      2.2%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to video · #50 of 50 · 36% of its score</summary>
+<details><summary>image to video · #51 of 51 · 34% of its score</summary>
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>   997.1  ●▁▁▁▄▇▃▆▃▂▄█ beats 0/40   avg 1189       36%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>   998.3  ●▁▁▁▄▇▃▇▂▃▅█ beats 0/42   avg 1197       34%  typical
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    6% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    5% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 36.0
+weighted average                                   = 35.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>

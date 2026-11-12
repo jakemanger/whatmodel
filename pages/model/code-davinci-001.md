@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●██▅█▃▁▁▁   #457 of 530*     28%      1
+math  ▁▂▃●██▅▇▄▁▁▁   #465 of 540*     28%      1
 </pre>
 
-<details><summary>math · #457 of 530 · 28% of its score</summary>
+<details><summary>math · #465 of 540 · 28% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/206  easy · avg 69%     28%  sharp · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/206  easy · avg 70%     28%  sharp · several runs
 </pre>
 
 </details>

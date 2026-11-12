@@ -6,7 +6,7 @@
 
 Google · released 2022-06 · 8.63B params · proprietary
 
-**score 34.9** ±2.1 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
+**score 34.8** ±2.1 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●██▅█▃▁▁▁   #425 of 530*     67%      2
+math  ▁▂▃●██▅▇▄▁▁▁   #433 of 540*     67%      2
 </pre>
 
-<details><summary>math · #425 of 530 · 67% of its score</summary>
+<details><summary>math · #433 of 540 · 67% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (maker)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 66%     58%  sharp
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (maker)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 66%     59%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (maker)</a>   14.1%  ▄··▄··▄·●··█ beats 3/5    hard · avg 33%    8.6%  typical
 </pre>
 
@@ -35,7 +35,7 @@ test                  result  vs the others in its run  difficulty      counts  
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   35.6%  ▄······●▄·▄█ beats 1/5    medium · avg 62%     22%  sharp
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   35.6%  ▄······●▄·▄█ beats 1/5    medium · avg 63%     22%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (maker)</a>          7.7%  ▄·····▄●··▄▄ beats 3/5    hard · avg 15%      8.4%  too hard for it
 </pre>
 
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2206.14858v2"></a><a href="https://arxiv.org/html/2206.14858v2">Solving Quantitative Reasoning Problems…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 34.9
+weighted average                                   = 34.8
 </pre>
 
 <sub>Licences: Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt))</sub>

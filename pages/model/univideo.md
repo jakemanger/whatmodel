@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2026-01 · 13B params · apache-2.0
 
-**score 39.2** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.6** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Kuaishou (Kling AI) · released 2026-01 · 13B params · apache-2.0
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ▁▁●▂██▄▃▃▄▂▂   #70 of 74*     97%      1
+image to video  ▁▁●▂█▇▅▃▃▃▃▃   #72 of 76*     97%      1
 </pre>
 
-<details><summary>image to video · #70 of 74 · 97% of its score</summary>
+<details><summary>image to video · #72 of 76 · 97% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   665.0  ▃●··█··▃▃▃·▃ beats 1/8    avg 875        97%  sharp
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   665.0  ▃●··█··▃▃▃·▃ beats 1/8    avg 889        97%  sharp
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 39.2
+weighted average                                   = 38.6
 </pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt))</sub>

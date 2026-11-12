@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 20.43B params · apache-2.0
 
-**score 58.6** ±2.7 · #51 of 144 · from 6 benchmark results across 5 sources
+**score 58.0** ±2.7 · #52 of 146 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #31 of 62     74%      4
+image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #33 of 64     73%      4
 </pre>
 
-<details><summary>image to image / editing · #31 of 62 · 74% of its score</summary>
+<details><summary>image to image / editing · #33 of 64 · 73% of its score</summary>
 
 Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   73.7%  ▃·········●▂ beats 3/7    medium · avg 42%     32%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   73.7%  ▃·········●▂ beats 3/7    medium · avg 44%     30%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   74.8%  ▄·▄···▄●█··▄ beats 3/7    easy · avg 66%       20%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1014.0  ▃▂····▂●▂▃▂▃ beats 8/14   avg 956              17%  blunt
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   76.9%  ▃▃▃··▃·····● beats 4/6    medium · avg 65%    5.3%  at its level · noisy
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1014.0  ▃▂····▂●▂▃▂▃ beats 8/14   avg 960              17%  blunt
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   76.9%  ▃▃▃··▃·····● beats 4/6    easy · avg 65%      5.4%  at its level · noisy
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing (hum…</a>   86.7%  █▄▄····▄···● beats 5/5    easy · avg 78%     16%  typical
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 9/15   hard · avg 31%    6.8%  at its level
+<a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing (hum…</a>   86.7%  █▄▄····▄···● beats 5/5    easy · avg 78%     17%  typical
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 9/15   hard · avg 31%    7.0%  at its level
 </pre>
 
 </details>
@@ -49,13 +49,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   52% ▇▇▇▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   50% ▇▇▇▇▇▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1   17% ▇▇
-<a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1   16% ▇▇
+<a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1   17% ▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    7% ▇
 <a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI</a>                                            1    5% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 58.6
+weighted average                                   = 58.0
 </pre>
 
 <sub>Licences: Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>

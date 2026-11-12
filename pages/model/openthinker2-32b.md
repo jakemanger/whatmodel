@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.6** ±1.4 · #293 of 732 · from 6 benchmark results across 2 sources
+**score 54.4** ±1.4 · #299 of 740 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #273 of 402*     22%      2
-math            ▁▁▃▅█▆●█▄▂▁▁    #171 of 431     48%      3
+chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #273 of 404*     21%      2
+math            ▁▁▃▅█▆●█▅▂▁▁    #180 of 440     48%      3
 </pre>
 
-<details><summary>chat &amp; writing · #273 of 402 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #273 of 404 · 21% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 12%     17%  sharp
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 19%         4.2%  sharp · at its level · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 19%         4.3%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #171 of 431 · 48% of its score</summary>
+<details><summary>math · #180 of 440 · 48% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (maker)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 37%        20%  sharp · at its level
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (maker)</a>   76.7%  ▁▁▁▂▁▃▁▅█●█▃ beats 47/85   medium · avg 56%        17%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (maker)</a>   58.7%  ▁·▁▁▁▃▅●█▆▃▁ beats 45/134  medium · avg 37%        20%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (maker)</a>   76.7%  ▁▂·▂▁▂▂▄●▅▆▁ beats 47/86   medium · avg 57%        17%  sharp · at its level
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (maker)</a>    90.8%  ▁▃▂▃▄▇●▇█▄▂▁ beats 42/85   very easy · avg 86%     11%  typical
 </pre>
 
@@ -48,8 +48,8 @@ test               result  vs the others in its run   difficulty           count
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                  result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (maker)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 128/322  hard · avg 51%     29%  sharp · at its level
+test                  result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (maker)</a>   64.1%  ▁▁▁▁▂▃▅●▇▇█▂ beats 128/336  medium · avg 52%     30%  sharp · at its level
 </pre>
 
 </details>
@@ -61,9 +61,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   78% ▇▇▇▇▇▇▇▇▇
-<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   22% ▇▇▇
+<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   21% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.6
+weighted average                                   = 54.4
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt))</sub>

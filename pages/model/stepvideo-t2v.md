@@ -6,7 +6,7 @@
 
 StepFun · released 2025-02 · 30B params · mit
 
-**score 44.7** ±6.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.3** ±6.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ StepFun · released 2025-02 · 30B params · mit
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   77.7%  █●·▄█▄▄····▄ beats 2/8    easy · avg 82%     81%  blunt
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   77.7%  █●·▄█▄▄····▄ beats 2/8    easy · avg 82%     82%  blunt
 </pre>
 
 </details>
@@ -31,9 +31,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 44.7
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       18% ▇▇
+weighted average                                   = 44.3
 </pre>
 
 <sub>Licences: VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

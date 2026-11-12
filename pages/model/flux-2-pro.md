@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · proprietary
 
-**score 62.8** ±1.8 · #29 of 144 · from 6 benchmark results across 5 sources
+**score 62.1** ±1.7 · #31 of 146 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▃▂▂▁▁   #27 of 126     63%      3
-image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁   #27 of 62*     28%      2
+text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #29 of 128     65%      3
+image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂   #30 of 64*     27%      2
 </pre>
 
-<details><summary>text to image · #27 of 126 · 63% of its score</summary>
+<details><summary>text to image · #29 of 128 · 65% of its score</summary>
 
 Beats [Seedream 4.5](seedream-4-5.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall. Trails [FLUX.2 \[flex\]](flux-2-flex.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1152.7  ▁▂▃▃▆●▃▂▂▂▁▁ beats 47/75  avg 1027             48%  typical
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>   61.0%  ▄·····▄█●·▄█ beats 4/7    medium · avg 41%     10%  at its level
-<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>    54.6%  █▅▅·●▅█·█··▃ beats 8/17   medium · avg 46%    5.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1152.7  ▁▁▃▃▆●▃▂▂▂▁▁ beats 47/77  avg 1030             50%  typical
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>   61.0%  ▄·····▄█●·▄█ beats 4/7    medium · avg 42%    9.2%  at its level
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>    54.6%  █▅▅·●▅█·█··▃ beats 8/17   medium · avg 46%    5.2%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #27 of 62 · 28% of its score</summary>
+<details><summary>image to image / editing · #30 of 64 · 27% of its score</summary>
 
-Trails [Wan 2.7 Image](wan-2-7-image.md), [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md) here, though they rank lower overall.
+Trails [Wan 2.7 Image](wan-2-7-image.md), [Nano Banana (Gemini 2.5 Flash Image)](nano-banana.md), [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1247.3  ▂▁▁▃▆●▄█▇▄▂▂ beats 21/53  avg 1153           18%  typical
-<a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   51.2%  ▄▄····▄▄●▄·█ beats 4/8    hard · avg 34%    9.4%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1247.5  ▂▁▁▃▆●▆▆▇▄▃▃ beats 21/55  avg 1158           18%  typical
+<a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   51.2%  ▄▄····▄▄●▄·█ beats 4/8    hard · avg 35%    9.0%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1003.4  ▁▁▁▄▂●▂▁▁▂▁▁ beats 18/34  avg 875       7.6%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1003.4  ▁▁▁▄▂●▂▁▁▂▁▁ beats 18/34  avg 878       7.3%  typical
 </pre>
 
 </details>
@@ -60,13 +60,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
-<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1   10% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   68% ▇▇▇▇▇▇▇▇
+<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    9% ▇
 <a name="visual-gebench"></a><a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench: Benchmarking Image Generation …</a>        1    9% ▇
-<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    8% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    7% ▇
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.8
+weighted average                                   = 62.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>

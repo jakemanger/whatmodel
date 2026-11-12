@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-10 · 8B params (4B active) · open-mdw-1.1
 
-**score 56.4** ±7.3 · #303 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 56.2** ±7.2 · #312 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▅▅▄▄▄▁▁   #203 of 350*     76%      1
+agent tasks  ▁▁▂▆●▅▅▄▄▄▁▁   #207 of 353*     77%      1
 </pre>
 
-<details><summary>agent tasks · #203 of 350 · 76% of its score</summary>
+<details><summary>agent tasks · #207 of 353 · 77% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">BFCL v3 (maker)</a>   67.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 134/171  medium · avg 58%     76%  blunt · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">BFCL v3 (maker)</a>   67.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 134/171  medium · avg 58%     77%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test             result  vs the others in its run    difficulty        counts  w
 
 <pre>
 test                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">MultiChallenge (maker)</a>   55.6%  ▁·▁·▁▃▆▅▃●█▅ beats 19/30  hard · avg 28%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">MultiChallenge (maker)</a>   55.6%  ▁·▁·▁▅█▃●▃█▃ beats 20/33  hard · avg 28%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">RULER 64k (maker)</a>        85.8%  ▁▁·▂·▂▃▄●▂▁▁ beats 19/26  easy · avg 82%       —  not counted yet: no other model in the …
 </pre>
 
@@ -46,9 +46,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">NVIDIA vendor-reported benchmark scores…</a>        1   76% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       24% ▇▇▇
-weighted average                                   = 56.4
+<a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks">NVIDIA vendor-reported benchmark scores…</a>        1   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       23% ▇▇▇
+weighted average                                   = 56.2
 </pre>
 
 <details><summary>Not counted (2)</summary>

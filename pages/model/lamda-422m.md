@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▆██▅█▃▁▁▁   #528 of 530*    4.8%      1
+math  ●▂▃▆██▅▇▄▁▁▁   #538 of 540*    4.7%      1
 </pre>
 
-<details><summary>math · #528 of 530 · 4.8% of its score</summary>
+<details><summary>math · #538 of 540 · 4.7% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (maker)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 67%    4.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (maker)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 67%    4.7%  sharp · too hard for it
 </pre>
 
 </details>
@@ -37,11 +37,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>       0.9%  ●▃█···▅·▃▃▃▅ beats 0/12   very easy · avg 94%     29%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                         0.8%  ●▃▃▅··▃▃·▃▃█ beats 0/12   easy · avg 83%          22%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                         1.6%  ▃●█···▅·▃▃▃▅ beats 1/12   easy · avg 82%          15%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>    1.9%  ●·▅·▅▃▅·▃▃·█ beats 0/12   medium · avg 52%        14%  too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>    1.9%  ●·▅·▅▃▅·▃▃·█ beats 0/12   medium · avg 53%        14%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   46.4%  ●·····▅▃▃▅▃█ beats 0/12   medium · avg 70%       5.1%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   50.0%  ●·····▃·▁·▄▁ beats 2/12   medium · avg 81%       3.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                20.1%  ●······▁·▁▁▃ beats 2/12   easy · avg 88%         2.9%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                      8.3%  ●▁·▁▁·····▂▁ beats 3/12   medium · avg 48%       0.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                      8.3%  ●▁·▁▁·····▂▁ beats 3/12   medium · avg 49%       0.3%  sharp · too hard for it
 </pre>
 
 </details>

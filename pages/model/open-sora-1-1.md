@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2024-04 · 0.7B params · apache-2.0
 
-**score 31.9** ±6.7 · #81 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.8** ±6.4 · #84 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,14 @@ HPC-AI Tech · released 2024-04 · 0.7B params · apache-2.0
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆●▃▄▆▅█▃▂▂▂▄   #58 of 68*     81%      1
+text to video  ▆●▃▆▆█▇▂▄·▄▅   #60 of 70*     82%      1
 </pre>
 
-<details><summary>text to video · #58 of 68 · 81% of its score</summary>
-
-Trails [LTX-Video 0.9 (2B)](ltx-video-0-9.md), [LaVie (base T2V)](lavie.md) here, though they rank lower overall.
+<details><summary>text to video · #60 of 70 · 82% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   51.4%  ▄·▄█●▄▄·▄·▄█ beats 4/10   medium · avg 71%     81%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   51.4%  ▄·▄█●▄▄·▄·▄█ beats 4/10   medium · avg 71%     82%  at its level
 </pre>
 
 </details>
@@ -34,9 +32,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 31.9
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       18% ▇▇
+weighted average                                   = 31.8
 </pre>
 
 <sub>Licences: ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>

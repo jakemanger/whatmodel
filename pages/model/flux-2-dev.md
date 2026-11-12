@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · 32B params · flux-dev-nc
 
-**score 58.2** ±1.0 · #53 of 144 · from 18 benchmark results across 14 sources
+**score 57.7** ±1.0 · #55 of 146 · from 18 benchmark results across 14 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,38 +16,38 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▃▂▂▁▁   #42 of 126     56%      9
-image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁    #40 of 62     20%      3
+text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #44 of 128     57%      9
+image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂    #42 of 64     20%      3
 </pre>
 
-<details><summary>text to image · #42 of 126 · 56% of its score</summary>
+<details><summary>text to image · #44 of 128 · 57% of its score</summary>
 
-Beats [Wan 2.7 Image](wan-2-7-image.md), [Recraft V4](recraft-v4.md), [Krea 2 Large](krea-2-large.md) here, though they rank higher overall.
+Beats [Wan 2.7 Image](wan-2-7-image.md), [Recraft V4](recraft-v4.md), [Krea 2 Turbo](krea-2-turbo.md) here, though they rank higher overall.
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    42.3%  ▄█▂▂▂●▆▄·▂·▂ beats 9/16   hard · avg 26%       24%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1145.2  ▁▂▃▃▆●▃▂▂▂▁▁ beats 41/75  avg 1027             15%  typical
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     89.5%  ▄····▄█▄▄█▄● beats 10/10  easy · avg 82%      4.8%  typical
-<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    87.2%  ▂█····▄●▄··▂ beats 8/11   easy · avg 79%      4.4%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    41.0%  ▁▂▂●▃▁▂▃·▁·▁ beats 7/22   hard · avg 28%      4.3%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     53.1%  ▄·█···▄●▄▄▄▄ beats 4/8    medium · avg 36%    2.1%  blunt · at its level
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3800  ▄···●··▄·▄·▄ beats 2/5    avg 11.074          1.0%  blunt
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    42.3%  ▄█▂▂▂●▆▄·▂·▂ beats 9/16   hard · avg 27%       24%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1145.1  ▁▁▃▃▆●▃▂▂▂▁▁ beats 41/77  avg 1030             16%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     89.5%  ▄····▄█▄▄█▄● beats 10/10  easy · avg 83%      4.7%  typical
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    87.2%  ▂█····▄●▄··▂ beats 8/11   easy · avg 80%      4.4%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    41.0%  ▁▂▂●▃▁▂▃·▁·▁ beats 7/22   hard · avg 29%      4.2%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     53.1%  ▄·█···▄●▄▄▄▄ beats 4/8    medium · avg 37%    2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3800  ▄···●··▄·▄·▄ beats 2/5    avg 11.083          1.0%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    68.7%  ▄·······●█▄▄ beats 1/5    medium · avg 60%    0.3%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    85.0%  █······●████ beats 1/5    easy · avg 85%      0.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #40 of 62 · 20% of its score</summary>
+<details><summary>image to image / editing · #42 of 64 · 20% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image-Edit](qwen-image-edit.md), [LongCat-Image-Edit](longcat-image-edit.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    52.2%  ▃▃▂·▃▆▂●·▃·▃ beats 13/20  hard · avg 45%     12%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.0  ▂▁▁▃▆●▄█▇▄▂▂ beats 14/53  avg 1153          5.8%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1006.0  ▃▂····▂●▂▃▂▃ beats 6/14   avg 956           2.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.1  ▂▁▁▃▆●▆▆▇▄▃▃ beats 14/55  avg 1158          5.9%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1006.0  ▃▂····▂●▂▃▂▃ beats 6/14   avg 960           2.3%  blunt
 </pre>
 
 </details>
@@ -56,10 +56,10 @@ test                         result  vs the others in its run  difficulty      c
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   19.1%  ▃·█▅▃·●▃···▃ beats 8/10   very hard · avg 7.6%     16%  sharp
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   945.7  ▁▁▁▄●█▂▁▁▂▁▁ beats 9/34   avg 875                 2.4%  typical
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   19.1%  ▃·█▅▃·●▃···▃ beats 8/10   very hard · avg 8.0%     15%  sharp
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   945.7  ▁▁▁▄●█▂▁▁▂▁▁ beats 9/34   avg 878                 2.4%  typical
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   87.6%  ▄···█··●···█ beats 3/5    easy · avg 78%          2.1%  typical
-<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    4.6%  ▃·····█●▃·▃▅ beats 4/9    very hard · avg 4.3%    1.3%  too hard for it
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    4.6%  ▃·····█●▃·▃▅ beats 4/9    very hard · avg 4.4%    1.3%  too hard for it
 <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   29.9%  ▂···▂·▂●▆▅·▂ beats 7/15   hard · avg 31%          0.9%  at its level
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   36.9%  ▅·▃·▃··▃·█●▃ beats 8/9    hard · avg 28%          0.5%  blunt · at its level
 </pre>
@@ -73,8 +73,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   24% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   21% ▇▇▇
-<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   22% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   15% ▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   12% ▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1    5% ▇
 <a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1    4% ▇
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.2
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

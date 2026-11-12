@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.6** ±0.7 · #689 of 732 · from 44 benchmark results across 12 sources
+**score 24.6** ±0.7 · #697 of 740 · from 44 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others            rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁     #458 of 469*     25%      3
+coding  ▁▁●▃▆▇█▆▆▃▃▁     #461 of 472*     25%      3
 math                   not ranked yet       —      1
 </pre>
 
-<details><summary>coding · #458 of 469 · 25% of its score</summary>
+<details><summary>coding · #461 of 472 · 25% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    12.2%  ▁·●▁▃▄▆▅█▃▁▁ beats 3/99   easy · avg 76%     15%  sharp
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   11.0%  ▁·▁●▁▃▄▄▄█▃▁ beats 3/99   easy · avg 70%     10%  sharp
-<a href="https://aclanthology.org/2023.acl-long.773.pdf">MBPP</a>         13.3%  ●▁▁▄▅█▆▅▄▁▂▁ beats 0/86   easy · avg 67%       —  not counted yet: no other model in the …
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    12.2%  ▁·●▁▃▄▆▅█▃▁▁ beats 3/99   easy · avg 77%     15%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   11.0%  ▁·▁●▁▃▄▄▄█▃▁ beats 3/99   easy · avg 71%     10%  sharp
+<a href="https://aclanthology.org/2023.acl-long.773.pdf">MBPP</a>         13.3%  ●▁▁▄▅█▆▅▄▁▂▁ beats 0/86   easy · avg 68%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -47,15 +47,15 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Challenge</a>                        36.5%  ▁·▁··▁▁▇●█▆▃ beats 11/26   easy · avg 82%          19%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">WinoGrande</a>                           64.2%  ▁····▁··▁▂●▄ beats 9/26    easy · avg 86%         8.8%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">WinoGrande</a>                           64.2%  ▁····▁··▁▂●▄ beats 9/26    easy · avg 87%         8.8%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">HellaSwag</a>                            66.2%  ▃···▁▇●█▇▃▁▁ beats 8/26    very easy · avg 91%    7.6%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Easy</a>                             62.2%  ▁▁·▁▁▄●▄█▅▁▃ beats 8/26    easy · avg 85%         3.8%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                                 91.5%  ▁·▁·▁·▃●▃█▄▁ beats 10/26   very easy · avg 97%    3.6%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Easy</a>                             62.2%  ▁▁·▁▁▄●▄█▅▁▃ beats 8/26    easy · avg 85%         3.7%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                                 91.5%  ▁·▁·▁·▃●▃█▄▁ beats 10/26   very easy · avg 98%    3.6%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                                 75.6%  ▁·▁··▁▁▃●▅█▂ beats 8/26    easy · avg 87%         3.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">BoolQ</a>                                65.4%  ▂▃▂▅●▂▅▆█▂▂▂ beats 8/26    easy · avg 88%         3.3%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), last-wo…</a>   68.2%  ▁··▂▁▁▁▂●█▅▃ beats 11/26   very easy · avg 86%    3.3%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   49.8%  ▂·▄·▂█▄▄●▄▂▆ beats 12/21   easy · avg 74%         3.2%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                           29.0%  █·▁▁▃·▁●▅▇▃▄ beats 12/26   hard · avg 49%         2.7%  too hard for it · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                           29.0%  █·▁▁▃·▁●▅▇▃▄ beats 12/26   hard · avg 50%         2.7%  too hard for it · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2023-12-18%2022%3A11%3A14.689150.json">TriviaQA</a>                             39.3%  ▁··▁█▃▃▁●▅▄█ beats 15/28   easy · avg 68%         2.5%  several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2024-01-03%2010%3A52%3A57.129715.json">Natural Questions (closed book)</a>       9.2%  ▁·▁·▁▂▁●·▅▂█ beats 8/28    medium · avg 48%       2.5%  typical
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness) (maker)</a>             20.9%  ······●····· beats 5/5     very hard · avg 25%    2.1%  too hard for it
@@ -66,8 +66,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted) (maker)</a>      35.5%  ▃······▃●··▃ beats 4/5     hard · avg 43%         0.7%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness) (maker)</a>        37.3%  ▄····▄●▄···▄ beats 3/5     medium · avg 57%       0.6%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted) (maker)</a>      34.0%  ██·●██·····█ beats 2/5     very hard · avg 43%    0.6%  too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.7%  ▃▁▁●▁▁▁▁▂█▅▁ beats 43/276  medium · avg 72%       0.6%  noisy
 <a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy) (…</a>   26.7%  ▃······●···▅ beats 2/5     very hard · avg 35%    0.6%  blunt · too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.7%  ▃▁▁●▁▁▁▁▂█▅▁ beats 43/276  medium · avg 72%       0.5%  noisy
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   83.1%  ▄·▄▄·······● beats 3/4     very easy · avg 92%    0.4%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">SuperGLUE WSC (prompted) (maker)</a>     36.5%  ●··········▄ beats 3/5     hard · avg 62%         0.4%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   25.9%  ▂····▂··▂·█● beats 7/8     medium · avg 36%       0.3%  blunt

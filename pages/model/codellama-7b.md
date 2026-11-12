@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 35.7** ±0.5 · #620 of 732 · from 37 benchmark results across 8 sources
+**score 35.7** ±0.5 · #628 of 740 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,39 +16,39 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #419 of 469     79%     11
-math    ▁▁▃●█▆▄█▄▂▁▁   #366 of 431    8.6%      2
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #422 of 472     79%     11
+math    ▁▁▃●█▆▄█▅▂▁▁   #371 of 440    8.6%      2
 </pre>
 
-<details><summary>coding · #419 of 469 · 79% of its score</summary>
+<details><summary>coding · #422 of 472 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            37.8%  ▁·▁▁▃●▆▅█▃▁▁ beats 22/99  easy · avg 76%       35%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           35.4%  ▁·▁▁▁▃●▄▄█▃▁ beats 23/99  easy · avg 70%       14%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            37.8%  ▁·▁▁▃●▆▅█▃▁▁ beats 22/99  easy · avg 77%       35%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           35.4%  ▁·▁▁▁▃●▄▄█▃▁ beats 23/99  easy · avg 71%       14%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 39.0%  █·▅▃▃●▅▃▃▅·▅ beats 7/15   easy · avg 81%       10%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 62%    4.0%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.8%  ▁···▁▁▂●▇█▆▂ beats 16/75  easy · avg 66%      3.2%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>                   35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 56%    2.7%  at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>                   35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 57%    2.7%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (maker)</a>                   34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 54%    2.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 49%    2.3%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.9%  ▄●█▃▄▇▄▁▇▃·▁ beats 7/35   medium · avg 46%    2.1%  typical
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  easy · avg 83%      1.9%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.2%  ▁·▁▁▄█●▄█▁▅▅ beats 13/35  medium · avg 51%    1.7%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  easy · avg 84%      1.9%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.2%  ▁·▁▁▄█●▄█▁▅▅ beats 13/35  medium · avg 52%    1.7%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #366 of 431 · 8.6% of its score</summary>
+<details><summary>math · #371 of 440 · 8.6% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 1/25   easy · avg 75%    6.7%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">MATH</a>     4.1%  ▃·●····▃···█ beats 1/5    hard · avg 27%    2.0%  several runs
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 1/25   easy · avg 76%    6.6%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>     4.1%  ▃·●····▃···█ beats 1/5    hard · avg 28%    2.0%  several runs
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25    easy · avg 74%      3.0%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25    medium · avg 73%    2.5%  at its level · several runs
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58    medium · avg 48%    2.5%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58    medium · avg 49%    2.5%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▄▁▁▂▁●█▇▃▂▃▂ beats 35/140  easy · avg 75%      1.2%  sharp · at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                           62.3%  ▁▁▁▁▂▁▁●▇█▃▁ beats 45/131  easy · avg 84%      0.7%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▂▁▁▁▂▄▄●▅█▅▁ beats 28/68   medium · avg 45%    0.6%  typical

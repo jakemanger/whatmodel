@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 58.0** ±4.4 · #31 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 57.4** ±4.4 · #31 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -14,22 +14,24 @@ NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #22 of 68*     51%      1
-image to video  ▁▂·▂▅█●▄▅▆▃▄   #26 of 50*     41%      1
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #23 of 70*     51%      1
+image to video  ▁▂·▂▅█●▄▅▅▃▅   #27 of 51*     41%      1
 </pre>
 
-<details><summary>text to video · #22 of 68 · 51% of its score</summary>
+<details><summary>text to video · #23 of 70 · 51% of its score</summary>
 
-Trails [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank lower overall.
+Beats [Kling 2.6 Pro](kling-2-6-pro.md) here, though they rank higher overall. Trails [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Seedance 1.5 Pro](seedance-1-5-pro.md), [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   89.3%  █▄▄··▄▄▄●▄·▄ beats 7/9    easy · avg 85%     51%  typical
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   89.3%  █▄▄··▄▄▄●▄·▄ beats 7/9    very easy · avg 85%     51%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #26 of 50 · 41% of its score</summary>
+<details><summary>image to video · #27 of 51 · 41% of its score</summary>
+
+Trails [Runway Gen-4.5](runway-gen-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -46,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 58.0
+weighted average                                   = 57.4
 </pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 28.8** ±1.9 · comparison only: no current run option verified · from 7 benchmark results across 4 sources
+**score 28.7** ±1.9 · comparison only: no current run option verified · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ coding  █···▄·▄·●··▄   #2 of 6*     71%      1
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    8.1%  ██··█··█·●·█ beats 4/5    medium · avg 59%     71%  sharp
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    8.1%  ██··█··█·●·█ beats 4/5    medium · avg 60%     71%  sharp
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-427"></a><a href="https://aclanthology.org/2023.findings-emnlp.427.pdf">Conic10K: A Challenging Math Problem Un…</a>        1    5% ▇
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    1% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 28.8
+weighted average                                   = 28.7
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt)) · Conic10K: A Challenging Math Problem Understanding and Reasoning Dataset ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-427-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-03 · proprietary
 
-**score 49.7** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.5** ±3.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆█●▅█▃▁▁▁   #312 of 533*     40%      1
+math  ▁▂▃▆█●▅▇▄▁▁▁   #319 of 543*     40%      1
 </pre>
 
-<details><summary>math · #312 of 533 · 40% of its score</summary>
+<details><summary>math · #319 of 543 · 40% of its score</summary>
 
-Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run    difficulty      counts  why
@@ -45,9 +45,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 49.7
+weighted average                                   = 49.5
 </pre>
 
 <sub>Licences: Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt))</sub>

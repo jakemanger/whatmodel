@@ -6,7 +6,7 @@
 
 Pruna · released 2026-02 · closed weights
 
-**score 55.0** ±1.8 · #38 of 93 · from 3 benchmark results across 2 sources
+**score 54.1** ±1.8 · #40 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,29 +14,29 @@ Pruna · released 2026-02 · closed weights
 
 <pre>
 task            vs the others        rank  counts  tests
-text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #23 of 68*     58%      1
-image to video  ▁▂·▂▅●▅▄▅▆▃▄   #34 of 50*     41%      2
+text to video   ▆▄▃▆▆█●▂▄·▄▅   #25 of 70*     60%      1
+image to video  ▁▂·▂▅●▅▄▅▅▃▅   #36 of 51*     38%      2
 </pre>
 
-<details><summary>text to video · #23 of 68 · 58% of its score</summary>
+<details><summary>text to video · #25 of 70 · 60% of its score</summary>
 
 Beats [Seedance 1.0 Pro](seedance-1-0-pro.md), [Kling O1 Pro](kling-o1-pro.md) here, though they rank higher overall.
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1207.3  ▂▂▃▆●▆·▆▅▁▂▇ beats 17/41  avg 1147       58%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1206.5  ▂▂▃▆●▃·▇▂▁█▃ beats 17/44  avg 1154       60%  typical
 </pre>
 
 </details>
 
-<details><summary>image to video · #34 of 50 · 41% of its score</summary>
+<details><summary>image to video · #36 of 51 · 38% of its score</summary>
 
-Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 2.3](hailuo-2-3.md), [Vidu Q2 Turbo](vidu-q2-turbo.md) here, though they rank lower overall.
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 02](hailuo-02.md), [Hailuo 2.3](hailuo-2-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1243.6  ▁▁▁▁▄●▃▆▃▂▄█ beats 14/40  avg 1189           38%  typical
-<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   25.3%  ●█···█··█·██ beats 0/5    hard · avg 25%    2.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1240.5  ▁▁▁▁▄●▃▇▂▃▅█ beats 13/42  avg 1197           36%  typical
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   25.3%  ●█···█··█·██ beats 0/5    hard · avg 25%    2.3%  blunt · at its level
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                  1    2% ▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 55.0
+weighted average                        = 54.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>

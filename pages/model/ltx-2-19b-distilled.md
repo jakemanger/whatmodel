@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-01 · 19B params · ltx-2-community
 
-**score 47.0** ±7.7 · #59 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±7.6 · #58 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,14 @@ Lightricks · released 2026-01 · 19B params · ltx-2-community
 
 <pre>
 task           vs the others        rank  counts  tests
-text to video  ▆▄▃▄●▅█▃▂▂▂▄   #38 of 68*     75%      1
+text to video  ▆▄▃▆●█▇▂▄·▄▅   #39 of 70*     76%      1
 </pre>
 
-<details><summary>text to video · #38 of 68 · 75% of its score</summary>
-
-Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
+<details><summary>text to video · #39 of 70 · 76% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   42.4%  ▅·●█▃·▅▃▅▃▃▃ beats 2/14   hard · avg 44%     75%  blunt · at its level
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   42.4%  ▅·●█▃·▅▃▅▃▃▃ beats 2/14   hard · avg 45%     76%  blunt · at its level
 </pre>
 
 </details>
@@ -34,9 +32,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1   75% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       25% ▇▇▇
-weighted average                                   = 47.0
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1   76% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       24% ▇▇▇
+weighted average                                   = 46.6
 </pre>
 
 <sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>

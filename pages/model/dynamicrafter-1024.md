@@ -6,7 +6,7 @@
 
 CUHK / Tencent AI Lab (DynamiCrafter) · released 2024-02
 
-**score 26.8** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.6** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ CUHK / Tencent AI Lab (DynamiCrafter) · released 2024-02
 
 <pre>
 task            vs the others        rank  counts  tests
-image to video  ●▁▂▂██▄▃▃▄▂▂   #73 of 74*     92%      2
+image to video  ●▁▂▂█▇▅▃▃▃▃▃   #75 of 76*     93%      2
 </pre>
 
-<details><summary>image to video · #73 of 74 · 92% of its score</summary>
+<details><summary>image to video · #75 of 76 · 93% of its score</summary>
 
 Beats [Pika 2.2](pika-2-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   734.9  ●······██··█ beats 0/6    avg 1002           65%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   734.9  ●······██··█ beats 0/6    avg 1008           65%  typical
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   68.3%  ●······▅·█▅█ beats 0/10   easy · avg 81%     28%  blunt · at its level
 </pre>
 
@@ -35,9 +35,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        8% ▇
-weighted average                                   = 26.8
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 26.6
 </pre>
 
 <sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

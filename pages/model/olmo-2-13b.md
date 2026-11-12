@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 47.5** ±1.3 · #418 of 732 · from 11 benchmark results across 3 sources
+**score 47.3** ±1.3 · #426 of 740 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #254 of 402*     15%      2
-math            ▁▁▃●█▆▄█▄▂▁▁   #346 of 431*     19%      2
+chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #256 of 404*     14%      2
+math            ▁▁▃●█▆▄█▅▂▁▁   #357 of 440*     19%      2
 </pre>
 
-<details><summary>chat &amp; writing · #254 of 402 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #256 of 404 · 14% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (m…</a>   39.5%  ▃▃·▁▁█●▅·▁·▁ beats 15/22  medium · avg 39%     11%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (maker)</a>    82.6%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 15/22  easy · avg 78%      3.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (m…</a>   39.5%  ▃▃·▁▁█●▅·▁·▁ beats 15/22  medium · avg 40%     11%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (maker)</a>    82.6%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 15/22  easy · avg 79%      3.8%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #346 of 431 · 19% of its score</summary>
+<details><summary>math · #357 of 440 · 19% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
@@ -48,8 +48,8 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MMLU (maker)</a>                         68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 75%          28%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (maker)</a>               63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    medium · avg 72%        25%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (maker)</a>                         68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 76%          28%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (maker)</a>               63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    medium · avg 73%        25%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (maker)</a>                        28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 31%         5.0%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 67%       3.6%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 84/146  easy · avg 82%         2.5%  at its level · noisy
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    6% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.5
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 46.1** ±0.8 · #453 of 732 · from 33 benchmark results across 8 sources
+**score 45.9** ±0.8 · #461 of 740 · from 33 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,42 +16,42 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▄▅▅▄▄▂▁   #296 of 313*    1.7%      1
-chat &amp; writing      ▁▁▁▃●▄▆█▆▇▇▃   #336 of 402*    3.6%      2
-math                ▁▁▃▅●▆▄█▄▂▁▁    #275 of 431     28%      4
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #136 of 153     10%      9
+agent tasks         ▁▁●▆█▅▅▅▄▅▂▁   #299 of 316*    1.7%      1
+chat &amp; writing      ▁▁▁▃●▄▆█▇▇▇▃   #338 of 404*    3.6%      2
+math                ▁▁▃▅●▆▄█▅▂▁▁    #286 of 440     28%      4
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #137 of 154     10%      9
 </pre>
 
-<details><summary>agent tasks · #296 of 313 · 1.7% of its score</summary>
+<details><summary>agent tasks · #299 of 316 · 1.7% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>    6.1%  ●··▆▄▂▄▂▆▆█▄ beats 0/23   very hard · avg 13%    1.7%  sharp
+<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>    6.1%  ●··▆▄▂▄▂▆▆█▄ beats 0/23   very hard · avg 14%    1.7%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #336 of 402 · 3.6% of its score</summary>
+<details><summary>chat &amp; writing · #338 of 404 · 3.6% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 46%    2.4%  at its level · small run
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified)</a>     72.5%  ▄···▄●▄····▄ beats 2/5    easy · avg 78%      1.2%  at its level
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 47%    2.4%  at its level · small run
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified)</a>     72.5%  ▄···▄●▄····▄ beats 2/5    easy · avg 79%      1.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #275 of 431 · 28% of its score</summary>
+<details><summary>math · #286 of 440 · 28% of its score</summary>
 
-Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     70.2%  ●▄··▄█▄····▄ beats 0/7    easy · avg 80%          13%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     70.2%  ●▄··▄█▄····▄ beats 0/7    easy · avg 81%          13%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         79.0%  ●····█··▄·▄█ beats 1/7    very easy · avg 86%     10%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       47.0%  ●·▄·▄▄▄·▄··█ beats 0/7    easy · avg 69%         2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   16.3%  ●··▄██··▄··▄ beats 0/7    hard · avg 29%         2.2%  typical
@@ -59,20 +59,20 @@ test                         result  vs the others in its run  difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #136 of 153 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #137 of 154 · 10% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   76.6%  █·▄·······▄● beats 5/5    easy · avg 78%      3.2%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   76.6%  █·▄·······▄● beats 5/5    easy · avg 78%      3.3%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          53.1%  ▄▄▄●·······▄ beats 4/5    medium · avg 61%    2.4%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             69.2%  ●·····▃··▃·▃ beats 1/5    easy · avg 79%      1.3%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                  65.2%  ▄▄·▄·····●·▄ beats 3/5    easy · avg 66%      1.1%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     58.3%  ▄···●··▄▄··▄ beats 2/5    easy · avg 68%      0.6%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      73.7%  ▄··▄··●··▄·▄ beats 3/5    easy · avg 84%      0.6%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        73.5%  █··█●█·█···█ beats 2/5    easy · avg 81%      0.4%  blunt
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       74.1%  █···●▄···▄·▄ beats 2/5    easy · avg 81%      0.3%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       74.1%  █···●▄···▄·▄ beats 2/5    easy · avg 82%      0.3%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                         79.1%  ▄······▄··●█ beats 3/5    easy · avg 79%      0.2%  blunt · noisy
 </pre>
 
@@ -82,17 +82,17 @@ test                           result  vs the others in its run  difficulty     
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 69.8%  ▄···●▄·▄█··█ beats 1/7     easy · avg 74%          12%  at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3927  ▁▄●▃▇▄█▃▅▁▁▁ beats 4/30    avg 0.418               12%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 54%       8.4%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 69.8%  ▄···●▄·▄█··█ beats 1/7     easy · avg 75%          12%  at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3927  ▁▄●▃▇▄█▃▅▁▁▁ beats 4/30    avg 0.420               12%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 55%       8.5%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.6%  ▄···●·▄·█·▄▄ beats 1/7     hard · avg 37%         6.0%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   39.3%  ▂▃●▂▆▃█▅█▅▃▆ beats 4/34    medium · avg 41%       4.8%  blunt · at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 42%       3.7%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        38.4%  ●··▃▃··▅···█ beats 0/7     medium · avg 56%       2.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 42%       3.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        38.4%  ●··▃▃··▅···█ beats 0/7     medium · avg 57%       2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             39.4%  ●···▄·█·▄·▄█ beats 0/7     medium · avg 59%       2.4%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 3/7     medium · avg 46%       2.0%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.8%  ▃·▁▁▂▁▂▅●▇▄▁ beats 50/100  medium · avg 67%       1.2%  sharp · at its level · noisy
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   47.0%  ▄·▄··●▄····▄ beats 3/5     medium · avg 57%       1.1%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   47.0%  ▄·▄··●▄····▄ beats 3/5     medium · avg 58%       1.1%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   81.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 72/146  easy · avg 82%         0.9%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   75.8%  ●▂▁▂▅█▂▃▄▃▁▁ beats 0/98    very easy · avg 90%    0.0%  blunt
 </pre>
@@ -114,7 +114,7 @@ source                                    results  share of the score
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.1
+weighted average                                   = 45.9
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

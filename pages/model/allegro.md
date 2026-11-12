@@ -6,7 +6,7 @@
 
 Rhymes AI · released 2024-10 · 2.8B params · apache-2.0
 
-**score 35.0** ±2.3 · #79 of 93 · from 3 benchmark results across 2 sources
+**score 35.0** ±2.3 · #80 of 94 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Rhymes AI · released 2024-10 · 2.8B params · apache-2.0
 
 <pre>
 task           vs the others       rank  counts  tests
-text to video  ▆▄●▄▆▅█▃▂▂▂▄   #54 of 68     98%      3
+text to video  ▆▄●▆▆█▇▂▄·▄▅   #56 of 70     98%      3
 </pre>
 
-<details><summary>text to video · #54 of 68 · 98% of its score</summary>
+<details><summary>text to video · #56 of 70 · 98% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1001.9  ▃▃···▅●·▃▅·█ beats 4/10   avg 1229           49%  sharp
-<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   56.1%  ▄▄·█··█▄▄●▄▄ beats 8/10   easy · avg 73%     31%  at its level
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1001.9  ▃▃···▅●·▃▅·█ beats 4/10   avg 1231           48%  sharp
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   56.1%  ▄▄·█··█▄▄●▄▄ beats 8/10   easy · avg 74%     32%  at its level
 <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   50.7%  ▄▄·█▄●▄··▄▄▄ beats 6/10   easy · avg 70%     18%  at its level
 </pre>
 
@@ -34,13 +34,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   49% ▇▇▇▇▇▇
-<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   48% ▇▇▇▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   50% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 35.0
 </pre>
 
-<sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
+<sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt))</sub>
 
 ## How to run it
 

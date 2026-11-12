@@ -6,7 +6,7 @@
 
 ByteDance Seed · proprietary
 
-**score 71.0** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 70.8** ±3.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ agent tasks  ●··········█   #2 of 2*     95%      1
 
 <pre>
 test                      result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (maker)</a>   92.1%  ▁·▅█▆▅▂▃●▂▃▁ beats 69/89  hard · avg 28%     95%  sharp · small run
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (maker)</a>   92.1%  ▁·▅█▆▅▂▃●▂▃▁ beats 69/89  hard · avg 29%     95%  sharp · small run
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (su…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 71.0
+weighted average                                   = 70.8
 </pre>
 
 <sub>Licences: ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
