@@ -88320,5 +88320,421 @@
       ]
     },
     "identity_note": "Maritaca AI's Portuguese/English model built on Qwen/Qwen3.5-4B by continued pretraining plus post-training; Think (default) and Instruct modes; text+image (vision encoder) with an MTP layer. BF16 weights committed 2026-11-02 (commit fe2c063); later commits to the pinned sha fe3a358 (2026-11-10) are card edits. LICENSE is Apache 2.0 with 'Copyright 2026 Alibaba Cloud' (inherited Qwen notice). Hosted on Maritaca's own API as S5-nano (256K context there). Results use the Think table (highest reasoning setting); Instruct-mode values not imported. Card scores are Maritaca's own runs of all listed models; other models' columns not used. API price: Maritaca's own model docs (observed 2026-11-12): 'R$ 0.10 per 1M input tokens and R$ 0.60 per 1M output tokens'; accepted API names S5-nano / s5-nano. Prices are in BRL, so no USD price_in/price_out recorded (no conversion); a first-party-maritaca ledger entry would be needed before recording any price."
+  },
+  {
+    "id": "inkling-2-small",
+    "name": "Inkling 2 Small (594B-A17B)",
+    "provider": "Thinking Machines",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+    "open_weights": false,
+    "license": "proprietary",
+    "params_b": 594,
+    "active_b": 17,
+    "params_note": "Model card 'Parameters: 594B total parameters, 17B active'; 48-layer MoE, 8 of 384 experts per token.",
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/thinkingmachines/inkling-2-small.toml",
+    "context_note": "models.dev limit.context = 1_048_576 (sources: TML announcement and model card). Model card: 'Inkling 2 Small supports a context window of up to 1M tokens.' The Tinker serverless endpoint serves the 256K variant thinkingmachines/Inkling-2-Small:peft:262144.",
+    "api": {
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+      "provider": "Thinking Machines (Tinker)"
+    },
+    "local": null,
+    "model_repo": null,
+    "identity_note": "New, distinct second-generation model, not a revision of inkling-small (266B-A12B, open weights, July 2026). Announced 2026-11-05 ('Today we are introducing our second model generation with Inkling 2 Small'); 594B total / 17B active MoE with image input. Availability: inference and fine-tuning on Tinker (serverless inference in beta); API-only with closed weights as of 2026-11-12. Corresponds exactly to Arena entry 'Inkling 2 Small' (org 'thinky', licence 'Proprietary') on text_style_control, webdev and agent boards. Thinking Machines tested early checkpoints on OpenCode under the name 'Fledge-Alpha' (not the same label; not mapped). Licence: Model card: 'License Tinker Terms of Use'. Announcement (2026-11-05): available through Tinker 'with closed weights'; Thinking Machines 'intend[s] to make the full weights available under an Apache 2.0 license next week'. No thinkingmachines/Inkling-2-Small repo on Hugging Face as of 2026-11-12 (HF API author=thinkingmachines lists Inkling, Inkling-Small, Inkling-NVFP4, Inkling-Small-NVFP4 only). Re-check and switch to open weights + apache-2.0 only when the repo exists. List price not recorded (USD per 1M tokens, Tinker Serverless Inference (Beta) table, row 'Inkling 2 Small | thinkingmachines/Inkling-2-Small:peft:262144 | 256K | $0.30 ($0.03 cached) | $1.00'; cached prefill $0.03 excluded. Page: 'All prices are per million tokens.' Serverless inference is in beta (waitlist for production use). Not a models.dev price: at 5056efa models.dev only has free promotional listings (opencode inkling-2-small-free, kilo/openrouter inkling-2-small:free). First-party Thinking Machines docs, observed 2026-11-12.)",
+    "identity_sources": [
+      "https://thinkingmachines.ai/news/inkling-2-small/",
+      "https://thinkingmachines.ai/model-card/inkling-2-small/",
+      "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "Inkling 2 Small"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+        "reported_label": "Inkling 2 Small"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet",
+        "reported_label": "Inkling 2 Small"
+      }
+    ],
+    "params_b_source": "https://thinkingmachines.ai/model-card/inkling-2-small/"
+  },
+  {
+    "id": "muse-ember",
+    "name": "Muse Ember",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://research.meta.ai/blog/muse-ember",
+    "source": "https://research.meta.ai/blog/muse-ember",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/meta/muse-ember-1.0.toml",
+    "context_note": "models.dev limit.context = 1_048_576, output 524_288. Meta docs (dev.meta.ai/docs/muse-ember): 'Context window | 1,048,576 tokens'. Observed 2026-11-12.",
+    "api": {
+      "url": "https://dev.meta.ai/docs/muse-ember",
+      "provider": "Meta",
+      "price_in": 0.1,
+      "price_out": 0.5,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/meta/models/muse-ember-1.0.toml",
+      "price_note": "USD per 1M tokens, Meta Model API Standard mode for muse-ember-1.0 (no Contributor-mode variant), requests up to 200K input tokens; cached input $0.004 excluded. Requests over 200K input tokens are billed in full at $0.30 in / $0.012 cached / $1.50 out. Same figures on Meta's own pricing page https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing and in the announcement. Observed 2026-11-12."
+    },
+    "local": null,
+    "identity_note": "Announced 2026-11-09 by Meta ('Introducing Our Smallest, Most Efficient Model: Muse Ember'); generally available the same day on Meta Model API and Muse Code as muse-ember-1.0. Distinct from Muse Spark and Muse Wonder (Meta: Muse Ember is the first model trained using Muse Wonder Full). Parameters not published. Arena entry 'Muse Ember (Max)' (webdev, org 'meta', Proprietary) is this model at max reasoning effort; Meta's own evaluations also use max effort. Mapped like 'Muse Wonder (Max)' -> muse-wonder.",
+    "identity_sources": [
+      "https://research.meta.ai/blog/muse-ember",
+      "https://dev.meta.ai/docs/muse-ember",
+      "https://dev.meta.ai/docs/pricing-rate-limits",
+      "https://research.meta.ai/static/muse-ember-evaluation-report"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+        "reported_label": "Muse Ember (Max)"
+      }
+    ]
+  },
+  {
+    "id": "u2-flash",
+    "name": "U2 Flash",
+    "provider": "Unisound",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://maas.unisound.com/docs/release",
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "open_weights": false,
+    "license": "proprietary",
+    "params_note": "Not recorded: Unisound's release log says 'total parameters about 266B, about 10B activated per inference' (总参数约 266B、单次推理仅激活约 10B) while the product page says '300B规模' (300B scale). Approximate and inconsistent, so params_b/active_b omitted.",
+    "api": {
+      "url": "https://maas.unisound.com/models/u2-flash",
+      "provider": "Unisound MaaS"
+    },
+    "local": null,
+    "identity_note": "Unisound (云知声) U2-Flash, API model id 'u2-flash', released on Unisound's open platform 2026-09-15 (MaaS release log '2026 年 9 月 15 日 … U2-Flash 发布'); text in/out, sparse MoE, thinking strength none/low/high/max. Generally available via Unisound MaaS API and Token Plan. Corresponds to Arena webdev entry 'U2 Flash' (org 'unisound', Proprietary). Licence: No weights found: Unisound's release log calls U2-Decision 'open-sourced' (开源) but makes no such statement for U2-Flash; no Hugging Face repo matches 'U2-Flash' (HF API search, 2026-11-12). Arena lists it Proprietary. Context window not recorded (Unisound MaaS model page key-info table: '上下文窗口 | 1M', '最大输出 | 128K'. Exact token count not stated; 1M read as 1,000K. No models.dev toml at 5056efa. Observed 2026-11-12.). Price: No USD price published. Unisound MaaS price page (https://maas.unisound.com/docs/price/overview) lists 'U2-Flash | 0.6 | 0.06 | 1.2' CNY per 1M tokens (input / cache hit / output), observed 2026-11-12; a separate 'recharge 40% off' (限时6折) promotion is shown. Numeric USD fields left empty; no models.dev toml.",
+    "identity_sources": [
+      "https://www.unisound.com/u2flash",
+      "https://maas.unisound.com/models/u2-flash",
+      "https://maas.unisound.com/docs/release",
+      "https://maas.unisound.com/docs/price/overview"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+        "reported_label": "U2 Flash"
+      }
+    ]
+  },
+  {
+    "id": "hy4",
+    "name": "Hy4",
+    "provider": "Tencent",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://cloud.tencent.com/document/product/1823/130675",
+    "source": "https://cloud.tencent.com/document/product/1823/130051",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/tencent/hy4.toml",
+    "context_note": "models.dev limit.context = 1_048_576 (input 983_010, output 65_536). Tencent TokenHub model list row: 'Hy4 | hy4 | … | 1M | 960k | 64k' (context / max input / max output). Observed 2026-11-12.",
+    "api": {
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "provider": "Tencent Cloud TokenHub"
+    },
+    "local": null,
+    "identity_note": "Separate released API model, not hy4-preview: TokenHub added 'Hy4' (model parameter hy4) on 2026-11-04 (product updates: '新增支持模型 | 新增支持 Hy4 模型。 | 2026-11-04'), with image understanding that the hy4-preview row lacks; Tencent's 2026-11-09 notice retires hy4-preview and tells users to migrate to 'Hy4 模型（model 参数值：hy4）', auto-switching remaining users from 2026-12-07. Weights unpublished; parameters for the stable model not stated by Tencent. Corresponds to Arena agent-board entry 'Hy4' (org 'tencent', Proprietary); the separate Arena label 'Hy4 preview' stays on hy4-preview. Licence: API-only as of 2026-11-12: Tencent's Hugging Face org has tencent/Hy4-preview and tencent/Hy4-preview-FP8 but no Hy4 repo (HF API search 'Hy4', author=tencent). Third-party news says Tencent promised Hy4 weights 'in the coming days'; not found on a Tencent page, so not recorded. Arena agent board lists 'Hy4' as Proprietary. List price not recorded (USD per 1M tokens from models.dev tencent-tokenhub/hy4.toml (cache read $0.042 excluded). REVIEW: the toml comment says it carries the Hy4 preview listing converted from CNY because no separate Hy4 row existed when written. Tencent's own China-site price page (https://cloud.tencent.com/document/product/1823/130055, observed 2026-11-12) now has a Hy4 row 'Hy4 | hy4 | - | - | 6 | 18 | 0.3' CNY per 1M tokens (input/output/cache hit), identical to Hy4 preview, so the converted USD figures match the official CNY list price. A limited-time 50% discount on Hy4 until 2026-12-31 23:59:59 Beijing time is excluded. The international USD page (tencentcloud.com/document/product/1300/78937) returned a bot challenge to automated fetching and was not used. Drop the numeric price if the reviewer requires a USD figure printed by Tencent.)",
+    "identity_sources": [
+      "https://cloud.tencent.com/document/product/1823/130675",
+      "https://cloud.tencent.com/document/product/1823/130051",
+      "https://cloud.tencent.com/document/product/1823/130055",
+      "https://cloud.tencent.com/announce/detail/2559"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet",
+        "reported_label": "Hy4"
+      }
+    ]
+  },
+  {
+    "id": "doubao-seed-2-1-pro-260628",
+    "name": "Doubao Seed 2.1 Pro (260628)",
+    "provider": "ByteDance Seed",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity",
+    "source": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 256,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.1-pro.toml",
+    "context_note": "models.dev seed-2.1-pro limit.context = 256_000. Volcengine model list row doubao-seed-2-1-pro-260628: '上下文窗口: 256K, 最大输入: 256K, 最大回答: 256K'. The newer doubao-seed-2-1-pro-260915 has 1024K (different checkpoint).",
+    "api": {
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "provider": "Volcengine Ark",
+      "price_in": 0.8906,
+      "price_out": 4.45301,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-1-pro-260628.toml",
+      "price_note": "USD per 1M tokens from models.dev (CNY list price converted at 6.737012 CNY/USD, 2026-08-26); cache read excluded. Volcengine's own pricing page (observed 2026-11-12) lists doubao-seed-2.1-pro 'input [0, 1024]K: 6.00 / cache hit 1.20 / output 30.00' CNY per 1M tokens, consistent."
+    },
+    "local": null,
+    "identity_note": "Exact Volcengine Ark model id 'doubao-seed-2-1-pro-260628' (model list, observed 2026-11-12), the Seed2.1 Pro checkpoint released with the Seed2.1 family (ByteDance Seed blog dated 2026-06-23: 'Doubao and Volcano Engine users can now start to access Doubao Seed 2.1'). Distinct from seed-2-1-pro-preview (Arena 'seed-2.1-pro-preview', a pre-release Code Arena checkpoint whose own note says it is not asserted to equal the released checkpoints) and from doubao-seed-2-1-pro-260915 (later checkpoint, 1024K context). Matches Epoch version 'doubao-seed-2.1-pro-260628' (dots for hyphens), Epoch release date 2026-06-23.",
+    "identity_sources": [
+      "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/benchmarks/use-this-data",
+        "reported_label": "doubao-seed-2.1-pro-260628 (Doubao Seed 2.1 Pro)"
+      }
+    ]
+  },
+  {
+    "id": "doubao-seed-2-1-turbo-260628",
+    "name": "Doubao Seed 2.1 Turbo (260628)",
+    "provider": "ByteDance Seed",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity",
+    "source": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 256,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.1-turbo.toml",
+    "context_note": "models.dev seed-2.1-turbo limit.context = 256_000. Volcengine model list row doubao-seed-2-1-turbo-260628: '上下文窗口: 256K'.",
+    "api": {
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "provider": "Volcengine Ark",
+      "price_in": 0.4453,
+      "price_out": 2.22651,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-1-turbo-260628.toml",
+      "price_note": "USD per 1M tokens from models.dev (CNY converted at 6.737012, 2026-08-26); cache read excluded. Volcengine pricing page (observed 2026-11-12): doubao-seed-2.1-turbo 'input [0, 256]K: 3.00 / cache hit 0.60 / output 15.00' CNY per 1M tokens, consistent."
+    },
+    "local": null,
+    "identity_note": "Exact Volcengine Ark model id 'doubao-seed-2-1-turbo-260628' (model list, observed 2026-11-12). Released month from the id suffix and the Seed2.1 family release (blog 2026-06-23); the blog itself does not name Turbo. No existing database identity. Matches Epoch version 'doubao-seed-2.1-turbo-260628', release date 2026-06-23.",
+    "identity_sources": [
+      "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/benchmarks/use-this-data",
+        "reported_label": "doubao-seed-2.1-turbo-260628 (Doubao Seed 2.1 Turbo)"
+      }
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-pro-260215",
+    "name": "Doubao Seed 2.0 Pro (260215)",
+    "provider": "ByteDance Seed",
+    "category": "llm",
+    "released": "2026-02",
+    "released_source": "https://seed.bytedance.com/en/seed2",
+    "source": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 256,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.0-pro.toml",
+    "context_note": "models.dev seed-2.0-pro limit.context = 256_000. Volcengine model list row doubao-seed-2-0-pro-260215: '上下文窗口: 256K, 最大输入: 224K, 最大回答: 128K'.",
+    "api": {
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "provider": "Volcengine Ark",
+      "price_in": 0.47499,
+      "price_out": 2.37494,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-0-pro-260215.toml",
+      "price_note": "USD per 1M tokens, base tier (input up to 32K) from models.dev (CNY converted at 6.737012, 2026-08-26); higher tiers for >32K and >128K input and cache excluded. Volcengine pricing page (observed 2026-11-12): doubao-seed-2.0-pro '[0, 32]K: 3.2 / 0.64 / 16.0' CNY. Being retired: Volcengine deprecation notice gives EOM 2026-09-24 and EOS 2026-11-24 14:00 UTC+8 for doubao-seed-2-0-pro-260215 (model list marks it 即将下线); set api to null after EOS."
+    },
+    "local": null,
+    "identity_note": "Exact Volcengine Ark model id 'doubao-seed-2-0-pro-260215'. ByteDance Seed's Seed2.0 page reports a separate column 'Seed2.0 Pro（0215）' (Seed2.0 model card path /seed2/0214/). Distinct from dola-seed-2-0-pro: that entry is Arena's 'dola-seed-2.0-pro' (Dola is the international app; the Seed2.0 page's BytePlus 'Try Now' link uses a different checkpoint, seed-2-0-pro-260328), and no maker page ties it to 260215. Matches Epoch version 'doubao-seed-2.0-pro-260215' (Epoch runs 2026-10-28/30, before EOS).",
+    "identity_sources": [
+      "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "https://seed.bytedance.com/en/seed2",
+      "https://docs.volcengine.com/docs/ark/model-deprecation-notice?lang=zh"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/benchmarks/use-this-data",
+        "reported_label": "doubao-seed-2.0-pro-260215 (Doubao-Seed-2.0 Pro)"
+      }
+    ]
+  },
+  {
+    "id": "doubao-seed-2-0-lite-260428",
+    "name": "Doubao Seed 2.0 Lite (260428)",
+    "provider": "ByteDance Seed",
+    "category": "llm",
+    "released": "2026-04",
+    "released_source": "https://seed.bytedance.com/en/seed2",
+    "source": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 256,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.0-lite.toml",
+    "context_note": "models.dev seed-2.0-lite limit.context = 256_000. Volcengine model list row doubao-seed-2-0-lite-260428 (LTS): '上下文窗口: 256K, 最大输入: 224K, 最大回答: 128K'.",
+    "api": {
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "provider": "Volcengine Ark",
+      "price_in": 0.08906,
+      "price_out": 0.53436,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-0-lite-260428.toml",
+      "price_note": "USD per 1M tokens, base tier (input up to 32K) from models.dev (CNY converted at 6.737012, 2026-08-26); higher tiers, audio input and cache excluded. Volcengine pricing page (observed 2026-11-12): doubao-seed-2.0-lite '[0, 32]K: 0.6 / … / 3.6' CNY, consistent. LTS model on Volcengine."
+    },
+    "local": null,
+    "identity_note": "Exact Volcengine Ark model id 'doubao-seed-2-0-lite-260428' (LTS). ByteDance Seed's Seed2.0 page: 'Seed2.0 Lite was upgraded at the end of April' and reports 'Seed2.0 Lite（0428）' and 'Seed2.0 Lite（0215）' as separate columns. Distinct from seed-2-0-lite, which is the 'Seed2.0 Lite' of the arXiv Seed2.0 model card (2607.00248v1); that card names no dated checkpoint, so it may be 0215 or 0428. Matches Epoch version 'doubao-seed-2.0-lite-260428' (Doubao Seed 2.0 Lite (Apr 2026)).",
+    "identity_sources": [
+      "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "https://seed.bytedance.com/en/seed2"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/benchmarks/use-this-data",
+        "reported_label": "doubao-seed-2.0-lite-260428 (Doubao Seed 2.0 Lite (Apr 2026))"
+      }
+    ]
+  },
+  {
+    "id": "gpt-image-2-6-sunburst",
+    "name": "GPT-Image-2.6 Sunburst",
+    "provider": "OpenAI",
+    "category": "image",
+    "released": "2026-11",
+    "released_source": "https://developers.openai.com/api/docs/changelog",
+    "source": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst",
+      "provider": "OpenAI"
+    },
+    "identity_note": "OpenAI API changelog, Nov 4 2026: 'Released GPT-Image-2.6 Sunburst and GPT-Image-2.6 Flare for image generation and editing'. Model id gpt-image-2.6-sunburst (single snapshot), endpoints v1/images/generations and v1/images/edits, generally available. Successor to and distinct from gpt-image-2-5-sunburst. Arena's '(Medium)' suffix is OpenAI's quality parameter (Sunburst/Flare quality options: low, medium, high, xhigh, max; complexity is a separate parameter defaulting to high). Corresponds to Arena entries 'GPT-Image-2.6 Sunburst (Medium)' on text_to_image and image_edit. Price: No per-image price recorded. OpenAI publishes token prices only (model page and pricing table: image input $8.00, cached image input $2.00, image output $30.00, text input $5.00, cached text $1.25 per 1M tokens). Its per-image figure for 1024x1024 medium is produced by an interactive calculator in the image-generation guide and is not printed statically. fal.ai's endpoint openai/gpt-image-2.6/sunburst/text-to-image (published 2026-11-04) also shows only the token rates, with its per-size table not in the static page or llms.txt. models.dev has only OpenRouter and Vercel gateway tomls (aggregators). Observed 2026-11-12.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/changelog",
+      "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst",
+      "https://developers.openai.com/api/docs/pricing",
+      "https://developers.openai.com/api/docs/guides/image-generation"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet",
+        "reported_label": "GPT-Image-2.6 Sunburst (Medium)"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet",
+        "reported_label": "GPT-Image-2.6 Sunburst (Medium)"
+      }
+    ]
+  },
+  {
+    "id": "gpt-image-2-6-flare",
+    "name": "GPT-Image-2.6 Flare",
+    "provider": "OpenAI",
+    "category": "image",
+    "released": "2026-11",
+    "released_source": "https://developers.openai.com/api/docs/changelog",
+    "source": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+      "provider": "OpenAI"
+    },
+    "identity_note": "OpenAI API changelog, Nov 4 2026 (released with Sunburst). Model id gpt-image-2.6-flare ('Image generation and editing for fast iteration'), single snapshot, generally available. Distinct from gpt-image-2-5-flare. Arena '(Medium)' = quality setting. Corresponds to Arena entries 'GPT-Image-2.6 Flare (Medium)' on text_to_image and image_edit. Price: No per-image price recorded; same reasons as gpt-image-2-6-sunburst. OpenAI token prices for gpt-image-2.6-flare: image input $8.00, cached image input $2.00, image output $30.00, text input $5.00, cached text $1.25 per 1M tokens (model page and pricing table). Observed 2026-11-12.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/changelog",
+      "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet",
+        "reported_label": "GPT-Image-2.6 Flare (Medium)"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet",
+        "reported_label": "GPT-Image-2.6 Flare (Medium)"
+      }
+    ]
+  },
+  {
+    "id": "gemini-omni-1-2-flash",
+    "name": "Gemini Omni 1.2 Flash",
+    "provider": "Google",
+    "category": "video",
+    "released": "2026-11",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog",
+    "source": "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider": "Google",
+      "price": 0.069504,
+      "unit": "video-second",
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "USD per generated second of 720p video on the Gemini Developer API, paid Standard tier. Product: Gemini Developer API (Interactions API). API model: gemini-omni-1.2-flash (GA). Price basis: $12.00 per 1M video output tokens at Google's stated 5,792 tokens per second of 720p video (Google: 'approximately $0.07 per second'); 5,792 x $12.00/1M = $0.069504. Input ($1.50/1M text/image/video) and text output ($9.00/1M) are additional; 360p, 1080p and 4K use other token rates. Currency: USD. ai.google.dev/gemini-api/docs/* now redirects to aistudio.google.com/docs/* (pricing page fetched as https://aistudio.google.com/docs/pricing.md). Observed 2026-11-12. models.dev providers/google/models/gemini-omni-1.2-flash.toml (5056efa) has the same $12 video-output token rate but no per-second figure."
+    },
+    "identity_note": "Gemini API changelog, November 5, 2026: 'Gemini Omni 1.2 Flash generally available (GA): Released Gemini Omni 1.2 Flash (gemini-omni-1.2-flash)'. Stable model code gemini-omni-1.2-flash; up to 15-second video with native audio; 131,072 input tokens. Distinct from gemini-omni-1-1-flash (gemini-omni-1.1-flash), which Google will route to 1.2 from December 3, 2026, and from gemini-omni-flash (preview, now shut down). Corresponds to Arena 'Gemini Omni 1.2 Flash' on text_to_video, image_to_video and video_edit.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
+      "https://ai.google.dev/gemini-api/docs/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet",
+        "reported_label": "Gemini Omni 1.2 Flash"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet",
+        "reported_label": "Gemini Omni 1.2 Flash"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet",
+        "reported_label": "Gemini Omni 1.2 Flash"
+      }
+    ]
+  },
+  {
+    "id": "skyreels-v4",
+    "name": "SkyReels V4",
+    "provider": "Skywork AI",
+    "category": "video",
+    "released": "2026-02",
+    "released_source": "https://arxiv.org/abs/2602.21818",
+    "source": "https://arxiv.org/abs/2602.21818",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison identity. Skywork AI's own technical report 'SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model' (arXiv 2602.21818, v1 2026-02-25, v3 2026-03-18; affiliation Skywork AI, project leader at kunlun-inc.com): joint video+audio generation, inpainting and editing, up to 1080p, 32 FPS, 15 s. The report places V4 on Artificial Analysis's video arena as of 2026-03-18, so the model was publicly served by then. No first-party API, pricing or availability page could be read: skyreels.ai is a JavaScript app with no static content, and API docs found only on resellers (Runware, WaveSpeed, EachLabs, ModelsLab). api left null. Corresponds by exact name to Arena 'SkyReels V4' (org 'skyreel', Proprietary) on text_to_video, image_to_video and video_edit. Arena does not say which endpoint or version it serves. Licence: No weights found: Skywork's Hugging Face org lists SkyReels-V3 checkpoints (A2V-19B, R2V-14B, V2V-14B) but nothing for V4 (HF API, 2026-11-12). The report (CC BY 4.0) announces no weight release.",
+    "identity_sources": [
+      "https://arxiv.org/abs/2602.21818",
+      "https://arxiv.org/html/2602.21818v3"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet",
+        "reported_label": "SkyReels V4"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet",
+        "reported_label": "SkyReels V4"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet",
+        "reported_label": "SkyReels V4"
+      }
+    ]
   }
 ]

@@ -469927,5 +469927,705 @@
     "date": "2026-11-05",
     "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'Program Bench'. Footnote: 'The table reports binary scores: a task receives 1 if its ProgramBench score is at least 95%, and 0 otherwise. K3.1 Pro is evaluated with Claude Code.' Same definition as the DB's Almost@1 rows (Muse Wonder note: rollouts passing at least 95% of tests). Printed 31.5.",
     "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "gpqa-diamond",
+    "score": 0.93,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Thinking Machines model card, section 5 Evaluations, row 'GPQA Diamond', column 'Inkling 2 Small': 93.0%. Settings (announcement 'Benchmarking Inkling 2 Small'): 'All evals run at effort 0.99 (xhigh) and temperature 1.0', 1M-token trajectory limit. GPQA is not in the page's list of externally reported evaluations.",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "hmmt-feb-2026",
+    "score": 0.958,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'HMMT Feb 2026', column 'Inkling 2 Small': 95.8%. effort 0.99 (xhigh), temperature 1.0. Not in the externally-reported list.",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "swe-bench-verified",
+    "score": 0.822,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'SWEBench Verified', column 'Inkling 2 Small': 82.2%. effort 0.99 (xhigh), temperature 1.0; harness not stated. Not in the externally-reported list (that list credits only 'SWE-Pro v2' to Scale and 'SWE-bench Multimodal' to Vals).",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "swe-bench-multilingual",
+    "score": 0.812,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'SWEBench Multilingual', column 'Inkling 2 Small': 81.2%. effort 0.99 (xhigh), temperature 1.0; harness not stated. Not in the externally-reported list.",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "longbench-v2",
+    "score": 0.706,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, Long Context, row 'LongBench v2', column 'Inkling 2 Small': 70.6%. effort 0.99 (xhigh), temperature 1.0. Not in the externally-reported list (AA-LCR is credited to Artificial Analysis and excluded).",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "charxiv-rq",
+    "score": 0.856,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'Charxiv RQ original / with Python', column 'Inkling 2 Small': 85.6/87.7%; the 'original' (no Python tool) value 85.6% used. effort 0.99 (xhigh), temperature 1.0. Not in the externally-reported list.",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "screenspot-pro",
+    "score": 0.838,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'ScreenSpot Pro original / with Python', column 'Inkling 2 Small': 83.8/91.5%; 'original' 83.8% used. Card: 'images whose long side exceed 4,096 pixels are downsampled to that limit while preserving the aspect ratio; the ground truth answers were rescaled accordingly.' effort 0.99 (xhigh).",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "babyvision-with-tools",
+    "score": 0.937,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'BabyVision original / with Python', column 'Inkling 2 Small': 68.6/93.7%; 'with Python' (code-interpreter tool) value 93.7% used for the with-tools id. The no-tool 68.6% has no matching benchmark id. effort 0.99 (xhigh).",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "jobbench",
+    "score": 0.705,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'JobBench', column 'Inkling 2 Small': 70.5% (same figure in the announcement's Knowledge Work table). Judge and harness not stated, so check against the jobbench id definition (Meta: Grok 4.3 judge, OpenCode harness). Not in the externally-reported list.",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "deepsearchqa",
+    "score": 0.909,
+    "source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Model card Evaluations, row 'DeepSearchQA', column 'Inkling 2 Small': 90.9%. Harness not stated. effort 0.99 (xhigh).",
+    "source_id": "first-party-thinking-machines-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "gpqa-diamond",
+    "score": 0.924,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "Unisound MaaS U2-Flash model page, 'Knowledge & Reasoning' chart titled 'GPQA-Diamond': U2-Flash 92.4 (U2 87.9). The text paragraph lists '92.4、90.3 和 97.1' without naming GPQA for 92.4; the chart assigns it. Page undated (release 2026-09-15); observed 2026-11-12. Thinking strength and settings not stated.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "hmmt-feb-2026",
+    "score": 0.971,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "U2-Flash model page: 'HMMT Feb. 2026 达到 97.1'; chart 'HMMT Feb. 2026' U2-Flash 97.1 (U2 84.8). Settings not stated. Observed 2026-11-12.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "imo-answerbench",
+    "score": 0.903,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "U2-Flash model page chart titled 'IMOAnswerBench': U2-Flash 90.3 (U2 79.3). Settings and aggregation not stated. Observed 2026-11-12.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "deepswe-v1-1",
+    "score": 0.646,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "U2-Flash model page: 'DeepSWE v1.1 达到 64.6，较 U2 的 32 实现翻倍'; chart 'DeepSWE v1.1' U2-Flash 64.6. Harness not stated. Observed 2026-11-12.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "swe-bench-pro-split-unspecified",
+    "score": 0.616,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "U2-Flash model page: 'SWE-Bench Pro 达到 61.6，较 U2 提升 11.5 分'; chart 'SWE-Bench Pro' U2-Flash 61.6 (U2 50.1). Public/private split and harness not stated, hence the split-unspecified id. Observed 2026-11-12.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "terminal-bench-3",
+    "score": 0.243,
+    "source": "https://maas.unisound.com/models/u2-flash",
+    "by": "lab",
+    "date": "2026-09-15",
+    "note": "U2-Flash model page: 'TerminalBench 3.0 由 2.7 提升至 24.3'; chart 'TerminalBench3.0' U2-Flash 24.3 (U2 2.7). Harness not stated. Observed 2026-11-12.",
+    "source_id": "first-party-unisound-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "gpqa-diamond",
+    "score": 0.884,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "ByteDance Seed 'Seed2.0' page, Evaluation Results table 1 (columns Seed2.0 Lite（0428） | Seed2.0 Lite（0215） | Seed2.0 Pro（0215） | GPT-5.4 Mini | Gemini 3 Flash), row 'GPQA Diamond': 88.4%. '（0428）' matches Volcengine id suffix 260428. Page undated (Lite upgrade 'end of April' 2026), so date = observation date. Reasoning settings not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "supergpqa",
+    "score": 0.696,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'SuperGPQA', column Seed2.0 Lite（0428）: 69.6%. Settings not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "hle",
+    "score": 0.257,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'HLE (no tool, text only)', column Seed2.0 Lite（0428）: 25.7%. No tools, text-only subset.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "multichallenge",
+    "score": 0.699,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, Instruction Following, row 'MultiChallenge', column Seed2.0 Lite（0428）: 69.9%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "browsecomp",
+    "score": 0.64,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, SearchAgent, row 'BrowseComp', column Seed2.0 Lite（0428）: 64.0%. Harness and context management not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "swe-bench-multilingual",
+    "score": 0.666,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, CodingAgent, row 'SWE Multilingual', column Seed2.0 Lite（0428）: 66.6%. Scaffold not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "swe-bench-pro-split-unspecified",
+    "score": 0.466,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'SWE-Bench Pro', column Seed2.0 Lite（0428）: 46.6%. Split not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "terminal-bench-2",
+    "score": 0.433,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'Terminal Bench 2.0', column Seed2.0 Lite（0428）: 43.3%. Agent scaffold not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "mmmu-pro",
+    "score": 0.784,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2 (columns Seed2.0 Lite（0428） | Seed2.0 Lite（0215） | Seed2.0 Pro（0215） | GPT-5.4 High | Gemini 3 Flash | Gemini 3.1 Pro High), row 'MMMU_Pro': 78.4. MMMU-Pro variant (standard/vision/overall) not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "charxiv-rq",
+    "score": 0.824,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2, InfoGraphics, row 'CharXiv-RQ', column Seed2.0 Lite（0428）: 82.4.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "charxiv-dq",
+    "score": 0.945,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2, row 'CharXiv-DQ', column Seed2.0 Lite（0428）: 94.5.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "gpqa-diamond",
+    "score": 0.889,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'GPQA Diamond', column Seed2.0 Pro（0215）: 88.9%. '（0215）' matches Volcengine id suffix 260215. Page undated; settings not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "supergpqa",
+    "score": 0.687,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'SuperGPQA', column Seed2.0 Pro（0215）: 68.7%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "hle",
+    "score": 0.324,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'HLE (no tool, text only)', column Seed2.0 Pro（0215）: 32.4%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "multichallenge",
+    "score": 0.683,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'MultiChallenge', column Seed2.0 Pro（0215）: 68.3%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "browsecomp",
+    "score": 0.773,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'BrowseComp', column Seed2.0 Pro（0215）: 77.3%. Harness not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "swe-bench-multilingual",
+    "score": 0.717,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'SWE Multilingual', column Seed2.0 Pro（0215）: 71.7%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "swe-bench-pro-split-unspecified",
+    "score": 0.469,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'SWE-Bench Pro', column Seed2.0 Pro（0215）: 46.9%. Split not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "terminal-bench-2",
+    "score": 0.558,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 1, row 'Terminal Bench 2.0', column Seed2.0 Pro（0215）: 55.8%.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "mmmu-pro",
+    "score": 0.782,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2, row 'MMMU_Pro', column Seed2.0 Pro（0215）: 78.2. Variant not stated.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "charxiv-rq",
+    "score": 0.805,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2, row 'CharXiv-RQ', column Seed2.0 Pro（0215）: 80.5.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "charxiv-dq",
+    "score": 0.935,
+    "source": "https://seed.bytedance.com/en/seed2",
+    "by": "lab",
+    "date": "2026-11-12",
+    "note": "Seed2.0 page table 2, row 'CharXiv-DQ', column Seed2.0 Pro（0215）: 93.5.",
+    "source_id": "first-party-bytedance-seed-scores"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "lmarena-text",
+    "score": 1412.1135443351764,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, text_style_control, overall, entry \"Inkling 2 Small\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 2668; rating CI [1400.2752266341402, 1423.9518620362126].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "lmarena-webdev",
+    "score": 1646.2292537459377,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-10",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, webdev, overall, entry \"Inkling 2 Small\"; published 2026-11-10. Highest available reviewed effort; no averaging across variants. Votes 983; rating CI [1626.7316893011166, 1665.7268181907586].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "u2-flash",
+    "bench": "lmarena-webdev",
+    "score": 1610.5525179044555,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-10",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, webdev, overall, entry \"U2 Flash\"; published 2026-11-10. Highest available reviewed effort; no averaging across variants. Votes 1442; rating CI [1593.7169519273436, 1627.3880838815676].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "muse-ember",
+    "bench": "lmarena-webdev",
+    "score": 1608.5969820140517,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-10",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, webdev, overall, entry \"Muse Ember (Max)\"; published 2026-11-10. Highest available reviewed effort; no averaging across variants. Votes 1337; rating CI [1591.7658716456338, 1625.4280923824697].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-image-2-6-sunburst",
+    "bench": "lmarena-image",
+    "score": 1406.1151590556499,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, text_to_image, overall, entry \"GPT-Image-2.6 Sunburst (Medium)\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 2718; rating CI [1392.7581307366293, 1419.4721873746707].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-image-2-6-flare",
+    "bench": "lmarena-image",
+    "score": 1382.830123027905,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, text_to_image, overall, entry \"GPT-Image-2.6 Flare (Medium)\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 2551; rating CI [1369.688676401079, 1395.9715696547312].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-image-2-6-sunburst",
+    "bench": "lmarena-image-edit",
+    "score": 1476.6756839525756,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, image_edit, overall, entry \"GPT-Image-2.6 Sunburst (Medium)\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 3520; rating CI [1466.1674648629578, 1487.1839030421934].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-image-2-6-flare",
+    "bench": "lmarena-image-edit",
+    "score": 1460.0584498528774,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, image_edit, overall, entry \"GPT-Image-2.6 Flare (Medium)\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 3558; rating CI [1449.7063512810996, 1470.4105484246552].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-omni-1-2-flash",
+    "bench": "lmarena-video",
+    "score": 1540.0770086104558,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, text_to_video, overall, entry \"Gemini Omni 1.2 Flash\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 1714; rating CI [1524.4587962451935, 1555.695220975718].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "skyreels-v4",
+    "bench": "lmarena-video",
+    "score": 1458.7320886020602,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, text_to_video, overall, entry \"SkyReels V4\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 1060; rating CI [1440.4291247738904, 1477.0350524302298].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-omni-1-2-flash",
+    "bench": "lmarena-video-i2v",
+    "score": 1503.0116708468217,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, image_to_video, overall, entry \"Gemini Omni 1.2 Flash\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 2666; rating CI [1491.1712056956603, 1514.8521359979836].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "skyreels-v4",
+    "bench": "lmarena-video-i2v",
+    "score": 1475.3285478610128,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-09",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, image_to_video, overall, entry \"SkyReels V4\"; published 2026-11-09. Highest available reviewed effort; no averaging across variants. Votes 1542; rating CI [1459.7068802728318, 1490.9502154491943].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-omni-1-2-flash",
+    "bench": "lmarena-video-edit",
+    "score": 1395.6437478978598,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-10",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, video_edit, overall, entry \"Gemini Omni 1.2 Flash\"; published 2026-11-10. Highest available reviewed effort; no averaging across variants. Votes 1167; rating CI [1379.1941452406459, 1412.0933505550736].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "skyreels-v4",
+    "bench": "lmarena-video-edit",
+    "score": 1363.5240891960332,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-10",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, video_edit, overall, entry \"SkyReels V4\"; published 2026-11-10. Highest available reviewed effort; no averaging across variants. Votes 697; rating CI [1342.5209920503628, 1384.5271863417038].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hy4",
+    "bench": "arena-agent-ips-202610",
+    "score": 0.04659350395948805,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-08",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, agent, overall, entry \"Hy4\"; published 2026-11-08. Highest available reviewed effort; no averaging across variants. IPS original signed units; observations 2514174, sessions 17888, CI [0.0323404390090411, 0.060846568909935006].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "inkling-2-small",
+    "bench": "arena-agent-ips-202610",
+    "score": 0.0008464960451722691,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-11-08",
+    "note": "Arena CC BY 4.0 dataset revision 4217986c2fa1163d072e7a3dda637bb56cce8d79, agent, overall, entry \"Inkling 2 Small\"; published 2026-11-08. Highest available reviewed effort; no averaging across variants. IPS original signed units; observations 529043, sessions 4063, CI [-0.02480947307472115, 0.026502465165065693].",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "doubao-seed-2-1-turbo-260628",
+    "bench": "epoch-chess",
+    "score": 0.26,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-turbo-260628_high'; run id 8EDZwAT98nwY8hB5DD75Br; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.0440844002276808.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "epoch-chess",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-lite-260428_high'; run id eqmrbJKgZ9iXXB9MvYThrJ; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.04020151261036849.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "epoch-chess",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-pro-260215_high'; run id Bdoepct3UJMwAXZEGdYqxP; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.04020151261036849.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-pro-260628",
+    "bench": "epoch-chess",
+    "score": 0.21,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-pro-260628_high'; run id hF9zXdtPjSgoDRQuPyfncZ; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.040936018074033236.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-turbo-260628",
+    "bench": "gpqa-diamond",
+    "score": 0.8958333333333334,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-turbo-260628_high'; run id eMBLN26MgdzXLL6XgwmKB9; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.017895899774362865.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "gpqa-diamond",
+    "score": 0.8813131313131313,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-lite-260428_high'; run id TJUDw6vaSyDFKZ2UacuD5L; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.01944079830983592.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "gpqa-diamond",
+    "score": 0.8819444444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-pro-260215_high'; run id 2z8ecBVZbXKHtpyFyxpJyB; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.019429399729068986.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-pro-260628",
+    "bench": "gpqa-diamond",
+    "score": 0.8933080808080808,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-pro-260628_high'; run id 7RKgYb6sU9XB5RVBRQ3nCB; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.018417155503921614.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-turbo-260628",
+    "bench": "otis-mock-aime",
+    "score": 0.9611111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-turbo-260628_high'; run id mXHskR6CPxcMBRzmWaPvcq; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.024753271842145104.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "otis-mock-aime",
+    "score": 0.9388888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-pro-260215_high'; run id GVKTrNdpeZhFRevQFSFkRY; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.02741556776322574.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "otis-mock-aime",
+    "score": 0.9111111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-lite-260428_high'; run id RpVeo88Yf93kMhHgwz6jcj; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.036111111111111115.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-pro-260628",
+    "bench": "otis-mock-aime",
+    "score": 0.9555555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-pro-260628_high'; run id jL9Sf6dcoTTRSSUFXTG7py; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.029235728721796906.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-turbo-260628",
+    "bench": "simpleqa-verified",
+    "score": 0.297,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-10-30",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-turbo-260628_high'; run id 9wS2NJacFaJp9tkq8FSRyF; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.01445683229480096.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-lite-260428",
+    "bench": "simpleqa-verified",
+    "score": 0.315,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-lite-260428_high'; run id 3rTiRa2THK8MWXtVJZQHxS; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.014696631960792619.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-0-pro-260215",
+    "bench": "simpleqa-verified",
+    "score": 0.394,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.0-pro-260215_high'; run id GvNEYw523w8aUy63WpgovD; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.015459721957493382.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "doubao-seed-2-1-pro-260628",
+    "bench": "simpleqa-verified",
+    "score": 0.447,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'doubao-seed-2.1-pro-260628_high'; run id 7TdGnviq5zZhNSXK5nJSAL; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.0157301760460091.",
+    "source_id": "epoch-internal"
   }
 ]

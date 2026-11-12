@@ -412,7 +412,19 @@
       "github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/models/meta/muse-spark-open.toml",
       "github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/providers/fireworks-ai/models/accounts/fireworks/models/muse-spark-open.toml",
       "github.com/anomalyco/models.dev/blob/41aa51dff00b6c7025911c5d8988d0eea2b63a47/providers/anthropic/models/claude-fable-5-2.toml",
-      "github.com/anomalyco/models.dev/blob/41aa51dff00b6c7025911c5d8988d0eea2b63a47/models/anthropic/claude-fable-5-2.toml"
+      "github.com/anomalyco/models.dev/blob/41aa51dff00b6c7025911c5d8988d0eea2b63a47/models/anthropic/claude-fable-5-2.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/thinkingmachines/inkling-2-small.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/meta/muse-ember-1.0.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/meta/models/muse-ember-1.0.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/tencent/hy4.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.1-pro.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-1-pro-260628.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.1-turbo.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-1-turbo-260628.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.0-pro.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-0-pro-260215.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/bytedance-seed/seed-2.0-lite.toml",
+      "github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/providers/volcengine/models/doubao-seed-2-0-lite-260428.toml"
     ],
     "kind": "dataset",
     "license": "MIT",
@@ -20210,5 +20222,53 @@
     "match": [
       "huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md"
     ]
+  },
+  {
+    "id": "first-party-thinking-machines-scores",
+    "name": "Thinking Machines model card (lab-reported scores)",
+    "match": [
+      "thinkingmachines.ai/model-card/inkling-2-small"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "exact": false,
+    "attribution": "Thinking Machines Lab, benchmark results it published for its own models on https://thinkingmachines.ai/model-card/inkling-2-small/, observed 2026-11-12. Individual figures were reviewed against the saved page and converted to fractions, with the printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by Thinking Machines Lab.",
+    "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, model card or docs, one figure at a time, with the exact page, date and printed settings. Only the maker's own models' cells are used: other labs' columns and cells the page credits to a third party (including Artificial Analysis) are excluded. 'exact' is false only because lib/sources.ts never matches an exact entry against a URL whose path ends in '/'; the path is page-specific. The maker's terms were not separately reviewed for this entry: remove these rows if the maker objects.",
+    "icon": "thinkingmachines.ai"
+  },
+  {
+    "id": "first-party-unisound-scores",
+    "name": "Unisound MaaS model page (lab-reported scores)",
+    "match": [
+      "maas.unisound.com/models/u2-flash"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://maas.unisound.com/models/u2-flash",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "exact": false,
+    "attribution": "Unisound, benchmark results it published for its own models on https://maas.unisound.com/models/u2-flash, observed 2026-11-12. Individual figures were reviewed against the saved page and converted to fractions, with the printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by Unisound.",
+    "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, model card or docs, one figure at a time, with the exact page, date and printed settings. Only the maker's own models' cells are used: other labs' columns and cells the page credits to a third party (including Artificial Analysis) are excluded. 'exact' is false only because lib/sources.ts never matches an exact entry against a URL whose path ends in '/'; the path is page-specific. The maker's terms were not separately reviewed for this entry: remove these rows if the maker objects.",
+    "icon": "maas.unisound.com"
+  },
+  {
+    "id": "first-party-bytedance-seed-scores",
+    "name": "ByteDance Seed model page (lab-reported scores)",
+    "match": [
+      "seed.bytedance.com/en/seed2"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://seed.bytedance.com/en/seed2",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "exact": false,
+    "attribution": "ByteDance Seed, benchmark results it published for its own models on https://seed.bytedance.com/en/seed2, observed 2026-11-12. Individual figures were reviewed against the saved page and converted to fractions, with the printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by ByteDance Seed.",
+    "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, model card or docs, one figure at a time, with the exact page, date and printed settings. Only the maker's own models' cells are used: other labs' columns and cells the page credits to a third party (including Artificial Analysis) are excluded. 'exact' is false only because lib/sources.ts never matches an exact entry against a URL whose path ends in '/'; the path is page-specific. The maker's terms were not separately reviewed for this entry: remove these rows if the maker objects.",
+    "icon": "seed.bytedance.com"
   }
 ]
