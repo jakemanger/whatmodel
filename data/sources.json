@@ -14162,17 +14162,18 @@
       "huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md",
       "huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md",
       "huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md",
-      "www.kimi.ai/blog/kimi-k3-1-pro"
+      "www.kimi.ai/blog/kimi-k3-1-pro",
+      "huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md"
     ],
     "exact": true,
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
     "quote": "Owner rule (b), approved 2026-10-07 (vendor's own score for its own model, hand-recorded one figure at a time; other labs' cells excluded; by: 'lab'). Licences at the pinned revisions: Kimi-K2.5 and Kimi-K2.6 LICENSE = 'Modified MIT License' - the standard MIT grant ('Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...') plus 'Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2.5\" [resp. \"Kimi K2.6\"] on the user interface of such product or service.' Kimi-K3 LICENSE = 'Kimi K3 License': MIT-style grant but a Model-as-a-Service business with >US$20M revenue over 12 months 'must enter into a separate agreement with Moonshot AI before using the Software or its derivative works for any commercial purpose', plus the same UI-display clause. Because K3 is not open and the K2.x licence is a modified MIT, the entry relies on rule (b) rather than an open-licence claim.",
-    "attribution": "Moonshot AI, vendor-reported results for its own Kimi K2.5, K2.6 and K3 models from the pinned Hugging Face model cards; hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
+    "attribution": "Moonshot AI, vendor-reported results for its own Kimi K2.5, K2.6 and K3 models from the pinned Hugging Face model cards; hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md. Kimi K3.1 Pro model card (weights released 2026-11-02, 'Kimi K3.1-Pro License') reviewed 2026-11-12: Moonshot's own column only; see docs/research/refresh-2026-11-12.md.",
     "scope": "Own Kimi columns only, CharXiv (RQ) without tools. 'w/ python' / with-tool cells and all other labs' columns (several are re-evaluations marked * or cited from Artificial Analysis / Vals AI) are not used. Alternative: if the owner treats Modified MIT as open, K2.5/K2.6 could get card2-moonshotai-kimi-k2-5 / card2-moonshotai-kimi-k2-6 entries instead, but then each card is a one-model CharXiv run (K2.6 card + its K2.5 column would be two).",
     "icon": "huggingface.co",
     "verdict": "allowed",
-    "checked": "2026-10-29"
+    "checked": "2026-11-12"
   },
   {
     "id": "first-party-xiaomi-scores",
@@ -20065,5 +20066,149 @@
     "verdict": "allowed",
     "checked": "2026-11-01",
     "icon": "huggingface.co"
+  },
+  {
+    "id": "card4-meituan-longcat-longcat-2-5",
+    "name": "meituan-longcat/LongCat-2.5 model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "terms_url": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: mit' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Meituan. meituan-longcat/LongCat-2.5 model card. Source: https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md. Licence: MIT. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: terminal-bench-2.1, terminal-bench-4, programbench-almost1, deepswe-v1-1, nl2repo, automationbench-v1-0-6, hle-with-tools, agents-last-exam-unspecified, researchrubrics, mcp-atlas, jobbench, claw-eval-pass3.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md"
+    ]
+  },
+  {
+    "id": "card4-ricursiveai-ripple-65b-preview",
+    "name": "ricursiveAI/Ripple-65B-Preview model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Ricursive Intelligence. ricursiveAI/Ripple-65B-Preview model card. Source: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: mmlu, mmlu-pro, gpqa-diamond, aime-2024, aime-2025, aime-2026, hmmt-feb-2026, terminal-bench-2.1, swe-bench-verified, swe-bench-pro-split-unspecified, deepswe-v1-1, scicode-unspecified, tau3-banking, automationbench-public, mcp-atlas, ifbench-unspecified.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md"
+    ]
+  },
+  {
+    "id": "card4-nex-agi-nex-n2-6",
+    "name": "nex-agi/Nex-N2.6 model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Nex-AGI. nex-agi/Nex-N2.6 model card. Source: https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: terminal-bench-2.1.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md"
+    ]
+  },
+  {
+    "id": "card4-nousresearch-arete-27b",
+    "name": "NousResearch/Arete-27B model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Nous Research. NousResearch/Arete-27B model card. Source: https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: terminal-bench-2.1.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md"
+    ]
+  },
+  {
+    "id": "card4-nanbeige-nanbeige4-3-33b",
+    "name": "Nanbeige/Nanbeige4.3-33B model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Nanbeige. Nanbeige/Nanbeige4.3-33B model card. Source: https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: terminal-bench-2.1, terminal-bench-4, swe-bench-pro-split-unspecified, nl2repo, scicode-unspecified, automationbench-v1-0-6, toolathlon-verified, deepplanning, tau3-bench, gpqa-diamond, aime-2026.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md"
+    ]
+  },
+  {
+    "id": "card4-microsoft-mage-vl-cowork",
+    "name": "microsoft/Mage-VL-Cowork model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Microsoft. microsoft/Mage-VL-Cowork model card. Source: https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: osworld-verified.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md"
+    ]
+  },
+  {
+    "id": "card4-krafton-raon-1-nano",
+    "name": "KRAFTON/Raon-1-nano model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "KRAFTON. KRAFTON/Raon-1-nano model card. Source: https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: mmlu-redux, ifbench-unspecified, multichallenge, facts-grounding.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md"
+    ]
+  },
+  {
+    "id": "card4-maritaca-ai-s5-nano",
+    "name": "maritaca-ai/S5-nano model card",
+    "kind": "first-party",
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "quote": "Hugging Face metadata and the README front matter at the pinned revision declare 'license: apache-2.0' (observed 2026-11-12). Owner rule (b): the maker's own figures for its own model, reviewed one at a time against the saved card; other models' columns and cells credited to third parties are not used.",
+    "attribution": "Maritaca AI. maritaca-ai/S5-nano model card. Source: https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md. Licence: Apache-2.0. Changes: the model's own cells transcribed into JSON; percentages divided by 100. Lab-reported, not independent. No endorsement.",
+    "scope": "Own-model cells for existing benchmark ids only: ifbench-prompt, longbench-v2.",
+    "verdict": "allowed",
+    "checked": "2026-11-12",
+    "icon": "huggingface.co",
+    "match": [
+      "huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md"
+    ]
   }
 ]

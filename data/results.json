@@ -469377,5 +469377,555 @@
     "date": "2026-10-13",
     "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-11-12 SHA256 4739f41b13580efd4b1012e0e402f2d1ef86ce3bd9c715a0c15dc86efd5de293; exact model version 'deepseek-v4.1-flash_max'; run id 3JJ4ChNxMo8CGAh3HrKNrw; highest reviewed effort; published 'Best score (across scorers)' column; stderr 0.015658997547870177.",
     "source_id": "epoch-internal"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "terminal-bench-2.1",
+    "score": 0.884,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'Terminal Bench v2.1'. Footnote 1: Claude Code harness (v2.1.280), max_seq_length = 512K; 'Terminal Bench v2.1 results are averaged over three independent runs.' Printed 88.4.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "terminal-bench-4",
+    "score": 0.385,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'Terminal Bench v4.0'. Footnote 1: Claude Code harness (v2.1.280), max_seq_length = 512K. Printed 38.5.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "programbench-almost1",
+    "score": 0.255,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'Program Bench (Almost Resolved)'. Row label 'Program Bench (Almost Resolved)'; footnote 1: Claude Code harness (v2.1.280). The row's DeepSeek-V4.1-Flash cell (20.3*) equals the DB's DeepSeek programbench-almost1 row. Printed 25.5.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "deepswe-v1-1",
+    "score": 0.646,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'DeepSWE (v1.1)'. Footnote 2: mini-swe-agent, temperature 1.0, top_p 0.95, max_seq_length 1M, averaged over three runs. Printed 64.6.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "nl2repo",
+    "score": 0.605,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'NL2Repo'. Footnote 1: Claude Code harness (v2.1.280), max_seq_length = 512K. Printed 60.5.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "automationbench-v1-0-6",
+    "score": 0.518,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'AutomationBench (v1.0.6)'. Footnote 7: 'AutomationBench (public v1.0.6): All 600 public tasks, evaluated with the benchmark's official evaluation code; temperature = 1.0, top_p = 0.95.' Printed 51.8.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "hle-with-tools",
+    "score": 0.631,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'HLE (w/ tools)'. Footnote 5: 'Full set, evaluated with Claude Code (v2.1.116); maximum generation length 256K tokens.' Printed 63.1.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "agents-last-exam-unspecified",
+    "score": 0.385,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'ALE (v1.1)'. Row 'ALE (v1.1)'; footnotes give no harness or metric for ALE. Printed 38.5.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "researchrubrics",
+    "score": 0.81,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'ResearchRubrics'. No footnote for this row. Printed 81.0.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "mcp-atlas",
+    "score": 0.831,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'MCP Atlas'. Footnote 6: 'Reasoning effort set to max, temperature = 0.7, top_p = 0.95, 256K context.' Split (public / v1 public500) not stated. Printed 83.1.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "jobbench",
+    "score": 0.654,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'JobBench'. Footnote 8: 'JobBench (Main 65): Claude Code harness (v2.1.280); scoring follows the official JobBench LLM-as-judge protocol ... with gemini-3.6-flash as the judge'. Printed 65.4.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "longcat-2-5",
+    "bench": "claw-eval-pass3",
+    "score": 0.783,
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Meituan LongCat own evaluation in the pinned meituan-longcat/LongCat-2.5 model card (sha 60032d9), Evaluation Results table, column 'LongCat-2.5'. Card: 'Scores marked with * are cited from public technical reports, blog posts, or official leaderboards; unmarked scores are measured in-house and are indicative only.' LongCat-2.5 cells are unmarked. Footnotes: 'Unless otherwise specified, all LongCat-2.5 results use enable_thinking=on, temperature=1.0, and top_p=0.95.' Other models' columns not used. Row 'Claw-Eval (Pass^3)'. Row 'Claw-Eval (Pass^3)'; no footnote. Printed 78.3.",
+    "source_id": "card4-meituan-longcat-longcat-2-5"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "mmlu",
+    "score": 0.896,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'MMLU' (shots not stated). Printed 89.6.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "mmlu-pro",
+    "score": 0.842,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'MMLU-Pro'. Printed 84.2.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.852,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'GPQA Diamond'. Printed 85.2.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "aime-2024",
+    "score": 0.971,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'AIME 2024'; sampling/aggregation not stated (no majority vote mentioned). Printed 97.1.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "aime-2025",
+    "score": 0.983,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'AIME 2025'; aggregation not stated. Printed 98.3.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "aime-2026",
+    "score": 0.95,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'AIME 2026'; aggregation not stated. Printed 95.0.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "hmmt-feb-2026",
+    "score": 0.905,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'HMMT Feb 2026'. Printed 90.5.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "terminal-bench-2.1",
+    "score": 0.805,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'Terminal-Bench 2.1 (Terminus 2)' (official Terminus 2 harness); the 'self-reported' row is also 80.5 and the card text gives 80.52. Printed 80.5.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "swe-bench-verified",
+    "score": 0.765,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'SWE-bench Verified'; harness not specified, so OpenCode per card. Printed 76.5.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "swe-bench-pro-split-unspecified",
+    "score": 0.6142,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'SWE-bench Pro v1.0'; public/private split not stated; OpenCode per card. Not the v2.0 Hard row. Printed 61.42.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "deepswe-v1-1",
+    "score": 0.443,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'DeepSWE 1.1'; Terminus 2 harness per card. Printed 44.3.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "scicode-unspecified",
+    "score": 0.394,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'SciCode (Inspect AI)'; main vs subproblem not stated. Printed 39.4.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "tau3-banking",
+    "score": 0.3127,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'τ³-bench banking'; user simulator not stated. Printed 31.27.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "automationbench-public",
+    "score": 0.364,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'AutomationBench (Public)'; version not stated. Printed 36.4.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "mcp-atlas",
+    "score": 0.7167,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'MCP Atlas'; split not stated. Printed 71.67.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "ripple-65b-preview",
+    "bench": "ifbench-unspecified",
+    "score": 0.792,
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Ricursive own evaluation in the pinned ricursiveAI/Ripple-65B-Preview model card (sha b172323), 'Instruct Model Benchmarks' table, column 'Ripple-65B Preview'. Card: 'All models are tested at full BF16 precision with maximum effort levels.' ... 'For SWE-bench Pro v2.0 Hard and DeepSWE 1.1, we use Terminus 2 for Ripple-65B Preview. In other cases where the harness is not specified, we use OpenCode.' Other models' columns (incl. Ricursive's italic in-house runs of them) not used. Row 'IFBench'; aggregation not stated. Printed 79.2.",
+    "source_id": "card4-ricursiveai-ripple-65b-preview"
+  },
+  {
+    "model": "nex-n2-6",
+    "bench": "terminal-bench-2.1",
+    "score": 0.841,
+    "source": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "by": "lab",
+    "date": "2026-11-11",
+    "note": "Nex-AGI own result in the pinned nex-agi/Nex-N2.6 card (sha 9874722), Performance table, row 'Terminal-Bench 2.1', last column 'Nex-N2.6' = 84.1. Card: 'The following results are reported by the Nex-AGI team for this release. Scores depend on the evaluation harness and settings. These are model-level results, not a separate evaluation of this FP8 export.' Harness and reasoning effort not stated (template default effort is max). Other columns not used.",
+    "source_id": "card4-nex-agi-nex-n2-6"
+  },
+  {
+    "model": "arete-27b",
+    "bench": "terminal-bench-2.1",
+    "score": 0.7,
+    "source": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md",
+    "by": "lab",
+    "date": "2026-11-06",
+    "note": "Nous Research own run in the pinned NousResearch/Arete-27B card (sha 108f0af), 'General and agentic capabilities' table, row 'Terminal-Bench-2.1', column 'Arete-27B' = 70%. Card: 'We ran our model and Qwen3.8-27B with a like-for-like configuration on our hardware ... We do not take credit for any seeming improvement in the Terminal-Bench-2.1 score.' Harness and thinking mode not stated. Qwen3.8-27B column not used.",
+    "source_id": "card4-nousresearch-arete-27b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "terminal-bench-2.1",
+    "score": 0.809,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Terminal-Bench 2.1' (Agentic Coding) = 80.9; footnote 2: 'Terminal-Bench 2.1 is evaluated using Terminus 2.'",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "terminal-bench-4",
+    "score": 0.238,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Terminal-Bench 4.0' (Agentic Coding) = 23.8; footnote 3: 'Terminal-Bench 4 and DeepSWE are evaluated using mini-swe-agent v2.4.6.'",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "swe-bench-pro-split-unspecified",
+    "score": 0.603,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'SWE-Bench Pro' (Agentic Coding) = 60.3; footnote 3 marker: mini-swe-agent v2.4.6. Public/commercial split not stated, so not mapped to swe-bench-pro.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "nl2repo",
+    "score": 0.53,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'NL2Repo' (Agentic Coding) = 53.0; footnote 5: 'NL2Repo is evaluated using Claude Code.'",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "scicode-unspecified",
+    "score": 0.526,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Scicode' (Agentic Coding) = 52.6; main-vs-subproblem level not stated.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "automationbench-v1-0-6",
+    "score": 0.542,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Automation Bench' (Agentic Cowork) = 54.2; footnote 6: 'Automation Bench v1.0.6 includes 600 publicly released tasks.'",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "toolathlon-verified",
+    "score": 0.704,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Toolathlon-Verified' (Agentic Cowork) = 70.4; footnote 10: 'Toolathlon-Verified sets no max_tokens limit for individual model requests.'",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "deepplanning",
+    "score": 0.633,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'DeepPlanning' (Agentic Cowork) = 63.3; footnote 12: evaluated using the official repository.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "tau3-bench",
+    "score": 0.488,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'Tau3-Bench' (Agentic Cowork) = 48.8; footnote 12: evaluated using the official repository. Domain average as printed.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "gpqa-diamond",
+    "score": 0.895,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'GPQA Diamond' (Reasoning) = 89.5.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "nanbeige4-3-33b",
+    "bench": "aime-2026",
+    "score": 0.952,
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "by": "lab",
+    "date": "2026-10-28",
+    "note": "Nanbeige own evaluation, pinned Nanbeige/Nanbeige4.3-33B card (sha df919e1), section '2. Model Performance' table, column 'Nanbeige4.3-33B' (footnote 1: evaluated with preserve_thinking=true in the chat template). Card: 'All models are evaluated at their highest thinking effort. For each benchmark, we use the same inference hyperparameters and harness across models.' Comparison columns (Qwen3.8-27B, Muse-Glimmer-30B, Gemma4-31B) not used. Row 'AIME 2026' (Reasoning) = 95.2; I/II split and sampling count not stated.",
+    "source_id": "card4-nanbeige-nanbeige4-3-33b"
+  },
+  {
+    "model": "mage-vl-cowork",
+    "bench": "osworld-verified",
+    "score": 0.6604,
+    "source": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md",
+    "by": "lab",
+    "date": "2026-10-30",
+    "note": "Microsoft Mage Team own evaluation in the pinned Mage-VL-Cowork card, section '1. Main Desktop Results: OSWorld-Verified', row 'Mage-VL-Cowork-4B (Ours)', column 'Overall' = 66.0; protocol text gives the unrounded 66.04% as the two-run average (65.33% run 1, 66.75% run 2). 361 OSWorld-Verified tasks excluding Google Drive, 50-step budget, MAGEHybridAgent harness (history_n=3, images_to_keep=3, 1920x1080), temperature 0.7, top_p 0.8, max_new_tokens 4096. Success rate, final Online-RL checkpoint. Other rows in that table are other models (some with 100-step budgets) and are not used.",
+    "source_id": "card4-microsoft-mage-vl-cowork"
+  },
+  {
+    "model": "raon-1-nano",
+    "bench": "mmlu-redux",
+    "score": 0.811,
+    "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "by": "lab",
+    "date": "2026-11-11",
+    "note": "KRAFTON own evaluation, pinned Raon-1-nano card, 'Benchmark Results' HTML table, column 'Raon-1 nano (E1.5B)'. Card footnote: 'Raon-1 nano sampling: temperature 0.7 for Knowledge, temperature 1.0 for Tool Use, temperature 0.1 with presence penalty 1.5 for the others.' Thinking mode is the card's default (mode not labelled per row). Row 'Knowledge / MMLU-Redux (temperature 0.7)', printed 81.1.",
+    "source_id": "card4-krafton-raon-1-nano"
+  },
+  {
+    "model": "raon-1-nano",
+    "bench": "ifbench-unspecified",
+    "score": 0.759,
+    "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "by": "lab",
+    "date": "2026-11-11",
+    "note": "KRAFTON own evaluation, pinned Raon-1-nano card, 'Benchmark Results' HTML table, column 'Raon-1 nano (E1.5B)'. Card footnote: 'Raon-1 nano sampling: temperature 0.7 for Knowledge, temperature 1.0 for Tool Use, temperature 0.1 with presence penalty 1.5 for the others.' Thinking mode is the card's default (mode not labelled per row). Row 'Instruction Following / IFBench (aggregation not stated; temperature 0.1, presence penalty 1.5)', printed 75.9.",
+    "source_id": "card4-krafton-raon-1-nano"
+  },
+  {
+    "model": "raon-1-nano",
+    "bench": "multichallenge",
+    "score": 0.405,
+    "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "by": "lab",
+    "date": "2026-11-11",
+    "note": "KRAFTON own evaluation, pinned Raon-1-nano card, 'Benchmark Results' HTML table, column 'Raon-1 nano (E1.5B)'. Card footnote: 'Raon-1 nano sampling: temperature 0.7 for Knowledge, temperature 1.0 for Tool Use, temperature 0.1 with presence penalty 1.5 for the others.' Thinking mode is the card's default (mode not labelled per row). Row 'Instruction Following / MultiChallenge (temperature 0.1, presence penalty 1.5)', printed 40.5.",
+    "source_id": "card4-krafton-raon-1-nano"
+  },
+  {
+    "model": "raon-1-nano",
+    "bench": "facts-grounding",
+    "score": 0.444,
+    "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "by": "lab",
+    "date": "2026-11-11",
+    "note": "KRAFTON own evaluation, pinned Raon-1-nano card, 'Benchmark Results' HTML table, column 'Raon-1 nano (E1.5B)'. Card footnote: 'Raon-1 nano sampling: temperature 0.7 for Knowledge, temperature 1.0 for Tool Use, temperature 0.1 with presence penalty 1.5 for the others.' Thinking mode is the card's default (mode not labelled per row). Row 'Context Following / FACTS Grounding (temperature 0.1, presence penalty 1.5)', printed 44.4.",
+    "source_id": "card4-krafton-raon-1-nano"
+  },
+  {
+    "model": "s5-nano",
+    "bench": "ifbench-prompt",
+    "score": 0.4267,
+    "source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Maritaca own evaluation, pinned S5-nano card, 'Results by benchmark' table 'Think / Thinking', column 'S5-nano'. Card: 'Results for the original S5-nano checkpoint, evaluated in BF16 on text tasks'; 262,144-token context, qwen3/qwen3_coder parsers, Think used the remaining context for output with no extra cap; sampling = Think recommendations (temperature 1.0, top_p 0.95, top_k 20, presence_penalty 1.5). Row 'IFBench · Strict prompt-level', printed 42.67. Strict (not loose) prompt-level accuracy.",
+    "source_id": "card4-maritaca-ai-s5-nano"
+  },
+  {
+    "model": "s5-nano",
+    "bench": "longbench-v2",
+    "score": 0.497,
+    "source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "by": "lab",
+    "date": "2026-11-10",
+    "note": "Maritaca own evaluation, pinned S5-nano card, 'Results by benchmark' table 'Think / Thinking', column 'S5-nano'. Card: 'Results for the original S5-nano checkpoint, evaluated in BF16 on text tasks'; 262,144-token context, qwen3/qwen3_coder parsers, Think used the remaining context for output with no extra cap; sampling = Think recommendations (temperature 1.0, top_p 0.95, top_k 20, presence_penalty 1.5). Row 'LongBench v2 · Accuracy', printed 49.70. Card limitations note: '503 questions ... confirmed context-overflow cases receive zero and remain in the evaluation population.'",
+    "source_id": "card4-maritaca-ai-s5-nano"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "gpqa-diamond",
+    "score": 0.942,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'GPQA-Diamond'. No tools. Printed 94.2.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "charxiv-rq",
+    "score": 0.89,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'CharXiv (RQ)' (no-tools row; the separate 'CharXiv (RQ) w/ python' 93.4 row is not used). Footnote: multimodal benchmarks averaged over four runs. Split not stated. Printed 89.0.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "mmmu-pro",
+    "score": 0.841,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'MMMU-Pro' (no tools). Footnote: 'Evaluated using the official protocol, preserving the original input order and prepending images to the text input.' Averaged over four runs. Printed 84.1.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "hle",
+    "score": 0.511,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'HLE-Full' (no tools). Footnote: 'The full evaluation sets contain 2,500 and 1,000 questions' (HLE-Full / HLE-Diamond); the Kimi cell is unstarred, i.e. full set, not text-only. Printed 51.1.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "deepswe-v1-1",
+    "score": 0.755,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'DeepSWE v1.1'. Footnote: 'K3.1 Pro is evaluated with Claude Code.' Printed 75.5.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "babyvision-with-tools",
+    "score": 0.954,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'BabyVision w/ python'. Footnote: 'other multimodal benchmarks with Python are averaged over four' runs. Printed 95.4.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3-1-pro",
+    "bench": "programbench-almost1",
+    "score": 0.315,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "by": "lab",
+    "date": "2026-11-05",
+    "note": "Moonshot own evaluation in the pinned moonshotai/Kimi-K3.1-Pro model card (sha d9e99b0; card first committed 2026-11-02), '3. Evaluation Results' table, column 'Kimi K3.1 Pro (max)'. Card: 'Unless otherwise specified, all Kimi K3.1 Pro results use reasoning effort max, temperature = 1.0, and top-p = 0.95.' Other labs' columns not used. Row 'Program Bench'. Footnote: 'The table reports binary scores: a task receives 1 if its ProgramBench score is at least 95%, and 0 otherwise. K3.1 Pro is evaluated with Claude Code.' Same definition as the DB's Almost@1 rows (Muse Wonder note: rollouts passing at least 95% of tests). Printed 31.5.",
+    "source_id": "first-party-moonshot-scores"
   }
 ]

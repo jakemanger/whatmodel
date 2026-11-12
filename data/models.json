@@ -78629,7 +78629,7 @@
     "released": "2026-10",
     "released_source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
     "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-    "open_weights": false,
+    "open_weights": true,
     "api": {
       "url": "https://platform.kimi.ai/",
       "provider": "Moonshot AI"
@@ -78638,7 +78638,14 @@
     "context_k": 1048.576,
     "context_source": "https://platform.kimi.ai/docs/pricing/chat",
     "context_note": "Official pricing documentation: all K3 series models support 1,048,576 tokens. Observed 2026-10-29.",
-    "identity_note": "API available; full weights promised by November 4, 2026. Not marked open weights until actually released. Highspeed is not a separate quality identity."
+    "identity_note": "Weights released 2026-11-02: HF repo moonshotai/Kimi-K3.1-Pro created 2026-11-02T04:13:51Z ('Initial commit' 6d0a020); pinned sha d9e99b0 (2026-11-05, 'Update encoding_k3.py') holds the card, LICENSE and 96 safetensors shards (1,561.3 GB). This fulfils the launch blog's 'Full model weights will be released by Nov 4, 2026.' Card: 'Kimi K3.1 Pro is an open-weight, natively multimodal agentic model' and names the API model id kimi-k3.1-pro on platform.kimi.ai. Highspeed is not a separate quality identity. Ollama's library lists only kimi-k3.1-pro:cloud (hosted, not a local download), so no Ollama variant. NVIDIA's NVFP4 export is a separate artifact. Licence: Custom 'Kimi K3.1-Pro License' (MIT-style grant with conditions), LICENSE at d9e99b0 (identical to the saved copy). Section 2: Model-as-a-Service operators whose group revenue exceeds US$20M over any consecutive 12 months need a separate agreement with Moonshot AI before any commercial use; section 3: products with >100M MAU or >US$20M monthly revenue must prominently display 'Kimi K3.1-Pro'; section 4 exempts internal use and use via Moonshot's official products or certified inference partners. Not an OSI licence.",
+    "license": "kimi-k3.1-pro-license",
+    "license_source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/LICENSE",
+    "params_b": 2800,
+    "active_b": 104,
+    "params_b_source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md",
+    "params_note": "Card Model Summary: Total Parameters 2.8T, Activated Parameters 104B (nominal; 896 experts, 16 selected + 2 shared; vision encoder MoonViT-V2 401M). HF safetensors metadata at d9e99b0 reports 2,780,110,363,392 stored elements (F32 11,122,432; BF16 57,358,410,752; U8 2,722,740,830,208 packed MXFP4), which is a storage count, not used.",
+    "model_repo": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
   },
   {
     "id": "gemini-4-carbon",
@@ -87951,5 +87958,367 @@
     "context_note": "models.dev [limit] context = 1_000_000, output = 128_000. Same as Anthropic's model page (https://platform.claude.com/docs/en/models/fable-5-2/overview: 'Context window: 1M tokens · Max output: 128K tokens'), observed 2026-11-12. The pricing page says Claude 4.6 and later models include the full 1M token context window at standard pricing.",
     "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
     "identity_note": "API model id claude-fable-5-2 (a dateless pinned snapshot). Released November 9, 2026. Anthropic: 'Claude Fable and Claude Mythos are the same underlying model'; Fable 5.2 is the general-availability configuration with cybersecurity and biology safeguards (blocked requests fall back to Claude Opus 4.8 for cyber and Claude Opus 5 for biology). Scores are Anthropic's own for the Fable 5.2 configuration unless a note says otherwise."
+  },
+  {
+    "id": "longcat-2-5",
+    "name": "LongCat 2.5 (1.6T-A48B)",
+    "provider": "Meituan",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/LICENSE",
+    "params_b": 1600,
+    "active_b": 48,
+    "params_b_source": "https://huggingface.co/meituan-longcat/LongCat-2.5/blob/60032d966e6369b822f0e61d2eff01368d38b111/README.md",
+    "params_note": "Card: '1.6 trillion total parameters and approximately 48 billion activated per token' (nominal). HF safetensors metadata at 60032d9 totals 1,779,752,648,320 parameters (BF16 + F32) across 3,562.0 GB of shards including the multimodal parts; the card does not reconcile the two.",
+    "api": {
+      "url": "https://longcat.chat/platform/docs/pricing/longcat-2.5",
+      "provider": "LongCat API Platform (Meituan)"
+    },
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+    "local": null,
+    "identity_note": "Open BF16 weights on HF (meituan-longcat/LongCat-2.5, repo created 2026-11-04, 3,562 GB) plus Meituan's W4A4 export (meituan-longcat/LongCat-2.5-W4A4, 1,336 GB, INT4 experts for domestic accelerators; same card). API: LongCat API change log 'Version: 2026-11-02 - LongCat-2.5 Now Available'; distinct from LongCat-2.5-Preview (API only, 2026-09-25). Native multimodal (image input), hybrid thinking/non-thinking. The card's only deployment route is NPU via SGLang-FluentLLM (longcat-2.5-npu branch); no GPU or consumer command and no official Ollama/GGUF entry (ollama.com/library/longcat-2.5 404), so local is null. API price: Pricing page observed 2026-11-12 shows only a limited-time discounted price (US$0.30 uncached input / US$1.20 output per 1M tokens) and no standard list price, so no price recorded."
+  },
+  {
+    "id": "ripple-65b-preview",
+    "name": "Ripple-65B Preview",
+    "provider": "Ricursive Intelligence",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/LICENSE",
+    "params_b": 65,
+    "active_b": 65,
+    "params_b_source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "params_note": "Dense. Card table: Total params 65B, Active params 65B. HF safetensors metadata at b172323: 64,782,689,360 BF16 parameters.",
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md",
+    "context_note": "Pinned card: 'support for up to 1Mi (1,048,576 tokens) of context', observed 2026-11-12. The Ollama tags page lists a 2M window for its builds; the maker's figure is used.",
+    "api": null,
+    "model_repo": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "ollama run ripple-preview:65b-q4_K_M",
+          "source": "https://ollama.com/library/ripple-preview/tags",
+          "note": "Official Ollama library entry 'ripple-preview' (ollama.com/library), size as displayed on the tags page, observed 2026-11-12 (display GB, not a byte count). The default tag (ripple-preview / :65b) is listed as 39GB - 46GB.",
+          "gb": 39.5,
+          "gb_estimated": true
+        },
+        {
+          "quant": "nvfp4-mlx",
+          "platform": "mac",
+          "cmd": "ollama run ripple-preview:65b-nvfp4",
+          "source": "https://ollama.com/library/ripple-preview/tags",
+          "note": "Official Ollama library entry 'ripple-preview' (ollama.com/library), size as displayed on the tags page, observed 2026-11-12 (display GB, not a byte count). Tag labelled MLX (Apple silicon).",
+          "gb": 39.5,
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "cmd": "ollama run ripple-preview:65b-gguf-bf16",
+          "source": "https://ollama.com/library/ripple-preview/tags",
+          "note": "Official Ollama library entry 'ripple-preview' (ollama.com/library), size as displayed on the tags page, observed 2026-11-12 (display GB, not a byte count). GGUF BF16.",
+          "gb": 156.5,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_note": "BF16 instruction-tuned checkpoint (this repo, created 2026-11-04, 129.6 GB). Ricursive also publishes Ripple-65B-Preview-NVFP4 ('Experimental'; 'NVFP4 for the MLP layers while keeping attention in BF16'; 57.2 GB; its card gives no serving command), the pretrain-only Ripple-65B-Base-Preview (not added) and a DFlash2 draft. Text-only. Card: 'Our Preview release has gone through relatively light posttraining, with a focus on agentic coding.' Launch blog (ricursive.com/ripple): 'available on Hugging Face, Together AI, GMI Cloud, OpenRouter, and Fireworks' - no first-party API and the host pages were not checked, so api is null. The BF16 repo's card has no vLLM/SGLang command (only custom inference/server code), so local routes are the official Ollama library tags."
+  },
+  {
+    "id": "nex-n2-6",
+    "name": "Nex-N2.6",
+    "provider": "Nex-AGI",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "source": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "params_b": 321,
+    "params_b_source": "https://huggingface.co/nex-agi/Nex-N2.6/blob/987472298e7867721576ac49a253a6f5b526013e/README.md",
+    "params_note": "Card: 'approximately 321B parameters' (FP8 export). The card does not state active parameters; it says the model is 'built on GLM-5.3-Flash', whose pinned card states '320B total parameters and just 18B active parameters' (https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md); active parameters are not recorded because the Nex card itself does not state them. HF safetensors metadata: 321,323,031,390 (F8_E4M3 314,396,639,232; BF16 6,922,754,304; F32 3,637,854).",
+    "api": {
+      "url": "https://openrouter.ai/nex-agi/nex-n2.6",
+      "provider": "OpenRouter (the API link on the Nex-AGI card)"
+    },
+    "model_repo": "https://huggingface.co/nex-agi/Nex-N2.6",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "llama-server -hf bartowski/Nex-N2.6-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md",
+          "note": "bartowski GGUF (llama.cpp b12180 or newer), command printed on the GGUF card; 6 split files, 200,828,233,056 bytes (card shows 200.83GB). -hf also downloads an mmproj (1.1-1.2 GB) for image input.",
+          "gb": 193.1,
+          "gb_estimated": true
+        },
+        {
+          "quant": "iq2_xxs",
+          "cmd": "llama-server -hf bartowski/Nex-N2.6-GGUF:IQ2_XXS",
+          "source": "https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md",
+          "note": "Same card's IQ2_XXS file (card: 'Very low quality, uses SOTA techniques to be usable.'); the :IQ2_XXS tag form is documented in llama.cpp's server README (https://github.com/ggml-org/llama.cpp/blob/dd6b945be2188da875ab05a259ce94c6b2736e64/tools/server/README.md: '-hf <user>/<model>[:quant]'). 96,630,711,296 bytes. Plus mmproj.",
+          "gb": 96.8,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_note": "Nex-AGI fine-tune of GLM-5.3-Flash (MoE), successor to Nex-N2.5-Pro, focused on computer use, coding and long-horizon tool use; image input. Repo (created 2026-11-10) holds FP8 weights (328.3 GB); card results are 'model-level results, not a separate evaluation of this FP8 export'. The card's self-hosting route is the GLM-5.3-Flash SGLang guide with the model path replaced (no copy-pasteable command), so local routes use bartowski's GGUF quants. reasoning_effort low/high/max, default max. No official Ollama entry (404). Card states no context length. Licence: No LICENSE file in the repo at 9874722; licence from the card metadata 'license: apache-2.0'. Base model GLM-5.3-Flash is MIT per the DB. API price: No first-party price; OpenRouter prices are not an allowed price source."
+  },
+  {
+    "id": "arete-27b",
+    "name": "Arete-27B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md",
+    "source": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/LICENSE",
+    "params_b": 27,
+    "active_b": 27,
+    "params_b_source": "https://huggingface.co/NousResearch/Arete-27B/blob/108f0afbdcfaa1ceeda4a635004304dfff6d4da2/README.md",
+    "params_note": "Dense. Card 'Parameter scale | 27B'. HF safetensors metadata at 108f0af: 27,356,728,560 BF16 parameters (includes the frozen vision encoder).",
+    "api": null,
+    "model_repo": "https://huggingface.co/NousResearch/Arete-27B",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "llama-server -hf bartowski/NousResearch_Arete-27B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md",
+          "note": "bartowski GGUF (llama.cpp b12174 or newer), command printed on the GGUF card; 17,203,416,064 bytes (card: 17.20GB). -hf also downloads a 0.9 GB mmproj for image input.",
+          "gb": 16.7,
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "cmd": "llama-server -hf bartowski/NousResearch_Arete-27B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md",
+          "note": "Same card's Q8_0 file (card: 28.67GB); :Q8_0 tag form per llama.cpp server README (https://github.com/ggml-org/llama.cpp/blob/dd6b945be2188da875ab05a259ce94c6b2736e64/tools/server/README.md). 28,665,068,544 bytes. Plus mmproj.",
+          "gb": 32.9,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_note": "Nous Research SFT-only fine-tune of Qwen/Qwen3.8-27B (card base_model), 'post-trained ... to reinforce western values', teacher Inkling, text-only data, vision encoder frozen, MTP head disabled in training; evaluated checkpoint step 1,202. Repo created 2026-11-06. Training context 64k; the card states no inference context length, so none recorded. Intended 'for general assistance and agentic work where users want this change in viewpoint'. No official Ollama entry (404)."
+  },
+  {
+    "id": "nanbeige4-3-33b",
+    "name": "Nanbeige4.3-33B",
+    "provider": "Nanbeige",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "params_b": 33.1,
+    "active_b": 33.1,
+    "params_b_source": "https://huggingface.co/api/models/Nanbeige/Nanbeige4.3-33B",
+    "params_note": "33,118,977,024 BF16 parameters in the repo's safetensors metadata (pinned sha df919e1, observed 2026-11-12); dense LlamaForCausalLM per pinned config.json (52 layers, hidden 7168). The card names it 33B.",
+    "context_k": 524.288,
+    "context_source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/df919e1e2cf077a22204c78b6c826bf3db18bc08/README.md",
+    "context_note": "Pinned card: 'The model supports a context length of up to 524,288 tokens (512K).' config.json max_position_embeddings 524288. Observed 2026-11-12.",
+    "api": null,
+    "model_repo": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "llama-server -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md",
+          "note": "Command printed verbatim in bartowski's GGUF card ('How to run'); file 20.79GB in the card, 20,788,825,216 bytes per HF API. Made with llama.cpp b11845 (needs that release or newer). Community quant, imatrix; text only. Not freshly executed.",
+          "gb": 20.4,
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "cmd": "llama-server -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md",
+          "note": "Same documented llama-server -hf <repo>:<quant> command with the Q8_0 tag from the card's file table (35.20GB; 35,195,128,960 bytes per HF API). Not freshly executed.",
+          "gb": 40.2,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_note": "Flagship 'teacher' model of the Nanbeige4.3 series (card), post-trained from Nanbeige/Nanbeige4.3-33B-Base (card base_model). HF repo created 2026-10-24 (weights uploaded 2026-10-24; pinned README commit df919e1 on 2026-10-28). Text only; thinking on by default (enable_thinking), reported evals use preserve_thinking=true. Contact address on the card is nanbeige@kanzhun.com. Licence: apache-2.0 in the card's YAML metadata; the repo has no LICENSE file. No official API and no official Ollama library entry (ollama.com/library/nanbeige and /nanbeige4.3 returned 404 on 2026-11-12). Official card documents Transformers, SGLang and vLLM (tensor parallel 4) with a local MODEL_PATH placeholder, so those are not listed as copy-pasteable routes. Benchmark comparison columns are Nanbeige re-runs of other models and are not used."
+  },
+  {
+    "id": "mage-vl-cowork",
+    "name": "Mage-VL-Cowork",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/microsoft/Mage-VL-Cowork/commit/6fbe7f91da477c1c73790dbb1f08d001b8626be1",
+    "source": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/LICENSE",
+    "params_b": 4.74,
+    "active_b": 4.74,
+    "params_b_source": "https://huggingface.co/api/models/microsoft/Mage-VL-Cowork?blobs=true",
+    "params_note": "Card states '4B (9.48 GB in bfloat16 across 2 safetensors shards)'; 4.74 is the HF safetensors metadata count (4,741,793,792 BF16 parameters at sha 6fbe7f9), which includes the Mage-ViT vision encoder. Dense (Qwen3-4B-Instruct-2507 language backbone).",
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md",
+    "context_note": "Pinned card, Model Overview: '32,768 tokens (active training & inference window; architecture supports up to 262,144)'. Observed 2026-11-12.",
+    "api": null,
+    "model_repo": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "llama serve -hf ggml-org/Mage-VL-Cowork-GGUF",
+          "source": "https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF/blob/bd54c175044fb33eeb70fbb58242233c61f6a390/README.md",
+          "note": "Exact command from the ggml-org GGUF card; llama.cpp docs (https://github.com/ggml-org/llama.cpp/blob/dd6b945be2188da875ab05a259ce94c6b2736e64/tools/server/README.md): -hf quant 'default to Q4_K_M'. File Mage-VL-Cowork-Q4_K_M.gguf, 2,716,070,080 bytes (https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF/tree/bd54c175044fb33eeb70fbb58242233c61f6a390). ggml-org automatic conversion of the official checkpoint (card: 'This model is automatically converted'); requires a llama.cpp build that includes PR 31819. `-hf` also downloads a vision projector automatically (mmproj Q8_0 0.35 GB or BF16 0.66 GB in the repo; which one is fetched is not stated). Size is the model GGUF file only, from the HF API listing at the pinned sha. Quantised quality not assumed identical to the BF16 release; not freshly executed.",
+          "gb": 3.3,
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "cmd": "llama serve -hf ggml-org/Mage-VL-Cowork-GGUF:Q8_0",
+          "source": "https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF/tree/bd54c175044fb33eeb70fbb58242233c61f6a390",
+          "note": "Card command with the ':quant' suffix documented by llama.cpp (https://github.com/ggml-org/llama.cpp/blob/dd6b945be2188da875ab05a259ce94c6b2736e64/tools/server/README.md, example 'ggml-org/GLM-4.7-Flash-GGUF:Q4_K_M'). File Mage-VL-Cowork-Q8_0.gguf, 4,693,672,640 bytes. ggml-org automatic conversion of the official checkpoint (card: 'This model is automatically converted'); requires a llama.cpp build that includes PR 31819. `-hf` also downloads a vision projector automatically (mmproj Q8_0 0.35 GB or BF16 0.66 GB in the repo; which one is fetched is not stated). Size is the model GGUF file only, from the HF API listing at the pinned sha. Quantised quality not assumed identical to the BF16 release; not freshly executed.",
+          "gb": 6.2,
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "platform": "nvidia",
+          "cmd": "SGLANG_MAX_PIXELS=4000000 python -m sglang.launch_server --model-path microsoft/Mage-VL-Cowork --served-model-name Mage-VL-Cowork --host 0.0.0.0 --port 30001 --trust-remote-code --dtype bfloat16 --context-length 32768 --mem-fraction-static 0.82 --tool-call-parser qwen25 --attention-backend flashinfer --mm-attention-backend triton_attn",
+          "source": "https://huggingface.co/microsoft/Mage-VL-Cowork/blob/6fbe7f91da477c1c73790dbb1f08d001b8626be1/README.md",
+          "note": "Official card's direct SGLang launch (card uses `export SGLANG_MAX_PIXELS=4000000` on a separate line; joined here). Needs an SGLang build with llava_onevision2 support (card recommends its pinned container xiaoyizhang/mage-vl-cowork:0.1.0 with SGLang 0.5.2). Size: card '9.48 GB in bfloat16'. Weights download only; runtime memory not stated. Not freshly executed.",
+          "gb": 9.48,
+          "gb_estimated": false
+        }
+      ]
+    },
+    "identity_note": "Microsoft Mage Team 4B hybrid computer-use agent (GUI computer_use + bash) trained from an intermediate Mage-VL checkpoint (Mage-ViT + Qwen3-4B-Instruct-2507) with a five-stage curriculum ending in online RL; image+text -> text, custom llava_onevision2 architecture needing trust_remote_code. Specialised for desktop/terminal agent use with its own system prompt and tool schema, not a general chat model. Weights released 2026-10-30 (commit 6fbe7f9 'Release Mage-VL-Cowork model weights, card, and OSWorld evaluation reference'). Only the final RL checkpoint's OSWorld-Verified figure is assigned; Stage-1 grounding scores (OSWorld-G, ScreenSpot-v2) and the WebVoyager-Static score (Mage-VL-Cowork-SFT checkpoint) belong to other checkpoints. GGUF builds are ggml-org automatic conversions. No API."
+  },
+  {
+    "id": "raon-1-nano",
+    "name": "Raon-1 nano",
+    "provider": "KRAFTON",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/LICENSE",
+    "params_b": 3.1,
+    "active_b": 1.5,
+    "params_b_source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "params_note": "Dense model. Card: 3.1B total including a 1.5B per-layer embedding table, 1.5B effective (active_b follows the Gemma E-model convention of recording the effective count). Checkpoint also holds a 55M MTP module (3.2B). The GGUF card at 4534f1f still prints the older wording '3.2B parameters, including a 1.6B per-layer embedding table'.",
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+    "context_note": "Pinned card Model Overview table: 'Context Length | 262,144 tokens'; observed 2026-11-12. The LiteRT-LM bundle is limited to 4,096 tokens.",
+    "api": null,
+    "model_repo": "https://huggingface.co/KRAFTON/Raon-1-nano",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "git clone -b raon-1-nano-preview https://github.com/krafton-ai/llama.cpp && cd llama.cpp && cmake -B build && cmake --build build --config Release -j --target llama-cli llama-server && ./build/bin/llama-server -hf KRAFTON/Raon-1-nano-gguf:Q4_K_M --ctx-size 65536 --reasoning on --chat-template-kwargs '{\"enable_thinking\": true}'",
+          "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+          "note": "Official KRAFTON GGUF. Needs KRAFTON's raon-1-nano-preview llama.cpp branch (build steps and llama-server command from the pinned card's llama.cpp section, joined with &&); upstream llama.cpp is not documented as supporting it. Metal by default on Apple silicon; card says add -DGGML_CUDA=ON (NVIDIA) or -DGGML_VULKAN=ON (AMD) to the cmake configure step. Size is the raon-1-nano-Q4_K_M.gguf file (2,082,677,632 bytes, HF API). Q6_K, Q8_0, F16 and _MTP files exist but the card documents a command only for Q4_K_M (and Q4_K_M_MTP).",
+          "gb": 2.1,
+          "gb_estimated": false
+        },
+        {
+          "quant": "mlx-4bit",
+          "platform": "mac",
+          "cmd": "pip install \"mlx==0.32.4\" \"mlx-lm==0.32.2\" \"transformers==5.20.2\" && python -m mlx_lm server --model KRAFTON/Raon-1-nano-mlx --trust-remote-code --host 127.0.0.1 --port 8000 --chat-template-args '{\"enable_thinking\": true}'",
+          "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+          "note": "Official KRAFTON 4-bit (GPTQ) MLX model; install pins and server command from the pinned card's MLX section. Card: fused Metal kernels only enabled with mlx==0.32.4. Size is model.safetensors (1,805,577,858 bytes, HF API); the repo also holds a 62 MB MTP module and 12 MB tokenizer.",
+          "gb": 1.8,
+          "gb_estimated": false
+        },
+        {
+          "quant": "bf16",
+          "platform": "nvidia",
+          "cmd": "VLLM_USE_PRECOMPILED=1 uv pip install \"vllm @ git+https://github.com/krafton-ai/vllm.git@raon-1-nano\" && vllm serve KRAFTON/Raon-1-nano --host 127.0.0.1 --port 8000 --served-model-name Raon-1-nano --trust-remote-code --dtype bfloat16 --tensor-parallel-size 1 --pipeline-parallel-size 1 --max-model-len 262144 --gpu-memory-utilization 0.85 --reasoning-parser raon_1 --enable-auto-tool-choice --tool-call-parser raon_1 --default-chat-template-kwargs '{\"enable_thinking\": true, \"truncate_history_thinking\": false}'",
+          "source": "https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md",
+          "note": "Needs KRAFTON's raon-1-nano vLLM branch. Card: 'The example below targets one NVIDIA B300 GPU with BF16 weights.' Size is the index total_size (7,059,897,536 bytes) of the three referenced files (two shards plus model-tied-lm-head.safetensors); excludes the separate 0.11 GB mtp/ module. Not a consumer-GPU route and not freshly executed.",
+          "gb": 7.1,
+          "gb_estimated": false
+        }
+      ]
+    },
+    "identity_note": "KRAFTON AI's Korean/English dense model, derived from Raon-1 mini preview (30B-A4B) by MoE-to-Dense pruning and distillation, then SFT, on-policy distillation and RL; thinking mode by default. Repo created 2026-10-29, Apache 2.0 declared 2026-11-09 (commit f3006ef), current weights committed 2026-11-10 (commit 0bed13e 'Update Raon-1 nano model weights'); benchmark table added after that weight update and revised 2026-11-11 (pinned sha fcf2d1d). released set to 2026-11 because the licence and the current weights date from November; earlier October weights (RL step 440, OPD step 169) are not this checkpoint. Results are KRAFTON's own column; baselines are other labs' models and not used."
+  },
+  {
+    "id": "s5-nano",
+    "name": "S5-nano",
+    "provider": "Maritaca AI",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/LICENSE",
+    "params_b": 4.66,
+    "active_b": 4.66,
+    "params_b_source": "https://huggingface.co/api/models/maritaca-ai/S5-nano?blobs=true",
+    "params_note": "Dense; HF safetensors metadata total 4,659,865,088 parameters (BF16, includes vision encoder and MTP layer), same convention as qwen3-5-4b (4.66). Card calls it 'a 4B-parameter model' and its parameter table gives 'S5-nano ≈4.2B · text'.",
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+    "context_note": "Pinned card: 'The context window supports up to 262,144 tokens'; observed 2026-11-12. Maritaca's API docs list 256K max context and 32K max output for the hosted S5 Nano.",
+    "api": {
+      "url": "https://docs.maritaca.ai/en/models",
+      "provider": "Maritaca AI"
+    },
+    "model_repo": "https://huggingface.co/maritaca-ai/S5-nano",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "cmd": "llama-server -hf maritaca-ai/S5-nano-GGUF:Q4_K_M --jinja -c 32768 -ngl 99",
+          "source": "https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md",
+          "note": "Official Maritaca GGUF (imatrix Q4_K_M). Size is S5-nano-Q4_K_M.gguf (2,783,446,688 bytes, HF API); card: '-hf also downloads mmproj' (0.67 GB vision projector), '--no-mmproj' for text-only.",
+          "gb": 3.3,
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "cmd": "llama-server -hf maritaca-ai/S5-nano-GGUF:Q8_0 --jinja -c 32768 -ngl 99",
+          "source": "https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md",
+          "note": "Card: 'Replace Q4_K_M with Q8_0 or BF16 to use a different quantization.' Size is S5-nano-Q8_0.gguf (4,610,580,032 bytes, HF API); mmproj (0.67 GB) also downloaded by -hf.",
+          "gb": 6.1,
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "platform": "nvidia",
+          "cmd": "vllm serve maritaca-ai/S5-nano --max-model-len 262144 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder",
+          "source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+          "note": "Original BF16 weights (card Versions table: 9.3 GB; HF API shards 4,999,170,752 + 4,320,657,472 bytes). Card: '--max-model-len 32768 reduces the context length for GPUs with less memory'.",
+          "gb": 9.3,
+          "gb_estimated": false
+        },
+        {
+          "quant": "fp8",
+          "platform": "nvidia",
+          "cmd": "vllm serve maritaca-ai/S5-nano-FP8 --max-model-len 262144 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder",
+          "source": "https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md",
+          "note": "Card: 'For the FP8 version, replace the model name with maritaca-ai/S5-nano-FP8 and keep the same flags'; recommended for GPUs with native FP8 (Ada, Hopper, Blackwell). Per-channel E4M3 weights; separate artifact, quality not assumed identical. Size: card Versions table 5.8 GB; HF API model.safetensors 5,759,218,440 bytes.",
+          "gb": 5.8,
+          "gb_estimated": false
+        }
+      ]
+    },
+    "identity_note": "Maritaca AI's Portuguese/English model built on Qwen/Qwen3.5-4B by continued pretraining plus post-training; Think (default) and Instruct modes; text+image (vision encoder) with an MTP layer. BF16 weights committed 2026-11-02 (commit fe2c063); later commits to the pinned sha fe3a358 (2026-11-10) are card edits. LICENSE is Apache 2.0 with 'Copyright 2026 Alibaba Cloud' (inherited Qwen notice). Hosted on Maritaca's own API as S5-nano (256K context there). Results use the Think table (highest reasoning setting); Instruct-mode values not imported. Card scores are Maritaca's own runs of all listed models; other models' columns not used. API price: Maritaca's own model docs (observed 2026-11-12): 'R$ 0.10 per 1M input tokens and R$ 0.60 per 1M output tokens'; accepted API names S5-nano / s5-nano. Prices are in BRL, so no USD price_in/price_out recorded (no conversion); a first-party-maritaca ledger entry would be needed before recording any price."
   }
 ]
