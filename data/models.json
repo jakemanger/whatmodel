@@ -78649,11 +78649,19 @@
     "released_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
     "open_weights": false,
-    "api": null,
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon",
+      "provider": "Google",
+      "price_in": 2,
+      "price_out": 10,
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "USD per 1M tokens, Gemini API Standard paid tier for gemini-4-carbon, introductory price through 2026-11-30 (output includes thinking tokens); it rises to $4.00 input and $20.00 output on 2026-12-01. Cached input $0.10 (implicit caching only) and batch, flex and priority prices excluded; no prompt-length tiers; not on the Free tier. Google official pricing page, observed 2026-11-12."
+    },
     "local": null,
-    "availability": "preview",
-    "availability_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
-    "identity_note": "Limited rollout to selected cyber defenders and trusted partners. No broadly available API or weights verified on 2026-10-29; announced future price is not a purchasable API route."
+    "identity_note": "Announced October 28, 2026 with access initially limited to cyber defenders through the Fairwind Program; generally available on the Gemini API paid tier as the stable model gemini-4-carbon since November 10, 2026 (Gemini API changelog; follow-up announcement https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/; model card published 10 November 2026). Thinking levels low/medium/high, default medium; Arena and Epoch list the High setting. The separate allowlist-only cyber variant gemini-4-carbon-cyber-permissive is not this entry.",
+    "license": "proprietary",
+    "context_k": 1048.576,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon"
   },
   {
     "id": "recursive-flint",
@@ -87919,5 +87927,29 @@
       "revision": "ed71f41b8b59e8832c53982cd26e0879824e979c",
       "note": "Public ungated original GGUF verified at the exact benchmark manifest revision. Install the Ollaya runtime separately using its official installation instructions."
     }
+  },
+  {
+    "id": "claude-fable-5-2",
+    "name": "Claude Fable 5.2",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "price_in": 8,
+      "price_out": 40,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/41aa51dff00b6c7025911c5d8988d0eea2b63a47/providers/anthropic/models/claude-fable-5-2.toml",
+      "price_note": "Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. Same as Anthropic's own pricing page (https://platform.claude.com/docs/en/about-claude/pricing, row 'Claude Fable 5.2': $8 / MTok base input, $40 / MTok output), observed 2026-11-12. Optional fast mode is $16 / $80 per MTok.",
+      "provider": "Anthropic"
+    },
+    "local": null,
+    "context_k": 1000,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/41aa51dff00b6c7025911c5d8988d0eea2b63a47/models/anthropic/claude-fable-5-2.toml",
+    "context_note": "models.dev [limit] context = 1_000_000, output = 128_000. Same as Anthropic's model page (https://platform.claude.com/docs/en/models/fable-5-2/overview: 'Context window: 1M tokens · Max output: 128K tokens'), observed 2026-11-12. The pricing page says Claude 4.6 and later models include the full 1M token context window at standard pricing.",
+    "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
+    "identity_note": "API model id claude-fable-5-2 (a dateless pinned snapshot). Released November 9, 2026. Anthropic: 'Claude Fable and Claude Mythos are the same underlying model'; Fable 5.2 is the general-availability configuration with cybersecurity and biology safeguards (blocked requests fall back to Claude Opus 4.8 for cyber and Claude Opus 5 for biology). Scores are Anthropic's own for the Fable 5.2 configuration unless a note says otherwise."
   }
 ]
