@@ -65,7 +65,7 @@ weighted average                          = 29.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+2. Run OpenLLaMA 7B v2 (Q8_0, needs 9 GB memory, 7.16 GB download, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
    
    ```sh
    llama cli -hf exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
@@ -81,7 +81,7 @@ weighted average                          = 29.6
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+2. Run OpenLLaMA 7B v2 (Q8_0, needs 9 GB memory, 7.16 GB download, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
    
    ```sh
    lms get https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF@q8_0 -y
@@ -98,7 +98,7 @@ weighted average                          = 29.6
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+2. Run OpenLLaMA 7B v2 (Q8_0, needs 9 GB memory, 7.16 GB download, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
    
    ```sh
    ollama run hf.co/exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
@@ -106,7 +106,7 @@ weighted average                          = 29.6
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~13.48 GB, from [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2/tree/e5961def23172a2384543940e773ab676033c963))
+1. Run it as published (fp16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2/tree/e5961def23172a2384543940e773ab676033c963))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_7b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

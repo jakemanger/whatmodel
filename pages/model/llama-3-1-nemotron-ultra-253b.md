@@ -124,7 +124,7 @@ NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBe
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 Nemotron Ultra 253B v1 (ud-q4_k_xl, needs ~152.3 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF/tree/main))
+2. Run Llama 3.1 Nemotron Ultra 253B v1 (ud-q4_k_xl, needs 161 GB memory, 151.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
@@ -136,13 +136,13 @@ NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBe
    llama serve -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~76.4 GB) `llama cli -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (101 GB memory, 94.7 GB download) `llama cli -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 Nemotron Ultra 253B v1 (ud-q4_k_xl, needs ~152.3 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF/tree/main))
+2. Run Llama 3.1 Nemotron Ultra 253B v1 (ud-q4_k_xl, needs 161 GB memory, 151.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF@UD-Q4_K_XL -y
@@ -150,7 +150,7 @@ Other versions: ud-q2_k_xl (~76.4 GB) `llama cli -hf unsloth/Llama-3_1-Nemotron-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~76.4 GB) `lms get https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF@UD-Q2_K_XL -y` · 5bit (~174.2 GB, Mac only) `lms get https://huggingface.co/LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5 -y`
+Other versions: ud-q2_k_xl (101 GB memory, 94.7 GB download) `lms get https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF@UD-Q2_K_XL -y` · 5bit (184 GB memory, 174.2 GB download, Mac only) `lms get https://huggingface.co/LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5 -y`
 
 ### MLX (Mac)
 
@@ -163,7 +163,7 @@ Other versions: ud-q2_k_xl (~76.4 GB) `lms get https://huggingface.co/unsloth/Ll
    pip install mlx-lm
    ```
 
-2. Run Llama 3.1 Nemotron Ultra 253B v1 (5bit, needs ~174.2 GB, Mac only, from [huggingface.co/LibraxisAI](https://huggingface.co/LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5/tree/3e772160e672b5a731c14b8be56a5102557daa5d))
+2. Run Llama 3.1 Nemotron Ultra 253B v1 (5bit, needs 184 GB memory, 174.2 GB download, Mac only, from [huggingface.co/LibraxisAI](https://huggingface.co/LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5/tree/3e772160e672b5a731c14b8be56a5102557daa5d))
    
    ```sh
    mlx_lm.chat --model LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5

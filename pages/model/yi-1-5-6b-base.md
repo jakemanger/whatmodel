@@ -57,7 +57,7 @@ weighted average                          = 39.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs 5.4 GB memory, 3.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
    
    ```sh
    llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                          = 39.0
    llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.4 GB) `llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0`
+Other versions: Q8_0 (8.3 GB memory, 6.44 GB download) `llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs 5.4 GB memory, 3.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~6.4 GB) `llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~6.4 GB) `lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q8_0 -y` · 4bit (~3.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-4bit -y` · 8bit (~6.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-8bit -y`
+Other versions: Q8_0 (8.3 GB memory, 6.44 GB download) `lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q8_0 -y` · 4bit (5.1 GB memory, 3.41 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-4bit -y` · 8bit (8.3 GB memory, 6.44 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-8bit -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~6.4 GB) `lms get https://huggingface.co/mradermacher/Yi-1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs 5.4 GB memory, 3.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
    
    ```sh
    ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_0`
+Other versions: Q8_0 (8.3 GB memory, 6.44 GB download) `ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~6.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_
    pip install mlx-lm
    ```
 
-2. Run Yi-1.5 6B (base) (4bit, needs ~3.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-6B-4bit/tree/42eb4fbd31077f4263c1416e3c2b858e94304545))
+2. Run Yi-1.5 6B (base) (4bit, needs 5.1 GB memory, 3.41 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-6B-4bit/tree/42eb4fbd31077f4263c1416e3c2b858e94304545))
    
    ```sh
    mlx_lm.chat --model mlx-community/Yi-1.5-6B-4bit
@@ -125,11 +125,11 @@ Other versions: Q8_0 (~6.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_
    mlx_lm.server --model mlx-community/Yi-1.5-6B-4bit
    ```
 
-Other versions: 8bit (~6.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Yi-1.5-6B-8bit`
+Other versions: 8bit (8.3 GB memory, 6.44 GB download, Mac only) `mlx_lm.chat --model mlx-community/Yi-1.5-6B-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~12.12 GB, from [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-6B/tree/157a3d77ab5a8a8f079510eaa25169b547481f06))
+1. Run it as published (BF16, needs 14.2 GB memory, 12.1 GB download, from [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-6B/tree/157a3d77ab5a8a8f079510eaa25169b547481f06))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-6B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

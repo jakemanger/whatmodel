@@ -155,7 +155,7 @@ api (Deep Infra) · $1.63/M blended · $1.3 in / $2.6 out per 1M tokens · [deep
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V4 Pro (0813) (ud-q4_k_xl, needs ~960.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF/tree/main))
+2. Run DeepSeek V4 Pro (0813) (ud-q4_k_xl, needs 894 GB memory, 849.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V4-Pro-0813-GGUF:UD-Q4_K_XL
@@ -171,7 +171,7 @@ api (Deep Infra) · $1.63/M blended · $1.3 in / $2.6 out per 1M tokens · [deep
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V4 Pro (0813) (ud-q4_k_xl, needs ~960.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF/tree/main))
+2. Run DeepSeek V4 Pro (0813) (ud-q4_k_xl, needs 894 GB memory, 849.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF@UD-Q4_K_XL -y

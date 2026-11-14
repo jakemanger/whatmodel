@@ -157,7 +157,7 @@ api (Alibaba Cloud Model Studio) · $0.35/M blended · $0.2 in / $0.8 out per 1M
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs ~18.6 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/tree/e4d4bafdfb96a411a163846265362aceb0b9c63a))
+2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/tree/e4d4bafdfb96a411a163846265362aceb0b9c63a))
    
    ```sh
    llama cli -hf Qwen/Qwen3-30B-A3B-GGUF:Q4_K_M
@@ -169,13 +169,13 @@ api (Alibaba Cloud Model Studio) · $0.35/M blended · $0.2 in / $0.8 out per 1M
    llama serve -hf Qwen/Qwen3-30B-A3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~32.5 GB) `llama cli -hf Qwen/Qwen3-30B-A3B-GGUF:Q8_0`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `llama cli -hf Qwen/Qwen3-30B-A3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs ~18.6 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/tree/e4d4bafdfb96a411a163846265362aceb0b9c63a))
+2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/tree/e4d4bafdfb96a411a163846265362aceb0b9c63a))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF@Q4_K_M -y
@@ -183,7 +183,7 @@ Other versions: Q8_0 (~32.5 GB) `llama cli -hf Qwen/Qwen3-30B-A3B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~32.5 GB) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF@Q8_0 -y` · 4bit (~16.2 GB, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-4bit -y` · 8bit (~31.5 GB, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-8bit -y`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF@Q8_0 -y` · 4bit (17.6 GB memory, 16.2 GB download, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-4bit -y` · 8bit (32.9 GB memory, 31.5 GB download, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-8bit -y`
 
 ### Ollama
 
@@ -194,13 +194,13 @@ Other versions: Q8_0 (~32.5 GB) `lms get https://huggingface.co/Qwen/Qwen3-30B-A
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs ~18.8 GB, from [ollama.com](https://ollama.com/library/qwen3/tags))
+2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [ollama.com](https://ollama.com/library/qwen3/tags))
    
    ```sh
    ollama run qwen3:30b-a3b-q4_K_M
    ```
 
-Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-q8_0`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `ollama run qwen3:30b-a3b-q8_0`
 
 ### MLX (Mac)
 
@@ -213,7 +213,7 @@ Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (4bit, needs ~16.2 GB, Mac only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-4bit/tree/4e2776a4cc73a8a251d0b797010a5b07fd541a3e))
+2. Run Qwen3 30B-A3B (Apr 2025, hybrid) (4bit, needs 17.6 GB memory, 16.2 GB download, Mac only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-MLX-4bit/tree/4e2776a4cc73a8a251d0b797010a5b07fd541a3e))
    
    ```sh
    mlx_lm.chat --model Qwen/Qwen3-30B-A3B-MLX-4bit
@@ -225,7 +225,7 @@ Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-q8_0`
    mlx_lm.server --model Qwen/Qwen3-30B-A3B-MLX-4bit
    ```
 
-Other versions: 8bit (~31.5 GB, Mac only) `mlx_lm.chat --model Qwen/Qwen3-30B-A3B-MLX-8bit`
+Other versions: 8bit (32.9 GB memory, 31.5 GB download, Mac only) `mlx_lm.chat --model Qwen/Qwen3-30B-A3B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B)
 

@@ -104,7 +104,7 @@ weighted average                                   = 54.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-V2.5 (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
+2. Run DeepSeek-V2.5 (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
    
    ```sh
    llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
@@ -116,13 +116,13 @@ weighted average                                   = 54.3
    llama serve -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q8_0`
+Other versions: Q8_0 (265 GB memory, 250.6 GB download) `llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-V2.5 (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
+2. Run DeepSeek-V2.5 (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q4_K_M -y
@@ -130,7 +130,7 @@ Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-V2.5
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q8_0 -y`
+Other versions: Q8_0 (265 GB memory, 250.6 GB download) `lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -141,13 +141,13 @@ Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-commun
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek-V2.5 (Q4_0, needs ~142.1 GB, from [ollama.com](https://ollama.com/library/deepseek-v2.5/tags))
+2. Run DeepSeek-V2.5 (Q4_0, needs 141 GB memory, 132.9 GB download, from [ollama.com](https://ollama.com/library/deepseek-v2.5/tags))
    
    ```sh
    ollama run deepseek-v2.5:236b-q4_0
    ```
 
-Other versions: Q8_0 (~283.7 GB) `ollama run deepseek-v2.5:236b-q8_0`
+Other versions: Q8_0 (265 GB memory, 250.6 GB download) `ollama run deepseek-v2.5:236b-q8_0`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5)
 

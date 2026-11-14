@@ -123,7 +123,7 @@ api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs ~405.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
+2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs 414 GB memory, 393 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
@@ -135,13 +135,13 @@ api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs
    llama serve -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~203 GB) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q2_K_XL` · ud-iq1_s (~101.75 GB) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-IQ1_S`
+Other versions: ud-q2_k_xl (276 GB memory, 261.5 GB download) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q2_K_XL` · ud-iq1_s (207 GB memory, 195.9 GB download) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs ~405.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
+2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs 414 GB memory, 393 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q4_K_XL -y
@@ -149,7 +149,7 @@ Other versions: ud-q2_k_xl (~203 GB) `llama cli -hf unsloth/Mistral-Large-3-675B
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~203 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~101.75 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-IQ1_S -y`
+Other versions: ud-q2_k_xl (276 GB memory, 261.5 GB download) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (207 GB memory, 195.9 GB download) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-IQ1_S -y`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512)
 

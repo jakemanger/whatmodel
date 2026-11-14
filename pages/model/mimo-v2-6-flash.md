@@ -119,7 +119,7 @@ api (Xiaomi MiMo) · $0.18/M blended · $0.14 in / $0.28 out per 1M tokens · [m
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2.6-Flash (309B-A15B) (Q2_K, needs ~127.77 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102))
+2. Run MiMo-V2.6-Flash (309B-A15B) (Q2_K, needs 136 GB memory, 127.9 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102))
    
    ```sh
    llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K
@@ -131,13 +131,13 @@ api (Xiaomi MiMo) · $0.18/M blended · $0.14 in / $0.28 out per 1M tokens · [m
    llama serve -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K
    ```
 
-Other versions: mxfp4 (~170.12 GB) `llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4`
+Other versions: mxfp4 (180 GB memory, 170.1 GB download) `llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2.6-Flash (309B-A15B) (Q2_K, needs ~127.77 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102))
+2. Run MiMo-V2.6-Flash (309B-A15B) (Q2_K, needs 136 GB memory, 127.9 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102))
    
    ```sh
    lms get https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF@Q2_K -y
@@ -145,7 +145,7 @@ Other versions: mxfp4 (~170.12 GB) `llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: mxfp4 (~170.12 GB) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF@MXFP4 -y`
+Other versions: mxfp4 (180 GB memory, 170.1 GB download) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF@MXFP4 -y`
 
 Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL)
 

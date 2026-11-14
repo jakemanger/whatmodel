@@ -109,7 +109,7 @@ weighted average                                   = 40.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-2 (2.7B) (Q4_K_M, needs ~1.8 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/phi-2-GGUF/tree/5a454d977c6438bb9fb2df233c8ca70f21c87420))
+2. Run Phi-2 (2.7B) (Q4_K_M, needs 4.9 GB memory, 1.79 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/phi-2-GGUF/tree/5a454d977c6438bb9fb2df233c8ca70f21c87420))
    
    ```sh
    llama cli -hf TheBloke/phi-2-GGUF:Q4_K_M
@@ -121,13 +121,13 @@ weighted average                                   = 40.2
    llama serve -hf TheBloke/phi-2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/phi-2-GGUF:Q8_0`
+Other versions: Q8_0 (6.1 GB memory, 2.96 GB download) `llama cli -hf TheBloke/phi-2-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-2 (2.7B) (Q4_K_M, needs ~1.8 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/phi-2-GGUF/tree/5a454d977c6438bb9fb2df233c8ca70f21c87420))
+2. Run Phi-2 (2.7B) (Q4_K_M, needs 4.9 GB memory, 1.79 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/phi-2-GGUF/tree/5a454d977c6438bb9fb2df233c8ca70f21c87420))
    
    ```sh
    lms get https://huggingface.co/TheBloke/phi-2-GGUF@Q4_K_M -y
@@ -135,7 +135,7 @@ Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/phi-2-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/phi-2-GGUF@Q8_0 -y` · 4bit (~1.6 GB, Mac only) `lms get https://huggingface.co/jesusoctavioas/phi-2-mlx-4Bit -y`
+Other versions: Q8_0 (6.1 GB memory, 2.96 GB download) `lms get https://huggingface.co/TheBloke/phi-2-GGUF@Q8_0 -y` · 4bit (4.7 GB memory, 1.57 GB download, Mac only) `lms get https://huggingface.co/jesusoctavioas/phi-2-mlx-4Bit -y`
 
 ### Ollama
 
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/phi-2-GGUF
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-2 (2.7B) (Q4_0, needs ~1.6 GB, from [ollama.com](https://ollama.com/library/phi/tags))
+2. Run Phi-2 (2.7B) (Q4_0, needs 4.7 GB memory, 1.6 GB download, from [ollama.com](https://ollama.com/library/phi/tags))
    
    ```sh
    ollama run phi:2.7b
@@ -163,7 +163,7 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/phi-2-GGUF
    pip install mlx-lm
    ```
 
-2. Run Phi-2 (2.7B) (4bit, needs ~1.6 GB, Mac only, from [huggingface.co/jesusoctavioas](https://huggingface.co/jesusoctavioas/phi-2-mlx-4Bit/tree/6fef5f4133b69b3370df229b9f11dd7c42d24333))
+2. Run Phi-2 (2.7B) (4bit, needs 4.7 GB memory, 1.57 GB download, Mac only, from [huggingface.co/jesusoctavioas](https://huggingface.co/jesusoctavioas/phi-2-mlx-4Bit/tree/6fef5f4133b69b3370df229b9f11dd7c42d24333))
    
    ```sh
    mlx_lm.chat --model jesusoctavioas/phi-2-mlx-4Bit
@@ -177,7 +177,7 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/phi-2-GGUF
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~5.56 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-2/tree/810d367871c1d460086d9f82db8696f2e0a0fcd0))
+1. Run it as published (fp16, needs 8.7 GB memory, 5.56 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-2/tree/810d367871c1d460086d9f82db8696f2e0a0fcd0))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

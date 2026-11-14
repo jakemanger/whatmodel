@@ -93,7 +93,7 @@ weighted average                            = 37.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs ~1.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
+2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs 2.6 GB memory, 1.7 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
    
    ```sh
    llama cli -hf ggml-org/Qwen2-VL-2B-Instruct-GGUF:Q4_K_M
@@ -109,7 +109,7 @@ weighted average                            = 37.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs ~1.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
+2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs 2.6 GB memory, 1.7 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
    
    ```sh
    lms get https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ weighted average                            = 37.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-4bit -y` · 8bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-8bit -y`
+Other versions: 4bit (2.1 GB memory, 1.25 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-4bit -y` · 8bit (3.2 GB memory, 2.35 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -128,7 +128,7 @@ Other versions: 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs ~1.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
+2. Run Qwen2-VL 2B Instruct (Q4_K_M, needs 2.6 GB memory, 1.7 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd))
    
    ```sh
    ollama run hf.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF:Q4_K_M
@@ -145,7 +145,7 @@ Other versions: 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Qwen2-VL 2B Instruct (4bit, needs ~1.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-4bit/tree/01af461cdb9574acc09084a0ef94e216e142b085))
+2. Run Qwen2-VL 2B Instruct (4bit, needs 2.1 GB memory, 1.25 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-4bit/tree/01af461cdb9574acc09084a0ef94e216e142b085))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2-VL-2B-Instruct-4bit
@@ -157,7 +157,7 @@ Other versions: 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/Qwen2-VL-2B-Instruct-4bit
    ```
 
-Other versions: 8bit (~2.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-VL-2B-Instruct-8bit`
+Other versions: 8bit (3.2 GB memory, 2.35 GB download, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-VL-2B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
 

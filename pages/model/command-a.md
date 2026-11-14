@@ -156,7 +156,7 @@ api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command A (03-2025) (Q2_K, needs ~33.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF/tree/main))
+2. Run Command A (03-2025) (Q2_K, needs 45.7 GB memory, 42.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
@@ -172,7 +172,7 @@ api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command A (03-2025) (4bit, needs ~62.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
+2. Run Command A (03-2025) (4bit, needs 67.1 GB memory, 62.5 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
    
    ```sh
    lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit -y
@@ -180,7 +180,7 @@ api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~33.8 GB) `lms get https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF@Q2_K -y` · 8bit (~118 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-8bit -y`
+Other versions: Q2_K (45.7 GB memory, 42.1 GB download) `lms get https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF@Q2_K -y` · 8bit (125 GB memory, 118 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-8bit -y`
 
 ### Ollama
 
@@ -191,7 +191,7 @@ Other versions: Q2_K (~33.8 GB) `lms get https://huggingface.co/unsloth/c4ai-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command A (03-2025) (Q4_K_M, needs ~67.1 GB, from [ollama.com](https://ollama.com/library/command-a/tags))
+2. Run Command A (03-2025) (Q4_K_M, needs 72 GB memory, 67.1 GB download, from [ollama.com](https://ollama.com/library/command-a/tags))
    
    ```sh
    ollama run command-a:111b
@@ -208,7 +208,7 @@ Other versions: Q2_K (~33.8 GB) `lms get https://huggingface.co/unsloth/c4ai-com
    pip install mlx-lm
    ```
 
-2. Run Command A (03-2025) (4bit, needs ~62.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
+2. Run Command A (03-2025) (4bit, needs 67.1 GB memory, 62.5 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
    
    ```sh
    mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-4bit
@@ -220,7 +220,7 @@ Other versions: Q2_K (~33.8 GB) `lms get https://huggingface.co/unsloth/c4ai-com
    mlx_lm.server --model mlx-community/c4ai-command-a-03-2025-4bit
    ```
 
-Other versions: 8bit (~118 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-8bit`
+Other versions: 8bit (125 GB memory, 118 GB download, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-8bit`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-a-03-2025)
 

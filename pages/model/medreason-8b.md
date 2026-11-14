@@ -44,7 +44,7 @@ weighted average                        = 35.6
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/UCSC-VLAA](https://huggingface.co/UCSC-VLAA/MedReason-8B/tree/2730640542b2629e26bdc31938da7ee2a85ebd03))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/UCSC-VLAA](https://huggingface.co/UCSC-VLAA/MedReason-8B/tree/2730640542b2629e26bdc31938da7ee2a85ebd03))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCSC-VLAA/MedReason-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

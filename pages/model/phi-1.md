@@ -79,7 +79,7 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-1 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
+2. Run Phi-1 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
    
    ```sh
    llama cli -hf mradermacher/phi-1-GGUF:Q4_K_M
@@ -91,13 +91,13 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
    llama serve -hf mradermacher/phi-1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.5 GB) `llama cli -hf mradermacher/phi-1-GGUF:Q8_0`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `llama cli -hf mradermacher/phi-1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-1 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
+2. Run Phi-1 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
    
    ```sh
    lms get https://huggingface.co/mradermacher/phi-1-GGUF@Q4_K_M -y
@@ -105,7 +105,7 @@ Other versions: Q8_0 (~1.5 GB) `llama cli -hf mradermacher/phi-1-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.5 GB) `lms get https://huggingface.co/mradermacher/phi-1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `lms get https://huggingface.co/mradermacher/phi-1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -116,17 +116,17 @@ Other versions: Q8_0 (~1.5 GB) `lms get https://huggingface.co/mradermacher/phi-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-1 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
+2. Run Phi-1 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1-GGUF/tree/2d9381278a8afd694482fdeb277261db3ebdd1fb))
    
    ```sh
    ollama run hf.co/mradermacher/phi-1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.5 GB) `ollama run hf.co/mradermacher/phi-1-GGUF:Q8_0`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `ollama run hf.co/mradermacher/phi-1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~2.84 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1/tree/d4c0adcb065e84e00ca814e35cba3012ea9841ab))
+1. Run it as published (fp16, needs 4.5 GB memory, 2.84 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1/tree/d4c0adcb065e84e00ca814e35cba3012ea9841ab))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])"

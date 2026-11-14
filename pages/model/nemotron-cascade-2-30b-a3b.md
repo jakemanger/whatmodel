@@ -143,7 +143,7 @@ nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascad
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs ~24.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF/tree/931b595fc71b7ca14fb9d935af011f69f7c0434c))
+2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs 27.4 GB memory, 24.7 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF/tree/931b595fc71b7ca14fb9d935af011f69f7c0434c))
    
    ```sh
    llama cli -hf bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF:Q4_K_M
@@ -155,13 +155,13 @@ nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascad
    llama serve -hf bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~33.6 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF:Q8_0`
+Other versions: Q8_0 (36.8 GB memory, 33.6 GB download) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs ~24.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF/tree/931b595fc71b7ca14fb9d935af011f69f7c0434c))
+2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs 27.4 GB memory, 24.7 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF/tree/931b595fc71b7ca14fb9d935af011f69f7c0434c))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF@Q4_K_M -y
@@ -169,7 +169,7 @@ Other versions: Q8_0 (~33.6 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~33.6 GB) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF@Q8_0 -y` · 4bit (~17.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-4bit -y` · 8bit (~33.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-8bit -y`
+Other versions: Q8_0 (36.8 GB memory, 33.6 GB download) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-2-30B-A3B-GGUF@Q8_0 -y` · 4bit (20.2 GB memory, 17.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-4bit -y` · 8bit (36.8 GB memory, 33.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-8bit -y`
 
 ### Ollama
 
@@ -180,7 +180,7 @@ Other versions: Q8_0 (~33.6 GB) `lms get https://huggingface.co/bartowski/nvidia
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs ~19.46 GB, from [ollama.com](https://ollama.com/library/nemotron-cascade-2/tags))
+2. Run Nemotron Cascade 2 30B-A3B (Q4_K_M, needs 27 GB memory, 24.3 GB download, from [ollama.com](https://ollama.com/library/nemotron-cascade-2/tags))
    
    ```sh
    ollama run nemotron-cascade-2:30b
@@ -197,7 +197,7 @@ Other versions: Q8_0 (~33.6 GB) `lms get https://huggingface.co/bartowski/nvidia
    pip install mlx-lm
    ```
 
-2. Run Nemotron Cascade 2 30B-A3B (4bit, needs ~17.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-4bit/tree/cf40185ae9f11417eef7f9af6f6d5e11740e52a6))
+2. Run Nemotron Cascade 2 30B-A3B (4bit, needs 20.2 GB memory, 17.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Nemotron-Cascade-2-30B-A3B-4bit/tree/cf40185ae9f11417eef7f9af6f6d5e11740e52a6))
    
    ```sh
    mlx_lm.chat --model mlx-community/Nemotron-Cascade-2-30B-A3B-4bit
@@ -209,7 +209,7 @@ Other versions: Q8_0 (~33.6 GB) `lms get https://huggingface.co/bartowski/nvidia
    mlx_lm.server --model mlx-community/Nemotron-Cascade-2-30B-A3B-4bit
    ```
 
-Other versions: 8bit (~33.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Nemotron-Cascade-2-30B-A3B-8bit`
+Other versions: 8bit (36.8 GB memory, 33.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/Nemotron-Cascade-2-30B-A3B-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B)
 

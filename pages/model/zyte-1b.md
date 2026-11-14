@@ -58,7 +58,7 @@ weighted average                                   = 10.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Zyte-1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
+2. Run Zyte-1B (Q4_K_M, needs 2.2 GB memory, 0.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
    
    ```sh
    llama cli -hf mradermacher/Zyte-1B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 10.6
    llama serve -hf mradermacher/Zyte-1B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.2 GB) `llama cli -hf mradermacher/Zyte-1B-GGUF:Q8_0`
+Other versions: Q8_0 (2.7 GB memory, 1.17 GB download) `llama cli -hf mradermacher/Zyte-1B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Zyte-1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
+2. Run Zyte-1B (Q4_K_M, needs 2.2 GB memory, 0.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Zyte-1B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~1.2 GB) `llama cli -hf mradermacher/Zyte-1B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/mradermacher/Zyte-1B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (2.7 GB memory, 1.17 GB download) `lms get https://huggingface.co/mradermacher/Zyte-1B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/mradermacher/Zyte
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Zyte-1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
+2. Run Zyte-1B (Q4_K_M, needs 2.2 GB memory, 0.67 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Zyte-1B-GGUF/tree/52b6ea94b6c9ea353cc0b45304046763d58ad291))
    
    ```sh
    ollama run hf.co/mradermacher/Zyte-1B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.2 GB) `ollama run hf.co/mradermacher/Zyte-1B-GGUF:Q8_0`
+Other versions: Q8_0 (2.7 GB memory, 1.17 GB download) `ollama run hf.co/mradermacher/Zyte-1B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~2.2 GB, from [huggingface.co/venkycs](https://huggingface.co/venkycs/Zyte-1B/tree/ac684856e83b3b19b45d59c71ea6560204b33fff))
+1. Run it as published (fp16, needs 3.8 GB memory, 2.2 GB download, from [huggingface.co/venkycs](https://huggingface.co/venkycs/Zyte-1B/tree/ac684856e83b3b19b45d59c71ea6560204b33fff))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='venkycs/Zyte-1B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

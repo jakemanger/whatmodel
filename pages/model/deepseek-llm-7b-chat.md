@@ -76,7 +76,7 @@ weighted average                                   = 36.4
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek LLM 7B Chat (Q4_0, needs ~4 GB, from [ollama.com](https://ollama.com/library/deepseek-llm/tags))
+2. Run DeepSeek LLM 7B Chat (Q4_0, needs 5.7 GB memory, 4 GB download, from [ollama.com](https://ollama.com/library/deepseek-llm/tags))
    
    ```sh
    ollama run deepseek-llm:7b

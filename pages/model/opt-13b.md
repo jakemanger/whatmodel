@@ -74,7 +74,7 @@ weighted average                                   = 25.9
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~25.71 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-13b/tree/e515202d1e7750da62d245fbccb2723b9c1790f5))
+1. Run it as published (fp16, needs 28.5 GB memory, 25.7 GB download, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-13b/tree/e515202d1e7750da62d245fbccb2723b9c1790f5))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

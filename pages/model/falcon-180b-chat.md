@@ -67,7 +67,7 @@ weighted average                                   = 40.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon-180B-Chat (Q4_0, needs ~108.5 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+2. Run Falcon-180B-Chat (Q4_0, needs 108 GB memory, 101.5 GB download, from [ollama.com](https://ollama.com/library/falcon/tags))
    
    ```sh
    ollama run falcon:180b-chat-q4_0

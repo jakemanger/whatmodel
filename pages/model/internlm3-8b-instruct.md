@@ -53,7 +53,7 @@ weighted average                            = 54.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run InternLM3 8B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
+2. Run InternLM3 8B Instruct (Q4_K_M, needs 7.1 GB memory, 5.36 GB download, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
    
    ```sh
    llama cli -hf internlm/internlm3-8b-instruct-gguf:q4_k_m
@@ -65,13 +65,13 @@ weighted average                            = 54.6
    llama serve -hf internlm/internlm3-8b-instruct-gguf:q4_k_m
    ```
 
-Other versions: Q8_0 (~9.4 GB) `llama cli -hf internlm/internlm3-8b-instruct-gguf:q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.36 GB download) `llama cli -hf internlm/internlm3-8b-instruct-gguf:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run InternLM3 8B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
+2. Run InternLM3 8B Instruct (Q4_K_M, needs 7.1 GB memory, 5.36 GB download, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
    
    ```sh
    lms get https://huggingface.co/internlm/internlm3-8b-instruct-gguf@q4_k_m -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~9.4 GB) `llama cli -hf internlm/internlm3-8b-instruct-ggu
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/internlm/internlm3-8b-instruct-gguf@q8_0 -y` · 4bit (~5 GB, Mac only) `lms get https://huggingface.co/mlx-community/internlm3-8b-instruct-4bit -y`
+Other versions: Q8_0 (11.3 GB memory, 9.36 GB download) `lms get https://huggingface.co/internlm/internlm3-8b-instruct-gguf@q8_0 -y` · 4bit (6.7 GB memory, 4.95 GB download, Mac only) `lms get https://huggingface.co/mlx-community/internlm3-8b-instruct-4bit -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/internlm/internlm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run InternLM3 8B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
+2. Run InternLM3 8B Instruct (Q4_K_M, needs 7.1 GB memory, 5.36 GB download, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct-gguf/tree/da5c6e82dacd20a4914fd304658e17d119b02ed5))
    
    ```sh
    ollama run hf.co/internlm/internlm3-8b-instruct-gguf:q4_k_m
    ```
 
-Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/internlm/internlm3-8b-instruct-gguf:q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.36 GB download) `ollama run hf.co/internlm/internlm3-8b-instruct-gguf:q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/internlm/internlm3-8b-instruct-
    pip install mlx-lm
    ```
 
-2. Run InternLM3 8B Instruct (4bit, needs ~5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/internlm3-8b-instruct-4bit/tree/66da2a5dfae1ede3e02d1de071b9238c15dbaa0f))
+2. Run InternLM3 8B Instruct (4bit, needs 6.7 GB memory, 4.95 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/internlm3-8b-instruct-4bit/tree/66da2a5dfae1ede3e02d1de071b9238c15dbaa0f))
    
    ```sh
    mlx_lm.chat --model mlx-community/internlm3-8b-instruct-4bit
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/internlm/internlm3-8b-instruct-
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.61 GB, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct/tree/28c99415adaf61767bd1c619f4f99f308fdfd223))
+1. Run it as published (BF16, needs 20 GB memory, 17.6 GB download, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct/tree/28c99415adaf61767bd1c619f4f99f308fdfd223))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='internlm/internlm3-8b-instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

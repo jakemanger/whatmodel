@@ -114,7 +114,7 @@ weighted average                                   = 65.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs ~315.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
+2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs 333 GB memory, 315.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
    
    ```sh
    lms get https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit -y
@@ -133,7 +133,7 @@ weighted average                                   = 65.1
    pip install mlx-lm
    ```
 
-2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs ~315.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
+2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs 333 GB memory, 315.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
    
    ```sh
    mlx_lm.chat --model mlx-community/LongCat-Flash-Chat-4bit

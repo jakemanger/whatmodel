@@ -95,7 +95,7 @@ OpenGVLab  <a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descripti
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~8.29 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (BF16, needs 10.2 GB memory, 8.29 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve OpenGVLab/InternVL2-4B --trust-remote-code

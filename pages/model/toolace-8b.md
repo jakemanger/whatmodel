@@ -56,7 +56,7 @@ weighted average                                   = 55.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run ToolACE-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
+2. Run ToolACE-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
    
    ```sh
    llama cli -hf Nekuromento/ToolACE-8B-Q4_K_M-GGUF:q4_k_m
@@ -72,7 +72,7 @@ weighted average                                   = 55.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run ToolACE-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
+2. Run ToolACE-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
    
    ```sh
    lms get https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF@q4_k_m -y
@@ -89,7 +89,7 @@ weighted average                                   = 55.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run ToolACE-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
+2. Run ToolACE-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Nekuromento](https://huggingface.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF/tree/15b132f1f53ec0b297c44770ef021c6da7b837af))
    
    ```sh
    ollama run hf.co/Nekuromento/ToolACE-8B-Q4_K_M-GGUF:q4_k_m
@@ -97,7 +97,7 @@ weighted average                                   = 55.0
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-8B/tree/e9ee4e01673919f5e291fbc37be31643f330b20c))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-8B/tree/e9ee4e01673919f5e291fbc37be31643f330b20c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Team-ACE/ToolACE-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

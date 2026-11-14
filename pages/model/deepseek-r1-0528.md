@@ -173,7 +173,7 @@ api (Deep Infra) · $0.91/M blended · $0.5 in / $2.15 out per 1M tokens · [dee
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek R1 0528 (ud-q2_k_xl, needs ~206 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF/tree/main))
+2. Run DeepSeek R1 0528 (ud-q2_k_xl, needs 252 GB memory, 251.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-R1-0528-GGUF:UD-Q2_K_XL
@@ -185,13 +185,13 @@ api (Deep Infra) · $0.91/M blended · $0.5 in / $2.15 out per 1M tokens · [dee
    llama serve -hf unsloth/DeepSeek-R1-0528-GGUF:UD-Q2_K_XL
    ```
 
-Other versions: ud-iq1_s (~103.25 GB) `llama cli -hf unsloth/DeepSeek-R1-0528-GGUF:UD-IQ1_S`
+Other versions: ud-iq1_s (187 GB memory, 185.5 GB download) `llama cli -hf unsloth/DeepSeek-R1-0528-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek R1 0528 (4bit, needs ~377.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-0528-4bit/tree/5b83525ead6d2f731d4149aa844aa541fa59b2f3))
+2. Run DeepSeek R1 0528 (4bit, needs 379 GB memory, 377.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-0528-4bit/tree/5b83525ead6d2f731d4149aa844aa541fa59b2f3))
    
    ```sh
    lms get https://huggingface.co/mlx-community/DeepSeek-R1-0528-4bit -y
@@ -199,7 +199,7 @@ Other versions: ud-iq1_s (~103.25 GB) `llama cli -hf unsloth/DeepSeek-R1-0528-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~103.25 GB) `lms get https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF@UD-IQ1_S -y` · 8bit (~713.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-0528-8bit -y`
+Other versions: ud-q2_k_xl (252 GB memory, 251.1 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (187 GB memory, 185.5 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-R1-0528-GGUF@UD-IQ1_S -y` · 8bit (714 GB memory, 713.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-0528-8bit -y`
 
 ### Ollama
 
@@ -210,7 +210,7 @@ Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/Dee
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek R1 0528 (Q4_K_M, needs ~411.5 GB, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
+2. Run DeepSeek R1 0528 (Q4_K_M, needs 406 GB memory, 404.4 GB download, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
    
    ```sh
    ollama run deepseek-r1:671b-0528-q4_K_M
@@ -227,7 +227,7 @@ Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/Dee
    pip install mlx-lm
    ```
 
-2. Run DeepSeek R1 0528 (4bit, needs ~377.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-0528-4bit/tree/5b83525ead6d2f731d4149aa844aa541fa59b2f3))
+2. Run DeepSeek R1 0528 (4bit, needs 379 GB memory, 377.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-0528-4bit/tree/5b83525ead6d2f731d4149aa844aa541fa59b2f3))
    
    ```sh
    mlx_lm.chat --model mlx-community/DeepSeek-R1-0528-4bit
@@ -239,7 +239,7 @@ Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/Dee
    mlx_lm.server --model mlx-community/DeepSeek-R1-0528-4bit
    ```
 
-Other versions: 8bit (~713.1 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-0528-8bit`
+Other versions: 8bit (714 GB memory, 713.1 GB download, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-0528-8bit`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528)
 

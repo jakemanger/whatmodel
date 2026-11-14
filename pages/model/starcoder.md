@@ -71,7 +71,7 @@ weighted average                                   = 36.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StarCoder 15.5B (Q4_K_M, needs ~10.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder-GGUF/tree/081cdab8112887d9e332e652551f67e50f33ca55))
+2. Run StarCoder 15.5B (Q4_K_M, needs 12.1 GB memory, 10.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder-GGUF/tree/081cdab8112887d9e332e652551f67e50f33ca55))
    
    ```sh
    llama cli -hf mradermacher/starcoder-GGUF:Q4_K_M
@@ -83,13 +83,13 @@ weighted average                                   = 36.3
    llama serve -hf mradermacher/starcoder-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starcoder-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf mradermacher/starcoder-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StarCoder 15.5B (Q4_K_M, needs ~10.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder-GGUF/tree/081cdab8112887d9e332e652551f67e50f33ca55))
+2. Run StarCoder 15.5B (Q4_K_M, needs 12.1 GB memory, 10.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder-GGUF/tree/081cdab8112887d9e332e652551f67e50f33ca55))
    
    ```sh
    lms get https://huggingface.co/mradermacher/starcoder-GGUF@Q4_K_M -y
@@ -97,7 +97,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starcoder-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starcoder-GGUF@Q8_0 -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/mradermacher/starcoder-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -108,17 +108,17 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarCoder 15.5B (Q4_0, needs ~9 GB, from [ollama.com](https://ollama.com/library/starcoder/tags))
+2. Run StarCoder 15.5B (Q4_0, needs 10.9 GB memory, 8.99 GB download, from [ollama.com](https://ollama.com/library/starcoder/tags))
    
    ```sh
    ollama run starcoder:15b
    ```
 
-Other versions: Q4_0 (~9 GB) `ollama run starcoder:15b`
+Other versions: Q4_0 (10.9 GB memory, 8.99 GB download) `ollama run starcoder:15b`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~63.28 GB, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder/tree/827cd7721231872c152e3faef5cae1b22964ed58))
+1. Run it as published (fp32, needs 68 GB memory, 63.3 GB download, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder/tree/827cd7721231872c152e3faef5cae1b22964ed58))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

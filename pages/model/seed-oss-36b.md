@@ -119,7 +119,7 @@ weighted average                                   = 61.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs ~22.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
+2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs 24.4 GB memory, 21.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q4_K_M
@@ -131,13 +131,13 @@ weighted average                                   = 61.8
    llama serve -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~43.94 GB) `llama cli -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0`
+Other versions: gguf-q8_0 (41.8 GB memory, 38.4 GB download) `llama cli -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs ~22.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
+2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs 24.4 GB memory, 21.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF@Q4_K_M -y
@@ -145,7 +145,7 @@ Other versions: gguf-q8_0 (~43.94 GB) `llama cli -hf unsloth/Seed-OSS-36B-Instru
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~43.94 GB) `lms get https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF@Q8_0 -y` · 4bit (~20.3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit -y` · 8bit (~38.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-8bit -y`
+Other versions: gguf-q8_0 (41.8 GB memory, 38.4 GB download) `lms get https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF@Q8_0 -y` · 4bit (22.8 GB memory, 20.3 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit -y` · 8bit (41.8 GB memory, 38.4 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-8bit -y`
 
 ### Ollama
 
@@ -156,13 +156,13 @@ Other versions: gguf-q8_0 (~43.94 GB) `lms get https://huggingface.co/unsloth/Se
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs ~22.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
+2. Run Seed-OSS 36B Instruct (gguf-q4_k_m, needs 24.4 GB memory, 21.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Seed-OSS-36B-Instruct-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/unsloth/Seed-OSS-36B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~43.94 GB) `ollama run hf.co/unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0`
+Other versions: gguf-q8_0 (41.8 GB memory, 38.4 GB download) `ollama run hf.co/unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -175,7 +175,7 @@ Other versions: gguf-q8_0 (~43.94 GB) `ollama run hf.co/unsloth/Seed-OSS-36B-Ins
    pip install mlx-lm
    ```
 
-2. Run Seed-OSS 36B Instruct (4bit, needs ~20.3 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit/tree/aedfa6b5de1525fa96e3f12d81ba00f2cbfc22a5))
+2. Run Seed-OSS 36B Instruct (4bit, needs 22.8 GB memory, 20.3 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit/tree/aedfa6b5de1525fa96e3f12d81ba00f2cbfc22a5))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit
@@ -187,7 +187,7 @@ Other versions: gguf-q8_0 (~43.94 GB) `ollama run hf.co/unsloth/Seed-OSS-36B-Ins
    mlx_lm.server --model lmstudio-community/Seed-OSS-36B-Instruct-MLX-4bit
    ```
 
-Other versions: 8bit (~38.4 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Seed-OSS-36B-Instruct-MLX-8bit`
+Other versions: 8bit (41.8 GB memory, 38.4 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Seed-OSS-36B-Instruct-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/ByteDance-Seed](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct)
 

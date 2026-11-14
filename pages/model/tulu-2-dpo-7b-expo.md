@@ -56,7 +56,7 @@ weighted average                              = 38.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
+2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
    
    ```sh
    llama cli -hf mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 38.0
    llama serve -hf mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
+2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/tulu-2-dpo-7b-ExPO-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/tulu
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
+2. Run tulu-2-dpo-7b-ExPO (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF/tree/e8ab09f519ca034f6bc53ea4226d336efd48ef7c))
    
    ```sh
    ollama run hf.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/mradermacher/tulu-2-dpo-7b-ExPO-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/tulu-2-dpo-7b-ExPO/tree/ce5fa0ee3551d88a291300aabb70e388979a6fe9))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/tulu-2-dpo-7b-ExPO/tree/ce5fa0ee3551d88a291300aabb70e388979a6fe9))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/tulu-2-dpo-7b-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

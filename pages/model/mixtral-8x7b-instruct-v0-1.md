@@ -147,7 +147,7 @@ weighted average                                   = 42.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mixtral 8x7B Instruct v0.1 (Q4_K_M, needs ~26.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/tree/fa1d3835c5d45a3a74c0b68805fcdc133dba2b6a))
+2. Run Mixtral 8x7B Instruct v0.1 (Q4_K_M, needs 27.9 GB memory, 26.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/tree/fa1d3835c5d45a3a74c0b68805fcdc133dba2b6a))
    
    ```sh
    llama cli -hf TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF:Q4_K_M
@@ -159,13 +159,13 @@ weighted average                                   = 42.1
    llama serve -hf TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~49.6 GB) `llama cli -hf TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (51.1 GB memory, 49.6 GB download) `llama cli -hf TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mixtral 8x7B Instruct v0.1 (Q4_K_M, needs ~26.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/tree/fa1d3835c5d45a3a74c0b68805fcdc133dba2b6a))
+2. Run Mixtral 8x7B Instruct v0.1 (Q4_K_M, needs 27.9 GB memory, 26.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/tree/fa1d3835c5d45a3a74c0b68805fcdc133dba2b6a))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF@Q4_K_M -y
@@ -173,7 +173,7 @@ Other versions: Q8_0 (~49.6 GB) `llama cli -hf TheBloke/Mixtral-8x7B-Instruct-v0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF@Q8_0 -y` · 4bit (~26.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit -y` · 8bit (~49.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-8bit -y`
+Other versions: Q8_0 (51.1 GB memory, 49.6 GB download) `lms get https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF@Q8_0 -y` · 4bit (27.8 GB memory, 26.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit -y` · 8bit (51.1 GB memory, 49.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-8bit -y`
 
 ### Ollama
 
@@ -184,13 +184,13 @@ Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Mixtral
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mixtral 8x7B Instruct v0.1 (Q4_0, needs ~28.52 GB, from [ollama.com](https://ollama.com/library/mixtral/tags))
+2. Run Mixtral 8x7B Instruct v0.1 (Q4_0, needs 27.9 GB memory, 26.4 GB download, from [ollama.com](https://ollama.com/library/mixtral/tags))
    
    ```sh
    ollama run mixtral:8x7b
    ```
 
-Other versions: Q4_K_M (~28.52 GB) `ollama run mixtral:8x7b-instruct-v0.1-q4_K_M` · Q8_0 (~56.54 GB) `ollama run mixtral:8x7b-instruct-v0.1-q8_0`
+Other versions: Q4_K_M (29.9 GB memory, 28.4 GB download) `ollama run mixtral:8x7b-instruct-v0.1-q4_K_M` · Q8_0 (51.1 GB memory, 49.6 GB download) `ollama run mixtral:8x7b-instruct-v0.1-q8_0`
 
 ### MLX (Mac)
 
@@ -203,7 +203,7 @@ Other versions: Q4_K_M (~28.52 GB) `ollama run mixtral:8x7b-instruct-v0.1-q4_K_M
    pip install mlx-lm
    ```
 
-2. Run Mixtral 8x7B Instruct v0.1 (4bit, needs ~26.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit/tree/4e8f70450ccdfa3a4b9a4133eaa0d88e43882383))
+2. Run Mixtral 8x7B Instruct v0.1 (4bit, needs 27.8 GB memory, 26.3 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit/tree/4e8f70450ccdfa3a4b9a4133eaa0d88e43882383))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit
@@ -215,7 +215,7 @@ Other versions: Q4_K_M (~28.52 GB) `ollama run mixtral:8x7b-instruct-v0.1-q4_K_M
    mlx_lm.server --model mlx-community/Mixtral-8x7B-Instruct-v0.1-4bit
    ```
 
-Other versions: 8bit (~49.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Mixtral-8x7B-Instruct-v0.1-8bit`
+Other versions: 8bit (51.1 GB memory, 49.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/Mixtral-8x7B-Instruct-v0.1-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
 

@@ -174,7 +174,7 @@ api (Deep Infra) · $0.64/M blended · $0.45 in / $1.2 out per 1M tokens · [dee
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Inkling Small (266B-A12B) (ud-q4_k_xl, needs ~160.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Inkling-Small-GGUF/tree/main))
+2. Run Inkling Small (266B-A12B) (ud-q4_k_xl, needs 173 GB memory, 163.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Inkling-Small-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Inkling-Small-GGUF:UD-Q4_K_XL
@@ -186,13 +186,13 @@ api (Deep Infra) · $0.64/M blended · $0.45 in / $1.2 out per 1M tokens · [dee
    llama serve -hf unsloth/Inkling-Small-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~80.3 GB) `llama cli -hf unsloth/Inkling-Small-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (94 GB memory, 88.1 GB download) `llama cli -hf unsloth/Inkling-Small-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Inkling Small (266B-A12B) (ud-q4_k_xl, needs ~160.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Inkling-Small-GGUF/tree/main))
+2. Run Inkling Small (266B-A12B) (ud-q4_k_xl, needs 173 GB memory, 163.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Inkling-Small-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Inkling-Small-GGUF@UD-Q4_K_XL -y
@@ -200,7 +200,7 @@ Other versions: ud-q2_k_xl (~80.3 GB) `llama cli -hf unsloth/Inkling-Small-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~80.3 GB) `lms get https://huggingface.co/unsloth/Inkling-Small-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (94 GB memory, 88.1 GB download) `lms get https://huggingface.co/unsloth/Inkling-Small-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/thinkingmachines](https://huggingface.co/thinkingmachines/Inkling-Small)
 

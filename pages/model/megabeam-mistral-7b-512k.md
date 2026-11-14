@@ -56,7 +56,7 @@ weighted average                                   = 49.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
+2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
    
    ```sh
    llama cli -hf bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 49.1
    llama serve -hf bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `llama cli -hf bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
+2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
    
    ```sh
    lms get https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/MegaBeam-Mistral-7B-512k
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `lms get https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/MegaBea
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
+2. Run MegaBeam-Mistral-7B-512k (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF/tree/f6a596eaf9072a24f79a9b9a175d2ce103ca665b))
    
    ```sh
    ollama run hf.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `ollama run hf.co/bartowski/MegaBeam-Mistral-7B-512k-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/aws-prototyping](https://huggingface.co/aws-prototyping/MegaBeam-Mistral-7B-512k/tree/7a9bfb11b5d5e56eae0e4b52290d705cdd55f7a6))
+1. Run it as published (BF16, needs 16 GB memory, 14.5 GB download, from [huggingface.co/aws-prototyping](https://huggingface.co/aws-prototyping/MegaBeam-Mistral-7B-512k/tree/7a9bfb11b5d5e56eae0e4b52290d705cdd55f7a6))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aws-prototyping/MegaBeam-Mistral-7B-512k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -57,7 +57,7 @@ weighted average                                   = 49.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hammer2.1-1.5b (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
+2. Run Hammer2.1-1.5b (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
    
    ```sh
    llama cli -hf mradermacher/Hammer2.1-1.5b-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 49.7
    llama serve -hf mradermacher/Hammer2.1-1.5b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `llama cli -hf mradermacher/Hammer2.1-1.5b-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `llama cli -hf mradermacher/Hammer2.1-1.5b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hammer2.1-1.5b (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
+2. Run Hammer2.1-1.5b (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~1.6 GB) `llama cli -hf mradermacher/Hammer2.1-1.5b-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF@Q8_0 -y` · 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/smdesai/Hammer2.1-1.5b-4-bit -y` · 8bit (~1.6 GB, Mac only) `lms get https://huggingface.co/smdesai/Hammer2.1-1.5b-8-bit -y`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `lms get https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF@Q8_0 -y` · 4bit (2.4 GB memory, 0.87 GB download, Mac only) `lms get https://huggingface.co/smdesai/Hammer2.1-1.5b-4-bit -y` · 8bit (3.2 GB memory, 1.64 GB download, Mac only) `lms get https://huggingface.co/smdesai/Hammer2.1-1.5b-8-bit -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/mradermacher/Hamm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hammer2.1-1.5b (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
+2. Run Hammer2.1-1.5b (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-1.5b-GGUF/tree/d3414318e22ced45ca3c43862269a75db5b5f2ed))
    
    ```sh
    ollama run hf.co/mradermacher/Hammer2.1-1.5b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Hammer2.1-1.5b-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `ollama run hf.co/mradermacher/Hammer2.1-1.5b-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Hammer2.1-1.5b-GGU
    pip install mlx-lm
    ```
 
-2. Run Hammer2.1-1.5b (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/smdesai](https://huggingface.co/smdesai/Hammer2.1-1.5b-4-bit/tree/1ee7867b6c8068f77b0e740bace733043ed453e2))
+2. Run Hammer2.1-1.5b (4bit, needs 2.4 GB memory, 0.87 GB download, Mac only, from [huggingface.co/smdesai](https://huggingface.co/smdesai/Hammer2.1-1.5b-4-bit/tree/1ee7867b6c8068f77b0e740bace733043ed453e2))
    
    ```sh
    mlx_lm.chat --model smdesai/Hammer2.1-1.5b-4-bit
@@ -125,11 +125,11 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Hammer2.1-1.5b-GGU
    mlx_lm.server --model smdesai/Hammer2.1-1.5b-4-bit
    ```
 
-Other versions: 8bit (~1.6 GB, Mac only) `mlx_lm.chat --model smdesai/Hammer2.1-1.5b-8-bit`
+Other versions: 8bit (3.2 GB memory, 1.64 GB download, Mac only) `mlx_lm.chat --model smdesai/Hammer2.1-1.5b-8-bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~3.09 GB, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-1.5b/tree/62c20f5e1bfa567e9cb37fffe72428bfbf98270e))
+1. Run it as published (BF16, needs 4.7 GB memory, 3.09 GB download, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-1.5b/tree/62c20f5e1bfa567e9cb37fffe72428bfbf98270e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-1.5b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

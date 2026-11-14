@@ -57,7 +57,7 @@ weighted average                                   = 43.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
+2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
    
    ```sh
    llama cli -hf TheBloke/Code-13B-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 43.1
    llama serve -hf TheBloke/Code-13B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/Code-13B-GGUF:Q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `llama cli -hf TheBloke/Code-13B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
+2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Code-13B-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/Code-13B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/Code-13B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `lms get https://huggingface.co/TheBloke/Code-13B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/Code-13
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
+2. Run Code-13B (ajibawa-2023) (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-13B-GGUF/tree/3823dbe388baed2f59a22728b733d6021abb86e9))
    
    ```sh
    ollama run hf.co/TheBloke/Code-13B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/TheBloke/Code-13B-GGUF:Q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `ollama run hf.co/TheBloke/Code-13B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~26.03 GB, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-13B/tree/0cab02d280c6ab9bb294fe0c641935ac1e7b3fbb))
+1. Run it as published (BF16, needs 28.8 GB memory, 26 GB download, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-13B/tree/0cab02d280c6ab9bb294fe0c641935ac1e7b3fbb))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/Code-13B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

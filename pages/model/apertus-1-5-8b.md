@@ -46,7 +46,7 @@ weighted average                            = 48.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Apertus 1.5 8B (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/tokimoa](https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit/tree/f08ed532a657bef7d322bd0cbca43dac13a9d0a3))
+2. Run Apertus 1.5 8B (4bit, needs 6.3 GB memory, 4.53 GB download, Mac only, from [huggingface.co/tokimoa](https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit/tree/f08ed532a657bef7d322bd0cbca43dac13a9d0a3))
    
    ```sh
    lms get https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit -y
@@ -54,7 +54,7 @@ weighted average                            = 48.2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~8.6 GB, Mac only) `lms get https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-8bit -y`
+Other versions: 8bit (10.5 GB memory, 8.56 GB download, Mac only) `lms get https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-8bit -y`
 
 ### MLX (Mac)
 
@@ -67,7 +67,7 @@ Other versions: 8bit (~8.6 GB, Mac only) `lms get https://huggingface.co/tokimoa
    pip install mlx-lm
    ```
 
-2. Run Apertus 1.5 8B (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/tokimoa](https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit/tree/f08ed532a657bef7d322bd0cbca43dac13a9d0a3))
+2. Run Apertus 1.5 8B (4bit, needs 6.3 GB memory, 4.53 GB download, Mac only, from [huggingface.co/tokimoa](https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit/tree/f08ed532a657bef7d322bd0cbca43dac13a9d0a3))
    
    ```sh
    mlx_lm.chat --model tokimoa/apertus-v1.5-8b-mlx-4bit
@@ -79,11 +79,11 @@ Other versions: 8bit (~8.6 GB, Mac only) `lms get https://huggingface.co/tokimoa
    mlx_lm.server --model tokimoa/apertus-v1.5-8b-mlx-4bit
    ```
 
-Other versions: 8bit (~8.6 GB, Mac only) `mlx_lm.chat --model tokimoa/apertus-v1.5-8b-mlx-8bit`
+Other versions: 8bit (10.5 GB memory, 8.56 GB download, Mac only) `mlx_lm.chat --model tokimoa/apertus-v1.5-8b-mlx-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.8 GB, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md))
+1. Run it as published (BF16, needs 20.8 GB memory, 18.4 GB download, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md))
    
    ```sh
    vllm serve swiss-ai/Apertus-v1.5-8B --chat-template-content-format string --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true

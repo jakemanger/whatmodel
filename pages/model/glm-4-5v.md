@@ -94,7 +94,7 @@ api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai]
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4.5V (Q4_K_M, needs ~64.63 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
+2. Run GLM-4.5V (Q4_K_M, needs 69.3 GB memory, 64.6 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
    
    ```sh
    llama cli -hf ggml-org/GLM-4.5V-GGUF:Q4_K_M
@@ -110,7 +110,7 @@ api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai]
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4.5V (Q4_K_M, needs ~64.63 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
+2. Run GLM-4.5V (Q4_K_M, needs 69.3 GB memory, 64.6 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
    
    ```sh
    lms get https://huggingface.co/ggml-org/GLM-4.5V-GGUF@Q4_K_M -y

@@ -120,7 +120,7 @@ weighted average                                   = 48.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.23 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs 4.8 GB memory, 4.23 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
    
    ```sh
    llama cli -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
@@ -136,7 +136,7 @@ weighted average                                   = 48.5
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.23 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs 4.8 GB memory, 4.23 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF@Q4_K_M -y
@@ -144,7 +144,7 @@ weighted average                                   = 48.5
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~3.9 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit -y` · 8bit (~7.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-8bit -y`
+Other versions: 4bit (4.5 GB memory, 3.91 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit -y` · 8bit (8 GB memory, 7.37 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-8bit -y`
 
 ### Ollama
 
@@ -155,7 +155,7 @@ Other versions: 4bit (~3.9 GB, Mac only) `lms get https://huggingface.co/lmstudi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.2 GB, from [ollama.com](https://ollama.com/library/granite4/tags))
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs 4.8 GB memory, 4.23 GB download, from [ollama.com](https://ollama.com/library/granite4/tags))
    
    ```sh
    ollama run granite4:tiny-h
@@ -172,7 +172,7 @@ Other versions: 4bit (~3.9 GB, Mac only) `lms get https://huggingface.co/lmstudi
    pip install mlx-lm
    ```
 
-2. Run Granite 4.0 H Tiny (7B-A1B) (4bit, needs ~3.9 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit/tree/a0f1fb8fdb387c4bd90e23e5e3f7ba9f7438b921))
+2. Run Granite 4.0 H Tiny (7B-A1B) (4bit, needs 4.5 GB memory, 3.91 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit/tree/a0f1fb8fdb387c4bd90e23e5e3f7ba9f7438b921))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
@@ -184,7 +184,7 @@ Other versions: 4bit (~3.9 GB, Mac only) `lms get https://huggingface.co/lmstudi
    mlx_lm.server --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
    ```
 
-Other versions: 8bit (~7.4 GB, Mac only) `mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-8bit`
+Other versions: 8bit (8 GB memory, 7.37 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny)
 

@@ -56,7 +56,7 @@ weighted average                        = 51.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
+2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
    
    ```sh
    llama cli -hf lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                        = 51.3
    llama serve -hf lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
+2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/openhands-lm-3
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/openhands-lm-32b-v0.1-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/alexgusevski/openhands-lm-32b-v0.1-mlx-8Bit -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF@Q8_0 -y` · 4bit (20.8 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/openhands-lm-32b-v0.1-4bit -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/alexgusevski/openhands-lm-32b-v0.1-mlx-8Bit -y`
 
 ### Ollama
 
@@ -93,13 +93,13 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
+2. Run OpenHands LM 32B v0.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF/tree/3e7e459662e3b98372cebcb3039a8119b2dfa02d))
    
    ```sh
    ollama run hf.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `ollama run hf.co/lmstudio-community/openhands-lm-32b-v0.1-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -112,7 +112,7 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/lmstudio-community/openhands-l
    pip install mlx-lm
    ```
 
-2. Run OpenHands LM 32B v0.1 (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/openhands-lm-32b-v0.1-4bit/tree/b47b02eb215ca4376187dfc2c9397b95832afee7))
+2. Run OpenHands LM 32B v0.1 (4bit, needs 20.8 GB memory, 18.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/openhands-lm-32b-v0.1-4bit/tree/b47b02eb215ca4376187dfc2c9397b95832afee7))
    
    ```sh
    mlx_lm.chat --model mlx-community/openhands-lm-32b-v0.1-4bit
@@ -124,11 +124,11 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/lmstudio-community/openhands-l
    mlx_lm.server --model mlx-community/openhands-lm-32b-v0.1-4bit
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model alexgusevski/openhands-lm-32b-v0.1-mlx-8Bit`
+Other versions: 8bit (38 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model alexgusevski/openhands-lm-32b-v0.1-mlx-8Bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~65.53 GB, from [huggingface.co/OpenHands](https://huggingface.co/OpenHands/openhands-lm-32b-v0.1/tree/2487b7e7003291267c8843cfdace9944e545134c))
+1. Run it as published (BF16, needs 70.3 GB memory, 65.5 GB download, from [huggingface.co/OpenHands](https://huggingface.co/OpenHands/openhands-lm-32b-v0.1/tree/2487b7e7003291267c8843cfdace9944e545134c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenHands/openhands-lm-32b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

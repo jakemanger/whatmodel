@@ -56,7 +56,7 @@ weighted average                                   = 57.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Functionary Medium v3.1 (Q4_K_M, needs ~42.5 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
+2. Run Functionary Medium v3.1 (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
    
    ```sh
    llama cli -hf second-state/functionary-medium-v3.1-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 57.9
    llama serve -hf second-state/functionary-medium-v3.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf second-state/functionary-medium-v3.1-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf second-state/functionary-medium-v3.1-GGUF:Q2_K`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf second-state/functionary-medium-v3.1-GGUF:Q8_0` · Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf second-state/functionary-medium-v3.1-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Functionary Medium v3.1 (Q4_K_M, needs ~42.5 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
+2. Run Functionary Medium v3.1 (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
    
    ```sh
    lms get https://huggingface.co/second-state/functionary-medium-v3.1-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf second-state/functionary-medium-v3.
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/second-state/functionary-medium-v3.1-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/second-state/functionary-medium-v3.1-GGUF@Q2_K -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/second-state/functionary-medium-v3.1-GGUF@Q8_0 -y` · Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/second-state/functionary-medium-v3.1-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/second-state/funct
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Functionary Medium v3.1 (Q4_K_M, needs ~42.5 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
+2. Run Functionary Medium v3.1 (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/functionary-medium-v3.1-GGUF/tree/84fbcc58c046f277f20a49217822656bc0255e9e))
    
    ```sh
    ollama run hf.co/second-state/functionary-medium-v3.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `ollama run hf.co/second-state/functionary-medium-v3.1-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/second-state/functionary-medium-v3.1-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/meetkai](https://huggingface.co/meetkai/functionary-medium-v3.1/tree/5c140946df6e6b35dea22a1a600db59933f1d49c))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/meetkai](https://huggingface.co/meetkai/functionary-medium-v3.1/tree/5c140946df6e6b35dea22a1a600db59933f1d49c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meetkai/functionary-medium-v3.1', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

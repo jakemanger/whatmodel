@@ -120,7 +120,7 @@ weighted average                                   = 64.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs ~186.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
+2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs 188 GB memory, 186.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
    
    ```sh
    llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
@@ -132,13 +132,13 @@ weighted average                                   = 64.6
    llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~328.2 GB) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0` · UD-IQ2_XXS (~101.6 GB) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS`
+Other versions: Q8_0 (329 GB memory, 328.2 GB download) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0` · UD-IQ2_XXS (103 GB memory, 101.6 GB download) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs ~186.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
+2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs 188 GB memory, 186.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
    
    ```sh
    lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q4_K_M -y
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~328.2 GB) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~328.2 GB) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q8_0 -y` · UD-IQ2_XXS (~101.6 GB) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@UD-IQ2_XXS -y` · 4bit (~173.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit -y`
+Other versions: Q8_0 (329 GB memory, 328.2 GB download) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q8_0 -y` · UD-IQ2_XXS (103 GB memory, 101.6 GB download) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@UD-IQ2_XXS -y` · 4bit (175 GB memory, 173.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit -y`
 
 ### MLX (Mac)
 
@@ -159,7 +159,7 @@ Other versions: Q8_0 (~328.2 GB) `lms get https://huggingface.co/unsloth/MiMo-V2
    pip install mlx-lm
    ```
 
-2. Run MiMo-V2-Flash (309B-A15B) (4bit, needs ~173.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit/tree/65d2673628480cc377aaeefc1b409f1d750bc9df))
+2. Run MiMo-V2-Flash (309B-A15B) (4bit, needs 175 GB memory, 173.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit/tree/65d2673628480cc377aaeefc1b409f1d750bc9df))
    
    ```sh
    mlx_lm.chat --model mlx-community/MiMo-V2-Flash-4bit

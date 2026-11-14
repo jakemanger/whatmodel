@@ -99,7 +99,7 @@ weighted average                                   = 65.8
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~752.09 GB, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8/tree/b219707595c1330a95964abf9a06e38dae2f062c))
+1. Run it as published (fp8, needs 791 GB memory, 752.1 GB download, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8/tree/b219707595c1330a95964abf9a06e38dae2f062c))
    
    ```sh
    vllm serve LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8 --served-model-name K-EXAONE-2.0-750B-A37B-FP8 --trust-remote-code --tensor-parallel-size 8 --kv-cache-dtype fp8_e4m3 --max-num-seqs 256 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml

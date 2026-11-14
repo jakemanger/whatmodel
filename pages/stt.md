@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · **stt** · [decision](decision.md)
 
-updated 2026-11-14 06:42 UTC · 184 models · scores combine 87 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
+updated 2026-11-14 09:19 UTC · 183 models · scores combine 87 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -166,7 +166,7 @@ curl.exe "whatmodel.sh/stt?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
  70  <a href="model/orukeet.md">Orukeet</a>                                   57±4*  local               ~0.7GB         <a href="model/orukeet.md#run-it-on-your-own-machine">how to run ›</a>
  71  <a href="model/parakeet-redux.md">Parakeet Redux</a>                            57±3   local               ~0.2GB         <a href="model/parakeet-redux.md#run-it-on-your-own-machine">how to run ›</a>
  72  <a href="model/zipformer-transducer-xl-290m.md">Zipformer Transducer XL 2…</a>               56±5*†  comparison only
- 73  <a href="model/phonon-2.md">Phonon-2</a>                                 56±7*†  local               ~0.7GB         <a href="model/phonon-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 73  <a href="model/phonon-2.md">Phonon-2</a>                                 56±7*†  local               ~0.2GB         <a href="model/phonon-2.md#run-it-on-your-own-machine">how to run ›</a>
  74  <a href="model/parakeet-tdt-ctc-1-1b.md">Parakeet TDT-CTC 1.1B</a>                     56±4*  local               ~1.3GB         <a href="model/parakeet-tdt-ctc-1-1b.md#run-it-on-your-own-machine">how to run ›</a>
  75  <a href="model/gpt-4o-mini-transcribe.md">GPT-4o Mini Transcribe</a>                    56±2   api $0.0030/audio…                 <a href="https://developers.openai.com/api/docs/pricing">openai.com ↗</a>
  76  <a href="model/omniasr-llm-1b-v2.md">Omnilingual ASR LLM 1B v2</a>                 56±3*  local                 ~6GB         <a href="model/omniasr-llm-1b-v2.md#run-it-on-your-own-machine">how to run ›</a>
@@ -272,7 +272,6 @@ curl.exe "whatmodel.sh/stt?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
 176  <a href="model/wav2vec2-base-960h.md">wav2vec 2.0 Base 960h</a>                      2±4   local                 ~1GB         <a href="model/wav2vec2-base-960h.md#run-it-on-your-own-machine">how to run ›</a>
 177  <a href="model/mms-1b-fl102.md">MMS-1B-FL102</a>                             -10±5   local               ~5.1GB         <a href="model/mms-1b-fl102.md#run-it-on-your-own-machine">how to run ›</a>
 178  <a href="model/medasr.md">MedASR</a>                                   -14±4*  local               ~0.1GB         <a href="model/medasr.md#run-it-on-your-own-machine">how to run ›</a>
-  —  <a href="model/aurora-asr-1m.md">AuroraASR-1M</a>                     not scored yet  local               ~0.5GB         <a href="model/aurora-asr-1m.md#run-it-on-your-own-machine">how to run ›</a>
   —  <a href="model/mai-transcribe-2.md">MAI-Transcribe-2</a>            no reviewed results  api $0.0017/audio…                 <a href="https://azure.microsoft.com/en-us/pricing/details/speech">azure.microsoft…</a>
   —  <a href="model/gladia-solaria-3.md">Solaria-3</a>                   no reviewed results  api $0.010/audio …                 <a href="https://www.gladia.io/pricing">gladia.io ↗</a>
   —  <a href="model/voxtral-mini-transcribe-3.md">Voxtral Mini Transcribe 3</a>   no reviewed results  api $0.0035/audio…                 <a href="https://mistral.ai/news/voxtral-3">mistral.ai ↗</a>
@@ -280,10 +279,10 @@ curl.exe "whatmodel.sh/stt?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   —  <a href="model/voxtral-small-transcribe-3.md">Voxtral Small Transcribe 3</a>  no reviewed results  api $0.0040/audio…                 <a href="https://mistral.ai/news/voxtral-3">mistral.ai ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 184 of 187 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 183 of 187 catalogue models listed here · [sources and licences](method.md#sources)
 
-<details><summary>Models without a score (1)</summary>
+<details><summary>Models without a score (2)</summary>
 
-Raw results, insufficient overlap for an overall score: [Cactus Whistle](model/cactus-whistle.md)
+Raw results, insufficient overlap for an overall score: [AuroraASR-1M](model/aurora-asr-1m.md) · [Cactus Whistle](model/cactus-whistle.md)
 
 </details>

@@ -83,7 +83,7 @@ weighted average                                   = 45.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon3 7B Instruct (Q4_K_M, needs ~4.6 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF/tree/b5eb297a52350fa68f8b88be3ce16a57578ba114))
+2. Run Falcon3 7B Instruct (Q4_K_M, needs 6.3 GB memory, 4.57 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF/tree/b5eb297a52350fa68f8b88be3ce16a57578ba114))
    
    ```sh
    llama cli -hf tiiuae/Falcon3-7B-Instruct-GGUF:q4_k_m
@@ -95,13 +95,13 @@ weighted average                                   = 45.1
    llama serve -hf tiiuae/Falcon3-7B-Instruct-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~7.9 GB) `llama cli -hf tiiuae/Falcon3-7B-Instruct-GGUF:q8_0`
+Other versions: Q8_0 (9.8 GB memory, 7.93 GB download) `llama cli -hf tiiuae/Falcon3-7B-Instruct-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon3 7B Instruct (Q4_K_M, needs ~4.6 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF/tree/b5eb297a52350fa68f8b88be3ce16a57578ba114))
+2. Run Falcon3 7B Instruct (Q4_K_M, needs 6.3 GB memory, 4.57 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF/tree/b5eb297a52350fa68f8b88be3ce16a57578ba114))
    
    ```sh
    lms get https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF@q4_k_m -y
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~7.9 GB) `llama cli -hf tiiuae/Falcon3-7B-Instruct-GGUF:q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.9 GB) `lms get https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF@q8_0 -y` · 4bit (~4.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon3-7B-Instruct-4bit -y` · 8bit (~7.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon3-7B-Instruct-8bit -y`
+Other versions: Q8_0 (9.8 GB memory, 7.93 GB download) `lms get https://huggingface.co/tiiuae/Falcon3-7B-Instruct-GGUF@q8_0 -y` · 4bit (5.9 GB memory, 4.19 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Falcon3-7B-Instruct-4bit -y` · 8bit (9.8 GB memory, 7.92 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Falcon3-7B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -120,13 +120,13 @@ Other versions: Q8_0 (~7.9 GB) `lms get https://huggingface.co/tiiuae/Falcon3-7B
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon3 7B Instruct (Q4_K_M, needs ~4.98 GB, from [ollama.com](https://ollama.com/library/falcon3/tags))
+2. Run Falcon3 7B Instruct (Q4_K_M, needs 6.3 GB memory, 4.57 GB download, from [ollama.com](https://ollama.com/library/falcon3/tags))
    
    ```sh
    ollama run falcon3:7b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.45 GB) `ollama run falcon3:7b-instruct-q8_0`
+Other versions: Q8_0 (9.8 GB memory, 7.93 GB download) `ollama run falcon3:7b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -139,7 +139,7 @@ Other versions: Q8_0 (~9.45 GB) `ollama run falcon3:7b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Falcon3 7B Instruct (4bit, needs ~4.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon3-7B-Instruct-4bit/tree/009e488b528d27f21b428728dadfe7a1867f0cf8))
+2. Run Falcon3 7B Instruct (4bit, needs 5.9 GB memory, 4.19 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon3-7B-Instruct-4bit/tree/009e488b528d27f21b428728dadfe7a1867f0cf8))
    
    ```sh
    mlx_lm.chat --model mlx-community/Falcon3-7B-Instruct-4bit
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~9.45 GB) `ollama run falcon3:7b-instruct-q8_0`
    mlx_lm.server --model mlx-community/Falcon3-7B-Instruct-4bit
    ```
 
-Other versions: 8bit (~7.9 GB, Mac only) `mlx_lm.chat --model mlx-community/Falcon3-7B-Instruct-8bit`
+Other versions: 8bit (9.8 GB memory, 7.92 GB download, Mac only) `mlx_lm.chat --model mlx-community/Falcon3-7B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-7B-Instruct)
 

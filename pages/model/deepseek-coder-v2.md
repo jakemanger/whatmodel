@@ -104,7 +104,7 @@ weighted average                                   = 53.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
+2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
    
    ```sh
    llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
@@ -116,13 +116,13 @@ weighted average                                   = 53.8
    llama serve -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~85.95 GB) `llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q2_K`
+Other versions: Q2_K (91.7 GB memory, 85.9 GB download) `llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
+2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
    
    ```sh
    lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q4_K_M -y
@@ -130,7 +130,7 @@ Other versions: Q2_K (~85.95 GB) `llama cli -hf bartowski/DeepSeek-Coder-V2-Inst
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~85.95 GB) `lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q2_K -y` · 4bit (~132.7 GB, Mac only) `lms get https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx -y`
+Other versions: Q2_K (91.7 GB memory, 85.9 GB download) `lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q2_K -y` · 4bit (141 GB memory, 132.7 GB download, Mac only) `lms get https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx -y`
 
 ### MLX (Mac)
 
@@ -143,7 +143,7 @@ Other versions: Q2_K (~85.95 GB) `lms get https://huggingface.co/bartowski/DeepS
    pip install mlx-lm
    ```
 
-2. Run DeepSeek-Coder-V2 Instruct (0614) (4bit, needs ~132.7 GB, Mac only, from [huggingface.co/GGorman](https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx/tree/26f5b71c868892128eb35b2872664296649af982))
+2. Run DeepSeek-Coder-V2 Instruct (0614) (4bit, needs 141 GB memory, 132.7 GB download, Mac only, from [huggingface.co/GGorman](https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx/tree/26f5b71c868892128eb35b2872664296649af982))
    
    ```sh
    mlx_lm.chat --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx

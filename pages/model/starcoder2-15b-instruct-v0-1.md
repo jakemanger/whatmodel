@@ -69,7 +69,7 @@ weighted average                                   = 46.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StarCoder2-15B-Instruct-v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF/tree/19f8e47b8a6b93759dda71d225643adf94847a60))
+2. Run StarCoder2-15B-Instruct-v0.1 (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF/tree/19f8e47b8a6b93759dda71d225643adf94847a60))
    
    ```sh
    llama cli -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q4_K_M
@@ -81,13 +81,13 @@ weighted average                                   = 46.8
    llama serve -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StarCoder2-15B-Instruct-v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF/tree/19f8e47b8a6b93759dda71d225643adf94847a60))
+2. Run StarCoder2-15B-Instruct-v0.1 (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF/tree/19f8e47b8a6b93759dda71d225643adf94847a60))
    
    ```sh
    lms get https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF@Q4_K_M -y
@@ -95,7 +95,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starcoder2-15b-instruc
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -106,17 +106,17 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarCoder2-15B-Instruct-v0.1 (Q4_0, needs ~9.1 GB, from [ollama.com](https://ollama.com/library/starcoder2/tags))
+2. Run StarCoder2-15B-Instruct-v0.1 (Q4_0, needs 11 GB memory, 9.07 GB download, from [ollama.com](https://ollama.com/library/starcoder2/tags))
    
    ```sh
    ollama run starcoder2:15b-instruct
    ```
 
-Other versions: Q4_0 (~9.1 GB) `ollama run starcoder2:15b-instruct`
+Other versions: Q4_0 (11 GB memory, 9.07 GB download) `ollama run starcoder2:15b-instruct`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~31.92 GB, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1/tree/ffb8dd9776ba9a66d655ecd962e882f3013e9f7c))
+1. Run it as published (BF16, needs 35 GB memory, 31.9 GB download, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1/tree/ffb8dd9776ba9a66d655ecd962e882f3013e9f7c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder2-15b-instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

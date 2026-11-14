@@ -73,7 +73,7 @@ weighted average                                   = 50.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Codestral 22B v0.1 (Q4_K_M, needs ~13.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/tree/0e6abe14d6aeaf2c99d5dc9973205e8e38692d90))
+2. Run Codestral 22B v0.1 (Q4_K_M, needs 15.6 GB memory, 13.3 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/tree/0e6abe14d6aeaf2c99d5dc9973205e8e38692d90))
    
    ```sh
    llama cli -hf bartowski/Codestral-22B-v0.1-GGUF:Q4_K_M
@@ -85,13 +85,13 @@ weighted average                                   = 50.8
    llama serve -hf bartowski/Codestral-22B-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~23.6 GB) `llama cli -hf bartowski/Codestral-22B-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (25.9 GB memory, 23.6 GB download) `llama cli -hf bartowski/Codestral-22B-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Codestral 22B v0.1 (Q4_K_M, needs ~13.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/tree/0e6abe14d6aeaf2c99d5dc9973205e8e38692d90))
+2. Run Codestral 22B v0.1 (Q4_K_M, needs 15.6 GB memory, 13.3 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/tree/0e6abe14d6aeaf2c99d5dc9973205e8e38692d90))
    
    ```sh
    lms get https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF@Q4_K_M -y
@@ -99,7 +99,7 @@ Other versions: Q8_0 (~23.6 GB) `llama cli -hf bartowski/Codestral-22B-v0.1-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~23.6 GB) `lms get https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF@Q8_0 -y` · 4bit (~12.5 GB, Mac only) `lms get https://huggingface.co/rairahulr1/Codestral-22B-v0.1-mlx-4Bit -y`
+Other versions: Q8_0 (25.9 GB memory, 23.6 GB download) `lms get https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF@Q8_0 -y` · 4bit (14.8 GB memory, 12.5 GB download, Mac only) `lms get https://huggingface.co/rairahulr1/Codestral-22B-v0.1-mlx-4Bit -y`
 
 ### Ollama
 
@@ -110,13 +110,13 @@ Other versions: Q8_0 (~23.6 GB) `lms get https://huggingface.co/bartowski/Codest
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Codestral 22B v0.1 (Q4_K_M, needs ~13.85 GB, from [ollama.com](https://ollama.com/library/codestral/tags))
+2. Run Codestral 22B v0.1 (Q4_K_M, needs 15.6 GB memory, 13.3 GB download, from [ollama.com](https://ollama.com/library/codestral/tags))
    
    ```sh
    ollama run codestral:22b-v0.1-q4_K_M
    ```
 
-Other versions: Q8_0 (~27.2 GB) `ollama run codestral:22b-v0.1-q8_0`
+Other versions: Q8_0 (25.9 GB memory, 23.6 GB download) `ollama run codestral:22b-v0.1-q8_0`
 
 ### MLX (Mac)
 
@@ -129,7 +129,7 @@ Other versions: Q8_0 (~27.2 GB) `ollama run codestral:22b-v0.1-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Codestral 22B v0.1 (4bit, needs ~12.5 GB, Mac only, from [huggingface.co/rairahulr1](https://huggingface.co/rairahulr1/Codestral-22B-v0.1-mlx-4Bit/tree/35138401347919124c08c86fa8cb93732cfba2f7))
+2. Run Codestral 22B v0.1 (4bit, needs 14.8 GB memory, 12.5 GB download, Mac only, from [huggingface.co/rairahulr1](https://huggingface.co/rairahulr1/Codestral-22B-v0.1-mlx-4Bit/tree/35138401347919124c08c86fa8cb93732cfba2f7))
    
    ```sh
    mlx_lm.chat --model rairahulr1/Codestral-22B-v0.1-mlx-4Bit

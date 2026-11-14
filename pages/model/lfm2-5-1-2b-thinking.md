@@ -96,7 +96,7 @@ weighted average                                   = 49.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs ~0.7 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/tree/9584426effbfa44b677e925793a12188a36b44ce))
+2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs 1.3 GB memory, 0.73 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/tree/9584426effbfa44b677e925793a12188a36b44ce))
    
    ```sh
    llama cli -hf LiquidAI/LFM2.5-1.2B-Thinking-GGUF:Q4_K_M
@@ -108,13 +108,13 @@ weighted average                                   = 49.3
    llama serve -hf LiquidAI/LFM2.5-1.2B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.2 GB) `llama cli -hf LiquidAI/LFM2.5-1.2B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (1.8 GB memory, 1.25 GB download) `llama cli -hf LiquidAI/LFM2.5-1.2B-Thinking-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs ~0.7 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/tree/9584426effbfa44b677e925793a12188a36b44ce))
+2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs 1.3 GB memory, 0.73 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/tree/9584426effbfa44b677e925793a12188a36b44ce))
    
    ```sh
    lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF@Q4_K_M -y
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~1.2 GB) `llama cli -hf LiquidAI/LFM2.5-1.2B-Thinking-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF@Q8_0 -y` · 4bit (~0.7 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit -y` · 8bit (~1.2 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit -y`
+Other versions: Q8_0 (1.8 GB memory, 1.25 GB download) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF@Q8_0 -y` · 4bit (1.2 GB memory, 0.66 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit -y` · 8bit (1.8 GB memory, 1.24 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit -y`
 
 ### Ollama
 
@@ -133,13 +133,13 @@ Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/LiquidAI/LFM2.5-1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs ~1.2 GB, from [ollama.com](https://ollama.com/library/lfm2.5-thinking/tags))
+2. Run LFM2.5 1.2B Thinking (Q4_K_M, needs 1.3 GB memory, 0.73 GB download, from [ollama.com](https://ollama.com/library/lfm2.5-thinking/tags))
    
    ```sh
    ollama run lfm2.5-thinking:1.2b
    ```
 
-Other versions: Q8_0 (~1.9 GB) `ollama run lfm2.5-thinking:1.2b-q8_0`
+Other versions: Q8_0 (1.8 GB memory, 1.25 GB download) `ollama run lfm2.5-thinking:1.2b-q8_0`
 
 ### MLX (Mac)
 
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~1.9 GB) `ollama run lfm2.5-thinking:1.2b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run LFM2.5 1.2B Thinking (4bit, needs ~0.7 GB, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit/tree/0703c92f46e0dfdfd4fe3c989b5f55615c6c3031))
+2. Run LFM2.5 1.2B Thinking (4bit, needs 1.2 GB memory, 0.66 GB download, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit/tree/0703c92f46e0dfdfd4fe3c989b5f55615c6c3031))
    
    ```sh
    mlx_lm.chat --model LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit
@@ -164,7 +164,7 @@ Other versions: Q8_0 (~1.9 GB) `ollama run lfm2.5-thinking:1.2b-q8_0`
    mlx_lm.server --model LiquidAI/LFM2.5-1.2B-Thinking-MLX-4bit
    ```
 
-Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit`
+Other versions: 8bit (1.8 GB memory, 1.24 GB download, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
 

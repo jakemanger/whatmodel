@@ -178,7 +178,7 @@ api (Deep Infra) · $1.72/M blended · $0.95 in / $4.05 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Inkling (975B-A41B) (ud-q4_k_xl, needs ~585.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/inkling-GGUF/tree/main))
+2. Run Inkling (975B-A41B) (ud-q4_k_xl, needs 618 GB memory, 587.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/inkling-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/inkling-GGUF:UD-Q4_K_XL
@@ -190,13 +190,13 @@ api (Deep Infra) · $1.72/M blended · $0.95 in / $4.05 out per 1M tokens · [de
    llama serve -hf unsloth/inkling-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~293 GB) `llama cli -hf unsloth/inkling-GGUF:UD-Q2_K_XL` · ud-iq1_s (~146.75 GB) `llama cli -hf unsloth/inkling-GGUF:UD-IQ1_S`
+Other versions: ud-q2_k_xl (335 GB memory, 317.5 GB download) `llama cli -hf unsloth/inkling-GGUF:UD-Q2_K_XL` · ud-iq1_s (285 GB memory, 270.3 GB download) `llama cli -hf unsloth/inkling-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Inkling (975B-A41B) (ud-q4_k_xl, needs ~585.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/inkling-GGUF/tree/main))
+2. Run Inkling (975B-A41B) (ud-q4_k_xl, needs 618 GB memory, 587.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/inkling-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/inkling-GGUF@UD-Q4_K_XL -y
@@ -204,7 +204,7 @@ Other versions: ud-q2_k_xl (~293 GB) `llama cli -hf unsloth/inkling-GGUF:UD-Q2_K
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~293 GB) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~146.75 GB) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-IQ1_S -y`
+Other versions: ud-q2_k_xl (335 GB memory, 317.5 GB download) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (285 GB memory, 270.3 GB download) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-IQ1_S -y`
 
 Model repository and documentation: [huggingface.co/thinkingmachines](https://huggingface.co/thinkingmachines/Inkling)
 

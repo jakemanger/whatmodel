@@ -105,7 +105,7 @@ weighted average                                   = 35.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/tree/98596f7f6c318118824bcbee4b0e20010ec510ec))
+2. Run Code Llama 7B (base) (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/tree/98596f7f6c318118824bcbee4b0e20010ec510ec))
    
    ```sh
    llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q4_K_M
@@ -117,13 +117,13 @@ weighted average                                   = 35.7
    llama serve -hf TheBloke/CodeLlama-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/tree/98596f7f6c318118824bcbee4b0e20010ec510ec))
+2. Run Code Llama 7B (base) (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-7B-GGUF/tree/98596f7f6c318118824bcbee4b0e20010ec510ec))
    
    ```sh
    lms get https://huggingface.co/TheBloke/CodeLlama-7B-GGUF@Q4_K_M -y
@@ -131,7 +131,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/CodeLlama-7B-GGUF@Q8_0 -y` · 4bit (~3.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-7b-hf-4bit-mlx -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/TheBloke/CodeLlama-7B-GGUF@Q8_0 -y` · 4bit (5.5 GB memory, 3.79 GB download, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-7b-hf-4bit-mlx -y`
 
 ### Ollama
 
@@ -142,13 +142,13 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/CodeLlam
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 7B (base) (Q4_K_M, needs ~4.1 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 7B (base) (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:7b-code-q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-code-q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run codellama:7b-code-q8_0`
 
 ### MLX (Mac)
 
@@ -161,7 +161,7 @@ Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-code-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Code Llama 7B (base) (4bit, needs ~3.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-7b-hf-4bit-mlx/tree/5d4a7e74c57a13350df444e25862fda846fc76f8))
+2. Run Code Llama 7B (base) (4bit, needs 5.5 GB memory, 3.79 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-7b-hf-4bit-mlx/tree/5d4a7e74c57a13350df444e25862fda846fc76f8))
    
    ```sh
    mlx_lm.chat --model mlx-community/CodeLlama-7b-hf-4bit-mlx

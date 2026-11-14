@@ -56,7 +56,7 @@ weighted average                            = 46.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs ~0.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
+2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs 1.9 GB memory, 0.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
    
    ```sh
    llama cli -hf bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
@@ -72,7 +72,7 @@ weighted average                            = 46.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs ~0.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
+2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs 1.9 GB memory, 0.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
    
    ```sh
    lms get https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ weighted average                            = 46.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit -y`
+Other versions: 4bit (1.7 GB memory, 0.87 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit -y`
 
 ### Ollama
 
@@ -91,7 +91,7 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs ~0.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
+2. Run Qwen2.5-Math 1.5B Instruct (Q4_K_M, needs 1.9 GB memory, 0.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b))
    
    ```sh
    ollama run hf.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
@@ -108,7 +108,7 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Qwen2.5-Math 1.5B Instruct (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit/tree/ab004e134e47042c3db99d1721371626b520ac73))
+2. Run Qwen2.5-Math 1.5B Instruct (4bit, needs 1.7 GB memory, 0.87 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit/tree/ab004e134e47042c3db99d1721371626b520ac73))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit

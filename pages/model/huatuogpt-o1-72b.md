@@ -53,7 +53,7 @@ weighted average                        = 58.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run HuatuoGPT-o1-72B (Q4_K_M, needs ~47.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
+2. Run HuatuoGPT-o1-72B (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
    
    ```sh
    llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 58.4
    llama serve -hf bartowski/HuatuoGPT-o1-72B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~77.3 GB) `llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:Q8_0` · IQ2_XXS (~25.5 GB) `llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:IQ2_XXS`
+Other versions: Q8_0 (82.7 GB memory, 77.3 GB download) `llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:Q8_0` · IQ2_XXS (28.3 GB memory, 25.5 GB download) `llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run HuatuoGPT-o1-72B (Q4_K_M, needs ~47.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
+2. Run HuatuoGPT-o1-72B (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
    
    ```sh
    lms get https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~77.3 GB) `llama cli -hf bartowski/HuatuoGPT-o1-72B-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF@Q8_0 -y` · IQ2_XXS (~25.5 GB) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF@IQ2_XXS -y` · 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/HuatuoGPT-o1-72B-4bit -y`
+Other versions: Q8_0 (82.7 GB memory, 77.3 GB download) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF@Q8_0 -y` · IQ2_XXS (28.3 GB memory, 25.5 GB download) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF@IQ2_XXS -y` · 4bit (44.4 GB memory, 40.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/HuatuoGPT-o1-72B-4bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Huatuo
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run HuatuoGPT-o1-72B (IQ2_XXS, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
+2. Run HuatuoGPT-o1-72B (IQ2_XXS, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-72B-GGUF/tree/35caba919fdc599407970d983be4417731fa6873))
    
    ```sh
    ollama run hf.co/bartowski/HuatuoGPT-o1-72B-GGUF:IQ2_XXS
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Huatuo
    pip install mlx-lm
    ```
 
-2. Run HuatuoGPT-o1-72B (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/HuatuoGPT-o1-72B-4bit/tree/86b528010d514635438b0285f72a073b83b69cdc))
+2. Run HuatuoGPT-o1-72B (4bit, needs 44.4 GB memory, 40.9 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/HuatuoGPT-o1-72B-4bit/tree/86b528010d514635438b0285f72a073b83b69cdc))
    
    ```sh
    mlx_lm.chat --model mlx-community/HuatuoGPT-o1-72B-4bit
@@ -121,7 +121,7 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Huatuo
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~145.41 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-72B/tree/6048ce0eb9fd9221d64deef3f9dd6d0597b00b2f))
+1. Run it as published (BF16, needs 154 GB memory, 145.4 GB download, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-72B/tree/6048ce0eb9fd9221d64deef3f9dd6d0597b00b2f))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/HuatuoGPT-o1-72B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

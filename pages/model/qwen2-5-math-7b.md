@@ -56,7 +56,7 @@ weighted average                            = 52.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
    
    ```sh
    llama cli -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
@@ -72,7 +72,7 @@ weighted average                            = 52.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
    
    ```sh
    lms get https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ weighted average                            = 52.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-8bit -y`
+Other versions: 4bit (5.4 GB memory, 4.28 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit -y` · 8bit (9.2 GB memory, 8.09 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -91,7 +91,7 @@ Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
    
    ```sh
    ollama run hf.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
@@ -108,7 +108,7 @@ Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Qwen2.5-Math 7B Instruct (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit/tree/b144b9b952f8aa481cadb47e2eb6151d18a4de55))
+2. Run Qwen2.5-Math 7B Instruct (4bit, needs 5.4 GB memory, 4.28 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit/tree/b144b9b952f8aa481cadb47e2eb6151d18a4de55))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
@@ -120,7 +120,7 @@ Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
    ```
 
-Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit`
+Other versions: 8bit (9.2 GB memory, 8.09 GB download, Mac only) `mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct)
 

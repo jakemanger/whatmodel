@@ -121,7 +121,7 @@ api (Cloudflare) · $1.59/M blended · $0.497 in / $4.881 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF/tree/2c8db776f8037c44c2af1fa197699a0d0c6c4b7a))
+2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF/tree/2c8db776f8037c44c2af1fa197699a0d0c6c4b7a))
    
    ```sh
    llama cli -hf lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF:Q4_K_M
@@ -133,13 +133,13 @@ api (Cloudflare) · $1.59/M blended · $0.497 in / $4.881 out per 1M tokens · [
    llama serve -hf lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF:Q8_0`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `llama cli -hf lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF/tree/2c8db776f8037c44c2af1fa197699a0d0c6c4b7a))
+2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF/tree/2c8db776f8037c44c2af1fa197699a0d0c6c4b7a))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF@Q4_K_M -y
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/DeepSeek-R1-Di
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-MLX-8Bit -y`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-Distill-Qwen-32B-GGUF@Q8_0 -y` · 4bit (21.2 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit -y` · 8bit (37.6 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-MLX-8Bit -y`
 
 ### Ollama
 
@@ -158,13 +158,13 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs ~20.18 GB, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
+2. Run DeepSeek R1 Distill Qwen 32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
    
    ```sh
    ollama run deepseek-r1:32b
    ```
 
-Other versions: Q8_0 (~39.86 GB) `ollama run deepseek-r1:32b-qwen-distill-q8_0`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `ollama run deepseek-r1:32b-qwen-distill-q8_0`
 
 ### MLX (Mac)
 
@@ -177,7 +177,7 @@ Other versions: Q8_0 (~39.86 GB) `ollama run deepseek-r1:32b-qwen-distill-q8_0`
    pip install mlx-lm
    ```
 
-2. Run DeepSeek R1 Distill Qwen 32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit/tree/4e0d3848a0ad8f9fb54638891e4928f04fcca978))
+2. Run DeepSeek R1 Distill Qwen 32B (4bit, needs 21.2 GB memory, 18.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit/tree/4e0d3848a0ad8f9fb54638891e4928f04fcca978))
    
    ```sh
    mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
@@ -189,7 +189,7 @@ Other versions: Q8_0 (~39.86 GB) `ollama run deepseek-r1:32b-qwen-distill-q8_0`
    mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Qwen-32B-4bit
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-32B-MLX-8Bit`
+Other versions: 8bit (37.6 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-32B-MLX-8Bit`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
 

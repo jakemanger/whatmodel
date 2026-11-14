@@ -188,7 +188,7 @@ api (Groq) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [console.g
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run gpt-oss-120b (Q4_K_M, needs ~62.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-120b-GGUF/tree/ff1a82da6ad466e32284fa3d2b86694db3204789))
+2. Run gpt-oss-120b (Q4_K_M, needs 63.9 GB memory, 62.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-120b-GGUF/tree/ff1a82da6ad466e32284fa3d2b86694db3204789))
    
    ```sh
    llama cli -hf unsloth/gpt-oss-120b-GGUF:Q4_K_M
@@ -204,7 +204,7 @@ api (Groq) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [console.g
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run gpt-oss-120b (Q4_K_M, needs ~62.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-120b-GGUF/tree/ff1a82da6ad466e32284fa3d2b86694db3204789))
+2. Run gpt-oss-120b (Q4_K_M, needs 63.9 GB memory, 62.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-120b-GGUF/tree/ff1a82da6ad466e32284fa3d2b86694db3204789))
    
    ```sh
    lms get https://huggingface.co/unsloth/gpt-oss-120b-GGUF@Q4_K_M -y
@@ -212,7 +212,7 @@ api (Groq) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [console.g
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~65.8 GB, Mac only) `lms get https://huggingface.co/egoriow/gpt-oss-120b-mlx -y` · 8bit (~124.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gpt-oss-120b-MLX-8bit -y`
+Other versions: 4bit (66.9 GB memory, 65.8 GB download, Mac only) `lms get https://huggingface.co/egoriow/gpt-oss-120b-mlx -y` · 8bit (125 GB memory, 124.2 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gpt-oss-120b-MLX-8bit -y`
 
 ### Ollama
 
@@ -223,7 +223,7 @@ Other versions: 4bit (~65.8 GB, Mac only) `lms get https://huggingface.co/egorio
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run gpt-oss-120b (mxfp4, needs ~70.7 GB, from [ollama.com](https://ollama.com/library/gpt-oss/tags))
+2. Run gpt-oss-120b (mxfp4, needs 66.5 GB memory, 65.4 GB download, from [ollama.com](https://ollama.com/library/gpt-oss/tags))
    
    ```sh
    ollama run gpt-oss:120b
@@ -240,7 +240,7 @@ Other versions: 4bit (~65.8 GB, Mac only) `lms get https://huggingface.co/egorio
    pip install mlx-lm
    ```
 
-2. Run gpt-oss-120b (4bit, needs ~65.8 GB, Mac only, from [huggingface.co/egoriow](https://huggingface.co/egoriow/gpt-oss-120b-mlx/tree/8f7099ef0dbb0a41be31d7386d35c46146023c11))
+2. Run gpt-oss-120b (4bit, needs 66.9 GB memory, 65.8 GB download, Mac only, from [huggingface.co/egoriow](https://huggingface.co/egoriow/gpt-oss-120b-mlx/tree/8f7099ef0dbb0a41be31d7386d35c46146023c11))
    
    ```sh
    mlx_lm.chat --model egoriow/gpt-oss-120b-mlx
@@ -252,7 +252,7 @@ Other versions: 4bit (~65.8 GB, Mac only) `lms get https://huggingface.co/egorio
    mlx_lm.server --model egoriow/gpt-oss-120b-mlx
    ```
 
-Other versions: 8bit (~124.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gpt-oss-120b-MLX-8bit`
+Other versions: 8bit (125 GB memory, 124.2 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/gpt-oss-120b-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/gpt-oss-120b)
 

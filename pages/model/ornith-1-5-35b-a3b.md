@@ -101,7 +101,7 @@ weighted average                                   = 68.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs ~21.7 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/12393612fd4f730ff5aadc23e9b8f9648aa49ceb))
+2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs 23.6 GB memory, 22.6 GB download, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/12393612fd4f730ff5aadc23e9b8f9648aa49ceb))
    
    ```sh
    llama cli -hf ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q4_K_M
@@ -113,13 +113,13 @@ weighted average                                   = 68.7
    llama serve -hf ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~37.8 GB) `llama cli -hf ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q8_0`
+Other versions: Q8_0 (39.7 GB memory, 38.7 GB download) `llama cli -hf ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs ~21.7 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/12393612fd4f730ff5aadc23e9b8f9648aa49ceb))
+2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs 23.6 GB memory, 22.6 GB download, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/12393612fd4f730ff5aadc23e9b8f9648aa49ceb))
    
    ```sh
    lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF@Q4_K_M -y
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~37.8 GB) `llama cli -hf ornith-ai/Ornith-1.5-35B-A3B-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~37.8 GB) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF@Q8_0 -y` · 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit -y` · 8bit (~36.8 GB, Mac only) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit -y`
+Other versions: Q8_0 (39.7 GB memory, 38.7 GB download) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF@Q8_0 -y` · 4bit (20.5 GB memory, 19.5 GB download, Mac only) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit -y` · 8bit (37.8 GB memory, 36.8 GB download, Mac only) `lms get https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit -y`
 
 ### Ollama
 
@@ -138,7 +138,7 @@ Other versions: Q8_0 (~37.8 GB) `lms get https://huggingface.co/ornith-ai/Ornith
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs ~23 GB, from [ollama.com](https://ollama.com/library/ornith-1.5/tags))
+2. Run Ornith 1.5 35B-A3B (Q4_K_M, needs 23.6 GB memory, 22.6 GB download, from [ollama.com](https://ollama.com/library/ornith-1.5/tags))
    
    ```sh
    ollama run ornith-1.5:35b
@@ -155,7 +155,7 @@ Other versions: Q8_0 (~37.8 GB) `lms get https://huggingface.co/ornith-ai/Ornith
    pip install mlx-lm
    ```
 
-2. Run Ornith 1.5 35B-A3B (4bit, needs ~19.5 GB, Mac only, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit/tree/19504d912fa8fc7622bf6b1de3db5d5d890b1f02))
+2. Run Ornith 1.5 35B-A3B (4bit, needs 20.5 GB memory, 19.5 GB download, Mac only, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit/tree/19504d912fa8fc7622bf6b1de3db5d5d890b1f02))
    
    ```sh
    mlx_lm.chat --model ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
@@ -167,7 +167,7 @@ Other versions: Q8_0 (~37.8 GB) `lms get https://huggingface.co/ornith-ai/Ornith
    mlx_lm.server --model ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
    ```
 
-Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit`
+Other versions: 8bit (37.8 GB memory, 36.8 GB download, Mac only) `mlx_lm.chat --model ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 

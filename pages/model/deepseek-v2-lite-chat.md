@@ -91,7 +91,7 @@ weighted average                                   = 39.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs ~10.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF/tree/9ee9f1f8f39f673e1022e176d586aef4228f630d))
+2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs 12.4 GB memory, 10.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF/tree/9ee9f1f8f39f673e1022e176d586aef4228f630d))
    
    ```sh
    llama cli -hf mradermacher/DeepSeek-V2-Lite-Chat-GGUF:Q4_K_M
@@ -103,13 +103,13 @@ weighted average                                   = 39.6
    llama serve -hf mradermacher/DeepSeek-V2-Lite-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~16.7 GB) `llama cli -hf mradermacher/DeepSeek-V2-Lite-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (19 GB memory, 16.7 GB download) `llama cli -hf mradermacher/DeepSeek-V2-Lite-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs ~10.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF/tree/9ee9f1f8f39f673e1022e176d586aef4228f630d))
+2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs 12.4 GB memory, 10.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF/tree/9ee9f1f8f39f673e1022e176d586aef4228f630d))
    
    ```sh
    lms get https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~16.7 GB) `llama cli -hf mradermacher/DeepSeek-V2-Lite-Cha
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~16.7 GB) `lms get https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF@Q8_0 -y` · 4bit (~8.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx -y`
+Other versions: Q8_0 (19 GB memory, 16.7 GB download) `lms get https://huggingface.co/mradermacher/DeepSeek-V2-Lite-Chat-GGUF@Q8_0 -y` · 4bit (10.8 GB memory, 8.84 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx -y`
 
 ### Ollama
 
@@ -128,13 +128,13 @@ Other versions: Q8_0 (~16.7 GB) `lms get https://huggingface.co/mradermacher/Dee
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs ~9.93 GB, from [ollama.com](https://ollama.com/library/deepseek-v2/tags))
+2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (Q4_K_M, needs 12.4 GB memory, 10.4 GB download, from [ollama.com](https://ollama.com/library/deepseek-v2/tags))
    
    ```sh
    ollama run deepseek-v2:16b-lite-chat-q4_K_M
    ```
 
-Other versions: Q8_0 (~19.35 GB) `ollama run deepseek-v2:16b-lite-chat-q8_0`
+Other versions: Q8_0 (19 GB memory, 16.7 GB download) `ollama run deepseek-v2:16b-lite-chat-q8_0`
 
 ### MLX (Mac)
 
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~19.35 GB) `ollama run deepseek-v2:16b-lite-chat-q8_0`
    pip install mlx-lm
    ```
 
-2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (4bit, needs ~8.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx/tree/a33a8ad64477b9ca7a65b6dc1d8c06c997f87216))
+2. Run DeepSeek-V2 Lite Chat (16B-A2.4B) (4bit, needs 10.8 GB memory, 8.84 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx/tree/a33a8ad64477b9ca7a65b6dc1d8c06c997f87216))
    
    ```sh
    mlx_lm.chat --model mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx

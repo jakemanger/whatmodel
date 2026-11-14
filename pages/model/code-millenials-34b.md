@@ -58,7 +58,7 @@ weighted average                                   = 49.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Millenials 34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
+2. Run Code Millenials 34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
    
    ```sh
    llama cli -hf mradermacher/code-millenials-34b-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 49.4
    llama serve -hf mradermacher/code-millenials-34b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf mradermacher/code-millenials-34b-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf mradermacher/code-millenials-34b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Millenials 34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
+2. Run Code Millenials 34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
    
    ```sh
    lms get https://huggingface.co/mradermacher/code-millenials-34b-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf mradermacher/code-millenials-34b-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/mradermacher/code-millenials-34b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/mradermacher/code-millenials-34b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/mradermacher/cod
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Millenials 34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
+2. Run Code Millenials 34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/code-millenials-34b-GGUF/tree/f78c3118b857be23837361fd5ee5cf1b18ae4d85))
    
    ```sh
    ollama run hf.co/mradermacher/code-millenials-34b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `ollama run hf.co/mradermacher/code-millenials-34b-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run hf.co/mradermacher/code-millenials-34b-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~67.49 GB, from [huggingface.co/budecosystem](https://huggingface.co/budecosystem/code-millenials-34b/tree/4fcd522b478f019fe458eda8accebcf22a319671))
+1. Run it as published (fp16, needs 72.4 GB memory, 67.5 GB download, from [huggingface.co/budecosystem](https://huggingface.co/budecosystem/code-millenials-34b/tree/4fcd522b478f019fe458eda8accebcf22a319671))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='budecosystem/code-millenials-34b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

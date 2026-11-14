@@ -53,7 +53,7 @@ weighted average                          = 32.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs ~1.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
+2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs 2.7 GB memory, 1.17 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
    
    ```sh
    llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 32.5
    llama serve -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2 GB) `llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (3.6 GB memory, 2.01 GB download) `llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs ~1.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
+2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs 2.7 GB memory, 1.17 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~2 GB) `llama cli -hf lmstudio-community/internlm2_5-1_8b-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2 GB) `lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (3.6 GB memory, 2.01 GB download) `lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~2 GB) `lms get https://huggingface.co/lmstudio-community/
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run InternLM2.5 1.8B Chat (Q4_0, needs ~1.1 GB, from [ollama.com](https://ollama.com/library/internlm2/tags))
+2. Run InternLM2.5 1.8B Chat (Q4_0, needs 2.7 GB memory, 1.11 GB download, from [ollama.com](https://ollama.com/library/internlm2/tags))
    
    ```sh
    ollama run internlm2:1.8b

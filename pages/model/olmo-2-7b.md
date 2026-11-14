@@ -91,7 +91,7 @@ weighted average                                   = 43.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs ~4.5 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF/tree/410e0069f64869e4b1d17d8de04810b881fd824b))
+2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF/tree/410e0069f64869e4b1d17d8de04810b881fd824b))
    
    ```sh
    llama cli -hf allenai/OLMo-2-1124-7B-Instruct-GGUF:Q4_K_M
@@ -103,13 +103,13 @@ weighted average                                   = 43.0
    llama serve -hf allenai/OLMo-2-1124-7B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.8 GB) `llama cli -hf allenai/OLMo-2-1124-7B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `llama cli -hf allenai/OLMo-2-1124-7B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs ~4.5 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF/tree/410e0069f64869e4b1d17d8de04810b881fd824b))
+2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF/tree/410e0069f64869e4b1d17d8de04810b881fd824b))
    
    ```sh
    lms get https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~7.8 GB) `llama cli -hf allenai/OLMo-2-1124-7B-Instruct-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.8 GB) `lms get https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF@Q8_0 -y` · 4bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-4bit -y` · 8bit (~7.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-8bit -y`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `lms get https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF@Q8_0 -y` · 4bit (5.8 GB memory, 4.11 GB download, Mac only) `lms get https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-4bit -y` · 8bit (9.6 GB memory, 7.76 GB download, Mac only) `lms get https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -128,13 +128,13 @@ Other versions: Q8_0 (~7.8 GB) `lms get https://huggingface.co/allenai/OLMo-2-11
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs ~4.88 GB, from [ollama.com](https://ollama.com/library/olmo2/tags))
+2. Run OLMo 2 7B Instruct (1124) (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [ollama.com](https://ollama.com/library/olmo2/tags))
    
    ```sh
    ollama run olmo2:7b-1124-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.26 GB) `ollama run olmo2:7b-1124-instruct-q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `ollama run olmo2:7b-1124-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~9.26 GB) `ollama run olmo2:7b-1124-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run OLMo 2 7B Instruct (1124) (4bit, needs ~4.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-4bit/tree/d755f57773674e695b9eaca1a565160ff10099d4))
+2. Run OLMo 2 7B Instruct (1124) (4bit, needs 5.8 GB memory, 4.11 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/OLMo-2-1124-7B-Instruct-4bit/tree/d755f57773674e695b9eaca1a565160ff10099d4))
    
    ```sh
    mlx_lm.chat --model mlx-community/OLMo-2-1124-7B-Instruct-4bit
@@ -159,7 +159,7 @@ Other versions: Q8_0 (~9.26 GB) `ollama run olmo2:7b-1124-instruct-q8_0`
    mlx_lm.server --model mlx-community/OLMo-2-1124-7B-Instruct-4bit
    ```
 
-Other versions: 8bit (~7.8 GB, Mac only) `mlx_lm.chat --model mlx-community/OLMo-2-1124-7B-Instruct-8bit`
+Other versions: 8bit (9.6 GB memory, 7.76 GB download, Mac only) `mlx_lm.chat --model mlx-community/OLMo-2-1124-7B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct)
 

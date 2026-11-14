@@ -130,7 +130,7 @@ api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out 
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~2051.18 GB, NVIDIA only, from [docs.sglang.io/cookbook](https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0))
+1. Run it as published (fp8, needs 2155 GB memory, 2051.2 GB download, NVIDIA only, from [docs.sglang.io/cookbook](https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0))
    
    ```sh
    sglang serve --trust-remote-code --model-path meituan-longcat/LongCat-2.0-FP8 --tp 8 --ep 8 --max-running-requests 64 --mem-fraction-static 0.92 --chunked-prefill-size 2048 --dsa-prefill-backend fa3 --kv-cache-dtype bfloat16 --model-loader-extra-config '{"enable_multithread_load":true,"num_threads":12}' --host 0.0.0.0 --port 30000

@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md) · [decision](decision.md)
 
-updated 2026-11-14 06:42 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-11-14 09:19 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -69,25 +69,25 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   score vs memory to run it (GB, log)
   ─┘ best for the memory
        │
-       │                                            ● Voxtral TTS (4B)       ·      ·     ·
-       │    dots.tts MF 2B (MeanFlow,… ●────────────┘  ∘
-       │  ●────VoxCPM2─●──────●────────∘   ∘      ∘ ∘ ∘    ∘    ·   ∘        ·      ·     ·
-    60 ┤ ·∘· · · · ·OmniVoice·∘· · ∘ · · · · ·∘· · · · · · · · · · · · · · · · · · · · · · · ·
-       │  ∘            ∘               ∘      ∘                 ·            ·      ·     ·
-       │  ∘                   ∘        ∘                        ∘
-       │  ∘            ∘      ∘    ∘                            ·            ·      ·     ·∘
-       │  ∘                        ∘          ∘ ∘
-    40 ┤ ·∘· · · · · · ∘ · · · · · ∘ · · · · · · · · · · · · · ··· · · · · · · · · ··· · ··· ·
-       │                      ∘    ∘   ∘      ∘
-       │  ∘            ∘               ∘      ∘                 ·            ·      ·     ·
-       │  ∘            ∘      ∘        ∘          ∘
-       │  ∘                        ∘                            ·            ·      ·     ·
-    20 ┤ · · · · · · · · · · · · · · · · · · · · · ·∘· · · · · · · · · · · · · · · · · · · · ·
-       │                                                        ·            ·      ·     ·
-       │               ∘           ∘
-       │                                                        ·            ·      ·     ·
-       └────────────────────────────────────────────────────────┬────────────┬──────┬─────┬───
-                                                              20GB         40GB   60GB  80GB
+       │                                              ● Voxtral TTS (4B)        ·       ·
+       │      dots.tts MF 2B (MeanFlow,… ●────────────┘  ∘
+       │  ●────VoxCPM2─●───────●─────────∘  ∘       ∘ ∘ ∘     ∘    ·  ∘         ·       ·
+    60 ┤ ·∘· · · · · OmniVoice ∘ · · ∘ · · · · ∘ · · · · · · · · · · · · · · · · · · · · · · ·
+       │  ∘            ∘                 ∘     ∘                   ·            ·       ·
+       │  ∘                    ∘         ∘                         ∘
+       │  ∘            ∘       ∘     ∘                             ·            ·       ·  ∘
+       │  ∘                          ∘         ∘  ∘
+    40 ┤ ·∘· · · · · · ∘ · · · · · · ∘ · · · · · · · · · · · · · · · · · · · · ··· · · ··· · ·
+       │                       ∘     ∘   ∘     ∘
+       │  ∘            ∘                 ∘     ∘                   ·            ·       ·
+       │  ∘            ∘       ∘         ∘          ∘
+       │  ∘                          ∘                             ·            ·       ·
+    20 ┤ · · · · · · · · · · · · · · · · · · · · · · ·∘· · · · · · · · · · · · · · · · · · · ·
+       │                                                           ·            ·       ·
+       │               ∘             ∘
+       │                                                           ·            ·       ·
+       └───────────────────────────────────────────────────────────┬────────────┬───────┬─────
+                                                                 20GB         40GB    60GB
 ```
 
 </details>
@@ -182,7 +182,7 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
  86  <a href="model/chatterbox.md">Chatterbox</a>                                49±5   api $25.00/M char…  ~2.9GB    ~2×  <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com ↗</a>
  87  <a href="model/parler-tts-mini-v0-1.md">Parler-TTS Mini v0.1</a>                     49±15*  local               ~2.6GB         <a href="model/parler-tts-mini-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
  88  <a href="model/fish-speech-1-2.md">Fish Speech 1.2</a>                          49±15*  local               ~1.2GB         <a href="model/fish-speech-1-2.md#run-it-on-your-own-machine">how to run ›</a>
- 89  <a href="model/fish-audio-drama-3.md">Fish Audio Drama 3</a>                      49±13*†  local                ~85GB         <a href="model/fish-audio-drama-3.md#run-it-on-your-own-machine">how to run ›</a>
+ 89  <a href="model/fish-audio-drama-3.md">Fish Audio Drama 3</a>                      49±13*†  local                ~70GB         <a href="model/fish-audio-drama-3.md#run-it-on-your-own-machine">how to run ›</a>
  90  <a href="model/silma-tts-v1.md">SILMA TTS v1</a>                             48±10*  local               ~2.7GB         <a href="model/silma-tts-v1.md#run-it-on-your-own-machine">how to run ›</a>
  91  <a href="model/fireredtts-1.md">FireRedTTS (v1)</a>                           48±3   local               ~3.1GB         <a href="model/fireredtts-1.md#run-it-on-your-own-machine">how to run ›</a>
  92  <a href="model/vokan.md">Vokan</a>                                    48±15*  comparison only

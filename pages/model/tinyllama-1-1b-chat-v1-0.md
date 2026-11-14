@@ -53,7 +53,7 @@ weighted average                          = 21.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs ~0.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tree/52e7645ba7c309695bec7ac98f4f005b139cf465))
+2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs 1.3 GB memory, 0.67 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tree/52e7645ba7c309695bec7ac98f4f005b139cf465))
    
    ```sh
    llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 21.4
    llama serve -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.2 GB) `llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q8_0`
+Other versions: Q8_0 (1.8 GB memory, 1.17 GB download) `llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs ~0.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tree/52e7645ba7c309695bec7ac98f4f005b139cf465))
+2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs 1.3 GB memory, 0.67 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tree/52e7645ba7c309695bec7ac98f4f005b139cf465))
    
    ```sh
    lms get https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~1.2 GB) `llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF@Q8_0 -y` · 4bit (~0.6 GB, Mac only) `lms get https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx -y` · 8bit (~1.2 GB, Mac only) `lms get https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-Q8-mlx -y`
+Other versions: Q8_0 (1.8 GB memory, 1.17 GB download) `lms get https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF@Q8_0 -y` · 4bit (1.2 GB memory, 0.62 GB download, Mac only) `lms get https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx -y` · 8bit (1.8 GB memory, 1.17 GB download, Mac only) `lms get https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-Q8-mlx -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~1.2 GB) `lms get https://huggingface.co/TheBloke/TinyLlam
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs ~1.16 GB, from [ollama.com](https://ollama.com/library/tinyllama/tags))
+2. Run TinyLlama 1.1B Chat v1.0 (Q4_K_M, needs 1.3 GB memory, 0.67 GB download, from [ollama.com](https://ollama.com/library/tinyllama/tags))
    
    ```sh
    ollama run tinyllama:1.1b-chat-v1-q4_K_M
    ```
 
-Other versions: Q8_0 (~1.82 GB) `ollama run tinyllama:1.1b-chat-v1-q8_0`
+Other versions: Q8_0 (1.8 GB memory, 1.17 GB download) `ollama run tinyllama:1.1b-chat-v1-q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~1.82 GB) `ollama run tinyllama:1.1b-chat-v1-q8_0`
    pip install mlx-lm
    ```
 
-2. Run TinyLlama 1.1B Chat v1.0 (4bit, needs ~0.6 GB, Mac only, from [huggingface.co/pcuenq](https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx/tree/609400ffb30646dc36d1e6d6518d3625b5fdf6ee))
+2. Run TinyLlama 1.1B Chat v1.0 (4bit, needs 1.2 GB memory, 0.62 GB download, Mac only, from [huggingface.co/pcuenq](https://huggingface.co/pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx/tree/609400ffb30646dc36d1e6d6518d3625b5fdf6ee))
    
    ```sh
    mlx_lm.chat --model pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx
@@ -121,7 +121,7 @@ Other versions: Q8_0 (~1.82 GB) `ollama run tinyllama:1.1b-chat-v1-q8_0`
    mlx_lm.server --model pcuenq/TinyLlama-1.1B-Chat-v1.0-mlx
    ```
 
-Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model pcuenq/TinyLlama-1.1B-Chat-v1.0-Q8-mlx`
+Other versions: 8bit (1.8 GB memory, 1.17 GB download, Mac only) `mlx_lm.chat --model pcuenq/TinyLlama-1.1B-Chat-v1.0-Q8-mlx`
 
 Model repository and documentation: [huggingface.co/TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 

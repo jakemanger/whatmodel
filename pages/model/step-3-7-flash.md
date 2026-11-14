@@ -122,7 +122,7 @@ api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platfo
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs ~115.47 GB, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
+2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs 123 GB memory, 115.5 GB download, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
    
    ```sh
    llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
@@ -134,13 +134,13 @@ api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platfo
    llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
    ```
 
-Other versions: Q3_K_M (~97.77 GB) `llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M`
+Other versions: Q3_K_M (104 GB memory, 97.8 GB download) `llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs ~115.47 GB, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
+2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs 123 GB memory, 115.5 GB download, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
    
    ```sh
    lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q4_K_S -y
@@ -148,7 +148,7 @@ Other versions: Q3_K_M (~97.77 GB) `llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q3_K_M (~97.77 GB) `lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q3_K_M -y`
+Other versions: Q3_K_M (104 GB memory, 97.8 GB download) `lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q3_K_M -y`
 
 Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash)
 

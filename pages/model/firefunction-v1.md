@@ -47,7 +47,7 @@ weighted average                                   = 42.6
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~93.41 GB, from [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/firefunction-v1/tree/d19325377a5b137c3f178ad8561febfd75a2f771))
+1. Run it as published (fp16, needs 99.6 GB memory, 93.4 GB download, from [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/firefunction-v1/tree/d19325377a5b137c3f178ad8561febfd75a2f771))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='fireworks-ai/firefunction-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

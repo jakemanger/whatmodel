@@ -66,7 +66,7 @@ weighted average                                   = 45.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
    
    ```sh
    llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
@@ -78,13 +78,13 @@ weighted average                                   = 45.2
    llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
    
    ```sh
    lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q4_K_M -y
@@ -92,7 +92,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q8_0 -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx -y`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q8_0 -y` · 8bit (10 GB memory, 8.09 GB download, Mac only) `lms get https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx -y`
 
 ### Ollama
 
@@ -103,13 +103,13 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/Eurus-2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
    
    ```sh
    ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF
    pip install mlx-lm
    ```
 
-2. Run Eurus-2-7B-PRIME (8bit, needs ~8.1 GB, Mac only, from [huggingface.co/WaveCut](https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx/tree/58bb62b06dae2a628b4ab31ca4f3f49ae954eba8))
+2. Run Eurus-2-7B-PRIME (8bit, needs 10 GB memory, 8.09 GB download, Mac only, from [huggingface.co/WaveCut](https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx/tree/58bb62b06dae2a628b4ab31ca4f3f49ae954eba8))
    
    ```sh
    mlx_lm.chat --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
@@ -136,7 +136,7 @@ Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~37.08 GB, NVIDIA only, from [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME))
+1. Run it as published (fp32, needs 33.5 GB memory, 30.5 GB download, NVIDIA only, from [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME))
    
    ```sh
    vllm serve PRIME-RL/Eurus-2-7B-PRIME

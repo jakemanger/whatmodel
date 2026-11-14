@@ -56,7 +56,7 @@ weighted average                            = 55.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2.5-Math 72B Instruct (Q4_K_M, needs ~47.42 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF/tree/71122712ff373230143d65feb785ba782b6520d4))
+2. Run Qwen2.5-Math 72B Instruct (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF/tree/71122712ff373230143d65feb785ba782b6520d4))
    
    ```sh
    llama cli -hf bartowski/Qwen2.5-Math-72B-Instruct-GGUF:Q4_K_M
@@ -72,7 +72,7 @@ weighted average                            = 55.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2.5-Math 72B Instruct (Q4_K_M, needs ~47.42 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF/tree/71122712ff373230143d65feb785ba782b6520d4))
+2. Run Qwen2.5-Math 72B Instruct (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF/tree/71122712ff373230143d65feb785ba782b6520d4))
    
    ```sh
    lms get https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ weighted average                            = 55.0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-72B-Instruct-4bit -y`
+Other versions: 4bit (44.4 GB memory, 40.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-72B-Instruct-4bit -y`
 
 ### MLX (Mac)
 
@@ -93,7 +93,7 @@ Other versions: 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-co
    pip install mlx-lm
    ```
 
-2. Run Qwen2.5-Math 72B Instruct (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-72B-Instruct-4bit/tree/55ec0cc0522c4fefbb0e04969c1a739b26b1f89a))
+2. Run Qwen2.5-Math 72B Instruct (4bit, needs 44.4 GB memory, 40.9 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-72B-Instruct-4bit/tree/55ec0cc0522c4fefbb0e04969c1a739b26b1f89a))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2.5-Math-72B-Instruct-4bit

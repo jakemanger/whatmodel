@@ -115,7 +115,7 @@ weighted average                                   = 56.6
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 4.1 30B (Q4_K_M, needs ~17 GB, from [ollama.com](https://ollama.com/library/granite4.1/tags))
+2. Run Granite 4.1 30B (Q4_K_M, needs 19.9 GB memory, 17.5 GB download, from [ollama.com](https://ollama.com/library/granite4.1/tags))
    
    ```sh
    ollama run granite4.1:30b

@@ -58,7 +58,7 @@ weighted average                                   = 50.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
+2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
    
    ```sh
    llama cli -hf TheBloke/speechless-codellama-34b-v2.0-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 50.1
    llama serve -hf TheBloke/speechless-codellama-34b-v2.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/speechless-codellama-34b-v2.0-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf TheBloke/speechless-codellama-34b-v2.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
+2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
    
    ```sh
    lms get https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/speechless-codellama-34b
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/speechl
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
+2. Run speechless-codellama-34b-v2.0 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/speechless-codellama-34b-v2.0-GGUF/tree/f82dad80df01aab7347bea014572348bd85375fa))
    
    ```sh
    ollama run hf.co/TheBloke/speechless-codellama-34b-v2.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `ollama run hf.co/TheBloke/speechless-codellama-34b-v2.0-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run hf.co/TheBloke/speechless-codellama-34b-v2.0-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~67.49 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0/tree/419bc42a254102d6a5486a1a854068e912c4047c))
+1. Run it as published (fp16, needs 72.4 GB memory, 67.5 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-codellama-34b-v2.0/tree/419bc42a254102d6a5486a1a854068e912c4047c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-codellama-34b-v2.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

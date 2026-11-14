@@ -91,7 +91,7 @@ weighted average                                   = 37.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 7B Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF/tree/b108be96c2abbf4e8a239c07d87d7bbfde2081ea))
+2. Run Code Llama 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF/tree/b108be96c2abbf4e8a239c07d87d7bbfde2081ea))
    
    ```sh
    llama cli -hf mradermacher/CodeLlama-7b-Instruct-hf-GGUF:Q4_K_M
@@ -103,13 +103,13 @@ weighted average                                   = 37.7
    llama serve -hf mradermacher/CodeLlama-7b-Instruct-hf-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/CodeLlama-7b-Instruct-hf-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf mradermacher/CodeLlama-7b-Instruct-hf-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 7B Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF/tree/b108be96c2abbf4e8a239c07d87d7bbfde2081ea))
+2. Run Code Llama 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF/tree/b108be96c2abbf4e8a239c07d87d7bbfde2081ea))
    
    ```sh
    lms get https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/CodeLlama-7b-Instruct
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF@Q8_0 -y` · 4bit (~3.8 GB, Mac only) `lms get https://huggingface.co/javiergtzr/CodeLlama-7b-Instruct-hf-4bit -y` · 8bit (~7.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-7b-Instruct-hf-8bit-mlx -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/mradermacher/CodeLlama-7b-Instruct-hf-GGUF@Q8_0 -y` · 4bit (5.5 GB memory, 3.79 GB download, Mac only) `lms get https://huggingface.co/javiergtzr/CodeLlama-7b-Instruct-hf-4bit -y` · 8bit (9 GB memory, 7.16 GB download, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-7b-Instruct-hf-8bit-mlx -y`
 
 ### Ollama
 
@@ -128,13 +128,13 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Code
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 7B Instruct (Q4_K_M, needs ~4.1 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:7b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-instruct-q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run codellama:7b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Code Llama 7B Instruct (4bit, needs ~3.8 GB, Mac only, from [huggingface.co/javiergtzr](https://huggingface.co/javiergtzr/CodeLlama-7b-Instruct-hf-4bit/tree/117bdc18b6d793fb07fda88d582653b717327e1c))
+2. Run Code Llama 7B Instruct (4bit, needs 5.5 GB memory, 3.79 GB download, Mac only, from [huggingface.co/javiergtzr](https://huggingface.co/javiergtzr/CodeLlama-7b-Instruct-hf-4bit/tree/117bdc18b6d793fb07fda88d582653b717327e1c))
    
    ```sh
    mlx_lm.chat --model javiergtzr/CodeLlama-7b-Instruct-hf-4bit
@@ -159,7 +159,7 @@ Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-instruct-q8_0`
    mlx_lm.server --model javiergtzr/CodeLlama-7b-Instruct-hf-4bit
    ```
 
-Other versions: 8bit (~7.2 GB, Mac only) `mlx_lm.chat --model mlx-community/CodeLlama-7b-Instruct-hf-8bit-mlx`
+Other versions: 8bit (9 GB memory, 7.16 GB download, Mac only) `mlx_lm.chat --model mlx-community/CodeLlama-7b-Instruct-hf-8bit-mlx`
 
 Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf)
 

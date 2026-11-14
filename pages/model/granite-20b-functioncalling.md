@@ -57,7 +57,7 @@ weighted average                                   = 45.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 20B FunctionCalling (Q4_K_M, needs ~12.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
+2. Run Granite 20B FunctionCalling (Q4_K_M, needs 14.9 GB memory, 12.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
    
    ```sh
    llama cli -hf mradermacher/granite-20b-functioncalling-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 45.9
    llama serve -hf mradermacher/granite-20b-functioncalling-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.5 GB) `llama cli -hf mradermacher/granite-20b-functioncalling-GGUF:Q8_0`
+Other versions: Q8_0 (24.1 GB memory, 21.5 GB download) `llama cli -hf mradermacher/granite-20b-functioncalling-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 20B FunctionCalling (Q4_K_M, needs ~12.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
+2. Run Granite 20B FunctionCalling (Q4_K_M, needs 14.9 GB memory, 12.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
    
    ```sh
    lms get https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~21.5 GB) `llama cli -hf mradermacher/granite-20b-function
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~21.5 GB) `lms get https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF@Q8_0 -y`
+Other versions: Q8_0 (24.1 GB memory, 21.5 GB download) `lms get https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~21.5 GB) `lms get https://huggingface.co/mradermacher/gra
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 20B FunctionCalling (Q4_K_M, needs ~12.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
+2. Run Granite 20B FunctionCalling (Q4_K_M, needs 14.9 GB memory, 12.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/granite-20b-functioncalling-GGUF/tree/4e6d29fdc3446ce5144fb9b0960d9e0d12bfd792))
    
    ```sh
    ollama run hf.co/mradermacher/granite-20b-functioncalling-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.5 GB) `ollama run hf.co/mradermacher/granite-20b-functioncalling-GGUF:Q8_0`
+Other versions: Q8_0 (24.1 GB memory, 21.5 GB download) `ollama run hf.co/mradermacher/granite-20b-functioncalling-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~40.13 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-functioncalling/tree/b030a7feff33cad1e2523fae857ef70bcce92e92))
+1. Run it as published (BF16, needs 43.6 GB memory, 40.1 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-functioncalling/tree/b030a7feff33cad1e2523fae857ef70bcce92e92))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ibm-granite/granite-20b-functioncalling', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -59,7 +59,7 @@ weighted average                                   = 37.0
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~26.03 GB, from [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-13b-v1.3/tree/6566e9cb1787585d1147dcf4f9bc48f29e1328d2))
+1. Run it as published (fp16, needs 28.8 GB memory, 26 GB download, from [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-13b-v1.3/tree/6566e9cb1787585d1147dcf4f9bc48f29e1328d2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='lmsys/vicuna-13b-v1.3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

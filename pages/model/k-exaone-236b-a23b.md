@@ -130,7 +130,7 @@ weighted average                                   = 64.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs ~143.47 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
+2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs 152 GB memory, 143.5 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
    
    ```sh
    llama cli -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M
@@ -146,7 +146,7 @@ weighted average                                   = 64.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs ~143.47 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
+2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs 152 GB memory, 143.5 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF@Q4_K_M -y
@@ -154,7 +154,7 @@ weighted average                                   = 64.0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~251.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit -y`
+Other versions: 8bit (265 GB memory, 251.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit -y`
 
 ### MLX (Mac)
 
@@ -167,7 +167,7 @@ Other versions: 8bit (~251.4 GB, Mac only) `lms get https://huggingface.co/mlx-c
    pip install mlx-lm
    ```
 
-2. Run K-EXAONE (236B-A23B) (8bit, needs ~251.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit/tree/c09f6395a23fc0a9e92e10569a3e2f2ea3fb3c5e))
+2. Run K-EXAONE (236B-A23B) (8bit, needs 265 GB memory, 251.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit/tree/c09f6395a23fc0a9e92e10569a3e2f2ea3fb3c5e))
    
    ```sh
    mlx_lm.chat --model mlx-community/K-EXAONE-236B-A23B-8bit
@@ -181,7 +181,7 @@ Other versions: 8bit (~251.4 GB, Mac only) `lms get https://huggingface.co/mlx-c
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~474.2 GB, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/tree/61e6d578eb102b578e5704e2916ac841df9eca0a))
+1. Run it as published (BF16, needs 499 GB memory, 474.2 GB download, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/tree/61e6d578eb102b578e5704e2916ac841df9eca0a))
    
    ```sh
    vllm serve LGAI-EXAONE/K-EXAONE-236B-A23B --reasoning-parser deepseek_v3 --tensor-parallel-size 4 --enable-auto-tool-choice --tool-call-parser hermes

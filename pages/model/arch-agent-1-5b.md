@@ -56,7 +56,7 @@ weighted average                                   = 50.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Arch-Agent-1.5B (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
+2. Run Arch-Agent-1.5B (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
    
    ```sh
    llama cli -hf mradermacher/Arch-Agent-1.5B-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 50.6
    llama serve -hf mradermacher/Arch-Agent-1.5B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `llama cli -hf mradermacher/Arch-Agent-1.5B-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `llama cli -hf mradermacher/Arch-Agent-1.5B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Arch-Agent-1.5B (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
+2. Run Arch-Agent-1.5B (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~1.6 GB) `llama cli -hf mradermacher/Arch-Agent-1.5B-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF@Q8_0 -y` · 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/huangang/Arch-Agent-1.5B-mlx-4Bit -y`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `lms get https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF@Q8_0 -y` · 4bit (2.4 GB memory, 0.87 GB download, Mac only) `lms get https://huggingface.co/huangang/Arch-Agent-1.5B-mlx-4Bit -y`
 
 ### Ollama
 
@@ -93,13 +93,13 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/mradermacher/Arch
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Arch-Agent-1.5B (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
+2. Run Arch-Agent-1.5B (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Arch-Agent-1.5B-GGUF/tree/724f49557ad413ff63de726c3d5dcb3c0655004c))
    
    ```sh
    ollama run hf.co/mradermacher/Arch-Agent-1.5B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Arch-Agent-1.5B-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `ollama run hf.co/mradermacher/Arch-Agent-1.5B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -112,7 +112,7 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Arch-Agent-1.5B-GG
    pip install mlx-lm
    ```
 
-2. Run Arch-Agent-1.5B (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/huangang](https://huggingface.co/huangang/Arch-Agent-1.5B-mlx-4Bit/tree/e0d28a6728ef70f80d6bad4b3a05f4ebb8912f9b))
+2. Run Arch-Agent-1.5B (4bit, needs 2.4 GB memory, 0.87 GB download, Mac only, from [huggingface.co/huangang](https://huggingface.co/huangang/Arch-Agent-1.5B-mlx-4Bit/tree/e0d28a6728ef70f80d6bad4b3a05f4ebb8912f9b))
    
    ```sh
    mlx_lm.chat --model huangang/Arch-Agent-1.5B-mlx-4Bit
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Arch-Agent-1.5B-GG
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~3.09 GB, from [huggingface.co/katanemo](https://huggingface.co/katanemo/Arch-Agent-1.5B/tree/fbb1d58cb0f092f348d34f9b3dbf8f1454957426))
+1. Run it as published (BF16, needs 4.7 GB memory, 3.09 GB download, from [huggingface.co/katanemo](https://huggingface.co/katanemo/Arch-Agent-1.5B/tree/fbb1d58cb0f092f348d34f9b3dbf8f1454957426))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='katanemo/Arch-Agent-1.5B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

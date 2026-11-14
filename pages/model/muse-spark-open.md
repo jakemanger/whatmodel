@@ -130,7 +130,7 @@ api (Fireworks AI) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Muse Spark Open (Q4_K_S, needs ~472.25 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF/tree/ada96652107984f184027153a77ec250d67ed271))
+2. Run Muse Spark Open (Q4_K_S, needs 497 GB memory, 472.3 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF/tree/ada96652107984f184027153a77ec250d67ed271))
    
    ```sh
    llama cli -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q4_K_S
@@ -142,13 +142,13 @@ api (Fireworks AI) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [
    llama serve -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q4_K_S
    ```
 
-Other versions: ud-iq1_s (~179.74 GB) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-IQ1_S` · ud-q2_k_xl (~315.32 GB) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q2_K_XL` · Q2_K (~306.26 GB) `llama cli -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q2_K` · ud-q4_k_xl (~509.6 GB) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q4_K_XL` · Q8_0 (~873.83 GB) `llama cli -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q8_0`
+Other versions: ud-iq1_s (190 GB memory, 179.7 GB download) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-IQ1_S` · ud-q2_k_xl (333 GB memory, 315.3 GB download) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q2_K_XL` · Q2_K (323 GB memory, 306.3 GB download) `llama cli -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q2_K` · ud-q4_k_xl (537 GB memory, 509.6 GB download) `llama cli -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q4_K_XL` · Q8_0 (919 GB memory, 873.8 GB download) `llama cli -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Muse Spark Open (4bit, needs ~461.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit/tree/a030c4bde7045f0352c013cbc7fda64dc2dcbb78))
+2. Run Muse Spark Open (4bit, needs 561 GB memory, 532.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit/tree/a030c4bde7045f0352c013cbc7fda64dc2dcbb78))
    
    ```sh
    lms get https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit -y
@@ -156,7 +156,7 @@ Other versions: ud-iq1_s (~179.74 GB) `llama cli -hf unsloth/Muse-Spark-Open-816
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-iq1_s (~179.74 GB) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-IQ1_S -y` · ud-q2_k_xl (~315.32 GB) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-Q2_K_XL -y` · Q2_K (~306.26 GB) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q2_K -y` · 3bit (~359.21 GB, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-3bit -y` · Q4_K_S (~472.25 GB) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q4_K_S -y` · ud-q4_k_xl (~509.6 GB) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-Q4_K_XL -y` · Q8_0 (~873.83 GB) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q8_0 -y`
+Other versions: ud-iq1_s (190 GB memory, 179.7 GB download) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-IQ1_S -y` · ud-q2_k_xl (333 GB memory, 315.3 GB download) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-Q2_K_XL -y` · Q2_K (323 GB memory, 306.3 GB download) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q2_K -y` · 3bit (459 GB memory, 436.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-3bit -y` · Q4_K_S (497 GB memory, 472.3 GB download) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q4_K_S -y` · ud-q4_k_xl (537 GB memory, 509.6 GB download) `lms get https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF@UD-Q4_K_XL -y` · Q8_0 (919 GB memory, 873.8 GB download) `lms get https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF@Q8_0 -y`
 
 ### MLX (Mac)
 
@@ -169,7 +169,7 @@ Other versions: ud-iq1_s (~179.74 GB) `lms get https://huggingface.co/unsloth/Mu
    pip install mlx-lm
    ```
 
-2. Run Muse Spark Open (4bit, needs ~461.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit/tree/a030c4bde7045f0352c013cbc7fda64dc2dcbb78))
+2. Run Muse Spark Open (4bit, needs 561 GB memory, 532.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit/tree/a030c4bde7045f0352c013cbc7fda64dc2dcbb78))
    
    ```sh
    mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-4bit
@@ -181,7 +181,7 @@ Other versions: ud-iq1_s (~179.74 GB) `lms get https://huggingface.co/unsloth/Mu
    mlx_lm.server --model mlx-community/Muse-Spark-Open-816B-A42B-4bit
    ```
 
-Other versions: 3bit (~359.21 GB, Mac only) `mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-3bit`
+Other versions: 3bit (459 GB memory, 436.1 GB download, Mac only) `mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-3bit`
 
 Model repository and documentation: [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)
 

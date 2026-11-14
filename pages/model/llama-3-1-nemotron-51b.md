@@ -81,7 +81,7 @@ weighted average                                   = 52.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs ~31.04 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
+2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs 34.1 GB memory, 31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
    
    ```sh
    llama cli -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
@@ -93,13 +93,13 @@ weighted average                                   = 52.4
    llama serve -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~54.73 GB) `llama cli -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (58.9 GB memory, 54.7 GB download) `llama cli -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs ~31.04 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
+2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs 34.1 GB memory, 31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
    
    ```sh
    lms get https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF@Q4_K_M -y
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~54.73 GB) `llama cli -hf bartowski/Llama-3_1-Nemotron-51B
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~54.73 GB) `lms get https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (58.9 GB memory, 54.7 GB download) `lms get https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -118,7 +118,7 @@ Other versions: Q8_0 (~54.73 GB) `lms get https://huggingface.co/bartowski/Llama
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs ~31.04 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
+2. Run Llama 3.1 Nemotron 51B Instruct (Q4_K_M, needs 34.1 GB memory, 31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF/tree/f2bea9ce4c76fe6c623c641adbd2f795c1c00313))
    
    ```sh
    ollama run hf.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M

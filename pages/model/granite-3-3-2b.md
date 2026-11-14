@@ -83,7 +83,7 @@ weighted average                                   = 40.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 3.3 2B Instruct (Q4_K_M, needs ~1.5 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/tree/7cdf86ccd1f1bb3491c9b7017b033f2e51367397))
+2. Run Granite 3.3 2B Instruct (Q4_K_M, needs 3.1 GB memory, 1.55 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/tree/7cdf86ccd1f1bb3491c9b7017b033f2e51367397))
    
    ```sh
    llama cli -hf ibm-granite/granite-3.3-2b-instruct-GGUF:Q4_K_M
@@ -95,13 +95,13 @@ weighted average                                   = 40.8
    llama serve -hf ibm-granite/granite-3.3-2b-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.7 GB) `llama cli -hf ibm-granite/granite-3.3-2b-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (4.3 GB memory, 2.69 GB download) `llama cli -hf ibm-granite/granite-3.3-2b-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 3.3 2B Instruct (Q4_K_M, needs ~1.5 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/tree/7cdf86ccd1f1bb3491c9b7017b033f2e51367397))
+2. Run Granite 3.3 2B Instruct (Q4_K_M, needs 3.1 GB memory, 1.55 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/tree/7cdf86ccd1f1bb3491c9b7017b033f2e51367397))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF@Q4_K_M -y
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~2.7 GB) `llama cli -hf ibm-granite/granite-3.3-2b-instruc
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF@Q8_0 -y` · 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/granite-3.3-2b-instruct-4bit -y` · 8bit (~2.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/granite-3.3-2b-instruct-8bit -y`
+Other versions: Q8_0 (4.3 GB memory, 2.69 GB download) `lms get https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF@Q8_0 -y` · 4bit (3 GB memory, 1.43 GB download, Mac only) `lms get https://huggingface.co/mlx-community/granite-3.3-2b-instruct-4bit -y` · 8bit (4.3 GB memory, 2.69 GB download, Mac only) `lms get https://huggingface.co/mlx-community/granite-3.3-2b-instruct-8bit -y`
 
 ### Ollama
 
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/ibm-granite/grani
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 3.3 2B Instruct (Q4_K_M, needs ~2.02 GB, from [ollama.com](https://ollama.com/library/granite3.3/tags))
+2. Run Granite 3.3 2B Instruct (Q4_K_M, needs 3.1 GB memory, 1.55 GB download, from [ollama.com](https://ollama.com/library/granite3.3/tags))
    
    ```sh
    ollama run granite3.3:2b
@@ -137,7 +137,7 @@ Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/ibm-granite/grani
    pip install mlx-lm
    ```
 
-2. Run Granite 3.3 2B Instruct (4bit, needs ~1.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/granite-3.3-2b-instruct-4bit/tree/58246c5498495c14599525c852cfadb66c9f3084))
+2. Run Granite 3.3 2B Instruct (4bit, needs 3 GB memory, 1.43 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/granite-3.3-2b-instruct-4bit/tree/58246c5498495c14599525c852cfadb66c9f3084))
    
    ```sh
    mlx_lm.chat --model mlx-community/granite-3.3-2b-instruct-4bit
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/ibm-granite/grani
    mlx_lm.server --model mlx-community/granite-3.3-2b-instruct-4bit
    ```
 
-Other versions: 8bit (~2.7 GB, Mac only) `mlx_lm.chat --model mlx-community/granite-3.3-2b-instruct-8bit`
+Other versions: 8bit (4.3 GB memory, 2.69 GB download, Mac only) `mlx_lm.chat --model mlx-community/granite-3.3-2b-instruct-8bit`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct)
 

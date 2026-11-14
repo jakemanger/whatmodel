@@ -44,7 +44,7 @@ weighted average                                   = 56.1
 
 ### Other ways to run it
 
-1. Run it as published (2-bit, needs ~0.7 GB, Mac only, from [huggingface.co/FermionResearch](https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md))
+1. Run it as published (2-bit, needs ~0.2 GB, Mac only, from [huggingface.co/FermionResearch](https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md))
    
    ```sh
    python3.12 -m venv .venv && source .venv/bin/activate && pip install fermion-research mlx mlx-audio mlx-lm soundfile scipy zstandard && phonon transcribe recording.wav

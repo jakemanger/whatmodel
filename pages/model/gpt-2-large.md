@@ -93,7 +93,7 @@ weighted average                                   = -2.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GPT-2 Large (774M) (Q4_K_M, needs ~0.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
+2. Run GPT-2 Large (774M) (Q4_K_M, needs 2.1 GB memory, 0.55 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
    
    ```sh
    llama cli -hf mradermacher/gpt2-large-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = -2.9
    llama serve -hf mradermacher/gpt2-large-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.9 GB) `llama cli -hf mradermacher/gpt2-large-GGUF:Q8_0`
+Other versions: Q8_0 (2.4 GB memory, 0.9 GB download) `llama cli -hf mradermacher/gpt2-large-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GPT-2 Large (774M) (Q4_K_M, needs ~0.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
+2. Run GPT-2 Large (774M) (Q4_K_M, needs 2.1 GB memory, 0.55 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gpt2-large-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~0.9 GB) `llama cli -hf mradermacher/gpt2-large-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.9 GB) `lms get https://huggingface.co/mradermacher/gpt2-large-GGUF@Q8_0 -y` · fp16 (~1.5 GB, Mac only) `lms get https://huggingface.co/MCES10/gpt2-large-mlx-fp16 -y`
+Other versions: Q8_0 (2.4 GB memory, 0.9 GB download) `lms get https://huggingface.co/mradermacher/gpt2-large-GGUF@Q8_0 -y` · fp16 (3.1 GB memory, 1.55 GB download, Mac only) `lms get https://huggingface.co/MCES10/gpt2-large-mlx-fp16 -y`
 
 ### Ollama
 
@@ -130,13 +130,13 @@ Other versions: Q8_0 (~0.9 GB) `lms get https://huggingface.co/mradermacher/gpt2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GPT-2 Large (774M) (Q4_K_M, needs ~0.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
+2. Run GPT-2 Large (774M) (Q4_K_M, needs 2.1 GB memory, 0.55 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-large-GGUF/tree/c83630987bcee4945f3e947b1977c70e6b2760a1))
    
    ```sh
    ollama run hf.co/mradermacher/gpt2-large-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/mradermacher/gpt2-large-GGUF:Q8_0`
+Other versions: Q8_0 (2.4 GB memory, 0.9 GB download) `ollama run hf.co/mradermacher/gpt2-large-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/mradermacher/gpt2-large-GGUF:Q8
    pip install mlx-lm
    ```
 
-2. Run GPT-2 Large (774M) (fp16, needs ~1.5 GB, Mac only, from [huggingface.co/MCES10](https://huggingface.co/MCES10/gpt2-large-mlx-fp16/tree/2ae98124ef6dcda29918ea2a73f189eecfeb417a))
+2. Run GPT-2 Large (774M) (fp16, needs 3.1 GB memory, 1.55 GB download, Mac only, from [huggingface.co/MCES10](https://huggingface.co/MCES10/gpt2-large-mlx-fp16/tree/2ae98124ef6dcda29918ea2a73f189eecfeb417a))
    
    ```sh
    mlx_lm.chat --model MCES10/gpt2-large-mlx-fp16
@@ -163,7 +163,7 @@ Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/mradermacher/gpt2-large-GGUF:Q8
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~3.25 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-large/tree/32b71b12589c2f8d625668d2335a01cac3249519))
+1. Run it as published (fp32, needs 4.9 GB memory, 3.25 GB download, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-large/tree/32b71b12589c2f8d625668d2335a01cac3249519))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-large')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

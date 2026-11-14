@@ -41,7 +41,7 @@ api (Maritaca AI) · price unknown · [docs.maritaca.ai](https://docs.maritaca.a
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run S5-nano (Q4_K_M, needs ~3.3 GB, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
+2. Run S5-nano (Q4_K_M, needs 5.1 GB memory, 3.46 GB download, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
    
    ```sh
    llama cli -hf maritaca-ai/S5-nano-GGUF:Q4_K_M
@@ -53,13 +53,13 @@ api (Maritaca AI) · price unknown · [docs.maritaca.ai](https://docs.maritaca.a
    llama serve -hf maritaca-ai/S5-nano-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.1 GB) `llama cli -hf maritaca-ai/S5-nano-GGUF:Q8_0`
+Other versions: Q8_0 (7 GB memory, 5.28 GB download) `llama cli -hf maritaca-ai/S5-nano-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run S5-nano (Q4_K_M, needs ~3.3 GB, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
+2. Run S5-nano (Q4_K_M, needs 5.1 GB memory, 3.46 GB download, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
    
    ```sh
    lms get https://huggingface.co/maritaca-ai/S5-nano-GGUF@Q4_K_M -y
@@ -67,7 +67,7 @@ Other versions: Q8_0 (~6.1 GB) `llama cli -hf maritaca-ai/S5-nano-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~6.1 GB) `lms get https://huggingface.co/maritaca-ai/S5-nano-GGUF@Q8_0 -y`
+Other versions: Q8_0 (7 GB memory, 5.28 GB download) `lms get https://huggingface.co/maritaca-ai/S5-nano-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -78,23 +78,23 @@ Other versions: Q8_0 (~6.1 GB) `lms get https://huggingface.co/maritaca-ai/S5-na
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run S5-nano (Q4_K_M, needs ~3.3 GB, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
+2. Run S5-nano (Q4_K_M, needs 5.1 GB memory, 3.46 GB download, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano-GGUF/blob/892d3b6ce018802d74fed1650e712e5fcd5a42b5/README.md))
    
    ```sh
    ollama run hf.co/maritaca-ai/S5-nano-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.1 GB) `ollama run hf.co/maritaca-ai/S5-nano-GGUF:Q8_0`
+Other versions: Q8_0 (7 GB memory, 5.28 GB download) `ollama run hf.co/maritaca-ai/S5-nano-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs 9.3 GB, NVIDIA only, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md))
+1. Run it as published (BF16, needs 11.3 GB memory, 9.32 GB download, NVIDIA only, from [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano/blob/fe3a3581c33cb22917770ef1987b7c6e30929425/README.md))
    
    ```sh
    vllm serve maritaca-ai/S5-nano --max-model-len 262144 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder
    ```
 
-Other versions: fp8 (5.8 GB, NVIDIA only) `vllm serve maritaca-ai/S5-nano-FP8 --max-model-len 262144 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder`
+Other versions: fp8 (7.5 GB memory, 5.76 GB download, NVIDIA only) `vllm serve maritaca-ai/S5-nano-FP8 --max-model-len 262144 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder`
 
 Model repository and documentation: [huggingface.co/maritaca-ai](https://huggingface.co/maritaca-ai/S5-nano)
 

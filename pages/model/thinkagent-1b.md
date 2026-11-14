@@ -47,7 +47,7 @@ weighted average                                   = 27.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~2.47 GB, from [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3/tree/5fad8275596b0bffff6bf2a61fd5db9d54f94ccc))
+1. Run it as published (BF16, needs 4.1 GB memory, 2.47 GB download, from [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3/tree/5fad8275596b0bffff6bf2a61fd5db9d54f94ccc))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='AymanTarig/Llama-3.2-1B-FC-v3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

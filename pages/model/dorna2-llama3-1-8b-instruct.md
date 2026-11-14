@@ -53,7 +53,7 @@ weighted average                          = 44.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
    
    ```sh
    llama cli -hf aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
@@ -69,7 +69,7 @@ weighted average                          = 44.5
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
    
    ```sh
    lms get https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF@q4_k_m -y
@@ -86,7 +86,7 @@ weighted average                          = 44.5
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
    
    ```sh
    ollama run hf.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
@@ -94,7 +94,7 @@ weighted average                          = 44.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna2-Llama3.1-8B-Instruct/tree/b78e4bd261100c96e511ed5090ca0ce0e1f4b340))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna2-Llama3.1-8B-Instruct/tree/b78e4bd261100c96e511ed5090ca0ce0e1f4b340))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna2-Llama3.1-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

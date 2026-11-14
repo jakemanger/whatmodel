@@ -76,7 +76,7 @@ weighted average                                   = 50.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hermes 3 Llama 3.1 70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF/tree/2426f0fa281115286ea90967a480666fa502bade))
+2. Run Hermes 3 Llama 3.1 70B (Q4_K_M, needs 45.8 GB memory, 42.5 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF/tree/2426f0fa281115286ea90967a480666fa502bade))
    
    ```sh
    llama cli -hf NousResearch/Hermes-3-Llama-3.1-70B-GGUF:Q4_K_M
@@ -92,7 +92,7 @@ weighted average                                   = 50.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hermes 3 Llama 3.1 70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF/tree/2426f0fa281115286ea90967a480666fa502bade))
+2. Run Hermes 3 Llama 3.1 70B (Q4_K_M, needs 45.8 GB memory, 42.5 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF/tree/2426f0fa281115286ea90967a480666fa502bade))
    
    ```sh
    lms get https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF@Q4_K_M -y
@@ -109,7 +109,7 @@ weighted average                                   = 50.2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hermes 3 Llama 3.1 70B (Q4_0, needs ~40 GB, from [ollama.com](https://ollama.com/library/hermes3/tags))
+2. Run Hermes 3 Llama 3.1 70B (Q4_0, needs 43.3 GB memory, 40 GB download, from [ollama.com](https://ollama.com/library/hermes3/tags))
    
    ```sh
    ollama run hermes3:70b

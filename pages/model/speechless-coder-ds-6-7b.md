@@ -58,7 +58,7 @@ weighted average                                   = 48.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run speechless-coder-ds-6.7b (Q4_K_M, needs ~4.1 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
+2. Run speechless-coder-ds-6.7b (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
    
    ```sh
    llama cli -hf uukuguy/speechless-coder-ds-6.7b:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 48.1
    llama serve -hf uukuguy/speechless-coder-ds-6.7b:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf uukuguy/speechless-coder-ds-6.7b:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf uukuguy/speechless-coder-ds-6.7b:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run speechless-coder-ds-6.7b (Q4_K_M, needs ~4.1 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
+2. Run speechless-coder-ds-6.7b (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
    
    ```sh
    lms get https://huggingface.co/uukuguy/speechless-coder-ds-6.7b@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf uukuguy/speechless-coder-ds-6.7b:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/uukuguy/speechless-coder-ds-6.7b@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/uukuguy/speechless-coder-ds-6.7b@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/uukuguy/speechles
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run speechless-coder-ds-6.7b (Q4_K_M, needs ~4.1 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
+2. Run speechless-coder-ds-6.7b (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
    
    ```sh
    ollama run hf.co/uukuguy/speechless-coder-ds-6.7b:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/uukuguy/speechless-coder-ds-6.7b:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/uukuguy/speechless-coder-ds-6.7b:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~13.48 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
+1. Run it as published (fp16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coder-ds-6.7b/tree/c813a5268c6dfe267a720ad3b51773f1ab0feb59))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-coder-ds-6.7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -155,7 +155,7 @@ api (Deep Infra) · $0.11/M blended · $0.09 in / $0.18 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V4 Flash (0731) (ud-q4_k_xl, needs ~170.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF/tree/main))
+2. Run DeepSeek V4 Flash (0731) (ud-q4_k_xl, needs 164 GB memory, 155.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V4-Flash-0731-GGUF:UD-Q4_K_XL
@@ -167,13 +167,13 @@ api (Deep Infra) · $0.11/M blended · $0.09 in / $0.18 out per 1M tokens · [de
    llama serve -hf unsloth/DeepSeek-V4-Flash-0731-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~85.7 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-0731-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (103 GB memory, 96.8 GB download) `llama cli -hf unsloth/DeepSeek-V4-Flash-0731-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V4 Flash (0731) (ud-q4_k_xl, needs ~170.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF/tree/main))
+2. Run DeepSeek V4 Flash (0731) (ud-q4_k_xl, needs 164 GB memory, 155.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF@UD-Q4_K_XL -y
@@ -181,7 +181,7 @@ Other versions: ud-q2_k_xl (~85.7 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~85.7 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (103 GB memory, 96.8 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731)
 

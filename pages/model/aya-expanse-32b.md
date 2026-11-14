@@ -85,7 +85,7 @@ api (Cohere) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.coh
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Aya Expanse 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
+2. Run Aya Expanse 32B (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
    
    ```sh
    llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
@@ -97,13 +97,13 @@ api (Cohere) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.coh
    llama serve -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Aya Expanse 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
+2. Run Aya Expanse 32B (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q4_K_M -y
@@ -111,7 +111,7 @@ Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/aya-expanse-32
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q8_0 -y` · 8bit (~34.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-32b-8bit -y`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q8_0 -y` · 8bit (37.5 GB memory, 34.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-32b-8bit -y`
 
 ### Ollama
 
@@ -122,13 +122,13 @@ Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Aya Expanse 32B (Q4_K_M, needs ~19.88 GB, from [ollama.com](https://ollama.com/library/aya-expanse/tags))
+2. Run Aya Expanse 32B (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [ollama.com](https://ollama.com/library/aya-expanse/tags))
    
    ```sh
    ollama run aya-expanse:32b-q4_K_M
    ```
 
-Other versions: Q8_0 (~39.26 GB) `ollama run aya-expanse:32b-q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `ollama run aya-expanse:32b-q8_0`
 
 ### MLX (Mac)
 
@@ -141,7 +141,7 @@ Other versions: Q8_0 (~39.26 GB) `ollama run aya-expanse:32b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Aya Expanse 32B (8bit, needs ~34.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/aya-expanse-32b-8bit/tree/3f42e199f54b88cb749dc0810d32902102f4a2e7))
+2. Run Aya Expanse 32B (8bit, needs 37.5 GB memory, 34.3 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/aya-expanse-32b-8bit/tree/3f42e199f54b88cb749dc0810d32902102f4a2e7))
    
    ```sh
    mlx_lm.chat --model mlx-community/aya-expanse-32b-8bit

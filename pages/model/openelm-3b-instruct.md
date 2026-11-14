@@ -53,7 +53,7 @@ weighted average                            = 25.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+2. Run OpenELM 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
    
    ```sh
    llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                            = 25.5
    llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.23 GB download) `llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+2. Run OpenELM 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
    
    ```sh
    lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~3.2 GB) `llama cli -hf mradermacher/OpenELM-3B-Instruct-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (4.9 GB memory, 3.23 GB download) `lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/Open
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+2. Run OpenELM 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
    
    ```sh
    ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.23 GB download) `ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/apple](https://huggingface.co/apple/OpenELM-3B-Instruct)
 

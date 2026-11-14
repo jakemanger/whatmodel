@@ -112,7 +112,7 @@ NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs ~30.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
+2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs 33.2 GB memory, 30.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
    
    ```sh
    llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:Q4_K_M
@@ -124,13 +124,13 @@ NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2
    llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: ud-q2_k_xl (~19.31 GB) `llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (21.8 GB memory, 19.3 GB download) `llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs ~30.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
+2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs 33.2 GB memory, 30.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
    
    ```sh
    lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF@Q4_K_M -y
@@ -138,7 +138,7 @@ Other versions: ud-q2_k_xl (~19.31 GB) `llama cli -hf unsloth/Llama-3_3-Nemotron
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~19.31 GB) `lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF@UD-Q2_K_XL -y` · 4bit (~28.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit -y` · 8bit (~56.1 GB, Mac only) `lms get https://huggingface.co/sjug/Llama-3_3-Nemotron-Super-49B-v1-8bit -y`
+Other versions: ud-q2_k_xl (21.8 GB memory, 19.3 GB download) `lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF@UD-Q2_K_XL -y` · 4bit (31 GB memory, 28.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit -y` · 8bit (60.4 GB memory, 56.1 GB download, Mac only) `lms get https://huggingface.co/sjug/Llama-3_3-Nemotron-Super-49B-v1-8bit -y`
 
 ### Ollama
 
@@ -149,13 +149,13 @@ Other versions: ud-q2_k_xl (~19.31 GB) `lms get https://huggingface.co/unsloth/L
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs ~30.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
+2. Run Llama 3.3 Nemotron Super 49B v1 (Q4_K_M, needs 33.2 GB memory, 30.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF/tree/6c679d12e88815cf6c66cf627b46ea66acfdeb4d))
    
    ```sh
    ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: ud-q2_k_xl (~19.31 GB) `ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (21.8 GB memory, 19.3 GB download) `ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1-GGUF:UD-Q2_K_XL`
 
 ### MLX (Mac)
 
@@ -168,7 +168,7 @@ Other versions: ud-q2_k_xl (~19.31 GB) `ollama run hf.co/unsloth/Llama-3_3-Nemot
    pip install mlx-lm
    ```
 
-2. Run Llama 3.3 Nemotron Super 49B v1 (4bit, needs ~28.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit/tree/e460111cccd41055a1a59291bd05f3b676ed7ca0))
+2. Run Llama 3.3 Nemotron Super 49B v1 (4bit, needs 31 GB memory, 28.1 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit/tree/e460111cccd41055a1a59291bd05f3b676ed7ca0))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit
@@ -180,7 +180,7 @@ Other versions: ud-q2_k_xl (~19.31 GB) `ollama run hf.co/unsloth/Llama-3_3-Nemot
    mlx_lm.server --model mlx-community/Llama-3_3-Nemotron-Super-49B-v1-mlx-4bit
    ```
 
-Other versions: 8bit (~56.1 GB, Mac only) `mlx_lm.chat --model sjug/Llama-3_3-Nemotron-Super-49B-v1-8bit`
+Other versions: 8bit (60.4 GB memory, 56.1 GB download, Mac only) `mlx_lm.chat --model sjug/Llama-3_3-Nemotron-Super-49B-v1-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1)
 

@@ -66,7 +66,7 @@ weighted average                                   = -1.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+2. Run Pythia 160M (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
    
    ```sh
    llama cli -hf mradermacher/pythia-160m-GGUF:Q4_K_M
@@ -78,13 +78,13 @@ weighted average                                   = -1.9
    llama serve -hf mradermacher/pythia-160m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.2 GB) `llama cli -hf mradermacher/pythia-160m-GGUF:Q8_0`
+Other versions: Q8_0 (1.7 GB memory, 0.17 GB download) `llama cli -hf mradermacher/pythia-160m-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+2. Run Pythia 160M (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q4_K_M -y
@@ -92,7 +92,7 @@ Other versions: Q8_0 (~0.2 GB) `llama cli -hf mradermacher/pythia-160m-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.2 GB) `lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q8_0 -y` · fp16 (~0.3 GB, Mac only) `lms get https://huggingface.co/masahiroid/pythia-160m-mlx -y`
+Other versions: Q8_0 (1.7 GB memory, 0.17 GB download) `lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q8_0 -y` · fp16 (1.8 GB memory, 0.32 GB download, Mac only) `lms get https://huggingface.co/masahiroid/pythia-160m-mlx -y`
 
 ### Ollama
 
@@ -103,13 +103,13 @@ Other versions: Q8_0 (~0.2 GB) `lms get https://huggingface.co/mradermacher/pyth
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+2. Run Pythia 160M (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
    
    ```sh
    ollama run hf.co/mradermacher/pythia-160m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q8_0`
+Other versions: Q8_0 (1.7 GB memory, 0.17 GB download) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q
    pip install mlx-lm
    ```
 
-2. Run Pythia 160M (fp16, needs ~0.3 GB, Mac only, from [huggingface.co/masahiroid](https://huggingface.co/masahiroid/pythia-160m-mlx/tree/423ac1eacd63a9b421143288136aaaf1f838fb74))
+2. Run Pythia 160M (fp16, needs 1.8 GB memory, 0.32 GB download, Mac only, from [huggingface.co/masahiroid](https://huggingface.co/masahiroid/pythia-160m-mlx/tree/423ac1eacd63a9b421143288136aaaf1f838fb74))
    
    ```sh
    mlx_lm.chat --model masahiroid/pythia-160m-mlx
@@ -136,7 +136,7 @@ Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~0.37 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m/tree/50f5173d932e8e61f858120bcb800b97af589f46))
+1. Run it as published (fp16, needs 1.9 GB memory, 0.37 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m/tree/50f5173d932e8e61f858120bcb800b97af589f46))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-160m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

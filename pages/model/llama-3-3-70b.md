@@ -201,7 +201,7 @@ api (Amazon Bedrock) · $0.72/M blended · $0.72 in / $0.72 out per 1M tokens ·
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.3 70B Instruct (ud-q2_k_xl, needs ~21.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/tree/main))
+2. Run Llama 3.3 70B Instruct (ud-q2_k_xl, needs 30.3 GB memory, 27 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Llama-3.3-70B-Instruct-GGUF:UD-Q2_K_XL
@@ -217,7 +217,7 @@ api (Amazon Bedrock) · $0.72/M blended · $0.72 in / $0.72 out per 1M tokens ·
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.3 70B Instruct (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit/tree/de2dfaf56839b7d0e834157d2401dee02726874d))
+2. Run Llama 3.3 70B Instruct (4bit, needs 43 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit/tree/de2dfaf56839b7d0e834157d2401dee02726874d))
    
    ```sh
    lms get https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit -y
@@ -225,7 +225,7 @@ api (Amazon Bedrock) · $0.72/M blended · $0.72 in / $0.72 out per 1M tokens ·
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~21.5 GB) `lms get https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF@UD-Q2_K_XL -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-8bit -y`
+Other versions: ud-q2_k_xl (30.3 GB memory, 27 GB download) `lms get https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF@UD-Q2_K_XL -y` · 8bit (78.3 GB memory, 75 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -236,7 +236,7 @@ Other versions: ud-q2_k_xl (~21.5 GB) `lms get https://huggingface.co/unsloth/Ll
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.3 70B Instruct (Q4_K_M, needs ~42.5 GB, from [ollama.com](https://ollama.com/library/llama3.3/tags))
+2. Run Llama 3.3 70B Instruct (Q4_K_M, needs 45.8 GB memory, 42.5 GB download, from [ollama.com](https://ollama.com/library/llama3.3/tags))
    
    ```sh
    ollama run llama3.3:70b
@@ -253,7 +253,7 @@ Other versions: ud-q2_k_xl (~21.5 GB) `lms get https://huggingface.co/unsloth/Ll
    pip install mlx-lm
    ```
 
-2. Run Llama 3.3 70B Instruct (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit/tree/de2dfaf56839b7d0e834157d2401dee02726874d))
+2. Run Llama 3.3 70B Instruct (4bit, needs 43 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.3-70B-Instruct-4bit/tree/de2dfaf56839b7d0e834157d2401dee02726874d))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama-3.3-70B-Instruct-4bit
@@ -265,7 +265,7 @@ Other versions: ud-q2_k_xl (~21.5 GB) `lms get https://huggingface.co/unsloth/Ll
    mlx_lm.server --model mlx-community/Llama-3.3-70B-Instruct-4bit
    ```
 
-Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.3-70B-Instruct-8bit`
+Other versions: 8bit (78.3 GB memory, 75 GB download, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.3-70B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 

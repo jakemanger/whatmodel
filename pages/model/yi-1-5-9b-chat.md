@@ -95,7 +95,7 @@ weighted average                                   = 45.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi 1.5 9B Chat (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF/tree/1d48fb0b470dc424efc7555727eaaeffd0e323d2))
+2. Run Yi 1.5 9B Chat (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF/tree/1d48fb0b470dc424efc7555727eaaeffd0e323d2))
    
    ```sh
    llama cli -hf lmstudio-community/Yi-1.5-9B-Chat-GGUF:Q4_K_M
@@ -107,13 +107,13 @@ weighted average                                   = 45.6
    llama serve -hf lmstudio-community/Yi-1.5-9B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.4 GB) `llama cli -hf lmstudio-community/Yi-1.5-9B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `llama cli -hf lmstudio-community/Yi-1.5-9B-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi 1.5 9B Chat (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF/tree/1d48fb0b470dc424efc7555727eaaeffd0e323d2))
+2. Run Yi 1.5 9B Chat (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF/tree/1d48fb0b470dc424efc7555727eaaeffd0e323d2))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF@Q4_K_M -y
@@ -121,7 +121,7 @@ Other versions: Q8_0 (~9.4 GB) `llama cli -hf lmstudio-community/Yi-1.5-9B-Chat-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF@Q8_0 -y` · 4bit (~5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-9B-Chat-4bit -y`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `lms get https://huggingface.co/lmstudio-community/Yi-1.5-9B-Chat-GGUF@Q8_0 -y` · 4bit (6.7 GB memory, 4.97 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-9B-Chat-4bit -y`
 
 ### Ollama
 
@@ -132,13 +132,13 @@ Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi 1.5 9B Chat (Q4_K_M, needs ~5.8 GB, from [ollama.com](https://ollama.com/library/yi/tags))
+2. Run Yi 1.5 9B Chat (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [ollama.com](https://ollama.com/library/yi/tags))
    
    ```sh
    ollama run yi:9b-chat-v1.5-q4_K_M
    ```
 
-Other versions: Q8_0 (~11.1 GB) `ollama run yi:9b-chat-v1.5-q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `ollama run yi:9b-chat-v1.5-q8_0`
 
 ### MLX (Mac)
 
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~11.1 GB) `ollama run yi:9b-chat-v1.5-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Yi 1.5 9B Chat (4bit, needs ~5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-9B-Chat-4bit/tree/e15f886479c44e7d90f0ac13ace69b2319b71c2f))
+2. Run Yi 1.5 9B Chat (4bit, needs 6.7 GB memory, 4.97 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-9B-Chat-4bit/tree/e15f886479c44e7d90f0ac13ace69b2319b71c2f))
    
    ```sh
    mlx_lm.chat --model mlx-community/Yi-1.5-9B-Chat-4bit

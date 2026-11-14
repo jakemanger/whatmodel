@@ -94,7 +94,7 @@ weighted average                                   = 39.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs ~6.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF/tree/2d2498cc4fcc3b93667fc5bb191214a7e476cfed))
+2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF/tree/2d2498cc4fcc3b93667fc5bb191214a7e476cfed))
    
    ```sh
    llama cli -hf mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF:Q4_K_M
@@ -106,13 +106,13 @@ weighted average                                   = 39.1
    llama serve -hf mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~11.4 GB) `llama cli -hf mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF:Q8_0`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `llama cli -hf mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs ~6.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF/tree/2d2498cc4fcc3b93667fc5bb191214a7e476cfed))
+2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF/tree/2d2498cc4fcc3b93667fc5bb191214a7e476cfed))
    
    ```sh
    lms get https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF@Q4_K_M -y
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~11.4 GB) `llama cli -hf mradermacher/SOLAR-10.7B-Instruct
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF@Q8_0 -y`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `lms get https://huggingface.co/mradermacher/SOLAR-10.7B-Instruct-v1.0-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -131,13 +131,13 @@ Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/mradermacher/SOL
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs ~6.92 GB, from [ollama.com](https://ollama.com/library/solar/tags))
+2. Run SOLAR 10.7B Instruct v1.0 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [ollama.com](https://ollama.com/library/solar/tags))
    
    ```sh
    ollama run solar:10.7b-instruct-v1-q4_K_M
    ```
 
-Other versions: Q8_0 (~13.34 GB) `ollama run solar:10.7b-instruct-v1-q8_0`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `ollama run solar:10.7b-instruct-v1-q8_0`
 
 Model repository and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0)
 

@@ -117,7 +117,7 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF/tree/29a785419661afc70b5cd91b5023a835b0092281))
+2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF/tree/29a785419661afc70b5cd91b5023a835b0092281))
    
    ```sh
    llama cli -hf lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF:Q4_K_M
@@ -129,13 +129,13 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
    llama serve -hf lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `llama cli -hf lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF/tree/29a785419661afc70b5cd91b5023a835b0092281))
+2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF/tree/29a785419661afc70b5cd91b5023a835b0092281))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF@Q4_K_M -y
@@ -143,7 +143,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/Mistral-7B-Inst
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF@Q8_0 -y` · 4bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-4bit -y` · 8bit (~7.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-8bit -y`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `lms get https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF@Q8_0 -y` · 4bit (5.6 GB memory, 4.08 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-4bit -y` · 8bit (9.2 GB memory, 7.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-8bit -y`
 
 ### Ollama
 
@@ -154,13 +154,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs ~4.85 GB, from [ollama.com](https://ollama.com/library/mistral/tags))
+2. Run Mistral 7B Instruct v0.3 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/mistral/tags))
    
    ```sh
    ollama run mistral:7b-instruct-v0.3-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.2 GB) `ollama run mistral:7b-instruct-v0.3-q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `ollama run mistral:7b-instruct-v0.3-q8_0`
 
 ### MLX (Mac)
 
@@ -173,7 +173,7 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mistral:7b-instruct-v0.3-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Mistral 7B Instruct v0.3 (4bit, needs ~4.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-4bit/tree/a4b8f870474b0eb527f466a03fbc187830d271f5))
+2. Run Mistral 7B Instruct v0.3 (4bit, needs 5.6 GB memory, 4.08 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.3-4bit/tree/a4b8f870474b0eb527f466a03fbc187830d271f5))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mistral-7B-Instruct-v0.3-4bit
@@ -185,7 +185,7 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mistral:7b-instruct-v0.3-q8_0`
    mlx_lm.server --model mlx-community/Mistral-7B-Instruct-v0.3-4bit
    ```
 
-Other versions: 8bit (~7.7 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-7B-Instruct-v0.3-8bit`
+Other versions: 8bit (9.2 GB memory, 7.7 GB download, Mac only) `mlx_lm.chat --model mlx-community/Mistral-7B-Instruct-v0.3-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 

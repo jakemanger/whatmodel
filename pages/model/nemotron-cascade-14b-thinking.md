@@ -109,7 +109,7 @@ weighted average                              = 59.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs ~9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
+2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs 11 GB memory, 9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
    
    ```sh
    llama cli -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
@@ -121,13 +121,13 @@ weighted average                              = 59.5
    llama serve -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.7 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs ~9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
+2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs 11 GB memory, 9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF@Q4_K_M -y
@@ -135,7 +135,7 @@ Other versions: Q8_0 (~15.7 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF@Q8_0 -y` · 4bit (~8.3 GB, Mac only) `lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit -y`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF@Q8_0 -y` · 4bit (10.2 GB memory, 8.31 GB download, Mac only) `lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit -y`
 
 ### Ollama
 
@@ -146,13 +146,13 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/bartowski/nvidia
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs ~9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
+2. Run Nemotron-Cascade-14B-Thinking (Q4_K_M, needs 11 GB memory, 9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b))
    
    ```sh
    ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -165,7 +165,7 @@ Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Casc
    pip install mlx-lm
    ```
 
-2. Run Nemotron-Cascade-14B-Thinking (4bit, needs ~8.3 GB, Mac only, from [huggingface.co/introvoyz041](https://huggingface.co/introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit/tree/0cad98b3049e43cf5414d528201c5044e5443c64))
+2. Run Nemotron-Cascade-14B-Thinking (4bit, needs 10.2 GB memory, 8.31 GB download, Mac only, from [huggingface.co/introvoyz041](https://huggingface.co/introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit/tree/0cad98b3049e43cf5414d528201c5044e5443c64))
    
    ```sh
    mlx_lm.chat --model introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit

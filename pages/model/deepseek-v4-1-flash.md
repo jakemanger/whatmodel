@@ -160,7 +160,7 @@ deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V
 
 ### Other ways to run it
 
-1. Run it as published (fp8 + fp4 experts, needs ~510.3 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/2cba9e42aa026125f3ed06c6d98c1db82f7ca027/inference/README.md))
+1. Run it as published (fp8 + fp4 experts, needs 512 GB memory, 510.3 GB download, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/2cba9e42aa026125f3ed06c6d98c1db82f7ca027/inference/README.md))
    
    ```sh
    hf download deepseek-ai/DeepSeek-V4.1-Flash --local-dir DeepSeek-V4.1-Flash-HF && cd DeepSeek-V4.1-Flash-HF/inference && python -m pip install -r requirements.txt && python convert.py --hf-ckpt-path .. --save-path ../../DeepSeek-V4.1-Flash-TP8 --model-parallel 8 --expert-dtype fp4 --tokenizer-path .. && torchrun --nproc-per-node 8 generate.py --ckpt-path ../../DeepSeek-V4.1-Flash-TP8 --config config.json --interactive --temperature 0.6

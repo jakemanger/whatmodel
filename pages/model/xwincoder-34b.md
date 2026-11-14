@@ -58,7 +58,7 @@ weighted average                                   = 49.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run XwinCoder-34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
+2. Run XwinCoder-34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
    
    ```sh
    llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 49.5
    llama serve -hf TheBloke/XwinCoder-34B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run XwinCoder-34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
+2. Run XwinCoder-34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
    
    ```sh
    lms get https://huggingface.co/TheBloke/XwinCoder-34B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/XwinCoder-34B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/TheBloke/XwinCoder-34B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/XwinCod
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run XwinCoder-34B (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
+2. Run XwinCoder-34B (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/XwinCoder-34B-GGUF/tree/feaeb25382770c132fd79c7bb4dcee3f6a2918a9))
    
    ```sh
    ollama run hf.co/TheBloke/XwinCoder-34B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `ollama run hf.co/TheBloke/XwinCoder-34B-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run hf.co/TheBloke/XwinCoder-34B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~67.49 GB, from [huggingface.co/Xwin-LM](https://huggingface.co/Xwin-LM/XwinCoder-34B/tree/c331e0f9203efcdfcc8916a24fcec52cd8897dcc))
+1. Run it as published (BF16, needs 72.4 GB memory, 67.5 GB download, from [huggingface.co/Xwin-LM](https://huggingface.co/Xwin-LM/XwinCoder-34B/tree/c331e0f9203efcdfcc8916a24fcec52cd8897dcc))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Xwin-LM/XwinCoder-34B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

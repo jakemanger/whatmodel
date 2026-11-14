@@ -73,7 +73,7 @@ weighted average                                   = 35.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 3B Code Base (2K) (Q4_K_M, needs ~2.13 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
+2. Run Granite 3B Code Base (2K) (Q4_K_M, needs 3.7 GB memory, 2.13 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
    
    ```sh
    llama cli -hf ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M
@@ -89,7 +89,7 @@ weighted average                                   = 35.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 3B Code Base (2K) (Q4_K_M, needs ~2.13 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
+2. Run Granite 3B Code Base (2K) (Q4_K_M, needs 3.7 GB memory, 2.13 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ weighted average                                   = 35.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 3B Code Base (2K) (Q4_K_M, needs ~2.13 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
+2. Run Granite 3B Code Base (2K) (Q4_K_M, needs 3.7 GB memory, 2.13 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF/tree/798a3d731dc15be27c453935842b53310a7c6dc9))
    
    ```sh
    ollama run hf.co/ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M

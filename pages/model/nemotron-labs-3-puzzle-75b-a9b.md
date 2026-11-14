@@ -106,7 +106,7 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~51.6 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~50 GB memory, ~46.2 GB download, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
    
    ```sh
    llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
@@ -118,13 +118,13 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    llama serve -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~83.5 GB) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q8_0` · Q2_K (~31.5 GB) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K`
+Other versions: Q8_0 (~85.6 GB memory, ~80.1 GB download) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q8_0` · Q2_K (~31.2 GB memory, ~28.3 GB download) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~51.6 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~50 GB memory, ~46.2 GB download, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
    
    ```sh
    lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q4_K_M -y
@@ -132,7 +132,7 @@ Other versions: Q8_0 (~83.5 GB) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-P
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~83.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q8_0 -y` · Q2_K (~31.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q2_K -y`
+Other versions: Q8_0 (~85.6 GB memory, ~80.1 GB download) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q8_0 -y` · Q2_K (~31.2 GB memory, ~28.3 GB download) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -143,7 +143,7 @@ Other versions: Q8_0 (~83.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q2_K, needs ~31.5 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q2_K, needs ~31.2 GB memory, ~28.3 GB download, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
    
    ```sh
    ollama run hf.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~83.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~150.7 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/tree/8fe5546888e9bd03fdbf52d808adebdfca901b52))
+1. Run it as published (BF16, needs 166 GB memory, 156.6 GB download, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/tree/8fe5546888e9bd03fdbf52d808adebdfca901b52))
    
    ```sh
    vllm serve nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 --tensor-parallel-size 2

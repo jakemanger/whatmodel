@@ -146,7 +146,7 @@ weighted average                                   = 33.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 3 1B (Q4_K_M, needs ~0.8 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/tree/f9c28bcd85737ffc5aef028638d3341d49869c27))
+2. Run Gemma 3 1B (Q4_K_M, needs 1.8 GB memory, 0.81 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/tree/f9c28bcd85737ffc5aef028638d3341d49869c27))
    
    ```sh
    llama cli -hf ggml-org/gemma-3-1b-it-GGUF:Q4_K_M
@@ -158,13 +158,13 @@ weighted average                                   = 33.1
    llama serve -hf ggml-org/gemma-3-1b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.1 GB) `llama cli -hf ggml-org/gemma-3-1b-it-GGUF:Q8_0`
+Other versions: Q8_0 (2 GB memory, 1.07 GB download) `llama cli -hf ggml-org/gemma-3-1b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 3 1B (Q4_K_M, needs ~0.8 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/tree/f9c28bcd85737ffc5aef028638d3341d49869c27))
+2. Run Gemma 3 1B (Q4_K_M, needs 1.8 GB memory, 0.81 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/tree/f9c28bcd85737ffc5aef028638d3341d49869c27))
    
    ```sh
    lms get https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF@Q4_K_M -y
@@ -172,7 +172,7 @@ Other versions: Q8_0 (~1.1 GB) `llama cli -hf ggml-org/gemma-3-1b-it-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.1 GB) `lms get https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF@Q8_0 -y` · 4bit (~0.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/gemma-3-1b-it-4bit -y` · 8bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/gemma-3-1b-it-8bit -y`
+Other versions: Q8_0 (2 GB memory, 1.07 GB download) `lms get https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF@Q8_0 -y` · 4bit (1.7 GB memory, 0.73 GB download, Mac only) `lms get https://huggingface.co/mlx-community/gemma-3-1b-it-4bit -y` · 8bit (2.3 GB memory, 1.38 GB download, Mac only) `lms get https://huggingface.co/mlx-community/gemma-3-1b-it-8bit -y`
 
 ### Ollama
 
@@ -183,13 +183,13 @@ Other versions: Q8_0 (~1.1 GB) `lms get https://huggingface.co/ggml-org/gemma-3-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 3 1B (Q4_K_M, needs ~1.1 GB, from [ollama.com](https://ollama.com/library/gemma3/tags))
+2. Run Gemma 3 1B (Q4_K_M, needs 1.8 GB memory, 0.81 GB download, from [ollama.com](https://ollama.com/library/gemma3/tags))
    
    ```sh
    ollama run gemma3:1b
    ```
 
-Other versions: qat (~1.1 GB) `ollama run gemma3:1b-it-qat`
+Other versions: qat (2 GB memory, 1 GB download) `ollama run gemma3:1b-it-qat`
 
 ### MLX (Mac)
 
@@ -202,7 +202,7 @@ Other versions: qat (~1.1 GB) `ollama run gemma3:1b-it-qat`
    pip install mlx-lm
    ```
 
-2. Run Gemma 3 1B (4bit, needs ~0.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/tree/2d44e83dc9e80843d22fb941d3d699a0b1351aa6))
+2. Run Gemma 3 1B (4bit, needs 1.7 GB memory, 0.73 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/tree/2d44e83dc9e80843d22fb941d3d699a0b1351aa6))
    
    ```sh
    mlx_lm.chat --model mlx-community/gemma-3-1b-it-4bit
@@ -214,7 +214,7 @@ Other versions: qat (~1.1 GB) `ollama run gemma3:1b-it-qat`
    mlx_lm.server --model mlx-community/gemma-3-1b-it-4bit
    ```
 
-Other versions: 8bit (~1.4 GB, Mac only) `mlx_lm.chat --model mlx-community/gemma-3-1b-it-8bit`
+Other versions: 8bit (2.3 GB memory, 1.38 GB download, Mac only) `mlx_lm.chat --model mlx-community/gemma-3-1b-it-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-1b-it)
 

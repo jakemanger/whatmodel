@@ -70,7 +70,7 @@ weighted average                                   = 41.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs ~28.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF/tree/38d3991e079f5bee1486a66a4217468721633a26))
+2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs 29.9 GB memory, 28.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF/tree/38d3991e079f5bee1486a66a4217468721633a26))
    
    ```sh
    llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                                   = 41.8
    llama serve -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~49.6 GB) `llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q8_0`
+Other versions: Q8_0 (51.1 GB memory, 49.6 GB download) `llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs ~28.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF/tree/38d3991e079f5bee1486a66a4217468721633a26))
+2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs 29.9 GB memory, 28.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF/tree/38d3991e079f5bee1486a66a4217468721633a26))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF@Q4_K_M -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~49.6 GB) `llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (51.1 GB memory, 49.6 GB download) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs ~28.52 GB, from [ollama.com](https://ollama.com/library/nous-hermes2-mixtral/tags))
+2. Run Nous Hermes 2 Mixtral 8x7B DPO (Q4_K_M, needs 29.9 GB memory, 28.4 GB download, from [ollama.com](https://ollama.com/library/nous-hermes2-mixtral/tags))
    
    ```sh
    ollama run nous-hermes2-mixtral:8x7b-dpo-q4_K_M
    ```
 
-Other versions: Q8_0 (~56.54 GB) `ollama run nous-hermes2-mixtral:8x7b-dpo-q8_0`
+Other versions: Q8_0 (51.1 GB memory, 49.6 GB download) `ollama run nous-hermes2-mixtral:8x7b-dpo-q8_0`
 
 Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO)
 

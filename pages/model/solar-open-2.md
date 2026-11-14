@@ -90,7 +90,7 @@ weighted average                                   = 70.1
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~500.58 GB, NVIDIA only, from [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B/tree/9190fbe63a2ad8e17fc766ccceb36de7c66f004b))
+1. Run it as published (BF16, needs 527 GB memory, 500.6 GB download, NVIDIA only, from [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B/tree/9190fbe63a2ad8e17fc766ccceb36de7c66f004b))
    
    ```sh
    vllm serve upstage/Solar-Open2-250B --served-model-name solar-open2-250b --tensor-parallel-size 8 --enable-expert-parallel --moe-backend triton --default-chat-template-kwargs '{"think_render_option":"preserved"}' --reasoning-parser solar_open2 --tool-call-parser solar_open2 --enable-auto-tool-choice --logits-processors vllm.v1.sample.logits_processor.solar_open2:SolarOpen2TemplateLogitsProcessor

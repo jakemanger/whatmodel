@@ -175,7 +175,7 @@ api (Alibaba Cloud Model Studio) · $0.75/M blended · $0.2 in / $2.4 out per 1M
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs ~18.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF/tree/3397dd3a175b1767204c0d1a2d775ab0869cbab3))
+2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF/tree/3397dd3a175b1767204c0d1a2d775ab0869cbab3))
    
    ```sh
    llama cli -hf lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF:Q4_K_M
@@ -187,13 +187,13 @@ api (Alibaba Cloud Model Studio) · $0.75/M blended · $0.2 in / $2.4 out per 1M
    llama serve -hf lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~32.5 GB) `llama cli -hf lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF:Q8_0`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `llama cli -hf lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs ~18.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF/tree/3397dd3a175b1767204c0d1a2d775ab0869cbab3))
+2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF/tree/3397dd3a175b1767204c0d1a2d775ab0869cbab3))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF@Q4_K_M -y
@@ -201,7 +201,7 @@ Other versions: Q8_0 (~32.5 GB) `llama cli -hf lmstudio-community/Qwen3-30B-A3B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~32.5 GB) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF@Q8_0 -y` · 4bit (~17.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit -y` · 8bit (~32.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-8bit -y`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-GGUF@Q8_0 -y` · 4bit (18.6 GB memory, 17.2 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit -y` · 8bit (33.8 GB memory, 32.4 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-8bit -y`
 
 ### Ollama
 
@@ -212,13 +212,13 @@ Other versions: Q8_0 (~32.5 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs ~18.8 GB, from [ollama.com](https://ollama.com/library/qwen3/tags))
+2. Run Qwen3 30B-A3B Thinking 2507 (Q4_K_M, needs 20 GB memory, 18.6 GB download, from [ollama.com](https://ollama.com/library/qwen3/tags))
    
    ```sh
    ollama run qwen3:30b
    ```
 
-Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-thinking-2507-q8_0`
+Other versions: Q8_0 (33.9 GB memory, 32.5 GB download) `ollama run qwen3:30b-a3b-thinking-2507-q8_0`
 
 ### MLX (Mac)
 
@@ -231,7 +231,7 @@ Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-thinking-2507-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen3 30B-A3B Thinking 2507 (4bit, needs ~17.2 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit/tree/02b2aef74a0f3168c9a189e98aaf9e240c2f5a72))
+2. Run Qwen3 30B-A3B Thinking 2507 (4bit, needs 18.6 GB memory, 17.2 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit/tree/02b2aef74a0f3168c9a189e98aaf9e240c2f5a72))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit
@@ -243,7 +243,7 @@ Other versions: Q8_0 (~37.1 GB) `ollama run qwen3:30b-a3b-thinking-2507-q8_0`
    mlx_lm.server --model lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-4bit
    ```
 
-Other versions: 8bit (~32.4 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-8bit`
+Other versions: 8bit (33.8 GB memory, 32.4 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-30B-A3B-Thinking-2507-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507)
 

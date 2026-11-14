@@ -68,7 +68,7 @@ weighted average                                   = 50.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run WizardCoder 33B V1.1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF/tree/b51c35c9b4e30a57672c7232de8e90e0841b00e2))
+2. Run WizardCoder 33B V1.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF/tree/b51c35c9b4e30a57672c7232de8e90e0841b00e2))
    
    ```sh
    llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q4_K_M
@@ -80,13 +80,13 @@ weighted average                                   = 50.7
    llama serve -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run WizardCoder 33B V1.1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF/tree/b51c35c9b4e30a57672c7232de8e90e0841b00e2))
+2. Run WizardCoder 33B V1.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF/tree/b51c35c9b4e30a57672c7232de8e90e0841b00e2))
    
    ```sh
    lms get https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF@Q8_0 -y` · 8bit (~35.4 GB, Mac only) `lms get https://huggingface.co/GGorman/WizardCoder-33B-V1.1-Q8-mlx -y`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `lms get https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF@Q8_0 -y` · 8bit (38.7 GB memory, 35.4 GB download, Mac only) `lms get https://huggingface.co/GGorman/WizardCoder-33B-V1.1-Q8-mlx -y`
 
 ### Ollama
 
@@ -105,13 +105,13 @@ Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/WizardC
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WizardCoder 33B V1.1 (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/wizardcoder/tags))
+2. Run WizardCoder 33B V1.1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [ollama.com](https://ollama.com/library/wizardcoder/tags))
    
    ```sh
    ollama run wizardcoder:33b-v1.1-q4_K_M
    ```
 
-Other versions: Q8_0 (~35 GB) `ollama run wizardcoder:33b-v1.1-q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `ollama run wizardcoder:33b-v1.1-q8_0`
 
 ### MLX (Mac)
 
@@ -124,7 +124,7 @@ Other versions: Q8_0 (~35 GB) `ollama run wizardcoder:33b-v1.1-q8_0`
    pip install mlx-lm
    ```
 
-2. Run WizardCoder 33B V1.1 (8bit, needs ~35.4 GB, Mac only, from [huggingface.co/GGorman](https://huggingface.co/GGorman/WizardCoder-33B-V1.1-Q8-mlx/tree/07799d1270228467360df2d7a122796eb1b96717))
+2. Run WizardCoder 33B V1.1 (8bit, needs 38.7 GB memory, 35.4 GB download, Mac only, from [huggingface.co/GGorman](https://huggingface.co/GGorman/WizardCoder-33B-V1.1-Q8-mlx/tree/07799d1270228467360df2d7a122796eb1b96717))
    
    ```sh
    mlx_lm.chat --model GGorman/WizardCoder-33B-V1.1-Q8-mlx

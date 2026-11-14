@@ -53,7 +53,7 @@ weighted average                        = 47.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
+2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
    
    ```sh
    llama cli -hf mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 47.9
    llama serve -hf mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
+2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Llama-3-8B-Magpie-Ali
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Llam
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
+2. Run Llama-3-8B-Magpie-Align-v0.1 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF/tree/18e2e6130109c3c64a46c8510703b465fb78de3a))
    
    ```sh
    ollama run hf.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/mradermacher/Llama-3-8B-Magpie-Align-v0.1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Magpie-Align](https://huggingface.co/Magpie-Align/Llama-3-8B-Magpie-Align-v0.1/tree/f5f3f0151b3841898b82ebd2138b5bf2f86e8ac3))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/Magpie-Align](https://huggingface.co/Magpie-Align/Llama-3-8B-Magpie-Align-v0.1/tree/f5f3f0151b3841898b82ebd2138b5bf2f86e8ac3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Magpie-Align/Llama-3-8B-Magpie-Align-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

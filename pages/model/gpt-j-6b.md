@@ -123,7 +123,7 @@ Democratizing Reasoni…  <a href="https://aclanthology.org/2023.emnlp-main.120.
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~12.11 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16))
+1. Run it as published (fp16, needs 14.2 GB memory, 12.1 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-j-6b', torch_dtype='auto', device_map='auto', revision='float16')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

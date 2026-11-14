@@ -56,7 +56,7 @@ weighted average                              = 47.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs ~4.4 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
+2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
    
    ```sh
    llama cli -hf featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 47.7
    llama serve -hf featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs ~4.4 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
+2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
    
    ```sh
    lms get https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf featherless-ai-quants/ContextualAI
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/featherless-ai-qu
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs ~4.4 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
+2. Run Contextual KTO Mistral PairRM (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF/tree/6401d5513a29e612e1ceae38dd82a34b92730365))
    
    ```sh
    ollama run hf.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/featherless-ai-quants/ContextualAI-Contextual_KTO_Mistral_PairRM-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/ContextualAI](https://huggingface.co/ContextualAI/Contextual_KTO_Mistral_PairRM/tree/98bee13e199308082f5361b1eb35e2c93a38f21a))
+1. Run it as published (BF16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/ContextualAI](https://huggingface.co/ContextualAI/Contextual_KTO_Mistral_PairRM/tree/98bee13e199308082f5361b1eb35e2c93a38f21a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ContextualAI/Contextual_KTO_Mistral_PairRM', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

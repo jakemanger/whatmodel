@@ -72,7 +72,7 @@ weighted average                                   = 45.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs ~12.82 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
+2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs 14.9 GB memory, 12.8 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
    
    ```sh
    llama cli -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
@@ -88,7 +88,7 @@ weighted average                                   = 45.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs ~12.82 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
+2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs 14.9 GB memory, 12.8 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF@Q4_K_M -y
@@ -105,13 +105,13 @@ weighted average                                   = 45.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 20B Code Instruct (8K) (Q4_0, needs ~12 GB, from [ollama.com](https://ollama.com/library/granite-code/tags))
+2. Run Granite 20B Code Instruct (8K) (Q4_0, needs 13.7 GB memory, 11.6 GB download, from [ollama.com](https://ollama.com/library/granite-code/tags))
    
    ```sh
    ollama run granite-code:20b
    ```
 
-Other versions: Q4_0 (~12 GB) `ollama run granite-code:20b`
+Other versions: Q4_0 (13.7 GB memory, 11.6 GB download) `ollama run granite-code:20b`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k)
 

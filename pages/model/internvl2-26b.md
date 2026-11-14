@@ -87,7 +87,7 @@ weighted average                                   = 47.6
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~51.03 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (BF16, needs 55.1 GB memory, 51 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve OpenGVLab/InternVL2-26B --trust-remote-code

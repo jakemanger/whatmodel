@@ -107,7 +107,7 @@ api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Magistral Small 1.2 (gguf-q4_k_m, needs ~14.9 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
+2. Run Magistral Small 1.2 (gguf-q4_k_m, needs 16.2 GB memory, 14.3 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
    
    ```sh
    llama cli -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
@@ -119,13 +119,13 @@ api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [
    llama serve -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~29.3 GB) `llama cli -hf mistralai/Magistral-Small-2509-GGUF:Q8_0`
+Other versions: gguf-q8_0 (27 GB memory, 25.1 GB download) `llama cli -hf mistralai/Magistral-Small-2509-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Magistral Small 1.2 (gguf-q4_k_m, needs ~14.9 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
+2. Run Magistral Small 1.2 (gguf-q4_k_m, needs 16.2 GB memory, 14.3 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/mistralai/Magistral-Small-2509-GGUF@Q4_K_M -y
@@ -133,7 +133,7 @@ Other versions: gguf-q8_0 (~29.3 GB) `llama cli -hf mistralai/Magistral-Small-25
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~29.3 GB) `lms get https://huggingface.co/mistralai/Magistral-Small-2509-GGUF@Q8_0 -y` · 4bit (~14.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-4bit -y` · 8bit (~25.9 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-8bit -y`
+Other versions: gguf-q8_0 (27 GB memory, 25.1 GB download) `lms get https://huggingface.co/mistralai/Magistral-Small-2509-GGUF@Q8_0 -y` · 4bit (16 GB memory, 14.1 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-4bit -y` · 8bit (27.8 GB memory, 25.9 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-8bit -y`
 
 ### Ollama
 
@@ -144,13 +144,13 @@ Other versions: gguf-q8_0 (~29.3 GB) `lms get https://huggingface.co/mistralai/M
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Magistral Small 1.2 (gguf-q4_k_m, needs ~14.9 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
+2. Run Magistral Small 1.2 (gguf-q4_k_m, needs 16.2 GB memory, 14.3 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/mistralai/Magistral-Small-2509-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~29.3 GB) `ollama run hf.co/mistralai/Magistral-Small-2509-GGUF:Q8_0`
+Other versions: gguf-q8_0 (27 GB memory, 25.1 GB download) `ollama run hf.co/mistralai/Magistral-Small-2509-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -163,7 +163,7 @@ Other versions: gguf-q8_0 (~29.3 GB) `ollama run hf.co/mistralai/Magistral-Small
    pip install mlx-lm
    ```
 
-2. Run Magistral Small 1.2 (4bit, needs ~14.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-4bit/tree/bb18789f03d900dcda5fd62937c9ae6a280cd532))
+2. Run Magistral Small 1.2 (4bit, needs 16 GB memory, 14.1 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-4bit/tree/bb18789f03d900dcda5fd62937c9ae6a280cd532))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-4bit
@@ -175,7 +175,7 @@ Other versions: gguf-q8_0 (~29.3 GB) `ollama run hf.co/mistralai/Magistral-Small
    mlx_lm.server --model lmstudio-community/Magistral-Small-2509-MLX-4bit
    ```
 
-Other versions: 8bit (~25.9 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-8bit`
+Other versions: 8bit (27.8 GB memory, 25.9 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509)
 

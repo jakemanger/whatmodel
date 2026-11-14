@@ -147,7 +147,7 @@ api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mi
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ministral 3 3B (Q4_K_M, needs ~2.1 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/tree/eb599d408350ea2bb60452cb86be7c7b2fc28227))
+2. Run Ministral 3 3B (Q4_K_M, needs 4.5 GB memory, 2.99 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/tree/eb599d408350ea2bb60452cb86be7c7b2fc28227))
    
    ```sh
    llama cli -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q4_K_M
@@ -159,13 +159,13 @@ api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mi
    llama serve -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.7 GB) `llama cli -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q8_0`
+Other versions: Q8_0 (6 GB memory, 4.49 GB download) `llama cli -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ministral 3 3B (Q4_K_M, needs ~2.1 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/tree/eb599d408350ea2bb60452cb86be7c7b2fc28227))
+2. Run Ministral 3 3B (Q4_K_M, needs 4.5 GB memory, 2.99 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/tree/eb599d408350ea2bb60452cb86be7c7b2fc28227))
    
    ```sh
    lms get https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF@Q4_K_M -y
@@ -173,7 +173,7 @@ Other versions: Q8_0 (~3.7 GB) `llama cli -hf mistralai/Ministral-3-3B-Instruct-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.7 GB) `lms get https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF@Q8_0 -y` · 4bit (~1.9 GB, Mac only) `lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit -y` · 8bit (~3.6 GB, Mac only) `lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit -y`
+Other versions: Q8_0 (6 GB memory, 4.49 GB download) `lms get https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF@Q8_0 -y` · 4bit (3.4 GB memory, 1.93 GB download, Mac only) `lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit -y` · 8bit (5.1 GB memory, 3.64 GB download, Mac only) `lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit -y`
 
 ### Ollama
 
@@ -184,13 +184,13 @@ Other versions: Q8_0 (~3.7 GB) `lms get https://huggingface.co/mistralai/Ministr
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ministral 3 3B (Q4_K_M, needs ~2.81 GB, from [ollama.com](https://ollama.com/library/ministral-3/tags))
+2. Run Ministral 3 3B (Q4_K_M, needs 4.4 GB memory, 2.95 GB download, from [ollama.com](https://ollama.com/library/ministral-3/tags))
    
    ```sh
    ollama run ministral-3:3b
    ```
 
-Other versions: Q8_0 (~5.12 GB) `ollama run ministral-3:3b-instruct-2512-q8_0`
+Other versions: Q8_0 (5.9 GB memory, 4.47 GB download) `ollama run ministral-3:3b-instruct-2512-q8_0`
 
 ### MLX (Mac)
 
@@ -203,7 +203,7 @@ Other versions: Q8_0 (~5.12 GB) `ollama run ministral-3:3b-instruct-2512-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Ministral 3 3B (4bit, needs ~1.9 GB, Mac only, from [huggingface.co/Oscilla](https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit/tree/10889ee5bad71785905c2fb444439e81823cdd7a))
+2. Run Ministral 3 3B (4bit, needs 3.4 GB memory, 1.93 GB download, Mac only, from [huggingface.co/Oscilla](https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit/tree/10889ee5bad71785905c2fb444439e81823cdd7a))
    
    ```sh
    mlx_lm.chat --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
@@ -215,7 +215,7 @@ Other versions: Q8_0 (~5.12 GB) `ollama run ministral-3:3b-instruct-2512-q8_0`
    mlx_lm.server --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
    ```
 
-Other versions: 8bit (~3.6 GB, Mac only) `mlx_lm.chat --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit`
+Other versions: 8bit (5.1 GB memory, 3.64 GB download, Mac only) `mlx_lm.chat --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512)
 

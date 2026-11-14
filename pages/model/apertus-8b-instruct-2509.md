@@ -70,7 +70,7 @@ weighted average                                = 39.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Apertus 8B Instruct (2509) (Q4_K_M, needs ~5.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF/tree/61c32783830424ac7a6d0fd80d4166e29dbaee06))
+2. Run Apertus 8B Instruct (2509) (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF/tree/61c32783830424ac7a6d0fd80d4166e29dbaee06))
    
    ```sh
    llama cli -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                                = 39.9
    llama serve -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.6 GB) `llama cli -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.57 GB download) `llama cli -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Apertus 8B Instruct (2509) (4bit, needs ~4.53 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit/tree/c5e6ae2e52c4149f36cb8e47b7ab1489ef885fed))
+2. Run Apertus 8B Instruct (2509) (4bit, needs 6.3 GB memory, 4.53 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit/tree/c5e6ae2e52c4149f36cb8e47b7ab1489ef885fed))
    
    ```sh
    lms get https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~8.6 GB) `llama cli -hf unsloth/Apertus-8B-Instruct-2509-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q4_K_M (~5.1 GB) `lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q4_K_M -y` · Q8_0 (~8.6 GB) `lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q8_0 -y`
+Other versions: Q4_K_M (6.8 GB memory, 5.06 GB download) `lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q4_K_M -y` · Q8_0 (10.5 GB memory, 8.57 GB download) `lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q4_K_M (~5.1 GB) `lms get https://huggingface.co/unsloth/Apertus
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Apertus 8B Instruct (2509) (Q4_K_M, needs ~5.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF/tree/61c32783830424ac7a6d0fd80d4166e29dbaee06))
+2. Run Apertus 8B Instruct (2509) (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF/tree/61c32783830424ac7a6d0fd80d4166e29dbaee06))
    
    ```sh
    ollama run hf.co/unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.6 GB) `ollama run hf.co/unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.57 GB download) `ollama run hf.co/unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~8.6 GB) `ollama run hf.co/unsloth/Apertus-8B-Instruct-250
    pip install mlx-lm
    ```
 
-2. Run Apertus 8B Instruct (2509) (4bit, needs ~4.53 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit/tree/c5e6ae2e52c4149f36cb8e47b7ab1489ef885fed))
+2. Run Apertus 8B Instruct (2509) (4bit, needs 6.3 GB memory, 4.53 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit/tree/c5e6ae2e52c4149f36cb8e47b7ab1489ef885fed))
    
    ```sh
    mlx_lm.chat --model mlx-community/Apertus-8B-Instruct-2509-4bit
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~8.6 GB) `ollama run hf.co/unsloth/Apertus-8B-Instruct-250
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.11 GB, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/tree/b946d40447b2b597999b9c86d44bee0b452c919f))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/tree/b946d40447b2b597999b9c86d44bee0b452c919f))
    
    ```sh
    vllm serve swiss-ai/Apertus-8B-Instruct-2509

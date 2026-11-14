@@ -106,13 +106,13 @@ weighted average                                   = 65.5
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~689.48 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/blob/194c67e12b1b0d6df0ef373ddcf215bc84027409/README.md))
+1. Run it as published (fp8, needs 725 GB memory, 689.5 GB download, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/blob/194c67e12b1b0d6df0ef373ddcf215bc84027409/README.md))
    
    ```sh
    python -m sglang.launch_server --model deepseek-ai/DeepSeek-V3.2-Exp --tp 8 --dp 8 --enable-dp-attention
    ```
 
-Other versions: fp8 (~689.48 GB, NVIDIA only) `vllm serve deepseek-ai/DeepSeek-V3.2-Exp`
+Other versions: fp8 (725 GB memory, 689.5 GB download, NVIDIA only) `vllm serve deepseek-ai/DeepSeek-V3.2-Exp`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp)
 

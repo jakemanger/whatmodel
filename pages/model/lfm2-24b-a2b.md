@@ -74,7 +74,7 @@ weighted average                                   = 51.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LFM2 24B-A2B (Q4_K_M, needs ~14.4 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/tree/6247d03b87c27c05a258feb5acdfb4d5efbf0bd8))
+2. Run LFM2 24B-A2B (Q4_K_M, needs 15 GB memory, 14.4 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/tree/6247d03b87c27c05a258feb5acdfb4d5efbf0bd8))
    
    ```sh
    llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q4_K_M
@@ -86,13 +86,13 @@ weighted average                                   = 51.0
    llama serve -hf LiquidAI/LFM2-24B-A2B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.4 GB) `llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q8_0`
+Other versions: Q8_0 (26 GB memory, 25.4 GB download) `llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LFM2 24B-A2B (Q4_K_M, needs ~14.4 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/tree/6247d03b87c27c05a258feb5acdfb4d5efbf0bd8))
+2. Run LFM2 24B-A2B (Q4_K_M, needs 15 GB memory, 14.4 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/tree/6247d03b87c27c05a258feb5acdfb4d5efbf0bd8))
    
    ```sh
    lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF@Q4_K_M -y
@@ -100,7 +100,7 @@ Other versions: Q8_0 (~25.4 GB) `llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~25.4 GB) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF@Q8_0 -y` · 4bit (~13.4 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit -y` · 8bit (~25.3 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-8bit -y`
+Other versions: Q8_0 (26 GB memory, 25.4 GB download) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF@Q8_0 -y` · 4bit (14 GB memory, 13.4 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit -y` · 8bit (25.9 GB memory, 25.3 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-8bit -y`
 
 ### Ollama
 
@@ -111,13 +111,13 @@ Other versions: Q8_0 (~25.4 GB) `lms get https://huggingface.co/LiquidAI/LFM2-24
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LFM2 24B-A2B (Q4_K_M, needs ~14.78 GB, from [ollama.com](https://ollama.com/library/lfm2/tags))
+2. Run LFM2 24B-A2B (Q4_K_M, needs 15 GB memory, 14.4 GB download, from [ollama.com](https://ollama.com/library/lfm2/tags))
    
    ```sh
    ollama run lfm2:24b
    ```
 
-Other versions: Q8_0 (~29.06 GB) `ollama run lfm2:24b-q8_0`
+Other versions: Q8_0 (26 GB memory, 25.4 GB download) `ollama run lfm2:24b-q8_0`
 
 ### MLX (Mac)
 
@@ -130,7 +130,7 @@ Other versions: Q8_0 (~29.06 GB) `ollama run lfm2:24b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run LFM2 24B-A2B (4bit, needs ~13.4 GB, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit/tree/fb67c8c23d38cd4d7a9a6415ab80eefe83feecae))
+2. Run LFM2 24B-A2B (4bit, needs 14 GB memory, 13.4 GB download, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit/tree/fb67c8c23d38cd4d7a9a6415ab80eefe83feecae))
    
    ```sh
    mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-4bit
@@ -142,7 +142,7 @@ Other versions: Q8_0 (~29.06 GB) `ollama run lfm2:24b-q8_0`
    mlx_lm.server --model LiquidAI/LFM2-24B-A2B-MLX-4bit
    ```
 
-Other versions: 8bit (~25.3 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-8bit`
+Other versions: 8bit (25.9 GB memory, 25.3 GB download, Mac only) `mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B)
 

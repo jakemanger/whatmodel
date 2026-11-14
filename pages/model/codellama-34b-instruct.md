@@ -106,7 +106,7 @@ weighted average                                   = 41.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 34B Instruct (Q4_K_M, needs ~20.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF/tree/3238409c5878bdb4eaf71f1892f0da6a4ae8843f))
+2. Run Code Llama 34B Instruct (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF/tree/3238409c5878bdb4eaf71f1892f0da6a4ae8843f))
    
    ```sh
    llama cli -hf mradermacher/CodeLlama-34b-Instruct-hf-GGUF:Q4_K_M
@@ -118,13 +118,13 @@ weighted average                                   = 41.5
    llama serve -hf mradermacher/CodeLlama-34b-Instruct-hf-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf mradermacher/CodeLlama-34b-Instruct-hf-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf mradermacher/CodeLlama-34b-Instruct-hf-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 34B Instruct (Q4_K_M, needs ~20.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF/tree/3238409c5878bdb4eaf71f1892f0da6a4ae8843f))
+2. Run Code Llama 34B Instruct (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF/tree/3238409c5878bdb4eaf71f1892f0da6a4ae8843f))
    
    ```sh
    lms get https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF@Q4_K_M -y
@@ -132,7 +132,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf mradermacher/CodeLlama-34b-Instru
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF@Q8_0 -y` · 4bit (~19.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-34b-Instruct-hf-4bit -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/mradermacher/CodeLlama-34b-Instruct-hf-GGUF@Q8_0 -y` · 4bit (25.2 GB memory, 22.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-34b-Instruct-hf-4bit -y`
 
 ### Ollama
 
@@ -143,13 +143,13 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/mradermacher/Cod
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 34B Instruct (Q4_K_M, needs ~20.72 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 34B Instruct (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:34b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~40.94 GB) `ollama run codellama:34b-instruct-q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run codellama:34b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -162,7 +162,7 @@ Other versions: Q8_0 (~40.94 GB) `ollama run codellama:34b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Code Llama 34B Instruct (4bit, needs ~19.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-34b-Instruct-hf-4bit/tree/7f372a865fbe23d97ada15f195092711bc7f56b4))
+2. Run Code Llama 34B Instruct (4bit, needs 25.2 GB memory, 22.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-34b-Instruct-hf-4bit/tree/7f372a865fbe23d97ada15f195092711bc7f56b4))
    
    ```sh
    mlx_lm.chat --model mlx-community/CodeLlama-34b-Instruct-hf-4bit

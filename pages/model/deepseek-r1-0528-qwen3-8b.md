@@ -123,7 +123,7 @@ api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [no
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs ~5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF/tree/335076f2c9044728bd2d906527150757e03ba35e))
+2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs 6.9 GB memory, 5.03 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF/tree/335076f2c9044728bd2d906527150757e03ba35e))
    
    ```sh
    llama cli -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_M
@@ -135,13 +135,13 @@ api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [no
    llama serve -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.7 GB) `llama cli -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.6 GB memory, 8.71 GB download) `llama cli -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs ~5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF/tree/335076f2c9044728bd2d906527150757e03ba35e))
+2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs 6.9 GB memory, 5.03 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF/tree/335076f2c9044728bd2d906527150757e03ba35e))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF@Q4_K_M -y
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~8.7 GB) `llama cli -hf lmstudio-community/DeepSeek-R1-052
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF@Q8_0 -y` · 4bit (~4.6 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit -y` · 8bit (~8.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit -y`
+Other versions: Q8_0 (10.6 GB memory, 8.71 GB download) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF@Q8_0 -y` · 4bit (6.5 GB memory, 4.61 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit -y` · 8bit (10.6 GB memory, 8.7 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit -y`
 
 ### Ollama
 
@@ -160,13 +160,13 @@ Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs ~5.41 GB, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
+2. Run DeepSeek R1 0528 Qwen3 8B (Q4_K_M, needs 7.1 GB memory, 5.23 GB download, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
    
    ```sh
    ollama run deepseek-r1:8b
    ```
 
-Other versions: Q8_0 (~10.33 GB) `ollama run deepseek-r1:8b-0528-qwen3-q8_0`
+Other versions: Q8_0 (10.7 GB memory, 8.85 GB download) `ollama run deepseek-r1:8b-0528-qwen3-q8_0`
 
 ### MLX (Mac)
 
@@ -179,7 +179,7 @@ Other versions: Q8_0 (~10.33 GB) `ollama run deepseek-r1:8b-0528-qwen3-q8_0`
    pip install mlx-lm
    ```
 
-2. Run DeepSeek R1 0528 Qwen3 8B (4bit, needs ~4.6 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit/tree/1b6065ad0cd7256f662c9ef6fd0ed2dfd06e286f))
+2. Run DeepSeek R1 0528 Qwen3 8B (4bit, needs 6.5 GB memory, 4.61 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit/tree/1b6065ad0cd7256f662c9ef6fd0ed2dfd06e286f))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit
@@ -191,7 +191,7 @@ Other versions: Q8_0 (~10.33 GB) `ollama run deepseek-r1:8b-0528-qwen3-q8_0`
    mlx_lm.server --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit
    ```
 
-Other versions: 8bit (~8.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit`
+Other versions: 8bit (10.6 GB memory, 8.7 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B)
 

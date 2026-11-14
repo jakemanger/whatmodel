@@ -93,7 +93,7 @@ weighted average                                   = 53.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
+2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
    
    ```sh
    llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = 53.8
    llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q8_0`
+Other versions: Q8_0 (265 GB memory, 250.6 GB download) `llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
+2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q4_K_M -y
@@ -119,11 +119,11 @@ Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-Code
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q8_0 -y`
+Other versions: Q8_0 (265 GB memory, 250.6 GB download) `lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q8_0 -y`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~471.49 GB, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724/tree/80378f79777fd4d713ecc3e387de5512d84f1b87))
+1. Run it as published (BF16, needs 497 GB memory, 471.5 GB download, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724/tree/80378f79777fd4d713ecc3e387de5512d84f1b87))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-Coder-V2-Instruct-0724', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

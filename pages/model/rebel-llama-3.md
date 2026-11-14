@@ -47,7 +47,7 @@ weighted average                              = 48.4
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3/tree/ce3a0395a3ca89d086ab185d5f3cb15a8cde3f03))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3/tree/ce3a0395a3ca89d086ab185d5f3cb15a8cde3f03))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Cornell-AGI/REBEL-Llama-3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -56,7 +56,7 @@ weighted average                              = 40.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
    
    ```sh
    llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 40.3
    llama serve -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.4 GB) `llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5 GB memory, 3.35 GB download) `llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
    
    ```sh
    lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~3.4 GB) `llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit -y`
+Other versions: Q8_0 (5 GB memory, 3.35 GB download) `lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q8_0 -y` · 4bit (3.4 GB memory, 1.77 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit -y`
 
 ### Ollama
 
@@ -93,13 +93,13 @@ Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/unsloth/Falcon-H1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs 3.5 GB memory, 1.89 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
    
    ```sh
    ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5 GB memory, 3.35 GB download) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -112,7 +112,7 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-G
    pip install mlx-lm
    ```
 
-2. Run Falcon-H1 3B Instruct (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit/tree/1028ffefe5e7dfdd7b470ac1db4cb4f1eb20555e))
+2. Run Falcon-H1 3B Instruct (4bit, needs 3.4 GB memory, 1.77 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit/tree/1028ffefe5e7dfdd7b470ac1db4cb4f1eb20555e))
    
    ```sh
    mlx_lm.chat --model mlx-community/Falcon-H1-3B-Instruct-4bit
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-G
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~6.3 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct/tree/01087ec4c132d7f186908716b3530ea187f062a1))
+1. Run it as published (BF16, needs 8.1 GB memory, 6.3 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct/tree/01087ec4c132d7f186908716b3530ea187f062a1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

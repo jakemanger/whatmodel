@@ -84,7 +84,7 @@ weighted average                                   = 24.5
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~13.42 GB, NVIDIA only, from [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b/blob/bf0f5cfb575eebebf9b655c5861177acfee03f16/README.md))
+1. Run it as published (fp16, needs 15.6 GB memory, 13.4 GB download, NVIDIA only, from [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b/blob/bf0f5cfb575eebebf9b655c5861177acfee03f16/README.md))
    
    ```sh
    pip install protobuf==3.20.0 transformers==4.27.1 icetk cpm_kernels torch && python -c "from transformers import AutoTokenizer, AutoModel; t=AutoTokenizer.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True); m=AutoModel.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True).half().cuda().eval(); print(m.chat(t, '你好', history=[])[0])"

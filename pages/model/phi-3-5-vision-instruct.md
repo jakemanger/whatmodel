@@ -100,7 +100,7 @@ weighted average                                   = 38.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~8.29 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (BF16, needs 10.2 GB memory, 8.29 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve microsoft/Phi-3.5-vision-instruct --trust-remote-code

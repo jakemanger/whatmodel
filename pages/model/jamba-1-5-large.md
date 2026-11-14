@@ -98,7 +98,7 @@ weighted average                                   = 51.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16 WEIGHTS, EXPERTS_INT8 AT LOAD, needs ~797.11 GB, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5/blob/57d0bbccd09d9f56fb8ad2c3f2353ef61717f906/README.md))
+1. Run it as published (BF16 WEIGHTS, EXPERTS_INT8 AT LOAD, needs ~419 GB memory, ~398 GB download, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5/blob/57d0bbccd09d9f56fb8ad2c3f2353ef61717f906/README.md))
    
    ```sh
    pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8

@@ -44,7 +44,7 @@ weighted average                                   = 43.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~39.94 GB, from [huggingface.co/MBZUAI](https://huggingface.co/MBZUAI/Llama-3-Nanda-10B-Chat/tree/96c2ec3845f889446e24f23bb972deedfa7ed865))
+1. Run it as published (BF16, needs 43.4 GB memory, 39.9 GB download, from [huggingface.co/MBZUAI](https://huggingface.co/MBZUAI/Llama-3-Nanda-10B-Chat/tree/96c2ec3845f889446e24f23bb972deedfa7ed865))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MBZUAI/Llama-3-Nanda-10B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

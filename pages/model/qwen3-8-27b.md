@@ -140,7 +140,7 @@ api (Groq) · $1.60/M blended · $0.8 in / $4 out per 1M tokens · [console.groq
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3.8 27B (Q4_K_M, needs ~19 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF/tree/71bc7b627595dc8a91039addd9c791ae548d6747))
+2. Run Qwen3.8 27B (Q4_K_M, needs 21.4 GB memory, 20 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF/tree/71bc7b627595dc8a91039addd9c791ae548d6747))
    
    ```sh
    llama cli -hf ggml-org/Qwen3.8-27B-GGUF:Q4_K_M
@@ -152,13 +152,13 @@ api (Groq) · $1.60/M blended · $0.8 in / $4 out per 1M tokens · [console.groq
    llama serve -hf ggml-org/Qwen3.8-27B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~28.6 GB) `llama cli -hf ggml-org/Qwen3.8-27B-GGUF:Q8_0`
+Other versions: Q8_0 (30.6 GB memory, 29.2 GB download) `llama cli -hf ggml-org/Qwen3.8-27B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3.8 27B (Q4_K_M, needs ~19 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF/tree/71bc7b627595dc8a91039addd9c791ae548d6747))
+2. Run Qwen3.8 27B (Q4_K_M, needs 21.4 GB memory, 20 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF/tree/71bc7b627595dc8a91039addd9c791ae548d6747))
    
    ```sh
    lms get https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF@Q4_K_M -y
@@ -166,7 +166,7 @@ Other versions: Q8_0 (~28.6 GB) `llama cli -hf ggml-org/Qwen3.8-27B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~28.6 GB) `lms get https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF@Q8_0 -y` · 4bit (~16.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit -y` · 8bit (~29.5 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-8bit -y`
+Other versions: Q8_0 (30.6 GB memory, 29.2 GB download) `lms get https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF@Q8_0 -y` · 4bit (17.5 GB memory, 16.1 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit -y` · 8bit (30.9 GB memory, 29.5 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-8bit -y`
 
 ### Ollama
 
@@ -177,13 +177,13 @@ Other versions: Q8_0 (~28.6 GB) `lms get https://huggingface.co/ggml-org/Qwen3.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3.8 27B (Q4_K_M, needs ~16.88 GB, from [ollama.com](https://ollama.com/library/qwen3.8/tags))
+2. Run Qwen3.8 27B (Q4_K_M, needs 19.1 GB memory, 17.7 GB download, from [ollama.com](https://ollama.com/library/qwen3.8/tags))
    
    ```sh
    ollama run qwen3.8:27b
    ```
 
-Other versions: Q8_0 (~33.26 GB) `ollama run qwen3.8:27b-q8_0`
+Other versions: Q8_0 (31.4 GB memory, 30 GB download) `ollama run qwen3.8:27b-q8_0`
 
 ### MLX (Mac)
 
@@ -196,7 +196,7 @@ Other versions: Q8_0 (~33.26 GB) `ollama run qwen3.8:27b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen3.8 27B (4bit, needs ~16.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit/tree/6067b15cf581666a4aecf6af3afaba4bb5efc20c))
+2. Run Qwen3.8 27B (4bit, needs 17.5 GB memory, 16.1 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit/tree/6067b15cf581666a4aecf6af3afaba4bb5efc20c))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3.8-27B-MLX-4bit
@@ -208,7 +208,7 @@ Other versions: Q8_0 (~33.26 GB) `ollama run qwen3.8:27b-q8_0`
    mlx_lm.server --model lmstudio-community/Qwen3.8-27B-MLX-4bit
    ```
 
-Other versions: 8bit (~29.5 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.8-27B-MLX-8bit`
+Other versions: 8bit (30.9 GB memory, 29.5 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.8-27B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.8-27B)
 

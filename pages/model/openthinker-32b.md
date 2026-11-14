@@ -80,7 +80,7 @@ weighted average                                   = 54.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenThinker 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF/tree/076af7c70d6236dbc79408db7c73128eb5fc915d))
+2. Run OpenThinker 32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF/tree/076af7c70d6236dbc79408db7c73128eb5fc915d))
    
    ```sh
    llama cli -hf lmstudio-community/OpenThinker-32B-GGUF:Q4_K_M
@@ -92,13 +92,13 @@ weighted average                                   = 54.2
    llama serve -hf lmstudio-community/OpenThinker-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/OpenThinker-32B-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf lmstudio-community/OpenThinker-32B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenThinker 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF/tree/076af7c70d6236dbc79408db7c73128eb5fc915d))
+2. Run OpenThinker 32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF/tree/076af7c70d6236dbc79408db7c73128eb5fc915d))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/OpenThinker-32
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-4bit-mlx -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-8bit-mlx -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF@Q8_0 -y` · 4bit (20.8 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-4bit-mlx -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-8bit-mlx -y`
 
 ### Ollama
 
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenThinker 32B (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/openthinker/tags))
+2. Run OpenThinker 32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [ollama.com](https://ollama.com/library/openthinker/tags))
    
    ```sh
    ollama run openthinker:32b
@@ -134,7 +134,7 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-communi
    pip install mlx-lm
    ```
 
-2. Run OpenThinker 32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/AlejandroOlmedo](https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-4bit-mlx/tree/bb34642083152e902eaf509e428c1954e8da6025))
+2. Run OpenThinker 32B (4bit, needs 20.8 GB memory, 18.4 GB download, Mac only, from [huggingface.co/AlejandroOlmedo](https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-4bit-mlx/tree/bb34642083152e902eaf509e428c1954e8da6025))
    
    ```sh
    mlx_lm.chat --model AlejandroOlmedo/OpenThinker-32B-4bit-mlx
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-communi
    mlx_lm.server --model AlejandroOlmedo/OpenThinker-32B-4bit-mlx
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model AlejandroOlmedo/OpenThinker-32B-8bit-mlx`
+Other versions: 8bit (38 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model AlejandroOlmedo/OpenThinker-32B-8bit-mlx`
 
 Model repository and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker-32B)
 

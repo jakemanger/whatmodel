@@ -74,7 +74,7 @@ weighted average                                   = 68.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs ~21.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
+2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs 22.4 GB memory, 21.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
    
    ```sh
    llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
@@ -86,13 +86,13 @@ weighted average                                   = 68.9
    llama serve -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.91 GB) `llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0`
+Other versions: Q8_0 (37.9 GB memory, 36.9 GB download) `llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs ~21.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
+2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs 22.4 GB memory, 21.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
    
    ```sh
    lms get https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF@Q4_K_M -y
@@ -100,7 +100,7 @@ Other versions: Q8_0 (~36.91 GB) `llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~36.91 GB) `lms get https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF@Q8_0 -y` · 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-4bit -y` · 8bit (~36.8 GB, Mac only) `lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-8bit -y`
+Other versions: Q8_0 (37.9 GB memory, 36.9 GB download) `lms get https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF@Q8_0 -y` · 4bit (20.5 GB memory, 19.5 GB download, Mac only) `lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-4bit -y` · 8bit (37.8 GB memory, 36.8 GB download, Mac only) `lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-8bit -y`
 
 ### Ollama
 
@@ -111,13 +111,13 @@ Other versions: Q8_0 (~36.91 GB) `lms get https://huggingface.co/bartowski/Kwaip
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs ~21.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
+2. Run KAT-Coder-V2.5-Dev (35B-A3B) (Q4_K_M, needs 22.4 GB memory, 21.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b))
    
    ```sh
    ollama run hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.91 GB) `ollama run hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0`
+Other versions: Q8_0 (37.9 GB memory, 36.9 GB download) `ollama run hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -130,7 +130,7 @@ Other versions: Q8_0 (~36.91 GB) `ollama run hf.co/bartowski/Kwaipilot_KAT-Coder
    pip install mlx-lm
    ```
 
-2. Run KAT-Coder-V2.5-Dev (35B-A3B) (4bit, needs ~19.5 GB, Mac only, from [huggingface.co/majentik](https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-4bit/tree/526fa15b962e0e8bf40ed744f4fdc39e6679b1e6))
+2. Run KAT-Coder-V2.5-Dev (35B-A3B) (4bit, needs 20.5 GB memory, 19.5 GB download, Mac only, from [huggingface.co/majentik](https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-4bit/tree/526fa15b962e0e8bf40ed744f4fdc39e6679b1e6))
    
    ```sh
    mlx_lm.chat --model majentik/KAT-Coder-V2.5-Dev-MLX-4bit
@@ -142,7 +142,7 @@ Other versions: Q8_0 (~36.91 GB) `ollama run hf.co/bartowski/Kwaipilot_KAT-Coder
    mlx_lm.server --model majentik/KAT-Coder-V2.5-Dev-MLX-4bit
    ```
 
-Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model majentik/KAT-Coder-V2.5-Dev-MLX-8bit`
+Other versions: 8bit (37.8 GB memory, 36.8 GB download, Mac only) `mlx_lm.chat --model majentik/KAT-Coder-V2.5-Dev-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Kwaipilot](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)
 

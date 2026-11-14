@@ -54,7 +54,7 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~0.48 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt/tree/1e0d4f3028acbffb47fe933cea64619c5ec1a002))
+1. Run it as published (fp32, needs 2 GB memory, 0.48 GB download, from [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt/tree/1e0d4f3028acbffb47fe933cea64619c5ec1a002))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

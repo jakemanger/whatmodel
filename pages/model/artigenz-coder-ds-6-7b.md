@@ -58,7 +58,7 @@ weighted average                                   = 50.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
+2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
    
    ```sh
    llama cli -hf brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF:q4_k_m
@@ -74,7 +74,7 @@ weighted average                                   = 50.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
+2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
    
    ```sh
    lms get https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF@q4_k_m -y
@@ -91,7 +91,7 @@ weighted average                                   = 50.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
+2. Run Artigenz-Coder-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/brunopio](https://huggingface.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF/tree/da28dd3b6837f5c26891f2fdfc980a270dcc8ca9))
    
    ```sh
    ollama run hf.co/brunopio/Artigenz-Coder-DS-6.7B-Q4_K_M-GGUF:q4_k_m
@@ -99,7 +99,7 @@ weighted average                                   = 50.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/Artigenz](https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B/tree/a0dea4a1c6cfdef8043c8accffa803887f444f45))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/Artigenz](https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B/tree/a0dea4a1c6cfdef8043c8accffa803887f444f45))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Artigenz/Artigenz-Coder-DS-6.7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -87,7 +87,7 @@ weighted average                                   = 53.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hermes 3 Llama 3.1 405B (Q4_K_M, needs ~243.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF/tree/69eba52b31f63bfd9b750b04778b847e22bc50bf))
+2. Run Hermes 3 Llama 3.1 405B (Q4_K_M, needs 257 GB memory, 243.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF/tree/69eba52b31f63bfd9b750b04778b847e22bc50bf))
    
    ```sh
    llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q4_K_M
@@ -99,13 +99,13 @@ weighted average                                   = 53.3
    llama serve -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~431.2 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q8_0` · IQ2_XXS (~107.3 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:IQ2_XXS`
+Other versions: Q8_0 (454 GB memory, 431.2 GB download) `llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q8_0` · IQ2_XXS (114 GB memory, 107.3 GB download) `llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hermes 3 Llama 3.1 405B (Q4_K_M, needs ~243.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF/tree/69eba52b31f63bfd9b750b04778b847e22bc50bf))
+2. Run Hermes 3 Llama 3.1 405B (Q4_K_M, needs 257 GB memory, 243.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF/tree/69eba52b31f63bfd9b750b04778b847e22bc50bf))
    
    ```sh
    lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@Q4_K_M -y
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~431.2 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.1-405
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~431.2 GB) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@Q8_0 -y` · IQ2_XXS (~107.3 GB) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@IQ2_XXS -y`
+Other versions: Q8_0 (454 GB memory, 431.2 GB download) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@Q8_0 -y` · IQ2_XXS (114 GB memory, 107.3 GB download) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@IQ2_XXS -y`
 
 ### Ollama
 
@@ -124,7 +124,7 @@ Other versions: Q8_0 (~431.2 GB) `lms get https://huggingface.co/bartowski/Herme
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hermes 3 Llama 3.1 405B (Q4_0, needs ~229 GB, from [ollama.com](https://ollama.com/library/hermes3/tags))
+2. Run Hermes 3 Llama 3.1 405B (Q4_0, needs 242 GB memory, 228.9 GB download, from [ollama.com](https://ollama.com/library/hermes3/tags))
    
    ```sh
    ollama run hermes3:405b

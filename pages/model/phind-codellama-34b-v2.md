@@ -70,7 +70,7 @@ weighted average                                   = 47.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF/tree/da37c48be3b0c6cd487fe05259521dc2824f5a5f))
+2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF/tree/da37c48be3b0c6cd487fe05259521dc2824f5a5f))
    
    ```sh
    llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                                   = 47.9
    llama serve -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF/tree/da37c48be3b0c6cd487fe05259521dc2824f5a5f))
+2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF/tree/da37c48be3b0c6cd487fe05259521dc2824f5a5f))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF@Q4_K_M -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/Phind-C
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/phind-codellama/tags))
+2. Run Phind CodeLlama 34B v2 (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [ollama.com](https://ollama.com/library/phind-codellama/tags))
    
    ```sh
    ollama run phind-codellama:34b-v2-q4_K_M
    ```
 
-Other versions: Q8_0 (~36 GB) `ollama run phind-codellama:34b-v2-q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run phind-codellama:34b-v2-q8_0`
 
 Model repository and documentation: [huggingface.co/Phind](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)
 

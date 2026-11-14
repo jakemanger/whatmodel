@@ -69,7 +69,7 @@ weighted average                              = 40.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
+2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
    
    ```sh
    llama cli -hf matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF:q4_k_m
@@ -85,7 +85,7 @@ weighted average                              = 40.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
+2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
    
    ```sh
    lms get https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF@q4_k_m -y
@@ -102,7 +102,7 @@ weighted average                              = 40.2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
+2. Run Llama-3-Instruct-8B-SimPO-v0.2 (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF/tree/d4e42980129edee7bacdacc8afe5ed7f449964d2))
    
    ```sh
    ollama run hf.co/matrixportalx/Llama-3-Instruct-8B-SimPO-v0.2-Q4_K_M-GGUF:q4_k_m
@@ -110,7 +110,7 @@ weighted average                              = 40.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-Instruct-8B-SimPO-v0.2/tree/2b18bdce3e3e8f588f48ff62350db9620ceefde3))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-Instruct-8B-SimPO-v0.2/tree/2b18bdce3e3e8f588f48ff62350db9620ceefde3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-Instruct-8B-SimPO-v0.2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

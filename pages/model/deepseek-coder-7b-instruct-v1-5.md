@@ -73,7 +73,7 @@ weighted average                                   = 48.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs ~4.2 GB, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
+2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs 5.9 GB memory, 4.22 GB download, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
    
    ```sh
    llama cli -hf Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q4_K_M
@@ -85,13 +85,13 @@ weighted average                                   = 48.8
    llama serve -hf Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.3 GB) `llama cli -hf Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.35 GB download) `llama cli -hf Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs ~4.2 GB, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
+2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs 5.9 GB memory, 4.22 GB download, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
    
    ```sh
    lms get https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF@Q4_K_M -y
@@ -99,7 +99,7 @@ Other versions: Q8_0 (~7.3 GB) `llama cli -hf Edmon02/deepseek-coder-7b-instruct
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.3 GB) `lms get https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.2 GB memory, 7.35 GB download) `lms get https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -110,17 +110,17 @@ Other versions: Q8_0 (~7.3 GB) `lms get https://huggingface.co/Edmon02/deepseek-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs ~4.2 GB, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
+2. Run DeepSeek-Coder 7B Instruct v1.5 (Q4_K_M, needs 5.9 GB memory, 4.22 GB download, from [huggingface.co/Edmon02](https://huggingface.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF/tree/295e7c005ee33cf633ef66e24f51ad641915a1e7))
    
    ```sh
    ollama run hf.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.35 GB download) `ollama run hf.co/Edmon02/deepseek-coder-7b-instruct-v1.5-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.82 GB, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5/tree/2a050a4c59d687a85324d32e147517992117ed30))
+1. Run it as published (BF16, needs 16 GB memory, 13.8 GB download, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5/tree/2a050a4c59d687a85324d32e147517992117ed30))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-instruct-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

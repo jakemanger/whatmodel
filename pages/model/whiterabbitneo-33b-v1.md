@@ -58,7 +58,7 @@ weighted average                                   = 48.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
+2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
    
    ```sh
    llama cli -hf TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 48.3
    llama serve -hf TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `llama cli -hf TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
+2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
    
    ```sh
    lms get https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/WhiteRabbitNeo-33B-v1-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `lms get https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/WhiteRa
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
+2. Run WhiteRabbitNeo-33B-v1 (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF/tree/0f6ba0a40f9f5591121e81d313aedee636df35a1))
    
    ```sh
    ollama run hf.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `ollama run hf.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `ollama run hf.co/TheBloke/WhiteRabbitNeo-33B-v1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~66.69 GB, from [huggingface.co/WhiteRabbitNeo](https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1/tree/4ff3206a8f9e0c11d6583770f46ba624205e4450))
+1. Run it as published (BF16, needs 71.5 GB memory, 66.7 GB download, from [huggingface.co/WhiteRabbitNeo](https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1/tree/4ff3206a8f9e0c11d6583770f46ba624205e4450))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WhiteRabbitNeo/WhiteRabbitNeo-33B-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

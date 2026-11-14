@@ -263,7 +263,7 @@ api (Deep Infra) · $0.11/M blended · $0.1 in / $0.15 out per 1M tokens · [dee
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3.5 9B (Q4_K_M, needs ~5.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF/tree/1379f25c6b505a3fc737bd7818cb09389cf807c1))
+2. Run Qwen3.5 9B (Q4_K_M, needs 7.7 GB memory, 6.55 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF/tree/1379f25c6b505a3fc737bd7818cb09389cf807c1))
    
    ```sh
    llama cli -hf lmstudio-community/Qwen3.5-9B-GGUF:Q4_K_M
@@ -275,13 +275,13 @@ api (Deep Infra) · $0.11/M blended · $0.1 in / $0.15 out per 1M tokens · [dee
    llama serve -hf lmstudio-community/Qwen3.5-9B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.5 GB) `llama cli -hf lmstudio-community/Qwen3.5-9B-GGUF:Q8_0`
+Other versions: Q8_0 (11.5 GB memory, 10.4 GB download) `llama cli -hf lmstudio-community/Qwen3.5-9B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3.5 9B (Q4_K_M, needs ~5.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF/tree/1379f25c6b505a3fc737bd7818cb09389cf807c1))
+2. Run Qwen3.5 9B (Q4_K_M, needs 7.7 GB memory, 6.55 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF/tree/1379f25c6b505a3fc737bd7818cb09389cf807c1))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF@Q4_K_M -y
@@ -289,7 +289,7 @@ Other versions: Q8_0 (~9.5 GB) `llama cli -hf lmstudio-community/Qwen3.5-9B-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.5 GB) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF@Q8_0 -y` · 4bit (~6 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit -y` · 8bit (~10.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-8bit -y`
+Other versions: Q8_0 (11.5 GB memory, 10.4 GB download) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-GGUF@Q8_0 -y` · 4bit (7.1 GB memory, 5.95 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit -y` · 8bit (11.5 GB memory, 10.4 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-8bit -y`
 
 ### Ollama
 
@@ -300,7 +300,7 @@ Other versions: Q8_0 (~9.5 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3.5 9B (Q4_K_M, needs ~6.29 GB, from [ollama.com](https://ollama.com/library/qwen3.5/tags))
+2. Run Qwen3.5 9B (Q4_K_M, needs 7.7 GB memory, 6.55 GB download, from [ollama.com](https://ollama.com/library/qwen3.5/tags))
    
    ```sh
    ollama run qwen3.5:9b
@@ -317,7 +317,7 @@ Other versions: Q8_0 (~9.5 GB) `lms get https://huggingface.co/lmstudio-communit
    pip install mlx-lm
    ```
 
-2. Run Qwen3.5 9B (4bit, needs ~6 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit/tree/b455506b0f574c74616dbcd56879bde38fafcff3))
+2. Run Qwen3.5 9B (4bit, needs 7.1 GB memory, 5.95 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit/tree/b455506b0f574c74616dbcd56879bde38fafcff3))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3.5-9B-MLX-4bit
@@ -329,7 +329,7 @@ Other versions: Q8_0 (~9.5 GB) `lms get https://huggingface.co/lmstudio-communit
    mlx_lm.server --model lmstudio-community/Qwen3.5-9B-MLX-4bit
    ```
 
-Other versions: 8bit (~10.4 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.5-9B-MLX-8bit`
+Other versions: 8bit (11.5 GB memory, 10.4 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.5-9B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.5-9B)
 

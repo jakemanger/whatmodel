@@ -104,7 +104,7 @@ weighted average                                   = 43.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run WizardLM 70B V1.0 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF/tree/173fd6b2eead0ef9075391f3b9c8536b2c87ff03))
+2. Run WizardLM 70B V1.0 (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF/tree/173fd6b2eead0ef9075391f3b9c8536b2c87ff03))
    
    ```sh
    llama cli -hf TheBloke/WizardLM-70B-V1.0-GGUF:Q4_K_M
@@ -116,13 +116,13 @@ weighted average                                   = 43.8
    llama serve -hf TheBloke/WizardLM-70B-V1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/WizardLM-70B-V1.0-GGUF:Q2_K`
+Other versions: Q2_K (32.3 GB memory, 29.3 GB download) `llama cli -hf TheBloke/WizardLM-70B-V1.0-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run WizardLM 70B V1.0 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF/tree/173fd6b2eead0ef9075391f3b9c8536b2c87ff03))
+2. Run WizardLM 70B V1.0 (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF/tree/173fd6b2eead0ef9075391f3b9c8536b2c87ff03))
    
    ```sh
    lms get https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF@Q4_K_M -y
@@ -130,7 +130,7 @@ Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/WizardLM-70B-V1.0-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF@Q2_K -y`
+Other versions: Q2_K (32.3 GB memory, 29.3 GB download) `lms get https://huggingface.co/TheBloke/WizardLM-70B-V1.0-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -141,13 +141,13 @@ Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/WizardL
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WizardLM 70B V1.0 (Q4_K_M, needs ~41.42 GB, from [ollama.com](https://ollama.com/library/wizardlm/tags))
+2. Run WizardLM 70B V1.0 (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [ollama.com](https://ollama.com/library/wizardlm/tags))
    
    ```sh
    ollama run wizardlm:70b-llama2-q4_K_M
    ```
 
-Other versions: Q4_0 (~38.87 GB) `ollama run wizardlm:70b-llama2-q4_0`
+Other versions: Q4_0 (42.3 GB memory, 38.9 GB download) `ollama run wizardlm:70b-llama2-q4_0`
 
 Model repository and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardLM-70B-V1.0)
 

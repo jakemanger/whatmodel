@@ -73,7 +73,7 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~0.89 GB, from [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-base/tree/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1))
+1. Run it as published (fp32, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-base/tree/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-base')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])"

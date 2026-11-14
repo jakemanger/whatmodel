@@ -70,7 +70,7 @@ weighted average                                   = 43.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mathstral 7B v0.1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF/tree/e16676974b5762ea632eac7ce00ed2419361ee1c))
+2. Run Mathstral 7B v0.1 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF/tree/e16676974b5762ea632eac7ce00ed2419361ee1c))
    
    ```sh
    llama cli -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                                   = 43.8
    llama serve -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `llama cli -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mathstral 7B v0.1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF/tree/e16676974b5762ea632eac7ce00ed2419361ee1c))
+2. Run Mathstral 7B v0.1 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF/tree/e16676974b5762ea632eac7ce00ed2419361ee1c))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF@Q4_K_M -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/mathstral-7B-v0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF@Q8_0 -y` · 4bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-4bit -y` · 8bit (~7.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-8bit -y`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `lms get https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF@Q8_0 -y` · 4bit (5.6 GB memory, 4.08 GB download, Mac only) `lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-4bit -y` · 8bit (9.2 GB memory, 7.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-8bit -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mathstral 7B v0.1 (Q4_K_M, needs ~4.85 GB, from [ollama.com](https://ollama.com/library/mathstral/tags))
+2. Run Mathstral 7B v0.1 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/mathstral/tags))
    
    ```sh
    ollama run mathstral:7b-v0.1-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.2 GB) `ollama run mathstral:7b-v0.1-q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `ollama run mathstral:7b-v0.1-q8_0`
 
 ### MLX (Mac)
 
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mathstral:7b-v0.1-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Mathstral 7B v0.1 (4bit, needs ~4.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/mathstral-7B-v0.1-4bit/tree/35eb945e90f9e5e32cea43d55ba3c201a861f316))
+2. Run Mathstral 7B v0.1 (4bit, needs 5.6 GB memory, 4.08 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/mathstral-7B-v0.1-4bit/tree/35eb945e90f9e5e32cea43d55ba3c201a861f316))
    
    ```sh
    mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-4bit
@@ -138,7 +138,7 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mathstral:7b-v0.1-q8_0`
    mlx_lm.server --model mlx-community/mathstral-7B-v0.1-4bit
    ```
 
-Other versions: 8bit (~7.7 GB, Mac only) `mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-8bit`
+Other versions: 8bit (9.2 GB memory, 7.7 GB download, Mac only) `mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mathstral-7B-v0.1)
 

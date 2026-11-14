@@ -49,7 +49,7 @@ weighted average                                   = 42.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora/tree/c382c82ebaac18314361fd13c2f54d113510ed40))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-coding-7b-16k-tora/tree/c382c82ebaac18314361fd13c2f54d113510ed40))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-coding-7b-16k-tora', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -57,7 +57,7 @@ weighted average                                   = 53.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hammer2.1-7b (Q4_K_M, needs ~4.2 GB, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
+2. Run Hammer2.1-7b (Q4_K_M, needs 5.9 GB memory, 4.18 GB download, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
    
    ```sh
    llama cli -hf eaddario/Hammer2.1-7b-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 53.2
    llama serve -hf eaddario/Hammer2.1-7b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.3 GB) `llama cli -hf eaddario/Hammer2.1-7b-GGUF:Q8_0`
+Other versions: Q8_0 (9.1 GB memory, 7.27 GB download) `llama cli -hf eaddario/Hammer2.1-7b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hammer2.1-7b (Q4_K_M, needs ~4.2 GB, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
+2. Run Hammer2.1-7b (Q4_K_M, needs 5.9 GB memory, 4.18 GB download, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
    
    ```sh
    lms get https://huggingface.co/eaddario/Hammer2.1-7b-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~7.3 GB) `llama cli -hf eaddario/Hammer2.1-7b-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.3 GB) `lms get https://huggingface.co/eaddario/Hammer2.1-7b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.1 GB memory, 7.27 GB download) `lms get https://huggingface.co/eaddario/Hammer2.1-7b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~7.3 GB) `lms get https://huggingface.co/eaddario/Hammer2.
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hammer2.1-7b (Q4_K_M, needs ~4.2 GB, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
+2. Run Hammer2.1-7b (Q4_K_M, needs 5.9 GB memory, 4.18 GB download, from [huggingface.co/eaddario](https://huggingface.co/eaddario/Hammer2.1-7b-GGUF/tree/d90bfcf86fe677cab5722eca4f77ff6142c02a55))
    
    ```sh
    ollama run hf.co/eaddario/Hammer2.1-7b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/eaddario/Hammer2.1-7b-GGUF:Q8_0`
+Other versions: Q8_0 (9.1 GB memory, 7.27 GB download) `ollama run hf.co/eaddario/Hammer2.1-7b-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~15.23 GB, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-7b/tree/c5692ee193b806c1aadeaf68c4aec3de503fac30))
+1. Run it as published (BF16, needs 17.5 GB memory, 15.2 GB download, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-7b/tree/c5692ee193b806c1aadeaf68c4aec3de503fac30))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

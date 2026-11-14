@@ -57,7 +57,7 @@ weighted average                                 = 43.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon2 11B (base) (Q4_K_M, needs ~6.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/falcon-11B-GGUF/tree/597dbbc99a829d5e7221858ac60eca46b991f0cb))
+2. Run Falcon2 11B (base) (Q4_K_M, needs 8.7 GB memory, 6.85 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/falcon-11B-GGUF/tree/597dbbc99a829d5e7221858ac60eca46b991f0cb))
    
    ```sh
    llama cli -hf bartowski/falcon-11B-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                 = 43.0
    llama serve -hf bartowski/falcon-11B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~11.8 GB) `llama cli -hf bartowski/falcon-11B-GGUF:Q8_0`
+Other versions: Q8_0 (13.9 GB memory, 11.8 GB download) `llama cli -hf bartowski/falcon-11B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon2 11B (base) (Q4_K_M, needs ~6.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/falcon-11B-GGUF/tree/597dbbc99a829d5e7221858ac60eca46b991f0cb))
+2. Run Falcon2 11B (base) (Q4_K_M, needs 8.7 GB memory, 6.85 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/falcon-11B-GGUF/tree/597dbbc99a829d5e7221858ac60eca46b991f0cb))
    
    ```sh
    lms get https://huggingface.co/bartowski/falcon-11B-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~11.8 GB) `llama cli -hf bartowski/falcon-11B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~11.8 GB) `lms get https://huggingface.co/bartowski/falcon-11B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (13.9 GB memory, 11.8 GB download) `lms get https://huggingface.co/bartowski/falcon-11B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,7 +94,7 @@ Other versions: Q8_0 (~11.8 GB) `lms get https://huggingface.co/bartowski/falcon
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon2 11B (base) (Q4_0, needs ~6.4 GB, from [ollama.com](https://ollama.com/library/falcon2/tags))
+2. Run Falcon2 11B (base) (Q4_0, needs 8.2 GB memory, 6.38 GB download, from [ollama.com](https://ollama.com/library/falcon2/tags))
    
    ```sh
    ollama run falcon2:11b

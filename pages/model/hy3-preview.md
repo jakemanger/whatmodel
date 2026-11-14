@@ -144,7 +144,7 @@ tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~597.58 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/README.md))
+1. Run it as published (BF16, needs 629 GB memory, 597.6 GB download, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/README.md))
    
    ```sh
    vllm serve tencent/Hy3-preview --tensor-parallel-size 8 --speculative-config.method mtp --speculative-config.num_speculative_tokens 1 --tool-call-parser hy_v3 --reasoning-parser hy_v3 --enable-auto-tool-choice --served-model-name hy3-preview

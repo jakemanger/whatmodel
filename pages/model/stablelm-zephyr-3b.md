@@ -53,7 +53,7 @@ weighted average                          = 39.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StableLM Zephyr 3B (Q4_K_M, needs ~1.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/tree/465310e5eb914190e89f531cc1c348812e27dcea))
+2. Run StableLM Zephyr 3B (Q4_K_M, needs 3.3 GB memory, 1.71 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/tree/465310e5eb914190e89f531cc1c348812e27dcea))
    
    ```sh
    llama cli -hf TheBloke/stablelm-zephyr-3b-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 39.4
    llama serve -hf TheBloke/stablelm-zephyr-3b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/stablelm-zephyr-3b-GGUF:Q8_0`
+Other versions: Q8_0 (4.6 GB memory, 2.97 GB download) `llama cli -hf TheBloke/stablelm-zephyr-3b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StableLM Zephyr 3B (Q4_K_M, needs ~1.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/tree/465310e5eb914190e89f531cc1c348812e27dcea))
+2. Run StableLM Zephyr 3B (Q4_K_M, needs 3.3 GB memory, 1.71 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF/tree/465310e5eb914190e89f531cc1c348812e27dcea))
    
    ```sh
    lms get https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/stablelm-zephyr-3b-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (4.6 GB memory, 2.97 GB download) `lms get https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/stablelm-z
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StableLM Zephyr 3B (Q4_0, needs ~1.6 GB, from [ollama.com](https://ollama.com/library/stablelm-zephyr/tags))
+2. Run StableLM Zephyr 3B (Q4_0, needs 3.2 GB memory, 1.61 GB download, from [ollama.com](https://ollama.com/library/stablelm-zephyr/tags))
    
    ```sh
    ollama run stablelm-zephyr:3b

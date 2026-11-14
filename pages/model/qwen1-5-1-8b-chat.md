@@ -70,7 +70,7 @@ weighted average                              = 26.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen1.5 1.8B Chat (Q4_K_M, needs ~1.22 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF/tree/c6414b00c3ed52df27201a5386a971869a72496a))
+2. Run Qwen1.5 1.8B Chat (Q4_K_M, needs 2.8 GB memory, 1.22 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF/tree/c6414b00c3ed52df27201a5386a971869a72496a))
    
    ```sh
    llama cli -hf Qwen/Qwen1.5-1.8B-Chat-GGUF:Q4_K_M
@@ -86,7 +86,7 @@ weighted average                              = 26.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen1.5 1.8B Chat (Q4_K_M, needs ~1.22 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF/tree/c6414b00c3ed52df27201a5386a971869a72496a))
+2. Run Qwen1.5 1.8B Chat (Q4_K_M, needs 2.8 GB memory, 1.22 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF/tree/c6414b00c3ed52df27201a5386a971869a72496a))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ weighted average                              = 26.3
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~1.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-1.8B-Chat-4bit -y`
+Other versions: 4bit (3.1 GB memory, 1.48 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-1.8B-Chat-4bit -y`
 
 ### Ollama
 
@@ -105,7 +105,7 @@ Other versions: 4bit (~1.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen1.5 1.8B Chat (Q4_0, needs ~1.1 GB, from [ollama.com](https://ollama.com/library/qwen/tags))
+2. Run Qwen1.5 1.8B Chat (Q4_0, needs 2.7 GB memory, 1.12 GB download, from [ollama.com](https://ollama.com/library/qwen/tags))
    
    ```sh
    ollama run qwen:1.8b
@@ -122,7 +122,7 @@ Other versions: 4bit (~1.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Qwen1.5 1.8B Chat (4bit, needs ~1.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-1.8B-Chat-4bit/tree/7243c8444c29fd6caeadba7506c14d88716c3ecc))
+2. Run Qwen1.5 1.8B Chat (4bit, needs 3.1 GB memory, 1.48 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-1.8B-Chat-4bit/tree/7243c8444c29fd6caeadba7506c14d88716c3ecc))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen1.5-1.8B-Chat-4bit

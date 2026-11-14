@@ -70,7 +70,7 @@ weighted average                                   = 45.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
+2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
    
    ```sh
    llama cli -hf ibm-granite/granite-8b-code-instruct-4k-GGUF:Q4_K_M
@@ -86,7 +86,7 @@ weighted average                                   = 45.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
+2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF@Q4_K_M -y
@@ -103,7 +103,7 @@ weighted average                                   = 45.2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
+2. Run Granite 8B Code Instruct (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k-GGUF/tree/7f03f9f5dba8c4be26491d14c2fca861aa0c4ec1))
    
    ```sh
    ollama run hf.co/ibm-granite/granite-8b-code-instruct-4k-GGUF:Q4_K_M

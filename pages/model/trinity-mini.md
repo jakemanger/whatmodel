@@ -54,7 +54,7 @@ weighted average                        = 52.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs 17.2 GB memory, 15.9 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
    
    ```sh
    llama cli -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
@@ -70,7 +70,7 @@ weighted average                        = 52.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs 17.2 GB memory, 15.9 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
    
    ```sh
    lms get https://huggingface.co/arcee-ai/Trinity-Mini-GGUF@Q4_K_M -y
@@ -87,7 +87,7 @@ weighted average                        = 52.9
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs 17.2 GB memory, 15.9 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
    
    ```sh
    ollama run hf.co/arcee-ai/Trinity-Mini-GGUF:Q4_K_M

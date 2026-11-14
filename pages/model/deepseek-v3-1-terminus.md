@@ -110,7 +110,7 @@ weighted average                                   = 65.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~405.4 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs 427 GB memory, 405.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
@@ -122,13 +122,13 @@ weighted average                                   = 65.5
    llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~713.3 GB) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0` · UD-IQ2_XXS (~217.1 GB) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS`
+Other versions: Q8_0 (750 GB memory, 713.3 GB download) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0` · UD-IQ2_XXS (229 GB memory, 217.1 GB download) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~405.4 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs 427 GB memory, 405.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q4_K_M -y
@@ -136,7 +136,7 @@ Other versions: Q8_0 (~713.3 GB) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~713.3 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q8_0 -y` · UD-IQ2_XXS (~217.1 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@UD-IQ2_XXS -y` · 4bit (~377.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit -y`
+Other versions: Q8_0 (750 GB memory, 713.3 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q8_0 -y` · UD-IQ2_XXS (229 GB memory, 217.1 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@UD-IQ2_XXS -y` · 4bit (398 GB memory, 377.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit -y`
 
 ### Ollama
 
@@ -147,13 +147,13 @@ Other versions: Q8_0 (~713.3 GB) `lms get https://huggingface.co/unsloth/DeepSee
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~403.1 GB, from [ollama.com](https://ollama.com/library/deepseek-v3.1/tags))
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs 426 GB memory, 404.5 GB download, from [ollama.com](https://ollama.com/library/deepseek-v3.1/tags))
    
    ```sh
    ollama run deepseek-v3.1:671b-terminus-q4_K_M
    ```
 
-Other versions: Q8_0 (~805.7 GB) `ollama run deepseek-v3.1:671b-terminus-q8_0`
+Other versions: Q8_0 (750 GB memory, 713.3 GB download) `ollama run deepseek-v3.1:671b-terminus-q8_0`
 
 ### MLX (Mac)
 
@@ -166,7 +166,7 @@ Other versions: Q8_0 (~805.7 GB) `ollama run deepseek-v3.1:671b-terminus-q8_0`
    pip install mlx-lm
    ```
 
-2. Run DeepSeek V3.1 Terminus (4bit, needs ~377.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit/tree/90d058816d4a3592924c3650447e2f995f698204))
+2. Run DeepSeek V3.1 Terminus (4bit, needs 398 GB memory, 377.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit/tree/90d058816d4a3592924c3650447e2f995f698204))
    
    ```sh
    mlx_lm.chat --model mlx-community/DeepSeek-V3.1-Terminus-4bit

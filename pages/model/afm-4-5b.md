@@ -54,7 +54,7 @@ weighted average                        = 49.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+2. Run AFM-4.5B (Q4_K_M, needs 4.6 GB memory, 2.92 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
    
    ```sh
    llama cli -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M
@@ -70,7 +70,7 @@ weighted average                        = 49.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+2. Run AFM-4.5B (Q4_K_M, needs 4.6 GB memory, 2.92 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
    
    ```sh
    lms get https://huggingface.co/arcee-ai/AFM-4.5B-GGUF@Q4_K_M -y
@@ -87,7 +87,7 @@ weighted average                        = 49.4
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+2. Run AFM-4.5B (Q4_K_M, needs 4.6 GB memory, 2.92 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
    
    ```sh
    ollama run hf.co/arcee-ai/AFM-4.5B-GGUF:Q4_K_M

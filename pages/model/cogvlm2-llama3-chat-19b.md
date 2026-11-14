@@ -53,13 +53,13 @@ weighted average                                   = 44.0
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~39.01 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/CogVLM2/blob/6700ae7ca23ba87f13796f3f427cbda64f71aaef/basic_demo/README.md))
+1. Run it as published (BF16, needs ~42.5 GB memory, ~39 GB download, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/CogVLM2/blob/6700ae7ca23ba87f13796f3f427cbda64f71aaef/basic_demo/README.md))
    
    ```sh
    git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py
    ```
 
-Other versions: int4 (bitsandbytes at load) (~39.01 GB, NVIDIA only) `git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4`
+Other versions: int4 (bitsandbytes at load) (~11.8 GB memory, ~9.8 GB download, NVIDIA only) `git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B)
 

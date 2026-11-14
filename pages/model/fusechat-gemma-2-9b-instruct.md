@@ -56,7 +56,7 @@ weighted average                              = 62.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
+2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
    
    ```sh
    llama cli -hf bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 62.3
    llama serve -hf bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
+2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
    
    ```sh
    lms get https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/FuseChat-Gemma-2-9B-Inst
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/FuseCha
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
+2. Run FuseChat-Gemma-2-9B-Instruct (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF/tree/b4c5bdb80f5ecab2c07a98d83f742e4e8327c137))
    
    ```sh
    ollama run hf.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/bartowski/FuseChat-Gemma-2-9B-Instruct-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Gemma-2-9B-Instruct/tree/0e99419f07463b3e763dab66c3457438f690f2d1))
+1. Run it as published (BF16, needs 20.9 GB memory, 18.5 GB download, from [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Gemma-2-9B-Instruct/tree/0e99419f07463b3e763dab66c3457438f690f2d1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FuseAI/FuseChat-Gemma-2-9B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

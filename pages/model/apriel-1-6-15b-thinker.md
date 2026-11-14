@@ -93,7 +93,7 @@ weighted average                                   = 61.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs ~9.44 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
+2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs 11.6 GB memory, 9.66 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
    
    ```sh
    llama cli -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = 61.2
    llama serve -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~18.38 GB) `llama cli -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q8_0`
+Other versions: gguf-q8_0 (18.5 GB memory, 16.2 GB download) `llama cli -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs ~9.44 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
+2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs 11.6 GB memory, 9.66 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: gguf-q8_0 (~18.38 GB) `llama cli -hf bartowski/ServiceNow-AI_Apr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~18.38 GB) `lms get https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF@Q8_0 -y` · 4bit (~8.1 GB, Mac only) `lms get https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit -y` · 8bit (~15.3 GB, Mac only) `lms get https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-8Bit -y`
+Other versions: gguf-q8_0 (18.5 GB memory, 16.2 GB download) `lms get https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF@Q8_0 -y` · 4bit (10 GB memory, 8.12 GB download, Mac only) `lms get https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit -y` · 8bit (17.6 GB memory, 15.3 GB download, Mac only) `lms get https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-8Bit -y`
 
 ### Ollama
 
@@ -130,13 +130,13 @@ Other versions: gguf-q8_0 (~18.38 GB) `lms get https://huggingface.co/bartowski/
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs ~9.44 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
+2. Run Apriel 1.6 15B Thinker (gguf-q4_k_m, needs 11.6 GB memory, 9.66 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~18.38 GB) `ollama run hf.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q8_0`
+Other versions: gguf-q8_0 (18.5 GB memory, 16.2 GB download) `ollama run hf.co/bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -149,7 +149,7 @@ Other versions: gguf-q8_0 (~18.38 GB) `ollama run hf.co/bartowski/ServiceNow-AI_
    pip install mlx-lm
    ```
 
-2. Run Apriel 1.6 15B Thinker (4bit, needs ~8.1 GB, Mac only, from [huggingface.co/cnfusion](https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit/tree/8cd9214f84bcbf19a7fa8994b065c6a0c6d6ca8a))
+2. Run Apriel 1.6 15B Thinker (4bit, needs 10 GB memory, 8.12 GB download, Mac only, from [huggingface.co/cnfusion](https://huggingface.co/cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit/tree/8cd9214f84bcbf19a7fa8994b065c6a0c6d6ca8a))
    
    ```sh
    mlx_lm.chat --model cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit
@@ -161,7 +161,7 @@ Other versions: gguf-q8_0 (~18.38 GB) `ollama run hf.co/bartowski/ServiceNow-AI_
    mlx_lm.server --model cnfusion/Apriel-1.6-15b-Thinker-mlx-4Bit
    ```
 
-Other versions: 8bit (~15.3 GB, Mac only) `mlx_lm.chat --model cnfusion/Apriel-1.6-15b-Thinker-mlx-8Bit`
+Other versions: 8bit (17.6 GB memory, 15.3 GB download, Mac only) `mlx_lm.chat --model cnfusion/Apriel-1.6-15b-Thinker-mlx-8Bit`
 
 Model repository and documentation: [huggingface.co/ServiceNow-AI](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker)
 

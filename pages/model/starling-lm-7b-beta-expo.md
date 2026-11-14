@@ -66,7 +66,7 @@ weighted average                              = 45.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
+2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
    
    ```sh
    llama cli -hf bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q4_K_M
@@ -78,13 +78,13 @@ weighted average                              = 45.7
    llama serve -hf bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
+2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
    
    ```sh
    lms get https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF@Q4_K_M -y
@@ -92,7 +92,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/Starling-LM-7B-beta-ExPO
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -103,17 +103,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/Starlin
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
+2. Run Starling-LM-7B-beta-ExPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF/tree/14e425b3e820e925edf730a4016314deab8f6531))
    
    ```sh
    ollama run hf.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/bartowski/Starling-LM-7B-beta-ExPO-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Starling-LM-7B-beta-ExPO/tree/598b4a49143ca0e71f99ab4af5940423fe388ce7))
+1. Run it as published (BF16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Starling-LM-7B-beta-ExPO/tree/598b4a49143ca0e71f99ab4af5940423fe388ce7))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/Starling-LM-7B-beta-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

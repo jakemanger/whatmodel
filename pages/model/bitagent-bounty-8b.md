@@ -56,7 +56,7 @@ weighted average                                   = 58.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run BitAgent-Bounty-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
+2. Run BitAgent-Bounty-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
    
    ```sh
    llama cli -hf mradermacher/BitAgent-Bounty-8B-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 58.7
    llama serve -hf mradermacher/BitAgent-Bounty-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/BitAgent-Bounty-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf mradermacher/BitAgent-Bounty-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run BitAgent-Bounty-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
+2. Run BitAgent-Bounty-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
    
    ```sh
    lms get https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/BitAgent-Bounty-8B-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/BitA
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run BitAgent-Bounty-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
+2. Run BitAgent-Bounty-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/BitAgent-Bounty-8B-GGUF/tree/9fa51077b2d1c4b13ee84fa86c402f0070ba9148))
    
    ```sh
    ollama run hf.co/mradermacher/BitAgent-Bounty-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/BitAgent-Bounty-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/mradermacher/BitAgent-Bounty-8B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/BitAgent](https://huggingface.co/BitAgent/BitAgent-Bounty-8B/tree/f85bc76419b49c1f4c8256ddc564f94e32829716))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/BitAgent](https://huggingface.co/BitAgent/BitAgent-Bounty-8B/tree/f85bc76419b49c1f4c8256ddc564f94e32829716))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BitAgent/BitAgent-Bounty-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

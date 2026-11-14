@@ -169,7 +169,7 @@ api (DeepInfra) · $0.088/M blended · $0.07 in / $0.14 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-4 14B (Q4_K_M, needs ~9.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/phi-4-GGUF/tree/0d33cfcf28e6de39a11cce88b451aec3ad6ba490))
+2. Run Phi-4 14B (Q4_K_M, needs 11.3 GB memory, 9.05 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/phi-4-GGUF/tree/0d33cfcf28e6de39a11cce88b451aec3ad6ba490))
    
    ```sh
    llama cli -hf lmstudio-community/phi-4-GGUF:Q4_K_M
@@ -181,13 +181,13 @@ api (DeepInfra) · $0.088/M blended · $0.07 in / $0.14 out per 1M tokens · [de
    llama serve -hf lmstudio-community/phi-4-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.6 GB) `llama cli -hf lmstudio-community/phi-4-GGUF:Q8_0`
+Other versions: Q8_0 (17.8 GB memory, 15.6 GB download) `llama cli -hf lmstudio-community/phi-4-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-4 14B (Q4_K_M, needs ~9.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/phi-4-GGUF/tree/0d33cfcf28e6de39a11cce88b451aec3ad6ba490))
+2. Run Phi-4 14B (Q4_K_M, needs 11.3 GB memory, 9.05 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/phi-4-GGUF/tree/0d33cfcf28e6de39a11cce88b451aec3ad6ba490))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/phi-4-GGUF@Q4_K_M -y
@@ -195,7 +195,7 @@ Other versions: Q8_0 (~15.6 GB) `llama cli -hf lmstudio-community/phi-4-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.6 GB) `lms get https://huggingface.co/lmstudio-community/phi-4-GGUF@Q8_0 -y` · 4bit (~8.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/phi-4-4bit -y` · 8bit (~15.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/phi-4-8bit -y`
+Other versions: Q8_0 (17.8 GB memory, 15.6 GB download) `lms get https://huggingface.co/lmstudio-community/phi-4-GGUF@Q8_0 -y` · 4bit (10.5 GB memory, 8.25 GB download, Mac only) `lms get https://huggingface.co/mlx-community/phi-4-4bit -y` · 8bit (17.8 GB memory, 15.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/phi-4-8bit -y`
 
 ### Ollama
 
@@ -206,13 +206,13 @@ Other versions: Q8_0 (~15.6 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-4 14B (Q4_K_M, needs ~9.32 GB, from [ollama.com](https://ollama.com/library/phi4/tags))
+2. Run Phi-4 14B (Q4_K_M, needs 11.3 GB memory, 9.05 GB download, from [ollama.com](https://ollama.com/library/phi4/tags))
    
    ```sh
    ollama run phi4:14b
    ```
 
-Other versions: Q8_0 (~18.14 GB) `ollama run phi4:14b-q8_0`
+Other versions: Q8_0 (17.8 GB memory, 15.6 GB download) `ollama run phi4:14b-q8_0`
 
 ### MLX (Mac)
 
@@ -225,7 +225,7 @@ Other versions: Q8_0 (~18.14 GB) `ollama run phi4:14b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Phi-4 14B (4bit, needs ~8.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/phi-4-4bit/tree/fc0f8f23d369dc29b55cad1d65cb5bf0dcbee910))
+2. Run Phi-4 14B (4bit, needs 10.5 GB memory, 8.25 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/phi-4-4bit/tree/fc0f8f23d369dc29b55cad1d65cb5bf0dcbee910))
    
    ```sh
    mlx_lm.chat --model mlx-community/phi-4-4bit
@@ -237,7 +237,7 @@ Other versions: Q8_0 (~18.14 GB) `ollama run phi4:14b-q8_0`
    mlx_lm.server --model mlx-community/phi-4-4bit
    ```
 
-Other versions: 8bit (~15.6 GB, Mac only) `mlx_lm.chat --model mlx-community/phi-4-8bit`
+Other versions: 8bit (17.8 GB memory, 15.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/phi-4-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-4)
 

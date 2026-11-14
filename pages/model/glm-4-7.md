@@ -172,7 +172,7 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4.7 (ud-q4_k_xl, needs ~214.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.7-GGUF/tree/main))
+2. Run GLM-4.7 (ud-q4_k_xl, needs 216 GB memory, 204.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.7-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/GLM-4.7-GGUF:UD-Q4_K_XL
@@ -184,13 +184,13 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
    llama serve -hf unsloth/GLM-4.7-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~107.6 GB) `llama cli -hf unsloth/GLM-4.7-GGUF:UD-Q2_K_XL` · ud-iq1_s (~54.05 GB) `llama cli -hf unsloth/GLM-4.7-GGUF:UD-IQ1_S`
+Other versions: ud-q2_k_xl (143 GB memory, 135.2 GB download) `llama cli -hf unsloth/GLM-4.7-GGUF:UD-Q2_K_XL` · ud-iq1_s (104 GB memory, 97.2 GB download) `llama cli -hf unsloth/GLM-4.7-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4.7 (ud-q4_k_xl, needs ~214.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.7-GGUF/tree/main))
+2. Run GLM-4.7 (ud-q4_k_xl, needs 216 GB memory, 204.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.7-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/GLM-4.7-GGUF@UD-Q4_K_XL -y
@@ -198,7 +198,7 @@ Other versions: ud-q2_k_xl (~107.6 GB) `llama cli -hf unsloth/GLM-4.7-GGUF:UD-Q2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~107.6 GB) `lms get https://huggingface.co/unsloth/GLM-4.7-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~54.05 GB) `lms get https://huggingface.co/unsloth/GLM-4.7-GGUF@UD-IQ1_S -y` · 4bit (~198.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/GLM-4.7-4bit -y` · 8bit (~374.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/GLM-4.7-8bit -y`
+Other versions: ud-q2_k_xl (143 GB memory, 135.2 GB download) `lms get https://huggingface.co/unsloth/GLM-4.7-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (104 GB memory, 97.2 GB download) `lms get https://huggingface.co/unsloth/GLM-4.7-GGUF@UD-IQ1_S -y` · 4bit (210 GB memory, 198.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/GLM-4.7-4bit -y` · 8bit (395 GB memory, 374.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/GLM-4.7-8bit -y`
 
 ### MLX (Mac)
 
@@ -211,7 +211,7 @@ Other versions: ud-q2_k_xl (~107.6 GB) `lms get https://huggingface.co/unsloth/G
    pip install mlx-lm
    ```
 
-2. Run GLM-4.7 (4bit, needs ~198.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/GLM-4.7-4bit/tree/0e9f6c4babaef5d5fd04c9efc8770ef234b6d576))
+2. Run GLM-4.7 (4bit, needs 210 GB memory, 198.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/GLM-4.7-4bit/tree/0e9f6c4babaef5d5fd04c9efc8770ef234b6d576))
    
    ```sh
    mlx_lm.chat --model mlx-community/GLM-4.7-4bit
@@ -223,7 +223,7 @@ Other versions: ud-q2_k_xl (~107.6 GB) `lms get https://huggingface.co/unsloth/G
    mlx_lm.server --model mlx-community/GLM-4.7-4bit
    ```
 
-Other versions: 8bit (~374.9 GB, Mac only) `mlx_lm.chat --model mlx-community/GLM-4.7-8bit`
+Other versions: 8bit (395 GB memory, 374.9 GB download, Mac only) `mlx_lm.chat --model mlx-community/GLM-4.7-8bit`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.7)
 

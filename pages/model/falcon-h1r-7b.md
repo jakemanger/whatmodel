@@ -97,7 +97,7 @@ weighted average                                   = 59.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon-H1R 7B (gguf-q4_k_m, needs ~5.05 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
+2. Run Falcon-H1R 7B (gguf-q4_k_m, needs 5.6 GB memory, 4.6 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
    
    ```sh
    llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
@@ -109,13 +109,13 @@ weighted average                                   = 59.4
    llama serve -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~9.61 GB) `llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (9 GB memory, 8.07 GB download) `llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon-H1R 7B (gguf-q4_k_m, needs ~5.05 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
+2. Run Falcon-H1R 7B (gguf-q4_k_m, needs 5.6 GB memory, 4.6 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF@Q4_K_M -y
@@ -123,7 +123,7 @@ Other versions: gguf-q8_0 (~9.61 GB) `llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~9.61 GB) `lms get https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF@Q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-4bit -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-8bit -y`
+Other versions: gguf-q8_0 (9 GB memory, 8.07 GB download) `lms get https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF@Q8_0 -y` · 4bit (5.2 GB memory, 4.27 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-4bit -y` · 8bit (9 GB memory, 8.06 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-8bit -y`
 
 ### Ollama
 
@@ -134,13 +134,13 @@ Other versions: gguf-q8_0 (~9.61 GB) `lms get https://huggingface.co/tiiuae/Falc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon-H1R 7B (gguf-q4_k_m, needs ~5.05 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
+2. Run Falcon-H1R 7B (gguf-q4_k_m, needs 5.6 GB memory, 4.6 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~9.61 GB) `ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (9 GB memory, 8.07 GB download) `ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -153,7 +153,7 @@ Other versions: gguf-q8_0 (~9.61 GB) `ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF
    pip install mlx-lm
    ```
 
-2. Run Falcon-H1R 7B (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon-H1R-7B-4bit/tree/0e3ed6b0e4de5581f22500d2cfdc58e6f37568c6))
+2. Run Falcon-H1R 7B (4bit, needs 5.2 GB memory, 4.27 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon-H1R-7B-4bit/tree/0e3ed6b0e4de5581f22500d2cfdc58e6f37568c6))
    
    ```sh
    mlx_lm.chat --model mlx-community/Falcon-H1R-7B-4bit
@@ -165,7 +165,7 @@ Other versions: gguf-q8_0 (~9.61 GB) `ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF
    mlx_lm.server --model mlx-community/Falcon-H1R-7B-4bit
    ```
 
-Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Falcon-H1R-7B-8bit`
+Other versions: 8bit (9 GB memory, 8.06 GB download, Mac only) `mlx_lm.chat --model mlx-community/Falcon-H1R-7B-8bit`
 
 Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B)
 

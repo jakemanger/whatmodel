@@ -48,7 +48,7 @@ weighted average                              = 33.6
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~39.05 GB, from [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-13b/tree/a3c4bbccca8b650700a49a225582c17bb49b446b))
+1. Run it as published (fp16, needs 42.5 GB memory, 39 GB download, from [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-13b/tree/a3c4bbccca8b650700a49a225582c17bb49b446b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='project-baize/baize-v2-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

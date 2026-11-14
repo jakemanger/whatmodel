@@ -38,7 +38,7 @@ api (OpenRouter (the API link on the Nex-AGI card)) · price unknown · [openrou
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nex-N2.6 (Q4_K_M, needs ~193.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md))
+2. Run Nex-N2.6 (Q4_K_M, needs 214 GB memory, 202 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md))
    
    ```sh
    llama cli -hf bartowski/Nex-N2.6-GGUF:Q4_K_M
@@ -50,13 +50,13 @@ api (OpenRouter (the API link on the Nex-AGI card)) · price unknown · [openrou
    llama serve -hf bartowski/Nex-N2.6-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_XXS (~96.8 GB) `llama cli -hf bartowski/Nex-N2.6-GGUF:IQ2_XXS`
+Other versions: IQ2_XXS (104 GB memory, 97.8 GB download) `llama cli -hf bartowski/Nex-N2.6-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nex-N2.6 (Q4_K_M, needs ~193.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md))
+2. Run Nex-N2.6 (Q4_K_M, needs 214 GB memory, 202 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nex-N2.6-GGUF/blob/e7959c745fec0feb1e705c592a27938a9ed1ee1b/README.md))
    
    ```sh
    lms get https://huggingface.co/bartowski/Nex-N2.6-GGUF@Q4_K_M -y
@@ -64,7 +64,7 @@ Other versions: IQ2_XXS (~96.8 GB) `llama cli -hf bartowski/Nex-N2.6-GGUF:IQ2_XX
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_XXS (~96.8 GB) `lms get https://huggingface.co/bartowski/Nex-N2.6-GGUF@IQ2_XXS -y`
+Other versions: IQ2_XXS (104 GB memory, 97.8 GB download) `lms get https://huggingface.co/bartowski/Nex-N2.6-GGUF@IQ2_XXS -y`
 
 Model repository and documentation: [huggingface.co/nex-agi](https://huggingface.co/nex-agi/Nex-N2.6)
 

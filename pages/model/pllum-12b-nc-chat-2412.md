@@ -53,7 +53,7 @@ weighted average                        = 48.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
+2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
    
    ```sh
    llama cli -hf mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 48.9
    llama serve -hf mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `llama cli -hf mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q8_0`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `llama cli -hf mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
+2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
    
    ```sh
    lms get https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~13 GB) `llama cli -hf mradermacher/PLLuM-12B-nc-chat-2412
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF@Q8_0 -y` · 6bit (~10 GB, Mac only) `lms get https://huggingface.co/lukagra/PLLuM-12B-nc-chat-Q6-mlx -y`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `lms get https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF@Q8_0 -y` · 6bit (11.9 GB memory, 9.95 GB download, Mac only) `lms get https://huggingface.co/lukagra/PLLuM-12B-nc-chat-Q6-mlx -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/mradermacher/PLLuM
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
+2. Run PLLuM-12B-nc-chat (2412) (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF/tree/e9a95749452d83212a77640cacb155410b5b1036))
    
    ```sh
    ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q8_0`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2412-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~13 GB) `ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2
    pip install mlx-lm
    ```
 
-2. Run PLLuM-12B-nc-chat (2412) (6bit, needs ~10 GB, Mac only, from [huggingface.co/lukagra](https://huggingface.co/lukagra/PLLuM-12B-nc-chat-Q6-mlx/tree/9bc8d684b5da777275035c6296b2207e9c5a647d))
+2. Run PLLuM-12B-nc-chat (2412) (6bit, needs 11.9 GB memory, 9.95 GB download, Mac only, from [huggingface.co/lukagra](https://huggingface.co/lukagra/PLLuM-12B-nc-chat-Q6-mlx/tree/9bc8d684b5da777275035c6296b2207e9c5a647d))
    
    ```sh
    mlx_lm.chat --model lukagra/PLLuM-12B-nc-chat-Q6-mlx
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~13 GB) `ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~24.5 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-chat-2412/tree/4db4405f5402395e5c9662aea2ef71ce48ed81cd))
+1. Run it as published (BF16, needs 27.2 GB memory, 24.5 GB download, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-chat-2412/tree/4db4405f5402395e5c9662aea2ef71ce48ed81cd))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-nc-chat-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

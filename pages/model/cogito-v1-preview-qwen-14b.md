@@ -54,7 +54,7 @@ weighted average                        = 59.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs ~9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF/tree/c59178fd09c1fba714f43c4e06e439c531cddaea))
+2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF/tree/c59178fd09c1fba714f43c4e06e439c531cddaea))
    
    ```sh
    llama cli -hf lmstudio-community/cogito-v1-preview-qwen-14B-GGUF:Q4_K_M
@@ -66,13 +66,13 @@ weighted average                        = 59.9
    llama serve -hf lmstudio-community/cogito-v1-preview-qwen-14B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.7 GB) `llama cli -hf lmstudio-community/cogito-v1-preview-qwen-14B-GGUF:Q8_0`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `llama cli -hf lmstudio-community/cogito-v1-preview-qwen-14B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs ~9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF/tree/c59178fd09c1fba714f43c4e06e439c531cddaea))
+2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF/tree/c59178fd09c1fba714f43c4e06e439c531cddaea))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ Other versions: Q8_0 (~15.7 GB) `llama cli -hf lmstudio-community/cogito-v1-prev
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF@Q8_0 -y` · 4bit (~8.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit -y` · 8bit (~15.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-8bit -y`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-qwen-14B-GGUF@Q8_0 -y` · 4bit (10.2 GB memory, 8.31 GB download, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit -y` · 8bit (18 GB memory, 15.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-8bit -y`
 
 ### Ollama
 
@@ -91,7 +91,7 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs ~9 GB, from [ollama.com](https://ollama.com/library/cogito/tags))
+2. Run Cogito v1 Preview Qwen 14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [ollama.com](https://ollama.com/library/cogito/tags))
    
    ```sh
    ollama run cogito:14b
@@ -108,7 +108,7 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/lmstudio-communi
    pip install mlx-lm
    ```
 
-2. Run Cogito v1 Preview Qwen 14B (4bit, needs ~8.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit/tree/7dc8894687e06c5c9cc1885dddcde926c414fb26))
+2. Run Cogito v1 Preview Qwen 14B (4bit, needs 10.2 GB memory, 8.31 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit/tree/7dc8894687e06c5c9cc1885dddcde926c414fb26))
    
    ```sh
    mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/lmstudio-communi
    mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-qwen-14B-4bit
    ```
 
-Other versions: 8bit (~15.7 GB, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-qwen-14B-8bit`
+Other versions: 8bit (18 GB memory, 15.7 GB download, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-qwen-14B-8bit`
 
 Model repository and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B)
 

@@ -114,7 +114,7 @@ api (Alibaba Cloud Model Studio) · $0.60/M blended · $0.3 in / $1.5 out per 1M
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3-Coder-Next (80B-A3B) (ud-q2_k_xl, needs ~24.41 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/tree/main))
+2. Run Qwen3-Coder-Next (80B-A3B) (ud-q2_k_xl, needs 27.6 GB memory, 26.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Qwen3-Coder-Next-GGUF:UD-Q2_K_XL
@@ -130,7 +130,7 @@ api (Alibaba Cloud Model Studio) · $0.60/M blended · $0.3 in / $1.5 out per 1M
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3-Coder-Next (80B-A3B) (4bit, needs ~44.8 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit/tree/03cba26036330b7553d252c1f3fb899f16cc5ea5))
+2. Run Qwen3-Coder-Next (80B-A3B) (4bit, needs 45.6 GB memory, 44.8 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit/tree/03cba26036330b7553d252c1f3fb899f16cc5ea5))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit -y
@@ -138,7 +138,7 @@ api (Alibaba Cloud Model Studio) · $0.60/M blended · $0.3 in / $1.5 out per 1M
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~24.41 GB) `lms get https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF@UD-Q2_K_XL -y` · 8bit (~84.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-8bit -y`
+Other versions: ud-q2_k_xl (27.6 GB memory, 26.8 GB download) `lms get https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF@UD-Q2_K_XL -y` · 8bit (85.5 GB memory, 84.7 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-8bit -y`
 
 ### Ollama
 
@@ -149,7 +149,7 @@ Other versions: ud-q2_k_xl (~24.41 GB) `lms get https://huggingface.co/unsloth/Q
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3-Coder-Next (80B-A3B) (Q4_K_M, needs ~48.32 GB, from [ollama.com](https://ollama.com/library/qwen3-coder-next/tags))
+2. Run Qwen3-Coder-Next (80B-A3B) (Q4_K_M, needs 52.5 GB memory, 51.7 GB download, from [ollama.com](https://ollama.com/library/qwen3-coder-next/tags))
    
    ```sh
    ollama run qwen3-coder-next
@@ -166,7 +166,7 @@ Other versions: ud-q2_k_xl (~24.41 GB) `lms get https://huggingface.co/unsloth/Q
    pip install mlx-lm
    ```
 
-2. Run Qwen3-Coder-Next (80B-A3B) (4bit, needs ~44.8 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit/tree/03cba26036330b7553d252c1f3fb899f16cc5ea5))
+2. Run Qwen3-Coder-Next (80B-A3B) (4bit, needs 45.6 GB memory, 44.8 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit/tree/03cba26036330b7553d252c1f3fb899f16cc5ea5))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3-Coder-Next-MLX-4bit
@@ -178,7 +178,7 @@ Other versions: ud-q2_k_xl (~24.41 GB) `lms get https://huggingface.co/unsloth/Q
    mlx_lm.server --model lmstudio-community/Qwen3-Coder-Next-MLX-4bit
    ```
 
-Other versions: 8bit (~84.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-Next-MLX-8bit`
+Other versions: 8bit (85.5 GB memory, 84.7 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-Next-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Coder-Next)
 

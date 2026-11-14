@@ -93,7 +93,7 @@ weighted average                                   = 43.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenChat 3.5 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/openchat_3.5-GGUF/tree/9145d8078ca54b163b4b7f7d45cf525b63ee77f8))
+2. Run OpenChat 3.5 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/openchat_3.5-GGUF/tree/9145d8078ca54b163b4b7f7d45cf525b63ee77f8))
    
    ```sh
    llama cli -hf TheBloke/openchat_3.5-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = 43.2
    llama serve -hf TheBloke/openchat_3.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/openchat_3.5-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf TheBloke/openchat_3.5-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenChat 3.5 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/openchat_3.5-GGUF/tree/9145d8078ca54b163b4b7f7d45cf525b63ee77f8))
+2. Run OpenChat 3.5 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/openchat_3.5-GGUF/tree/9145d8078ca54b163b4b7f7d45cf525b63ee77f8))
    
    ```sh
    lms get https://huggingface.co/TheBloke/openchat_3.5-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/openchat_3.5-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/openchat_3.5-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/openchat_3.5-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -130,13 +130,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/openchat
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenChat 3.5 (Q4_K_M, needs ~4.7 GB, from [ollama.com](https://ollama.com/library/openchat/tags))
+2. Run OpenChat 3.5 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/openchat/tags))
    
    ```sh
    ollama run openchat:7b-v3.5-q4_K_M
    ```
 
-Other versions: Q8_0 (~8.9 GB) `ollama run openchat:7b-v3.5-q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run openchat:7b-v3.5-q8_0`
 
 Model repository and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat_3.5)
 

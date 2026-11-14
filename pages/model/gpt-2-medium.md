@@ -92,7 +92,7 @@ weighted average                                   = -5.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GPT-2 Medium (355M) (Q4_K_M, needs ~0.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
+2. Run GPT-2 Medium (355M) (Q4_K_M, needs 1.8 GB memory, 0.27 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
    
    ```sh
    llama cli -hf mradermacher/gpt2-medium-GGUF:Q4_K_M
@@ -104,13 +104,13 @@ weighted average                                   = -5.2
    llama serve -hf mradermacher/gpt2-medium-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.4 GB) `llama cli -hf mradermacher/gpt2-medium-GGUF:Q8_0`
+Other versions: Q8_0 (2 GB memory, 0.44 GB download) `llama cli -hf mradermacher/gpt2-medium-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GPT-2 Medium (355M) (Q4_K_M, needs ~0.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
+2. Run GPT-2 Medium (355M) (Q4_K_M, needs 1.8 GB memory, 0.27 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gpt2-medium-GGUF@Q4_K_M -y
@@ -118,7 +118,7 @@ Other versions: Q8_0 (~0.4 GB) `llama cli -hf mradermacher/gpt2-medium-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.4 GB) `lms get https://huggingface.co/mradermacher/gpt2-medium-GGUF@Q8_0 -y` · 8bit (~0.4 GB, Mac only) `lms get https://huggingface.co/viktor2698/gpt2-medium-mlx-8Bit -y`
+Other versions: Q8_0 (2 GB memory, 0.44 GB download) `lms get https://huggingface.co/mradermacher/gpt2-medium-GGUF@Q8_0 -y` · 8bit (1.9 GB memory, 0.4 GB download, Mac only) `lms get https://huggingface.co/viktor2698/gpt2-medium-mlx-8Bit -y`
 
 ### Ollama
 
@@ -129,13 +129,13 @@ Other versions: Q8_0 (~0.4 GB) `lms get https://huggingface.co/mradermacher/gpt2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GPT-2 Medium (355M) (Q4_K_M, needs ~0.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
+2. Run GPT-2 Medium (355M) (Q4_K_M, needs 1.8 GB memory, 0.27 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-medium-GGUF/tree/3b9897d67a84e967fbcc8d7de3db4c797e386740))
    
    ```sh
    ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.4 GB) `ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q8_0`
+Other versions: Q8_0 (2 GB memory, 0.44 GB download) `ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -148,7 +148,7 @@ Other versions: Q8_0 (~0.4 GB) `ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q
    pip install mlx-lm
    ```
 
-2. Run GPT-2 Medium (355M) (8bit, needs ~0.4 GB, Mac only, from [huggingface.co/viktor2698](https://huggingface.co/viktor2698/gpt2-medium-mlx-8Bit/tree/8bb3814b1fcfa9d04b3d051102b19d44b3e5064f))
+2. Run GPT-2 Medium (355M) (8bit, needs 1.9 GB memory, 0.4 GB download, Mac only, from [huggingface.co/viktor2698](https://huggingface.co/viktor2698/gpt2-medium-mlx-8Bit/tree/8bb3814b1fcfa9d04b3d051102b19d44b3e5064f))
    
    ```sh
    mlx_lm.chat --model viktor2698/gpt2-medium-mlx-8Bit
@@ -162,7 +162,7 @@ Other versions: Q8_0 (~0.4 GB) `ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~1.52 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-medium/tree/6dcaa7a952f72f9298047fd5137cd6e4f05f41da))
+1. Run it as published (fp32, needs 3.1 GB memory, 1.52 GB download, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-medium/tree/6dcaa7a952f72f9298047fd5137cd6e4f05f41da))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-medium')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

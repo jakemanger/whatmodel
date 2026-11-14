@@ -91,7 +91,7 @@ weighted average                                   = 40.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 13B Instruct (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF/tree/82f1dd9567b9b20b7e8f8aa9ecf3d2f121e5d415))
+2. Run Code Llama 13B Instruct (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF/tree/82f1dd9567b9b20b7e8f8aa9ecf3d2f121e5d415))
    
    ```sh
    llama cli -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q4_K_M
@@ -103,13 +103,13 @@ weighted average                                   = 40.0
    llama serve -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `llama cli -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 13B Instruct (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF/tree/82f1dd9567b9b20b7e8f8aa9ecf3d2f121e5d415))
+2. Run Code Llama 13B Instruct (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF/tree/82f1dd9567b9b20b7e8f8aa9ecf3d2f121e5d415))
    
    ```sh
    lms get https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/CodeLlama-13B-Instruct-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF@Q8_0 -y` · 8bit (~13.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx -y`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `lms get https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF@Q8_0 -y` · 8bit (20.9 GB memory, 13.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx -y`
 
 ### Ollama
 
@@ -128,13 +128,13 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/CodeLla
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 13B Instruct (Q4_K_M, needs ~7.9 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 13B Instruct (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:13b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~14 GB) `ollama run codellama:13b-instruct-q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `ollama run codellama:13b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~14 GB) `ollama run codellama:13b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Code Llama 13B Instruct (8bit, needs ~13.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx/tree/e87538682c2189e6cd58adfe7a975db7a3438ca5))
+2. Run Code Llama 13B Instruct (8bit, needs 20.9 GB memory, 13.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx/tree/e87538682c2189e6cd58adfe7a975db7a3438ca5))
    
    ```sh
    mlx_lm.chat --model mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx

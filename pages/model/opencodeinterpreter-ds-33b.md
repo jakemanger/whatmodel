@@ -58,7 +58,7 @@ weighted average                                   = 51.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
+2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
    
    ```sh
    llama cli -hf mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 51.2
    llama serve -hf mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `llama cli -hf mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `llama cli -hf mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
+2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
    
    ```sh
    lms get https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~35.4 GB) `llama cli -hf mradermacher/OpenCodeInterpreter-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF@Q8_0 -y` · 4bit (~19.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/OpenCodeInterpreter-DS-33B-hf-4bit-mlx -y`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `lms get https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF@Q8_0 -y` · 4bit (21.6 GB memory, 19.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/OpenCodeInterpreter-DS-33B-hf-4bit-mlx -y`
 
 ### Ollama
 
@@ -95,13 +95,13 @@ Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/mradermacher/Ope
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
+2. Run OpenCodeInterpreter-DS-33B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF/tree/22e217e2df0346670c39d7de285d8f78d9a2304a))
    
    ```sh
    ollama run hf.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `ollama run hf.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q8_0`
+Other versions: Q8_0 (38.7 GB memory, 35.4 GB download) `ollama run hf.co/mradermacher/OpenCodeInterpreter-DS-33B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~35.4 GB) `ollama run hf.co/mradermacher/OpenCodeInterpret
    pip install mlx-lm
    ```
 
-2. Run OpenCodeInterpreter-DS-33B (4bit, needs ~19.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/OpenCodeInterpreter-DS-33B-hf-4bit-mlx/tree/889f9a13b4be5dcdbed710ab26136a00d63dc6df))
+2. Run OpenCodeInterpreter-DS-33B (4bit, needs 21.6 GB memory, 19.1 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/OpenCodeInterpreter-DS-33B-hf-4bit-mlx/tree/889f9a13b4be5dcdbed710ab26136a00d63dc6df))
    
    ```sh
    mlx_lm.chat --model mlx-community/OpenCodeInterpreter-DS-33B-hf-4bit-mlx
@@ -128,7 +128,7 @@ Other versions: Q8_0 (~35.4 GB) `ollama run hf.co/mradermacher/OpenCodeInterpret
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~66.69 GB, from [huggingface.co/m-a-p](https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-33B/tree/c7d9400bd7d099d22c971046ba7f455dab91ee8a))
+1. Run it as published (BF16, needs 71.5 GB memory, 66.7 GB download, from [huggingface.co/m-a-p](https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-33B/tree/c7d9400bd7d099d22c971046ba7f455dab91ee8a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='m-a-p/OpenCodeInterpreter-DS-33B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

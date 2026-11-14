@@ -163,7 +163,7 @@ api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hunyuan Hy3 (295B-A21B) (Q4_K_M, needs ~179.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hy3-GGUF/tree/main))
+2. Run Hunyuan Hy3 (295B-A21B) (Q4_K_M, needs 185 GB memory, 182.2 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hy3-GGUF/tree/main))
    
    ```sh
    llama cli -hf bartowski/Hy3-GGUF:Q4_K_M
@@ -175,13 +175,13 @@ api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [de
    llama serve -hf bartowski/Hy3-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_M (~90.2 GB) `llama cli -hf bartowski/Hy3-GGUF:IQ2_M`
+Other versions: IQ2_M (105 GB memory, 102.1 GB download) `llama cli -hf bartowski/Hy3-GGUF:IQ2_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hunyuan Hy3 (295B-A21B) (Q4_K_M, needs ~179.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hy3-GGUF/tree/main))
+2. Run Hunyuan Hy3 (295B-A21B) (Q4_K_M, needs 185 GB memory, 182.2 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hy3-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/bartowski/Hy3-GGUF@Q4_K_M -y
@@ -189,7 +189,7 @@ Other versions: IQ2_M (~90.2 GB) `llama cli -hf bartowski/Hy3-GGUF:IQ2_M`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_M (~90.2 GB) `lms get https://huggingface.co/bartowski/Hy3-GGUF@IQ2_M -y`
+Other versions: IQ2_M (105 GB memory, 102.1 GB download) `lms get https://huggingface.co/bartowski/Hy3-GGUF@IQ2_M -y`
 
 Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/Hy3)
 

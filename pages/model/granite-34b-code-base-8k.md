@@ -71,7 +71,7 @@ weighted average                                   = 43.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 34B Code Base (8K) (Q4_K_M, needs ~21.38 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
+2. Run Granite 34B Code Base (8K) (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
    
    ```sh
    llama cli -hf ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
@@ -87,7 +87,7 @@ weighted average                                   = 43.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 34B Code Base (8K) (Q4_K_M, needs ~21.38 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
+2. Run Granite 34B Code Base (8K) (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF@Q4_K_M -y
@@ -104,7 +104,7 @@ weighted average                                   = 43.2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 34B Code Base (8K) (Q4_K_M, needs ~21.38 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
+2. Run Granite 34B Code Base (8K) (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF/tree/db10e16bac727ffd53037253b50c04a7f5b8fca5))
    
    ```sh
    ollama run hf.co/ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M

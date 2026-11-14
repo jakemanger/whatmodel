@@ -66,7 +66,7 @@ weighted average                              = 56.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
+2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
    
    ```sh
    llama cli -hf bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q4_K_M
@@ -78,13 +78,13 @@ weighted average                              = 56.2
    llama serve -hf bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
+2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
    
    ```sh
    lms get https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF@Q4_K_M -y
@@ -92,7 +92,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/Gemma-2-9B-It-SPPO-Iter3
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF@Q8_0 -y` · 4bit (~5.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit -y` · 8bit (~9.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-8bit -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF@Q8_0 -y` · 4bit (7 GB memory, 5.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit -y` · 8bit (11.8 GB memory, 9.82 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-8bit -y`
 
 ### Ollama
 
@@ -103,13 +103,13 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/Gemma-2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
+2. Run Gemma-2-9B-It-SPPO-Iter3 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF/tree/08854df1d2c4b23a4534d6e8b353779150185216))
    
    ```sh
    ollama run hf.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/bartowski/Gemma-2-9B-It-SPPO-Iter3-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/Gemma-2-9B-It-SPPO-It
    pip install mlx-lm
    ```
 
-2. Run Gemma-2-9B-It-SPPO-Iter3 (4bit, needs ~5.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit/tree/379134a06cb7cb2e51f25201d85b286230285482))
+2. Run Gemma-2-9B-It-SPPO-Iter3 (4bit, needs 7 GB memory, 5.2 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit/tree/379134a06cb7cb2e51f25201d85b286230285482))
    
    ```sh
    mlx_lm.chat --model mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit
@@ -134,11 +134,11 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/Gemma-2-9B-It-SPPO-It
    mlx_lm.server --model mlx-community/Gemma-2-9B-It-SPPO-Iter3-4bit
    ```
 
-Other versions: 8bit (~9.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Gemma-2-9B-It-SPPO-Iter3-8bit`
+Other versions: 8bit (11.8 GB memory, 9.82 GB download, Mac only) `mlx_lm.chat --model mlx-community/Gemma-2-9B-It-SPPO-Iter3-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3/tree/2261f2a03b2e15de13a18da52590c237ecf5f188))
+1. Run it as published (BF16, needs 20.9 GB memory, 18.5 GB download, from [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3/tree/2261f2a03b2e15de13a18da52590c237ecf5f188))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

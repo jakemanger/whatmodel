@@ -135,7 +135,7 @@ Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.32
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs ~19.7 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
+2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
    
    ```sh
    llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
@@ -147,13 +147,13 @@ Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.32
    llama serve -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~38.9 GB) `llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (37.2 GB memory, 34 GB download) `llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs ~19.7 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
+2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF@Q4_K_M -y
@@ -161,7 +161,7 @@ Other versions: gguf-q8_0 (~38.9 GB) `llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~38.9 GB) `lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF@Q8_0 -y` · 4bit (~18 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-4bit -y` · 8bit (~34 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-8bit -y`
+Other versions: gguf-q8_0 (37.2 GB memory, 34 GB download) `lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF@Q8_0 -y` · 4bit (20.4 GB memory, 18 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-4bit -y` · 8bit (37.2 GB memory, 34 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-8bit -y`
 
 ### Ollama
 
@@ -172,13 +172,13 @@ Other versions: gguf-q8_0 (~38.9 GB) `lms get https://huggingface.co/LGAI-EXAONE
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs ~19.7 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
+2. Run EXAONE 4.0 32B (gguf-q4_k_m, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~38.9 GB) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (37.2 GB memory, 34 GB download) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -191,7 +191,7 @@ Other versions: gguf-q8_0 (~38.9 GB) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32
    pip install mlx-lm
    ```
 
-2. Run EXAONE 4.0 32B (4bit, needs ~18 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-4bit/tree/8ecfb4e16c899b9acdf9a20cf4855ae7dc622728))
+2. Run EXAONE 4.0 32B (4bit, needs 20.4 GB memory, 18 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-4bit/tree/8ecfb4e16c899b9acdf9a20cf4855ae7dc622728))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-4bit
@@ -203,7 +203,7 @@ Other versions: gguf-q8_0 (~38.9 GB) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32
    mlx_lm.server --model lmstudio-community/EXAONE-4.0-32B-MLX-4bit
    ```
 
-Other versions: 8bit (~34 GB, Mac only) `mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-8bit`
+Other versions: 8bit (37.2 GB memory, 34 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B)
 

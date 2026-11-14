@@ -69,7 +69,7 @@ weighted average                                   = 28.6
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~352.49 GB, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom/tree/7f10a99ce7c08f03c7719a586cb2cbda1433ac05))
+1. Run it as published (BF16, needs 372 GB memory, 352.5 GB download, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom/tree/7f10a99ce7c08f03c7719a586cb2cbda1433ac05))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

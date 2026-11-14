@@ -98,7 +98,7 @@ weighted average                                   = 59.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs ~8.1 GB, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
+2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs 10 GB memory, 8.07 GB download, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
    
    ```sh
    llama cli -hf JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q4_K_M
@@ -110,13 +110,13 @@ weighted average                                   = 59.7
    llama serve -hf JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~12.9 GB) `llama cli -hf JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (15 GB memory, 12.9 GB download) `llama cli -hf JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs ~8.1 GB, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
+2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs 10 GB memory, 8.07 GB download, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
    
    ```sh
    lms get https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF@Q4_K_M -y
@@ -124,7 +124,7 @@ Other versions: Q8_0 (~12.9 GB) `llama cli -hf JetBrains/Mellum2.1-12B-A2.5B-Thi
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF@Q8_0 -y` · mxfp4 (~6.5 GB, Mac only) `lms get https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4 -y`
+Other versions: Q8_0 (15 GB memory, 12.9 GB download) `lms get https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF@Q8_0 -y` · mxfp4 (8.3 GB memory, 6.46 GB download, Mac only) `lms get https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4 -y`
 
 ### Ollama
 
@@ -135,13 +135,13 @@ Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/JetBrains/Mellum
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs ~8.1 GB, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
+2. Run Mellum2.1 12B-A2.5B Thinking (Q4_K_M, needs 10 GB memory, 8.07 GB download, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/tree/20b439426f1e997ba575eaccaf4856ac0f76f5d5))
    
    ```sh
    ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (15 GB memory, 12.9 GB download) `ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -154,7 +154,7 @@ Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-
    pip install mlx-lm
    ```
 
-2. Run Mellum2.1 12B-A2.5B Thinking (mxfp4, needs ~6.5 GB, Mac only, from [huggingface.co/randmaru](https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4/tree/96b37c8dd154d230ddb5fcc601405b496e3bafe8))
+2. Run Mellum2.1 12B-A2.5B Thinking (mxfp4, needs 8.3 GB memory, 6.46 GB download, Mac only, from [huggingface.co/randmaru](https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4/tree/96b37c8dd154d230ddb5fcc601405b496e3bafe8))
    
    ```sh
    mlx_lm.chat --model randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4
@@ -168,7 +168,7 @@ Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~24.3 GB, NVIDIA only, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/tree/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4))
+1. Run it as published (BF16, needs 27 GB memory, 24.3 GB download, NVIDIA only, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/tree/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4))
    
    ```sh
    vllm serve JetBrains/Mellum2.1-12B-A2.5B-Thinking

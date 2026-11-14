@@ -82,7 +82,7 @@ weighted average                                   = 27.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GPT-NeoX-20B (Q4_K_M, needs ~13.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
+2. Run GPT-NeoX-20B (Q4_K_M, needs 15.3 GB memory, 13.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
    
    ```sh
    llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q4_K_M
@@ -94,13 +94,13 @@ weighted average                                   = 27.8
    llama serve -hf mradermacher/gpt-neox-20b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.9 GB) `llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q8_0`
+Other versions: Q8_0 (24.5 GB memory, 21.9 GB download) `llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GPT-NeoX-20B (Q4_K_M, needs ~13.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
+2. Run GPT-NeoX-20B (Q4_K_M, needs 15.3 GB memory, 13.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gpt-neox-20b-GGUF@Q4_K_M -y
@@ -108,7 +108,7 @@ Other versions: Q8_0 (~21.9 GB) `llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~21.9 GB) `lms get https://huggingface.co/mradermacher/gpt-neox-20b-GGUF@Q8_0 -y` · 4bit (~11.6 GB, Mac only) `lms get https://huggingface.co/nhe-ai/gpt-neox-20b-mlx-4Bit -y`
+Other versions: Q8_0 (24.5 GB memory, 21.9 GB download) `lms get https://huggingface.co/mradermacher/gpt-neox-20b-GGUF@Q8_0 -y` · 4bit (13.7 GB memory, 11.6 GB download, Mac only) `lms get https://huggingface.co/nhe-ai/gpt-neox-20b-mlx-4Bit -y`
 
 ### Ollama
 
@@ -119,13 +119,13 @@ Other versions: Q8_0 (~21.9 GB) `lms get https://huggingface.co/mradermacher/gpt
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GPT-NeoX-20B (Q4_K_M, needs ~13.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
+2. Run GPT-NeoX-20B (Q4_K_M, needs 15.3 GB memory, 13.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt-neox-20b-GGUF/tree/25e46ca846af35af8abb3eb364f7ef070c9b2783))
    
    ```sh
    ollama run hf.co/mradermacher/gpt-neox-20b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.9 GB) `ollama run hf.co/mradermacher/gpt-neox-20b-GGUF:Q8_0`
+Other versions: Q8_0 (24.5 GB memory, 21.9 GB download) `ollama run hf.co/mradermacher/gpt-neox-20b-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -138,7 +138,7 @@ Other versions: Q8_0 (~21.9 GB) `ollama run hf.co/mradermacher/gpt-neox-20b-GGUF
    pip install mlx-lm
    ```
 
-2. Run GPT-NeoX-20B (4bit, needs ~11.6 GB, Mac only, from [huggingface.co/nhe-ai](https://huggingface.co/nhe-ai/gpt-neox-20b-mlx-4Bit/tree/1bfe032513d6c728e4cb3b9dfca06dbbf97574b1))
+2. Run GPT-NeoX-20B (4bit, needs 13.7 GB memory, 11.6 GB download, Mac only, from [huggingface.co/nhe-ai](https://huggingface.co/nhe-ai/gpt-neox-20b-mlx-4Bit/tree/1bfe032513d6c728e4cb3b9dfca06dbbf97574b1))
    
    ```sh
    mlx_lm.chat --model nhe-ai/gpt-neox-20b-mlx-4Bit
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~21.9 GB) `ollama run hf.co/mradermacher/gpt-neox-20b-GGUF
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~41.29 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neox-20b/tree/c292233c833e336628618a88a648727eb3dff0a7))
+1. Run it as published (fp16, needs 44.9 GB memory, 41.3 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neox-20b/tree/c292233c833e336628618a88a648727eb3dff0a7))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neox-20b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

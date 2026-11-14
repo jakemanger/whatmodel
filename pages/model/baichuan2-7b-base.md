@@ -55,7 +55,7 @@ weighted average                          = 30.4
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~15.01 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan2-7B-Base/tree/f9d4d8dd2f7a3dbede3bda3b0cf0224e9272bbe5))
+1. Run it as published (BF16, needs 17.3 GB memory, 15 GB download, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan2-7B-Base/tree/f9d4d8dd2f7a3dbede3bda3b0cf0224e9272bbe5))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan2-7B-Base', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

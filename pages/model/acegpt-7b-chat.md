@@ -65,7 +65,7 @@ weighted average                              = 41.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run AceGPT-7B-chat (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
+2. Run AceGPT-7B-chat (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
    
    ```sh
    llama cli -hf mradermacher/AceGPT-7B-chat-GGUF:Q4_K_M
@@ -77,13 +77,13 @@ weighted average                              = 41.3
    llama serve -hf mradermacher/AceGPT-7B-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/AceGPT-7B-chat-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf mradermacher/AceGPT-7B-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run AceGPT-7B-chat (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
+2. Run AceGPT-7B-chat (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
    
    ```sh
    lms get https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF@Q4_K_M -y
@@ -91,7 +91,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/AceGPT-7B-chat-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -102,17 +102,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/AceG
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run AceGPT-7B-chat (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
+2. Run AceGPT-7B-chat (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AceGPT-7B-chat-GGUF/tree/5bfb44580c76bb7c09a62591e3f4e0edac8d8f31))
    
    ```sh
    ollama run hf.co/mradermacher/AceGPT-7B-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/AceGPT-7B-chat-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/mradermacher/AceGPT-7B-chat-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~22.47 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-7B-chat/tree/252565c18ff2af096d2d588438e3a103fd174d2b))
+1. Run it as published (fp16, needs 25.1 GB memory, 22.5 GB download, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-7B-chat/tree/252565c18ff2af096d2d588438e3a103fd174d2b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-7B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

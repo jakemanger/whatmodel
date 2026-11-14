@@ -56,7 +56,7 @@ weighted average                              = 44.8
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~43.65 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat/tree/ab87ccbc2c4a05969957755aaabc04400bb20052))
+1. Run it as published (fp16, needs 47.3 GB memory, 43.6 GB download, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat/tree/ab87ccbc2c4a05969957755aaabc04400bb20052))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-13B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

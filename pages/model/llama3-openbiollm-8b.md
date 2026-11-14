@@ -57,7 +57,7 @@ weighted average                               = 40.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
    
    ```sh
    llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                               = 40.9
    llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q8_0 -y` · 4bit (~5.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q8_0 -y` · 4bit (7 GB memory, 5.27 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Llam
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
    
    ```sh
    ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-
    pip install mlx-lm
    ```
 
-2. Run Llama3-OpenBioLLM-8B (4bit, needs ~5.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B/tree/0ede5ea7a61964dac781e660cce8706ae091c4ac))
+2. Run Llama3-OpenBioLLM-8B (4bit, needs 7 GB memory, 5.27 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B/tree/0ede5ea7a61964dac781e660cce8706ae091c4ac))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama3-OpenBioLLM-8B
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B/tree/70d6bb521cab6ca755b675ade38831eedf89d31c))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B/tree/70d6bb521cab6ca755b675ade38831eedf89d31c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

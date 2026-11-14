@@ -64,7 +64,7 @@ weighted average                                   = 29.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StableLM-3B-4E1T (Q4_K_M, needs ~1.7 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
+2. Run StableLM-3B-4E1T (Q4_K_M, needs 3.3 GB memory, 1.71 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
    
    ```sh
    llama cli -hf afrideva/stablelm-3b-4e1t-GGUF:q4_k_m
@@ -76,13 +76,13 @@ weighted average                                   = 29.5
    llama serve -hf afrideva/stablelm-3b-4e1t-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~3 GB) `llama cli -hf afrideva/stablelm-3b-4e1t-GGUF:q8_0`
+Other versions: Q8_0 (4.6 GB memory, 2.97 GB download) `llama cli -hf afrideva/stablelm-3b-4e1t-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StableLM-3B-4E1T (Q4_K_M, needs ~1.7 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
+2. Run StableLM-3B-4E1T (Q4_K_M, needs 3.3 GB memory, 1.71 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
    
    ```sh
    lms get https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF@q4_k_m -y
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~3 GB) `llama cli -hf afrideva/stablelm-3b-4e1t-GGUF:q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF@q8_0 -y`
+Other versions: Q8_0 (4.6 GB memory, 2.97 GB download) `lms get https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF@q8_0 -y`
 
 ### Ollama
 
@@ -101,17 +101,17 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/afrideva/stablelm-3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StableLM-3B-4E1T (Q4_K_M, needs ~1.7 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
+2. Run StableLM-3B-4E1T (Q4_K_M, needs 3.3 GB memory, 1.71 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-3b-4e1t-GGUF/tree/b98fb0ffeac9463a05bf97a1da5104526658c2eb))
    
    ```sh
    ollama run hf.co/afrideva/stablelm-3b-4e1t-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~3 GB) `ollama run hf.co/afrideva/stablelm-3b-4e1t-GGUF:q8_0`
+Other versions: Q8_0 (4.6 GB memory, 2.97 GB download) `ollama run hf.co/afrideva/stablelm-3b-4e1t-GGUF:q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~5.59 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-3b-4e1t/tree/fa4a6a92fca83c3b4223a3c9bf792887090ebfba))
+1. Run it as published (BF16, needs 7.4 GB memory, 5.59 GB download, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-3b-4e1t/tree/fa4a6a92fca83c3b4223a3c9bf792887090ebfba))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-3b-4e1t')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

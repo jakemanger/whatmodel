@@ -53,7 +53,7 @@ weighted average                        = 36.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
+2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
    
    ```sh
    llama cli -hf TheBloke/vicuna-7B-v1.5-16K-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 36.1
    llama serve -hf TheBloke/vicuna-7B-v1.5-16K-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/vicuna-7B-v1.5-16K-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf TheBloke/vicuna-7B-v1.5-16K-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
+2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
    
    ```sh
    lms get https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/vicuna-7B-v1.5-16K-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/vicuna-7
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
+2. Run Vicuna 7B v1.5 16K (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/vicuna-7B-v1.5-16K-GGUF/tree/3bba9cf70ec71ec7d78c2039340e5944aff51a38))
    
    ```sh
    ollama run hf.co/TheBloke/vicuna-7B-v1.5-16K-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/vicuna-7B-v1.5-16K-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/TheBloke/vicuna-7B-v1.5-16K-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~13.48 GB, from [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k/tree/c8df3ca4436a3bce5c4b5877e0117032081852b4))
+1. Run it as published (fp16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k/tree/c8df3ca4436a3bce5c4b5877e0117032081852b4))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='lmsys/vicuna-7b-v1.5-16k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

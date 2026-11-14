@@ -53,7 +53,7 @@ weighted average                                   = 51.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs ~4.5 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
+2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs 6.2 GB memory, 4.5 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
    
    ```sh
    llama cli -hf speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                                   = 51.5
    llama serve -hf speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.9 GB) `llama cli -hf speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9.8 GB memory, 7.95 GB download) `llama cli -hf speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs ~4.5 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
+2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs 6.2 GB memory, 4.5 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
    
    ```sh
    lms get https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~7.9 GB) `llama cli -hf speakleash/Bielik-Minitron-7B-v3.0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.9 GB) `lms get https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF@Q8_0 -y` · 4bit (~4.2 GB, Mac only) `lms get https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit -y` · 8bit (~7.9 GB, Mac only) `lms get https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-8Bit -y`
+Other versions: Q8_0 (9.8 GB memory, 7.95 GB download) `lms get https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF@Q8_0 -y` · 4bit (5.9 GB memory, 4.21 GB download, Mac only) `lms get https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit -y` · 8bit (9.8 GB memory, 7.95 GB download, Mac only) `lms get https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-8Bit -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~7.9 GB) `lms get https://huggingface.co/speakleash/Bielik
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs ~4.5 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
+2. Run Bielik Minitron 7B v3.0 Instruct (Q4_K_M, needs 6.2 GB memory, 4.5 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF/tree/8f973025458d5119b688e3b60ee1ca40ffd8313d))
    
    ```sh
    ollama run hf.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.9 GB) `ollama run hf.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9.8 GB memory, 7.95 GB download) `ollama run hf.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~7.9 GB) `ollama run hf.co/speakleash/Bielik-Minitron-7B-v
    pip install mlx-lm
    ```
 
-2. Run Bielik Minitron 7B v3.0 Instruct (4bit, needs ~4.2 GB, Mac only, from [huggingface.co/lukagra](https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit/tree/faba58aea2d2793b8084c95960b009466f46b462))
+2. Run Bielik Minitron 7B v3.0 Instruct (4bit, needs 5.9 GB memory, 4.21 GB download, Mac only, from [huggingface.co/lukagra](https://huggingface.co/lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit/tree/faba58aea2d2793b8084c95960b009466f46b462))
    
    ```sh
    mlx_lm.chat --model lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit
@@ -121,11 +121,11 @@ Other versions: Q8_0 (~7.9 GB) `ollama run hf.co/speakleash/Bielik-Minitron-7B-v
    mlx_lm.server --model lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-4Bit
    ```
 
-Other versions: 8bit (~7.9 GB, Mac only) `mlx_lm.chat --model lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-8Bit`
+Other versions: 8bit (9.8 GB memory, 7.95 GB download, Mac only) `mlx_lm.chat --model lukagra/Bielik-Minitron-7B-v3.0-Instruct-mlx-8Bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.96 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct/tree/5808ff03c95122d05cb860d11ba75b1efad98380))
+1. Run it as published (BF16, needs 17.3 GB memory, 15 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct/tree/5808ff03c95122d05cb860d11ba75b1efad98380))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-Minitron-7B-v3.0-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

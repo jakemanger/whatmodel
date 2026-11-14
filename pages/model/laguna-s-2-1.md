@@ -78,7 +78,7 @@ Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-S-2.1/
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs 98.1 GB memory, 96 GB download, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
    
    ```sh
    llama cli -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
@@ -90,13 +90,13 @@ Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-S-2.1/
    llama serve -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~128.8 GB) `llama cli -hf poolside/Laguna-S-2.1-GGUF:Q8_0`
+Other versions: Q8_0 (131 GB memory, 128.8 GB download) `llama cli -hf poolside/Laguna-S-2.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs 98.1 GB memory, 96 GB download, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
    
    ```sh
    lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q4_K_M -y
@@ -104,7 +104,7 @@ Other versions: Q8_0 (~128.8 GB) `llama cli -hf poolside/Laguna-S-2.1-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~128.8 GB) `lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q8_0 -y` · 4bit (~66.1 GB, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit -y` · 8bit (~124.9 GB, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-8bit -y`
+Other versions: Q8_0 (131 GB memory, 128.8 GB download) `lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q8_0 -y` · 4bit (68.2 GB memory, 66.1 GB download, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit -y` · 8bit (127 GB memory, 124.9 GB download, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-8bit -y`
 
 ### Ollama
 
@@ -115,13 +115,13 @@ Other versions: Q8_0 (~128.8 GB) `lms get https://huggingface.co/poolside/Laguna
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [ollama.com](https://ollama.com/library/laguna-s-2.1/tags))
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs 98.1 GB memory, 96 GB download, from [ollama.com](https://ollama.com/library/laguna-s-2.1/tags))
    
    ```sh
    ollama run laguna-s-2.1:q4_K_M
    ```
 
-Other versions: Q8_0 (~128 GB) `ollama run laguna-s-2.1:q8_0`
+Other versions: Q8_0 (130 GB memory, 127.7 GB download) `ollama run laguna-s-2.1:q8_0`
 
 ### MLX (Mac)
 
@@ -134,7 +134,7 @@ Other versions: Q8_0 (~128 GB) `ollama run laguna-s-2.1:q8_0`
    pip install mlx-lm
    ```
 
-2. Run Laguna S 2.1 (118B-A8B) (4bit, needs ~66.1 GB, Mac only, from [huggingface.co/TensorFold](https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit/tree/df803a073dfef42c3e90cd795ad490aef65846b9))
+2. Run Laguna S 2.1 (118B-A8B) (4bit, needs 68.2 GB memory, 66.1 GB download, Mac only, from [huggingface.co/TensorFold](https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit/tree/df803a073dfef42c3e90cd795ad490aef65846b9))
    
    ```sh
    mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-4bit
@@ -146,11 +146,11 @@ Other versions: Q8_0 (~128 GB) `ollama run laguna-s-2.1:q8_0`
    mlx_lm.server --model TensorFold/Laguna-S-2.1-MLX-4bit
    ```
 
-Other versions: 8bit (~124.9 GB, Mac only) `mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-8bit`
+Other versions: 8bit (127 GB memory, 124.9 GB download, Mac only) `mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~235.13 GB, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md))
+1. Run it as published (BF16, needs 237 GB memory, 235.1 GB download, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md))
    
    ```sh
    vllm serve --model poolside/Laguna-S-2.1 --tensor-parallel-size 4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'

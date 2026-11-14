@@ -129,7 +129,7 @@ weighted average                                   = 58.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Spark-X2.6 1.7B (Q4_K_M, needs ~1.7687 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
+2. Run Spark-X2.6 1.7B (Q4_K_M, needs 3.4 GB memory, 1.77 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
    
    ```sh
    llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF
@@ -141,13 +141,13 @@ weighted average                                   = 58.3
    llama serve -hf XHToken/Spark-X2.6-1.7B-GGUF
    ```
 
-Other versions: Q8_0 (~1.8201 GB) `llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF` · BF16 (~3.4209 GB) `llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF`
+Other versions: Q8_0 (3.4 GB memory, 1.82 GB download) `llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF` · BF16 (5.1 GB memory, 3.42 GB download) `llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Spark-X2.6 1.7B (Q4_K_M, needs ~1.7687 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
+2. Run Spark-X2.6 1.7B (Q4_K_M, needs 3.4 GB memory, 1.77 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
    
    ```sh
    lms get https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF -y
@@ -155,7 +155,7 @@ Other versions: Q8_0 (~1.8201 GB) `llama cli -hf XHToken/Spark-X2.6-1.7B-GGUF` �
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.8201 GB) `lms get https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF -y` · BF16 (~3.4209 GB) `lms get https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF -y`
+Other versions: Q8_0 (3.4 GB memory, 1.82 GB download) `lms get https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF -y` · BF16 (5.1 GB memory, 3.42 GB download) `lms get https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF -y`
 
 ### Ollama
 
@@ -166,13 +166,13 @@ Other versions: Q8_0 (~1.8201 GB) `lms get https://huggingface.co/XHToken/Spark-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Spark-X2.6 1.7B (Q4_K_M, needs ~1.7687 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
+2. Run Spark-X2.6 1.7B (Q4_K_M, needs 3.4 GB memory, 1.77 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0))
    
    ```sh
    ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF
    ```
 
-Other versions: Q8_0 (~1.8201 GB) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF` · BF16 (~3.4209 GB) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF`
+Other versions: Q8_0 (3.4 GB memory, 1.82 GB download) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF` · BF16 (5.1 GB memory, 3.42 GB download) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF`
 
 Model repository and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B)
 

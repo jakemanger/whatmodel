@@ -84,12 +84,12 @@ weighted average                                 = 50.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WizardLM-2 8x22B (Q4_0, needs ~85.1 GB, from [ollama.com](https://ollama.com/library/wizardlm2/tags))
+2. Run WizardLM-2 8x22B (Q4_0, needs 85 GB memory, 79.5 GB download, from [ollama.com](https://ollama.com/library/wizardlm2/tags))
    
    ```sh
    ollama run wizardlm2:8x22b
    ```
 
-Other versions: Q8_0 (~169.7 GB) `ollama run wizardlm2:8x22b-q8_0`
+Other versions: Q8_0 (158 GB memory, 149.4 GB download) `ollama run wizardlm2:8x22b-q8_0`
 
 [interactive version](https://whatmodel.sh/model/wizardlm-2-8x22b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

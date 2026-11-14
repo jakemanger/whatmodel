@@ -36,7 +36,7 @@ BrowseComp with context management   59.0%  maker        <a href="https://huggin
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs 7.6 GB memory, 5.59 GB download, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
    
    ```sh
    llama cli -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
@@ -48,13 +48,13 @@ BrowseComp with context management   59.0%  maker        <a href="https://huggin
    llama serve -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~11.3 GB) `llama cli -hf IFM/K2-Horizon-7B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (11.6 GB memory, 9.57 GB download) `llama cli -hf IFM/K2-Horizon-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs 7.6 GB memory, 5.59 GB download, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q4_K_M -y
@@ -62,7 +62,7 @@ Other versions: gguf-q8_0 (~11.3 GB) `llama cli -hf IFM/K2-Horizon-7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~11.3 GB) `lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q8_0 -y`
+Other versions: gguf-q8_0 (11.6 GB memory, 9.57 GB download) `lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -73,13 +73,13 @@ Other versions: gguf-q8_0 (~11.3 GB) `lms get https://huggingface.co/IFM/K2-Hori
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs 7.6 GB memory, 5.59 GB download, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~11.3 GB) `ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (11.6 GB memory, 9.57 GB download) `ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B)
 

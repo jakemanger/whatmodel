@@ -56,7 +56,7 @@ weighted average                        = 56.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+2. Run Ring-flash-2.0 (Q2_K, needs 41.1 GB memory, 37.7 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
    
    ```sh
    llama cli -hf mradermacher/Ring-flash-2.0-GGUF:Q2_K
@@ -72,7 +72,7 @@ weighted average                        = 56.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+2. Run Ring-flash-2.0 (Q2_K, needs 41.1 GB memory, 37.7 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF@Q2_K -y
@@ -89,7 +89,7 @@ weighted average                        = 56.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+2. Run Ring-flash-2.0 (Q2_K, needs 41.1 GB memory, 37.7 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
    
    ```sh
    ollama run hf.co/mradermacher/Ring-flash-2.0-GGUF:Q2_K
@@ -97,7 +97,7 @@ weighted average                        = 56.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~205.78 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (BF16, needs 218 GB memory, 205.8 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve inclusionAI/Ring-flash-2.0

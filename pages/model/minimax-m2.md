@@ -102,7 +102,7 @@ api (Amazon Bedrock) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniMax-M2 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2-GGUF/tree/main))
+2. Run MiniMax-M2 (ud-q4_k_xl, needs 140 GB memory, 131.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/MiniMax-M2-GGUF:UD-Q4_K_XL
@@ -114,13 +114,13 @@ api (Amazon Bedrock) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [
    llama serve -hf unsloth/MiniMax-M2-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (91.6 GB memory, 85.8 GB download) `llama cli -hf unsloth/MiniMax-M2-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniMax-M2 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2-GGUF/tree/main))
+2. Run MiniMax-M2 (ud-q4_k_xl, needs 140 GB memory, 131.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/MiniMax-M2-GGUF@UD-Q4_K_XL -y
@@ -128,7 +128,7 @@ Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2-GGUF:UD-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/MiniMax-M2-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (91.6 GB memory, 85.8 GB download) `lms get https://huggingface.co/unsloth/MiniMax-M2-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2)
 

@@ -184,7 +184,7 @@ api (DeepInfra) · $0.063/M blended · $0.05 in / $0.1 out per 1M tokens · [dee
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 3 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/tree/d0976223747697cb51e056d85c532013931fe52e))
+2. Run Gemma 3 4B (Q4_K_M, needs 4.9 GB memory, 3.34 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/tree/d0976223747697cb51e056d85c532013931fe52e))
    
    ```sh
    llama cli -hf ggml-org/gemma-3-4b-it-GGUF:Q4_K_M
@@ -196,13 +196,13 @@ api (DeepInfra) · $0.063/M blended · $0.05 in / $0.1 out per 1M tokens · [dee
    llama serve -hf ggml-org/gemma-3-4b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.1 GB) `llama cli -hf ggml-org/gemma-3-4b-it-GGUF:Q8_0`
+Other versions: Q8_0 (6.6 GB memory, 4.98 GB download) `llama cli -hf ggml-org/gemma-3-4b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 3 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/tree/d0976223747697cb51e056d85c532013931fe52e))
+2. Run Gemma 3 4B (Q4_K_M, needs 4.9 GB memory, 3.34 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/tree/d0976223747697cb51e056d85c532013931fe52e))
    
    ```sh
    lms get https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF@Q4_K_M -y
@@ -210,7 +210,7 @@ Other versions: Q8_0 (~4.1 GB) `llama cli -hf ggml-org/gemma-3-4b-it-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/Oscilla/gemma-3-4b-it-mlx-8Bit -y`
+Other versions: Q8_0 (6.6 GB memory, 4.98 GB download) `lms get https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF@Q8_0 -y` · 4bit (3.8 GB memory, 2.18 GB download, Mac only) `lms get https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit -y` · 8bit (5.7 GB memory, 4.12 GB download, Mac only) `lms get https://huggingface.co/Oscilla/gemma-3-4b-it-mlx-8Bit -y`
 
 ### Ollama
 
@@ -221,13 +221,13 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/ggml-org/gemma-3-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 3 4B (Q4_K_M, needs ~3.08 GB, from [ollama.com](https://ollama.com/library/gemma3/tags))
+2. Run Gemma 3 4B (Q4_K_M, needs 4.9 GB memory, 3.35 GB download, from [ollama.com](https://ollama.com/library/gemma3/tags))
    
    ```sh
    ollama run gemma3:4b
    ```
 
-Other versions: qat (~3.08 GB) `ollama run gemma3:4b-it-qat` · Q8_0 (~5.66 GB) `ollama run gemma3:4b-it-q8_0`
+Other versions: qat (5.6 GB memory, 4.01 GB download) `ollama run gemma3:4b-it-qat` · Q8_0 (6.6 GB memory, 4.99 GB download) `ollama run gemma3:4b-it-q8_0`
 
 ### MLX (Mac)
 
@@ -240,7 +240,7 @@ Other versions: qat (~3.08 GB) `ollama run gemma3:4b-it-qat` · Q8_0 (~5.66 GB) 
    pip install mlx-lm
    ```
 
-2. Run Gemma 3 4B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/Outlier-Ai](https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit/tree/d1887210715eb17b65b4e6eed86479bb7d24d744))
+2. Run Gemma 3 4B (4bit, needs 3.8 GB memory, 2.18 GB download, Mac only, from [huggingface.co/Outlier-Ai](https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit/tree/d1887210715eb17b65b4e6eed86479bb7d24d744))
    
    ```sh
    mlx_lm.chat --model Outlier-Ai/gemma-3-4b-it-MLX-4bit
@@ -252,7 +252,7 @@ Other versions: qat (~3.08 GB) `ollama run gemma3:4b-it-qat` · Q8_0 (~5.66 GB) 
    mlx_lm.server --model Outlier-Ai/gemma-3-4b-it-MLX-4bit
    ```
 
-Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model Oscilla/gemma-3-4b-it-mlx-8Bit`
+Other versions: 8bit (5.7 GB memory, 4.12 GB download, Mac only) `mlx_lm.chat --model Oscilla/gemma-3-4b-it-mlx-8Bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-4b-it)
 

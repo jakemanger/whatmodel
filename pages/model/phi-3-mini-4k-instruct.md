@@ -72,7 +72,7 @@ weighted average                                   = 39.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
    
    ```sh
    llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf
@@ -84,13 +84,13 @@ weighted average                                   = 39.9
    llama serve -hf microsoft/Phi-3-mini-4k-instruct-gguf
    ```
 
-Other versions: fp16 (~7.64 GB) `llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf`
+Other versions: fp16 (11.3 GB memory, 7.64 GB download) `llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
    
    ```sh
    lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y
@@ -98,7 +98,7 @@ Other versions: fp16 (~7.64 GB) `llama cli -hf microsoft/Phi-3-mini-4k-instruct-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: fp16 (~7.64 GB) `lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y`
+Other versions: fp16 (11.3 GB memory, 7.64 GB download) `lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y`
 
 ### Ollama
 
@@ -109,13 +109,13 @@ Other versions: fp16 (~7.64 GB) `lms get https://huggingface.co/microsoft/Phi-3-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
    
    ```sh
    ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf
    ```
 
-Other versions: fp16 (~7.64 GB) `ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf`
+Other versions: fp16 (11.3 GB memory, 7.64 GB download) `ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
 

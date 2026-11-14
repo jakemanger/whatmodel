@@ -132,7 +132,7 @@ api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.m
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral Small 4 (119B-A6.5B) (ud-q4_k_m, needs ~71.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
+2. Run Mistral Small 4 (119B-A6.5B) (ud-q4_k_m, needs 75.4 GB memory, 74.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
@@ -144,13 +144,13 @@ api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.m
    llama serve -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
    ```
 
-Other versions: ud-q2_k_xl (~36.2 GB) `llama cli -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (41.9 GB memory, 41.1 GB download) `llama cli -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral Small 4 (119B-A6.5B) (ud-q4_k_m, needs ~71.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
+2. Run Mistral Small 4 (119B-A6.5B) (ud-q4_k_m, needs 75.4 GB memory, 74.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF@UD-Q4_K_M -y
@@ -158,7 +158,7 @@ Other versions: ud-q2_k_xl (~36.2 GB) `llama cli -hf unsloth/Mistral-Small-4-119
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~36.2 GB) `lms get https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF@UD-Q2_K_XL -y` · 4bit (~67.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-4bit -y` · 8bit (~127.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-8bit -y`
+Other versions: ud-q2_k_xl (41.9 GB memory, 41.1 GB download) `lms get https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF@UD-Q2_K_XL -y` · 4bit (68.6 GB memory, 67.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-4bit -y` · 8bit (128 GB memory, 127.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-8bit -y`
 
 ### Ollama
 
@@ -169,7 +169,7 @@ Other versions: ud-q2_k_xl (~36.2 GB) `lms get https://huggingface.co/unsloth/Mi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral Small 4 (119B-A6.5B) (ud-q2_k_xl, needs ~36.2 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
+2. Run Mistral Small 4 (119B-A6.5B) (ud-q2_k_xl, needs 41.9 GB memory, 41.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
@@ -186,7 +186,7 @@ Other versions: ud-q2_k_xl (~36.2 GB) `lms get https://huggingface.co/unsloth/Mi
    pip install mlx-lm
    ```
 
-2. Run Mistral Small 4 (119B-A6.5B) (4bit, needs ~67.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-4bit/tree/87b1249207734f029ec9dcefab80eabedfa6b812))
+2. Run Mistral Small 4 (119B-A6.5B) (4bit, needs 68.6 GB memory, 67.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-4bit/tree/87b1249207734f029ec9dcefab80eabedfa6b812))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mistral-Small-4-119B-2603-4bit
@@ -198,7 +198,7 @@ Other versions: ud-q2_k_xl (~36.2 GB) `lms get https://huggingface.co/unsloth/Mi
    mlx_lm.server --model mlx-community/Mistral-Small-4-119B-2603-4bit
    ```
 
-Other versions: 8bit (~127.2 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Small-4-119B-2603-8bit`
+Other versions: 8bit (128 GB memory, 127.2 GB download, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Small-4-119B-2603-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603)
 

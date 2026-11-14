@@ -83,7 +83,7 @@ poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/b
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Laguna XS.2 (Q4_K_M, needs ~20.3 GB, from [huggingface.co/Lucebox](https://huggingface.co/Lucebox/Laguna-XS.2-GGUF/tree/d0be991dc6857beb4ea04051db998cc539c49d99))
+2. Run Laguna XS.2 (Q4_K_M, needs 22.8 GB memory, 20.3 GB download, from [huggingface.co/Lucebox](https://huggingface.co/Lucebox/Laguna-XS.2-GGUF/tree/d0be991dc6857beb4ea04051db998cc539c49d99))
    
    ```sh
    llama cli -hf Lucebox/Laguna-XS.2-GGUF:Q4_K_M
@@ -99,7 +99,7 @@ poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/b
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Laguna XS.2 (Q4_K_M, needs ~20.3 GB, from [huggingface.co/Lucebox](https://huggingface.co/Lucebox/Laguna-XS.2-GGUF/tree/d0be991dc6857beb4ea04051db998cc539c49d99))
+2. Run Laguna XS.2 (Q4_K_M, needs 22.8 GB memory, 20.3 GB download, from [huggingface.co/Lucebox](https://huggingface.co/Lucebox/Laguna-XS.2-GGUF/tree/d0be991dc6857beb4ea04051db998cc539c49d99))
    
    ```sh
    lms get https://huggingface.co/Lucebox/Laguna-XS.2-GGUF@Q4_K_M -y
@@ -107,7 +107,7 @@ poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/b
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~18.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS.2-4bit -y` · 8bit (~35.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS.2-8bit -y`
+Other versions: 4bit (21.2 GB memory, 18.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS.2-4bit -y` · 8bit (38.8 GB memory, 35.5 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS.2-8bit -y`
 
 ### Ollama
 
@@ -118,13 +118,13 @@ Other versions: 4bit (~18.8 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Laguna XS.2 (Q4_K_M, needs ~23 GB, from [ollama.com](https://ollama.com/library/laguna-xs.2/tags))
+2. Run Laguna XS.2 (Q4_K_M, needs 25.8 GB memory, 23.1 GB download, from [ollama.com](https://ollama.com/library/laguna-xs.2/tags))
    
    ```sh
    ollama run laguna-xs.2:latest
    ```
 
-Other versions: Q4_K_M (~23 GB) `ollama run laguna-xs.2:latest`
+Other versions: Q4_K_M (25.8 GB memory, 23.1 GB download) `ollama run laguna-xs.2:latest`
 
 ### MLX (Mac)
 
@@ -137,7 +137,7 @@ Other versions: Q4_K_M (~23 GB) `ollama run laguna-xs.2:latest`
    pip install mlx-lm
    ```
 
-2. Run Laguna XS.2 (4bit, needs ~18.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-XS.2-4bit/tree/799182fa9455de7af14137b5033f941a3f71450c))
+2. Run Laguna XS.2 (4bit, needs 21.2 GB memory, 18.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-XS.2-4bit/tree/799182fa9455de7af14137b5033f941a3f71450c))
    
    ```sh
    mlx_lm.chat --model mlx-community/Laguna-XS.2-4bit
@@ -149,11 +149,11 @@ Other versions: Q4_K_M (~23 GB) `ollama run laguna-xs.2:latest`
    mlx_lm.server --model mlx-community/Laguna-XS.2-4bit
    ```
 
-Other versions: 8bit (~35.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Laguna-XS.2-8bit`
+Other versions: 8bit (38.8 GB memory, 35.5 GB download, Mac only) `mlx_lm.chat --model mlx-community/Laguna-XS.2-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs 66.89 GB, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS.2/tree/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8))
+1. Run it as published (BF16, needs 71.7 GB memory, 66.9 GB download, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS.2/tree/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8))
    
    ```sh
    vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice

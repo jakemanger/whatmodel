@@ -100,7 +100,7 @@ weighted average                                   = 33.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 7B IT (Q4_K_M, needs ~5.3 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF/tree/fc1d4d26cf05555b86004a23ff462860d372d64b))
+2. Run Gemma 7B IT (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF/tree/fc1d4d26cf05555b86004a23ff462860d372d64b))
    
    ```sh
    llama cli -hf MaziyarPanahi/gemma-7b-it-GGUF:Q4_K_M
@@ -112,13 +112,13 @@ weighted average                                   = 33.9
    llama serve -hf MaziyarPanahi/gemma-7b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.1 GB) `llama cli -hf MaziyarPanahi/gemma-7b-it-GGUF:Q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `llama cli -hf MaziyarPanahi/gemma-7b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 7B IT (Q4_K_M, needs ~5.3 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF/tree/fc1d4d26cf05555b86004a23ff462860d372d64b))
+2. Run Gemma 7B IT (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF/tree/fc1d4d26cf05555b86004a23ff462860d372d64b))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF@Q4_K_M -y
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~9.1 GB) `llama cli -hf MaziyarPanahi/gemma-7b-it-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `lms get https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -137,13 +137,13 @@ Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/MaziyarPanahi/gem
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 7B IT (Q4_K_M, needs ~5.62 GB, from [ollama.com](https://ollama.com/library/gemma/tags))
+2. Run Gemma 7B IT (Q4_K_M, needs 7.3 GB memory, 5.52 GB download, from [ollama.com](https://ollama.com/library/gemma/tags))
    
    ```sh
    ollama run gemma:7b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~10.75 GB) `ollama run gemma:7b-instruct-q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `ollama run gemma:7b-instruct-q8_0`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-7b-it)
 

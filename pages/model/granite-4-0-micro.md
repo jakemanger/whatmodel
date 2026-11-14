@@ -126,7 +126,7 @@ weighted average                                   = 46.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 4.0 Micro 3B (Q4_K_M, needs ~2.1 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF/tree/ec48475f0c811d812fbfb61975717a9c36eeb652))
+2. Run Granite 4.0 Micro 3B (Q4_K_M, needs 3.7 GB memory, 2.1 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF/tree/ec48475f0c811d812fbfb61975717a9c36eeb652))
    
    ```sh
    llama cli -hf ibm-granite/granite-4.0-micro-GGUF:Q4_K_M
@@ -138,13 +138,13 @@ weighted average                                   = 46.9
    llama serve -hf ibm-granite/granite-4.0-micro-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.6 GB) `llama cli -hf ibm-granite/granite-4.0-micro-GGUF:Q8_0`
+Other versions: Q8_0 (5.3 GB memory, 3.62 GB download) `llama cli -hf ibm-granite/granite-4.0-micro-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 4.0 Micro 3B (Q4_K_M, needs ~2.1 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF/tree/ec48475f0c811d812fbfb61975717a9c36eeb652))
+2. Run Granite 4.0 Micro 3B (Q4_K_M, needs 3.7 GB memory, 2.1 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF/tree/ec48475f0c811d812fbfb61975717a9c36eeb652))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF@Q4_K_M -y
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~3.6 GB) `llama cli -hf ibm-granite/granite-4.0-micro-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.6 GB) `lms get https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF@Q8_0 -y` · 4bit (~1.9 GB, Mac only) `lms get https://huggingface.co/ethicalabs/granite-4.0-micro-MLX -y` · 8bit (~3.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/granite-4.0-micro-8bit -y`
+Other versions: Q8_0 (5.3 GB memory, 3.62 GB download) `lms get https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF@Q8_0 -y` · 4bit (3.5 GB memory, 1.91 GB download, Mac only) `lms get https://huggingface.co/ethicalabs/granite-4.0-micro-MLX -y` · 8bit (5.3 GB memory, 3.62 GB download, Mac only) `lms get https://huggingface.co/mlx-community/granite-4.0-micro-8bit -y`
 
 ### Ollama
 
@@ -163,7 +163,7 @@ Other versions: Q8_0 (~3.6 GB) `lms get https://huggingface.co/ibm-granite/grani
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 4.0 Micro 3B (Q4_K_M, needs ~2.54 GB, from [ollama.com](https://ollama.com/library/granite4/tags))
+2. Run Granite 4.0 Micro 3B (Q4_K_M, needs 3.7 GB memory, 2.1 GB download, from [ollama.com](https://ollama.com/library/granite4/tags))
    
    ```sh
    ollama run granite4:micro
@@ -180,7 +180,7 @@ Other versions: Q8_0 (~3.6 GB) `lms get https://huggingface.co/ibm-granite/grani
    pip install mlx-lm
    ```
 
-2. Run Granite 4.0 Micro 3B (4bit, needs ~1.9 GB, Mac only, from [huggingface.co/ethicalabs](https://huggingface.co/ethicalabs/granite-4.0-micro-MLX/tree/8681a64eae6f7091f34a68b93c497283c16a235a))
+2. Run Granite 4.0 Micro 3B (4bit, needs 3.5 GB memory, 1.91 GB download, Mac only, from [huggingface.co/ethicalabs](https://huggingface.co/ethicalabs/granite-4.0-micro-MLX/tree/8681a64eae6f7091f34a68b93c497283c16a235a))
    
    ```sh
    mlx_lm.chat --model ethicalabs/granite-4.0-micro-MLX
@@ -192,7 +192,7 @@ Other versions: Q8_0 (~3.6 GB) `lms get https://huggingface.co/ibm-granite/grani
    mlx_lm.server --model ethicalabs/granite-4.0-micro-MLX
    ```
 
-Other versions: 8bit (~3.6 GB, Mac only) `mlx_lm.chat --model mlx-community/granite-4.0-micro-8bit`
+Other versions: 8bit (5.3 GB memory, 3.62 GB download, Mac only) `mlx_lm.chat --model mlx-community/granite-4.0-micro-8bit`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-micro)
 

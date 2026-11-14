@@ -58,7 +58,7 @@ weighted average                              = 49.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs ~8.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
+2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
    
    ```sh
    llama cli -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                              = 49.8
    llama serve -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.7 GB) `llama cli -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q8_0`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `llama cli -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs ~8.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
+2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~15.7 GB) `llama cli -hf bartowski/nvidia_AceReason-Nemotr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF@Q8_0 -y` · 4bit (~8.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/AceReason-Nemotron-14B-4bit -y` · 8bit (~15.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/AceReason-Nemotron-14B-8bit -y`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `lms get https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF@Q8_0 -y` · 4bit (10.2 GB memory, 8.31 GB download, Mac only) `lms get https://huggingface.co/mlx-community/AceReason-Nemotron-14B-4bit -y` · 8bit (18 GB memory, 15.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/AceReason-Nemotron-14B-8bit -y`
 
 ### Ollama
 
@@ -95,13 +95,13 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/bartowski/nvidia
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs ~8.99 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
+2. Run AceReason-Nemotron-1.0-14B (Q4_K_M, needs 10.9 GB memory, 8.99 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b))
    
    ```sh
    ollama run hf.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q8_0`
+Other versions: Q8_0 (18 GB memory, 15.7 GB download) `ollama run hf.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_AceReason-Nem
    pip install mlx-lm
    ```
 
-2. Run AceReason-Nemotron-1.0-14B (4bit, needs ~8.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/AceReason-Nemotron-14B-4bit/tree/8a00fd6e8500be3b93990984b744f81589aa6ccf))
+2. Run AceReason-Nemotron-1.0-14B (4bit, needs 10.2 GB memory, 8.31 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/AceReason-Nemotron-14B-4bit/tree/8a00fd6e8500be3b93990984b744f81589aa6ccf))
    
    ```sh
    mlx_lm.chat --model mlx-community/AceReason-Nemotron-14B-4bit
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_AceReason-Nem
    mlx_lm.server --model mlx-community/AceReason-Nemotron-14B-4bit
    ```
 
-Other versions: 8bit (~15.7 GB, Mac only) `mlx_lm.chat --model mlx-community/AceReason-Nemotron-14B-8bit`
+Other versions: 8bit (18 GB memory, 15.7 GB download, Mac only) `mlx_lm.chat --model mlx-community/AceReason-Nemotron-14B-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/AceReason-Nemotron-14B)
 

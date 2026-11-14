@@ -114,7 +114,7 @@ weighted average                                   = 31.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 2 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
+2. Run Llama 2 7B (base) (Q4_K_M, needs 8.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
    
    ```sh
    llama cli -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
@@ -126,13 +126,13 @@ weighted average                                   = 31.8
    llama serve -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/Llama-2-7B-GGUF:Q8_0`
+Other versions: Q8_0 (11.9 GB memory, 7.16 GB download) `llama cli -hf TheBloke/Llama-2-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 2 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
+2. Run Llama 2 7B (base) (Q4_K_M, needs 8.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q4_K_M -y
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/Llama-2-7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.9 GB memory, 7.16 GB download) `lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/Llama-2-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 2 7B (base) (Q4_0, needs ~3.8 GB, from [ollama.com](https://ollama.com/library/llama2/tags))
+2. Run Llama 2 7B (base) (Q4_0, needs 8.5 GB memory, 3.83 GB download, from [ollama.com](https://ollama.com/library/llama2/tags))
    
    ```sh
    ollama run llama2:7b-text

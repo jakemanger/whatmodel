@@ -115,12 +115,12 @@ weighted average                                   = 47.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DBRX Instruct (Q4_0, needs ~79.7 GB, from [ollama.com](https://ollama.com/library/dbrx/tags))
+2. Run DBRX Instruct (Q4_0, needs 79.4 GB memory, 74.2 GB download, from [ollama.com](https://ollama.com/library/dbrx/tags))
    
    ```sh
    ollama run dbrx:132b
    ```
 
-Other versions: Q8_0 (~158.9 GB) `ollama run dbrx:132b-instruct-q8_0`
+Other versions: Q8_0 (148 GB memory, 139.8 GB download) `ollama run dbrx:132b-instruct-q8_0`
 
 [interactive version](https://whatmodel.sh/model/dbrx-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

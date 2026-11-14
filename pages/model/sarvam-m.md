@@ -53,7 +53,7 @@ weighted average                              = 39.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Sarvam-M (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
+2. Run Sarvam-M (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
    
    ```sh
    llama cli -hf lmstudio-community/sarvam-m-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                              = 39.1
    llama serve -hf lmstudio-community/sarvam-m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/sarvam-m-GGUF:Q8_0`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `llama cli -hf lmstudio-community/sarvam-m-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Sarvam-M (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
+2. Run Sarvam-M (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/sarvam-m-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/sarvam-m-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-community/sarvam-m-GGUF@Q8_0 -y` · 4bit (~13.3 GB, Mac only) `lms get https://huggingface.co/Jimmi42/sarvam-m-4bit-mlx -y`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `lms get https://huggingface.co/lmstudio-community/sarvam-m-GGUF@Q8_0 -y` · 4bit (15.5 GB memory, 13.3 GB download, Mac only) `lms get https://huggingface.co/Jimmi42/sarvam-m-4bit-mlx -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Sarvam-M (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
+2. Run Sarvam-M (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/sarvam-m-GGUF/tree/95293cb9c641ed644c1d7a78d12053165c241cbf))
    
    ```sh
    ollama run hf.co/lmstudio-community/sarvam-m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.1 GB) `ollama run hf.co/lmstudio-community/sarvam-m-GGUF:Q8_0`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `ollama run hf.co/lmstudio-community/sarvam-m-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~25.1 GB) `ollama run hf.co/lmstudio-community/sarvam-m-GG
    pip install mlx-lm
    ```
 
-2. Run Sarvam-M (4bit, needs ~13.3 GB, Mac only, from [huggingface.co/Jimmi42](https://huggingface.co/Jimmi42/sarvam-m-4bit-mlx/tree/378e2dc64f8731e715a58db47d8c88591d5abeeb))
+2. Run Sarvam-M (4bit, needs 15.5 GB memory, 13.3 GB download, Mac only, from [huggingface.co/Jimmi42](https://huggingface.co/Jimmi42/sarvam-m-4bit-mlx/tree/378e2dc64f8731e715a58db47d8c88591d5abeeb))
    
    ```sh
    mlx_lm.chat --model Jimmi42/sarvam-m-4bit-mlx
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~25.1 GB) `ollama run hf.co/lmstudio-community/sarvam-m-GG
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~47.14 GB, from [huggingface.co/sarvamai](https://huggingface.co/sarvamai/sarvam-m/tree/01534a53c46f2788e392dbb3d994e0fa8f04d3fd))
+1. Run it as published (BF16, needs 51 GB memory, 47.1 GB download, from [huggingface.co/sarvamai](https://huggingface.co/sarvamai/sarvam-m/tree/01534a53c46f2788e392dbb3d994e0fa8f04d3fd))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='sarvamai/sarvam-m', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

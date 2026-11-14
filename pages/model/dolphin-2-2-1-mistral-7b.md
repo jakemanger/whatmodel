@@ -60,7 +60,7 @@ weighted average                                   = 38.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
    
    ```sh
    llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
@@ -72,13 +72,13 @@ weighted average                                   = 38.7
    llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
    
    ```sh
    lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -97,13 +97,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/dolphin-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/dolphin-mistral/tags))
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/dolphin-mistral/tags))
    
    ```sh
    ollama run dolphin-mistral:7b-v2.2.1-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.19 GB) `ollama run dolphin-mistral:7b-v2.2.1-q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `ollama run dolphin-mistral:7b-v2.2.1-q8_0`
 
 Model repository and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.2.1-mistral-7b)
 

@@ -131,7 +131,7 @@ weighted average                                   = 64.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Spark-X2.5 4B (Q4_K_M, needs ~2.6 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF/tree/9826e0be84e6e6e8b9668abc91421109a1df1e2d))
+2. Run Spark-X2.5 4B (Q4_K_M, needs 3.8 GB memory, 2.6 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF/tree/9826e0be84e6e6e8b9668abc91421109a1df1e2d))
    
    ```sh
    llama cli -hf XHToken/Spark-X2.5-4B-GGUF:Q4_K_M
@@ -147,7 +147,7 @@ weighted average                                   = 64.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Spark-X2.5 4B (Q4_K_M, needs ~2.6 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF/tree/9826e0be84e6e6e8b9668abc91421109a1df1e2d))
+2. Run Spark-X2.5 4B (Q4_K_M, needs 3.8 GB memory, 2.6 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF/tree/9826e0be84e6e6e8b9668abc91421109a1df1e2d))
    
    ```sh
    lms get https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF@Q4_K_M -y
@@ -155,7 +155,7 @@ weighted average                                   = 64.4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit -y` · 8bit (~4.4 GB, Mac only) `lms get https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-8bit -y`
+Other versions: 4bit (3.5 GB memory, 2.31 GB download, Mac only) `lms get https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit -y` · 8bit (5.6 GB memory, 4.37 GB download, Mac only) `lms get https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-8bit -y`
 
 ### Ollama
 
@@ -166,7 +166,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/abenzer
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Spark-X2.5 4B (BF16, needs ~8.2 GB, from [ollama.com](https://ollama.com/SparkLLM/Spark-X2.5-4B/tags))
+2. Run Spark-X2.5 4B (BF16, needs 9.4 GB memory, 8.23 GB download, from [ollama.com](https://ollama.com/SparkLLM/Spark-X2.5-4B/tags))
    
    ```sh
    ollama run SparkLLM/Spark-X2.5-4B
@@ -183,7 +183,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/abenzer
    pip install mlx-lm
    ```
 
-2. Run Spark-X2.5 4B (4bit, needs ~2.3 GB, Mac only, from [huggingface.co/abenzerps](https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit/tree/f8fddb2c745bf14a8c28a47875d3d741721e84cf))
+2. Run Spark-X2.5 4B (4bit, needs 3.5 GB memory, 2.31 GB download, Mac only, from [huggingface.co/abenzerps](https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit/tree/f8fddb2c745bf14a8c28a47875d3d741721e84cf))
    
    ```sh
    mlx_lm.chat --model abenzerps/Spark-X2.5-4B-MLX-4bit
@@ -195,7 +195,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/abenzer
    mlx_lm.server --model abenzerps/Spark-X2.5-4B-MLX-4bit
    ```
 
-Other versions: 8bit (~4.4 GB, Mac only) `mlx_lm.chat --model abenzerps/Spark-X2.5-4B-MLX-8bit`
+Other versions: 8bit (5.6 GB memory, 4.37 GB download, Mac only) `mlx_lm.chat --model abenzerps/Spark-X2.5-4B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-4B)
 

@@ -150,7 +150,7 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron 3 Nano 4B (Q4_K_M, needs ~2.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/tree/f4732c3cd1c961777138b226030e6c17f6f7db84))
+2. Run Nemotron 3 Nano 4B (Q4_K_M, needs 3.6 GB memory, 2.84 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/tree/f4732c3cd1c961777138b226030e6c17f6f7db84))
    
    ```sh
    llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M
@@ -162,13 +162,13 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.2 GB) `llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q8_0`
+Other versions: Q8_0 (5 GB memory, 4.23 GB download) `llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron 3 Nano 4B (Q4_K_M, needs ~2.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/tree/f4732c3cd1c961777138b226030e6c17f6f7db84))
+2. Run Nemotron 3 Nano 4B (Q4_K_M, needs 3.6 GB memory, 2.84 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/tree/f4732c3cd1c961777138b226030e6c17f6f7db84))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF@Q4_K_M -y
@@ -176,7 +176,7 @@ Other versions: Q8_0 (~4.2 GB) `llama cli -hf lmstudio-community/NVIDIA-Nemotron
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.2 GB) `lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit -y` · 8bit (~4.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit -y`
+Other versions: Q8_0 (5 GB memory, 4.23 GB download) `lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF@Q8_0 -y` · 4bit (3 GB memory, 2.24 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit -y` · 8bit (5 GB memory, 4.22 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit -y`
 
 ### Ollama
 
@@ -187,13 +187,13 @@ Other versions: Q8_0 (~4.2 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron 3 Nano 4B (Q4_K_M, needs ~2.88 GB, from [ollama.com](https://ollama.com/library/nemotron-3-nano/tags))
+2. Run Nemotron 3 Nano 4B (Q4_K_M, needs 3.6 GB memory, 2.84 GB download, from [ollama.com](https://ollama.com/library/nemotron-3-nano/tags))
    
    ```sh
    ollama run nemotron-3-nano:4b
    ```
 
-Other versions: Q8_0 (~5.26 GB) `ollama run nemotron-3-nano:4b-q8_0`
+Other versions: Q8_0 (5 GB memory, 4.23 GB download) `ollama run nemotron-3-nano:4b-q8_0`
 
 ### MLX (Mac)
 
@@ -206,7 +206,7 @@ Other versions: Q8_0 (~5.26 GB) `ollama run nemotron-3-nano:4b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Nemotron 3 Nano 4B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit/tree/c4d79ba1901d99806ef757642a552acebb851a35))
+2. Run Nemotron 3 Nano 4B (4bit, needs 3 GB memory, 2.24 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit/tree/c4d79ba1901d99806ef757642a552acebb851a35))
    
    ```sh
    mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit
@@ -218,7 +218,7 @@ Other versions: Q8_0 (~5.26 GB) `ollama run nemotron-3-nano:4b-q8_0`
    mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit
    ```
 
-Other versions: 8bit (~4.2 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit`
+Other versions: 8bit (5 GB memory, 4.22 GB download, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
 

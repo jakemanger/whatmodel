@@ -56,7 +56,7 @@ weighted average                                   = 46.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Jais Adapted 13B Chat (Q4_K_M, needs ~8.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
+2. Run Jais Adapted 13B Chat (Q4_K_M, needs 10 GB memory, 8.09 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
    
    ```sh
    llama cli -hf mradermacher/jais-adapted-13b-chat-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 46.4
    llama serve -hf mradermacher/jais-adapted-13b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~14.2 GB) `llama cli -hf mradermacher/jais-adapted-13b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (16.4 GB memory, 14.2 GB download) `llama cli -hf mradermacher/jais-adapted-13b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Jais Adapted 13B Chat (Q4_K_M, needs ~8.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
+2. Run Jais Adapted 13B Chat (Q4_K_M, needs 10 GB memory, 8.09 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
    
    ```sh
    lms get https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~14.2 GB) `llama cli -hf mradermacher/jais-adapted-13b-cha
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~14.2 GB) `lms get https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (16.4 GB memory, 14.2 GB download) `lms get https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~14.2 GB) `lms get https://huggingface.co/mradermacher/jai
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Jais Adapted 13B Chat (Q4_K_M, needs ~8.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
+2. Run Jais Adapted 13B Chat (Q4_K_M, needs 10 GB memory, 8.09 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF/tree/9ad57ea7650eb3683c1c55854c286ba4e548f129))
    
    ```sh
    ollama run hf.co/mradermacher/jais-adapted-13b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~14.2 GB) `ollama run hf.co/mradermacher/jais-adapted-13b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (16.4 GB memory, 14.2 GB download) `ollama run hf.co/mradermacher/jais-adapted-13b-chat-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~53.37 GB, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-adapted-13b-chat/tree/ee47988c252bba70001d697afb666bbb4c9fd5aa))
+1. Run it as published (fp32, needs 57.6 GB memory, 53.4 GB download, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-adapted-13b-chat/tree/ee47988c252bba70001d697afb666bbb4c9fd5aa))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-adapted-13b-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

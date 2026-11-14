@@ -56,7 +56,7 @@ weighted average                                   = 53.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4 9B Chat 1M (Q4_K_M, needs ~6.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
+2. Run GLM-4 9B Chat 1M (Q4_K_M, needs 8.1 GB memory, 6.31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
    
    ```sh
    llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 53.6
    llama serve -hf bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~10.1 GB) `llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q8_0`
+Other versions: Q8_0 (12.1 GB memory, 10.1 GB download) `llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4 9B Chat 1M (Q4_K_M, needs ~6.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
+2. Run GLM-4 9B Chat 1M (Q4_K_M, needs 8.1 GB memory, 6.31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
    
    ```sh
    lms get https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~10.1 GB) `llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~10.1 GB) `lms get https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF@Q8_0 -y`
+Other versions: Q8_0 (12.1 GB memory, 10.1 GB download) `lms get https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~10.1 GB) `lms get https://huggingface.co/bartowski/glm-4-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GLM-4 9B Chat 1M (Q4_K_M, needs ~6.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
+2. Run GLM-4 9B Chat 1M (Q4_K_M, needs 8.1 GB memory, 6.31 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF/tree/f50cedd62a26b910d71feda1e021f88716d28b58))
    
    ```sh
    ollama run hf.co/bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~10.1 GB) `ollama run hf.co/bartowski/glm-4-9b-chat-1m-GGUF:Q8_0`
+Other versions: Q8_0 (12.1 GB memory, 10.1 GB download) `ollama run hf.co/bartowski/glm-4-9b-chat-1m-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.97 GB, from [huggingface.co/zai-org](https://huggingface.co/zai-org/glm-4-9b-chat-1m/tree/f8579ac096986e44ba24a5060d2fb79bedb56ef3))
+1. Run it as published (BF16, needs 21.5 GB memory, 19 GB download, from [huggingface.co/zai-org](https://huggingface.co/zai-org/glm-4-9b-chat-1m/tree/f8579ac096986e44ba24a5060d2fb79bedb56ef3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='zai-org/glm-4-9b-chat-1m', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

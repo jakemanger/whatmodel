@@ -54,7 +54,7 @@ weighted average                        = 54.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs 47.4 GB memory, 43.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
    
    ```sh
    llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
@@ -66,13 +66,13 @@ weighted average                        = 54.1
    llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0` · UD-IQ2_XXS (~19.9 GB) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0` · UD-IQ2_XXS (22.4 GB memory, 19.9 GB download) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs 47.4 GB memory, 43.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
    
    ```sh
    lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q8_0 -y` · UD-IQ2_XXS (~19.9 GB) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@UD-IQ2_XXS -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q8_0 -y` · UD-IQ2_XXS (22.4 GB memory, 19.9 GB download) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@UD-IQ2_XXS -y`
 
 ### Ollama
 
@@ -91,17 +91,17 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/unsloth/Apertus-70
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs 47.4 GB memory, 43.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
    
    ```sh
    ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
    ```
 
-Other versions: UD-IQ2_XXS (~19.9 GB) `ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
+Other versions: UD-IQ2_XXS (22.4 GB memory, 19.9 GB download) `ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.2 GB, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/tree/0f2767662a013c0fb631079cea883155252bc3b6))
+1. Run it as published (BF16, needs 150 GB memory, 141.2 GB download, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/tree/0f2767662a013c0fb631079cea883155252bc3b6))
    
    ```sh
    vllm serve swiss-ai/Apertus-70B-Instruct-2509

@@ -84,7 +84,7 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
    
    ```sh
    llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
@@ -96,13 +96,13 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
    llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35 GB) `llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0`
+Other versions: Q8_0 (38.3 GB memory, 35 GB download) `llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
    
    ```sh
    lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q4_K_M -y
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~35 GB) `llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Light
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35 GB) `lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q8_0 -y` · 4bit (~17.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit -y` · 8bit (~33.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit -y`
+Other versions: Q8_0 (38.3 GB memory, 35 GB download) `lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q8_0 -y` · 4bit (20.2 GB memory, 17.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit -y` · 8bit (36.8 GB memory, 33.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit -y`
 
 ### Ollama
 
@@ -121,13 +121,13 @@ Other versions: Q8_0 (~35 GB) `lms get https://huggingface.co/bartowski/NVIDIA-N
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~19.46 GB, from [ollama.com](https://ollama.com/library/nemotron-3.5-lightning/tags))
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs 28.2 GB memory, 25.4 GB download, from [ollama.com](https://ollama.com/library/nemotron-3.5-lightning/tags))
    
    ```sh
    ollama run nemotron-3.5-lightning:30b
    ```
 
-Other versions: Q8_0 (~38.42 GB) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0` · nvfp4 (~19.46 GB, Mac only) `ollama run nemotron-3.5-lightning:30b-a3b-mlx`
+Other versions: Q8_0 (38.3 GB memory, 35 GB download) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0` · nvfp4 (21.6 GB memory, 19.1 GB download, Mac only) `ollama run nemotron-3.5-lightning:30b-a3b-mlx`
 
 ### MLX (Mac)
 
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~38.42 GB) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0
    pip install mlx-lm
    ```
 
-2. Run Nemotron 3.5 Lightning 30B-A3B (4bit, needs ~17.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit/tree/55ac8c89261109b36c04371cd3f479a4594208c8))
+2. Run Nemotron 3.5 Lightning 30B-A3B (4bit, needs 20.2 GB memory, 17.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit/tree/55ac8c89261109b36c04371cd3f479a4594208c8))
    
    ```sh
    mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~38.42 GB) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0
    mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
    ```
 
-Other versions: 8bit (~33.6 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit`
+Other versions: 8bit (36.8 GB memory, 33.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 

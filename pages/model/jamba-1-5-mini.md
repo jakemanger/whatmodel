@@ -111,7 +111,7 @@ weighted average                                   = 47.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+2. Run Jamba 1.5 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
    
    ```sh
    llama cli -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
@@ -127,7 +127,7 @@ weighted average                                   = 47.8
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+2. Run Jamba 1.5 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
    
    ```sh
    lms get https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF@Q4_K_M -y
@@ -144,7 +144,7 @@ weighted average                                   = 47.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+2. Run Jamba 1.5 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
    
    ```sh
    ollama run hf.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
@@ -152,7 +152,7 @@ weighted average                                   = 47.8
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~103.14 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (BF16, needs 110 GB memory, 103.1 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve ai21labs/AI21-Jamba-Mini-1.5

@@ -88,7 +88,7 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Laguna M.1 (Q4_K_M, needs ~136.1 GB, from [huggingface.co/linuxid10t](https://huggingface.co/linuxid10t/Laguna-M.1-GGUF/tree/3b5ee482c6894f80e696058271ea86d80ffcb848))
+2. Run Laguna M.1 (Q4_K_M, needs 144 GB memory, 136.1 GB download, from [huggingface.co/linuxid10t](https://huggingface.co/linuxid10t/Laguna-M.1-GGUF/tree/3b5ee482c6894f80e696058271ea86d80ffcb848))
    
    ```sh
    llama cli -hf linuxid10t/Laguna-M.1-GGUF:Q4_K_M
@@ -104,7 +104,7 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Laguna M.1 (Q4_K_M, needs ~136.1 GB, from [huggingface.co/linuxid10t](https://huggingface.co/linuxid10t/Laguna-M.1-GGUF/tree/3b5ee482c6894f80e696058271ea86d80ffcb848))
+2. Run Laguna M.1 (Q4_K_M, needs 144 GB memory, 136.1 GB download, from [huggingface.co/linuxid10t](https://huggingface.co/linuxid10t/Laguna-M.1-GGUF/tree/3b5ee482c6894f80e696058271ea86d80ffcb848))
    
    ```sh
    lms get https://huggingface.co/linuxid10t/Laguna-M.1-GGUF@Q4_K_M -y
@@ -112,7 +112,7 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~127 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-M.1-4bit -y` · 8bit (~239.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-M.1-8bit -y`
+Other versions: 4bit (135 GB memory, 127 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-M.1-4bit -y` · 8bit (253 GB memory, 239.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-M.1-8bit -y`
 
 ### MLX (Mac)
 
@@ -125,7 +125,7 @@ Other versions: 4bit (~127 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Laguna M.1 (4bit, needs ~127 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-M.1-4bit/tree/5a397b458851eef77062f07c298752a5accfb8c3))
+2. Run Laguna M.1 (4bit, needs 135 GB memory, 127 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-M.1-4bit/tree/5a397b458851eef77062f07c298752a5accfb8c3))
    
    ```sh
    mlx_lm.chat --model mlx-community/Laguna-M.1-4bit
@@ -137,17 +137,17 @@ Other versions: 4bit (~127 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/Laguna-M.1-4bit
    ```
 
-Other versions: 8bit (~239.9 GB, Mac only) `mlx_lm.chat --model mlx-community/Laguna-M.1-8bit`
+Other versions: 8bit (253 GB memory, 239.9 GB download, Mac only) `mlx_lm.chat --model mlx-community/Laguna-M.1-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~451.6 GB, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md))
+1. Run it as published (BF16, needs 476 GB memory, 451.6 GB download, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md))
    
    ```sh
    pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
    ```
 
-Other versions: fp8 (~229.08 GB, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'` · nvfp4 (~139.29 GB, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'`
+Other versions: fp8 (242 GB memory, 229.1 GB download, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'` · nvfp4 (148 GB memory, 139.3 GB download, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'`
 
 Model repository and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-M.1)
 

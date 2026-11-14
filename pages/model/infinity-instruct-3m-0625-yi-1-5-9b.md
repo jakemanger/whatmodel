@@ -66,7 +66,7 @@ weighted average                              = 44.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~7.2 GB memory, ~5.4 GB download, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
    
    ```sh
    llama cli -hf Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
@@ -82,7 +82,7 @@ weighted average                              = 44.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~7.2 GB memory, ~5.4 GB download, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
    
    ```sh
    lms get https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF@q4_k_m -y
@@ -99,7 +99,7 @@ weighted average                              = 44.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~7.2 GB memory, ~5.4 GB download, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
    
    ```sh
    ollama run hf.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
@@ -107,7 +107,7 @@ weighted average                              = 44.0
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.66 GB, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B/tree/a42c86c61b98ca4fdf238d688fe6ea11cf414d29))
+1. Run it as published (BF16, needs 20.1 GB memory, 17.7 GB download, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B/tree/a42c86c61b98ca4fdf238d688fe6ea11cf414d29))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

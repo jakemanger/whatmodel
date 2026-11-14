@@ -56,7 +56,7 @@ weighted average                                   = 52.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ling-lite-1.5 (Q4_K_M, needs ~11.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
+2. Run Ling-lite-1.5 (Q4_K_M, needs 13.3 GB memory, 11.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
    
    ```sh
    llama cli -hf mradermacher/Ling-lite-1.5-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 52.3
    llama serve -hf mradermacher/Ling-lite-1.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17.9 GB) `llama cli -hf mradermacher/Ling-lite-1.5-GGUF:Q8_0`
+Other versions: Q8_0 (20.3 GB memory, 17.9 GB download) `llama cli -hf mradermacher/Ling-lite-1.5-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ling-lite-1.5 (Q4_K_M, needs ~11.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
+2. Run Ling-lite-1.5 (Q4_K_M, needs 13.3 GB memory, 11.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~17.9 GB) `llama cli -hf mradermacher/Ling-lite-1.5-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17.9 GB) `lms get https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF@Q8_0 -y`
+Other versions: Q8_0 (20.3 GB memory, 17.9 GB download) `lms get https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~17.9 GB) `lms get https://huggingface.co/mradermacher/Lin
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ling-lite-1.5 (Q4_K_M, needs ~11.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
+2. Run Ling-lite-1.5 (Q4_K_M, needs 13.3 GB memory, 11.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ling-lite-1.5-GGUF/tree/620bb7ac36949929d2a6b0615d3d872b28313af0))
    
    ```sh
    ollama run hf.co/mradermacher/Ling-lite-1.5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17.9 GB) `ollama run hf.co/mradermacher/Ling-lite-1.5-GGUF:Q8_0`
+Other versions: Q8_0 (20.3 GB memory, 17.9 GB download) `ollama run hf.co/mradermacher/Ling-lite-1.5-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~33.6 GB, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-lite-1.5/tree/ef1ac33ce4c3dca4bc01873b2030e6a264c5ef99))
+1. Run it as published (BF16, needs 36.8 GB memory, 33.6 GB download, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-lite-1.5/tree/ef1ac33ce4c3dca4bc01873b2030e6a264c5ef99))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inclusionAI/Ling-lite-1.5', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -98,7 +98,7 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi 34B Chat (Q4_K_M, needs ~20.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF/tree/ee827f906e733381ab65c650dcfdd2caf6de8762))
+2. Run Yi 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF/tree/ee827f906e733381ab65c650dcfdd2caf6de8762))
    
    ```sh
    llama cli -hf TheBloke/Yi-34B-Chat-GGUF:Q4_K_M
@@ -110,13 +110,13 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
    llama serve -hf TheBloke/Yi-34B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.5 GB) `llama cli -hf TheBloke/Yi-34B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `llama cli -hf TheBloke/Yi-34B-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi 34B Chat (Q4_K_M, needs ~20.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF/tree/ee827f906e733381ab65c650dcfdd2caf6de8762))
+2. Run Yi 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF/tree/ee827f906e733381ab65c650dcfdd2caf6de8762))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF@Q4_K_M -y
@@ -124,7 +124,7 @@ Other versions: Q8_0 (~36.5 GB) `llama cli -hf TheBloke/Yi-34B-Chat-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `lms get https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -135,13 +135,13 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Yi-34B-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi 34B Chat (Q4_K_M, needs ~21.13 GB, from [ollama.com](https://ollama.com/library/yi/tags))
+2. Run Yi 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [ollama.com](https://ollama.com/library/yi/tags))
    
    ```sh
    ollama run yi:34b-chat-q4_K_M
    ```
 
-Other versions: Q8_0 (~41.77 GB) `ollama run yi:34b-chat-q8_0`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `ollama run yi:34b-chat-q8_0`
 
 Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-34B-Chat)
 

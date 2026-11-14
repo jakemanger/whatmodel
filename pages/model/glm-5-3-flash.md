@@ -155,7 +155,7 @@ api (Z.AI) · $0.24/M blended · $0.15 in / $0.5 out per 1M tokens · [docs.z.ai
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-5.3-Flash (ud-q4_k_xl, needs ~192.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main))
+2. Run GLM-5.3-Flash (ud-q4_k_xl, needs 212 GB memory, 200.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/GLM-5.3-Flash-GGUF:UD-Q4_K_XL
@@ -167,13 +167,13 @@ api (Z.AI) · $0.24/M blended · $0.15 in / $0.5 out per 1M tokens · [docs.z.ai
    llama serve -hf unsloth/GLM-5.3-Flash-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~96.5 GB) `llama cli -hf unsloth/GLM-5.3-Flash-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (117 GB memory, 109.9 GB download) `llama cli -hf unsloth/GLM-5.3-Flash-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-5.3-Flash (ud-q4_k_xl, needs ~192.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main))
+2. Run GLM-5.3-Flash (ud-q4_k_xl, needs 212 GB memory, 200.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF@UD-Q4_K_XL -y
@@ -181,7 +181,7 @@ Other versions: ud-q2_k_xl (~96.5 GB) `llama cli -hf unsloth/GLM-5.3-Flash-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~96.5 GB) `lms get https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (117 GB memory, 109.9 GB download) `lms get https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5.3-Flash)
 

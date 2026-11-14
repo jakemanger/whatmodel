@@ -58,7 +58,7 @@ weighted average                                   = 45.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs ~26.4 GB, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
+2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs 29.2 GB memory, 26.4 GB download, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
    
    ```sh
    llama cli -hf dphn/dolphin-2.6-mixtral-8x7b-GGUF:Q4_K_M
@@ -74,7 +74,7 @@ weighted average                                   = 45.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs ~26.4 GB, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
+2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs 29.2 GB memory, 26.4 GB download, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
    
    ```sh
    lms get https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF@Q4_K_M -y
@@ -91,7 +91,7 @@ weighted average                                   = 45.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs ~26.4 GB, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
+2. Run Dolphin 2.6 Mixtral 8x7B (Q4_K_M, needs 29.2 GB memory, 26.4 GB download, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF/tree/e4ef1c9c5213bead613491a34103c5b35705ee89))
    
    ```sh
    ollama run hf.co/dphn/dolphin-2.6-mixtral-8x7b-GGUF:Q4_K_M
@@ -99,7 +99,7 @@ weighted average                                   = 45.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~93.41 GB, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b/tree/db797db3f23f58b79f9815222b83c1a6f7bb3f25))
+1. Run it as published (BF16, needs 99.6 GB memory, 93.4 GB download, from [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b/tree/db797db3f23f58b79f9815222b83c1a6f7bb3f25))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='dphn/dolphin-2.6-mixtral-8x7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

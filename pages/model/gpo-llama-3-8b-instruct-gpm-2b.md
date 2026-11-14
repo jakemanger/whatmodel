@@ -47,7 +47,7 @@ weighted average                              = 51.0
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/general-preference](https://huggingface.co/general-preference/GPO-Llama-3-8B-Instruct-GPM-2B/tree/f6fae483d744106e5366d78fadd19dba7542b14a))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/general-preference](https://huggingface.co/general-preference/GPO-Llama-3-8B-Instruct-GPM-2B/tree/f6fae483d744106e5366d78fadd19dba7542b14a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='general-preference/GPO-Llama-3-8B-Instruct-GPM-2B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

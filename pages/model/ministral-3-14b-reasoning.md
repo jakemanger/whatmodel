@@ -126,7 +126,7 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 11.1 GB memory, 9.12 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    llama cli -hf mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
@@ -142,7 +142,7 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 11.1 GB memory, 9.12 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    lms get https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF@Q4_K_M -y
@@ -150,7 +150,7 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~8.4 GB, Mac only) `lms get https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit -y`
+Other versions: 4bit (10.4 GB memory, 8.42 GB download, Mac only) `lms get https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit -y`
 
 ### Ollama
 
@@ -161,7 +161,7 @@ Other versions: 4bit (~8.4 GB, Mac only) `lms get https://huggingface.co/hunterb
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 11.1 GB memory, 9.12 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    ollama run hf.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
@@ -178,7 +178,7 @@ Other versions: 4bit (~8.4 GB, Mac only) `lms get https://huggingface.co/hunterb
    pip install mlx-lm
    ```
 
-2. Run Ministral 3 14B Reasoning 2512 (4bit, needs ~8.4 GB, Mac only, from [huggingface.co/hunterbown](https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit/tree/885cdcb8abdf453ac743e6dfb68263c39b5bed35))
+2. Run Ministral 3 14B Reasoning 2512 (4bit, needs 10.4 GB memory, 8.42 GB download, Mac only, from [huggingface.co/hunterbown](https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit/tree/885cdcb8abdf453ac743e6dfb68263c39b5bed35))
    
    ```sh
    mlx_lm.chat --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit

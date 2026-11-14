@@ -53,7 +53,7 @@ weighted average                        = 48.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs ~28.4 GB, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
+2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs 31.3 GB memory, 28.4 GB download, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
    
    ```sh
    llama cli -hf Nondzu/PLLuM-8x7B-nc-instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 48.5
    llama serve -hf Nondzu/PLLuM-8x7B-nc-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~49.6 GB) `llama cli -hf Nondzu/PLLuM-8x7B-nc-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (53.6 GB memory, 49.6 GB download) `llama cli -hf Nondzu/PLLuM-8x7B-nc-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs ~28.4 GB, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
+2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs 31.3 GB memory, 28.4 GB download, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
    
    ```sh
    lms get https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~49.6 GB) `llama cli -hf Nondzu/PLLuM-8x7B-nc-instruct-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (53.6 GB memory, 49.6 GB download) `lms get https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/Nondzu/PLLuM-8x7
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs ~28.4 GB, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
+2. Run PLLuM-8x7B-nc-instruct (2412) (Q4_K_M, needs 31.3 GB memory, 28.4 GB download, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF/tree/08a27b287c8ad43428f5ce74b19064e6bcb2fc50))
    
    ```sh
    ollama run hf.co/Nondzu/PLLuM-8x7B-nc-instruct-GGUF:Q4_K_M
@@ -98,7 +98,7 @@ Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/Nondzu/PLLuM-8x7
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~93.41 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-8x7B-nc-instruct-2412/tree/0135ae0d12a33b9a4d3ac79739ae6b42acd482a0))
+1. Run it as published (BF16, needs 99.6 GB memory, 93.4 GB download, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-8x7B-nc-instruct-2412/tree/0135ae0d12a33b9a4d3ac79739ae6b42acd482a0))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-8x7B-nc-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

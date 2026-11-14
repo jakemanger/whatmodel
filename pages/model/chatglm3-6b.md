@@ -81,7 +81,7 @@ weighted average                                   = 29.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run ChatGLM3-6B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
+2. Run ChatGLM3-6B (Q4_K_M, needs 5.8 GB memory, 4.14 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
    
    ```sh
    llama cli -hf mradermacher/chatglm3-6b-GGUF:Q4_K_M
@@ -93,13 +93,13 @@ weighted average                                   = 29.9
    llama serve -hf mradermacher/chatglm3-6b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.6 GB) `llama cli -hf mradermacher/chatglm3-6b-GGUF:Q8_0`
+Other versions: Q8_0 (8.5 GB memory, 6.64 GB download) `llama cli -hf mradermacher/chatglm3-6b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run ChatGLM3-6B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
+2. Run ChatGLM3-6B (Q4_K_M, needs 5.8 GB memory, 4.14 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
    
    ```sh
    lms get https://huggingface.co/mradermacher/chatglm3-6b-GGUF@Q4_K_M -y
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~6.6 GB) `llama cli -hf mradermacher/chatglm3-6b-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~6.6 GB) `lms get https://huggingface.co/mradermacher/chatglm3-6b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (8.5 GB memory, 6.64 GB download) `lms get https://huggingface.co/mradermacher/chatglm3-6b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -118,17 +118,17 @@ Other versions: Q8_0 (~6.6 GB) `lms get https://huggingface.co/mradermacher/chat
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run ChatGLM3-6B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
+2. Run ChatGLM3-6B (Q4_K_M, needs 5.8 GB memory, 4.14 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/chatglm3-6b-GGUF/tree/b79a62fe07eb5135732d341cd8cce1777e4a7788))
    
    ```sh
    ollama run hf.co/mradermacher/chatglm3-6b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~6.6 GB) `ollama run hf.co/mradermacher/chatglm3-6b-GGUF:Q8_0`
+Other versions: Q8_0 (8.5 GB memory, 6.64 GB download) `ollama run hf.co/mradermacher/chatglm3-6b-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~12.49 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (fp16, needs 14.6 GB memory, 12.5 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve zai-org/chatglm3-6b --trust-remote-code

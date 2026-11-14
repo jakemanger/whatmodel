@@ -53,7 +53,7 @@ weighted average                        = 55.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run K2-Think (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
+2. Run K2-Think (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
    
    ```sh
    llama cli -hf mradermacher/K2-Think-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 55.6
    llama serve -hf mradermacher/K2-Think-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf mradermacher/K2-Think-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf mradermacher/K2-Think-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run K2-Think (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
+2. Run K2-Think (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
    
    ```sh
    lms get https://huggingface.co/mradermacher/K2-Think-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf mradermacher/K2-Think-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/mradermacher/K2-Think-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/qurk41/K2-Think-mlx-4Bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/m-i/K2-Think-mlx-8Bit -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/mradermacher/K2-Think-GGUF@Q8_0 -y` · 4bit (20.8 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/qurk41/K2-Think-mlx-4Bit -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/m-i/K2-Think-mlx-8Bit -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/mradermacher/K2-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run K2-Think (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
+2. Run K2-Think (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/K2-Think-GGUF/tree/6223eb251e289115e502a40e973a379f438a7a91))
    
    ```sh
    ollama run hf.co/mradermacher/K2-Think-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/K2-Think-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `ollama run hf.co/mradermacher/K2-Think-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/K2-Think-GGUF:Q8_
    pip install mlx-lm
    ```
 
-2. Run K2-Think (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/qurk41](https://huggingface.co/qurk41/K2-Think-mlx-4Bit/tree/8fcff3d466efbe381d5a44740ba0ad89f1f80aa0))
+2. Run K2-Think (4bit, needs 20.8 GB memory, 18.4 GB download, Mac only, from [huggingface.co/qurk41](https://huggingface.co/qurk41/K2-Think-mlx-4Bit/tree/8fcff3d466efbe381d5a44740ba0ad89f1f80aa0))
    
    ```sh
    mlx_lm.chat --model qurk41/K2-Think-mlx-4Bit
@@ -121,11 +121,11 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/K2-Think-GGUF:Q8_
    mlx_lm.server --model qurk41/K2-Think-mlx-4Bit
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model m-i/K2-Think-mlx-8Bit`
+Other versions: 8bit (38 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model m-i/K2-Think-mlx-8Bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~65.53 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Think/tree/9e218ac1be727e8f9d1ee4ad68530913f01a9ab2))
+1. Run it as published (BF16, needs 70.3 GB memory, 65.5 GB download, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Think/tree/9e218ac1be727e8f9d1ee4ad68530913f01a9ab2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='IFM/K2-Think', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

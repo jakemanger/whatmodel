@@ -198,7 +198,7 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Kimi K2.6 (ud-q4_k_xl, needs ~600.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.6-GGUF/tree/main))
+2. Run Kimi K2.6 (ud-q4_k_xl, needs 615 GB memory, 584.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.6-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Kimi-K2.6-GGUF:UD-Q4_K_XL
@@ -210,13 +210,13 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
    llama serve -hf unsloth/Kimi-K2.6-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~300.5 GB) `llama cli -hf unsloth/Kimi-K2.6-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (360 GB memory, 341.4 GB download) `llama cli -hf unsloth/Kimi-K2.6-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Kimi K2.6 (ud-q4_k_xl, needs ~600.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.6-GGUF/tree/main))
+2. Run Kimi K2.6 (ud-q4_k_xl, needs 615 GB memory, 584.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.6-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Kimi-K2.6-GGUF@UD-Q4_K_XL -y
@@ -224,7 +224,7 @@ Other versions: ud-q2_k_xl (~300.5 GB) `llama cli -hf unsloth/Kimi-K2.6-GGUF:UD-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/Kimi-K2.6-GGUF@UD-Q2_K_XL -y` · 4bit (~657.6 GB, Mac only) `lms get https://huggingface.co/aidiffuser/Kimi-K2.6-MLX-4bit -y`
+Other versions: ud-q2_k_xl (360 GB memory, 341.4 GB download) `lms get https://huggingface.co/unsloth/Kimi-K2.6-GGUF@UD-Q2_K_XL -y` · 4bit (692 GB memory, 657.6 GB download, Mac only) `lms get https://huggingface.co/aidiffuser/Kimi-K2.6-MLX-4bit -y`
 
 ### MLX (Mac)
 
@@ -237,7 +237,7 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    pip install mlx-lm
    ```
 
-2. Run Kimi K2.6 (4bit, needs ~657.6 GB, Mac only, from [huggingface.co/aidiffuser](https://huggingface.co/aidiffuser/Kimi-K2.6-MLX-4bit/tree/f3526deda33ce0363fc929dad500638c2ae620ac))
+2. Run Kimi K2.6 (4bit, needs 692 GB memory, 657.6 GB download, Mac only, from [huggingface.co/aidiffuser](https://huggingface.co/aidiffuser/Kimi-K2.6-MLX-4bit/tree/f3526deda33ce0363fc929dad500638c2ae620ac))
    
    ```sh
    mlx_lm.chat --model aidiffuser/Kimi-K2.6-MLX-4bit

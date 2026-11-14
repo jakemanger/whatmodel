@@ -90,7 +90,7 @@ weighted average                                   = 35.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StarCoder2 3B (Q4_K_M, needs ~1.8 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-3B-GGUF/tree/7fca3e2da2ce31df411461e2cb9cae2d2b492f35))
+2. Run StarCoder2 3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-3B-GGUF/tree/7fca3e2da2ce31df411461e2cb9cae2d2b492f35))
    
    ```sh
    llama cli -hf second-state/StarCoder2-3B-GGUF:Q4_K_M
@@ -102,13 +102,13 @@ weighted average                                   = 35.1
    llama serve -hf second-state/StarCoder2-3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `llama cli -hf second-state/StarCoder2-3B-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.22 GB download) `llama cli -hf second-state/StarCoder2-3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StarCoder2 3B (Q4_K_M, needs ~1.8 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-3B-GGUF/tree/7fca3e2da2ce31df411461e2cb9cae2d2b492f35))
+2. Run StarCoder2 3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-3B-GGUF/tree/7fca3e2da2ce31df411461e2cb9cae2d2b492f35))
    
    ```sh
    lms get https://huggingface.co/second-state/StarCoder2-3B-GGUF@Q4_K_M -y
@@ -116,7 +116,7 @@ Other versions: Q8_0 (~3.2 GB) `llama cli -hf second-state/StarCoder2-3B-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/second-state/StarCoder2-3B-GGUF@Q8_0 -y` · 4bit (~1.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/starcoder2-3b-4bit -y` · 8bit (~3.4 GB, Mac only) `lms get https://huggingface.co/OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit -y`
+Other versions: Q8_0 (4.9 GB memory, 3.22 GB download) `lms get https://huggingface.co/second-state/StarCoder2-3B-GGUF@Q8_0 -y` · 4bit (3.5 GB memory, 1.92 GB download, Mac only) `lms get https://huggingface.co/mlx-community/starcoder2-3b-4bit -y` · 8bit (5.1 GB memory, 3.41 GB download, Mac only) `lms get https://huggingface.co/OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit -y`
 
 ### Ollama
 
@@ -127,13 +127,13 @@ Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/second-state/Star
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarCoder2 3B (Q4_K_M, needs ~1.8 GB, from [ollama.com](https://ollama.com/library/starcoder2/tags))
+2. Run StarCoder2 3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [ollama.com](https://ollama.com/library/starcoder2/tags))
    
    ```sh
    ollama run starcoder2:3b-q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `ollama run starcoder2:3b-q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.22 GB download) `ollama run starcoder2:3b-q8_0`
 
 ### MLX (Mac)
 
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~3.2 GB) `ollama run starcoder2:3b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run StarCoder2 3B (4bit, needs ~1.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/starcoder2-3b-4bit/tree/d90b61f0a26e018c1505ea6ed0fdfeca4e649789))
+2. Run StarCoder2 3B (4bit, needs 3.5 GB memory, 1.92 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/starcoder2-3b-4bit/tree/d90b61f0a26e018c1505ea6ed0fdfeca4e649789))
    
    ```sh
    mlx_lm.chat --model mlx-community/starcoder2-3b-4bit
@@ -158,7 +158,7 @@ Other versions: Q8_0 (~3.2 GB) `ollama run starcoder2:3b-q8_0`
    mlx_lm.server --model mlx-community/starcoder2-3b-4bit
    ```
 
-Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit`
+Other versions: 8bit (5.1 GB memory, 3.41 GB download, Mac only) `mlx_lm.chat --model OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit`
 
 Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-3b)
 

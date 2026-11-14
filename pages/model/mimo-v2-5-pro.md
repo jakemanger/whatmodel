@@ -131,7 +131,7 @@ api (Novita AI) · $0.65/M blended · $0.522 in / $1.044 out per 1M tokens · [n
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2.5-Pro (1T-A42B) (ud-q4_k_xl, needs ~614.3 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF/tree/main))
+2. Run MiMo-V2.5-Pro (1T-A42B) (ud-q4_k_xl, needs 664 GB memory, 631 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-Q4_K_XL
@@ -143,13 +143,13 @@ api (Novita AI) · $0.65/M blended · $0.522 in / $1.044 out per 1M tokens · [n
    llama serve -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~307.4 GB) `llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-Q2_K_XL` · ud-iq1_m (~153.95 GB) `llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-IQ1_M`
+Other versions: ud-q2_k_xl (357 GB memory, 338.4 GB download) `llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-Q2_K_XL` · ud-iq1_m (321 GB memory, 304.1 GB download) `llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF:UD-IQ1_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2.5-Pro (1T-A42B) (ud-q4_k_xl, needs ~614.3 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF/tree/main))
+2. Run MiMo-V2.5-Pro (1T-A42B) (ud-q4_k_xl, needs 664 GB memory, 631 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF@UD-Q4_K_XL -y
@@ -157,7 +157,7 @@ Other versions: ud-q2_k_xl (~307.4 GB) `llama cli -hf unsloth/MiMo-V2.5-Pro-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~307.4 GB) `lms get https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (~153.95 GB) `lms get https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF@UD-IQ1_M -y`
+Other versions: ud-q2_k_xl (357 GB memory, 338.4 GB download) `lms get https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (321 GB memory, 304.1 GB download) `lms get https://huggingface.co/unsloth/MiMo-V2.5-Pro-GGUF@UD-IQ1_M -y`
 
 Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro)
 

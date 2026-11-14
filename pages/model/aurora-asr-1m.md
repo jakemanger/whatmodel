@@ -24,13 +24,7 @@ LibriSpeech test-other WER   26.5%  maker        <a href="https://huggingface.co
 
 ## How to run it
 
-### Other ways to run it
-
-1. Run it as published (fp32, needs ~0.5 GB, from [huggingface.co/AuroraAI-Research](https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md))
-   
-   ```sh
-   python -m pip install torch transformers sentencepiece soundfile && python -c "import soundfile as sf; from transformers import AutoModelForCTC; model = AutoModelForCTC.from_pretrained('AuroraAI-Research/AuroraASR-1M', trust_remote_code=True).eval(); wav, sr = sf.read('audio.wav', dtype='float32'); print(model.transcribe(wav)[0])"
-   ```
+No verified API or local download yet.
 
 Model repository and documentation: [huggingface.co/AuroraAI-Research](https://huggingface.co/AuroraAI-Research/AuroraASR-1M)
 

@@ -47,7 +47,7 @@ weighted average                                   = 33.5
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~3.08 GB, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-590m-chat/tree/90ac4769212b4964c6e81e183140224628228365))
+1. Run it as published (fp32, needs 4.7 GB memory, 3.08 GB download, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-590m-chat/tree/90ac4769212b4964c6e81e183140224628228365))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-590m-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

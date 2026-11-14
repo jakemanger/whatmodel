@@ -157,7 +157,7 @@ api (Deep Infra) · $3.00/M blended · $2 in / $6 out per 1M tokens · [deepinfr
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3.8 Max (2.4T-A95B) (ud-iq4_xs, needs ~1440.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF/tree/main))
+2. Run Qwen3.8 Max (2.4T-A95B) (ud-iq4_xs, needs 1378 GB memory, 1310.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Qwen3.8-2.4T-A95B-GGUF:UD-IQ4_XS
@@ -169,13 +169,13 @@ api (Deep Infra) · $3.00/M blended · $2 in / $6 out per 1M tokens · [deepinfr
    llama serve -hf unsloth/Qwen3.8-2.4T-A95B-GGUF:UD-IQ4_XS
    ```
 
-Other versions: ud-iq1_m (~360.5 GB) `llama cli -hf unsloth/Qwen3.8-2.4T-A95B-GGUF:UD-IQ1_M`
+Other versions: ud-iq1_m (594 GB memory, 564 GB download) `llama cli -hf unsloth/Qwen3.8-2.4T-A95B-GGUF:UD-IQ1_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3.8 Max (2.4T-A95B) (ud-iq4_xs, needs ~1440.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF/tree/main))
+2. Run Qwen3.8 Max (2.4T-A95B) (ud-iq4_xs, needs 1378 GB memory, 1310.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF@UD-IQ4_XS -y
@@ -183,7 +183,7 @@ Other versions: ud-iq1_m (~360.5 GB) `llama cli -hf unsloth/Qwen3.8-2.4T-A95B-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-iq1_m (~360.5 GB) `lms get https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF@UD-IQ1_M -y`
+Other versions: ud-iq1_m (594 GB memory, 564 GB download) `lms get https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF@UD-IQ1_M -y`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
 

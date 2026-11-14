@@ -55,7 +55,7 @@ weighted average                                 = 46.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
    
    ```sh
    llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
@@ -67,13 +67,13 @@ weighted average                                 = 46.3
    llama serve -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~11.4 GB) `llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ Other versions: Q8_0 (~11.4 GB) `llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -92,7 +92,7 @@ Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nous Hermes 2 SOLAR 10.7B (Q4_0, needs ~6.1 GB, from [ollama.com](https://ollama.com/library/nous-hermes2/tags))
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_0, needs 7.9 GB memory, 6.07 GB download, from [ollama.com](https://ollama.com/library/nous-hermes2/tags))
    
    ```sh
    ollama run nous-hermes2:10.7b

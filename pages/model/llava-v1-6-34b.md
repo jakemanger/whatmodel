@@ -65,13 +65,13 @@ weighted average                                   = 40.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LLaVA-v1.6-34B (Q4_K_M, needs ~21.38 GB, from [ollama.com](https://ollama.com/library/llava/tags))
+2. Run LLaVA-v1.6-34B (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [ollama.com](https://ollama.com/library/llava/tags))
    
    ```sh
    ollama run llava:34b-v1.6-q4_K_M
    ```
 
-Other versions: Q8_0 (~42.26 GB) `ollama run llava:34b-v1.6-q8_0`
+Other versions: Q8_0 (40.6 GB memory, 37.2 GB download) `ollama run llava:34b-v1.6-q8_0`
 
 Model repository and documentation: [huggingface.co/liuhaotian](https://huggingface.co/liuhaotian/llava-v1.6-34b)
 

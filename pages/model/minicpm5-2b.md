@@ -130,7 +130,7 @@ weighted average                                   = 62.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniCPM5 2B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
+2. Run MiniCPM5 2B (Q4_K_M, needs 2.5 GB memory, 1.56 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
    
    ```sh
    llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M
@@ -142,13 +142,13 @@ weighted average                                   = 62.8
    llama serve -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.68 GB) `llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q8_0`
+Other versions: Q8_0 (3.6 GB memory, 2.68 GB download) `llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniCPM5 2B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
+2. Run MiniCPM5 2B (Q4_K_M, needs 2.5 GB memory, 1.56 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
    
    ```sh
    lms get https://huggingface.co/openbmb/MiniCPM5-2B-GGUF@Q4_K_M -y
@@ -156,7 +156,7 @@ Other versions: Q8_0 (~2.68 GB) `llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2.68 GB) `lms get https://huggingface.co/openbmb/MiniCPM5-2B-GGUF@Q8_0 -y` · 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit -y` · 8bit (~2.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM5-2B-8bit -y`
+Other versions: Q8_0 (3.6 GB memory, 2.68 GB download) `lms get https://huggingface.co/openbmb/MiniCPM5-2B-GGUF@Q8_0 -y` · 4bit (2.4 GB memory, 1.42 GB download, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit -y` · 8bit (3.6 GB memory, 2.67 GB download, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM5-2B-8bit -y`
 
 ### Ollama
 
@@ -167,13 +167,13 @@ Other versions: Q8_0 (~2.68 GB) `lms get https://huggingface.co/openbmb/MiniCPM5
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MiniCPM5 2B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
+2. Run MiniCPM5 2B (Q4_K_M, needs 2.5 GB memory, 1.56 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3))
    
    ```sh
    ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.68 GB) `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q8_0`
+Other versions: Q8_0 (3.6 GB memory, 2.68 GB download) `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -186,7 +186,7 @@ Other versions: Q8_0 (~2.68 GB) `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q8_0`
    pip install mlx-lm
    ```
 
-2. Run MiniCPM5 2B (4bit, needs ~1.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit/tree/86ad5182c5a8532a4681ab972011d34c3b89477a))
+2. Run MiniCPM5 2B (4bit, needs 2.4 GB memory, 1.42 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit/tree/86ad5182c5a8532a4681ab972011d34c3b89477a))
    
    ```sh
    mlx_lm.chat --model mlx-community/MiniCPM5-2B-mlx-4Bit
@@ -198,7 +198,7 @@ Other versions: Q8_0 (~2.68 GB) `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q8_0`
    mlx_lm.server --model mlx-community/MiniCPM5-2B-mlx-4Bit
    ```
 
-Other versions: 8bit (~2.7 GB, Mac only) `mlx_lm.chat --model mlx-community/MiniCPM5-2B-8bit`
+Other versions: 8bit (3.6 GB memory, 2.67 GB download, Mac only) `mlx_lm.chat --model mlx-community/MiniCPM5-2B-8bit`
 
 Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM5-2B)
 

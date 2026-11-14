@@ -97,7 +97,7 @@ weighted average                                   = 36.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon 40B (base) (Q4_K_M, needs ~25.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-GGUF/tree/afba375ee076322b091dfe38a5f3c3b5f791a0c4))
+2. Run Falcon 40B (base) (Q4_K_M, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-GGUF/tree/afba375ee076322b091dfe38a5f3c3b5f791a0c4))
    
    ```sh
    llama cli -hf mradermacher/falcon-40b-GGUF:Q4_K_M
@@ -109,13 +109,13 @@ weighted average                                   = 36.3
    llama serve -hf mradermacher/falcon-40b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~44.5 GB) `llama cli -hf mradermacher/falcon-40b-GGUF:Q8_0`
+Other versions: Q8_0 (48.2 GB memory, 44.5 GB download) `llama cli -hf mradermacher/falcon-40b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon 40B (base) (Q4_K_M, needs ~25.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-GGUF/tree/afba375ee076322b091dfe38a5f3c3b5f791a0c4))
+2. Run Falcon 40B (base) (Q4_K_M, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-GGUF/tree/afba375ee076322b091dfe38a5f3c3b5f791a0c4))
    
    ```sh
    lms get https://huggingface.co/mradermacher/falcon-40b-GGUF@Q4_K_M -y
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~44.5 GB) `llama cli -hf mradermacher/falcon-40b-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~44.5 GB) `lms get https://huggingface.co/mradermacher/falcon-40b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (48.2 GB memory, 44.5 GB download) `lms get https://huggingface.co/mradermacher/falcon-40b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -134,7 +134,7 @@ Other versions: Q8_0 (~44.5 GB) `lms get https://huggingface.co/mradermacher/fal
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon 40B (base) (Q4_0, needs ~24 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+2. Run Falcon 40B (base) (Q4_0, needs 26.5 GB memory, 23.8 GB download, from [ollama.com](https://ollama.com/library/falcon/tags))
    
    ```sh
    ollama run falcon:40b-text
@@ -142,7 +142,7 @@ Other versions: Q8_0 (~44.5 GB) `lms get https://huggingface.co/mradermacher/fal
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~83.67 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-40b/tree/05ab2ee8d6b593bdbab17d728de5c028a7a94d83))
+1. Run it as published (BF16, needs 89.4 GB memory, 83.7 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-40b/tree/05ab2ee8d6b593bdbab17d728de5c028a7a94d83))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-40b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

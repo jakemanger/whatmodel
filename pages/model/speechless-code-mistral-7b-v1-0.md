@@ -59,7 +59,7 @@ weighted average                                   = 40.2
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~14.48 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0/tree/1862e0a712efc6002112e9c1235a197d58419b37))
+1. Run it as published (fp16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-code-mistral-7b-v1.0/tree/1862e0a712efc6002112e9c1235a197d58419b37))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-code-mistral-7b-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

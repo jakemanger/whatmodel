@@ -82,7 +82,7 @@ weighted average                                   = 41.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Starling-LM 7B beta (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF/tree/a080ea29e1798deffd25bde0c218dcad7d9dd64c))
+2. Run Starling-LM 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF/tree/a080ea29e1798deffd25bde0c218dcad7d9dd64c))
    
    ```sh
    llama cli -hf lmstudio-community/Starling-LM-7B-beta-GGUF:Q4_K_M
@@ -94,13 +94,13 @@ weighted average                                   = 41.4
    llama serve -hf lmstudio-community/Starling-LM-7B-beta-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/Starling-LM-7B-beta-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf lmstudio-community/Starling-LM-7B-beta-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Starling-LM 7B beta (Q4_K_M, needs ~4.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF/tree/a080ea29e1798deffd25bde0c218dcad7d9dd64c))
+2. Run Starling-LM 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF/tree/a080ea29e1798deffd25bde0c218dcad7d9dd64c))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF@Q4_K_M -y
@@ -108,7 +108,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf lmstudio-community/Starling-LM-7B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF@Q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Starling-LM-7B-beta-4bit -y` · 8bit (~7.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Starling-LM-7B-beta-8bit -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/lmstudio-community/Starling-LM-7B-beta-GGUF@Q8_0 -y` · 4bit (6 GB memory, 4.26 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Starling-LM-7B-beta-4bit -y` · 8bit (9.7 GB memory, 7.82 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Starling-LM-7B-beta-8bit -y`
 
 ### Ollama
 
@@ -119,13 +119,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Starling-LM 7B beta (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/starling-lm/tags))
+2. Run Starling-LM 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/starling-lm/tags))
    
    ```sh
    ollama run starling-lm:7b-beta-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.19 GB) `ollama run starling-lm:7b-beta-q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run starling-lm:7b-beta-q8_0`
 
 ### MLX (Mac)
 
@@ -138,7 +138,7 @@ Other versions: Q8_0 (~9.19 GB) `ollama run starling-lm:7b-beta-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Starling-LM 7B beta (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Starling-LM-7B-beta-4bit/tree/03264990e1dd1b6fd4853004c59631a5f432c9c8))
+2. Run Starling-LM 7B beta (4bit, needs 6 GB memory, 4.26 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Starling-LM-7B-beta-4bit/tree/03264990e1dd1b6fd4853004c59631a5f432c9c8))
    
    ```sh
    mlx_lm.chat --model mlx-community/Starling-LM-7B-beta-4bit
@@ -150,7 +150,7 @@ Other versions: Q8_0 (~9.19 GB) `ollama run starling-lm:7b-beta-q8_0`
    mlx_lm.server --model mlx-community/Starling-LM-7B-beta-4bit
    ```
 
-Other versions: 8bit (~7.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Starling-LM-7B-beta-8bit`
+Other versions: 8bit (9.7 GB memory, 7.82 GB download, Mac only) `mlx_lm.chat --model mlx-community/Starling-LM-7B-beta-8bit`
 
 Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Starling-LM-7B-beta)
 

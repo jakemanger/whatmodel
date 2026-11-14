@@ -52,7 +52,7 @@ weighted average                                 = 47.2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3 70B (base) (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
+2. Run Llama 3 70B (base) (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
    
    ```sh
    lms get https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit -y
@@ -71,7 +71,7 @@ weighted average                                 = 47.2
    pip install mlx-lm
    ```
 
-2. Run Llama 3 70B (base) (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
+2. Run Llama 3 70B (base) (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
    
    ```sh
    mlx_lm.chat --model mlx-community/Meta-Llama-3-70B-4bit
@@ -85,7 +85,7 @@ weighted average                                 = 47.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B/tree/c82494877ce7f6d7d317c56ec081328e382c72fe))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B/tree/c82494877ce7f6d7d317c56ec081328e382c72fe))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meta-llama/Meta-Llama-3-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

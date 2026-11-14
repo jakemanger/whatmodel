@@ -53,7 +53,7 @@ weighted average                                   = 58.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run TranslateGemma 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-4b-it-GGUF/tree/d37868f759d2f817a43d28dd80cf9f982ffa62fd))
+2. Run TranslateGemma 4B (Q4_K_M, needs 4.7 GB memory, 3.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-4b-it-GGUF/tree/d37868f759d2f817a43d28dd80cf9f982ffa62fd))
    
    ```sh
    llama cli -hf mradermacher/translategemma-4b-it-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                                   = 58.1
    llama serve -hf mradermacher/translategemma-4b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.1 GB) `llama cli -hf mradermacher/translategemma-4b-it-GGUF:Q8_0`
+Other versions: Q8_0 (6.3 GB memory, 4.72 GB download) `llama cli -hf mradermacher/translategemma-4b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run TranslateGemma 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-4b-it-GGUF/tree/d37868f759d2f817a43d28dd80cf9f982ffa62fd))
+2. Run TranslateGemma 4B (Q4_K_M, needs 4.7 GB memory, 3.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-4b-it-GGUF/tree/d37868f759d2f817a43d28dd80cf9f982ffa62fd))
    
    ```sh
    lms get https://huggingface.co/mradermacher/translategemma-4b-it-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~4.1 GB) `llama cli -hf mradermacher/translategemma-4b-it-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/mradermacher/translategemma-4b-it-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-4b-it-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-4b-it-8bit -y`
+Other versions: Q8_0 (6.3 GB memory, 4.72 GB download) `lms get https://huggingface.co/mradermacher/translategemma-4b-it-GGUF@Q8_0 -y` · 4bit (3.8 GB memory, 2.18 GB download, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-4b-it-4bit -y` · 8bit (5.7 GB memory, 4.12 GB download, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-4b-it-8bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/mradermacher/tran
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run TranslateGemma 4B (Q4_K_M, needs ~3.3 GB, from [ollama.com](https://ollama.com/library/translategemma/tags))
+2. Run TranslateGemma 4B (Q4_K_M, needs 4.9 GB memory, 3.3 GB download, from [ollama.com](https://ollama.com/library/translategemma/tags))
    
    ```sh
    ollama run translategemma:4b
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/mradermacher/tran
    pip install mlx-lm
    ```
 
-2. Run TranslateGemma 4B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/translategemma-4b-it-4bit/tree/5788ec08c047f3f2e17808101b8d9566ac930d58))
+2. Run TranslateGemma 4B (4bit, needs 3.8 GB memory, 2.18 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/translategemma-4b-it-4bit/tree/5788ec08c047f3f2e17808101b8d9566ac930d58))
    
    ```sh
    mlx_lm.chat --model mlx-community/translategemma-4b-it-4bit
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/mradermacher/tran
    mlx_lm.server --model mlx-community/translategemma-4b-it-4bit
    ```
 
-Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/translategemma-4b-it-8bit`
+Other versions: 8bit (5.7 GB memory, 4.12 GB download, Mac only) `mlx_lm.chat --model mlx-community/translategemma-4b-it-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/translategemma-4b-it)
 

@@ -115,7 +115,7 @@ weighted average                                   = 47.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi 1.5 34B Chat (Q4_K_M, needs ~20.7 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF/tree/3f7225e3a0dd9ef844d73e559d04448054077625))
+2. Run Yi 1.5 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF/tree/3f7225e3a0dd9ef844d73e559d04448054077625))
    
    ```sh
    llama cli -hf lmstudio-community/Yi-1.5-34B-Chat-GGUF:Q4_K_M
@@ -127,13 +127,13 @@ weighted average                                   = 47.0
    llama serve -hf lmstudio-community/Yi-1.5-34B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.5 GB) `llama cli -hf lmstudio-community/Yi-1.5-34B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `llama cli -hf lmstudio-community/Yi-1.5-34B-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi 1.5 34B Chat (Q4_K_M, needs ~20.7 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF/tree/3f7225e3a0dd9ef844d73e559d04448054077625))
+2. Run Yi 1.5 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF/tree/3f7225e3a0dd9ef844d73e559d04448054077625))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF@Q4_K_M -y
@@ -141,7 +141,7 @@ Other versions: Q8_0 (~36.5 GB) `llama cli -hf lmstudio-community/Yi-1.5-34B-Cha
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF@Q8_0 -y` · 4bit (~19.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-4bit -y` · 8bit (~36.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-8bit -y`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `lms get https://huggingface.co/lmstudio-community/Yi-1.5-34B-Chat-GGUF@Q8_0 -y` · 4bit (21.8 GB memory, 19.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-4bit -y` · 8bit (39.8 GB memory, 36.5 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-8bit -y`
 
 ### Ollama
 
@@ -152,13 +152,13 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi 1.5 34B Chat (Q4_K_M, needs ~21.13 GB, from [ollama.com](https://ollama.com/library/yi/tags))
+2. Run Yi 1.5 34B Chat (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [ollama.com](https://ollama.com/library/yi/tags))
    
    ```sh
    ollama run yi:34b-chat-v1.5-q4_K_M
    ```
 
-Other versions: Q8_0 (~41.77 GB) `ollama run yi:34b-chat-v1.5-q8_0`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `ollama run yi:34b-chat-v1.5-q8_0`
 
 ### MLX (Mac)
 
@@ -171,7 +171,7 @@ Other versions: Q8_0 (~41.77 GB) `ollama run yi:34b-chat-v1.5-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Yi 1.5 34B Chat (4bit, needs ~19.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-4bit/tree/945e3b306ef37c46ab444fdc857d1f3ea7247374))
+2. Run Yi 1.5 34B Chat (4bit, needs 21.8 GB memory, 19.3 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-34B-Chat-4bit/tree/945e3b306ef37c46ab444fdc857d1f3ea7247374))
    
    ```sh
    mlx_lm.chat --model mlx-community/Yi-1.5-34B-Chat-4bit
@@ -183,7 +183,7 @@ Other versions: Q8_0 (~41.77 GB) `ollama run yi:34b-chat-v1.5-q8_0`
    mlx_lm.server --model mlx-community/Yi-1.5-34B-Chat-4bit
    ```
 
-Other versions: 8bit (~36.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Yi-1.5-34B-Chat-8bit`
+Other versions: 8bit (39.8 GB memory, 36.5 GB download, Mac only) `mlx_lm.chat --model mlx-community/Yi-1.5-34B-Chat-8bit`
 
 Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-34B-Chat)
 

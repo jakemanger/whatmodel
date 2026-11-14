@@ -131,7 +131,7 @@ api (Amazon Bedrock) · $1.07/M blended · $0.6 in / $2.5 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Kimi K2 Thinking (ud-q4_k_xl, needs ~600.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF/tree/main))
+2. Run Kimi K2 Thinking (ud-q4_k_xl, needs 680 GB memory, 646.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Kimi-K2-Thinking-GGUF:UD-Q4_K_XL
@@ -143,13 +143,13 @@ api (Amazon Bedrock) · $1.07/M blended · $0.6 in / $2.5 out per 1M tokens · [
    llama serve -hf unsloth/Kimi-K2-Thinking-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~300.5 GB) `llama cli -hf unsloth/Kimi-K2-Thinking-GGUF:UD-Q2_K_XL` · ud-iq1_s (~150.5 GB) `llama cli -hf unsloth/Kimi-K2-Thinking-GGUF:UD-IQ1_S`
+Other versions: ud-q2_k_xl (407 GB memory, 386.3 GB download) `llama cli -hf unsloth/Kimi-K2-Thinking-GGUF:UD-Q2_K_XL` · ud-iq1_s (301 GB memory, 285.3 GB download) `llama cli -hf unsloth/Kimi-K2-Thinking-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Kimi K2 Thinking (ud-q4_k_xl, needs ~600.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF/tree/main))
+2. Run Kimi K2 Thinking (ud-q4_k_xl, needs 680 GB memory, 646.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF@UD-Q4_K_XL -y
@@ -157,7 +157,7 @@ Other versions: ud-q2_k_xl (~300.5 GB) `llama cli -hf unsloth/Kimi-K2-Thinking-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~150.5 GB) `lms get https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF@UD-IQ1_S -y` · 4bit (~657.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Kimi-K2-Thinking -y`
+Other versions: ud-q2_k_xl (407 GB memory, 386.3 GB download) `lms get https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (301 GB memory, 285.3 GB download) `lms get https://huggingface.co/unsloth/Kimi-K2-Thinking-GGUF@UD-IQ1_S -y` · 4bit (692 GB memory, 657.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Kimi-K2-Thinking -y`
 
 ### MLX (Mac)
 
@@ -170,7 +170,7 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    pip install mlx-lm
    ```
 
-2. Run Kimi K2 Thinking (4bit, needs ~657.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Kimi-K2-Thinking/tree/035a0cdd221ae0dca6b03120e20704a251a7bc9b))
+2. Run Kimi K2 Thinking (4bit, needs 692 GB memory, 657.6 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Kimi-K2-Thinking/tree/035a0cdd221ae0dca6b03120e20704a251a7bc9b))
    
    ```sh
    mlx_lm.chat --model mlx-community/Kimi-K2-Thinking

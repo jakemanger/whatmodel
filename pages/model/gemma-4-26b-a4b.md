@@ -201,7 +201,7 @@ api (DeepInfra) · $0.14/M blended · $0.07 in / $0.34 out per 1M tokens · [dee
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs 20 GB memory, 18 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
    
    ```sh
    llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
@@ -213,13 +213,13 @@ api (DeepInfra) · $0.14/M blended · $0.07 in / $0.34 out per 1M tokens · [dee
    llama serve -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~26.9 GB) `llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0`
+Other versions: Q8_0 (30.1 GB memory, 28.1 GB download) `llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs 20 GB memory, 18 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q4_K_M -y
@@ -227,7 +227,7 @@ Other versions: Q8_0 (~26.9 GB) `llama cli -hf lmstudio-community/gemma-4-26B-A4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~26.9 GB) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q8_0 -y` · 4bit (~15.6 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit -y` · 8bit (~28 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit -y`
+Other versions: Q8_0 (30.1 GB memory, 28.1 GB download) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q8_0 -y` · 4bit (17.6 GB memory, 15.6 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit -y` · 8bit (30 GB memory, 28 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit -y`
 
 ### Ollama
 
@@ -238,13 +238,13 @@ Other versions: Q8_0 (~26.9 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~15.62 GB, from [ollama.com](https://ollama.com/library/gemma4/tags))
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs 20.7 GB memory, 18.7 GB download, from [ollama.com](https://ollama.com/library/gemma4/tags))
    
    ```sh
    ollama run gemma4:26b
    ```
 
-Other versions: qat (~15.62 GB) `ollama run gemma4:26b-a4b-it-qat`
+Other versions: qat (17.6 GB memory, 15.6 GB download) `ollama run gemma4:26b-a4b-it-qat`
 
 ### MLX (Mac)
 
@@ -257,7 +257,7 @@ Other versions: qat (~15.62 GB) `ollama run gemma4:26b-a4b-it-qat`
    pip install mlx-lm
    ```
 
-2. Run Gemma 4 26B-A4B (4bit, needs ~15.6 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit/tree/79290e197d238113e50abe4cbd4731b65288f88e))
+2. Run Gemma 4 26B-A4B (4bit, needs 17.6 GB memory, 15.6 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit/tree/79290e197d238113e50abe4cbd4731b65288f88e))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
@@ -269,7 +269,7 @@ Other versions: qat (~15.62 GB) `ollama run gemma4:26b-a4b-it-qat`
    mlx_lm.server --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
    ```
 
-Other versions: 8bit (~28 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit`
+Other versions: 8bit (30 GB memory, 28 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-4-26B-A4B-it)
 

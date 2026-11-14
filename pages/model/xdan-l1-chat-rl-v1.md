@@ -58,7 +58,7 @@ weighted average                                   = 37.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
+2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
    
    ```sh
    llama cli -hf TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 37.3
    llama serve -hf TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
+2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
    
    ```sh
    lms get https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/xDAN-L1-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
+2. Run xDAN-L1-Chat-RL-v1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF/tree/0d75d8fe750b13cc897696fa3ef518e2e8b60481))
    
    ```sh
    ollama run hf.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/TheBloke/xDAN-L1-Chat-RL-v1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~28.97 GB, from [huggingface.co/xDAN-AI](https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1/tree/232b7883284e0bf2ef776afe9701dfa583a69cdb))
+1. Run it as published (fp32, needs 32 GB memory, 29 GB download, from [huggingface.co/xDAN-AI](https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1/tree/232b7883284e0bf2ef776afe9701dfa583a69cdb))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='xDAN-AI/xDAN-L1-Chat-RL-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

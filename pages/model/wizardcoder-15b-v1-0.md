@@ -58,7 +58,7 @@ weighted average                                   = 42.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs ~10.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
+2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs 12.1 GB memory, 10.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
    
    ```sh
    llama cli -hf mradermacher/WizardCoder-15B-V1.0-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 42.9
    llama serve -hf mradermacher/WizardCoder-15B-V1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/WizardCoder-15B-V1.0-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf mradermacher/WizardCoder-15B-V1.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs ~10.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
+2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs 12.1 GB memory, 10.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
    
    ```sh
    lms get https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/WizardCoder-15B-V1.0-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF@Q8_0 -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/Wizar
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs ~10.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
+2. Run WizardCoder-15B-V1.0 (Q4_K_M, needs 12.1 GB memory, 10.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/WizardCoder-15B-V1.0-GGUF/tree/e3562bc7e44f17e8cf81180b5c0820847737c292))
    
    ```sh
    ollama run hf.co/mradermacher/WizardCoder-15B-V1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/WizardCoder-15B-V1.0-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `ollama run hf.co/mradermacher/WizardCoder-15B-V1.0-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~31.04 GB, from [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0/tree/9c177589dec389eac2c8de51cbc371d45e47984e))
+1. Run it as published (fp16, needs 34.1 GB memory, 31 GB download, from [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0/tree/9c177589dec389eac2c8de51cbc371d45e47984e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardCoder-15B-V1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

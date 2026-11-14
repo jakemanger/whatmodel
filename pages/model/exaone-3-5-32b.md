@@ -55,7 +55,7 @@ weighted average                                   = 54.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs ~19.34 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF/tree/ab7a6e0ead00c8e79e5603cfd314d69a212e483d))
+2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF/tree/ab7a6e0ead00c8e79e5603cfd314d69a212e483d))
    
    ```sh
    llama cli -hf LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF:Q4_K_M
@@ -71,7 +71,7 @@ weighted average                                   = 54.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs ~19.34 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF/tree/ab7a6e0ead00c8e79e5603cfd314d69a212e483d))
+2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF/tree/ab7a6e0ead00c8e79e5603cfd314d69a212e483d))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ weighted average                                   = 54.4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~18 GB, Mac only) `lms get https://huggingface.co/alexander583/EXAONE-3.5-32B-Instruct-Q4-mlx -y`
+Other versions: 4bit (20.4 GB memory, 18 GB download, Mac only) `lms get https://huggingface.co/alexander583/EXAONE-3.5-32B-Instruct-Q4-mlx -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: 4bit (~18 GB, Mac only) `lms get https://huggingface.co/alexande
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs ~19 GB, from [ollama.com](https://ollama.com/library/exaone3.5/tags))
+2. Run EXAONE 3.5 32B Instruct (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [ollama.com](https://ollama.com/library/exaone3.5/tags))
    
    ```sh
    ollama run exaone3.5:32b
@@ -107,7 +107,7 @@ Other versions: 4bit (~18 GB, Mac only) `lms get https://huggingface.co/alexande
    pip install mlx-lm
    ```
 
-2. Run EXAONE 3.5 32B Instruct (4bit, needs ~18 GB, Mac only, from [huggingface.co/alexander583](https://huggingface.co/alexander583/EXAONE-3.5-32B-Instruct-Q4-mlx/tree/e8cb81917f9c6211a2396d579b9ecedb9d12bcf9))
+2. Run EXAONE 3.5 32B Instruct (4bit, needs 20.4 GB memory, 18 GB download, Mac only, from [huggingface.co/alexander583](https://huggingface.co/alexander583/EXAONE-3.5-32B-Instruct-Q4-mlx/tree/e8cb81917f9c6211a2396d579b9ecedb9d12bcf9))
    
    ```sh
    mlx_lm.chat --model alexander583/EXAONE-3.5-32B-Instruct-Q4-mlx

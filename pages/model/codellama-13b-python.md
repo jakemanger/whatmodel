@@ -70,7 +70,7 @@ weighted average                                   = 39.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 13B Python (Q4_K_M, needs ~7.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF/tree/2ee335154201257a3a7bec557a41986de046e0b2))
+2. Run Code Llama 13B Python (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF/tree/2ee335154201257a3a7bec557a41986de046e0b2))
    
    ```sh
    llama cli -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                                   = 39.8
    llama serve -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `llama cli -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 13B Python (Q4_K_M, needs ~7.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF/tree/2ee335154201257a3a7bec557a41986de046e0b2))
+2. Run Code Llama 13B Python (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF/tree/2ee335154201257a3a7bec557a41986de046e0b2))
    
    ```sh
    lms get https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF@Q4_K_M -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf mradermacher/CodeLlama-13b-Python
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF@Q8_0 -y`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `lms get https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/mradermacher/Cod
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 13B Python (Q4_K_M, needs ~7.9 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 13B Python (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:13b-python-q4_K_M
    ```
 
-Other versions: Q8_0 (~14 GB) `ollama run codellama:13b-python-q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `ollama run codellama:13b-python-q8_0`
 
 Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-13b-Python-hf)
 

@@ -80,7 +80,7 @@ weighted average                                   = 44.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenThinker 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/OpenThinker-7B-GGUF/tree/091cdd601d3dc6c2c55923a965e41eb199d912ec))
+2. Run OpenThinker 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/OpenThinker-7B-GGUF/tree/091cdd601d3dc6c2c55923a965e41eb199d912ec))
    
    ```sh
    llama cli -hf bartowski/OpenThinker-7B-GGUF:Q4_K_M
@@ -92,13 +92,13 @@ weighted average                                   = 44.8
    llama serve -hf bartowski/OpenThinker-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf bartowski/OpenThinker-7B-GGUF:Q8_0`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `llama cli -hf bartowski/OpenThinker-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenThinker 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/OpenThinker-7B-GGUF/tree/091cdd601d3dc6c2c55923a965e41eb199d912ec))
+2. Run OpenThinker 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/OpenThinker-7B-GGUF/tree/091cdd601d3dc6c2c55923a965e41eb199d912ec))
    
    ```sh
    lms get https://huggingface.co/bartowski/OpenThinker-7B-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf bartowski/OpenThinker-7B-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/OpenThinker-7B-GGUF@Q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-4bit-mlx -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-8bit-mlx -y`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `lms get https://huggingface.co/bartowski/OpenThinker-7B-GGUF@Q8_0 -y` · 4bit (6 GB memory, 4.28 GB download, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-4bit-mlx -y` · 8bit (10 GB memory, 8.09 GB download, Mac only) `lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-8bit-mlx -y`
 
 ### Ollama
 
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/OpenThi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenThinker 7B (Q4_K_M, needs ~4.7 GB, from [ollama.com](https://ollama.com/library/openthinker/tags))
+2. Run OpenThinker 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [ollama.com](https://ollama.com/library/openthinker/tags))
    
    ```sh
    ollama run openthinker:7b
@@ -134,7 +134,7 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/OpenThi
    pip install mlx-lm
    ```
 
-2. Run OpenThinker 7B (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/AlejandroOlmedo](https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-4bit-mlx/tree/2a9a5be5af1e2aeceec0db21fe9cdcd065f4dd9d))
+2. Run OpenThinker 7B (4bit, needs 6 GB memory, 4.28 GB download, Mac only, from [huggingface.co/AlejandroOlmedo](https://huggingface.co/AlejandroOlmedo/OpenThinker-7B-4bit-mlx/tree/2a9a5be5af1e2aeceec0db21fe9cdcd065f4dd9d))
    
    ```sh
    mlx_lm.chat --model AlejandroOlmedo/OpenThinker-7B-4bit-mlx
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/OpenThi
    mlx_lm.server --model AlejandroOlmedo/OpenThinker-7B-4bit-mlx
    ```
 
-Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model AlejandroOlmedo/OpenThinker-7B-8bit-mlx`
+Other versions: 8bit (10 GB memory, 8.09 GB download, Mac only) `mlx_lm.chat --model AlejandroOlmedo/OpenThinker-7B-8bit-mlx`
 
 Model repository and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker-7B)
 

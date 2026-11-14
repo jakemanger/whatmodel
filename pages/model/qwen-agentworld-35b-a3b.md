@@ -53,7 +53,7 @@ weighted average                                   = 70.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs 23.3 GB memory, 22.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
    
    ```sh
    llama cli -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
@@ -69,7 +69,7 @@ weighted average                                   = 70.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs 23.3 GB memory, 22.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
    
    ```sh
    lms get https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF@UD-Q4_K_XL -y
@@ -77,7 +77,7 @@ weighted average                                   = 70.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit -y` · 8bit (~36.8 GB, Mac only) `lms get https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit -y`
+Other versions: 4bit (20.5 GB memory, 19.5 GB download, Mac only) `lms get https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit -y` · 8bit (37.8 GB memory, 36.8 GB download, Mac only) `lms get https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit -y`
 
 ### Ollama
 
@@ -88,7 +88,7 @@ Other versions: 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/erobey
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs 23.3 GB memory, 22.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
    
    ```sh
    ollama run hf.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
@@ -105,7 +105,7 @@ Other versions: 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/erobey
    pip install mlx-lm
    ```
 
-2. Run Qwen-AgentWorld 35B-A3B (4bit, needs ~19.5 GB, Mac only, from [huggingface.co/erobey](https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit/tree/75f1243916e17c6a5fe6d8fa908d5eb947b53f31))
+2. Run Qwen-AgentWorld 35B-A3B (4bit, needs 20.5 GB memory, 19.5 GB download, Mac only, from [huggingface.co/erobey](https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit/tree/75f1243916e17c6a5fe6d8fa908d5eb947b53f31))
    
    ```sh
    mlx_lm.chat --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
@@ -117,11 +117,11 @@ Other versions: 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/erobey
    mlx_lm.server --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
    ```
 
-Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit`
+Other versions: 8bit (37.8 GB memory, 36.8 GB download, Mac only) `mlx_lm.chat --model DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~69.3 GB, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb))
+1. Run it as published (BF16, needs 70.3 GB memory, 69.3 GB download, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb))
    
    ```sh
    vllm serve Qwen/Qwen-AgentWorld-35B-A3B

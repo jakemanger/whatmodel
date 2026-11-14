@@ -53,7 +53,7 @@ weighted average                                   = 64.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run TranslateGemma 27B (Q4_K_M, needs ~16.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
+2. Run TranslateGemma 27B (Q4_K_M, needs 20.6 GB memory, 17.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
    
    ```sh
    llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                                   = 64.2
    llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~28.7 GB) `llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q8_0`
+Other versions: Q8_0 (32.8 GB memory, 29.3 GB download) `llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run TranslateGemma 27B (Q4_K_M, needs ~16.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
+2. Run TranslateGemma 27B (Q4_K_M, needs 20.6 GB memory, 17.1 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
    
    ```sh
    lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~28.7 GB) `llama cli -hf mradermacher/translategemma-27b-i
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q8_0 -y` · 4bit (~15.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-4bit -y` · 8bit (~28.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-8bit -y`
+Other versions: Q8_0 (32.8 GB memory, 29.3 GB download) `lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q8_0 -y` · 4bit (18.7 GB memory, 15.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-4bit -y` · 8bit (32.2 GB memory, 28.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-8bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/tra
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run TranslateGemma 27B (Q4_K_M, needs ~17 GB, from [ollama.com](https://ollama.com/library/translategemma/tags))
+2. Run TranslateGemma 27B (Q4_K_M, needs 20.9 GB memory, 17.4 GB download, from [ollama.com](https://ollama.com/library/translategemma/tags))
    
    ```sh
    ollama run translategemma:27b
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/tra
    pip install mlx-lm
    ```
 
-2. Run TranslateGemma 27B (4bit, needs ~15.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/translategemma-27b-it-4bit/tree/050947f9ea5a93df6cdbbc964e03c6e97894978c))
+2. Run TranslateGemma 27B (4bit, needs 18.7 GB memory, 15.2 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/translategemma-27b-it-4bit/tree/050947f9ea5a93df6cdbbc964e03c6e97894978c))
    
    ```sh
    mlx_lm.chat --model mlx-community/translategemma-27b-it-4bit
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/tra
    mlx_lm.server --model mlx-community/translategemma-27b-it-4bit
    ```
 
-Other versions: 8bit (~28.7 GB, Mac only) `mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit`
+Other versions: 8bit (32.2 GB memory, 28.7 GB download, Mac only) `mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/translategemma-27b-it)
 

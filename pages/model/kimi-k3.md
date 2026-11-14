@@ -162,7 +162,7 @@ api (Moonshot AI) · $6.00/M blended · $3 in / $15 out per 1M tokens · [platfo
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Kimi K3 (ud-q4_k_xl, needs ~1680.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K3-GGUF/tree/main))
+2. Run Kimi K3 (ud-q4_k_xl, needs 1587 GB memory, 1509.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K3-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Kimi-K3-GGUF:UD-Q4_K_XL
@@ -174,13 +174,13 @@ api (Moonshot AI) · $6.00/M blended · $3 in / $15 out per 1M tokens · [platfo
    llama serve -hf unsloth/Kimi-K3-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~840.5 GB) `llama cli -hf unsloth/Kimi-K3-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (907 GB memory, 862.2 GB download) `llama cli -hf unsloth/Kimi-K3-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Kimi K3 (ud-q4_k_xl, needs ~1680.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K3-GGUF/tree/main))
+2. Run Kimi K3 (ud-q4_k_xl, needs 1587 GB memory, 1509.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K3-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Kimi-K3-GGUF@UD-Q4_K_XL -y
@@ -188,7 +188,7 @@ Other versions: ud-q2_k_xl (~840.5 GB) `llama cli -hf unsloth/Kimi-K3-GGUF:UD-Q2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~840.5 GB) `lms get https://huggingface.co/unsloth/Kimi-K3-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (907 GB memory, 862.2 GB download) `lms get https://huggingface.co/unsloth/Kimi-K3-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K3)
 

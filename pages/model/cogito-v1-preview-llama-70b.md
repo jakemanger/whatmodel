@@ -54,7 +54,7 @@ weighted average                        = 60.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF/tree/566424785cf0dfb44ee9cfb058dcdff4cfaf1d3f))
+2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF/tree/566424785cf0dfb44ee9cfb058dcdff4cfaf1d3f))
    
    ```sh
    llama cli -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q4_K_M
@@ -66,13 +66,13 @@ weighted average                        = 60.7
    llama serve -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q8_0`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF/tree/566424785cf0dfb44ee9cfb058dcdff4cfaf1d3f))
+2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF/tree/566424785cf0dfb44ee9cfb058dcdff4cfaf1d3f))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/cogito-v1-previe
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF@Q8_0 -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF@Q8_0 -y` · 4bit (43.2 GB memory, 39.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit -y` · 8bit (80.3 GB memory, 75 GB download, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit -y`
 
 ### Ollama
 
@@ -91,7 +91,7 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs ~43 GB, from [ollama.com](https://ollama.com/library/cogito/tags))
+2. Run Cogito v1 Preview Llama 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [ollama.com](https://ollama.com/library/cogito/tags))
    
    ```sh
    ollama run cogito:70b
@@ -108,7 +108,7 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
    pip install mlx-lm
    ```
 
-2. Run Cogito v1 Preview Llama 70B (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit/tree/d56b56f2605a6707493957ad4ac025e96c6fe549))
+2. Run Cogito v1 Preview Llama 70B (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit/tree/d56b56f2605a6707493957ad4ac025e96c6fe549))
    
    ```sh
    mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
    mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit
    ```
 
-Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit`
+Other versions: 8bit (80.3 GB memory, 75 GB download, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit`
 
 Model repository and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B)
 

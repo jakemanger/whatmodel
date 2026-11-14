@@ -70,7 +70,7 @@ weighted average                                   = 48.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniCPM3-4B (Q4_K_M, needs ~2.47 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
+2. Run MiniCPM3-4B (Q4_K_M, needs 4.1 GB memory, 2.47 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
    
    ```sh
    llama cli -hf openbmb/MiniCPM3-4B-GGUF:Q4_K_M
@@ -86,7 +86,7 @@ weighted average                                   = 48.5
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniCPM3-4B (Q4_K_M, needs ~2.47 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
+2. Run MiniCPM3-4B (Q4_K_M, needs 4.1 GB memory, 2.47 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
    
    ```sh
    lms get https://huggingface.co/openbmb/MiniCPM3-4B-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ weighted average                                   = 48.5
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~2.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM3-4B-4bit -y`
+Other versions: 4bit (4 GB memory, 2.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/MiniCPM3-4B-4bit -y`
 
 ### Ollama
 
@@ -105,7 +105,7 @@ Other versions: 4bit (~2.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MiniCPM3-4B (Q4_K_M, needs ~2.47 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
+2. Run MiniCPM3-4B (Q4_K_M, needs 4.1 GB memory, 2.47 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8))
    
    ```sh
    ollama run hf.co/openbmb/MiniCPM3-4B-GGUF:Q4_K_M
@@ -122,7 +122,7 @@ Other versions: 4bit (~2.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run MiniCPM3-4B (4bit, needs ~2.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiniCPM3-4B-4bit/tree/7a5f80ff3161be21f0a90e9be7137495633b2b99))
+2. Run MiniCPM3-4B (4bit, needs 4 GB memory, 2.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiniCPM3-4B-4bit/tree/7a5f80ff3161be21f0a90e9be7137495633b2b99))
    
    ```sh
    mlx_lm.chat --model mlx-community/MiniCPM3-4B-4bit

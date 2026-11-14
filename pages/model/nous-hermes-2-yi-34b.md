@@ -53,7 +53,7 @@ weighted average                          = 50.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nous Hermes 2 Yi 34B (Q4_K_M, needs ~20.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF/tree/a1108c2a23e43982ec8a8450c6153cf60a802f8d))
+2. Run Nous Hermes 2 Yi 34B (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF/tree/a1108c2a23e43982ec8a8450c6153cf60a802f8d))
    
    ```sh
    llama cli -hf TheBloke/Nous-Hermes-2-Yi-34B-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 50.2
    llama serve -hf TheBloke/Nous-Hermes-2-Yi-34B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.5 GB) `llama cli -hf TheBloke/Nous-Hermes-2-Yi-34B-GGUF:Q8_0`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `llama cli -hf TheBloke/Nous-Hermes-2-Yi-34B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nous Hermes 2 Yi 34B (Q4_K_M, needs ~20.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF/tree/a1108c2a23e43982ec8a8450c6153cf60a802f8d))
+2. Run Nous Hermes 2 Yi 34B (Q4_K_M, needs 23.2 GB memory, 20.7 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF/tree/a1108c2a23e43982ec8a8450c6153cf60a802f8d))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~36.5 GB) `llama cli -hf TheBloke/Nous-Hermes-2-Yi-34B-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF@Q8_0 -y` · 4bit (~19.3 GB, Mac only) `lms get https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX -y` · 8bit (~36.5 GB, Mac only) `lms get https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q8-MLX -y`
+Other versions: Q8_0 (39.8 GB memory, 36.5 GB download) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Yi-34B-GGUF@Q8_0 -y` · 4bit (~21.8 GB memory, ~19.3 GB download, Mac only) `lms get https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX -y` · 8bit (~39.8 GB memory, ~36.5 GB download, Mac only) `lms get https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q8-MLX -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nous Hermes 2 Yi 34B (Q4_0, needs ~19 GB, from [ollama.com](https://ollama.com/library/nous-hermes2/tags))
+2. Run Nous Hermes 2 Yi 34B (Q4_0, needs 22 GB memory, 19.5 GB download, from [ollama.com](https://ollama.com/library/nous-hermes2/tags))
    
    ```sh
    ollama run nous-hermes2:34b
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    pip install mlx-lm
    ```
 
-2. Run Nous Hermes 2 Yi 34B (4bit, needs ~19.3 GB, Mac only, from [huggingface.co/tstepspam](https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX/tree/713c566ec91b9e6e2e922effc8044fb2a6b8ae8c))
+2. Run Nous Hermes 2 Yi 34B (4bit, needs ~21.8 GB memory, ~19.3 GB download, Mac only, from [huggingface.co/tstepspam](https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX/tree/713c566ec91b9e6e2e922effc8044fb2a6b8ae8c))
    
    ```sh
    mlx_lm.chat --model tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    mlx_lm.server --model tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX
    ```
 
-Other versions: 8bit (~36.5 GB, Mac only) `mlx_lm.chat --model tstepspam/Nous-Hermes-2-Yi-34B-Q8-MLX`
+Other versions: 8bit (~39.8 GB memory, ~36.5 GB download, Mac only) `mlx_lm.chat --model tstepspam/Nous-Hermes-2-Yi-34B-Q8-MLX`
 
 Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B)
 

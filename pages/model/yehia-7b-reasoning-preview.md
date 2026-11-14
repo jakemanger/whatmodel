@@ -44,7 +44,7 @@ weighted average                              = 55.8
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14 GB, from [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/tree/f761e889b9ab71929307470e6a29479da35bb6a9))
+1. Run it as published (BF16, needs 16.2 GB memory, 14 GB download, from [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/tree/f761e889b9ab71929307470e6a29479da35bb6a9))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='JasperV13/Yehia-7B-Reasoning-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

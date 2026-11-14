@@ -44,7 +44,7 @@ weighted average                          = 33.1
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~27.55 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/tree/838af31020e1ebe5d627c9888e090b1fe4d2576e))
+1. Run it as published (fp32, needs 30.5 GB memory, 27.6 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/tree/838af31020e1ebe5d627c9888e090b1fe4d2576e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -157,7 +157,7 @@ api (Amazon Bedrock) · $2.40/M blended · $2.4 in / $2.4 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 405B Instruct (Q2_K, needs ~151.2 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF/tree/85b9bd67025a4337e9694ec0edaf46437fe6283b))
+2. Run Llama 3.1 405B Instruct (Q2_K, needs 160 GB memory, 151.2 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF/tree/85b9bd67025a4337e9694ec0edaf46437fe6283b))
    
    ```sh
    llama cli -hf MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF:Q2_K
@@ -173,7 +173,7 @@ api (Amazon Bedrock) · $2.40/M blended · $2.4 in / $2.4 out per 1M tokens · [
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 405B Instruct (Q2_K, needs ~151.2 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF/tree/85b9bd67025a4337e9694ec0edaf46437fe6283b))
+2. Run Llama 3.1 405B Instruct (Q2_K, needs 160 GB memory, 151.2 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF/tree/85b9bd67025a4337e9694ec0edaf46437fe6283b))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/Meta-Llama-3.1-405B-Instruct-GGUF@Q2_K -y
@@ -181,7 +181,7 @@ api (Amazon Bedrock) · $2.40/M blended · $2.4 in / $2.4 out per 1M tokens · [
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~431.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-405B-Instruct-8bit -y`
+Other versions: 8bit (440 GB memory, 431.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-405B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -192,7 +192,7 @@ Other versions: 8bit (~431.2 GB, Mac only) `lms get https://huggingface.co/mlx-c
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.1 405B Instruct (Q4_K_M, needs ~243.5 GB, from [ollama.com](https://ollama.com/library/llama3.1/tags))
+2. Run Llama 3.1 405B Instruct (Q4_K_M, needs 252 GB memory, 243.1 GB download, from [ollama.com](https://ollama.com/library/llama3.1/tags))
    
    ```sh
    ollama run llama3.1:405b
@@ -209,7 +209,7 @@ Other versions: 8bit (~431.2 GB, Mac only) `lms get https://huggingface.co/mlx-c
    pip install mlx-lm
    ```
 
-2. Run Llama 3.1 405B Instruct (8bit, needs ~431.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-405B-Instruct-8bit/tree/fcad0c7e14154d0f27e7b9c2dd323f3162eff91a))
+2. Run Llama 3.1 405B Instruct (8bit, needs 440 GB memory, 431.2 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-405B-Instruct-8bit/tree/fcad0c7e14154d0f27e7b9c2dd323f3162eff91a))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama-3.1-405B-Instruct-8bit

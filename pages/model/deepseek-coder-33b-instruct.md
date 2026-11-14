@@ -84,7 +84,7 @@ weighted average                                   = 50.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF/tree/cd6a4d02d3502901ff7f980b6373387ab8b8e91a))
+2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF/tree/cd6a4d02d3502901ff7f980b6373387ab8b8e91a))
    
    ```sh
    llama cli -hf TheBloke/deepseek-coder-33B-instruct-GGUF:Q4_K_M
@@ -96,13 +96,13 @@ weighted average                                   = 50.9
    llama serve -hf TheBloke/deepseek-coder-33B-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/deepseek-coder-33B-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (37.9 GB memory, 35.4 GB download) `llama cli -hf TheBloke/deepseek-coder-33B-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs ~19.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF/tree/cd6a4d02d3502901ff7f980b6373387ab8b8e91a))
+2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF/tree/cd6a4d02d3502901ff7f980b6373387ab8b8e91a))
    
    ```sh
    lms get https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF@Q4_K_M -y
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~35.4 GB) `llama cli -hf TheBloke/deepseek-coder-33B-instr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF@Q8_0 -y` · 4bit (~18.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepseek-coder-33b-instruct -y`
+Other versions: Q8_0 (37.9 GB memory, 35.4 GB download) `lms get https://huggingface.co/TheBloke/deepseek-coder-33B-instruct-GGUF@Q8_0 -y` · 4bit (21.3 GB memory, 18.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/deepseek-coder-33b-instruct -y`
 
 ### Ollama
 
@@ -121,13 +121,13 @@ Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/deepsee
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/deepseek-coder/tags))
+2. Run DeepSeek-Coder 33B Instruct (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [ollama.com](https://ollama.com/library/deepseek-coder/tags))
    
    ```sh
    ollama run deepseek-coder:33b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~35 GB) `ollama run deepseek-coder:33b-instruct-q8_0`
+Other versions: Q8_0 (37.9 GB memory, 35.4 GB download) `ollama run deepseek-coder:33b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~35 GB) `ollama run deepseek-coder:33b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run DeepSeek-Coder 33B Instruct (4bit, needs ~18.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepseek-coder-33b-instruct/tree/3a7af2876fffb60723ef24c4312e9150ccded76d))
+2. Run DeepSeek-Coder 33B Instruct (4bit, needs 21.3 GB memory, 18.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepseek-coder-33b-instruct/tree/3a7af2876fffb60723ef24c4312e9150ccded76d))
    
    ```sh
    mlx_lm.chat --model mlx-community/deepseek-coder-33b-instruct

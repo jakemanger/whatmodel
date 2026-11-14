@@ -44,7 +44,7 @@ AIME 2026                           95.2%  maker        <a href="https://hugging
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nanbeige4.3-33B (Q4_K_M, needs ~20.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
+2. Run Nanbeige4.3-33B (Q4_K_M, needs 23.3 GB memory, 20.8 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
    
    ```sh
    llama cli -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q4_K_M
@@ -56,13 +56,13 @@ AIME 2026                           95.2%  maker        <a href="https://hugging
    llama serve -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~40.2 GB) `llama cli -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q8_0`
+Other versions: Q8_0 (38.5 GB memory, 35.2 GB download) `llama cli -hf bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nanbeige4.3-33B (Q4_K_M, needs ~20.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
+2. Run Nanbeige4.3-33B (Q4_K_M, needs 23.3 GB memory, 20.8 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
    
    ```sh
    lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF@Q4_K_M -y
@@ -70,7 +70,7 @@ Other versions: Q8_0 (~40.2 GB) `llama cli -hf bartowski/Nanbeige_Nanbeige4.3-33
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~40.2 GB) `lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (38.5 GB memory, 35.2 GB download) `lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -81,13 +81,13 @@ Other versions: Q8_0 (~40.2 GB) `lms get https://huggingface.co/bartowski/Nanbei
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nanbeige4.3-33B (Q4_K_M, needs ~20.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
+2. Run Nanbeige4.3-33B (Q4_K_M, needs 23.3 GB memory, 20.8 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/blob/9beb68421fdf7be095093a6888325fa2c83ddd38/README.md))
    
    ```sh
    ollama run hf.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~40.2 GB) `ollama run hf.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q8_0`
+Other versions: Q8_0 (38.5 GB memory, 35.2 GB download) `ollama run hf.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/Nanbeige](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)
 

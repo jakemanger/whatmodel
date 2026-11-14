@@ -56,7 +56,7 @@ weighted average                              = 53.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
+2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
    
    ```sh
    llama cli -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 53.7
    llama serve -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:Q8_0` · IQ2_M (~24.1 GB) `llama cli -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:IQ2_M`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:Q8_0` · IQ2_M (26.8 GB memory, 24.1 GB download) `llama cli -hf bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:IQ2_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
+2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
    
    ```sh
    lms get https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/Infinity-Instruct-7M-Gen-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF@Q8_0 -y` · IQ2_M (~24.1 GB) `lms get https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF@IQ2_M -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF@Q8_0 -y` · IQ2_M (26.8 GB memory, 24.1 GB download) `lms get https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF@IQ2_M -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/Infinity
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
+2. Run Infinity-Instruct-7M-Gen-Llama3\_1-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF/tree/96b2fb8d1751dcd03dd9c93dec0a063fab0b2bfd))
    
    ```sh
    ollama run hf.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_M (~24.1 GB) `ollama run hf.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:IQ2_M`
+Other versions: IQ2_M (26.8 GB memory, 24.1 GB download) `ollama run hf.co/bartowski/Infinity-Instruct-7M-Gen-Llama3_1-70B-GGUF:IQ2_M`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-7M-Gen-Llama3_1-70B/tree/1ef63c4993a8c723c9695c827295c17080a64435))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-7M-Gen-Llama3_1-70B/tree/1ef63c4993a8c723c9695c827295c17080a64435))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-7M-Gen-Llama3_1-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

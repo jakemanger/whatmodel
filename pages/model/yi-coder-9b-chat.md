@@ -75,7 +75,7 @@ weighted average                                   = 49.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi-Coder 9B Chat (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF/tree/decf0b18fbef7e812b5764135b9d866a67711197))
+2. Run Yi-Coder 9B Chat (Q4_K_M, needs 6.6 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF/tree/decf0b18fbef7e812b5764135b9d866a67711197))
    
    ```sh
    llama cli -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q4_K_M
@@ -87,13 +87,13 @@ weighted average                                   = 49.4
    llama serve -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.4 GB) `llama cli -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (10.6 GB memory, 9.38 GB download) `llama cli -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi-Coder 9B Chat (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF/tree/decf0b18fbef7e812b5764135b9d866a67711197))
+2. Run Yi-Coder 9B Chat (Q4_K_M, needs 6.6 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF/tree/decf0b18fbef7e812b5764135b9d866a67711197))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF@Q4_K_M -y
@@ -101,7 +101,7 @@ Other versions: Q8_0 (~9.4 GB) `llama cli -hf lmstudio-community/Yi-Coder-9B-Cha
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF@Q8_0 -y` · 4bit (~5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-4bit -y` · 8bit (~9.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-8bit -y`
+Other versions: Q8_0 (10.6 GB memory, 9.38 GB download) `lms get https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF@Q8_0 -y` · 4bit (6.2 GB memory, 4.97 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-4bit -y` · 8bit (10.6 GB memory, 9.38 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-8bit -y`
 
 ### Ollama
 
@@ -112,13 +112,13 @@ Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi-Coder 9B Chat (Q4_K_M, needs ~5.8 GB, from [ollama.com](https://ollama.com/library/yi-coder/tags))
+2. Run Yi-Coder 9B Chat (Q4_K_M, needs 6.6 GB memory, 5.33 GB download, from [ollama.com](https://ollama.com/library/yi-coder/tags))
    
    ```sh
    ollama run yi-coder:9b-chat-q4_K_M
    ```
 
-Other versions: Q8_0 (~11.1 GB) `ollama run yi-coder:9b-chat-q8_0`
+Other versions: Q8_0 (10.6 GB memory, 9.38 GB download) `ollama run yi-coder:9b-chat-q8_0`
 
 ### MLX (Mac)
 
@@ -131,7 +131,7 @@ Other versions: Q8_0 (~11.1 GB) `ollama run yi-coder:9b-chat-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Yi-Coder 9B Chat (4bit, needs ~5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-4bit/tree/1f258c856cfb369ef6742f8dea7f22adde02e25d))
+2. Run Yi-Coder 9B Chat (4bit, needs 6.2 GB memory, 4.97 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-4bit/tree/1f258c856cfb369ef6742f8dea7f22adde02e25d))
    
    ```sh
    mlx_lm.chat --model mlx-community/Yi-Coder-9B-Chat-4bit
@@ -143,7 +143,7 @@ Other versions: Q8_0 (~11.1 GB) `ollama run yi-coder:9b-chat-q8_0`
    mlx_lm.server --model mlx-community/Yi-Coder-9B-Chat-4bit
    ```
 
-Other versions: 8bit (~9.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Yi-Coder-9B-Chat-8bit`
+Other versions: 8bit (10.6 GB memory, 9.38 GB download, Mac only) `mlx_lm.chat --model mlx-community/Yi-Coder-9B-Chat-8bit`
 
 Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-Coder-9B-Chat)
 

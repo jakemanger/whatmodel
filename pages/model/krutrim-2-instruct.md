@@ -53,7 +53,7 @@ weighted average                              = 55.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Krutrim-2 Instruct (Q4_K_M, needs ~7.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
+2. Run Krutrim-2 Instruct (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
    
    ```sh
    llama cli -hf bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                              = 55.4
    llama serve -hf bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `llama cli -hf bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `llama cli -hf bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Krutrim-2 Instruct (Q4_K_M, needs ~7.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
+2. Run Krutrim-2 Instruct (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
    
    ```sh
    lms get https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~13 GB) `llama cli -hf bartowski/krutrim-ai-labs_Krutrim-2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `lms get https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/bartowski/krutrim-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Krutrim-2 Instruct (Q4_K_M, needs ~7.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
+2. Run Krutrim-2 Instruct (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF/tree/b13041b3d6c66714232a43e6b7e260e96f89b204))
    
    ```sh
    ollama run hf.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `ollama run hf.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (15.2 GB memory, 13 GB download) `ollama run hf.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~48.99 GB, from [huggingface.co/krutrim-ai-labs](https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct/tree/b2f4411404153b4afe4b8c721bd5ca5dc3481b89))
+1. Run it as published (BF16, needs 53 GB memory, 49 GB download, from [huggingface.co/krutrim-ai-labs](https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct/tree/b2f4411404153b4afe4b8c721bd5ca5dc3481b89))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='krutrim-ai-labs/Krutrim-2-instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

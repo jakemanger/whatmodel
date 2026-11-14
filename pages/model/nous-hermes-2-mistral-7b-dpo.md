@@ -57,7 +57,7 @@ weighted average                               = 42.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
    
    ```sh
    llama cli -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
@@ -73,7 +73,7 @@ weighted average                               = 42.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
    
    ```sh
    lms get https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF@Q4_K_M -y
@@ -90,7 +90,7 @@ weighted average                               = 42.1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
    
    ```sh
    ollama run hf.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M

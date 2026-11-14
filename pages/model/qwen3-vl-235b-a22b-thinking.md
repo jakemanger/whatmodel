@@ -164,7 +164,7 @@ weighted average                                   = 63.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs ~142.2 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF/tree/e3423a389728d101f209c908b79b68367fdfa062))
+2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs ~146 GB memory, ~143.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF/tree/e3423a389728d101f209c908b79b68367fdfa062))
    
    ```sh
    llama cli -hf Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF:Q4_K_M
@@ -176,13 +176,13 @@ weighted average                                   = 63.0
    llama serve -hf Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~249.9 GB) `llama cli -hf Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF:Q8_0`
+Other versions: Q8_0 (253 GB memory, 250.7 GB download) `llama cli -hf Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs ~142.2 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF/tree/e3423a389728d101f209c908b79b68367fdfa062))
+2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs ~146 GB memory, ~143.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF/tree/e3423a389728d101f209c908b79b68367fdfa062))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF@Q4_K_M -y
@@ -190,7 +190,7 @@ Other versions: Q8_0 (~249.9 GB) `llama cli -hf Qwen/Qwen3-VL-235B-A22B-Thinking
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~249.9 GB) `lms get https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF@Q8_0 -y` · 3bit (~104 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen3-VL-235B-A22B-Thinking-3bit -y`
+Other versions: Q8_0 (253 GB memory, 250.7 GB download) `lms get https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking-GGUF@Q8_0 -y` · 3bit (106 GB memory, 104 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen3-VL-235B-A22B-Thinking-3bit -y`
 
 ### Ollama
 
@@ -201,13 +201,13 @@ Other versions: Q8_0 (~249.9 GB) `lms get https://huggingface.co/Qwen/Qwen3-VL-2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs ~141.5 GB, from [ollama.com](https://ollama.com/library/qwen3-vl/tags))
+2. Run Qwen3-VL 235B-A22B Thinking (Q4_K_M, needs 146 GB memory, 143.3 GB download, from [ollama.com](https://ollama.com/library/qwen3-vl/tags))
    
    ```sh
    ollama run qwen3-vl:235b-a22b-thinking-q4_K_M
    ```
 
-Other versions: Q8_0 (~282.5 GB) `ollama run qwen3-vl:235b-a22b-thinking-q8_0`
+Other versions: Q8_0 (253 GB memory, 251.1 GB download) `ollama run qwen3-vl:235b-a22b-thinking-q8_0`
 
 ### MLX (Mac)
 
@@ -220,7 +220,7 @@ Other versions: Q8_0 (~282.5 GB) `ollama run qwen3-vl:235b-a22b-thinking-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen3-VL 235B-A22B Thinking (3bit, needs ~104 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen3-VL-235B-A22B-Thinking-3bit/tree/ef8a1eef86e928dc5e2de6323ad24ee369050ee5))
+2. Run Qwen3-VL 235B-A22B Thinking (3bit, needs 106 GB memory, 104 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen3-VL-235B-A22B-Thinking-3bit/tree/ef8a1eef86e928dc5e2de6323ad24ee369050ee5))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen3-VL-235B-A22B-Thinking-3bit

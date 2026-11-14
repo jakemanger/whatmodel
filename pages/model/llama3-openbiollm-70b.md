@@ -55,7 +55,7 @@ weighted average                                   = 53.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
+2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
    
    ```sh
    llama cli -hf mradermacher/Llama3-OpenBioLLM-70B-GGUF:Q4_K_M
@@ -71,7 +71,7 @@ weighted average                                   = 53.8
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
+2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF@Q4_K_M -y
@@ -88,7 +88,7 @@ weighted average                                   = 53.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
+2. Run Llama3-OpenBioLLM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF/tree/2968f520db62cab46e605bded9d65638bbe86332))
    
    ```sh
    ollama run hf.co/mradermacher/Llama3-OpenBioLLM-70B-GGUF:Q4_K_M
@@ -96,7 +96,7 @@ weighted average                                   = 53.8
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-70B/tree/7ad17ef0d2185811f731f89d20885b2f99b1e994))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-70B/tree/7ad17ef0d2185811f731f89d20885b2f99b1e994))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

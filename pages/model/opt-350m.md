@@ -62,7 +62,7 @@ weighted average                                   = 1.1
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~0.66 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-350m/tree/08ab08cc4b72ff5593870b5d527cf4230323703c))
+1. Run it as published (fp16, needs 2.2 GB memory, 0.66 GB download, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-350m/tree/08ab08cc4b72ff5593870b5d527cf4230323703c))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-350m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

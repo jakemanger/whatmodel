@@ -89,7 +89,7 @@ weighted average                                   = 39.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/codegemma-7b-GGUF/tree/215cae4d4fdd2d21552b3f88af57f2c2823d5f1e))
+2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/codegemma-7b-GGUF/tree/215cae4d4fdd2d21552b3f88af57f2c2823d5f1e))
    
    ```sh
    llama cli -hf lmstudio-community/codegemma-7b-GGUF:Q4_K_M
@@ -101,13 +101,13 @@ weighted average                                   = 39.9
    llama serve -hf lmstudio-community/codegemma-7b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.1 GB) `llama cli -hf lmstudio-community/codegemma-7b-GGUF:Q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `llama cli -hf lmstudio-community/codegemma-7b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs ~5.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/codegemma-7b-GGUF/tree/215cae4d4fdd2d21552b3f88af57f2c2823d5f1e))
+2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/codegemma-7b-GGUF/tree/215cae4d4fdd2d21552b3f88af57f2c2823d5f1e))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/codegemma-7b-GGUF@Q4_K_M -y
@@ -115,7 +115,7 @@ Other versions: Q8_0 (~9.1 GB) `llama cli -hf lmstudio-community/codegemma-7b-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/lmstudio-community/codegemma-7b-GGUF@Q8_0 -y` · 4bit (~5.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/codegemma-7b-4bit -y`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `lms get https://huggingface.co/lmstudio-community/codegemma-7b-GGUF@Q8_0 -y` · 4bit (7.7 GB memory, 5.93 GB download, Mac only) `lms get https://huggingface.co/mlx-community/codegemma-7b-4bit -y`
 
 ### Ollama
 
@@ -126,13 +126,13 @@ Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs ~5.3 GB, from [ollama.com](https://ollama.com/library/codegemma/tags))
+2. Run CodeGemma 7B (v1.0) (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [ollama.com](https://ollama.com/library/codegemma/tags))
    
    ```sh
    ollama run codegemma:7b-code-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.1 GB) `ollama run codegemma:7b-code-q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `ollama run codegemma:7b-code-q8_0`
 
 ### MLX (Mac)
 
@@ -145,7 +145,7 @@ Other versions: Q8_0 (~9.1 GB) `ollama run codegemma:7b-code-q8_0`
    pip install mlx-lm
    ```
 
-2. Run CodeGemma 7B (v1.0) (4bit, needs ~5.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/codegemma-7b-4bit/tree/7e280d9b4f8bae62e07447d0b2a08cba74ab5400))
+2. Run CodeGemma 7B (v1.0) (4bit, needs 7.7 GB memory, 5.93 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/codegemma-7b-4bit/tree/7e280d9b4f8bae62e07447d0b2a08cba74ab5400))
    
    ```sh
    mlx_lm.chat --model mlx-community/codegemma-7b-4bit

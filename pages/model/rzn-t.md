@@ -56,7 +56,7 @@ weighted average                                   = 44.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run RZN-T (Q4_K_M, needs ~0.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
+2. Run RZN-T (Q4_K_M, needs 1.9 GB memory, 0.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
    
    ```sh
    llama cli -hf mradermacher/RZN-T-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 44.0
    llama serve -hf mradermacher/RZN-T-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.6 GB) `llama cli -hf mradermacher/RZN-T-GGUF:Q8_0`
+Other versions: Q8_0 (2.2 GB memory, 0.64 GB download) `llama cli -hf mradermacher/RZN-T-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run RZN-T (Q4_K_M, needs ~0.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
+2. Run RZN-T (Q4_K_M, needs 1.9 GB memory, 0.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/RZN-T-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~0.6 GB) `llama cli -hf mradermacher/RZN-T-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.6 GB) `lms get https://huggingface.co/mradermacher/RZN-T-GGUF@Q8_0 -y`
+Other versions: Q8_0 (2.2 GB memory, 0.64 GB download) `lms get https://huggingface.co/mradermacher/RZN-T-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~0.6 GB) `lms get https://huggingface.co/mradermacher/RZN-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run RZN-T (Q4_K_M, needs ~0.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
+2. Run RZN-T (Q4_K_M, needs 1.9 GB memory, 0.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/RZN-T-GGUF/tree/d901f979852d29728a13116e4d6c04b861f73d9c))
    
    ```sh
    ollama run hf.co/mradermacher/RZN-T-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.6 GB) `ollama run hf.co/mradermacher/RZN-T-GGUF:Q8_0`
+Other versions: Q8_0 (2.2 GB memory, 0.64 GB download) `ollama run hf.co/mradermacher/RZN-T-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~2.38 GB, from [huggingface.co/phronetic-ai](https://huggingface.co/phronetic-ai/RZN-T/tree/a7e084bb57ee4826eef00679a2ec8f940cd4869c))
+1. Run it as published (fp32, needs 4 GB memory, 2.38 GB download, from [huggingface.co/phronetic-ai](https://huggingface.co/phronetic-ai/RZN-T/tree/a7e084bb57ee4826eef00679a2ec8f940cd4869c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='phronetic-ai/RZN-T', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

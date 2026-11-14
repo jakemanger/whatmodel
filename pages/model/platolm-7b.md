@@ -48,7 +48,7 @@ weighted average                              = 37.4
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~26.95 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/PlatoLM-7B/tree/e0fdb73ef2f47d64ce98d657454c1a1a030049ea))
+1. Run it as published (fp32, needs 29.9 GB memory, 27 GB download, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/PlatoLM-7B/tree/e0fdb73ef2f47d64ce98d657454c1a1a030049ea))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/PlatoLM-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

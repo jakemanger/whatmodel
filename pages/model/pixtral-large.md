@@ -72,7 +72,7 @@ weighted average                                   = 54.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Pixtral Large (2411) (Q2_K, needs ~46.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
+2. Run Pixtral Large (2411) (Q2_K, needs 50.5 GB memory, 46.7 GB download, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
    
    ```sh
    llama cli -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
@@ -88,7 +88,7 @@ weighted average                                   = 54.5
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Pixtral Large (2411) (Q2_K, needs ~46.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
+2. Run Pixtral Large (2411) (Q2_K, needs 50.5 GB memory, 46.7 GB download, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
    
    ```sh
    lms get https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF@Q2_K -y
@@ -98,7 +98,7 @@ weighted average                                   = 54.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~248.27 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md))
+1. Run it as published (BF16, needs 262 GB memory, 248.3 GB download, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md))
    
    ```sh
    pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8

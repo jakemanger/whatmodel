@@ -54,7 +54,7 @@ weighted average                        = 52.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs 15.8 GB memory, 13.6 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
    
    ```sh
    llama cli -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
@@ -70,7 +70,7 @@ weighted average                        = 52.5
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs 15.8 GB memory, 13.6 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
    
    ```sh
    lms get https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF@Q4_K_M -y
@@ -78,7 +78,7 @@ weighted average                        = 52.5
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/reka-flash-3-4bit -y`
+Other versions: 4bit (13.9 GB memory, 11.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/reka-flash-3-4bit -y`
 
 ### Ollama
 
@@ -89,7 +89,7 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs 15.8 GB memory, 13.6 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
    
    ```sh
    ollama run hf.co/bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
@@ -106,7 +106,7 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/mlx-co
    pip install mlx-lm
    ```
 
-2. Run Reka Flash 3 (21B) (4bit, needs ~11.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/reka-flash-3-4bit/tree/71df73313e59100f658a289f4a6f3e6e84b5f542))
+2. Run Reka Flash 3 (21B) (4bit, needs 13.9 GB memory, 11.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/reka-flash-3-4bit/tree/71df73313e59100f658a289f4a6f3e6e84b5f542))
    
    ```sh
    mlx_lm.chat --model mlx-community/reka-flash-3-4bit

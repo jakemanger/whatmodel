@@ -47,7 +47,7 @@ weighted average                              = 56.2
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~32.12 GB, from [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2/tree/62b1483e900575ab1764b75f31d068c6120974a4))
+1. Run it as published (fp32, needs 35.2 GB memory, 32.1 GB download, from [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2/tree/62b1483e900575ab1764b75f31d068c6120974a4))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/Llama3-Instruct-8B-WPO-HB-v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

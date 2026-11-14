@@ -127,7 +127,7 @@ weighted average                                   = 35.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 2 13B Chat (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/tree/4458acc949de0a9914c3eab623904d4fe999050a))
+2. Run Llama 2 13B Chat (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/tree/4458acc949de0a9914c3eab623904d4fe999050a))
    
    ```sh
    llama cli -hf TheBloke/Llama-2-13B-chat-GGUF:Q4_K_M
@@ -139,13 +139,13 @@ weighted average                                   = 35.4
    llama serve -hf TheBloke/Llama-2-13B-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/Llama-2-13B-chat-GGUF:Q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `llama cli -hf TheBloke/Llama-2-13B-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 2 13B Chat (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/tree/4458acc949de0a9914c3eab623904d4fe999050a))
+2. Run Llama 2 13B Chat (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/tree/4458acc949de0a9914c3eab623904d4fe999050a))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF@Q4_K_M -y
@@ -153,7 +153,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/Llama-2-13B-chat-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `lms get https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -164,13 +164,13 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/Llama-2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 2 13B Chat (Q4_0, needs ~8.31 GB, from [ollama.com](https://ollama.com/library/llama2/tags))
+2. Run Llama 2 13B Chat (Q4_0, needs 14.5 GB memory, 7.37 GB download, from [ollama.com](https://ollama.com/library/llama2/tags))
    
    ```sh
    ollama run llama2:13b-chat
    ```
 
-Other versions: Q8_0 (~16.12 GB) `ollama run llama2:13b-chat-q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `ollama run llama2:13b-chat-q8_0`
 
 Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)
 

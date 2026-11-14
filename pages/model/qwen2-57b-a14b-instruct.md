@@ -60,7 +60,7 @@ weighted average                                   = 48.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs ~34.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
+2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs 38.1 GB memory, 34.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
    
    ```sh
    llama cli -hf Qwen/Qwen2-57B-A14B-Instruct-GGUF:q4_k_m
@@ -72,13 +72,13 @@ weighted average                                   = 48.7
    llama serve -hf Qwen/Qwen2-57B-A14B-Instruct-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~61 GB) `llama cli -hf Qwen/Qwen2-57B-A14B-Instruct-GGUF:q8_0`
+Other versions: Q8_0 (65.6 GB memory, 61 GB download) `llama cli -hf Qwen/Qwen2-57B-A14B-Instruct-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs ~34.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
+2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs 38.1 GB memory, 34.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF@q4_k_m -y
@@ -86,7 +86,7 @@ Other versions: Q8_0 (~61 GB) `llama cli -hf Qwen/Qwen2-57B-A14B-Instruct-GGUF:q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~61 GB) `lms get https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF@q8_0 -y` · 4bit (~32.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-4bit -y` · 8bit (~61 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-8bit -y`
+Other versions: Q8_0 (65.6 GB memory, 61 GB download) `lms get https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF@q8_0 -y` · 4bit (35.4 GB memory, 32.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-4bit -y` · 8bit (65.6 GB memory, 61 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -97,7 +97,7 @@ Other versions: Q8_0 (~61 GB) `lms get https://huggingface.co/Qwen/Qwen2-57B-A14
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs ~34.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
+2. Run Qwen2 57B-A14B Instruct (Q4_K_M, needs 38.1 GB memory, 34.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF/tree/94f9b6bfa2811afec9ce190f14e4ab6a88687561))
    
    ```sh
    ollama run hf.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF:q4_k_m
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~61 GB) `lms get https://huggingface.co/Qwen/Qwen2-57B-A14
    pip install mlx-lm
    ```
 
-2. Run Qwen2 57B-A14B Instruct (4bit, needs ~32.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-4bit/tree/e9c653af4117bd4ee8f9302cc5cd060c9539cc30))
+2. Run Qwen2 57B-A14B Instruct (4bit, needs 35.4 GB memory, 32.3 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-57B-A14B-Instruct-4bit/tree/e9c653af4117bd4ee8f9302cc5cd060c9539cc30))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2-57B-A14B-Instruct-4bit
@@ -126,11 +126,11 @@ Other versions: Q8_0 (~61 GB) `lms get https://huggingface.co/Qwen/Qwen2-57B-A14
    mlx_lm.server --model mlx-community/Qwen2-57B-A14B-Instruct-4bit
    ```
 
-Other versions: 8bit (~61 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-57B-A14B-Instruct-8bit`
+Other versions: 8bit (65.6 GB memory, 61 GB download, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-57B-A14B-Instruct-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~114.82 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct/tree/50896d66b39f1425d63720541a66c7df13e053c0))
+1. Run it as published (BF16, needs 122 GB memory, 114.8 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct/tree/50896d66b39f1425d63720541a66c7df13e053c0))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen2-57B-A14B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

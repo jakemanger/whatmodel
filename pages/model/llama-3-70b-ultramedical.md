@@ -53,7 +53,7 @@ weighted average                        = 51.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
+2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
    
    ```sh
    llama cli -hf mradermacher/Llama-3-70B-UltraMedical-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 51.7
    llama serve -hf mradermacher/Llama-3-70B-UltraMedical-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `llama cli -hf mradermacher/Llama-3-70B-UltraMedical-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf mradermacher/Llama-3-70B-UltraMedical-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
+2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q2_K (~26.4 GB) `llama cli -hf mradermacher/Llama-3-70B-UltraMed
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF@Q2_K -y`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/Lla
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
+2. Run Llama-3-70B-UltraMedical (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-3-70B-UltraMedical-GGUF/tree/5db5cb32b9fa754f4a03eba7fbc5e8db633022a9))
    
    ```sh
    ollama run hf.co/mradermacher/Llama-3-70B-UltraMedical-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama-3-70B-UltraMedical-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/mradermacher/Llama-3-70B-UltraMedical-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/TsinghuaC3I](https://huggingface.co/TsinghuaC3I/Llama-3-70B-UltraMedical/tree/951675a9091f4e2fce4eef06cb595d700cfc2c7a))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/TsinghuaC3I](https://huggingface.co/TsinghuaC3I/Llama-3-70B-UltraMedical/tree/951675a9091f4e2fce4eef06cb595d700cfc2c7a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='TsinghuaC3I/Llama-3-70B-UltraMedical', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

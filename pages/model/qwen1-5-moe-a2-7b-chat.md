@@ -53,7 +53,7 @@ weighted average                          = 44.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs ~9.5 GB, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
+2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs 11.5 GB memory, 9.5 GB download, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
    
    ```sh
    llama cli -hf 1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF:Q4_K_M
@@ -69,7 +69,7 @@ weighted average                          = 44.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs ~9.5 GB, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
+2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs 11.5 GB memory, 9.5 GB download, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
    
    ```sh
    lms get https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF@Q4_K_M -y
@@ -77,7 +77,7 @@ weighted average                          = 44.4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit -y`
+Other versions: 4bit (10.4 GB memory, 8.5 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit -y`
 
 ### Ollama
 
@@ -88,7 +88,7 @@ Other versions: 4bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs ~9.5 GB, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
+2. Run Qwen1.5 MoE A2.7B Chat (Q4_K_M, needs 11.5 GB memory, 9.5 GB download, from [huggingface.co/1bit-MONSTER](https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF/tree/0a4299d79d99527045ff060dedf10f842f37b006))
    
    ```sh
    ollama run hf.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF:Q4_K_M
@@ -105,7 +105,7 @@ Other versions: 4bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Qwen1.5 MoE A2.7B Chat (4bit, needs ~8.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit/tree/cf116003d120c4216cf008eba169f98b95bdf3ee))
+2. Run Qwen1.5 MoE A2.7B Chat (4bit, needs 10.4 GB memory, 8.5 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit/tree/cf116003d120c4216cf008eba169f98b95bdf3ee))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit
@@ -119,7 +119,7 @@ Other versions: 4bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~28.63 GB, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/tree/ec052fda178e241c7c443468d2fa1db6618996be))
+1. Run it as published (BF16, needs 31.5 GB memory, 28.6 GB download, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/tree/ec052fda178e241c7c443468d2fa1db6618996be))
    
    ```sh
    vllm serve Qwen/Qwen1.5-MoE-A2.7B-Chat

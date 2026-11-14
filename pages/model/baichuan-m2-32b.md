@@ -53,7 +53,7 @@ weighted average                        = 55.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+2. Run Baichuan-M2-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
    
    ```sh
    llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 55.8
    llama serve -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+2. Run Baichuan-M2-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
    
    ```sh
    lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf bartowski/baichuan-inc_Baichuan-M
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q8_0 -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q8_0 -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/bartowski/baichu
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+2. Run Baichuan-M2-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
    
    ```sh
    ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/bartowski/baichuan-inc_Baichua
    pip install mlx-lm
    ```
 
-2. Run Baichuan-M2-32B (8bit, needs ~34.8 GB, Mac only, from [huggingface.co/laukerry](https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit/tree/ddce5e89fc7dc0ca5632f0dd237756c43a6c8810))
+2. Run Baichuan-M2-32B (8bit, needs 38 GB memory, 34.8 GB download, Mac only, from [huggingface.co/laukerry](https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit/tree/ddce5e89fc7dc0ca5632f0dd237756c43a6c8810))
    
    ```sh
    mlx_lm.chat --model laukerry/Baichuan-M2-32B-mlx-8Bit
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/bartowski/baichuan-inc_Baichua
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~65.53 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B/tree/360f684d3cd527a4ef986c54071015eb0e6def58))
+1. Run it as published (BF16, needs 70.3 GB memory, 65.5 GB download, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B/tree/360f684d3cd527a4ef986c54071015eb0e6def58))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M2-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

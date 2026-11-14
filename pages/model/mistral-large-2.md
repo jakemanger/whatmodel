@@ -127,7 +127,7 @@ weighted average                                   = 55.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral Large 2 (2411) (Q4_K_M, needs ~73.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF/tree/cd165d3f726c22ec148ec99736e025d59b81ed6f))
+2. Run Mistral Large 2 (2411) (Q4_K_M, needs 76.6 GB memory, 73.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF/tree/cd165d3f726c22ec148ec99736e025d59b81ed6f))
    
    ```sh
    llama cli -hf lmstudio-community/Mistral-Large-Instruct-2411-GGUF:Q4_K_M
@@ -139,13 +139,13 @@ weighted average                                   = 55.6
    llama serve -hf lmstudio-community/Mistral-Large-Instruct-2411-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~130.3 GB) `llama cli -hf lmstudio-community/Mistral-Large-Instruct-2411-GGUF:Q8_0`
+Other versions: Q8_0 (134 GB memory, 130.3 GB download) `llama cli -hf lmstudio-community/Mistral-Large-Instruct-2411-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral Large 2 (2411) (Q4_K_M, needs ~73.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF/tree/cd165d3f726c22ec148ec99736e025d59b81ed6f))
+2. Run Mistral Large 2 (2411) (Q4_K_M, needs 76.6 GB memory, 73.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF/tree/cd165d3f726c22ec148ec99736e025d59b81ed6f))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF@Q4_K_M -y
@@ -153,7 +153,7 @@ Other versions: Q8_0 (~130.3 GB) `llama cli -hf lmstudio-community/Mistral-Large
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~130.3 GB) `lms get https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF@Q8_0 -y` · 8bit (~137.9 GB, Mac only) `lms get https://huggingface.co/sjug/Mistral-Large-Instruct-2411-8bit -y`
+Other versions: Q8_0 (134 GB memory, 130.3 GB download) `lms get https://huggingface.co/lmstudio-community/Mistral-Large-Instruct-2411-GGUF@Q8_0 -y` · 8bit (141 GB memory, 137.9 GB download, Mac only) `lms get https://huggingface.co/sjug/Mistral-Large-Instruct-2411-8bit -y`
 
 ### Ollama
 
@@ -164,7 +164,7 @@ Other versions: Q8_0 (~130.3 GB) `lms get https://huggingface.co/lmstudio-commun
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral Large 2 (2411) (Q4_K_M, needs ~74.3 GB, from [ollama.com](https://ollama.com/library/mistral-large/tags))
+2. Run Mistral Large 2 (2411) (Q4_K_M, needs 76.6 GB memory, 73.2 GB download, from [ollama.com](https://ollama.com/library/mistral-large/tags))
    
    ```sh
    ollama run mistral-large:123b-instruct-2411-q4_K_M
@@ -181,7 +181,7 @@ Other versions: Q8_0 (~130.3 GB) `lms get https://huggingface.co/lmstudio-commun
    pip install mlx-lm
    ```
 
-2. Run Mistral Large 2 (2411) (8bit, needs ~137.9 GB, Mac only, from [huggingface.co/sjug](https://huggingface.co/sjug/Mistral-Large-Instruct-2411-8bit/tree/35446b556a06f09c48633c186990564d87a2b72c))
+2. Run Mistral Large 2 (2411) (8bit, needs 141 GB memory, 137.9 GB download, Mac only, from [huggingface.co/sjug](https://huggingface.co/sjug/Mistral-Large-Instruct-2411-8bit/tree/35446b556a06f09c48633c186990564d87a2b72c))
    
    ```sh
    mlx_lm.chat --model sjug/Mistral-Large-Instruct-2411-8bit

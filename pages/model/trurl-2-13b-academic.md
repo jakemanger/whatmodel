@@ -46,7 +46,7 @@ weighted average                                 = 37.6
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~26.03 GB, from [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic/tree/cdbd008db827f27831b736289d543e12fe17eb2e))
+1. Run it as published (BF16, needs 28.8 GB memory, 26 GB download, from [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic/tree/cdbd008db827f27831b736289d543e12fe17eb2e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Voicelab/trurl-2-13b-academic', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

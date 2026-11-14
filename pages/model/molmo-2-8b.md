@@ -94,7 +94,7 @@ weighted average                                   = 55.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Molmo 2 8B (Q4_K_M, needs ~5 GB, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
+2. Run Molmo 2 8B (Q4_K_M, needs 7.8 GB memory, 5.97 GB download, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
    
    ```sh
    llama cli -hf mu2solutions/Molmo2-8B-GGUF:Q4_K_M
@@ -106,13 +106,13 @@ weighted average                                   = 55.3
    llama serve -hf mu2solutions/Molmo2-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.7 GB) `llama cli -hf mu2solutions/Molmo2-8B-GGUF:Q8_0`
+Other versions: Q8_0 (11.6 GB memory, 9.65 GB download) `llama cli -hf mu2solutions/Molmo2-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Molmo 2 8B (Q4_K_M, needs ~5 GB, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
+2. Run Molmo 2 8B (Q4_K_M, needs 7.8 GB memory, 5.97 GB download, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
    
    ```sh
    lms get https://huggingface.co/mu2solutions/Molmo2-8B-GGUF@Q4_K_M -y
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~8.7 GB) `llama cli -hf mu2solutions/Molmo2-8B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/mu2solutions/Molmo2-8B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.6 GB memory, 9.65 GB download) `lms get https://huggingface.co/mu2solutions/Molmo2-8B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -131,17 +131,17 @@ Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/mu2solutions/Molm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Molmo 2 8B (Q4_K_M, needs ~5 GB, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
+2. Run Molmo 2 8B (Q4_K_M, needs 7.8 GB memory, 5.97 GB download, from [huggingface.co/mu2solutions](https://huggingface.co/mu2solutions/Molmo2-8B-GGUF/tree/61c7e7dd2199647c0f6a69b2e14413aeb595fcc8))
    
    ```sh
    ollama run hf.co/mu2solutions/Molmo2-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.7 GB) `ollama run hf.co/mu2solutions/Molmo2-8B-GGUF:Q8_0`
+Other versions: Q8_0 (11.6 GB memory, 9.65 GB download) `ollama run hf.co/mu2solutions/Molmo2-8B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~34.65 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (fp32, needs 37.8 GB memory, 34.6 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve allenai/Molmo2-8B --trust-remote-code

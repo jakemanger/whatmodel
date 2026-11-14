@@ -75,7 +75,7 @@ weighted average                                   = 53.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.77 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs 6.5 GB memory, 4.77 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
    
    ```sh
    llama cli -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
@@ -91,7 +91,7 @@ weighted average                                   = 53.6
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.77 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs 6.5 GB memory, 4.77 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF@Q4_K_M -y
@@ -99,7 +99,7 @@ weighted average                                   = 53.6
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~8.3 GB, Mac only) `lms get https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit -y`
+Other versions: 8bit (10.2 GB memory, 8.31 GB download, Mac only) `lms get https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit -y`
 
 ### Ollama
 
@@ -110,7 +110,7 @@ Other versions: 8bit (~8.3 GB, Mac only) `lms get https://huggingface.co/sinbal/
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.8 GB, from [ollama.com](https://ollama.com/library/exaone-deep/tags))
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs 6.5 GB memory, 4.77 GB download, from [ollama.com](https://ollama.com/library/exaone-deep/tags))
    
    ```sh
    ollama run exaone-deep:7.8b
@@ -127,7 +127,7 @@ Other versions: 8bit (~8.3 GB, Mac only) `lms get https://huggingface.co/sinbal/
    pip install mlx-lm
    ```
 
-2. Run EXAONE Deep 7.8B (8bit, needs ~8.3 GB, Mac only, from [huggingface.co/sinbal](https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit/tree/931074a8ba025dc4cab44076c76c6b9f74c2feee))
+2. Run EXAONE Deep 7.8B (8bit, needs 10.2 GB memory, 8.31 GB download, Mac only, from [huggingface.co/sinbal](https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit/tree/931074a8ba025dc4cab44076c76c6b9f74c2feee))
    
    ```sh
    mlx_lm.chat --model sinbal/EXAONE-Deep-7.8B-MLX-8bit

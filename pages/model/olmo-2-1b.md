@@ -84,7 +84,7 @@ weighted average                                   = 34.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
+2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs 2.5 GB memory, 0.94 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
    
    ```sh
    llama cli -hf allenai/OLMo-2-0425-1B-Instruct-GGUF:Q4_K_M
@@ -96,13 +96,13 @@ weighted average                                   = 34.7
    llama serve -hf allenai/OLMo-2-0425-1B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `llama cli -hf allenai/OLMo-2-0425-1B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.58 GB download) `llama cli -hf allenai/OLMo-2-0425-1B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
+2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs 2.5 GB memory, 0.94 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
    
    ```sh
    lms get https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF@Q4_K_M -y
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~1.6 GB) `llama cli -hf allenai/OLMo-2-0425-1B-Instruct-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF@Q8_0 -y` · 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/ekryski/OLMo-2-0425-1B-Instruct-4bit -y`
+Other versions: Q8_0 (3.2 GB memory, 1.58 GB download) `lms get https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF@Q8_0 -y` · 4bit (3 GB memory, 1.43 GB download, Mac only) `lms get https://huggingface.co/ekryski/OLMo-2-0425-1B-Instruct-4bit -y`
 
 ### Ollama
 
@@ -121,13 +121,13 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/allenai/OLMo-2-04
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
+2. Run OLMo 2 1B Instruct (0425) (Q4_K_M, needs 2.5 GB memory, 0.94 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/tree/62f8c199538474c3e33ed5d7e0580abd66686a27))
    
    ```sh
    ollama run hf.co/allenai/OLMo-2-0425-1B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/allenai/OLMo-2-0425-1B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.58 GB download) `ollama run hf.co/allenai/OLMo-2-0425-1B-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/allenai/OLMo-2-0425-1B-Instruct
    pip install mlx-lm
    ```
 
-2. Run OLMo 2 1B Instruct (0425) (4bit, needs ~1.4 GB, Mac only, from [huggingface.co/ekryski](https://huggingface.co/ekryski/OLMo-2-0425-1B-Instruct-4bit/tree/bb6c2410107c9b1d0f50126955378bc0aa2237cb))
+2. Run OLMo 2 1B Instruct (0425) (4bit, needs 3 GB memory, 1.43 GB download, Mac only, from [huggingface.co/ekryski](https://huggingface.co/ekryski/OLMo-2-0425-1B-Instruct-4bit/tree/bb6c2410107c9b1d0f50126955378bc0aa2237cb))
    
    ```sh
    mlx_lm.chat --model ekryski/OLMo-2-0425-1B-Instruct-4bit
@@ -154,7 +154,7 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/allenai/OLMo-2-0425-1B-Instruct
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~4.05 GB, NVIDIA only, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct))
+1. Run it as published (BF16, needs 4.6 GB memory, 2.97 GB download, NVIDIA only, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct))
    
    ```sh
    vllm serve allenai/OLMo-2-0425-1B-Instruct

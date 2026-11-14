@@ -88,7 +88,7 @@ weighted average                                   = 44.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+2. Run LFM2 2.6B (Q4_K_M, needs 2.2 GB memory, 1.56 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
    
    ```sh
    llama cli -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
@@ -104,7 +104,7 @@ weighted average                                   = 44.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+2. Run LFM2 2.6B (Q4_K_M, needs 2.2 GB memory, 1.56 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
    
    ```sh
    lms get https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF@Q4_K_M -y
@@ -112,7 +112,7 @@ weighted average                                   = 44.0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-4bit -y` · 8bit (~2.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-8bit -y`
+Other versions: 4bit (2.1 GB memory, 1.45 GB download, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-4bit -y` · 8bit (3.3 GB memory, 2.73 GB download, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-8bit -y`
 
 ### Ollama
 
@@ -123,7 +123,7 @@ Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+2. Run LFM2 2.6B (Q4_K_M, needs 2.2 GB memory, 1.56 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
    
    ```sh
    ollama run hf.co/LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
@@ -140,7 +140,7 @@ Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run LFM2 2.6B (4bit, needs ~1.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LFM2-2.6B-4bit/tree/493071ebca3592c63085e19612ded87192a2a0dd))
+2. Run LFM2 2.6B (4bit, needs 2.1 GB memory, 1.45 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LFM2-2.6B-4bit/tree/493071ebca3592c63085e19612ded87192a2a0dd))
    
    ```sh
    mlx_lm.chat --model mlx-community/LFM2-2.6B-4bit
@@ -152,7 +152,7 @@ Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/LFM2-2.6B-4bit
    ```
 
-Other versions: 8bit (~2.7 GB, Mac only) `mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit`
+Other versions: 8bit (3.3 GB memory, 2.73 GB download, Mac only) `mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit`
 
 Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B)
 

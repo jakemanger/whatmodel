@@ -75,7 +75,7 @@ weighted average                                   = 31.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon 40B Instruct (Q4_K_M, needs ~26 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF/tree/d1c134a32112db8239fd4a5ebe772d0931b23067))
+2. Run Falcon 40B Instruct (Q4_K_M, needs 28.8 GB memory, 26 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF/tree/d1c134a32112db8239fd4a5ebe772d0931b23067))
    
    ```sh
    llama cli -hf mradermacher/falcon-40b-instruct-GGUF:Q4_K_M
@@ -87,13 +87,13 @@ weighted average                                   = 31.1
    llama serve -hf mradermacher/falcon-40b-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~45 GB) `llama cli -hf mradermacher/falcon-40b-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (48.8 GB memory, 45 GB download) `llama cli -hf mradermacher/falcon-40b-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon 40B Instruct (Q4_K_M, needs ~26 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF/tree/d1c134a32112db8239fd4a5ebe772d0931b23067))
+2. Run Falcon 40B Instruct (Q4_K_M, needs 28.8 GB memory, 26 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF/tree/d1c134a32112db8239fd4a5ebe772d0931b23067))
    
    ```sh
    lms get https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF@Q4_K_M -y
@@ -101,7 +101,7 @@ Other versions: Q8_0 (~45 GB) `llama cli -hf mradermacher/falcon-40b-instruct-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~45 GB) `lms get https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (48.8 GB memory, 45 GB download) `lms get https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -112,7 +112,7 @@ Other versions: Q8_0 (~45 GB) `lms get https://huggingface.co/mradermacher/falco
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon 40B Instruct (Q4_0, needs ~24 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+2. Run Falcon 40B Instruct (Q4_0, needs 26.5 GB memory, 23.8 GB download, from [ollama.com](https://ollama.com/library/falcon/tags))
    
    ```sh
    ollama run falcon:40b

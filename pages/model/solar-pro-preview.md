@@ -53,7 +53,7 @@ weighted average                          = 51.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Solar Pro Preview (22B) (Q4_K_M, needs ~13.3 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF/tree/4f05bde30de1ef0b38a2c3ad1e0f1480ef7156ff))
+2. Run Solar Pro Preview (22B) (Q4_K_M, needs 16.4 GB memory, 13.3 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF/tree/4f05bde30de1ef0b38a2c3ad1e0f1480ef7156ff))
    
    ```sh
    llama cli -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 51.0
    llama serve -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~23.5 GB) `llama cli -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (26.6 GB memory, 23.5 GB download) `llama cli -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Solar Pro Preview (22B) (Q4_K_M, needs ~13.3 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF/tree/4f05bde30de1ef0b38a2c3ad1e0f1480ef7156ff))
+2. Run Solar Pro Preview (22B) (Q4_K_M, needs 16.4 GB memory, 13.3 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF/tree/4f05bde30de1ef0b38a2c3ad1e0f1480ef7156ff))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~23.5 GB) `llama cli -hf MaziyarPanahi/solar-pro-preview-i
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~23.5 GB) `lms get https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (26.6 GB memory, 23.5 GB download) `lms get https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~23.5 GB) `lms get https://huggingface.co/MaziyarPanahi/so
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Solar Pro Preview (22B) (Q4_K_M, needs ~13 GB, from [ollama.com](https://ollama.com/library/solar-pro/tags))
+2. Run Solar Pro Preview (22B) (Q4_K_M, needs 16.4 GB memory, 13.3 GB download, from [ollama.com](https://ollama.com/library/solar-pro/tags))
    
    ```sh
    ollama run solar-pro:22b

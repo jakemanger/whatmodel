@@ -47,7 +47,7 @@ weighted average                                   = 54.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~15.23 GB, from [huggingface.co/ZJared](https://huggingface.co/ZJared/Haha-7B/tree/22db1d145a3a7b7c2a1976b3f19a623731f2719f))
+1. Run it as published (BF16, needs 17.5 GB memory, 15.2 GB download, from [huggingface.co/ZJared](https://huggingface.co/ZJared/Haha-7B/tree/22db1d145a3a7b7c2a1976b3f19a623731f2719f))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ZJared/Haha-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -77,7 +77,7 @@ weighted average                                   = 48.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4 9B Chat (Q4_K_M, needs ~6.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/tree/74a33eafa149550a60bff0fdafcdd34caa6df9f0))
+2. Run GLM-4 9B Chat (Q4_K_M, needs 7.2 GB memory, 6.25 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/tree/74a33eafa149550a60bff0fdafcdd34caa6df9f0))
    
    ```sh
    llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q4_K_M
@@ -89,13 +89,13 @@ weighted average                                   = 48.2
    llama serve -hf bartowski/glm-4-9b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~10 GB) `llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (11 GB memory, 9.99 GB download) `llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4 9B Chat (Q4_K_M, needs ~6.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/tree/74a33eafa149550a60bff0fdafcdd34caa6df9f0))
+2. Run GLM-4 9B Chat (Q4_K_M, needs 7.2 GB memory, 6.25 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/tree/74a33eafa149550a60bff0fdafcdd34caa6df9f0))
    
    ```sh
    lms get https://huggingface.co/bartowski/glm-4-9b-chat-GGUF@Q4_K_M -y
@@ -103,7 +103,7 @@ Other versions: Q8_0 (~10 GB) `llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~10 GB) `lms get https://huggingface.co/bartowski/glm-4-9b-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11 GB memory, 9.99 GB download) `lms get https://huggingface.co/bartowski/glm-4-9b-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -114,13 +114,13 @@ Other versions: Q8_0 (~10 GB) `lms get https://huggingface.co/bartowski/glm-4-9b
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GLM-4 9B Chat (Q4_K_M, needs ~6.14 GB, from [ollama.com](https://ollama.com/library/glm4/tags))
+2. Run GLM-4 9B Chat (Q4_K_M, needs 7.2 GB memory, 6.25 GB download, from [ollama.com](https://ollama.com/library/glm4/tags))
    
    ```sh
    ollama run glm4:9b-chat-q4_K_M
    ```
 
-Other versions: Q8_0 (~11.78 GB) `ollama run glm4:9b-chat-q8_0`
+Other versions: Q8_0 (11 GB memory, 10 GB download) `ollama run glm4:9b-chat-q8_0`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/glm-4-9b-chat)
 

@@ -60,7 +60,7 @@ weighted average                                   = 20.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OLMo 1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
+2. Run OLMo 1B (Q4_K_M, needs 2.3 GB memory, 0.73 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
    
    ```sh
    llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
@@ -72,13 +72,13 @@ weighted average                                   = 20.8
    llama serve -hf mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.3 GB) `llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q8_0`
+Other versions: Q8_0 (2.8 GB memory, 1.25 GB download) `llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OLMo 1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
+2. Run OLMo 1B (Q4_K_M, needs 2.3 GB memory, 0.73 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
    
    ```sh
    lms get https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ Other versions: Q8_0 (~1.3 GB) `llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.3 GB) `lms get https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF@Q8_0 -y`
+Other versions: Q8_0 (2.8 GB memory, 1.25 GB download) `lms get https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -97,17 +97,17 @@ Other versions: Q8_0 (~1.3 GB) `lms get https://huggingface.co/mradermacher/OLMo
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OLMo 1B (Q4_K_M, needs ~0.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
+2. Run OLMo 1B (Q4_K_M, needs 2.3 GB memory, 0.73 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF/tree/f889f0919626c42b00d08479df5bd107a698a3a2))
    
    ```sh
    ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.3 GB) `ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q8_0`
+Other versions: Q8_0 (2.8 GB memory, 1.25 GB download) `ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~4.71 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-1B-hf/tree/aee7752d9c08ee4775e9b0091426d8410e8f6a89))
+1. Run it as published (fp32, needs 6.4 GB memory, 4.71 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-1B-hf/tree/aee7752d9c08ee4775e9b0091426d8410e8f6a89))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-1B-hf')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -116,7 +116,7 @@ api (Cohere) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.co
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command R (08-2024) (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF/tree/284cc00405b04336bc3964abe08af2b792918b43))
+2. Run Command R (08-2024) (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF/tree/284cc00405b04336bc3964abe08af2b792918b43))
    
    ```sh
    llama cli -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q4_K_M
@@ -128,13 +128,13 @@ api (Cohere) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.co
    llama serve -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `llama cli -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command R (08-2024) (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF/tree/284cc00405b04336bc3964abe08af2b792918b43))
+2. Run Command R (08-2024) (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF/tree/284cc00405b04336bc3964abe08af2b792918b43))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF@Q4_K_M -y
@@ -142,7 +142,7 @@ Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/c4ai-command-r
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF@Q8_0 -y` · 4bit (~18.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-4bit -y` · 8bit (~34.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-8bit -y`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `lms get https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF@Q8_0 -y` · 4bit (20.6 GB memory, 18.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-4bit -y` · 8bit (37.5 GB memory, 34.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-8bit -y`
 
 ### Ollama
 
@@ -153,13 +153,13 @@ Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command R (08-2024) (Q4_K_M, needs ~19.88 GB, from [ollama.com](https://ollama.com/library/command-r/tags))
+2. Run Command R (08-2024) (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [ollama.com](https://ollama.com/library/command-r/tags))
    
    ```sh
    ollama run command-r:35b-08-2024-q4_K_M
    ```
 
-Other versions: Q8_0 (~39.26 GB) `ollama run command-r:35b-08-2024-q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `ollama run command-r:35b-08-2024-q8_0`
 
 ### MLX (Mac)
 
@@ -172,7 +172,7 @@ Other versions: Q8_0 (~39.26 GB) `ollama run command-r:35b-08-2024-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Command R (08-2024) (4bit, needs ~18.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-08-2024-4bit/tree/563c818b2a8358765f78d30156f6e36f93b57110))
+2. Run Command R (08-2024) (4bit, needs 20.6 GB memory, 18.2 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-08-2024-4bit/tree/563c818b2a8358765f78d30156f6e36f93b57110))
    
    ```sh
    mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-4bit
@@ -184,7 +184,7 @@ Other versions: Q8_0 (~39.26 GB) `ollama run command-r:35b-08-2024-q8_0`
    mlx_lm.server --model mlx-community/c4ai-command-r-08-2024-4bit
    ```
 
-Other versions: 8bit (~34.3 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-8bit`
+Other versions: 8bit (37.5 GB memory, 34.3 GB download, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-8bit`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024)
 

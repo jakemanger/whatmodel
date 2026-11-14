@@ -77,7 +77,7 @@ weighted average                                   = 47.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 34B Code Instruct (8K) (Q4_K_M, needs ~21.38 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF/tree/4e7bb6bc0b242b2cb32f296765fa5b78cf8c827c))
+2. Run Granite 34B Code Instruct (8K) (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF/tree/4e7bb6bc0b242b2cb32f296765fa5b78cf8c827c))
    
    ```sh
    llama cli -hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M
@@ -93,7 +93,7 @@ weighted average                                   = 47.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 34B Code Instruct (8K) (Q4_K_M, needs ~21.38 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF/tree/4e7bb6bc0b242b2cb32f296765fa5b78cf8c827c))
+2. Run Granite 34B Code Instruct (8K) (Q4_K_M, needs 24 GB memory, 21.4 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF/tree/4e7bb6bc0b242b2cb32f296765fa5b78cf8c827c))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF@Q4_K_M -y
@@ -110,13 +110,13 @@ weighted average                                   = 47.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 34B Code Instruct (8K) (Q4_0, needs ~19 GB, from [ollama.com](https://ollama.com/library/granite-code/tags))
+2. Run Granite 34B Code Instruct (8K) (Q4_0, needs 21.7 GB memory, 19.2 GB download, from [ollama.com](https://ollama.com/library/granite-code/tags))
    
    ```sh
    ollama run granite-code:34b
    ```
 
-Other versions: Q4_0 (~19 GB) `ollama run granite-code:34b`
+Other versions: Q4_0 (21.7 GB memory, 19.2 GB download) `ollama run granite-code:34b`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k)
 

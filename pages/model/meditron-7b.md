@@ -55,7 +55,7 @@ weighted average                                   = 20.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Meditron 7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
+2. Run Meditron 7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
    
    ```sh
    llama cli -hf TheBloke/meditron-7B-GGUF:Q4_K_M
@@ -67,13 +67,13 @@ weighted average                                   = 20.6
    llama serve -hf TheBloke/meditron-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/meditron-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf TheBloke/meditron-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Meditron 7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
+2. Run Meditron 7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
    
    ```sh
    lms get https://huggingface.co/TheBloke/meditron-7B-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/meditron-7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/meditron-7B-GGUF@Q8_0 -y` · 4bit (~3.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/meditron-7b -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/TheBloke/meditron-7B-GGUF@Q8_0 -y` · 4bit (5.5 GB memory, 3.79 GB download, Mac only) `lms get https://huggingface.co/mlx-community/meditron-7b -y`
 
 ### Ollama
 
@@ -92,13 +92,13 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/meditron
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Meditron 7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
+2. Run Meditron 7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/3def70b8ed11c021ae965275cf49fb518ad5f661))
    
    ```sh
    ollama run hf.co/TheBloke/meditron-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -111,7 +111,7 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0`
    pip install mlx-lm
    ```
 
-2. Run Meditron 7B (4bit, needs ~3.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/meditron-7b/tree/2de808f7fa06817bf2eb7e53322d088c0b78ddb1))
+2. Run Meditron 7B (4bit, needs 5.5 GB memory, 3.79 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/meditron-7b/tree/2de808f7fa06817bf2eb7e53322d088c0b78ddb1))
    
    ```sh
    mlx_lm.chat --model mlx-community/meditron-7b
@@ -125,7 +125,7 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-7b/tree/d7d0a5ed929384a6b059ac74198cf1d71f44ba76))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-7b/tree/d7d0a5ed929384a6b059ac74198cf1d71f44ba76))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

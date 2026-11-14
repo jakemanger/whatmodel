@@ -53,7 +53,7 @@ weighted average                        = 50.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs ~5.15 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
+2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs 6.9 GB memory, 5.15 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
    
    ```sh
    llama cli -hf bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF:Q4_K_M
@@ -69,7 +69,7 @@ weighted average                        = 50.6
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs ~5.15 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
+2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs 6.9 GB memory, 5.15 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
    
    ```sh
    lms get https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ weighted average                        = 50.6
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs ~5.15 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
+2. Run Mistral-NeMo-Minitron 8B Instruct (Q4_K_M, needs 6.9 GB memory, 5.15 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53))
    
    ```sh
    ollama run hf.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF:Q4_K_M

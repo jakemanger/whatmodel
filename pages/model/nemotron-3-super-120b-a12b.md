@@ -174,7 +174,7 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~86.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs 91.9 GB memory, 86.1 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
    
    ```sh
    llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
@@ -186,13 +186,13 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
    llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~128.5 GB) `llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q8_0`
+Other versions: Q8_0 (136 GB memory, 128.5 GB download) `llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~86.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs 91.9 GB memory, 86.1 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q4_K_M -y
@@ -200,7 +200,7 @@ Other versions: Q8_0 (~128.5 GB) `llama cli -hf lmstudio-community/NVIDIA-Nemotr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q8_0 -y` · 4bit (~68 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit -y` · 8bit (~128.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit -y`
+Other versions: Q8_0 (136 GB memory, 128.5 GB download) `lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q8_0 -y` · 4bit (72.9 GB memory, 68 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit -y` · 8bit (136 GB memory, 128.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit -y`
 
 ### Ollama
 
@@ -211,7 +211,7 @@ Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-commun
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~72.86 GB, from [ollama.com](https://ollama.com/library/nemotron-3-super/tags))
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs 92.6 GB memory, 86.8 GB download, from [ollama.com](https://ollama.com/library/nemotron-3-super/tags))
    
    ```sh
    ollama run nemotron-3-super:120b
@@ -228,7 +228,7 @@ Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-commun
    pip install mlx-lm
    ```
 
-2. Run Nemotron 3 Super 120B-A12B (4bit, needs ~68 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit/tree/46d2ec99579734e0da13b6189bb7ea500b7a1e00))
+2. Run Nemotron 3 Super 120B-A12B (4bit, needs 72.9 GB memory, 68 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit/tree/46d2ec99579734e0da13b6189bb7ea500b7a1e00))
    
    ```sh
    mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
@@ -240,7 +240,7 @@ Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-commun
    mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
    ```
 
-Other versions: 8bit (~128.3 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit`
+Other versions: 8bit (136 GB memory, 128.3 GB download, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
 

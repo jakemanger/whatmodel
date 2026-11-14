@@ -57,7 +57,7 @@ weighted average                          = 29.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
    
    ```sh
    llama cli -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
@@ -73,7 +73,7 @@ weighted average                          = 29.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
    
    ```sh
    lms get https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ weighted average                          = 29.1
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit -y`
+Other versions: 4bit (2.5 GB memory, 0.93 GB download, Mac only) `lms get https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit -y`
 
 ### Ollama
 
@@ -92,7 +92,7 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
    
    ```sh
    ollama run hf.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
@@ -109,7 +109,7 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4
    pip install mlx-lm
    ```
 
-2. Run EuroLLM 1.7B Instruct (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/jevoma4362](https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit/tree/6564fac274047a98b97c54287607626553f5647f))
+2. Run EuroLLM 1.7B Instruct (4bit, needs 2.5 GB memory, 0.93 GB download, Mac only, from [huggingface.co/jevoma4362](https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit/tree/6564fac274047a98b97c54287607626553f5647f))
    
    ```sh
    mlx_lm.chat --model jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit
@@ -123,7 +123,7 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~3.31 GB, NVIDIA only, from [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/a25c7fa65fc2a644e6270b8940dbe295b51da681))
+1. Run it as published (BF16, needs 5 GB memory, 3.31 GB download, NVIDIA only, from [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/a25c7fa65fc2a644e6270b8940dbe295b51da681))
    
    ```sh
    vllm serve utter-project/EuroLLM-1.7B-Instruct

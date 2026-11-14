@@ -58,7 +58,7 @@ weighted average                              = 58.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
+2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
    
    ```sh
    llama cli -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                              = 58.5
    llama serve -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.82 GB) `llama cli -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
+2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~34.82 GB) `llama cli -hf bartowski/nvidia_OpenReasoning-N
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.82 GB) `lms get https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4 -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q8 -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF@Q8_0 -y` · 4bit (20.8 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4 -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q8 -y`
 
 ### Ollama
 
@@ -95,13 +95,13 @@ Other versions: Q8_0 (~34.82 GB) `lms get https://huggingface.co/bartowski/nvidi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
+2. Run OpenReasoning-Nemotron-32B (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d))
    
    ```sh
    ollama run hf.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.82 GB) `ollama run hf.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `ollama run hf.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~34.82 GB) `ollama run hf.co/bartowski/nvidia_OpenReasonin
    pip install mlx-lm
    ```
 
-2. Run OpenReasoning-Nemotron-32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/litmudoc](https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4/tree/b5729c305e444aaeebf8f70a24d77ca56bacd380))
+2. Run OpenReasoning-Nemotron-32B (4bit, needs 20.8 GB memory, 18.4 GB download, Mac only, from [huggingface.co/litmudoc](https://huggingface.co/litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4/tree/b5729c305e444aaeebf8f70a24d77ca56bacd380))
    
    ```sh
    mlx_lm.chat --model litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~34.82 GB) `ollama run hf.co/bartowski/nvidia_OpenReasonin
    mlx_lm.server --model litmudoc/OpenReasoning-Nemotron-32B-MLX-Q4
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model litmudoc/OpenReasoning-Nemotron-32B-MLX-Q8`
+Other versions: 8bit (38 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model litmudoc/OpenReasoning-Nemotron-32B-MLX-Q8`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B)
 

@@ -114,7 +114,7 @@ api (Arcee AI) · $0.39/M blended · $0.25 in / $0.8 out per 1M tokens · [docs.
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Trinity-Large-Thinking (Q4_K_M, needs ~241.85 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
+2. Run Trinity-Large-Thinking (Q4_K_M, needs 255 GB memory, 241.8 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
    
    ```sh
    llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
@@ -126,13 +126,13 @@ api (Arcee AI) · $0.39/M blended · $0.25 in / $0.8 out per 1M tokens · [docs.
    llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_M (~133.01 GB) `llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M`
+Other versions: IQ2_M (141 GB memory, 133 GB download) `llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Trinity-Large-Thinking (Q4_K_M, needs ~241.85 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
+2. Run Trinity-Large-Thinking (Q4_K_M, needs 255 GB memory, 241.8 GB download, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
    
    ```sh
    lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@Q4_K_M -y
@@ -140,7 +140,7 @@ Other versions: IQ2_M (~133.01 GB) `llama cli -hf arcee-ai/Trinity-Large-Thinkin
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_M (~133.01 GB) `lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y`
+Other versions: IQ2_M (141 GB memory, 133 GB download) `lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y`
 
 Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking)
 

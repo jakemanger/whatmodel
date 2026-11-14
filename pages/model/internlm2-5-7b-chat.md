@@ -71,7 +71,7 @@ weighted average                                   = 49.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run InternLM2.5 7B Chat (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF/tree/34fdc9783472bb1fd7d1d04a412d1f2ae029459a))
+2. Run InternLM2.5 7B Chat (Q4_K_M, needs 6.4 GB memory, 4.71 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF/tree/34fdc9783472bb1fd7d1d04a412d1f2ae029459a))
    
    ```sh
    llama cli -hf bartowski/internlm2_5-7b-chat-GGUF:Q4_K_M
@@ -83,13 +83,13 @@ weighted average                                   = 49.4
    llama serve -hf bartowski/internlm2_5-7b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.2 GB) `llama cli -hf bartowski/internlm2_5-7b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (10.1 GB memory, 8.22 GB download) `llama cli -hf bartowski/internlm2_5-7b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run InternLM2.5 7B Chat (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF/tree/34fdc9783472bb1fd7d1d04a412d1f2ae029459a))
+2. Run InternLM2.5 7B Chat (Q4_K_M, needs 6.4 GB memory, 4.71 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF/tree/34fdc9783472bb1fd7d1d04a412d1f2ae029459a))
    
    ```sh
    lms get https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF@Q4_K_M -y
@@ -97,7 +97,7 @@ Other versions: Q8_0 (~8.2 GB) `llama cli -hf bartowski/internlm2_5-7b-chat-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF@Q8_0 -y` · 4bit (~4.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-4bit -y` · 8bit (~8.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-8bit -y`
+Other versions: Q8_0 (10.1 GB memory, 8.22 GB download) `lms get https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF@Q8_0 -y` · 4bit (6.1 GB memory, 4.35 GB download, Mac only) `lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-4bit -y` · 8bit (10.1 GB memory, 8.22 GB download, Mac only) `lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-8bit -y`
 
 ### Ollama
 
@@ -108,13 +108,13 @@ Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/bartowski/internl
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run InternLM2.5 7B Chat (Q4_K_M, needs ~5.14 GB, from [ollama.com](https://ollama.com/library/internlm2/tags))
+2. Run InternLM2.5 7B Chat (Q4_K_M, needs 6.4 GB memory, 4.71 GB download, from [ollama.com](https://ollama.com/library/internlm2/tags))
    
    ```sh
    ollama run internlm2:7b-chat-v2.5-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.79 GB) `ollama run internlm2:7b-chat-v2.5-q8_0`
+Other versions: Q8_0 (10.1 GB memory, 8.22 GB download) `ollama run internlm2:7b-chat-v2.5-q8_0`
 
 ### MLX (Mac)
 
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~9.79 GB) `ollama run internlm2:7b-chat-v2.5-q8_0`
    pip install mlx-lm
    ```
 
-2. Run InternLM2.5 7B Chat (4bit, needs ~4.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/internlm2_5-7b-chat-4bit/tree/d12097a867721978142a6048399f470a3d18beee))
+2. Run InternLM2.5 7B Chat (4bit, needs 6.1 GB memory, 4.35 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/internlm2_5-7b-chat-4bit/tree/d12097a867721978142a6048399f470a3d18beee))
    
    ```sh
    mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-4bit
@@ -139,7 +139,7 @@ Other versions: Q8_0 (~9.79 GB) `ollama run internlm2:7b-chat-v2.5-q8_0`
    mlx_lm.server --model mlx-community/internlm2_5-7b-chat-4bit
    ```
 
-Other versions: 8bit (~8.2 GB, Mac only) `mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-8bit`
+Other versions: 8bit (10.1 GB memory, 8.22 GB download, Mac only) `mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-8bit`
 
 Model repository and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-7b-chat)
 

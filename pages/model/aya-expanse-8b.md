@@ -75,7 +75,7 @@ weighted average                              = 47.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Aya Expanse 8B (Q4_K_M, needs ~5.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF/tree/6bf08537b77d7173976591117800a49fe95d9e1d))
+2. Run Aya Expanse 8B (Q4_K_M, needs 7 GB memory, 5.06 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF/tree/6bf08537b77d7173976591117800a49fe95d9e1d))
    
    ```sh
    llama cli -hf lmstudio-community/aya-expanse-8b-GGUF:Q4_K_M
@@ -87,13 +87,13 @@ weighted average                              = 47.6
    llama serve -hf lmstudio-community/aya-expanse-8b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf lmstudio-community/aya-expanse-8b-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf lmstudio-community/aya-expanse-8b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Aya Expanse 8B (Q4_K_M, needs ~5.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF/tree/6bf08537b77d7173976591117800a49fe95d9e1d))
+2. Run Aya Expanse 8B (Q4_K_M, needs 7 GB memory, 5.06 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF/tree/6bf08537b77d7173976591117800a49fe95d9e1d))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF@Q4_K_M -y
@@ -101,7 +101,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf lmstudio-community/aya-expanse-8b-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF@Q8_0 -y` · 4bit (~4.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-8b-4bit -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-8b-8bit -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/lmstudio-community/aya-expanse-8b-GGUF@Q8_0 -y` · 4bit (6.5 GB memory, 4.52 GB download, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-8b-4bit -y` · 8bit (10.5 GB memory, 8.53 GB download, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-8b-8bit -y`
 
 ### Ollama
 
@@ -112,13 +112,13 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Aya Expanse 8B (Q4_K_M, needs ~5.32 GB, from [ollama.com](https://ollama.com/library/aya-expanse/tags))
+2. Run Aya Expanse 8B (Q4_K_M, needs 7 GB memory, 5.06 GB download, from [ollama.com](https://ollama.com/library/aya-expanse/tags))
    
    ```sh
    ollama run aya-expanse:8b-q4_K_M
    ```
 
-Other versions: Q8_0 (~10.14 GB) `ollama run aya-expanse:8b-q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run aya-expanse:8b-q8_0`
 
 ### MLX (Mac)
 
@@ -131,7 +131,7 @@ Other versions: Q8_0 (~10.14 GB) `ollama run aya-expanse:8b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Aya Expanse 8B (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/aya-expanse-8b-4bit/tree/3a7cee37dd4ab4ed76642f61f6253da4748e63ba))
+2. Run Aya Expanse 8B (4bit, needs 6.5 GB memory, 4.52 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/aya-expanse-8b-4bit/tree/3a7cee37dd4ab4ed76642f61f6253da4748e63ba))
    
    ```sh
    mlx_lm.chat --model mlx-community/aya-expanse-8b-4bit
@@ -143,7 +143,7 @@ Other versions: Q8_0 (~10.14 GB) `ollama run aya-expanse:8b-q8_0`
    mlx_lm.server --model mlx-community/aya-expanse-8b-4bit
    ```
 
-Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/aya-expanse-8b-8bit`
+Other versions: 8bit (10.5 GB memory, 8.53 GB download, Mac only) `mlx_lm.chat --model mlx-community/aya-expanse-8b-8bit`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-expanse-8b)
 

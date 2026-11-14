@@ -82,7 +82,7 @@ weighted average                                   = 30.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon 7B (base) (Q4_K_M, needs ~5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-7b-GGUF/tree/8fd1679ed38f3b54c80dad18a97708c559ec7517))
+2. Run Falcon 7B (base) (Q4_K_M, needs 6.7 GB memory, 4.98 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-7b-GGUF/tree/8fd1679ed38f3b54c80dad18a97708c559ec7517))
    
    ```sh
    llama cli -hf mradermacher/falcon-7b-GGUF:Q4_K_M
@@ -94,13 +94,13 @@ weighted average                                   = 30.6
    llama serve -hf mradermacher/falcon-7b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/falcon-7b-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.67 GB download) `llama cli -hf mradermacher/falcon-7b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon 7B (base) (Q4_K_M, needs ~5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-7b-GGUF/tree/8fd1679ed38f3b54c80dad18a97708c559ec7517))
+2. Run Falcon 7B (base) (Q4_K_M, needs 6.7 GB memory, 4.98 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/falcon-7b-GGUF/tree/8fd1679ed38f3b54c80dad18a97708c559ec7517))
    
    ```sh
    lms get https://huggingface.co/mradermacher/falcon-7b-GGUF@Q4_K_M -y
@@ -108,7 +108,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/falcon-7b-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/falcon-7b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.67 GB download) `lms get https://huggingface.co/mradermacher/falcon-7b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/falc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon 7B (base) (Q4_0, needs ~4.2 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+2. Run Falcon 7B (base) (Q4_0, needs 5.9 GB memory, 4.21 GB download, from [ollama.com](https://ollama.com/library/falcon/tags))
    
    ```sh
    ollama run falcon:7b-text
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/falc
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.43 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b/tree/ec89142b67d748a1865ea4451372db8313ada0d8))
+1. Run it as published (BF16, needs 16.6 GB memory, 14.4 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b/tree/ec89142b67d748a1865ea4451372db8313ada0d8))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

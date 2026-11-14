@@ -57,7 +57,7 @@ weighted average                                   = 45.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
+2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
    
    ```sh
    llama cli -hf mradermacher/Code-290k-6.7B-Instruct-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 45.7
    llama serve -hf mradermacher/Code-290k-6.7B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/Code-290k-6.7B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf mradermacher/Code-290k-6.7B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
+2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/Code-290k-6.7B-Instru
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Code
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
+2. Run Code-290k-6.7B-Instruct (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Code-290k-6.7B-Instruct-GGUF/tree/1504c335ec7c9520bed945c6d3d7457b32412cc6))
    
    ```sh
    ollama run hf.co/mradermacher/Code-290k-6.7B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/Code-290k-6.7B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/mradermacher/Code-290k-6.7B-Instruct-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-290k-6.7B-Instruct/tree/e4a829650cf5ceabf2cab9f7bbf1c11833f3b0be))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-290k-6.7B-Instruct/tree/e4a829650cf5ceabf2cab9f7bbf1c11833f3b0be))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/Code-290k-6.7B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

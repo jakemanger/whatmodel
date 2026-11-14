@@ -57,7 +57,7 @@ weighted average                                   = 40.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
+2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
    
    ```sh
    llama cli -hf TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 40.3
    llama serve -hf TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
+2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/Mistral-7B-codealpaca-lor
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/Mistral-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
+2. Run Mistral-7B-codealpaca-lora (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF/tree/a9efa20488aae4fea4bb618c3b281dde5babfde4))
    
    ```sh
    ollama run hf.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/TheBloke/Mistral-7B-codealpaca-lora-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~14.48 GB, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora/tree/8f97cd157fa32ff5f9920999d2410d696ab91d0b))
+1. Run it as published (fp16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/Nondzu](https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora/tree/8f97cd157fa32ff5f9920999d2410d696ab91d0b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Nondzu/Mistral-7B-codealpaca-lora', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

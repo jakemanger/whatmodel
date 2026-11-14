@@ -25,13 +25,13 @@ OSWorld-Verified   66.0%  maker        <a href="https://huggingface.co/microsoft
 
 ### Other ways to run it
 
-1. Run it as published (Q4_K_M, needs ~3.3 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF/blob/bd54c175044fb33eeb70fbb58242233c61f6a390/README.md))
+1. Run it as published (Q4_K_M, needs 4.7 GB memory, 3.07 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF/blob/bd54c175044fb33eeb70fbb58242233c61f6a390/README.md))
    
    ```sh
    llama serve -hf ggml-org/Mage-VL-Cowork-GGUF
    ```
 
-Other versions: Q8_0 (~6.2 GB) `llama serve -hf ggml-org/Mage-VL-Cowork-GGUF:Q8_0` · BF16 (9.48 GB, NVIDIA only) `SGLANG_MAX_PIXELS=4000000 python -m sglang.launch_server --model-path microsoft/Mage-VL-Cowork --served-model-name Mage-VL-Cowork --host 0.0.0.0 --port 30001 --trust-remote-code --dtype bfloat16 --context-length 32768 --mem-fraction-static 0.82 --tool-call-parser qwen25 --attention-backend flashinfer --mm-attention-backend triton_attn`
+Other versions: Q8_0 (6.8 GB memory, 5.05 GB download) `llama serve -hf ggml-org/Mage-VL-Cowork-GGUF:Q8_0` · BF16 (11.5 GB memory, 9.48 GB download, NVIDIA only) `SGLANG_MAX_PIXELS=4000000 python -m sglang.launch_server --model-path microsoft/Mage-VL-Cowork --served-model-name Mage-VL-Cowork --host 0.0.0.0 --port 30001 --trust-remote-code --dtype bfloat16 --context-length 32768 --mem-fraction-static 0.82 --tool-call-parser qwen25 --attention-backend flashinfer --mm-attention-backend triton_attn`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Mage-VL-Cowork)
 

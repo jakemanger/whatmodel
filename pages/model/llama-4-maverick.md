@@ -172,7 +172,7 @@ api (Amazon Bedrock) · $0.42/M blended · $0.24 in / $0.97 out per 1M tokens ·
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs ~121.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
+2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs 164 GB memory, 154.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
@@ -184,13 +184,13 @@ api (Amazon Bedrock) · $0.42/M blended · $0.24 in / $0.97 out per 1M tokens ·
    llama serve -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
    ```
 
-Other versions: ud-iq1_s (~60.8 GB) `llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-IQ1_S`
+Other versions: ud-iq1_s (130 GB memory, 122.5 GB download) `llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs ~121.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
+2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs 164 GB memory, 154.4 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-Q2_K_XL -y
@@ -198,7 +198,7 @@ Other versions: ud-iq1_s (~60.8 GB) `llama cli -hf unsloth/Llama-4-Maverick-17B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-iq1_s (~60.8 GB) `lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-IQ1_S -y`
+Other versions: ud-iq1_s (130 GB memory, 122.5 GB download) `lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-IQ1_S -y`
 
 ### Ollama
 
@@ -209,7 +209,7 @@ Other versions: ud-iq1_s (~60.8 GB) `lms get https://huggingface.co/unsloth/Llam
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 4 Maverick (402B-A17B) (Q4_K_M, needs ~241.7 GB, from [ollama.com](https://ollama.com/library/llama4/tags))
+2. Run Llama 4 Maverick (402B-A17B) (Q4_K_M, needs 259 GB memory, 244.8 GB download, from [ollama.com](https://ollama.com/library/llama4/tags))
    
    ```sh
    ollama run llama4:maverick

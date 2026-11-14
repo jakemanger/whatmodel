@@ -78,7 +78,7 @@ weighted average                                   = 41.4
 
 ### Other ways to run it
 
-1. Run it as published (4bit, needs ~2.17 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/North-Micro-Vision-Instruct-4bit/blob/87466363e6c5f57adf91c18c3a62c3c74765f8df/README.md))
+1. Run it as published (4bit, needs 3.8 GB memory, 2.17 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/North-Micro-Vision-Instruct-4bit/blob/87466363e6c5f57adf91c18c3a62c3c74765f8df/README.md))
    
    ```sh
    pip install -U "mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git" && mlx_vlm.generate --model mlx-community/North-Micro-Vision-Instruct-4bit --image /path/to/image.jpg --prompt "Describe this image." --max-tokens 512 --temperature 0.0

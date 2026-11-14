@@ -78,7 +78,7 @@ weighted average                                   = 38.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Zephyr 7B alpha (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF/tree/834b8b6b1df954a81023f21d3c0ea2a8891480de))
+2. Run Zephyr 7B alpha (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF/tree/834b8b6b1df954a81023f21d3c0ea2a8891480de))
    
    ```sh
    llama cli -hf mradermacher/zephyr-7b-alpha-GGUF:Q4_K_M
@@ -90,13 +90,13 @@ weighted average                                   = 38.2
    llama serve -hf mradermacher/zephyr-7b-alpha-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/zephyr-7b-alpha-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf mradermacher/zephyr-7b-alpha-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Zephyr 7B alpha (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF/tree/834b8b6b1df954a81023f21d3c0ea2a8891480de))
+2. Run Zephyr 7B alpha (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF/tree/834b8b6b1df954a81023f21d3c0ea2a8891480de))
    
    ```sh
    lms get https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF@Q4_K_M -y
@@ -104,7 +104,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/zephyr-7b-alpha-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/mradermacher/zephyr-7b-alpha-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -115,13 +115,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/zeph
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Zephyr 7B alpha (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/zephyr/tags))
+2. Run Zephyr 7B alpha (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/zephyr/tags))
    
    ```sh
    ollama run zephyr:7b-alpha-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.19 GB) `ollama run zephyr:7b-alpha-q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run zephyr:7b-alpha-q8_0`
 
 Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha)
 

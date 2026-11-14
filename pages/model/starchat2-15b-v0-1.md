@@ -58,7 +58,7 @@ weighted average                                   = 49.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
    
    ```sh
    llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 49.4
    llama serve -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starchat2-15b-v0.1-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
    
    ```sh
    ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~31.92 GB, from [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/tree/837a7b6ac3df5f91de138e3592258f93c80d93d3))
+1. Run it as published (BF16, needs 35 GB memory, 31.9 GB download, from [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/tree/837a7b6ac3df5f91de138e3592258f93c80d93d3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='HuggingFaceH4/starchat2-15b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

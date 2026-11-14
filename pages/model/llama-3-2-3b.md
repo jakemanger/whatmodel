@@ -165,7 +165,7 @@ api (Cloudflare) · $0.12/M blended · $0.051 in / $0.335 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.2 3B Instruct (Q4_K_M, needs ~2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF/tree/c91307b5cf18c8106b1f8a6218c26ae4dbfee472))
+2. Run Llama 3.2 3B Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF/tree/c91307b5cf18c8106b1f8a6218c26ae4dbfee472))
    
    ```sh
    llama cli -hf lmstudio-community/Llama-3.2-3B-Instruct-GGUF:Q4_K_M
@@ -177,13 +177,13 @@ api (Cloudflare) · $0.12/M blended · $0.051 in / $0.335 out per 1M tokens · [
    llama serve -hf lmstudio-community/Llama-3.2-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.4 GB) `llama cli -hf lmstudio-community/Llama-3.2-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5 GB memory, 3.42 GB download) `llama cli -hf lmstudio-community/Llama-3.2-3B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.2 3B Instruct (Q4_K_M, needs ~2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF/tree/c91307b5cf18c8106b1f8a6218c26ae4dbfee472))
+2. Run Llama 3.2 3B Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF/tree/c91307b5cf18c8106b1f8a6218c26ae4dbfee472))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF@Q4_K_M -y
@@ -191,7 +191,7 @@ Other versions: Q8_0 (~3.4 GB) `llama cli -hf lmstudio-community/Llama-3.2-3B-In
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit -y` · 8bit (~3.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-8bit -y`
+Other versions: Q8_0 (5 GB memory, 3.42 GB download) `lms get https://huggingface.co/lmstudio-community/Llama-3.2-3B-Instruct-GGUF@Q8_0 -y` · 4bit (3.3 GB memory, 1.81 GB download, Mac only) `lms get https://huggingface.co/mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit -y` · 8bit (4.9 GB memory, 3.41 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -202,13 +202,13 @@ Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.2 3B Instruct (Q4_K_M, needs ~2.43 GB, from [ollama.com](https://ollama.com/library/llama3.2/tags))
+2. Run Llama 3.2 3B Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [ollama.com](https://ollama.com/library/llama3.2/tags))
    
    ```sh
    ollama run llama3.2:3b
    ```
 
-Other versions: Q8_0 (~4.35 GB) `ollama run llama3.2:3b-instruct-q8_0`
+Other versions: Q8_0 (5 GB memory, 3.42 GB download) `ollama run llama3.2:3b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -221,7 +221,7 @@ Other versions: Q8_0 (~4.35 GB) `ollama run llama3.2:3b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Llama 3.2 3B Instruct (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community-staging](https://huggingface.co/mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit/tree/84775981df316c5d938308743fe099c72d88a0e8))
+2. Run Llama 3.2 3B Instruct (4bit, needs 3.3 GB memory, 1.81 GB download, Mac only, from [huggingface.co/mlx-community-staging](https://huggingface.co/mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit/tree/84775981df316c5d938308743fe099c72d88a0e8))
    
    ```sh
    mlx_lm.chat --model mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit
@@ -233,7 +233,7 @@ Other versions: Q8_0 (~4.35 GB) `ollama run llama3.2:3b-instruct-q8_0`
    mlx_lm.server --model mlx-community-staging/Llama-3.2-3B-Instruct-mlx-4Bit
    ```
 
-Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.2-3B-Instruct-8bit`
+Other versions: 8bit (4.9 GB memory, 3.41 GB download, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.2-3B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 

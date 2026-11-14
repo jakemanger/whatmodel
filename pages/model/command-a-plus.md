@@ -125,7 +125,7 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command A+ (05-2026) (Q4_K_M, needs ~131.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF/tree/main))
+2. Run Command A+ (05-2026) (Q4_K_M, needs 143 GB memory, 135.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF/tree/main))
    
    ```sh
    llama cli -hf bartowski/command-a-plus-05-2026-GGUF:Q4_K_M
@@ -137,13 +137,13 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
    llama serve -hf bartowski/command-a-plus-05-2026-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_M (~65.9 GB) `llama cli -hf bartowski/command-a-plus-05-2026-GGUF:IQ2_M`
+Other versions: IQ2_M (81.9 GB memory, 76.6 GB download) `llama cli -hf bartowski/command-a-plus-05-2026-GGUF:IQ2_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command A+ (05-2026) (Q4_K_M, needs ~131.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF/tree/main))
+2. Run Command A+ (05-2026) (Q4_K_M, needs 143 GB memory, 135.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@Q4_K_M -y
@@ -151,7 +151,7 @@ Other versions: IQ2_M (~65.9 GB) `llama cli -hf bartowski/command-a-plus-05-2026
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_M (~65.9 GB) `lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@IQ2_M -y`
+Other versions: IQ2_M (81.9 GB memory, 76.6 GB download) `lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@IQ2_M -y`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16)
 

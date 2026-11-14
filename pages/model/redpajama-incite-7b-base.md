@@ -59,7 +59,7 @@ weighted average                                   = 27.6
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~13.85 GB, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/78f7e482443971f4873ba3239f0ac810a367833b))
+1. Run it as published (fp16, needs 16 GB memory, 13.8 GB download, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/78f7e482443971f4873ba3239f0ac810a367833b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-7B-Base', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

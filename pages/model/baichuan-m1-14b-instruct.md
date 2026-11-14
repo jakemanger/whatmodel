@@ -46,7 +46,7 @@ weighted average                        = 54.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Baichuan-M1-14B-Instruct (4bit, needs ~8.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
+2. Run Baichuan-M1-14B-Instruct (4bit, needs 10 GB memory, 8.14 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
    
    ```sh
    lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit -y
@@ -54,7 +54,7 @@ weighted average                        = 54.1
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~15.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-8bit -y`
+Other versions: 8bit (17.7 GB memory, 15.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-8bit -y`
 
 ### MLX (Mac)
 
@@ -67,7 +67,7 @@ Other versions: 8bit (~15.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    pip install mlx-lm
    ```
 
-2. Run Baichuan-M1-14B-Instruct (4bit, needs ~8.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
+2. Run Baichuan-M1-14B-Instruct (4bit, needs 10 GB memory, 8.14 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
    
    ```sh
    mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-4bit
@@ -79,11 +79,11 @@ Other versions: 8bit (~15.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    mlx_lm.server --model mlx-community/Baichuan-M1-14B-Instruct-4bit
    ```
 
-Other versions: 8bit (~15.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-8bit`
+Other versions: 8bit (17.7 GB memory, 15.4 GB download, Mac only) `mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~28.94 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct/tree/c1798dfc9dab0270eb10180a0611cb607d5276d2))
+1. Run it as published (BF16, needs 31.8 GB memory, 28.9 GB download, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct/tree/c1798dfc9dab0270eb10180a0611cb607d5276d2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M1-14B-Instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -169,7 +169,7 @@ weighted average                                   = 70.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~954.6 GB, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
+2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~1031 GB memory, ~980 GB download, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
    
    ```sh
    llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
@@ -181,13 +181,13 @@ weighted average                                   = 70.4
    llama serve -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1671.8 GB) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q8_0` · Q2_K (~574.1 GB) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q2_K`
+Other versions: Q8_0 (1757 GB memory, 1671.8 GB download) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q8_0` · Q2_K (~632 GB memory, ~600 GB download) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~954.6 GB, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
+2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~1031 GB memory, ~980 GB download, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
    
    ```sh
    lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q4_K_M -y
@@ -195,11 +195,11 @@ Other versions: Q8_0 (~1671.8 GB) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1671.8 GB) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q8_0 -y` · Q2_K (~574.1 GB) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q2_K -y`
+Other versions: Q8_0 (1757 GB memory, 1671.8 GB download) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q8_0 -y` · Q2_K (~632 GB memory, ~600 GB download) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q2_K -y`
 
 ### Other ways to run it
 
-1. Run it as published (fp4 + fp8 mixed, needs ~864.72 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (fp4 + fp8 mixed, needs 909 GB memory, 864.7 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve deepseek-ai/DeepSeek-V4-Pro

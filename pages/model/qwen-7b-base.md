@@ -64,7 +64,7 @@ weighted average                          = 32.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen-7B (base) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
+2. Run Qwen-7B (base) (Q4_K_M, needs 6.6 GB memory, 4.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
    
    ```sh
    llama cli -hf mradermacher/Qwen-7B-GGUF:Q4_K_M
@@ -76,13 +76,13 @@ weighted average                          = 32.8
    llama serve -hf mradermacher/Qwen-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.2 GB) `llama cli -hf mradermacher/Qwen-7B-GGUF:Q8_0`
+Other versions: Q8_0 (10.1 GB memory, 8.21 GB download) `llama cli -hf mradermacher/Qwen-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen-7B (base) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
+2. Run Qwen-7B (base) (Q4_K_M, needs 6.6 GB memory, 4.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Qwen-7B-GGUF@Q4_K_M -y
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~8.2 GB) `llama cli -hf mradermacher/Qwen-7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.1 GB memory, 8.21 GB download) `lms get https://huggingface.co/mradermacher/Qwen-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -101,17 +101,17 @@ Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen-7B (base) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
+2. Run Qwen-7B (base) (Q4_K_M, needs 6.6 GB memory, 4.9 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-GGUF/tree/40c967f3d68cd9a264b509550da30daf58199475))
    
    ```sh
    ollama run hf.co/mradermacher/Qwen-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.2 GB) `ollama run hf.co/mradermacher/Qwen-7B-GGUF:Q8_0`
+Other versions: Q8_0 (10.1 GB memory, 8.21 GB download) `ollama run hf.co/mradermacher/Qwen-7B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~15.44 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B/tree/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85))
+1. Run it as published (BF16, needs 17.7 GB memory, 15.4 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B/tree/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

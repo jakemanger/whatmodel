@@ -151,7 +151,7 @@ api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai](h
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4.7-Flash (Q4_K_M, needs ~18.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF/tree/b58019be521f54a64160968f3c37a55174b1f186))
+2. Run GLM-4.7-Flash (Q4_K_M, needs 19.2 GB memory, 18.1 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF/tree/b58019be521f54a64160968f3c37a55174b1f186))
    
    ```sh
    llama cli -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q4_K_M
@@ -163,13 +163,13 @@ api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai](h
    llama serve -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~31.8 GB) `llama cli -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q8_0`
+Other versions: Q8_0 (32.9 GB memory, 31.8 GB download) `llama cli -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4.7-Flash (Q4_K_M, needs ~18.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF/tree/b58019be521f54a64160968f3c37a55174b1f186))
+2. Run GLM-4.7-Flash (Q4_K_M, needs 19.2 GB memory, 18.1 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF/tree/b58019be521f54a64160968f3c37a55174b1f186))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF@Q4_K_M -y
@@ -177,7 +177,7 @@ Other versions: Q8_0 (~31.8 GB) `llama cli -hf lmstudio-community/GLM-4.7-Flash-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~31.8 GB) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF@Q8_0 -y` · 4bit (~16.9 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-4bit -y` · 8bit (~31.8 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-8bit -y`
+Other versions: Q8_0 (32.9 GB memory, 31.8 GB download) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF@Q8_0 -y` · 4bit (18 GB memory, 16.9 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-4bit -y` · 8bit (32.9 GB memory, 31.8 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-8bit -y`
 
 ### Ollama
 
@@ -188,7 +188,7 @@ Other versions: Q8_0 (~31.8 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GLM-4.7-Flash (Q4_K_M, needs ~19.22 GB, from [ollama.com](https://ollama.com/library/glm-4.7-flash/tags))
+2. Run GLM-4.7-Flash (Q4_K_M, needs 20.1 GB memory, 19 GB download, from [ollama.com](https://ollama.com/library/glm-4.7-flash/tags))
    
    ```sh
    ollama run glm-4.7-flash:q4_K_M
@@ -205,7 +205,7 @@ Other versions: Q8_0 (~31.8 GB) `lms get https://huggingface.co/lmstudio-communi
    pip install mlx-lm
    ```
 
-2. Run GLM-4.7-Flash (4bit, needs ~16.9 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-4bit/tree/a122231a36d90f7325a0f692e26197dadcd5ab9f))
+2. Run GLM-4.7-Flash (4bit, needs 18 GB memory, 16.9 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-4bit/tree/a122231a36d90f7325a0f692e26197dadcd5ab9f))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-4bit
@@ -217,7 +217,7 @@ Other versions: Q8_0 (~31.8 GB) `lms get https://huggingface.co/lmstudio-communi
    mlx_lm.server --model lmstudio-community/GLM-4.7-Flash-MLX-4bit
    ```
 
-Other versions: 8bit (~31.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-8bit`
+Other versions: 8bit (32.9 GB memory, 31.8 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.7-Flash)
 

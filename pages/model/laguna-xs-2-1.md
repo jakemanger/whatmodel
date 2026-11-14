@@ -69,7 +69,7 @@ weighted average                                   = 64.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs ~20.3 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1-GGUF/tree/1a37c0a5fb8c7a18e6106decb6be6327d1b63fa6))
+2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs 22.2 GB memory, 20.3 GB download, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1-GGUF/tree/1a37c0a5fb8c7a18e6106decb6be6327d1b63fa6))
    
    ```sh
    llama cli -hf poolside/Laguna-XS-2.1-GGUF:Q4_K_M
@@ -85,7 +85,7 @@ weighted average                                   = 64.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs ~20.3 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1-GGUF/tree/1a37c0a5fb8c7a18e6106decb6be6327d1b63fa6))
+2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs 22.2 GB memory, 20.3 GB download, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1-GGUF/tree/1a37c0a5fb8c7a18e6106decb6be6327d1b63fa6))
    
    ```sh
    lms get https://huggingface.co/poolside/Laguna-XS-2.1-GGUF@Q4_K_M -y
@@ -93,7 +93,7 @@ weighted average                                   = 64.1
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~18.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS-2.1-4bit -y` · 8bit (~35.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS-2.1-8bit -y`
+Other versions: 4bit (20.7 GB memory, 18.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS-2.1-4bit -y` · 8bit (37.4 GB memory, 35.5 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Laguna-XS-2.1-8bit -y`
 
 ### Ollama
 
@@ -104,13 +104,13 @@ Other versions: 4bit (~18.8 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/laguna-xs-2.1/tags))
+2. Run Laguna XS 2.1 (33B-A3B) (Q4_K_M, needs 22.2 GB memory, 20.3 GB download, from [ollama.com](https://ollama.com/library/laguna-xs-2.1/tags))
    
    ```sh
    ollama run laguna-xs-2.1:q4_K_M
    ```
 
-Other versions: Q8_0 (~36 GB) `ollama run laguna-xs-2.1:q8_0`
+Other versions: Q8_0 (37.5 GB memory, 35.6 GB download) `ollama run laguna-xs-2.1:q8_0`
 
 ### MLX (Mac)
 
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~36 GB) `ollama run laguna-xs-2.1:q8_0`
    pip install mlx-lm
    ```
 
-2. Run Laguna XS 2.1 (33B-A3B) (4bit, needs ~18.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-XS-2.1-4bit/tree/c42e0a8f8d504ceacde015a535dcb286d65c8799))
+2. Run Laguna XS 2.1 (33B-A3B) (4bit, needs 20.7 GB memory, 18.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Laguna-XS-2.1-4bit/tree/c42e0a8f8d504ceacde015a535dcb286d65c8799))
    
    ```sh
    mlx_lm.chat --model mlx-community/Laguna-XS-2.1-4bit
@@ -135,11 +135,11 @@ Other versions: Q8_0 (~36 GB) `ollama run laguna-xs-2.1:q8_0`
    mlx_lm.server --model mlx-community/Laguna-XS-2.1-4bit
    ```
 
-Other versions: 8bit (~35.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Laguna-XS-2.1-8bit`
+Other versions: 8bit (37.4 GB memory, 35.5 GB download, Mac only) `mlx_lm.chat --model mlx-community/Laguna-XS-2.1-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~66.89 GB, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md))
+1. Run it as published (BF16, needs 68.8 GB memory, 66.9 GB download, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md))
    
    ```sh
    pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-XS-2.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'

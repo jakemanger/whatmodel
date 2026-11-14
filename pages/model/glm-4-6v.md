@@ -92,7 +92,7 @@ api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai]
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GLM-4.6V (ud-q4_k_xl, needs ~67.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
+2. Run GLM-4.6V (ud-q4_k_xl, needs 69.4 GB memory, 67.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
    
    ```sh
    llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
@@ -104,13 +104,13 @@ api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai]
    llama serve -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~47.55 GB) `llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (49.7 GB memory, 47.5 GB download) `llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GLM-4.6V (ud-q4_k_xl, needs ~67.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
+2. Run GLM-4.6V (ud-q4_k_xl, needs 69.4 GB memory, 67.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
    
    ```sh
    lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q4_K_XL -y
@@ -118,7 +118,7 @@ Other versions: ud-q2_k_xl (~47.55 GB) `llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~47.55 GB) `lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (49.7 GB memory, 47.5 GB download) `lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.6V)
 

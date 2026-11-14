@@ -56,7 +56,7 @@ weighted average                                   = 66.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run watt-tool-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
+2. Run watt-tool-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
    
    ```sh
    llama cli -hf bartowski/watt-ai_watt-tool-70B-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 66.5
    llama serve -hf bartowski/watt-ai_watt-tool-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/watt-ai_watt-tool-70B-GGUF:Q8_0` · IQ2_XXS (~19.1 GB) `llama cli -hf bartowski/watt-ai_watt-tool-70B-GGUF:IQ2_XXS`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf bartowski/watt-ai_watt-tool-70B-GGUF:Q8_0` · IQ2_XXS (21.6 GB memory, 19.1 GB download) `llama cli -hf bartowski/watt-ai_watt-tool-70B-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run watt-tool-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
+2. Run watt-tool-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
    
    ```sh
    lms get https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/watt-ai_watt-tool-70B-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF@Q8_0 -y` · IQ2_XXS (~19.1 GB) `lms get https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF@IQ2_XXS -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/hellosri/watt-tool-70B-mlx-8Bit -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF@Q8_0 -y` · IQ2_XXS (21.6 GB memory, 19.1 GB download) `lms get https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF@IQ2_XXS -y` · 8bit (80.3 GB memory, 75 GB download, Mac only) `lms get https://huggingface.co/hellosri/watt-tool-70B-mlx-8Bit -y`
 
 ### Ollama
 
@@ -93,13 +93,13 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/watt-ai_
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run watt-tool-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
+2. Run watt-tool-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/watt-ai_watt-tool-70B-GGUF/tree/30ebe43d0c39c52f07741aa7aac564b5ceb2f182))
    
    ```sh
    ollama run hf.co/bartowski/watt-ai_watt-tool-70B-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/watt-ai_watt-tool-70B-GGUF:IQ2_XXS`
+Other versions: IQ2_XXS (21.6 GB memory, 19.1 GB download) `ollama run hf.co/bartowski/watt-ai_watt-tool-70B-GGUF:IQ2_XXS`
 
 ### MLX (Mac)
 
@@ -112,7 +112,7 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/watt-ai_watt-tool
    pip install mlx-lm
    ```
 
-2. Run watt-tool-70B (8bit, needs ~75 GB, Mac only, from [huggingface.co/hellosri](https://huggingface.co/hellosri/watt-tool-70B-mlx-8Bit/tree/23ec6065254731f6e168b06c28d3e468fc8e01c4))
+2. Run watt-tool-70B (8bit, needs 80.3 GB memory, 75 GB download, Mac only, from [huggingface.co/hellosri](https://huggingface.co/hellosri/watt-tool-70B-mlx-8Bit/tree/23ec6065254731f6e168b06c28d3e468fc8e01c4))
    
    ```sh
    mlx_lm.chat --model hellosri/watt-tool-70B-mlx-8Bit
@@ -126,7 +126,7 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/watt-ai_watt-tool
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/watt-ai](https://huggingface.co/watt-ai/watt-tool-70B/tree/dbe19344ec6ee4b9e1636e9e6ce24fc6a85a725e))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/watt-ai](https://huggingface.co/watt-ai/watt-tool-70B/tree/dbe19344ec6ee4b9e1636e9e6ce24fc6a85a725e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='watt-ai/watt-tool-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

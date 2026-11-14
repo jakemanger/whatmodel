@@ -66,7 +66,7 @@ weighted average                        = 48.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs ~42.83 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
+2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
    
    ```sh
    llama cli -hf NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
@@ -82,7 +82,7 @@ weighted average                        = 48.6
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs ~42.83 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
+2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF@Q4_K_M -y
@@ -99,7 +99,7 @@ weighted average                        = 48.6
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs ~42.83 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
+2. Run Hermes 2 Theta Llama-3 70B (gguf-q4_k_m, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M

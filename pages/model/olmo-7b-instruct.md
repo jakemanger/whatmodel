@@ -81,7 +81,7 @@ weighted average                                   = 31.8
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.78 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Instruct/blob/5e3ff29c568c175562a78d726c1bd027a0bc6166/README.md))
+1. Run it as published (BF16, needs 16 GB memory, 13.8 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Instruct/blob/5e3ff29c568c175562a78d726c1bd027a0bc6166/README.md))
    
    ```sh
    pip install ai2-olmo && python -c "from hf_olmo import OLMoForCausalLM, OLMoTokenizerFast; o=OLMoForCausalLM.from_pretrained('allenai/OLMo-7B-Instruct'); t=OLMoTokenizerFast.from_pretrained('allenai/OLMo-7B-Instruct'); p=t.apply_chat_template([{'role': 'user', 'content': 'What is language modeling?'}], tokenize=False, add_generation_prompt=True); i=t.encode(p, add_special_tokens=False, return_tensors='pt'); print(t.batch_decode(o.generate(input_ids=i.to(o.device), max_new_tokens=100, do_sample=True, top_k=50, top_p=0.95), skip_special_tokens=True)[0])"

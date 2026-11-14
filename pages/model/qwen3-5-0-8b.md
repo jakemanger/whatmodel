@@ -170,7 +170,7 @@ Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3.5 0.8B (Q4_K_M, needs ~0.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF/tree/26bab2c9369648924251c0ebb3dae012f5147707))
+2. Run Qwen3.5 0.8B (Q4_K_M, needs 1.7 GB memory, 0.73 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF/tree/26bab2c9369648924251c0ebb3dae012f5147707))
    
    ```sh
    llama cli -hf lmstudio-community/Qwen3.5-0.8B-GGUF:Q4_K_M
@@ -182,13 +182,13 @@ Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/1
    llama serve -hf lmstudio-community/Qwen3.5-0.8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.8 GB) `llama cli -hf lmstudio-community/Qwen3.5-0.8B-GGUF:Q8_0`
+Other versions: Q8_0 (2 GB memory, 1.02 GB download) `llama cli -hf lmstudio-community/Qwen3.5-0.8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3.5 0.8B (Q4_K_M, needs ~0.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF/tree/26bab2c9369648924251c0ebb3dae012f5147707))
+2. Run Qwen3.5 0.8B (Q4_K_M, needs 1.7 GB memory, 0.73 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF/tree/26bab2c9369648924251c0ebb3dae012f5147707))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF@Q4_K_M -y
@@ -196,7 +196,7 @@ Other versions: Q8_0 (~0.8 GB) `llama cli -hf lmstudio-community/Qwen3.5-0.8B-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.8 GB) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF@Q8_0 -y` · 4bit (~0.6 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-4bit -y` · 8bit (~1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-8bit -y`
+Other versions: Q8_0 (2 GB memory, 1.02 GB download) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-GGUF@Q8_0 -y` · 4bit (1.6 GB memory, 0.63 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-4bit -y` · 8bit (1.9 GB memory, 1 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-8bit -y`
 
 ### Ollama
 
@@ -207,13 +207,13 @@ Other versions: Q8_0 (~0.8 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3.5 0.8B (Q8_0, needs ~1.54 GB, from [ollama.com](https://ollama.com/library/qwen3.5/tags))
+2. Run Qwen3.5 0.8B (Q8_0, needs 2.3 GB memory, 1.32 GB download, from [ollama.com](https://ollama.com/library/qwen3.5/tags))
    
    ```sh
    ollama run qwen3.5:0.8b
    ```
 
-Other versions: mxfp8 (~1.02 GB, Mac only) `ollama run qwen3.5:0.8b-mlx`
+Other versions: mxfp8 (2.2 GB memory, 1.24 GB download, Mac only) `ollama run qwen3.5:0.8b-mlx`
 
 ### MLX (Mac)
 
@@ -226,7 +226,7 @@ Other versions: mxfp8 (~1.02 GB, Mac only) `ollama run qwen3.5:0.8b-mlx`
    pip install mlx-lm
    ```
 
-2. Run Qwen3.5 0.8B (4bit, needs ~0.6 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-4bit/tree/c9892b0295bceb223ffd3229aebd5a7ac73bb849))
+2. Run Qwen3.5 0.8B (4bit, needs 1.6 GB memory, 0.63 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3.5-0.8B-MLX-4bit/tree/c9892b0295bceb223ffd3229aebd5a7ac73bb849))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3.5-0.8B-MLX-4bit
@@ -238,7 +238,7 @@ Other versions: mxfp8 (~1.02 GB, Mac only) `ollama run qwen3.5:0.8b-mlx`
    mlx_lm.server --model lmstudio-community/Qwen3.5-0.8B-MLX-4bit
    ```
 
-Other versions: 8bit (~1 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.5-0.8B-MLX-8bit`
+Other versions: 8bit (1.9 GB memory, 1 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3.5-0.8B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 

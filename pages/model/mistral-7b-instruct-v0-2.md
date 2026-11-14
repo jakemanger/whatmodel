@@ -111,7 +111,7 @@ weighted average                                   = 37.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/tree/3a6fbf4a41a1d52e415a4958cde6856d34b2db93))
+2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/tree/3a6fbf4a41a1d52e415a4958cde6856d34b2db93))
    
    ```sh
    llama cli -hf TheBloke/Mistral-7B-Instruct-v0.2-GGUF:Q4_K_M
@@ -123,13 +123,13 @@ weighted average                                   = 37.7
    llama serve -hf TheBloke/Mistral-7B-Instruct-v0.2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/Mistral-7B-Instruct-v0.2-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `llama cli -hf TheBloke/Mistral-7B-Instruct-v0.2-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/tree/3a6fbf4a41a1d52e415a4958cde6856d34b2db93))
+2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/tree/3a6fbf4a41a1d52e415a4958cde6856d34b2db93))
    
    ```sh
    lms get https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF@Q4_K_M -y
@@ -137,7 +137,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/Mistral-7B-Instruct-v0.2-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF@Q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.2-4bit -y`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF@Q8_0 -y` · 4bit (5.7 GB memory, 4.26 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.2-4bit -y`
 
 ### Ollama
 
@@ -148,13 +148,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/Mistral-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/mistral/tags))
+2. Run Mistral 7B Instruct v0.2 (Q4_K_M, needs 5.8 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/mistral/tags))
    
    ```sh
    ollama run mistral:7b-instruct-v0.2-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.19 GB) `ollama run mistral:7b-instruct-v0.2-q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.7 GB download) `ollama run mistral:7b-instruct-v0.2-q8_0`
 
 ### MLX (Mac)
 
@@ -167,7 +167,7 @@ Other versions: Q8_0 (~9.19 GB) `ollama run mistral:7b-instruct-v0.2-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Mistral 7B Instruct v0.2 (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.2-4bit/tree/64481e3a4a7bb0990c45c991958f8d6c00c1e785))
+2. Run Mistral 7B Instruct v0.2 (4bit, needs 5.7 GB memory, 4.26 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-7B-Instruct-v0.2-4bit/tree/64481e3a4a7bb0990c45c991958f8d6c00c1e785))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mistral-7B-Instruct-v0.2-4bit

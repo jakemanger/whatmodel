@@ -114,7 +114,7 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
+2. Run Command R Plus (08-2024) (Q4_K_M, needs 67.4 GB memory, 62.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
    
    ```sh
    llama cli -hf lmstudio-community/c4ai-command-r-plus-08-2024-GGUF:Q4_K_M
@@ -130,7 +130,7 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
+2. Run Command R Plus (08-2024) (Q4_K_M, needs 67.4 GB memory, 62.8 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF@Q4_K_M -y
@@ -138,7 +138,7 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~58.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit -y` · 8bit (~110.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-8bit -y`
+Other versions: 4bit (62.8 GB memory, 58.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit -y` · 8bit (117 GB memory, 110.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-8bit -y`
 
 ### Ollama
 
@@ -149,13 +149,13 @@ Other versions: 4bit (~58.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.9 GB, from [ollama.com](https://ollama.com/library/command-r-plus/tags))
+2. Run Command R Plus (08-2024) (Q4_K_M, needs 67.4 GB memory, 62.8 GB download, from [ollama.com](https://ollama.com/library/command-r-plus/tags))
    
    ```sh
    ollama run command-r-plus:104b-08-2024-q4_K_M
    ```
 
-Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-08-2024-q8_0`
+Other versions: Q8_0 (117 GB memory, 110.3 GB download) `ollama run command-r-plus:104b-08-2024-q8_0`
 
 ### MLX (Mac)
 
@@ -168,7 +168,7 @@ Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-08-2024-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Command R Plus (08-2024) (4bit, needs ~58.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit/tree/c1793cf166ecc2e82bca7979d72cc91a95dd4d76))
+2. Run Command R Plus (08-2024) (4bit, needs 62.8 GB memory, 58.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit/tree/c1793cf166ecc2e82bca7979d72cc91a95dd4d76))
    
    ```sh
    mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-4bit
@@ -180,7 +180,7 @@ Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-08-2024-q8_0`
    mlx_lm.server --model mlx-community/c4ai-command-r-plus-08-2024-4bit
    ```
 
-Other versions: 8bit (~110.3 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-8bit`
+Other versions: 8bit (117 GB memory, 110.3 GB download, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-8bit`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024)
 

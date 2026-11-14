@@ -104,7 +104,7 @@ weighted average                                   = 32.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.1 GB, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs 3.1 GB memory, 1.06 GB download, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
    
    ```sh
    llama cli -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
@@ -120,7 +120,7 @@ weighted average                                   = 32.8
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.1 GB, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs 3.1 GB memory, 1.06 GB download, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
    
    ```sh
    lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF@q4_k_m -y
@@ -128,7 +128,7 @@ weighted average                                   = 32.8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~1 GB, Mac only) `lms get https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit -y` · 8bit (~1.8 GB, Mac only) `lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx -y`
+Other versions: 4bit (3 GB memory, 0.96 GB download, Mac only) `lms get https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit -y` · 8bit (3.9 GB memory, 1.82 GB download, Mac only) `lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx -y`
 
 ### Ollama
 
@@ -139,13 +139,13 @@ Other versions: 4bit (~1 GB, Mac only) `lms get https://huggingface.co/Irfanuruc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.53 GB, from [ollama.com](https://ollama.com/library/smollm2/tags))
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs 3.1 GB memory, 1.06 GB download, from [ollama.com](https://ollama.com/library/smollm2/tags))
    
    ```sh
    ollama run smollm2:1.7b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~2.55 GB) `ollama run smollm2:1.7b-instruct-q8_0`
+Other versions: Q8_0 (3.9 GB memory, 1.82 GB download) `ollama run smollm2:1.7b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -158,7 +158,7 @@ Other versions: Q8_0 (~2.55 GB) `ollama run smollm2:1.7b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run SmolLM2 1.7B Instruct (4bit, needs ~1 GB, Mac only, from [huggingface.co/Irfanuruchi](https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit/tree/8804903a4d9dc29fd7edf893168988760f4e73a6))
+2. Run SmolLM2 1.7B Instruct (4bit, needs 3 GB memory, 0.96 GB download, Mac only, from [huggingface.co/Irfanuruchi](https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit/tree/8804903a4d9dc29fd7edf893168988760f4e73a6))
    
    ```sh
    mlx_lm.chat --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
@@ -170,7 +170,7 @@ Other versions: Q8_0 (~2.55 GB) `ollama run smollm2:1.7b-instruct-q8_0`
    mlx_lm.server --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
    ```
 
-Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx`
+Other versions: 8bit (3.9 GB memory, 1.82 GB download, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx`
 
 Model repository and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct)
 

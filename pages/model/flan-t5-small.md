@@ -69,7 +69,7 @@ weighted average                                   = 16.3
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~0.31 GB, from [huggingface.co/google](https://huggingface.co/google/flan-t5-small/tree/0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab))
+1. Run it as published (fp32, needs 1.8 GB memory, 0.31 GB download, from [huggingface.co/google](https://huggingface.co/google/flan-t5-small/tree/0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-small')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"

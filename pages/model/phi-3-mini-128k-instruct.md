@@ -81,7 +81,7 @@ weighted average                                   = 41.1
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~7.64 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/tree/bb5bf1e4001277a606e11debca0ef80323e5f824))
+1. Run it as published (BF16, needs 9.5 GB memory, 7.64 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/tree/bb5bf1e4001277a606e11debca0ef80323e5f824))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Phi-3-mini-128k-instruct', revision='bb5bf1e4001277a606e11debca0ef80323e5f824', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

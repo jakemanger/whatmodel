@@ -57,7 +57,7 @@ weighted average                              = 41.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+2. Run CausalLM 14B (Q4_0, needs 10.1 GB memory, 8.18 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
    
    ```sh
    llama cli -hf TheBloke/CausalLM-14B-GGUF:Q4_0
@@ -69,13 +69,13 @@ weighted average                              = 41.1
    llama serve -hf TheBloke/CausalLM-14B-GGUF:Q4_0
    ```
 
-Other versions: Q8_0 (~15.1 GB) `llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+2. Run CausalLM 14B (Q4_0, needs 10.1 GB memory, 8.18 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
    
    ```sh
    lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q4_0 -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~15.1 GB) `llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.1 GB) `lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~15.1 GB) `lms get https://huggingface.co/TheBloke/CausalL
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+2. Run CausalLM 14B (Q4_0, needs 10.1 GB memory, 8.18 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
    
    ```sh
    ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q4_0
    ```
 
-Other versions: Q8_0 (~15.1 GB) `ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_0`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~28.33 GB, from [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B/tree/cc054cf5953252d0709cb3267d1a85246e489e95))
+1. Run it as published (BF16, needs 31.2 GB memory, 28.3 GB download, from [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B/tree/cc054cf5953252d0709cb3267d1a85246e489e95))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

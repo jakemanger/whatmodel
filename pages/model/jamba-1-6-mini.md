@@ -53,7 +53,7 @@ weighted average                            = 53.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Jamba 1.6 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
+2. Run Jamba 1.6 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
    
    ```sh
    llama cli -hf mradermacher/AI21-Jamba-Mini-1.6-GGUF:Q4_K_M
@@ -69,7 +69,7 @@ weighted average                            = 53.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Jamba 1.6 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
+2. Run Jamba 1.6 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
    
    ```sh
    lms get https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ weighted average                            = 53.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Jamba 1.6 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
+2. Run Jamba 1.6 Mini (Q4_K_M, needs 34.3 GB memory, 31.2 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF/tree/a866c8bbeffe77a604dc32ba4e42fa509d9fcd19))
    
    ```sh
    ollama run hf.co/mradermacher/AI21-Jamba-Mini-1.6-GGUF:Q4_K_M
@@ -94,7 +94,7 @@ weighted average                            = 53.3
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~103.14 GB, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.6/tree/10e3208bae7182fe351e93403cb0e152d80e25f2))
+1. Run it as published (BF16, needs 110 GB memory, 103.1 GB download, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.6/tree/10e3208bae7182fe351e93403cb0e152d80e25f2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ai21labs/AI21-Jamba-Mini-1.6', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

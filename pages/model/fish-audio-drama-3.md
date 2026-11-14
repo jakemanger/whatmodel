@@ -44,7 +44,7 @@ weighted average                                   = 48.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~84.5 GB, NVIDIA only, from [huggingface.co/fishaudio](https://huggingface.co/fishaudio/drama-3/blob/b2b5ee998034b2975720906c815e7fb0e9f007bd/README.md))
+1. Run it as published (BF16, needs ~70 GB, NVIDIA only, from [huggingface.co/fishaudio](https://huggingface.co/fishaudio/drama-3/blob/b2b5ee998034b2975720906c815e7fb0e9f007bd/README.md))
    
    ```sh
    sgl-omni serve --model-path fishaudio/drama-3 --port 8000

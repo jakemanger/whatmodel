@@ -59,7 +59,7 @@ weighted average                        = 59.1
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~327.59 GB, NVIDIA only, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3/blob/e2d67fc936dc60f8f606f2429728f1dea503e10d/docs/deploy_guidance.md))
+1. Run it as published (fp8, needs 345 GB memory, 327.6 GB download, NVIDIA only, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3/blob/e2d67fc936dc60f8f606f2429728f1dea503e10d/docs/deploy_guidance.md))
    
    ```sh
    uv pip install -U vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly && vllm serve stepfun-ai/step3-fp8 --tensor-parallel-size 8 --reasoning-parser step3 --enable-auto-tool-choice --tool-call-parser step3 --gpu-memory-utilization 0.85 --max-num-batched-tokens 4096 --trust-remote-code

@@ -111,7 +111,7 @@ weighted average                                   = 45.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 3.0 8B Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF/tree/1202e514956ce412b0cc7aca228fa269cbd4d4b0))
+2. Run Granite 3.0 8B Instruct (Q4_K_M, needs 6.7 GB memory, 4.94 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF/tree/1202e514956ce412b0cc7aca228fa269cbd4d4b0))
    
    ```sh
    llama cli -hf lmstudio-community/granite-3.0-8b-instruct-GGUF:Q4_K_M
@@ -123,13 +123,13 @@ weighted average                                   = 45.1
    llama serve -hf lmstudio-community/granite-3.0-8b-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.7 GB) `llama cli -hf lmstudio-community/granite-3.0-8b-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (10.6 GB memory, 8.68 GB download) `llama cli -hf lmstudio-community/granite-3.0-8b-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 3.0 8B Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF/tree/1202e514956ce412b0cc7aca228fa269cbd4d4b0))
+2. Run Granite 3.0 8B Instruct (Q4_K_M, needs 6.7 GB memory, 4.94 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF/tree/1202e514956ce412b0cc7aca228fa269cbd4d4b0))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF@Q4_K_M -y
@@ -137,7 +137,7 @@ Other versions: Q8_0 (~8.7 GB) `llama cli -hf lmstudio-community/granite-3.0-8b-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.6 GB memory, 8.68 GB download) `lms get https://huggingface.co/lmstudio-community/granite-3.0-8b-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -148,13 +148,13 @@ Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 3.0 8B Instruct (Q4_K_M, needs ~5.4 GB, from [ollama.com](https://ollama.com/library/granite3-dense/tags))
+2. Run Granite 3.0 8B Instruct (Q4_K_M, needs 6.7 GB memory, 4.94 GB download, from [ollama.com](https://ollama.com/library/granite3-dense/tags))
    
    ```sh
    ollama run granite3-dense:8b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~10.3 GB) `ollama run granite3-dense:8b-instruct-q8_0`
+Other versions: Q8_0 (10.6 GB memory, 8.68 GB download) `ollama run granite3-dense:8b-instruct-q8_0`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.0-8b-instruct)
 

@@ -72,7 +72,7 @@ weighted average                                 = 42.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run InternLM2 Chat 20B (Q4_K_M, needs ~12 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
+2. Run InternLM2 Chat 20B (Q4_K_M, needs 14.1 GB memory, 12 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
    
    ```sh
    llama cli -hf mradermacher/internlm2-chat-20b-GGUF:Q4_K_M
@@ -84,13 +84,13 @@ weighted average                                 = 42.3
    llama serve -hf mradermacher/internlm2-chat-20b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.1 GB) `llama cli -hf mradermacher/internlm2-chat-20b-GGUF:Q8_0`
+Other versions: Q8_0 (23.7 GB memory, 21.1 GB download) `llama cli -hf mradermacher/internlm2-chat-20b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run InternLM2 Chat 20B (Q4_K_M, needs ~12 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
+2. Run InternLM2 Chat 20B (Q4_K_M, needs 14.1 GB memory, 12 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
    
    ```sh
    lms get https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF@Q4_K_M -y
@@ -98,7 +98,7 @@ Other versions: Q8_0 (~21.1 GB) `llama cli -hf mradermacher/internlm2-chat-20b-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~21.1 GB) `lms get https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (23.7 GB memory, 21.1 GB download) `lms get https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -109,17 +109,17 @@ Other versions: Q8_0 (~21.1 GB) `lms get https://huggingface.co/mradermacher/int
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run InternLM2 Chat 20B (Q4_K_M, needs ~12 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
+2. Run InternLM2 Chat 20B (Q4_K_M, needs 14.1 GB memory, 12 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/internlm2-chat-20b-GGUF/tree/43825e5e0b18dfd35c413d7a41f1d6ebcc38041a))
    
    ```sh
    ollama run hf.co/mradermacher/internlm2-chat-20b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~21.1 GB) `ollama run hf.co/mradermacher/internlm2-chat-20b-GGUF:Q8_0`
+Other versions: Q8_0 (23.7 GB memory, 21.1 GB download) `ollama run hf.co/mradermacher/internlm2-chat-20b-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~39.72 GB, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm2-chat-20b/tree/d606d418463ca058a8338e6ce4ba0f200aab15c1))
+1. Run it as published (BF16, needs 43.2 GB memory, 39.7 GB download, from [huggingface.co/internlm](https://huggingface.co/internlm/internlm2-chat-20b/tree/d606d418463ca058a8338e6ce4ba0f200aab15c1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='internlm/internlm2-chat-20b', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

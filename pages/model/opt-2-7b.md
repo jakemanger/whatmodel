@@ -93,7 +93,7 @@ Adapting Language Mod…  <a href="https://aclanthology.org/2023.emnlp-main.232.
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~5.3 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-2.7b/tree/905a4b602cda5c501f1b3a2650a4152680238254))
+1. Run it as published (fp16, needs 7.1 GB memory, 5.3 GB download, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-2.7b/tree/905a4b602cda5c501f1b3a2650a4152680238254))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-2.7b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

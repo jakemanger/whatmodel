@@ -167,7 +167,7 @@ weighted average                                   = 69.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V4 Flash (Preview, Apr 2026) (ud-q4_k_xl, needs ~155.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF/tree/e3aa0d6a5fa4f820d9e132ac1fd1d01e1b2b49e0))
+2. Run DeepSeek V4 Flash (Preview, Apr 2026) (ud-q4_k_xl, needs 164 GB memory, 155.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF/tree/e3aa0d6a5fa4f820d9e132ac1fd1d01e1b2b49e0))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V4-Flash-GGUF:UD-Q4_K_XL
@@ -179,13 +179,13 @@ weighted average                                   = 69.9
    llama serve -hf unsloth/DeepSeek-V4-Flash-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~96.83 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (103 GB memory, 96.8 GB download) `llama cli -hf unsloth/DeepSeek-V4-Flash-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V4 Flash (Preview, Apr 2026) (ud-q4_k_xl, needs ~155.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF/tree/e3aa0d6a5fa4f820d9e132ac1fd1d01e1b2b49e0))
+2. Run DeepSeek V4 Flash (Preview, Apr 2026) (ud-q4_k_xl, needs 164 GB memory, 155.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF/tree/e3aa0d6a5fa4f820d9e132ac1fd1d01e1b2b49e0))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF@UD-Q4_K_XL -y
@@ -193,7 +193,7 @@ Other versions: ud-q2_k_xl (~96.83 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~96.83 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (103 GB memory, 96.8 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
 

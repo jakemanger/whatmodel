@@ -56,7 +56,7 @@ weighted average                            = 46.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2-Math 1.5B Instruct (Q4_K_M, needs ~1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF/tree/4144109e282e281ed29034e690e4152c7d7ced82))
+2. Run Qwen2-Math 1.5B Instruct (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF/tree/4144109e282e281ed29034e690e4152c7d7ced82))
    
    ```sh
    llama cli -hf lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                            = 46.1
    llama serve -hf lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.6 GB) `llama cli -hf lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `llama cli -hf lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2-Math 1.5B Instruct (Q4_K_M, needs ~1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF/tree/4144109e282e281ed29034e690e4152c7d7ced82))
+2. Run Qwen2-Math 1.5B Instruct (Q4_K_M, needs 2.5 GB memory, 0.99 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF/tree/4144109e282e281ed29034e690e4152c7d7ced82))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~1.6 GB) `llama cli -hf lmstudio-community/Qwen2-Math-1.5B
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF@Q8_0 -y` · 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-4bit -y` · 8bit (~1.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-8bit -y`
+Other versions: Q8_0 (3.2 GB memory, 1.65 GB download) `lms get https://huggingface.co/lmstudio-community/Qwen2-Math-1.5B-Instruct-GGUF@Q8_0 -y` · 4bit (2.4 GB memory, 0.87 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-4bit -y` · 8bit (3.2 GB memory, 1.64 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -93,7 +93,7 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2-Math 1.5B Instruct (Q4_0, needs ~0.935 GB, from [ollama.com](https://ollama.com/library/qwen2-math/tags))
+2. Run Qwen2-Math 1.5B Instruct (Q4_0, needs 2.5 GB memory, 0.93 GB download, from [ollama.com](https://ollama.com/library/qwen2-math/tags))
    
    ```sh
    ollama run qwen2-math:1.5b
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/lmstudio-communit
    pip install mlx-lm
    ```
 
-2. Run Qwen2-Math 1.5B Instruct (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-4bit/tree/d2b2421fb2803e9c336eefc97f0180e000f9b2cc))
+2. Run Qwen2-Math 1.5B Instruct (4bit, needs 2.4 GB memory, 0.87 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-Math-1.5B-Instruct-4bit/tree/d2b2421fb2803e9c336eefc97f0180e000f9b2cc))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2-Math-1.5B-Instruct-4bit
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~1.6 GB) `lms get https://huggingface.co/lmstudio-communit
    mlx_lm.server --model mlx-community/Qwen2-Math-1.5B-Instruct-4bit
    ```
 
-Other versions: 8bit (~1.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-Math-1.5B-Instruct-8bit`
+Other versions: 8bit (3.2 GB memory, 1.64 GB download, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-Math-1.5B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct)
 

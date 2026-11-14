@@ -87,7 +87,7 @@ weighted average                                   = 53.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
    
    ```sh
    llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
@@ -99,13 +99,13 @@ weighted average                                   = 53.9
    llama serve -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q8_0` · IQ2_XXS (~19.1 GB) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q8_0` · IQ2_XXS (21.6 GB memory, 19.1 GB download) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
    
    ```sh
    lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q4_K_M -y
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q8_0 -y` · IQ2_XXS (~19.1 GB) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@IQ2_XXS -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q8_0 -y` · IQ2_XXS (21.6 GB memory, 19.1 GB download) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@IQ2_XXS -y` · 4bit (43.2 GB memory, 39.7 GB download, Mac only) `lms get https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx -y`
 
 ### Ollama
 
@@ -124,13 +124,13 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/Llama-3.
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
    
    ```sh
    ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
+Other versions: IQ2_XXS (21.6 GB memory, 19.1 GB download) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
 
 ### MLX (Mac)
 
@@ -143,7 +143,7 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-
    pip install mlx-lm
    ```
 
-2. Run Llama 3.1 Tulu 3 70B DPO (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/Scotto2025](https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx/tree/b50472183075ec0f87938540fa63b7ebec5561af))
+2. Run Llama 3.1 Tulu 3 70B DPO (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/Scotto2025](https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx/tree/b50472183075ec0f87938540fa63b7ebec5561af))
    
    ```sh
    mlx_lm.chat --model Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx
@@ -157,7 +157,7 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~169.82 GB, NVIDIA only, from [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, NVIDIA only, from [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO))
    
    ```sh
    vllm serve allenai/Llama-3.1-Tulu-3-70B-DPO

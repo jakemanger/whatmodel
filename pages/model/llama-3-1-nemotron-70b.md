@@ -113,7 +113,7 @@ weighted average                                   = 52.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF/tree/672e9a6fa26d4b37bc118993d49622b174b8d4b0))
+2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF/tree/672e9a6fa26d4b37bc118993d49622b174b8d4b0))
    
    ```sh
    llama cli -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q4_K_M
@@ -125,13 +125,13 @@ weighted average                                   = 52.5
    llama serve -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q8_0`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF/tree/672e9a6fa26d4b37bc118993d49622b174b8d4b0))
+2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF/tree/672e9a6fa26d4b37bc118993d49622b174b8d4b0))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF@Q4_K_M -y
@@ -139,7 +139,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/Llama-3.1-Nemotr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF@Q8_0 -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF@Q8_0 -y` · 4bit (43.2 GB memory, 39.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit -y` · 8bit (80.3 GB memory, 75 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit -y`
 
 ### Ollama
 
@@ -150,13 +150,13 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs ~42.86 GB, from [ollama.com](https://ollama.com/library/nemotron/tags))
+2. Run Llama 3.1 Nemotron 70B Instruct (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [ollama.com](https://ollama.com/library/nemotron/tags))
    
    ```sh
    ollama run nemotron:70b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~85.22 GB) `ollama run nemotron:70b-instruct-q8_0`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `ollama run nemotron:70b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -169,7 +169,7 @@ Other versions: Q8_0 (~85.22 GB) `ollama run nemotron:70b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Llama 3.1 Nemotron 70B Instruct (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit/tree/b40b6355521e949ad45c71d0c7db8e6cd1a54cdd))
+2. Run Llama 3.1 Nemotron 70B Instruct (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit/tree/b40b6355521e949ad45c71d0c7db8e6cd1a54cdd))
    
    ```sh
    mlx_lm.chat --model mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit
@@ -181,7 +181,7 @@ Other versions: Q8_0 (~85.22 GB) `ollama run nemotron:70b-instruct-q8_0`
    mlx_lm.server --model mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit
    ```
 
-Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit`
+Other versions: 8bit (80.3 GB memory, 75 GB download, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF)
 

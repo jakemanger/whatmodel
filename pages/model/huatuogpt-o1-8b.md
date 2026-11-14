@@ -53,7 +53,7 @@ weighted average                        = 44.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run HuatuoGPT-o1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
+2. Run HuatuoGPT-o1-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
    
    ```sh
    llama cli -hf bartowski/HuatuoGPT-o1-8B-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 44.4
    llama serve -hf bartowski/HuatuoGPT-o1-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/HuatuoGPT-o1-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf bartowski/HuatuoGPT-o1-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run HuatuoGPT-o1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
+2. Run HuatuoGPT-o1-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
    
    ```sh
    lms get https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/HuatuoGPT-o1-8B-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF@Q8_0 -y` · 4bit (~4.5 GB, Mac only) `lms get https://huggingface.co/cnfusion/HuatuoGPT-o1-8B-Q4-mlx -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF@Q8_0 -y` · 4bit (6.2 GB memory, 4.52 GB download, Mac only) `lms get https://huggingface.co/cnfusion/HuatuoGPT-o1-8B-Q4-mlx -y`
 
 ### Ollama
 
@@ -90,13 +90,13 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/HuatuoG
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run HuatuoGPT-o1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
+2. Run HuatuoGPT-o1-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/HuatuoGPT-o1-8B-GGUF/tree/9c71861931786e189d65adaf7b54e0c6a68ae546))
    
    ```sh
    ollama run hf.co/bartowski/HuatuoGPT-o1-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/HuatuoGPT-o1-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/bartowski/HuatuoGPT-o1-8B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -109,7 +109,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/HuatuoGPT-o1-8B-GGUF:
    pip install mlx-lm
    ```
 
-2. Run HuatuoGPT-o1-8B (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/cnfusion](https://huggingface.co/cnfusion/HuatuoGPT-o1-8B-Q4-mlx/tree/97f1b7bd2d10f5a852436eb7d4539627c4bbd2f6))
+2. Run HuatuoGPT-o1-8B (4bit, needs 6.2 GB memory, 4.52 GB download, Mac only, from [huggingface.co/cnfusion](https://huggingface.co/cnfusion/HuatuoGPT-o1-8B-Q4-mlx/tree/97f1b7bd2d10f5a852436eb7d4539627c4bbd2f6))
    
    ```sh
    mlx_lm.chat --model cnfusion/HuatuoGPT-o1-8B-Q4-mlx
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/HuatuoGPT-o1-8B-GGUF:
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-8B/tree/afc8b260e5b3dee9233863cf2de3080f3094442a))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-8B/tree/afc8b260e5b3dee9233863cf2de3080f3094442a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/HuatuoGPT-o1-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

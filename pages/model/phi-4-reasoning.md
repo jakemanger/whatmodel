@@ -123,7 +123,7 @@ api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens �
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-4-reasoning 14B (Q4_K_M, needs ~9.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF/tree/9afe391a28e1e6496e05d7f8712a1e4eed31d5f2))
+2. Run Phi-4-reasoning 14B (Q4_K_M, needs 11 GB memory, 9.05 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF/tree/9afe391a28e1e6496e05d7f8712a1e4eed31d5f2))
    
    ```sh
    llama cli -hf lmstudio-community/Phi-4-reasoning-GGUF:Q4_K_M
@@ -135,13 +135,13 @@ api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens �
    llama serve -hf lmstudio-community/Phi-4-reasoning-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.6 GB) `llama cli -hf lmstudio-community/Phi-4-reasoning-GGUF:Q8_0`
+Other versions: Q8_0 (17.9 GB memory, 15.6 GB download) `llama cli -hf lmstudio-community/Phi-4-reasoning-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-4-reasoning 14B (Q4_K_M, needs ~9.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF/tree/9afe391a28e1e6496e05d7f8712a1e4eed31d5f2))
+2. Run Phi-4-reasoning 14B (Q4_K_M, needs 11 GB memory, 9.05 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF/tree/9afe391a28e1e6496e05d7f8712a1e4eed31d5f2))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF@Q4_K_M -y
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~15.6 GB) `llama cli -hf lmstudio-community/Phi-4-reasonin
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.6 GB) `lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF@Q8_0 -y` · 4bit (~8.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-MLX-4bit -y` · 8bit (~15.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-reasoning-8bit -y`
+Other versions: Q8_0 (17.9 GB memory, 15.6 GB download) `lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF@Q8_0 -y` · 4bit (10.2 GB memory, 8.25 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-MLX-4bit -y` · 8bit (17.9 GB memory, 15.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-reasoning-8bit -y`
 
 ### Ollama
 
@@ -160,13 +160,13 @@ Other versions: Q8_0 (~15.6 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-4-reasoning 14B (Q4_K_M, needs ~9.32 GB, from [ollama.com](https://ollama.com/library/phi4-reasoning/tags))
+2. Run Phi-4-reasoning 14B (Q4_K_M, needs 13.2 GB memory, 11.1 GB download, from [ollama.com](https://ollama.com/library/phi4-reasoning/tags))
    
    ```sh
    ollama run phi4-reasoning:14b
    ```
 
-Other versions: Q8_0 (~18.14 GB) `ollama run phi4-reasoning:14b-q8_0`
+Other versions: Q8_0 (19.5 GB memory, 17.1 GB download) `ollama run phi4-reasoning:14b-q8_0`
 
 ### MLX (Mac)
 
@@ -179,7 +179,7 @@ Other versions: Q8_0 (~18.14 GB) `ollama run phi4-reasoning:14b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Phi-4-reasoning 14B (4bit, needs ~8.2 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-MLX-4bit/tree/83ac684bce36aec035ff73dc155611161104ca67))
+2. Run Phi-4-reasoning 14B (4bit, needs 10.2 GB memory, 8.25 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-reasoning-MLX-4bit/tree/83ac684bce36aec035ff73dc155611161104ca67))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Phi-4-reasoning-MLX-4bit
@@ -191,7 +191,7 @@ Other versions: Q8_0 (~18.14 GB) `ollama run phi4-reasoning:14b-q8_0`
    mlx_lm.server --model lmstudio-community/Phi-4-reasoning-MLX-4bit
    ```
 
-Other versions: 8bit (~15.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-reasoning-8bit`
+Other versions: 8bit (17.9 GB memory, 15.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-reasoning-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-reasoning)
 

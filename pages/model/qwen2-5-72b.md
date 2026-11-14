@@ -195,7 +195,7 @@ api (DeepInfra) · $0.37/M blended · $0.36 in / $0.4 out per 1M tokens · [deep
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2.5 72B Instruct (Q4_K_M, needs ~44 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF/tree/7ca3bc388f97b264c4283bc9bf1055e2abc38441))
+2. Run Qwen2.5 72B Instruct (Q4_K_M, needs 47.3 GB memory, 44 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF/tree/7ca3bc388f97b264c4283bc9bf1055e2abc38441))
    
    ```sh
    llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q4_k_m
@@ -207,13 +207,13 @@ api (DeepInfra) · $0.37/M blended · $0.36 in / $0.4 out per 1M tokens · [deep
    llama serve -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~77.5 GB) `llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q8_0` · Q2_K (~27.3 GB) `llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q2_k`
+Other versions: Q8_0 (80.8 GB memory, 77.5 GB download) `llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q8_0` · Q2_K (30.6 GB memory, 27.3 GB download) `llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q2_k`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2.5 72B Instruct (Q4_K_M, needs ~44 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF/tree/7ca3bc388f97b264c4283bc9bf1055e2abc38441))
+2. Run Qwen2.5 72B Instruct (Q4_K_M, needs 47.3 GB memory, 44 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF/tree/7ca3bc388f97b264c4283bc9bf1055e2abc38441))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF@q4_k_m -y
@@ -221,7 +221,7 @@ Other versions: Q8_0 (~77.5 GB) `llama cli -hf Qwen/Qwen2.5-72B-Instruct-GGUF:q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~77.5 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF@q8_0 -y` · Q2_K (~27.3 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF@q2_k -y` · 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-72B-Instruct-4bit -y` · 8bit (~77.3 GB, Mac only) `lms get https://huggingface.co/GGorman/Qwen2.5-72B-Instruct-Q8-mlx -y`
+Other versions: Q8_0 (80.8 GB memory, 77.5 GB download) `lms get https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF@q8_0 -y` · Q2_K (30.6 GB memory, 27.3 GB download) `lms get https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF@q2_k -y` · 4bit (44.2 GB memory, 40.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-72B-Instruct-4bit -y` · 8bit (80.6 GB memory, 77.3 GB download, Mac only) `lms get https://huggingface.co/GGorman/Qwen2.5-72B-Instruct-Q8-mlx -y`
 
 ### Ollama
 
@@ -232,7 +232,7 @@ Other versions: Q8_0 (~77.5 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2.5 72B Instruct (Q4_K_M, needs ~43.7 GB, from [ollama.com](https://ollama.com/library/qwen2.5/tags))
+2. Run Qwen2.5 72B Instruct (Q4_K_M, needs 50.7 GB memory, 47.4 GB download, from [ollama.com](https://ollama.com/library/qwen2.5/tags))
    
    ```sh
    ollama run qwen2.5:72b
@@ -249,7 +249,7 @@ Other versions: Q8_0 (~77.5 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B
    pip install mlx-lm
    ```
 
-2. Run Qwen2.5 72B Instruct (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-72B-Instruct-4bit/tree/36a74b07390031bb18c9f12fb7c06699bc6273c4))
+2. Run Qwen2.5 72B Instruct (4bit, needs 44.2 GB memory, 40.9 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-72B-Instruct-4bit/tree/36a74b07390031bb18c9f12fb7c06699bc6273c4))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2.5-72B-Instruct-4bit
@@ -261,7 +261,7 @@ Other versions: Q8_0 (~77.5 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B
    mlx_lm.server --model mlx-community/Qwen2.5-72B-Instruct-4bit
    ```
 
-Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model GGorman/Qwen2.5-72B-Instruct-Q8-mlx`
+Other versions: 8bit (80.6 GB memory, 77.3 GB download, Mac only) `mlx_lm.chat --model GGorman/Qwen2.5-72B-Instruct-Q8-mlx`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)
 

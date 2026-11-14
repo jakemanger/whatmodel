@@ -44,7 +44,7 @@ weighted average                                   = 72.4
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~65.52 GB, from [huggingface.co/PrentisAI](https://huggingface.co/PrentisAI/hivemind-32b-preview/tree/78df78b54df86a50855abbcaccd6632b4c6ebfba))
+1. Run it as published (BF16, needs 70.3 GB memory, 65.5 GB download, from [huggingface.co/PrentisAI](https://huggingface.co/PrentisAI/hivemind-32b-preview/tree/78df78b54df86a50855abbcaccd6632b4c6ebfba))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PrentisAI/hivemind-32b-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

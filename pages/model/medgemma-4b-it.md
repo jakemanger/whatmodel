@@ -59,7 +59,7 @@ weighted average                                   = 47.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MedGemma 4B IT (Q4_K_M, needs ~2.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF/tree/6b5f10216d3daf032d97307a92a27bac1ccb8355))
+2. Run MedGemma 4B IT (Q4_K_M, needs 4.9 GB memory, 3.34 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF/tree/6b5f10216d3daf032d97307a92a27bac1ccb8355))
    
    ```sh
    llama cli -hf lmstudio-community/medgemma-4b-it-GGUF:Q4_K_M
@@ -71,13 +71,13 @@ weighted average                                   = 47.1
    llama serve -hf lmstudio-community/medgemma-4b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.1 GB) `llama cli -hf lmstudio-community/medgemma-4b-it-GGUF:Q8_0`
+Other versions: Q8_0 (6.6 GB memory, 4.98 GB download) `llama cli -hf lmstudio-community/medgemma-4b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MedGemma 4B IT (Q4_K_M, needs ~2.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF/tree/6b5f10216d3daf032d97307a92a27bac1ccb8355))
+2. Run MedGemma 4B IT (Q4_K_M, needs 4.9 GB memory, 3.34 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF/tree/6b5f10216d3daf032d97307a92a27bac1ccb8355))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF@Q4_K_M -y
@@ -85,7 +85,7 @@ Other versions: Q8_0 (~4.1 GB) `llama cli -hf lmstudio-community/medgemma-4b-it-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF@Q8_0 -y` · 4bit (~3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-MLX-4bit -y`
+Other versions: Q8_0 (6.6 GB memory, 4.98 GB download) `lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF@Q8_0 -y` · 4bit (4.6 GB memory, 3 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-MLX-4bit -y`
 
 ### Ollama
 
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MedGemma 4B IT (Q4_K_M, needs ~3.3 GB, from [ollama.com](https://ollama.com/library/medgemma/tags))
+2. Run MedGemma 4B IT (Q4_K_M, needs 4.9 GB memory, 3.34 GB download, from [ollama.com](https://ollama.com/library/medgemma/tags))
    
    ```sh
    ollama run medgemma:4b
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-communit
    pip install mlx-lm
    ```
 
-2. Run MedGemma 4B IT (4bit, needs ~3 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-MLX-4bit/tree/9f902e33954f60880103bf512688fa5edc6bd9ea))
+2. Run MedGemma 4B IT (4bit, needs 4.6 GB memory, 3 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-4b-it-MLX-4bit/tree/9f902e33954f60880103bf512688fa5edc6bd9ea))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/medgemma-4b-it-MLX-4bit

@@ -96,7 +96,7 @@ weighted average                                   = 41.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Code Llama 34B (base) (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-34B-GGUF/tree/6cfc6e717f9a3725d7a26246bc1d4b7eaca6dd4b))
+2. Run Code Llama 34B (base) (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-34B-GGUF/tree/6cfc6e717f9a3725d7a26246bc1d4b7eaca6dd4b))
    
    ```sh
    llama cli -hf TheBloke/CodeLlama-34B-GGUF:Q4_K_M
@@ -108,13 +108,13 @@ weighted average                                   = 41.4
    llama serve -hf TheBloke/CodeLlama-34B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/CodeLlama-34B-GGUF:Q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `llama cli -hf TheBloke/CodeLlama-34B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Code Llama 34B (base) (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-34B-GGUF/tree/6cfc6e717f9a3725d7a26246bc1d4b7eaca6dd4b))
+2. Run Code Llama 34B (base) (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-34B-GGUF/tree/6cfc6e717f9a3725d7a26246bc1d4b7eaca6dd4b))
    
    ```sh
    lms get https://huggingface.co/TheBloke/CodeLlama-34B-GGUF@Q4_K_M -y
@@ -122,7 +122,7 @@ Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/CodeLlama-34B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/CodeLlama-34B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `lms get https://huggingface.co/TheBloke/CodeLlama-34B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -133,13 +133,13 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/CodeLla
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Code Llama 34B (base) (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+2. Run Code Llama 34B (base) (Q4_K_M, needs 22.7 GB memory, 20.2 GB download, from [ollama.com](https://ollama.com/library/codellama/tags))
    
    ```sh
    ollama run codellama:34b-code-q4_K_M
    ```
 
-Other versions: Q8_0 (~36 GB) `ollama run codellama:34b-code-q8_0`
+Other versions: Q8_0 (39.2 GB memory, 35.9 GB download) `ollama run codellama:34b-code-q8_0`
 
 Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-34b-hf)
 

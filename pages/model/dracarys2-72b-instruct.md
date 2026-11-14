@@ -56,7 +56,7 @@ weighted average                            = 55.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Dracarys2-72B-Instruct (Q4_K_M, needs ~47.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
+2. Run Dracarys2-72B-Instruct (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
    
    ```sh
    llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                            = 55.6
    llama serve -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~77.3 GB) `llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q8_0` · IQ2_XXS (~25.5 GB) `llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS`
+Other versions: Q8_0 (82.7 GB memory, 77.3 GB download) `llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q8_0` · IQ2_XXS (28.3 GB memory, 25.5 GB download) `llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Dracarys2-72B-Instruct (Q4_K_M, needs ~47.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
+2. Run Dracarys2-72B-Instruct (Q4_K_M, needs 51.3 GB memory, 47.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
    
    ```sh
    lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~77.3 GB) `llama cli -hf bartowski/Dracarys2-72B-Instruct-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@Q8_0 -y` · IQ2_XXS (~25.5 GB) `lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@IQ2_XXS -y` · 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-4bit -y` · 8bit (~77.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-8bit -y`
+Other versions: Q8_0 (82.7 GB memory, 77.3 GB download) `lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@Q8_0 -y` · IQ2_XXS (28.3 GB memory, 25.5 GB download) `lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@IQ2_XXS -y` · 4bit (44.4 GB memory, 40.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-4bit -y` · 8bit (82.7 GB memory, 77.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -93,7 +93,7 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Dracar
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Dracarys2-72B-Instruct (IQ2_XXS, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
+2. Run Dracarys2-72B-Instruct (IQ2_XXS, needs 28.3 GB memory, 25.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF/tree/15df7b9894c1c83d5a7b3a300bf219b1b7656837))
    
    ```sh
    ollama run hf.co/bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Dracar
    pip install mlx-lm
    ```
 
-2. Run Dracarys2-72B-Instruct (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-4bit/tree/4e1ea58ee75bc2ae241a2c4c4e577c1ae8c39985))
+2. Run Dracarys2-72B-Instruct (4bit, needs 44.4 GB memory, 40.9 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-4bit/tree/4e1ea58ee75bc2ae241a2c4c4e577c1ae8c39985))
    
    ```sh
    mlx_lm.chat --model mlx-community/Dracarys2-72B-Instruct-4bit
@@ -122,11 +122,11 @@ Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/bartowski/Dracar
    mlx_lm.server --model mlx-community/Dracarys2-72B-Instruct-4bit
    ```
 
-Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Dracarys2-72B-Instruct-8bit`
+Other versions: 8bit (82.7 GB memory, 77.3 GB download, Mac only) `mlx_lm.chat --model mlx-community/Dracarys2-72B-Instruct-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~145.41 GB, from [huggingface.co/abacusai](https://huggingface.co/abacusai/Dracarys2-72B-Instruct/tree/298cb0749098e58e7b67564376c195752e15d0a4))
+1. Run it as published (BF16, needs 154 GB memory, 145.4 GB download, from [huggingface.co/abacusai](https://huggingface.co/abacusai/Dracarys2-72B-Instruct/tree/298cb0749098e58e7b67564376c195752e15d0a4))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='abacusai/Dracarys2-72B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

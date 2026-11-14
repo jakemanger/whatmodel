@@ -51,13 +51,13 @@ weighted average                                   = 21.0
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~6.71 GB, NVIDIA only, from [github.com/lm-sys](https://github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md))
+1. Run it as published (fp16, needs 8.5 GB memory, 6.71 GB download, NVIDIA only, from [github.com/lm-sys](https://github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md))
    
    ```sh
    pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0
    ```
 
-Other versions: fp16 (~6.71 GB, Mac only) `pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0 --device mps`
+Other versions: fp16 (8.5 GB memory, 6.71 GB download, Mac only) `pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0 --device mps`
 
 Model repository and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/fastchat-t5-3b-v1.0)
 

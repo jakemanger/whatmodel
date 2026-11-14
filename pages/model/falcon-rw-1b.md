@@ -56,7 +56,7 @@ weighted average                                   = 19.5
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~2.62 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b/tree/e4b9872bb803165eb22f0a867d4e6a64d34fce19))
+1. Run it as published (BF16, needs 4.3 GB memory, 2.62 GB download, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b/tree/e4b9872bb803165eb22f0a867d4e6a64d34fce19))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

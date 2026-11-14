@@ -96,7 +96,7 @@ weighted average                              = 51.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+2. Run Athene-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
    
    ```sh
    llama cli -hf bartowski/Athene-70B-GGUF:Q4_K_M
@@ -108,13 +108,13 @@ weighted average                              = 51.5
    llama serve -hf bartowski/Athene-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.38 GB) `llama cli -hf bartowski/Athene-70B-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf bartowski/Athene-70B-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+2. Run Athene-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
    
    ```sh
    lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q4_K_M -y
@@ -122,7 +122,7 @@ Other versions: Q2_K (~26.38 GB) `llama cli -hf bartowski/Athene-70B-GGUF:Q2_K`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~26.38 GB) `lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q2_K -y`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -133,13 +133,13 @@ Other versions: Q2_K (~26.38 GB) `lms get https://huggingface.co/bartowski/Athen
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+2. Run Athene-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
    
    ```sh
    ollama run hf.co/bartowski/Athene-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.38 GB) `ollama run hf.co/bartowski/Athene-70B-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/bartowski/Athene-70B-GGUF:Q2_K`
 
 Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-70B)
 

@@ -186,7 +186,7 @@ api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run gpt-oss-20b (Q4_K_M, needs ~11.6 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/d449b42d93e1c2c7bda5312f5c25c8fb91dfa9b4))
+2. Run gpt-oss-20b (Q4_K_M, needs 12.6 GB memory, 11.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/d449b42d93e1c2c7bda5312f5c25c8fb91dfa9b4))
    
    ```sh
    llama cli -hf unsloth/gpt-oss-20b-GGUF:Q4_K_M
@@ -202,7 +202,7 @@ api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run gpt-oss-20b (Q4_K_M, needs ~11.6 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/d449b42d93e1c2c7bda5312f5c25c8fb91dfa9b4))
+2. Run gpt-oss-20b (Q4_K_M, needs 12.6 GB memory, 11.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/d449b42d93e1c2c7bda5312f5c25c8fb91dfa9b4))
    
    ```sh
    lms get https://huggingface.co/unsloth/gpt-oss-20b-GGUF@Q4_K_M -y
@@ -210,7 +210,7 @@ api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/InferenceIllusionist/gpt-oss-20b-MLX-4bit -y` · 8bit (~22.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit -y`
+Other versions: 4bit (12.8 GB memory, 11.8 GB download, Mac only) `lms get https://huggingface.co/InferenceIllusionist/gpt-oss-20b-MLX-4bit -y` · 8bit (23.2 GB memory, 22.2 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gpt-oss-20b-MLX-8bit -y`
 
 ### Ollama
 
@@ -221,7 +221,7 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/Infere
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run gpt-oss-20b (mxfp4, needs ~13.1 GB, from [ollama.com](https://ollama.com/library/gpt-oss/tags))
+2. Run gpt-oss-20b (mxfp4, needs 14.8 GB memory, 13.8 GB download, from [ollama.com](https://ollama.com/library/gpt-oss/tags))
    
    ```sh
    ollama run gpt-oss:20b
@@ -238,7 +238,7 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/Infere
    pip install mlx-lm
    ```
 
-2. Run gpt-oss-20b (4bit, needs ~11.8 GB, Mac only, from [huggingface.co/InferenceIllusionist](https://huggingface.co/InferenceIllusionist/gpt-oss-20b-MLX-4bit/tree/ab41846cff2f90082e25af75b1eb217ae1668005))
+2. Run gpt-oss-20b (4bit, needs 12.8 GB memory, 11.8 GB download, Mac only, from [huggingface.co/InferenceIllusionist](https://huggingface.co/InferenceIllusionist/gpt-oss-20b-MLX-4bit/tree/ab41846cff2f90082e25af75b1eb217ae1668005))
    
    ```sh
    mlx_lm.chat --model InferenceIllusionist/gpt-oss-20b-MLX-4bit
@@ -250,7 +250,7 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/Infere
    mlx_lm.server --model InferenceIllusionist/gpt-oss-20b-MLX-4bit
    ```
 
-Other versions: 8bit (~22.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gpt-oss-20b-MLX-8bit`
+Other versions: 8bit (23.2 GB memory, 22.2 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/gpt-oss-20b-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/gpt-oss-20b)
 

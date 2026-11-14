@@ -127,7 +127,7 @@ weighted average                                   = 45.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command R Plus (04-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF/tree/3cbdfe100b0b213db196f164a7d7a8f7326f62dc))
+2. Run Command R Plus (04-2024) (Q4_K_M, needs 67.4 GB memory, 62.8 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF/tree/3cbdfe100b0b213db196f164a7d7a8f7326f62dc))
    
    ```sh
    llama cli -hf bartowski/c4ai-command-r-plus-GGUF:Q4_K_M
@@ -139,13 +139,13 @@ weighted average                                   = 45.9
    llama serve -hf bartowski/c4ai-command-r-plus-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~39.5 GB) `llama cli -hf bartowski/c4ai-command-r-plus-GGUF:Q2_K`
+Other versions: Q2_K (43 GB memory, 39.5 GB download) `llama cli -hf bartowski/c4ai-command-r-plus-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command R Plus (04-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF/tree/3cbdfe100b0b213db196f164a7d7a8f7326f62dc))
+2. Run Command R Plus (04-2024) (Q4_K_M, needs 67.4 GB memory, 62.8 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF/tree/3cbdfe100b0b213db196f164a7d7a8f7326f62dc))
    
    ```sh
    lms get https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF@Q4_K_M -y
@@ -153,7 +153,7 @@ Other versions: Q2_K (~39.5 GB) `llama cli -hf bartowski/c4ai-command-r-plus-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~39.5 GB) `lms get https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF@Q2_K -y` · 4bit (~62.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-4bit -y` · 8bit (~113.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-8bit -y`
+Other versions: Q2_K (43 GB memory, 39.5 GB download) `lms get https://huggingface.co/bartowski/c4ai-command-r-plus-GGUF@Q2_K -y` · 4bit (67.5 GB memory, 62.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-4bit -y` · 8bit (120 GB memory, 113.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-8bit -y`
 
 ### Ollama
 
@@ -164,13 +164,13 @@ Other versions: Q2_K (~39.5 GB) `lms get https://huggingface.co/bartowski/c4ai-c
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command R Plus (04-2024) (Q4_0, needs ~62.9 GB, from [ollama.com](https://ollama.com/library/command-r-plus/tags))
+2. Run Command R Plus (04-2024) (Q4_0, needs 63.7 GB memory, 59.2 GB download, from [ollama.com](https://ollama.com/library/command-r-plus/tags))
    
    ```sh
    ollama run command-r-plus:104b-q4_0
    ```
 
-Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-q8_0`
+Other versions: Q8_0 (117 GB memory, 110.3 GB download) `ollama run command-r-plus:104b-q8_0`
 
 ### MLX (Mac)
 
@@ -183,7 +183,7 @@ Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Command R Plus (04-2024) (4bit, needs ~62.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-plus-4bit/tree/2d8252fcb544706b46d52dedd73f35aa66d1a90c))
+2. Run Command R Plus (04-2024) (4bit, needs 67.5 GB memory, 62.9 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-plus-4bit/tree/2d8252fcb544706b46d52dedd73f35aa66d1a90c))
    
    ```sh
    mlx_lm.chat --model mlx-community/c4ai-command-r-plus-4bit
@@ -195,7 +195,7 @@ Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-q8_0`
    mlx_lm.server --model mlx-community/c4ai-command-r-plus-4bit
    ```
 
-Other versions: 8bit (~113.2 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-8bit`
+Other versions: 8bit (120 GB memory, 113.2 GB download, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-8bit`
 
 Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-plus)
 

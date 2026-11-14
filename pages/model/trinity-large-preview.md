@@ -79,7 +79,7 @@ weighted average                                   = 58.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Trinity-Large-Preview (ud-q4_k_xl, needs ~247.33 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF/tree/c11bb8d23b76fe5c05199afac0f37010f76c7d5c))
+2. Run Trinity-Large-Preview (ud-q4_k_xl, needs 261 GB memory, 247.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF/tree/c11bb8d23b76fe5c05199afac0f37010f76c7d5c))
    
    ```sh
    llama cli -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q4_K_XL
@@ -91,13 +91,13 @@ weighted average                                   = 58.4
    llama serve -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~145.84 GB) `llama cli -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (155 GB memory, 145.8 GB download) `llama cli -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Trinity-Large-Preview (ud-q4_k_xl, needs ~247.33 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF/tree/c11bb8d23b76fe5c05199afac0f37010f76c7d5c))
+2. Run Trinity-Large-Preview (ud-q4_k_xl, needs 261 GB memory, 247.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF/tree/c11bb8d23b76fe5c05199afac0f37010f76c7d5c))
    
    ```sh
    lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q4_K_XL -y
@@ -105,7 +105,7 @@ Other versions: ud-q2_k_xl (~145.84 GB) `llama cli -hf unsloth/Trinity-Large-Pre
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~145.84 GB) `lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (155 GB memory, 145.8 GB download) `lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Preview)
 

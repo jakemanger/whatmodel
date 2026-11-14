@@ -60,7 +60,7 @@ weighted average                                   = 48.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs ~2.9 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
+2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs 4.5 GB memory, 2.88 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
    
    ```sh
    llama cli -hf second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q4_K_M
@@ -72,13 +72,13 @@ weighted average                                   = 48.4
    llama serve -hf second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~5.1 GB) `llama cli -hf second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (6.8 GB memory, 5.06 GB download) `llama cli -hf second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs ~2.9 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
+2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs 4.5 GB memory, 2.88 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
    
    ```sh
    lms get https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ Other versions: Q8_0 (~5.1 GB) `llama cli -hf second-state/Bielik-4.5B-v3.0-Inst
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~5.1 GB) `lms get https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF@Q8_0 -y` · 4bit (~2.7 GB, Mac only) `lms get https://huggingface.co/futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit -y` · 8bit (~5.1 GB, Mac only) `lms get https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct-MLX-8bit -y`
+Other versions: Q8_0 (6.8 GB memory, 5.06 GB download) `lms get https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF@Q8_0 -y` · 4bit (4.3 GB memory, 2.68 GB download, Mac only) `lms get https://huggingface.co/futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit -y` · 8bit (6.8 GB memory, 5.06 GB download, Mac only) `lms get https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct-MLX-8bit -y`
 
 ### Ollama
 
@@ -97,13 +97,13 @@ Other versions: Q8_0 (~5.1 GB) `lms get https://huggingface.co/second-state/Biel
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs ~2.9 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
+2. Run Bielik 4.5B v3.0 Instruct (Q4_K_M, needs 4.5 GB memory, 2.88 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF/tree/5ed9534f824c7c184c21320f4d339e75569d0987))
    
    ```sh
    ollama run hf.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~5.1 GB) `ollama run hf.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (6.8 GB memory, 5.06 GB download) `ollama run hf.co/second-state/Bielik-4.5B-v3.0-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -116,7 +116,7 @@ Other versions: Q8_0 (~5.1 GB) `ollama run hf.co/second-state/Bielik-4.5B-v3.0-I
    pip install mlx-lm
    ```
 
-2. Run Bielik 4.5B v3.0 Instruct (4bit, needs ~2.7 GB, Mac only, from [huggingface.co/futurist-ai](https://huggingface.co/futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit/tree/104324f7b99bc27e169c08e82becfc2fe385c06a))
+2. Run Bielik 4.5B v3.0 Instruct (4bit, needs 4.3 GB memory, 2.68 GB download, Mac only, from [huggingface.co/futurist-ai](https://huggingface.co/futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit/tree/104324f7b99bc27e169c08e82becfc2fe385c06a))
    
    ```sh
    mlx_lm.chat --model futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit
@@ -128,11 +128,11 @@ Other versions: Q8_0 (~5.1 GB) `ollama run hf.co/second-state/Bielik-4.5B-v3.0-I
    mlx_lm.server --model futurist-ai/Bielik-4.5B-v3.0-Instruct-MLX-4bit
    ```
 
-Other versions: 8bit (~5.1 GB, Mac only) `mlx_lm.chat --model speakleash/Bielik-4.5B-v3.0-Instruct-MLX-8bit`
+Other versions: 8bit (6.8 GB memory, 5.06 GB download, Mac only) `mlx_lm.chat --model speakleash/Bielik-4.5B-v3.0-Instruct-MLX-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~9.51 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct/tree/4b1220a9d745bdd874c44347075ef25484ef322b))
+1. Run it as published (BF16, needs 11.5 GB memory, 9.51 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct/tree/4b1220a9d745bdd874c44347075ef25484ef322b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-4.5B-v3.0-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

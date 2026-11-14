@@ -81,7 +81,7 @@ weighted average                                   = 64.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs ~6.76 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
+2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs 8.6 GB memory, 6.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
    
    ```sh
    llama cli -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
@@ -93,13 +93,13 @@ weighted average                                   = 64.0
    llama serve -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~10.15 GB) `llama cli -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0`
+Other versions: Q8_0 (12.2 GB memory, 10.2 GB download) `llama cli -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs ~6.76 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
+2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs 8.6 GB memory, 6.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
    
    ```sh
    lms get https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF@Q4_K_M -y
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~10.15 GB) `llama cli -hf ggml-org/MiMo-V2.6-Distill-Qwen-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~10.15 GB) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF@Q8_0 -y` · 4bit (~6 GB, Mac only) `lms get https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit -y`
+Other versions: Q8_0 (12.2 GB memory, 10.2 GB download) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF@Q8_0 -y` · 4bit (7.7 GB memory, 5.95 GB download, Mac only) `lms get https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit -y`
 
 ### Ollama
 
@@ -118,13 +118,13 @@ Other versions: Q8_0 (~10.15 GB) `lms get https://huggingface.co/ggml-org/MiMo-V
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs ~6.76 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
+2. Run MiMo-V2.6-Distill-Qwen-9B (Q4_K_M, needs 8.6 GB memory, 6.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65))
    
    ```sh
    ollama run hf.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~10.15 GB) `ollama run hf.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0`
+Other versions: Q8_0 (12.2 GB memory, 10.2 GB download) `ollama run hf.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -137,7 +137,7 @@ Other versions: Q8_0 (~10.15 GB) `ollama run hf.co/ggml-org/MiMo-V2.6-Distill-Qw
    pip install mlx-lm
    ```
 
-2. Run MiMo-V2.6-Distill-Qwen-9B (4bit, needs ~6 GB, Mac only, from [huggingface.co/agnosticeng](https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit/tree/86998933799bdba2eb380c31d12810e9c289e724))
+2. Run MiMo-V2.6-Distill-Qwen-9B (4bit, needs 7.7 GB memory, 5.95 GB download, Mac only, from [huggingface.co/agnosticeng](https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit/tree/86998933799bdba2eb380c31d12810e9c289e724))
    
    ```sh
    mlx_lm.chat --model agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit

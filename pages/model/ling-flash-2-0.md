@@ -66,7 +66,7 @@ weighted average                                   = 58.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ling-flash-2.0 (Q4_K_M, needs ~62.62 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
+2. Run Ling-flash-2.0 (Q4_K_M, needs 67.2 GB memory, 62.6 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
    
    ```sh
    llama cli -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
@@ -78,13 +78,13 @@ weighted average                                   = 58.6
    llama serve -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~36.25 GB) `llama cli -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K`
+Other versions: Q2_K (39.5 GB memory, 36.2 GB download) `llama cli -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ling-flash-2.0 (Q4_K_M, needs ~62.62 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
+2. Run Ling-flash-2.0 (Q4_K_M, needs 67.2 GB memory, 62.6 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
    
    ```sh
    lms get https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF@Q4_K_M -y
@@ -92,7 +92,7 @@ Other versions: Q2_K (~36.25 GB) `llama cli -hf bartowski/inclusionAI_Ling-flash
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~36.25 GB) `lms get https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF@Q2_K -y`
+Other versions: Q2_K (39.5 GB memory, 36.2 GB download) `lms get https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -103,7 +103,7 @@ Other versions: Q2_K (~36.25 GB) `lms get https://huggingface.co/bartowski/inclu
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ling-flash-2.0 (Q2_K, needs ~36.25 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
+2. Run Ling-flash-2.0 (Q2_K, needs 39.5 GB memory, 36.2 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF/tree/1ee418c1a2fb912278aa0ce377ce8c29cf1405f5))
    
    ```sh
    ollama run hf.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K

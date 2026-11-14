@@ -97,7 +97,7 @@ weighted average                                   = 59.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs ~180.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
+2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs 183 GB memory, 172.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
@@ -109,13 +109,13 @@ weighted average                                   = 59.8
    llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~90.5 GB) `llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (122 GB memory, 114.6 GB download) `llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs ~180.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
+2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs 183 GB memory, 172.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q4_K_XL -y
@@ -123,7 +123,7 @@ Other versions: ud-q2_k_xl (~90.5 GB) `llama cli -hf unsloth/ERNIE-4.5-300B-A47B
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~90.5 GB) `lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q2_K_XL -y` · 4bit (~168.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit -y`
+Other versions: ud-q2_k_xl (122 GB memory, 114.6 GB download) `lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q2_K_XL -y` · 4bit (178 GB memory, 168.5 GB download, Mac only) `lms get https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit -y`
 
 ### MLX (Mac)
 
@@ -136,7 +136,7 @@ Other versions: ud-q2_k_xl (~90.5 GB) `lms get https://huggingface.co/unsloth/ER
    pip install mlx-lm
    ```
 
-2. Run ERNIE 4.5 300B-A47B (4bit, needs ~168.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit/tree/2ae73139f81d4c7ae52fc5060cc3dce46f9d0fec))
+2. Run ERNIE 4.5 300B-A47B (4bit, needs 178 GB memory, 168.5 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit/tree/2ae73139f81d4c7ae52fc5060cc3dce46f9d0fec))
    
    ```sh
    mlx_lm.chat --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit

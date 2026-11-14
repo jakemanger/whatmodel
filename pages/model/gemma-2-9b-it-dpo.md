@@ -68,7 +68,7 @@ weighted average                              = 59.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
+2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
    
    ```sh
    llama cli -hf mradermacher/gemma-2-9b-it-DPO-GGUF:Q4_K_M
@@ -80,13 +80,13 @@ weighted average                              = 59.6
    llama serve -hf mradermacher/gemma-2-9b-it-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf mradermacher/gemma-2-9b-it-DPO-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf mradermacher/gemma-2-9b-it-DPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
+2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf mradermacher/gemma-2-9b-it-DPO-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -105,17 +105,17 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/mradermacher/gemm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
+2. Run Gemma 2 9B IT DPO (Princeton) (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-DPO-GGUF/tree/f839c0b279905194bf3c896eb6fb6f79d9a64c4b))
    
    ```sh
    ollama run hf.co/mradermacher/gemma-2-9b-it-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/mradermacher/gemma-2-9b-it-DPO-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/mradermacher/gemma-2-9b-it-DPO-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-DPO/tree/f646c99fc3aa7afc7b22c3c7115fd03a40fc1d22))
+1. Run it as published (BF16, needs 20.9 GB memory, 18.5 GB download, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-DPO/tree/f646c99fc3aa7afc7b22c3c7115fd03a40fc1d22))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/gemma-2-9b-it-DPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

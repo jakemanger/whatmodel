@@ -102,7 +102,7 @@ weighted average                                   = 0.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run BLOOM 560M (Q4_K_M, needs ~0.6 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
+2. Run BLOOM 560M (Q4_K_M, needs 2.1 GB memory, 0.56 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
    
    ```sh
    llama cli -hf afrideva/bloom-560m-GGUF:q4_k_m
@@ -114,13 +114,13 @@ weighted average                                   = 0.1
    llama serve -hf afrideva/bloom-560m-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~0.9 GB) `llama cli -hf afrideva/bloom-560m-GGUF:q8_0`
+Other versions: Q8_0 (2.4 GB memory, 0.88 GB download) `llama cli -hf afrideva/bloom-560m-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run BLOOM 560M (Q4_K_M, needs ~0.6 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
+2. Run BLOOM 560M (Q4_K_M, needs 2.1 GB memory, 0.56 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
    
    ```sh
    lms get https://huggingface.co/afrideva/bloom-560m-GGUF@q4_k_m -y
@@ -128,7 +128,7 @@ Other versions: Q8_0 (~0.9 GB) `llama cli -hf afrideva/bloom-560m-GGUF:q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.9 GB) `lms get https://huggingface.co/afrideva/bloom-560m-GGUF@q8_0 -y`
+Other versions: Q8_0 (2.4 GB memory, 0.88 GB download) `lms get https://huggingface.co/afrideva/bloom-560m-GGUF@q8_0 -y`
 
 ### Ollama
 
@@ -139,17 +139,17 @@ Other versions: Q8_0 (~0.9 GB) `lms get https://huggingface.co/afrideva/bloom-56
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run BLOOM 560M (Q4_K_M, needs ~0.6 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
+2. Run BLOOM 560M (Q4_K_M, needs 2.1 GB memory, 0.56 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/bloom-560m-GGUF/tree/fe8ad7e97957783ea24f6960f73e28e709aa6e96))
    
    ```sh
    ollama run hf.co/afrideva/bloom-560m-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/afrideva/bloom-560m-GGUF:q8_0`
+Other versions: Q8_0 (2.4 GB memory, 0.88 GB download) `ollama run hf.co/afrideva/bloom-560m-GGUF:q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~1.12 GB, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-560m/tree/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971))
+1. Run it as published (fp16, needs 2.7 GB memory, 1.12 GB download, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-560m/tree/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-560m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -55,7 +55,7 @@ weighted average                                   = 34.0
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LLaVA-v1.6-Vicuna-13B (Q4_0, needs ~8 GB, from [ollama.com](https://ollama.com/library/llava/tags))
+2. Run LLaVA-v1.6-Vicuna-13B (Q4_0, needs 9.9 GB memory, 8.01 GB download, from [ollama.com](https://ollama.com/library/llava/tags))
    
    ```sh
    ollama run llava:13b

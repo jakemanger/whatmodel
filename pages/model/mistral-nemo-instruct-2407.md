@@ -122,7 +122,7 @@ weighted average                                   = 45.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral NeMo Instruct (2407) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF/tree/e0ffb63273e1e4dc60400f08a6d0bf2a99c4be21))
+2. Run Mistral NeMo Instruct (2407) (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF/tree/e0ffb63273e1e4dc60400f08a6d0bf2a99c4be21))
    
    ```sh
    llama cli -hf lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF:Q4_K_M
@@ -134,13 +134,13 @@ weighted average                                   = 45.7
    llama serve -hf lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `llama cli -hf lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF:Q8_0`
+Other versions: Q8_0 (14.9 GB memory, 13 GB download) `llama cli -hf lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral NeMo Instruct (2407) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF/tree/e0ffb63273e1e4dc60400f08a6d0bf2a99c4be21))
+2. Run Mistral NeMo Instruct (2407) (Q4_K_M, needs 9.4 GB memory, 7.48 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF/tree/e0ffb63273e1e4dc60400f08a6d0bf2a99c4be21))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF@Q4_K_M -y
@@ -148,7 +148,7 @@ Other versions: Q8_0 (~13 GB) `llama cli -hf lmstudio-community/Mistral-Nemo-Ins
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF@Q8_0 -y` · 4bit (~6.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-4bit -y` · 8bit (~13 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-8bit -y`
+Other versions: Q8_0 (14.9 GB memory, 13 GB download) `lms get https://huggingface.co/lmstudio-community/Mistral-Nemo-Instruct-2407-GGUF@Q8_0 -y` · 4bit (8.8 GB memory, 6.89 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-4bit -y` · 8bit (14.9 GB memory, 13 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-8bit -y`
 
 ### Ollama
 
@@ -159,13 +159,13 @@ Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/lmstudio-community
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral NeMo Instruct (2407) (Q4_0, needs ~7.85 GB, from [ollama.com](https://ollama.com/library/mistral-nemo/tags))
+2. Run Mistral NeMo Instruct (2407) (Q4_0, needs 9 GB memory, 7.07 GB download, from [ollama.com](https://ollama.com/library/mistral-nemo/tags))
    
    ```sh
    ollama run mistral-nemo:12b
    ```
 
-Other versions: Q4_K_M (~7.85 GB) `ollama run mistral-nemo:12b-instruct-2407-q4_K_M` · Q8_0 (~15.2 GB) `ollama run mistral-nemo:12b-instruct-2407-q8_0`
+Other versions: Q4_K_M (9.4 GB memory, 7.48 GB download) `ollama run mistral-nemo:12b-instruct-2407-q4_K_M` · Q8_0 (14.9 GB memory, 13 GB download) `ollama run mistral-nemo:12b-instruct-2407-q8_0`
 
 ### MLX (Mac)
 
@@ -178,7 +178,7 @@ Other versions: Q4_K_M (~7.85 GB) `ollama run mistral-nemo:12b-instruct-2407-q4_
    pip install mlx-lm
    ```
 
-2. Run Mistral NeMo Instruct (2407) (4bit, needs ~6.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-4bit/tree/647ca0751669b21a364c86ccc5df54c4d7e4e91c))
+2. Run Mistral NeMo Instruct (2407) (4bit, needs 8.8 GB memory, 6.89 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mistral-Nemo-Instruct-2407-4bit/tree/647ca0751669b21a364c86ccc5df54c4d7e4e91c))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mistral-Nemo-Instruct-2407-4bit
@@ -190,7 +190,7 @@ Other versions: Q4_K_M (~7.85 GB) `ollama run mistral-nemo:12b-instruct-2407-q4_
    mlx_lm.server --model mlx-community/Mistral-Nemo-Instruct-2407-4bit
    ```
 
-Other versions: 8bit (~13 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Nemo-Instruct-2407-8bit`
+Other versions: 8bit (14.9 GB memory, 13 GB download, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Nemo-Instruct-2407-8bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 

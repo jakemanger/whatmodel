@@ -171,7 +171,7 @@ mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Smal
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF/tree/411ec9d61b0710288b836414aeeb1b42437cfdba))
+2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs 17.1 GB memory, 15.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF/tree/411ec9d61b0710288b836414aeeb1b42437cfdba))
    
    ```sh
    llama cli -hf lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF:Q4_K_M
@@ -183,13 +183,13 @@ mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Smal
    llama serve -hf lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF:Q8_0`
+Other versions: Q8_0 (27.8 GB memory, 25.9 GB download) `llama cli -hf lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF/tree/411ec9d61b0710288b836414aeeb1b42437cfdba))
+2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs 17.1 GB memory, 15.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF/tree/411ec9d61b0710288b836414aeeb1b42437cfdba))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF@Q4_K_M -y
@@ -197,7 +197,7 @@ Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/Mistral-Small-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF@Q8_0 -y` · 4bit (~15.1 GB, Mac only) `lms get https://huggingface.co/luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit -y` · 8bit (~25 GB, Mac only) `lms get https://huggingface.co/k8smee/Mistral-Small-3.1-24B-Instruct-2503-mlx-8Bit -y`
+Other versions: Q8_0 (27.8 GB memory, 25.9 GB download) `lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.1-24B-Instruct-2503-GGUF@Q8_0 -y` · 4bit (17 GB memory, 15.1 GB download, Mac only) `lms get https://huggingface.co/luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit -y` · 8bit (26.9 GB memory, 25 GB download, Mac only) `lms get https://huggingface.co/k8smee/Mistral-Small-3.1-24B-Instruct-2503-mlx-8Bit -y`
 
 ### Ollama
 
@@ -208,13 +208,13 @@ Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs ~14.91 GB, from [ollama.com](https://ollama.com/library/mistral-small3.1/tags))
+2. Run Mistral Small 3.1 24B (2503) (Q4_K_M, needs 17.4 GB memory, 15.5 GB download, from [ollama.com](https://ollama.com/library/mistral-small3.1/tags))
    
    ```sh
    ollama run mistral-small3.1:24b
    ```
 
-Other versions: Q8_0 (~29.31 GB) `ollama run mistral-small3.1:24b-instruct-2503-q8_0`
+Other versions: Q8_0 (28 GB memory, 26.1 GB download) `ollama run mistral-small3.1:24b-instruct-2503-q8_0`
 
 ### MLX (Mac)
 
@@ -227,7 +227,7 @@ Other versions: Q8_0 (~29.31 GB) `ollama run mistral-small3.1:24b-instruct-2503-
    pip install mlx-lm
    ```
 
-2. Run Mistral Small 3.1 24B (2503) (4bit, needs ~15.1 GB, Mac only, from [huggingface.co/luiscalisto](https://huggingface.co/luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit/tree/cae7a0c4b9893bef33738e74d071226128f9b15c))
+2. Run Mistral Small 3.1 24B (2503) (4bit, needs 17 GB memory, 15.1 GB download, Mac only, from [huggingface.co/luiscalisto](https://huggingface.co/luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit/tree/cae7a0c4b9893bef33738e74d071226128f9b15c))
    
    ```sh
    mlx_lm.chat --model luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit
@@ -239,7 +239,7 @@ Other versions: Q8_0 (~29.31 GB) `ollama run mistral-small3.1:24b-instruct-2503-
    mlx_lm.server --model luiscalisto/Mistral-Small-3.1-24B-Instruct-2503-MLX-4bit
    ```
 
-Other versions: 8bit (~25 GB, Mac only) `mlx_lm.chat --model k8smee/Mistral-Small-3.1-24B-Instruct-2503-mlx-8Bit`
+Other versions: 8bit (26.9 GB memory, 25 GB download, Mac only) `mlx_lm.chat --model k8smee/Mistral-Small-3.1-24B-Instruct-2503-mlx-8Bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503)
 

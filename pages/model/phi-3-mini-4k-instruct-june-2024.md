@@ -94,7 +94,7 @@ weighted average                              = 45.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
+2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
    
    ```sh
    llama cli -hf bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q4_K_M
@@ -106,13 +106,13 @@ weighted average                              = 45.5
    llama serve -hf bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.06 GB) `llama cli -hf bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (7.7 GB memory, 4.06 GB download) `llama cli -hf bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
+2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
    
    ```sh
    lms get https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF@Q4_K_M -y
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~4.06 GB) `llama cli -hf bartowski/Phi-3.1-mini-4k-instruc
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.06 GB) `lms get https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF@Q8_0 -y` · 4bit (~2.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-8bit -y`
+Other versions: Q8_0 (7.7 GB memory, 4.06 GB download) `lms get https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF@Q8_0 -y` · 4bit (5.8 GB memory, 2.15 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-4bit -y` · 8bit (7.7 GB memory, 4.06 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-8bit -y`
 
 ### Ollama
 
@@ -131,13 +131,13 @@ Other versions: Q8_0 (~4.06 GB) `lms get https://huggingface.co/bartowski/Phi-3.
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
+2. Run Phi-3-mini-4k-instruct (June 2024 update) (Q4_K_M, needs 6 GB memory, 2.39 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF/tree/66a614ace4d069a12c2f6043f4ea92621c898d4a))
    
    ```sh
    ollama run hf.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.06 GB) `ollama run hf.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (7.7 GB memory, 4.06 GB download) `ollama run hf.co/bartowski/Phi-3.1-mini-4k-instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -150,7 +150,7 @@ Other versions: Q8_0 (~4.06 GB) `ollama run hf.co/bartowski/Phi-3.1-mini-4k-inst
    pip install mlx-lm
    ```
 
-2. Run Phi-3-mini-4k-instruct (June 2024 update) (4bit, needs ~2.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-4bit/tree/5b3819ed6317784fb20eddeae9bed984f778d0d0))
+2. Run Phi-3-mini-4k-instruct (June 2024 update) (4bit, needs 5.8 GB memory, 2.15 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-3-mini-4k-instruct-4bit/tree/5b3819ed6317784fb20eddeae9bed984f778d0d0))
    
    ```sh
    mlx_lm.chat --model mlx-community/Phi-3-mini-4k-instruct-4bit
@@ -162,7 +162,7 @@ Other versions: Q8_0 (~4.06 GB) `ollama run hf.co/bartowski/Phi-3.1-mini-4k-inst
    mlx_lm.server --model mlx-community/Phi-3-mini-4k-instruct-4bit
    ```
 
-Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-mini-4k-instruct-8bit`
+Other versions: 8bit (7.7 GB memory, 4.06 GB download, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-mini-4k-instruct-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
 

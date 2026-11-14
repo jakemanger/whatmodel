@@ -79,7 +79,7 @@ weighted average                                   = 48.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+2. Run OpenThinker2 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
    
    ```sh
    llama cli -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
@@ -95,7 +95,7 @@ weighted average                                   = 48.7
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+2. Run OpenThinker2 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
    
    ```sh
    lms get https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF@Q4_K_M -y
@@ -112,7 +112,7 @@ weighted average                                   = 48.7
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+2. Run OpenThinker2 7B (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
    
    ```sh
    ollama run hf.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M

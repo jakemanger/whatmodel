@@ -74,7 +74,7 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs ~4 GB, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
+2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs 8 GB memory, 6.18 GB download, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
    
    ```sh
    llama cli -hf nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB:Q4_K_M
@@ -90,7 +90,7 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs ~4 GB, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
+2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs 8 GB memory, 6.18 GB download, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
    
    ```sh
    lms get https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB@Q4_K_M -y
@@ -107,7 +107,7 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs ~4 GB, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
+2. Run Nemotron 3.5 Bolt E4B 4GB (Q4_K_M, needs 8 GB memory, 6.18 GB download, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md))
    
    ```sh
    ollama run hf.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB:Q4_K_M

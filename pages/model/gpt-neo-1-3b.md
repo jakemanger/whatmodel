@@ -101,7 +101,7 @@ What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~5.31 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-1.3B/tree/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8))
+1. Run it as published (fp32, needs 7.1 GB memory, 5.31 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-1.3B/tree/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

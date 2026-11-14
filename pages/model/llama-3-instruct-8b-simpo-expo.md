@@ -68,7 +68,7 @@ weighted average                              = 51.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
+2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
    
    ```sh
    llama cli -hf bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q4_K_M
@@ -80,13 +80,13 @@ weighted average                              = 51.8
    llama serve -hf bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
+2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
    
    ```sh
    lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Llama-3-Instruct-8B-SimP
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -105,17 +105,17 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Llama-3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
+2. Run Llama-3-Instruct-8B-SimPO-ExPO (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF/tree/23b572edca0950490fb1c9c413aecf23dbaae04d))
    
    ```sh
    ollama run hf.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-SimPO-ExPO-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO/tree/3fcaa9fe99691659eb197487e9a343f601bf63f2))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO/tree/3fcaa9fe99691659eb197487e9a343f601bf63f2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

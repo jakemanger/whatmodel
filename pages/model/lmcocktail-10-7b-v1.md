@@ -57,7 +57,7 @@ weighted average                              = 42.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
+2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
    
    ```sh
    llama cli -hf TheBloke/LMCocktail-10.7B-v1-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                              = 42.9
    llama serve -hf TheBloke/LMCocktail-10.7B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~11.4 GB) `llama cli -hf TheBloke/LMCocktail-10.7B-v1-GGUF:Q8_0`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `llama cli -hf TheBloke/LMCocktail-10.7B-v1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
+2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
    
    ```sh
    lms get https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~11.4 GB) `llama cli -hf TheBloke/LMCocktail-10.7B-v1-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF@Q8_0 -y`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `lms get https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/LMCockt
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
+2. Run LMCocktail-10.7B-v1 (Q4_K_M, needs 8.3 GB memory, 6.46 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/LMCocktail-10.7B-v1-GGUF/tree/caa3c61516f2e286eb74bfdac9b5dc6eebe44256))
    
    ```sh
    ollama run hf.co/TheBloke/LMCocktail-10.7B-v1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~11.4 GB) `ollama run hf.co/TheBloke/LMCocktail-10.7B-v1-GGUF:Q8_0`
+Other versions: Q8_0 (13.5 GB memory, 11.4 GB download) `ollama run hf.co/TheBloke/LMCocktail-10.7B-v1-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~21.46 GB, from [huggingface.co/Yhyu13](https://huggingface.co/Yhyu13/LMCocktail-10.7B-v1/tree/79ec3a42118f0715666b86bacab2688b62e1433b))
+1. Run it as published (fp16, needs 24.1 GB memory, 21.5 GB download, from [huggingface.co/Yhyu13](https://huggingface.co/Yhyu13/LMCocktail-10.7B-v1/tree/79ec3a42118f0715666b86bacab2688b62e1433b))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Yhyu13/LMCocktail-10.7B-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

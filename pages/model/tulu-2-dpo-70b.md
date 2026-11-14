@@ -103,7 +103,7 @@ weighted average                                   = 44.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
    
    ```sh
    llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
@@ -115,13 +115,13 @@ weighted average                                   = 44.0
    llama serve -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
+Other versions: Q2_K (32.3 GB memory, 29.3 GB download) `llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
    
    ```sh
    lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q4_K_M -y
@@ -129,7 +129,7 @@ Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q2_K -y`
+Other versions: Q2_K (32.3 GB memory, 29.3 GB download) `lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -140,17 +140,17 @@ Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/tulu-2-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
    
    ```sh
    ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~29.3 GB) `ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
+Other versions: Q2_K (32.3 GB memory, 29.3 GB download) `ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~137.95 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b/tree/0ab5c875f0070d5aee8d36bc55f41de440a13f02))
+1. Run it as published (BF16, needs 146 GB memory, 138 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b/tree/0ab5c875f0070d5aee8d36bc55f41de440a13f02))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

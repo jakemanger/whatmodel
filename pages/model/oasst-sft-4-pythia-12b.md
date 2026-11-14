@@ -91,7 +91,7 @@ weighted average                                   = 25.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs ~7.6 GB, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
+2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs 9.5 GB memory, 7.59 GB download, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
    
    ```sh
    llama cli -hf ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF:q4_k_m
@@ -107,7 +107,7 @@ weighted average                                   = 25.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs ~7.6 GB, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
+2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs 9.5 GB memory, 7.59 GB download, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
    
    ```sh
    lms get https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF@q4_k_m -y
@@ -124,7 +124,7 @@ weighted average                                   = 25.1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs ~7.6 GB, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
+2. Run OpenAssistant SFT-4 Pythia 12B (Q4_K_M, needs 9.5 GB memory, 7.59 GB download, from [huggingface.co/ArtyomSubDiv](https://huggingface.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF/tree/460d9ded18c12bd363d82058aef436b10b62666a))
    
    ```sh
    ollama run hf.co/ArtyomSubDiv/oasst-sft-4-pythia-12b-epoch-3.5-Q4_K_M-GGUF:q4_k_m
@@ -132,7 +132,7 @@ weighted average                                   = 25.1
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~23.84 GB, from [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5/tree/626b8c140cfdedb119dfb78c626cd772283dee33))
+1. Run it as published (fp16, needs 26.5 GB memory, 23.8 GB download, from [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5/tree/626b8c140cfdedb119dfb78c626cd772283dee33))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5', torch_dtype='auto', device_map='auto')('<|prompter|>What is a meme?<|endoftext|><|assistant|>', max_new_tokens=40)[0]['generated_text'])"

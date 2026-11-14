@@ -53,7 +53,7 @@ weighted average                          = 47.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Stable LM 2 12B Chat (Q4_K_M, needs ~7.4 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
+2. Run Stable LM 2 12B Chat (Q4_K_M, needs 9.2 GB memory, 7.37 GB download, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
    
    ```sh
    llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 47.6
    llama serve -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~12.9 GB) `llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (15 GB memory, 12.9 GB download) `llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Stable LM 2 12B Chat (Q4_K_M, needs ~7.4 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
+2. Run Stable LM 2 12B Chat (Q4_K_M, needs 9.2 GB memory, 7.37 GB download, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
    
    ```sh
    lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~12.9 GB) `llama cli -hf stabilityai/stablelm-2-12b-chat-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q8_0 -y` · 4bit (~7.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit -y`
+Other versions: Q8_0 (15 GB memory, 12.9 GB download) `lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q8_0 -y` · 4bit (9.4 GB memory, 7.57 GB download, Mac only) `lms get https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/stabilityai/stab
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Stable LM 2 12B Chat (Q4_0, needs ~7 GB, from [ollama.com](https://ollama.com/library/stablelm2/tags))
+2. Run Stable LM 2 12B Chat (Q4_0, needs 8.8 GB memory, 6.97 GB download, from [ollama.com](https://ollama.com/library/stablelm2/tags))
    
    ```sh
    ollama run stablelm2:12b
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/stabilityai/stab
    pip install mlx-lm
    ```
 
-2. Run Stable LM 2 12B Chat (4bit, needs ~7.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit/tree/d07140b2549974230b45c06b033898e500dd1d27))
+2. Run Stable LM 2 12B Chat (4bit, needs 9.4 GB memory, 7.57 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit/tree/d07140b2549974230b45c06b033898e500dd1d27))
    
    ```sh
    mlx_lm.chat --model mlx-community/stablelm-2-12b-chat-4bit

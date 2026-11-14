@@ -58,7 +58,7 @@ weighted average                                   = 50.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
+2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
    
    ```sh
    llama cli -hf MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 50.4
    llama serve -hf MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
+2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf MaziyarPanahi/OpenCodeInterpreter-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/MaziyarPanahi/Ope
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
+2. Run OpenCodeInterpreter-DS-6.7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF/tree/bd35d131dcb21400ac709e1e12a382264f6bfd95))
    
    ```sh
    ollama run hf.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/MaziyarPanahi/OpenCodeInterpreter-DS-6.7B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/m-a-p](https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-6.7B/tree/60b89884df814590abd76757a6db4a527cbdfc91))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/m-a-p](https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-6.7B/tree/60b89884df814590abd76757a6db4a527cbdfc91))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='m-a-p/OpenCodeInterpreter-DS-6.7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

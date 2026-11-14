@@ -126,7 +126,7 @@ api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mi
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ministral 3 14B (Q4_K_M, needs ~8.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
+2. Run Ministral 3 14B (Q4_K_M, needs 11.1 GB memory, 9.12 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
    
    ```sh
    llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
@@ -138,13 +138,13 @@ api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mi
    llama serve -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~14.4 GB) `llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0`
+Other versions: Q8_0 (17.1 GB memory, 15.2 GB download) `llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ministral 3 14B (Q4_K_M, needs ~8.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
+2. Run Ministral 3 14B (Q4_K_M, needs 11.1 GB memory, 9.12 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
    
    ```sh
    lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q4_K_M -y
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~14.4 GB) `llama cli -hf mistralai/Ministral-3-14B-Instruc
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~14.4 GB) `lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q8_0 -y` · mxfp4 (~7.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4 -y`
+Other versions: Q8_0 (17.1 GB memory, 15.2 GB download) `lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q8_0 -y` · mxfp4 (9.1 GB memory, 7.18 GB download, Mac only) `lms get https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4 -y`
 
 ### Ollama
 
@@ -163,13 +163,13 @@ Other versions: Q8_0 (~14.4 GB) `lms get https://huggingface.co/mistralai/Minist
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ministral 3 14B (Q4_K_M, needs ~8.84 GB, from [ollama.com](https://ollama.com/library/ministral-3/tags))
+2. Run Ministral 3 14B (Q4_K_M, needs 11 GB memory, 9.08 GB download, from [ollama.com](https://ollama.com/library/ministral-3/tags))
    
    ```sh
    ollama run ministral-3:14b
    ```
 
-Other versions: Q8_0 (~17.18 GB) `ollama run ministral-3:14b-instruct-2512-q8_0`
+Other versions: Q8_0 (17.1 GB memory, 15.2 GB download) `ollama run ministral-3:14b-instruct-2512-q8_0`
 
 ### MLX (Mac)
 
@@ -182,7 +182,7 @@ Other versions: Q8_0 (~17.18 GB) `ollama run ministral-3:14b-instruct-2512-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Ministral 3 14B (mxfp4, needs ~7.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4/tree/df992b14e4490b0b9eb496015f402b9449e44e08))
+2. Run Ministral 3 14B (mxfp4, needs 9.1 GB memory, 7.18 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4/tree/df992b14e4490b0b9eb496015f402b9449e44e08))
    
    ```sh
    mlx_lm.chat --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4

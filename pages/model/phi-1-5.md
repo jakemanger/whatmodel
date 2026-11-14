@@ -69,7 +69,7 @@ weighted average                                   = 32.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-1.5 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
+2. Run Phi-1.5 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
    
    ```sh
    llama cli -hf mradermacher/phi-1_5-GGUF:Q4_K_M
@@ -81,13 +81,13 @@ weighted average                                   = 32.6
    llama serve -hf mradermacher/phi-1_5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.5 GB) `llama cli -hf mradermacher/phi-1_5-GGUF:Q8_0`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `llama cli -hf mradermacher/phi-1_5-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-1.5 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
+2. Run Phi-1.5 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/phi-1_5-GGUF@Q4_K_M -y
@@ -95,7 +95,7 @@ Other versions: Q8_0 (~1.5 GB) `llama cli -hf mradermacher/phi-1_5-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.5 GB) `lms get https://huggingface.co/mradermacher/phi-1_5-GGUF@Q8_0 -y` · fp16 (~2.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/phi-1_5 -y`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `lms get https://huggingface.co/mradermacher/phi-1_5-GGUF@Q8_0 -y` · fp16 (4.5 GB memory, 2.84 GB download, Mac only) `lms get https://huggingface.co/mlx-community/phi-1_5 -y`
 
 ### Ollama
 
@@ -106,13 +106,13 @@ Other versions: Q8_0 (~1.5 GB) `lms get https://huggingface.co/mradermacher/phi-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-1.5 (1.3B) (Q4_K_M, needs ~0.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
+2. Run Phi-1.5 (1.3B) (Q4_K_M, needs 2.4 GB memory, 0.89 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/phi-1_5-GGUF/tree/fb3f2464a557228caf113b4d6ca7bebb2dc6c08c))
    
    ```sh
    ollama run hf.co/mradermacher/phi-1_5-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.5 GB) `ollama run hf.co/mradermacher/phi-1_5-GGUF:Q8_0`
+Other versions: Q8_0 (3.1 GB memory, 1.51 GB download) `ollama run hf.co/mradermacher/phi-1_5-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -125,7 +125,7 @@ Other versions: Q8_0 (~1.5 GB) `ollama run hf.co/mradermacher/phi-1_5-GGUF:Q8_0`
    pip install mlx-lm
    ```
 
-2. Run Phi-1.5 (1.3B) (fp16, needs ~2.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/phi-1_5/tree/38df47b909f79aa418b2d58cb2a6a457f3a8ec83))
+2. Run Phi-1.5 (1.3B) (fp16, needs 4.5 GB memory, 2.84 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/phi-1_5/tree/38df47b909f79aa418b2d58cb2a6a457f3a8ec83))
    
    ```sh
    mlx_lm.chat --model mlx-community/phi-1_5
@@ -139,7 +139,7 @@ Other versions: Q8_0 (~1.5 GB) `ollama run hf.co/mradermacher/phi-1_5-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~2.84 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1_5/tree/77aa61eeac94fbf33d492b9f2744c98b42d5b5eb))
+1. Run it as published (fp16, needs 4.5 GB memory, 2.84 GB download, from [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1_5/tree/77aa61eeac94fbf33d492b9f2744c98b42d5b5eb))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1_5')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -53,7 +53,7 @@ weighted average                        = 53.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Biomni-R0-32B-Preview (Q4_K_M, needs ~19.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
+2. Run Biomni-R0-32B-Preview (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
    
    ```sh
    llama cli -hf mradermacher/Biomni-R0-32B-Preview-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 53.5
    llama serve -hf mradermacher/Biomni-R0-32B-Preview-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf mradermacher/Biomni-R0-32B-Preview-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `llama cli -hf mradermacher/Biomni-R0-32B-Preview-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Biomni-R0-32B-Preview (Q4_K_M, needs ~19.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
+2. Run Biomni-R0-32B-Preview (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf mradermacher/Biomni-R0-32B-Previe
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF@Q8_0 -y`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `lms get https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/mradermacher/Bio
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Biomni-R0-32B-Preview (Q4_K_M, needs ~19.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
+2. Run Biomni-R0-32B-Preview (Q4_K_M, needs 22.3 GB memory, 19.8 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Biomni-R0-32B-Preview-GGUF/tree/01b9988657a7e3c1a7df728f34c1df39bdabc4a1))
    
    ```sh
    ollama run hf.co/mradermacher/Biomni-R0-32B-Preview-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/Biomni-R0-32B-Preview-GGUF:Q8_0`
+Other versions: Q8_0 (38 GB memory, 34.8 GB download) `ollama run hf.co/mradermacher/Biomni-R0-32B-Preview-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~131.05 GB, from [huggingface.co/biomni](https://huggingface.co/biomni/Biomni-R0-32B-Preview/tree/71432eb3d5e583bee757e0f9437a17e711e8e3d1))
+1. Run it as published (fp32, needs 139 GB memory, 131 GB download, from [huggingface.co/biomni](https://huggingface.co/biomni/Biomni-R0-32B-Preview/tree/71432eb3d5e583bee757e0f9437a17e711e8e3d1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='biomni/Biomni-R0-32B-Preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

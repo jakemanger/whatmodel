@@ -53,7 +53,7 @@ weighted average                              = 43.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs 7.1 GB memory, 5.38 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
    
    ```sh
    llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                              = 43.5
    llama serve -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.3 GB) `llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.34 GB download) `llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs 7.1 GB memory, 5.38 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~9.3 GB) `llama cli -hf mradermacher/Fanar-1-9B-Instruct-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.3 GB) `lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.3 GB memory, 9.34 GB download) `lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~9.3 GB) `lms get https://huggingface.co/mradermacher/Fana
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs 7.1 GB memory, 5.38 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
    
    ```sh
    ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.3 GB) `ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.34 GB download) `ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.6 GB, NVIDIA only, from [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct/tree/d30938d0efb1fd251727ee96df6987802ff84662))
+1. Run it as published (BF16, needs 20 GB memory, 17.6 GB download, NVIDIA only, from [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct/tree/d30938d0efb1fd251727ee96df6987802ff84662))
    
    ```sh
    vllm serve QCRI/Fanar-1-9B-Instruct

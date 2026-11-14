@@ -70,7 +70,7 @@ weighted average                              = 39.1
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~13.48 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-7b/tree/99a3a11ee3320d52eae6cf5920c80e1d51d19a6e))
+1. Run it as published (BF16, needs 15.7 GB memory, 13.5 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-7b/tree/99a3a11ee3320d52eae6cf5920c80e1d51d19a6e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/codetulu-2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

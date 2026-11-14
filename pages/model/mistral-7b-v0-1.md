@@ -112,7 +112,7 @@ weighted average                                   = 37.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs ~4.4 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
+2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
    
    ```sh
    llama cli -hf MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q4_K_M
@@ -124,13 +124,13 @@ weighted average                                   = 37.2
    llama serve -hf MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs ~4.4 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
+2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF@Q4_K_M -y
@@ -138,7 +138,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf MaziyarPanahi/Mistral-7B-v0.1-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF@Q8_0 -y` · 4bit (~4.1 GB, Mac only) `lms get https://huggingface.co/en3rypt/Mistral-7B-v0.1-4bit -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF@Q8_0 -y` · 4bit (5.8 GB memory, 4.07 GB download, Mac only) `lms get https://huggingface.co/en3rypt/Mistral-7B-v0.1-4bit -y`
 
 ### Ollama
 
@@ -149,13 +149,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/MaziyarPanahi/Mis
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs ~4.4 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
+2. Run Mistral 7B v0.1 (base) (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF/tree/4b85242ce137d0835f77bf48f32d1f93494c402b))
    
    ```sh
    ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -168,7 +168,7 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-G
    pip install mlx-lm
    ```
 
-2. Run Mistral 7B v0.1 (base) (4bit, needs ~4.1 GB, Mac only, from [huggingface.co/en3rypt](https://huggingface.co/en3rypt/Mistral-7B-v0.1-4bit/tree/5c072ca42a3856c6f042840a7e9dcad5e074d69f))
+2. Run Mistral 7B v0.1 (base) (4bit, needs 5.8 GB memory, 4.07 GB download, Mac only, from [huggingface.co/en3rypt](https://huggingface.co/en3rypt/Mistral-7B-v0.1-4bit/tree/5c072ca42a3856c6f042840a7e9dcad5e074d69f))
    
    ```sh
    mlx_lm.chat --model en3rypt/Mistral-7B-v0.1-4bit
@@ -182,7 +182,7 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-G
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-v0.1/tree/27d67f1b5f57dc0953326b2601d68371d40ea8da))
+1. Run it as published (BF16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-v0.1/tree/27d67f1b5f57dc0953326b2601d68371d40ea8da))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mistral-7B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

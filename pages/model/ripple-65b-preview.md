@@ -121,13 +121,13 @@ ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ripple-65B Preview (Q4_K_M, needs ~39.5 GB, from [ollama.com](https://ollama.com/library/ripple-preview/tags))
+2. Run Ripple-65B Preview (Q4_K_M, needs 42.2 GB memory, 38.8 GB download, from [ollama.com](https://ollama.com/library/ripple-preview/tags))
    
    ```sh
    ollama run ripple-preview:65b-q4_K_M
    ```
 
-Other versions: nvfp4-mlx (~39.5 GB, Mac only) `ollama run ripple-preview:65b-nvfp4` · BF16 (~156.5 GB) `ollama run ripple-preview:65b-gguf-bf16`
+Other versions: nvfp4-mlx (49.6 GB memory, 45.8 GB download, Mac only) `ollama run ripple-preview:65b-nvfp4` · BF16 (138 GB memory, 129.6 GB download) `ollama run ripple-preview:65b-gguf-bf16`
 
 Model repository and documentation: [huggingface.co/ricursiveAI](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
 

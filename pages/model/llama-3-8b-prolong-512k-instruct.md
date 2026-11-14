@@ -47,7 +47,7 @@ weighted average                                   = 50.6
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~32.12 GB, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct/tree/bf92e493b7b0ef1db0242bfa97f1d8f92be02e9c))
+1. Run it as published (fp32, needs 35.2 GB memory, 32.1 GB download, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct/tree/bf92e493b7b0ef1db0242bfa97f1d8f92be02e9c))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-8B-ProLong-512k-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

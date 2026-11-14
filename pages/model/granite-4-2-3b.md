@@ -149,7 +149,7 @@ api (DeepInfra) · $0.052/M blended · $0.03 in / $0.12 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 4.2 3B (Q4_K_M, needs ~2.2 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
+2. Run Granite 4.2 3B (Q4_K_M, needs 3.4 GB memory, 2.24 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
    
    ```sh
    llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
@@ -161,13 +161,13 @@ api (DeepInfra) · $0.052/M blended · $0.03 in / $0.12 out per 1M tokens · [de
    llama serve -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.9 GB) `llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q8_0`
+Other versions: Q8_0 (5.1 GB memory, 3.89 GB download) `llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 4.2 3B (Q4_K_M, needs ~2.2 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
+2. Run Granite 4.2 3B (Q4_K_M, needs 3.4 GB memory, 2.24 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q4_K_M -y
@@ -175,7 +175,7 @@ Other versions: Q8_0 (~3.9 GB) `llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.9 GB) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q8_0 -y` · 4bit (~2.1 GB, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx -y` · 8bit (~3.9 GB, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q8-mlx -y`
+Other versions: Q8_0 (5.1 GB memory, 3.89 GB download) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q8_0 -y` · 4bit (3.3 GB memory, 2.06 GB download, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx -y` · 8bit (5.1 GB memory, 3.89 GB download, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q8-mlx -y`
 
 ### Ollama
 
@@ -186,7 +186,7 @@ Other versions: Q8_0 (~3.9 GB) `lms get https://huggingface.co/ibm-granite/grani
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 4.2 3B (Q4_K_M, needs ~2.7 GB, from [ollama.com](https://ollama.com/library/granite4.2/tags))
+2. Run Granite 4.2 3B (Q4_K_M, needs 3.4 GB memory, 2.24 GB download, from [ollama.com](https://ollama.com/library/granite4.2/tags))
    
    ```sh
    ollama run granite4.2:3b
@@ -203,7 +203,7 @@ Other versions: Q8_0 (~3.9 GB) `lms get https://huggingface.co/ibm-granite/grani
    pip install mlx-lm
    ```
 
-2. Run Granite 4.2 3B (4bit, needs ~2.1 GB, Mac only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx/tree/0c6f39b1827afd5eb2c1c3b13751929857434953))
+2. Run Granite 4.2 3B (4bit, needs 3.3 GB memory, 2.06 GB download, Mac only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx/tree/0c6f39b1827afd5eb2c1c3b13751929857434953))
    
    ```sh
    mlx_lm.chat --model ibm-granite/granite-4.2-3b-q4-mlx
@@ -215,7 +215,7 @@ Other versions: Q8_0 (~3.9 GB) `lms get https://huggingface.co/ibm-granite/grani
    mlx_lm.server --model ibm-granite/granite-4.2-3b-q4-mlx
    ```
 
-Other versions: 8bit (~3.9 GB, Mac only) `mlx_lm.chat --model ibm-granite/granite-4.2-3b-q8-mlx`
+Other versions: 8bit (5.1 GB memory, 3.89 GB download, Mac only) `mlx_lm.chat --model ibm-granite/granite-4.2-3b-q8-mlx`
 
 Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b)
 

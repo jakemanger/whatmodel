@@ -81,7 +81,7 @@ weighted average                                   = 43.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs ~0.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF/tree/4595af8c3dff738094bd6c86054dfb5a90d5c41e))
+2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs 2.9 GB memory, 0.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF/tree/4595af8c3dff738094bd6c86054dfb5a90d5c41e))
    
    ```sh
    llama cli -hf TheBloke/deepseek-coder-1.3b-instruct-GGUF:Q4_K_M
@@ -93,13 +93,13 @@ weighted average                                   = 43.9
    llama serve -hf TheBloke/deepseek-coder-1.3b-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.4 GB) `llama cli -hf TheBloke/deepseek-coder-1.3b-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (3.4 GB memory, 1.43 GB download) `llama cli -hf TheBloke/deepseek-coder-1.3b-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs ~0.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF/tree/4595af8c3dff738094bd6c86054dfb5a90d5c41e))
+2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs 2.9 GB memory, 0.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF/tree/4595af8c3dff738094bd6c86054dfb5a90d5c41e))
    
    ```sh
    lms get https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF@Q4_K_M -y
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~1.4 GB) `llama cli -hf TheBloke/deepseek-coder-1.3b-instr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.4 GB) `lms get https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (3.4 GB memory, 1.43 GB download) `lms get https://huggingface.co/TheBloke/deepseek-coder-1.3b-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -118,13 +118,13 @@ Other versions: Q8_0 (~1.4 GB) `lms get https://huggingface.co/TheBloke/deepseek
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs ~0.874 GB, from [ollama.com](https://ollama.com/library/deepseek-coder/tags))
+2. Run DeepSeek-Coder 1.3B Instruct (Q4_K_M, needs 2.9 GB memory, 0.87 GB download, from [ollama.com](https://ollama.com/library/deepseek-coder/tags))
    
    ```sh
    ollama run deepseek-coder:1.3b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~1.4 GB) `ollama run deepseek-coder:1.3b-instruct-q8_0`
+Other versions: Q8_0 (3.4 GB memory, 1.43 GB download) `ollama run deepseek-coder:1.3b-instruct-q8_0`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct)
 

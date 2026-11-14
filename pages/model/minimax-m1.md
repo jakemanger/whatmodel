@@ -114,7 +114,7 @@ api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novi
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~912.21 GB, from [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/docs/transformers_deployment_guide.md))
+1. Run it as published (BF16, needs 959 GB memory, 912.2 GB download, from [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/docs/transformers_deployment_guide.md))
    
    ```sh
    pip install transformers torch accelerate && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig; p='MiniMaxAI/MiniMax-M1-80k'; m=AutoModelForCausalLM.from_pretrained(p, device_map='auto', trust_remote_code=True); t=AutoTokenizer.from_pretrained(p, trust_remote_code=True); x=t(t.apply_chat_template([{'role': 'user', 'content': [{'type': 'text', 'text': 'Do you have mayonnaise recipes?'}]}], tokenize=False, add_generation_prompt=True), return_tensors='pt').to(m.device); o=m.generate(**x, generation_config=GenerationConfig(max_new_tokens=20, eos_token_id=t.eos_token_id, use_cache=True)); print(t.batch_decode([o[0][x.input_ids.shape[1]:]], skip_special_tokens=True)[0])"

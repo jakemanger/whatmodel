@@ -44,7 +44,7 @@ weighted average                        = 48.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~281.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x22B-v0.1/tree/e1cd34ff1747406fb2277635ed25242803009bc2))
+1. Run it as published (BF16, needs 297 GB memory, 281.2 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x22B-v0.1/tree/e1cd34ff1747406fb2277635ed25242803009bc2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mixtral-8x22B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

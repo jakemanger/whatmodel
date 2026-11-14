@@ -125,7 +125,7 @@ weighted average                                   = 45.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2 7B Instruct (Q4_K_M, needs ~4.7 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/c3024c6fff0a02d52119ecee024bbb93d4b4b8e4))
+2. Run Qwen2 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/c3024c6fff0a02d52119ecee024bbb93d4b4b8e4))
    
    ```sh
    llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q4_k_m
@@ -137,13 +137,13 @@ weighted average                                   = 45.3
    llama serve -hf Qwen/Qwen2-7B-Instruct-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q8_0`
+Other versions: Q8_0 (9.2 GB memory, 8.1 GB download) `llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2 7B Instruct (Q4_K_M, needs ~4.7 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/c3024c6fff0a02d52119ecee024bbb93d4b4b8e4))
+2. Run Qwen2 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/tree/c3024c6fff0a02d52119ecee024bbb93d4b4b8e4))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF@q4_k_m -y
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF@q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-4bit -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-8bit -y`
+Other versions: Q8_0 (9.2 GB memory, 8.1 GB download) `lms get https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF@q8_0 -y` · 4bit (5.4 GB memory, 4.28 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-4bit -y` · 8bit (9.2 GB memory, 8.09 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -162,13 +162,13 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/Qwen/Qwen2-7B-Ins
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2 7B Instruct (Q4_K_M, needs ~5.07 GB, from [ollama.com](https://ollama.com/library/qwen2/tags))
+2. Run Qwen2 7B Instruct (Q4_K_M, needs 5.8 GB memory, 4.68 GB download, from [ollama.com](https://ollama.com/library/qwen2/tags))
    
    ```sh
    ollama run qwen2:7b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.64 GB) `ollama run qwen2:7b-instruct-q8_0`
+Other versions: Q8_0 (9.2 GB memory, 8.1 GB download) `ollama run qwen2:7b-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -181,7 +181,7 @@ Other versions: Q8_0 (~9.64 GB) `ollama run qwen2:7b-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen2 7B Instruct (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-7B-Instruct-4bit/tree/daf4e06b242919852061074afddf8133e53e1d66))
+2. Run Qwen2 7B Instruct (4bit, needs 5.4 GB memory, 4.28 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-7B-Instruct-4bit/tree/daf4e06b242919852061074afddf8133e53e1d66))
    
    ```sh
    mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-4bit
@@ -193,7 +193,7 @@ Other versions: Q8_0 (~9.64 GB) `ollama run qwen2:7b-instruct-q8_0`
    mlx_lm.server --model mlx-community/Qwen2-7B-Instruct-4bit
    ```
 
-Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-8bit`
+Other versions: 8bit (9.2 GB memory, 8.09 GB download, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct)
 

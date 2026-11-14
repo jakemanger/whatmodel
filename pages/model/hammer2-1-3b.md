@@ -57,7 +57,7 @@ weighted average                                   = 51.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hammer2.1-3b (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
+2. Run Hammer2.1-3b (Q4_K_M, needs 3.5 GB memory, 1.93 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
    
    ```sh
    llama cli -hf mradermacher/Hammer2.1-3b-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 51.7
    llama serve -hf mradermacher/Hammer2.1-3b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.3 GB) `llama cli -hf mradermacher/Hammer2.1-3b-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.28 GB download) `llama cli -hf mradermacher/Hammer2.1-3b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hammer2.1-3b (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
+2. Run Hammer2.1-3b (Q4_K_M, needs 3.5 GB memory, 1.93 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~3.3 GB) `llama cli -hf mradermacher/Hammer2.1-3b-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.3 GB) `lms get https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF@Q8_0 -y` · 4bit (~1.7 GB, Mac only) `lms get https://huggingface.co/andosen/Hammer2.1-3b-mlx-4Bit -y`
+Other versions: Q8_0 (4.9 GB memory, 3.28 GB download) `lms get https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF@Q8_0 -y` · 4bit (3.3 GB memory, 1.74 GB download, Mac only) `lms get https://huggingface.co/andosen/Hammer2.1-3b-mlx-4Bit -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~3.3 GB) `lms get https://huggingface.co/mradermacher/Hamm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hammer2.1-3b (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
+2. Run Hammer2.1-3b (Q4_K_M, needs 3.5 GB memory, 1.93 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hammer2.1-3b-GGUF/tree/4b0e6fc41ca1179be0c8a0def23df7236ffa8981))
    
    ```sh
    ollama run hf.co/mradermacher/Hammer2.1-3b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.3 GB) `ollama run hf.co/mradermacher/Hammer2.1-3b-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.28 GB download) `ollama run hf.co/mradermacher/Hammer2.1-3b-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~3.3 GB) `ollama run hf.co/mradermacher/Hammer2.1-3b-GGUF:
    pip install mlx-lm
    ```
 
-2. Run Hammer2.1-3b (4bit, needs ~1.7 GB, Mac only, from [huggingface.co/andosen](https://huggingface.co/andosen/Hammer2.1-3b-mlx-4Bit/tree/05eac912bbce29385a4e7692b7df72e7375190c0))
+2. Run Hammer2.1-3b (4bit, needs 3.3 GB memory, 1.74 GB download, Mac only, from [huggingface.co/andosen](https://huggingface.co/andosen/Hammer2.1-3b-mlx-4Bit/tree/05eac912bbce29385a4e7692b7df72e7375190c0))
    
    ```sh
    mlx_lm.chat --model andosen/Hammer2.1-3b-mlx-4Bit
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~3.3 GB) `ollama run hf.co/mradermacher/Hammer2.1-3b-GGUF:
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~6.17 GB, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-3b/tree/702ce4215e1391cb000a9c037b86b997660750f3))
+1. Run it as published (BF16, needs 8 GB memory, 6.17 GB download, from [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-3b/tree/702ce4215e1391cb000a9c037b86b997660750f3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-3b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

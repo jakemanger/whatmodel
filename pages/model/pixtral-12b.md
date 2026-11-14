@@ -101,7 +101,7 @@ weighted average                                   = 49.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Pixtral 12B (2409) (Q4_K_M, needs ~7.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
+2. Run Pixtral 12B (2409) (Q4_K_M, needs 11.4 GB memory, 9.44 GB download, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
    
    ```sh
    llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
@@ -113,13 +113,13 @@ weighted average                                   = 49.5
    llama serve -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0`
+Other versions: Q8_0 (17 GB memory, 14.8 GB download) `llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Pixtral 12B (2409) (Q4_K_M, needs ~7.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
+2. Run Pixtral 12B (2409) (Q4_K_M, needs 11.4 GB memory, 9.44 GB download, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
    
    ```sh
    lms get https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF@Q4_K_M -y
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~13 GB) `llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF@Q8_0 -y`
+Other versions: Q8_0 (17 GB memory, 14.8 GB download) `lms get https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -138,17 +138,17 @@ Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/EnlistedGhost/Pixt
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Pixtral 12B (2409) (Q4_K_M, needs ~7.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
+2. Run Pixtral 12B (2409) (Q4_K_M, needs 11.4 GB memory, 9.44 GB download, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF/tree/4f01d59fe207ca72071e932c4827dc7fe602c2ac))
    
    ```sh
    ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13 GB) `ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0`
+Other versions: Q8_0 (17 GB memory, 14.8 GB download) `ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~25.37 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-12B-2409/blob/a5ca2b7a9421a35ea24411c46e970758b8d3c6a7/README.md))
+1. Run it as published (BF16, needs 28.2 GB memory, 25.4 GB download, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-12B-2409/blob/a5ca2b7a9421a35ea24411c46e970758b8d3c6a7/README.md))
    
    ```sh
    pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-12B-2409 --tokenizer_mode mistral --limit_mm_per_prompt 'image=4'

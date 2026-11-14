@@ -80,7 +80,7 @@ weighted average                                   = 25.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Falcon 7B Instruct (Q4_K_M, needs ~4.8 GB, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF/tree/173e88f971dece5cf253dfd7acad84bcf05298c0))
+2. Run Falcon 7B Instruct (Q4_K_M, needs 6.5 GB memory, 4.77 GB download, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF/tree/173e88f971dece5cf253dfd7acad84bcf05298c0))
    
    ```sh
    llama cli -hf QuantFactory/falcon-7b-instruct-GGUF:Q4_K_M
@@ -92,13 +92,13 @@ weighted average                                   = 25.6
    llama serve -hf QuantFactory/falcon-7b-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.4 GB) `llama cli -hf QuantFactory/falcon-7b-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (9.2 GB memory, 7.36 GB download) `llama cli -hf QuantFactory/falcon-7b-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Falcon 7B Instruct (Q4_K_M, needs ~4.8 GB, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF/tree/173e88f971dece5cf253dfd7acad84bcf05298c0))
+2. Run Falcon 7B Instruct (Q4_K_M, needs 6.5 GB memory, 4.77 GB download, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF/tree/173e88f971dece5cf253dfd7acad84bcf05298c0))
    
    ```sh
    lms get https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ Other versions: Q8_0 (~7.4 GB) `llama cli -hf QuantFactory/falcon-7b-instruct-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.4 GB) `lms get https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.2 GB memory, 7.36 GB download) `lms get https://huggingface.co/QuantFactory/falcon-7b-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~7.4 GB) `lms get https://huggingface.co/QuantFactory/falc
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Falcon 7B Instruct (Q4_0, needs ~4.2 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+2. Run Falcon 7B Instruct (Q4_0, needs 5.9 GB memory, 4.21 GB download, from [ollama.com](https://ollama.com/library/falcon/tags))
    
    ```sh
    ollama run falcon:7b

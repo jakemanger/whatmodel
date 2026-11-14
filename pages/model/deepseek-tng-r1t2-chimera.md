@@ -53,7 +53,7 @@ weighted average                            = 51.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-TNG R1T2 Chimera (Q4_K_M, needs ~404.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF/tree/1703b3d3bc20c493045ecc8e521a12a62d3b83a6))
+2. Run DeepSeek-TNG R1T2 Chimera (Q4_K_M, needs 427 GB memory, 404.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF/tree/1703b3d3bc20c493045ecc8e521a12a62d3b83a6))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                            = 51.5
    llama serve -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~713.3 GB) `llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:Q8_0` · UD-IQ2_XXS (~216.2 GB) `llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:UD-IQ2_XXS`
+Other versions: Q8_0 (750 GB memory, 713.3 GB download) `llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:Q8_0` · UD-IQ2_XXS (229 GB memory, 216.2 GB download) `llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF:UD-IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-TNG R1T2 Chimera (Q4_K_M, needs ~404.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF/tree/1703b3d3bc20c493045ecc8e521a12a62d3b83a6))
+2. Run DeepSeek-TNG R1T2 Chimera (Q4_K_M, needs 427 GB memory, 404.9 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF/tree/1703b3d3bc20c493045ecc8e521a12a62d3b83a6))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF@Q4_K_M -y
@@ -79,11 +79,11 @@ Other versions: Q8_0 (~713.3 GB) `llama cli -hf unsloth/DeepSeek-TNG-R1T2-Chimer
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~713.3 GB) `lms get https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF@Q8_0 -y` · UD-IQ2_XXS (~216.2 GB) `lms get https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF@UD-IQ2_XXS -y`
+Other versions: Q8_0 (750 GB memory, 713.3 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF@Q8_0 -y` · UD-IQ2_XXS (229 GB memory, 216.2 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-TNG-R1T2-Chimera-GGUF@UD-IQ2_XXS -y`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~688.59 GB, from [huggingface.co/tngtech](https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera/tree/748c3e0469acd9e7ac6abfafe4acf4e04119f6fb))
+1. Run it as published (fp8, needs 725 GB memory, 688.6 GB download, from [huggingface.co/tngtech](https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera/tree/748c3e0469acd9e7ac6abfafe4acf4e04119f6fb))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tngtech/DeepSeek-TNG-R1T2-Chimera', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

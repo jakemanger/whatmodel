@@ -56,7 +56,7 @@ weighted average                                   = 38.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
+2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
    
    ```sh
    llama cli -hf mradermacher/jais-family-1p3b-chat-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 38.0
    llama serve -hf mradermacher/jais-family-1p3b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.7 GB) `llama cli -hf mradermacher/jais-family-1p3b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.66 GB download) `llama cli -hf mradermacher/jais-family-1p3b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
+2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
    
    ```sh
    lms get https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~1.7 GB) `llama cli -hf mradermacher/jais-family-1p3b-chat
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.7 GB) `lms get https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (3.2 GB memory, 1.66 GB download) `lms get https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~1.7 GB) `lms get https://huggingface.co/mradermacher/jais
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs ~1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
+2. Run Jais Family 1p3b (1.3B) Chat (Q4_K_M, needs 2.6 GB memory, 1.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/jais-family-1p3b-chat-GGUF/tree/2b292cd09586ffe1b147ceff74bb712180e42930))
    
    ```sh
    ollama run hf.co/mradermacher/jais-family-1p3b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.7 GB) `ollama run hf.co/mradermacher/jais-family-1p3b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (3.2 GB memory, 1.66 GB download) `ollama run hf.co/mradermacher/jais-family-1p3b-chat-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~6.23 GB, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-1p3b-chat/tree/4b93176e2cb00f369b3bc0a8786e4cf16260c804))
+1. Run it as published (fp32, needs 8 GB memory, 6.23 GB download, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-1p3b-chat/tree/4b93176e2cb00f369b3bc0a8786e4cf16260c804))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-1p3b-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

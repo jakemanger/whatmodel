@@ -109,7 +109,7 @@ weighted average                              = 57.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron-Cascade-8B (Q4_K_M, needs ~5.03 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
+2. Run Nemotron-Cascade-8B (Q4_K_M, needs 6.8 GB memory, 5.03 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
    
    ```sh
    llama cli -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q4_K_M
@@ -121,13 +121,13 @@ weighted average                              = 57.7
    llama serve -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.71 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.6 GB memory, 8.71 GB download) `llama cli -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron-Cascade-8B (Q4_K_M, needs ~5.03 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
+2. Run Nemotron-Cascade-8B (Q4_K_M, needs 6.8 GB memory, 5.03 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF@Q4_K_M -y
@@ -135,7 +135,7 @@ Other versions: Q8_0 (~8.71 GB) `llama cli -hf bartowski/nvidia_Nemotron-Cascade
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.71 GB) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF@Q8_0 -y` · 4bit (~4.6 GB, Mac only) `lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-8B-mlx-4Bit -y`
+Other versions: Q8_0 (10.6 GB memory, 8.71 GB download) `lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF@Q8_0 -y` · 4bit (6.3 GB memory, 4.61 GB download, Mac only) `lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-8B-mlx-4Bit -y`
 
 ### Ollama
 
@@ -146,13 +146,13 @@ Other versions: Q8_0 (~8.71 GB) `lms get https://huggingface.co/bartowski/nvidia
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron-Cascade-8B (Q4_K_M, needs ~5.03 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
+2. Run Nemotron-Cascade-8B (Q4_K_M, needs 6.8 GB memory, 5.03 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616))
    
    ```sh
    ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.71 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.6 GB memory, 8.71 GB download) `ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -165,7 +165,7 @@ Other versions: Q8_0 (~8.71 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Casc
    pip install mlx-lm
    ```
 
-2. Run Nemotron-Cascade-8B (4bit, needs ~4.6 GB, Mac only, from [huggingface.co/introvoyz041](https://huggingface.co/introvoyz041/Nemotron-Cascade-8B-mlx-4Bit/tree/25a0528eec9806be8f8a195ff565e4f4aaace1fd))
+2. Run Nemotron-Cascade-8B (4bit, needs 6.3 GB memory, 4.61 GB download, Mac only, from [huggingface.co/introvoyz041](https://huggingface.co/introvoyz041/Nemotron-Cascade-8B-mlx-4Bit/tree/25a0528eec9806be8f8a195ff565e4f4aaace1fd))
    
    ```sh
    mlx_lm.chat --model introvoyz041/Nemotron-Cascade-8B-mlx-4Bit

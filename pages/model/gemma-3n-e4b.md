@@ -108,7 +108,7 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/mod
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 3n E4B (Q4_K_M, needs ~4.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF/tree/90fa8b0e431faeae50c305828bc260d6f71720e1))
+2. Run Gemma 3n E4B (Q4_K_M, needs 5.7 GB memory, 4.54 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF/tree/90fa8b0e431faeae50c305828bc260d6f71720e1))
    
    ```sh
    llama cli -hf unsloth/gemma-3n-E4B-it-GGUF:Q4_K_M
@@ -120,13 +120,13 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/mod
    llama serve -hf unsloth/gemma-3n-E4B-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.4 GB) `llama cli -hf unsloth/gemma-3n-E4B-it-GGUF:Q8_0`
+Other versions: Q8_0 (8.5 GB memory, 7.35 GB download) `llama cli -hf unsloth/gemma-3n-E4B-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 3n E4B (Q4_K_M, needs ~4.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF/tree/90fa8b0e431faeae50c305828bc260d6f71720e1))
+2. Run Gemma 3n E4B (Q4_K_M, needs 5.7 GB memory, 4.54 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF/tree/90fa8b0e431faeae50c305828bc260d6f71720e1))
    
    ```sh
    lms get https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF@Q4_K_M -y
@@ -134,7 +134,7 @@ Other versions: Q8_0 (~7.4 GB) `llama cli -hf unsloth/gemma-3n-E4B-it-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.4 GB) `lms get https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF@Q8_0 -y` · 4bit (~5.8 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-4bit -y` · 8bit (~9.3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-8bit -y`
+Other versions: Q8_0 (8.5 GB memory, 7.35 GB download) `lms get https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF@Q8_0 -y` · 4bit (7 GB memory, 5.82 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-4bit -y` · 8bit (10.4 GB memory, 9.26 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-8bit -y`
 
 ### Ollama
 
@@ -145,13 +145,13 @@ Other versions: Q8_0 (~7.4 GB) `lms get https://huggingface.co/unsloth/gemma-3n-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 3n E4B (Q4_K_M, needs ~5.21 GB, from [ollama.com](https://ollama.com/library/gemma3n/tags))
+2. Run Gemma 3n E4B (Q4_K_M, needs 10.9 GB memory, 9.77 GB download, from [ollama.com](https://ollama.com/library/gemma3n/tags))
    
    ```sh
    ollama run gemma3n:e4b
    ```
 
-Other versions: Q8_0 (~9.92 GB) `ollama run gemma3n:e4b-it-q8_0`
+Other versions: Q8_0 (10.6 GB memory, 9.51 GB download) `ollama run gemma3n:e4b-it-q8_0`
 
 ### MLX (Mac)
 
@@ -164,7 +164,7 @@ Other versions: Q8_0 (~9.92 GB) `ollama run gemma3n:e4b-it-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Gemma 3n E4B (4bit, needs ~5.8 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-4bit/tree/f6432cfcd80f2b4b0940ba96da76f6e6264f762c))
+2. Run Gemma 3n E4B (4bit, needs 7 GB memory, 5.82 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-4bit/tree/f6432cfcd80f2b4b0940ba96da76f6e6264f762c))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/gemma-3n-E4B-it-MLX-4bit
@@ -176,7 +176,7 @@ Other versions: Q8_0 (~9.92 GB) `ollama run gemma3n:e4b-it-q8_0`
    mlx_lm.server --model lmstudio-community/gemma-3n-E4B-it-MLX-4bit
    ```
 
-Other versions: 8bit (~9.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-3n-E4B-it-MLX-8bit`
+Other versions: 8bit (10.4 GB memory, 9.26 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-3n-E4B-it-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3n-E4B-it)
 

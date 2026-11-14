@@ -58,7 +58,7 @@ weighted average                                 = 24.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs 3.4 GB memory, 1.79 GB download, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
    
    ```sh
    llama cli -hf kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
@@ -74,7 +74,7 @@ weighted average                                 = 24.8
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs 3.4 GB memory, 1.79 GB download, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
    
    ```sh
    lms get https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF@q4_k_m -y
@@ -91,7 +91,7 @@ weighted average                                 = 24.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs 3.4 GB memory, 1.79 GB download, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
    
    ```sh
    ollama run hf.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
@@ -99,7 +99,7 @@ weighted average                                 = 24.8
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~5.69 GB, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/tree/094fbdd0c911feb485ce55de1952ab2e75277e1e))
+1. Run it as published (fp16, needs 7.5 GB memory, 5.69 GB download, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/tree/094fbdd0c911feb485ce55de1952ab2e75277e1e))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -34,7 +34,7 @@ Terminal-Bench 2.1   70.0%  maker        <a href="https://huggingface.co/NousRes
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Arete-27B (Q4_K_M, needs ~16.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
+2. Run Arete-27B (Q4_K_M, needs 20.5 GB memory, 18.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
    
    ```sh
    llama cli -hf bartowski/NousResearch_Arete-27B-GGUF:Q4_K_M
@@ -46,13 +46,13 @@ Terminal-Bench 2.1   70.0%  maker        <a href="https://huggingface.co/NousRes
    llama serve -hf bartowski/NousResearch_Arete-27B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~32.9 GB) `llama cli -hf bartowski/NousResearch_Arete-27B-GGUF:Q8_0`
+Other versions: Q8_0 (32.6 GB memory, 29.6 GB download) `llama cli -hf bartowski/NousResearch_Arete-27B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Arete-27B (Q4_K_M, needs ~16.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
+2. Run Arete-27B (Q4_K_M, needs 20.5 GB memory, 18.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
    
    ```sh
    lms get https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF@Q4_K_M -y
@@ -60,7 +60,7 @@ Other versions: Q8_0 (~32.9 GB) `llama cli -hf bartowski/NousResearch_Arete-27B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~32.9 GB) `lms get https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (32.6 GB memory, 29.6 GB download) `lms get https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -71,13 +71,13 @@ Other versions: Q8_0 (~32.9 GB) `lms get https://huggingface.co/bartowski/NousRe
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Arete-27B (Q4_K_M, needs ~16.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
+2. Run Arete-27B (Q4_K_M, needs 20.5 GB memory, 18.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/9762c8502a79bd2b8634735d75f426b9febe092c/README.md))
    
    ```sh
    ollama run hf.co/bartowski/NousResearch_Arete-27B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~32.9 GB) `ollama run hf.co/bartowski/NousResearch_Arete-27B-GGUF:Q8_0`
+Other versions: Q8_0 (32.6 GB memory, 29.6 GB download) `ollama run hf.co/bartowski/NousResearch_Arete-27B-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Arete-27B)
 

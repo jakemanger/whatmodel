@@ -68,7 +68,7 @@ weighted average                                   = 42.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
+2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs 6.5 GB memory, 4.74 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
    
    ```sh
    llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
@@ -80,13 +80,13 @@ weighted average                                   = 42.2
    llama serve -hf bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.71 GB download) `llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
+2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs 6.5 GB memory, 4.74 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
    
    ```sh
    lms get https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF@Q4_K_M -y
@@ -94,7 +94,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.71 GB download) `lms get https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -105,17 +105,17 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/bartowski/CodeQwe
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
+2. Run CodeQwen1.5 7B (base) (Q4_K_M, needs 6.5 GB memory, 4.74 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/tree/c0bd1493818461df5d79ee2cde2651fc237d49a5))
    
    ```sh
    ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.71 GB download) `ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.5 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/CodeQwen1.5-7B/tree/5ce5a1554e50a9e3bb236de7c0b8a2a1746186e4))
+1. Run it as published (BF16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/CodeQwen1.5-7B/tree/5ce5a1554e50a9e3bb236de7c0b8a2a1746186e4))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/CodeQwen1.5-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

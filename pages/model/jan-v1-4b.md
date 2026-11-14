@@ -53,7 +53,7 @@ weighted average                          = 51.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+2. Run Jan v1 4B (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
    
    ```sh
    llama cli -hf janhq/Jan-v1-4B-GGUF:Q4_K_M
@@ -69,7 +69,7 @@ weighted average                          = 51.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+2. Run Jan v1 4B (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
    
    ```sh
    lms get https://huggingface.co/janhq/Jan-v1-4B-GGUF@Q4_K_M -y
@@ -77,7 +77,7 @@ weighted average                          = 51.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-4bit -y` · 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-8bit -y`
+Other versions: 4bit (3.9 GB memory, 2.26 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-4bit -y` · 8bit (6 GB memory, 4.27 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-8bit -y`
 
 ### Ollama
 
@@ -88,7 +88,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+2. Run Jan v1 4B (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
    
    ```sh
    ollama run hf.co/janhq/Jan-v1-4B-GGUF:Q4_K_M
@@ -105,7 +105,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run Jan v1 4B (4bit, needs ~2.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Jan-v1-4B-4bit/tree/d5b7283074eaf122e4fcde8eda41f6a90cf54b71))
+2. Run Jan v1 4B (4bit, needs 3.9 GB memory, 2.26 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Jan-v1-4B-4bit/tree/d5b7283074eaf122e4fcde8eda41f6a90cf54b71))
    
    ```sh
    mlx_lm.chat --model mlx-community/Jan-v1-4B-4bit
@@ -117,7 +117,7 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/Jan-v1-4B-4bit
    ```
 
-Other versions: 8bit (~4.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Jan-v1-4B-8bit`
+Other versions: 8bit (6 GB memory, 4.27 GB download, Mac only) `mlx_lm.chat --model mlx-community/Jan-v1-4B-8bit`
 
 Model repository and documentation: [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B)
 

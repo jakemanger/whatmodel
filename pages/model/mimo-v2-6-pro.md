@@ -119,7 +119,7 @@ api (Xiaomi MiMo) · $0.54/M blended · $0.435 in / $0.87 out per 1M tokens · [
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2.6-Pro (Q2_K, needs ~420.38 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
+2. Run MiMo-V2.6-Pro (Q2_K, needs 443 GB memory, 420.4 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
    
    ```sh
    llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
@@ -131,13 +131,13 @@ api (Xiaomi MiMo) · $0.54/M blended · $0.435 in / $0.87 out per 1M tokens · [
    llama serve -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
    ```
 
-Other versions: mxfp4 (~557.05 GB) `llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4`
+Other versions: mxfp4 (586 GB memory, 557 GB download) `llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2.6-Pro (Q2_K, needs ~420.38 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
+2. Run MiMo-V2.6-Pro (Q2_K, needs 443 GB memory, 420.4 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
    
    ```sh
    lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@Q2_K -y
@@ -145,7 +145,7 @@ Other versions: mxfp4 (~557.05 GB) `llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: mxfp4 (~557.05 GB) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@MXFP4 -y`
+Other versions: mxfp4 (586 GB memory, 557 GB download) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@MXFP4 -y`
 
 Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL)
 

@@ -143,7 +143,7 @@ LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LFM2.5 8B-A1B (Q4_K_M, needs ~5.2 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/tree/49c14831707011e64d70b2ebd8462ba08d608434))
+2. Run LFM2.5 8B-A1B (Q4_K_M, needs 5.9 GB memory, 5.16 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/tree/49c14831707011e64d70b2ebd8462ba08d608434))
    
    ```sh
    llama cli -hf LiquidAI/LFM2.5-8B-A1B-GGUF:Q4_K_M
@@ -155,13 +155,13 @@ LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
    llama serve -hf LiquidAI/LFM2.5-8B-A1B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9 GB) `llama cli -hf LiquidAI/LFM2.5-8B-A1B-GGUF:Q8_0`
+Other versions: Q8_0 (9.7 GB memory, 9.01 GB download) `llama cli -hf LiquidAI/LFM2.5-8B-A1B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LFM2.5 8B-A1B (Q4_K_M, needs ~5.2 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/tree/49c14831707011e64d70b2ebd8462ba08d608434))
+2. Run LFM2.5 8B-A1B (Q4_K_M, needs 5.9 GB memory, 5.16 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/tree/49c14831707011e64d70b2ebd8462ba08d608434))
    
    ```sh
    lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF@Q4_K_M -y
@@ -169,7 +169,7 @@ Other versions: Q8_0 (~9 GB) `llama cli -hf LiquidAI/LFM2.5-8B-A1B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9 GB) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF@Q8_0 -y` · 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-4bit -y` · 8bit (~9 GB, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-8bit -y`
+Other versions: Q8_0 (9.7 GB memory, 9.01 GB download) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF@Q8_0 -y` · 4bit (5.5 GB memory, 4.83 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-4bit -y` · 8bit (9.7 GB memory, 9 GB download, Mac only) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-8bit -y`
 
 ### Ollama
 
@@ -180,13 +180,13 @@ Other versions: Q8_0 (~9 GB) `lms get https://huggingface.co/LiquidAI/LFM2.5-8B-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LFM2.5 8B-A1B (Q4_K_M, needs ~5.58 GB, from [ollama.com](https://ollama.com/library/lfm2.5/tags))
+2. Run LFM2.5 8B-A1B (Q4_K_M, needs 5.9 GB memory, 5.16 GB download, from [ollama.com](https://ollama.com/library/lfm2.5/tags))
    
    ```sh
    ollama run lfm2.5:8b
    ```
 
-Other versions: Q8_0 (~10.66 GB) `ollama run lfm2.5:8b-a1b-q8_0`
+Other versions: Q8_0 (9.7 GB memory, 9.01 GB download) `ollama run lfm2.5:8b-a1b-q8_0`
 
 ### MLX (Mac)
 
@@ -199,7 +199,7 @@ Other versions: Q8_0 (~10.66 GB) `ollama run lfm2.5:8b-a1b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run LFM2.5 8B-A1B (4bit, needs ~4.8 GB, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-4bit/tree/2e92b640a63d47ad4dcf81a19a366b902356b3bc))
+2. Run LFM2.5 8B-A1B (4bit, needs 5.5 GB memory, 4.83 GB download, Mac only, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-4bit/tree/2e92b640a63d47ad4dcf81a19a366b902356b3bc))
    
    ```sh
    mlx_lm.chat --model LiquidAI/LFM2.5-8B-A1B-MLX-4bit
@@ -211,7 +211,7 @@ Other versions: Q8_0 (~10.66 GB) `ollama run lfm2.5:8b-a1b-q8_0`
    mlx_lm.server --model LiquidAI/LFM2.5-8B-A1B-MLX-4bit
    ```
 
-Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-8B-A1B-MLX-8bit`
+Other versions: 8bit (9.7 GB memory, 9 GB download, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-8B-A1B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
 

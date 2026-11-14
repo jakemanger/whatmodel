@@ -53,7 +53,7 @@ weighted average                          = 40.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Stable LM 2 Zephyr 1.6B (Q4_K_M, needs ~1 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF/tree/5d19103adec3d12b54ef2b98801ae9a306f3bdb3))
+2. Run Stable LM 2 Zephyr 1.6B (Q4_K_M, needs 2.6 GB memory, 1.03 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF/tree/5d19103adec3d12b54ef2b98801ae9a306f3bdb3))
    
    ```sh
    llama cli -hf afrideva/stablelm-2-zephyr-1_6b-GGUF:q4_k_m
@@ -65,13 +65,13 @@ weighted average                          = 40.3
    llama serve -hf afrideva/stablelm-2-zephyr-1_6b-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~1.8 GB) `llama cli -hf afrideva/stablelm-2-zephyr-1_6b-GGUF:q8_0`
+Other versions: Q8_0 (3.3 GB memory, 1.75 GB download) `llama cli -hf afrideva/stablelm-2-zephyr-1_6b-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Stable LM 2 Zephyr 1.6B (Q4_K_M, needs ~1 GB, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF/tree/5d19103adec3d12b54ef2b98801ae9a306f3bdb3))
+2. Run Stable LM 2 Zephyr 1.6B (Q4_K_M, needs 2.6 GB memory, 1.03 GB download, from [huggingface.co/afrideva](https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF/tree/5d19103adec3d12b54ef2b98801ae9a306f3bdb3))
    
    ```sh
    lms get https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF@q4_k_m -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~1.8 GB) `llama cli -hf afrideva/stablelm-2-zephyr-1_6b-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.8 GB) `lms get https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF@q8_0 -y` · 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/stablelm-2-zephyr-1_6b-4bit -y`
+Other versions: Q8_0 (3.3 GB memory, 1.75 GB download) `lms get https://huggingface.co/afrideva/stablelm-2-zephyr-1_6b-GGUF@q8_0 -y` · 4bit (2.8 GB memory, 1.22 GB download, Mac only) `lms get https://huggingface.co/mlx-community/stablelm-2-zephyr-1_6b-4bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~1.8 GB) `lms get https://huggingface.co/afrideva/stablelm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Stable LM 2 Zephyr 1.6B (Q4_0, needs ~0.983 GB, from [ollama.com](https://ollama.com/library/stablelm2/tags))
+2. Run Stable LM 2 Zephyr 1.6B (Q4_0, needs 2.5 GB memory, 0.98 GB download, from [ollama.com](https://ollama.com/library/stablelm2/tags))
    
    ```sh
    ollama run stablelm2:zephyr
@@ -107,7 +107,7 @@ Other versions: Q8_0 (~1.8 GB) `lms get https://huggingface.co/afrideva/stablelm
    pip install mlx-lm
    ```
 
-2. Run Stable LM 2 Zephyr 1.6B (4bit, needs ~1.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stablelm-2-zephyr-1_6b-4bit/tree/3fb50cde912c2a6469c2aed51efee67b728fb0e4))
+2. Run Stable LM 2 Zephyr 1.6B (4bit, needs 2.8 GB memory, 1.22 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stablelm-2-zephyr-1_6b-4bit/tree/3fb50cde912c2a6469c2aed51efee67b728fb0e4))
    
    ```sh
    mlx_lm.chat --model mlx-community/stablelm-2-zephyr-1_6b-4bit

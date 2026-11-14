@@ -116,7 +116,7 @@ api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [nov
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3-Coder 480B-A35B Instruct (ud-q2_k_xl, needs ~144.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF/tree/main))
+2. Run Qwen3-Coder 480B-A35B Instruct (ud-q2_k_xl, needs 191 GB memory, 180.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
@@ -128,13 +128,13 @@ api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [nov
    llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
    ```
 
-Other versions: ud-iq1_m (~72.5 GB) `llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M`
+Other versions: ud-iq1_m (159 GB memory, 149.7 GB download) `llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs ~270.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
+2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs 285 GB memory, 270.1 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit -y
@@ -142,7 +142,7 @@ Other versions: ud-iq1_m (~72.5 GB) `llama cli -hf unsloth/Qwen3-Coder-480B-A35B
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (~72.5 GB) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-IQ1_M -y` · 8bit (~510.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit -y`
+Other versions: ud-q2_k_xl (191 GB memory, 180.3 GB download) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (159 GB memory, 149.7 GB download) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-IQ1_M -y` · 8bit (537 GB memory, 510.2 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit -y`
 
 ### Ollama
 
@@ -153,7 +153,7 @@ Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Q
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3-Coder 480B-A35B Instruct (Q4_K_M, needs ~288.5 GB, from [ollama.com](https://ollama.com/library/qwen3-coder/tags))
+2. Run Qwen3-Coder 480B-A35B Instruct (Q4_K_M, needs 306 GB memory, 290.1 GB download, from [ollama.com](https://ollama.com/library/qwen3-coder/tags))
    
    ```sh
    ollama run qwen3-coder:480b
@@ -170,7 +170,7 @@ Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Q
    pip install mlx-lm
    ```
 
-2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs ~270.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
+2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs 285 GB memory, 270.1 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
@@ -182,7 +182,7 @@ Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Q
    mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
    ```
 
-Other versions: 8bit (~510.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit`
+Other versions: 8bit (537 GB memory, 510.2 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
 

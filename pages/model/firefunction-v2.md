@@ -56,7 +56,7 @@ weighted average                                   = 50.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run FireFunction v2 (70B) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
+2. Run FireFunction v2 (70B) (Q4_K_M, needs 45.8 GB memory, 42.5 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
    
    ```sh
    llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                                   = 50.8
    llama serve -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q8_0` · IQ2_XS (~21.1 GB) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS`
+Other versions: Q8_0 (78.3 GB memory, 75 GB download) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q8_0` · IQ2_XS (24.4 GB memory, 21.1 GB download) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run FireFunction v2 (70B) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
+2. Run FireFunction v2 (70B) (Q4_K_M, needs 45.8 GB memory, 42.5 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q8_0 -y` · IQ2_XS (~21.1 GB) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@IQ2_XS -y`
+Other versions: Q8_0 (78.3 GB memory, 75 GB download) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q8_0 -y` · IQ2_XS (24.4 GB memory, 21.1 GB download) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@IQ2_XS -y`
 
 ### Ollama
 
@@ -93,7 +93,7 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/MaziyarPanahi/fire
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run FireFunction v2 (70B) (Q4_0, needs ~40 GB, from [ollama.com](https://ollama.com/library/firefunction-v2/tags))
+2. Run FireFunction v2 (70B) (Q4_0, needs 43.3 GB memory, 40 GB download, from [ollama.com](https://ollama.com/library/firefunction-v2/tags))
    
    ```sh
    ollama run firefunction-v2:70b

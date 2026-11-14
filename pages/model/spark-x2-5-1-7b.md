@@ -133,7 +133,7 @@ weighted average                                   = 54.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Spark-X2.5 1.7B (Q4_K_M, needs ~1.11 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
+2. Run Spark-X2.5 1.7B (Q4_K_M, needs 1.9 GB memory, 1.11 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
    
    ```sh
    llama cli -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
@@ -149,7 +149,7 @@ weighted average                                   = 54.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Spark-X2.5 1.7B (Q4_K_M, needs ~1.11 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
+2. Run Spark-X2.5 1.7B (Q4_K_M, needs 1.9 GB memory, 1.11 GB download, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
    
    ```sh
    lms get https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF@Q4_K_M -y
@@ -166,7 +166,7 @@ weighted average                                   = 54.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Spark-X2.5 1.7B (BF16, needs ~3.4 GB, from [ollama.com](https://ollama.com/SparkLLM/Spark-X2.5-1.7B/tags))
+2. Run Spark-X2.5 1.7B (BF16, needs 4.2 GB memory, 3.42 GB download, from [ollama.com](https://ollama.com/SparkLLM/Spark-X2.5-1.7B/tags))
    
    ```sh
    ollama run SparkLLM/Spark-X2.5-1.7B

@@ -51,7 +51,7 @@ weighted average                                   = 45.1
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~146.36 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (fp16, needs 155 GB memory, 146.4 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve llava-hf/llava-onevision-qwen2-72b-ov-hf

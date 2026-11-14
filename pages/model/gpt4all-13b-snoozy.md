@@ -51,7 +51,7 @@ weighted average                                   = 29.1
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~52.06 GB, from [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy/tree/8e4f7bb712d579c820fdeb75ba81a8c48ad96b1e))
+1. Run it as published (fp32, needs 56.2 GB memory, 52.1 GB download, from [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy/tree/8e4f7bb712d579c820fdeb75ba81a8c48ad96b1e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='nomic-ai/gpt4all-13b-snoozy', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

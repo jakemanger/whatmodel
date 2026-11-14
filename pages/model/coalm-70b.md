@@ -57,7 +57,7 @@ weighted average                                   = 49.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run CoALM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
+2. Run CoALM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
    
    ```sh
    llama cli -hf mradermacher/CoALM-70B-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 49.6
    llama serve -hf mradermacher/CoALM-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `llama cli -hf mradermacher/CoALM-70B-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf mradermacher/CoALM-70B-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run CoALM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
+2. Run CoALM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
    
    ```sh
    lms get https://huggingface.co/mradermacher/CoALM-70B-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q2_K (~26.4 GB) `llama cli -hf mradermacher/CoALM-70B-GGUF:Q2_K`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/CoALM-70B-GGUF@Q2_K -y`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/mradermacher/CoALM-70B-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/CoA
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run CoALM-70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
+2. Run CoALM-70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/CoALM-70B-GGUF/tree/68f6e785bfb3291d5bb764080ca3ca418a085612))
    
    ```sh
    ollama run hf.co/mradermacher/CoALM-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/CoALM-70B-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/mradermacher/CoALM-70B-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-70B/tree/c2bcfc0df6785626dc767422c887c5fb2b1b1d68))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-70B/tree/c2bcfc0df6785626dc767422c887c5fb2b1b1d68))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

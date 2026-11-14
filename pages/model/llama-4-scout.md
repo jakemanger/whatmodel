@@ -146,7 +146,7 @@ api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepi
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs ~33.2 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
+2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs 46.5 GB memory, 44.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
@@ -162,7 +162,7 @@ api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepi
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs ~33.2 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
+2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs 46.5 GB memory, 44.1 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF@UD-Q2_K_XL -y
@@ -179,7 +179,7 @@ api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 4 Scout (109B-A17B) (Q4_K_M, needs ~65.9 GB, from [ollama.com](https://ollama.com/library/llama4/tags))
+2. Run Llama 4 Scout (109B-A17B) (Q4_K_M, needs 69.8 GB memory, 67.4 GB download, from [ollama.com](https://ollama.com/library/llama4/tags))
    
    ```sh
    ollama run llama4:scout

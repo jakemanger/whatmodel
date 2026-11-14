@@ -53,7 +53,7 @@ weighted average                        = 53.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
+2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
    
    ```sh
    llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                        = 53.3
    llama serve -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q2_K`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q8_0` · Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
+2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf mradermacher/Llama-PLLuM-70B-chat-2
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF@Q2_K -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF@Q8_0 -y` · Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/mradermacher/Llama
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
+2. Run Llama-PLLuM-70B-chat (2412) (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF/tree/bd7c56898bcf4d7258b8f09c89177fc5224d4220))
    
    ```sh
    ollama run hf.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/mradermacher/Llama-PLLuM-70B-chat-2412-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2412/tree/ca9a21daf1389fd3e2eace5723bddc24dec85be3))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2412/tree/ca9a21daf1389fd3e2eace5723bddc24dec85be3))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/Llama-PLLuM-70B-chat-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

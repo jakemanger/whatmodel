@@ -95,7 +95,7 @@ weighted average                                   = 54.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF/tree/dbf2f0bcf878662f61035a89542d10bc8fdca801))
+2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF/tree/dbf2f0bcf878662f61035a89542d10bc8fdca801))
    
    ```sh
    llama cli -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q4_K_M
@@ -107,13 +107,13 @@ weighted average                                   = 54.9
    llama serve -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.1 GB) `llama cli -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q8_0`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `llama cli -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF/tree/dbf2f0bcf878662f61035a89542d10bc8fdca801))
+2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF/tree/dbf2f0bcf878662f61035a89542d10bc8fdca801))
    
    ```sh
    lms get https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF@Q4_K_M -y
@@ -121,7 +121,7 @@ Other versions: Q8_0 (~25.1 GB) `llama cli -hf bartowski/mistralai_Magistral-Sma
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF@Q8_0 -y` · 4bit (~13.3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2506-MLX-4bit -y`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `lms get https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF@Q8_0 -y` · 4bit (15.5 GB memory, 13.3 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2506-MLX-4bit -y`
 
 ### Ollama
 
@@ -132,13 +132,13 @@ Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/bartowski/mistra
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs ~14.64 GB, from [ollama.com](https://ollama.com/library/magistral/tags))
+2. Run Magistral Small 1.0 (2506) (Q4_K_M, needs 16.5 GB memory, 14.3 GB download, from [ollama.com](https://ollama.com/library/magistral/tags))
    
    ```sh
    ollama run magistral:24b-small-2506-q4_K_M
    ```
 
-Other versions: Q8_0 (~28.78 GB) `ollama run magistral:24b-small-2506-q8_0`
+Other versions: Q8_0 (27.9 GB memory, 25.1 GB download) `ollama run magistral:24b-small-2506-q8_0`
 
 ### MLX (Mac)
 
@@ -151,7 +151,7 @@ Other versions: Q8_0 (~28.78 GB) `ollama run magistral:24b-small-2506-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Magistral Small 1.0 (2506) (4bit, needs ~13.3 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Magistral-Small-2506-MLX-4bit/tree/a687c32833447c00e782d3dab037ef7c00bad86a))
+2. Run Magistral Small 1.0 (2506) (4bit, needs 15.5 GB memory, 13.3 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Magistral-Small-2506-MLX-4bit/tree/a687c32833447c00e782d3dab037ef7c00bad86a))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Magistral-Small-2506-MLX-4bit

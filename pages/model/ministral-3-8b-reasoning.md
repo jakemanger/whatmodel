@@ -82,7 +82,7 @@ weighted average                                   = 53.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 7.8 GB memory, 6.06 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    llama cli -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
@@ -98,7 +98,7 @@ weighted average                                   = 53.9
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 7.8 GB memory, 6.06 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    lms get https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ weighted average                                   = 53.9
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx -y` · 8bit (~9 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx -y`
+Other versions: 4bit (6.5 GB memory, 4.78 GB download, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx -y` · 8bit (10.8 GB memory, 9.02 GB download, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx -y`
 
 ### Ollama
 
@@ -117,7 +117,7 @@ Other versions: 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/alexgus
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 7.8 GB memory, 6.06 GB download, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
    
    ```sh
    ollama run hf.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
@@ -134,7 +134,7 @@ Other versions: 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/alexgus
    pip install mlx-lm
    ```
 
-2. Run Ministral 3 8B Reasoning 2512 (4bit, needs ~4.8 GB, Mac only, from [huggingface.co/alexgusevski](https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx/tree/168bd5f8ab87901e1133aabd3080b9353776f768))
+2. Run Ministral 3 8B Reasoning 2512 (4bit, needs 6.5 GB memory, 4.78 GB download, Mac only, from [huggingface.co/alexgusevski](https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx/tree/168bd5f8ab87901e1133aabd3080b9353776f768))
    
    ```sh
    mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
@@ -146,7 +146,7 @@ Other versions: 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/alexgus
    mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
    ```
 
-Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx`
+Other versions: 8bit (10.8 GB memory, 9.02 GB download, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512)
 

@@ -58,7 +58,7 @@ weighted average                                   = 56.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+2. Run QED-Nano (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
    
    ```sh
    llama cli -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
@@ -74,7 +74,7 @@ weighted average                                   = 56.0
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+2. Run QED-Nano (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
    
    ```sh
    lms get https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF@q4_k_m -y
@@ -82,7 +82,7 @@ weighted average                                   = 56.0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/QED-Nano-8bit -y`
+Other versions: 8bit (6 GB memory, 4.27 GB download, Mac only) `lms get https://huggingface.co/mlx-community/QED-Nano-8bit -y`
 
 ### Ollama
 
@@ -93,7 +93,7 @@ Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+2. Run QED-Nano (Q4_K_M, needs 4.1 GB memory, 2.5 GB download, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
    
    ```sh
    ollama run hf.co/ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
@@ -110,7 +110,7 @@ Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    pip install mlx-lm
    ```
 
-2. Run QED-Nano (8bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QED-Nano-8bit/tree/980adf7e0d31d04205a5d593669bc1ce0606dc51))
+2. Run QED-Nano (8bit, needs 6 GB memory, 4.27 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QED-Nano-8bit/tree/980adf7e0d31d04205a5d593669bc1ce0606dc51))
    
    ```sh
    mlx_lm.chat --model mlx-community/QED-Nano-8bit
@@ -124,7 +124,7 @@ Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~8.04 GB, NVIDIA only, from [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano/tree/1016ddef8dd40552b97216ce34e3fece2fffa2bb))
+1. Run it as published (BF16, needs 9.9 GB memory, 8.04 GB download, NVIDIA only, from [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano/tree/1016ddef8dd40552b97216ce34e3fece2fffa2bb))
    
    ```sh
    vllm serve lm-provers/QED-Nano

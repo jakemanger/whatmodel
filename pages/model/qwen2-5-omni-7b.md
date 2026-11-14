@@ -62,7 +62,7 @@ weighted average                                   = 56.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs 7.3 GB memory, 6.23 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
    
    ```sh
    llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
@@ -74,13 +74,13 @@ weighted average                                   = 56.5
    llama serve -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
+Other versions: Q8_0 (10.8 GB memory, 9.65 GB download) `llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs 7.3 GB memory, 6.23 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
    
    ```sh
    lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q4_K_M -y
@@ -88,7 +88,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.8 GB memory, 9.65 GB download) `lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -99,13 +99,13 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/ggml-org/Qwen2.5-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs 7.3 GB memory, 6.23 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
    
    ```sh
    ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
+Other versions: Q8_0 (10.8 GB memory, 9.65 GB download) `ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
 

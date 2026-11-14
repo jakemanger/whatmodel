@@ -121,7 +121,7 @@ OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Zephyr 7B beta (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/e4714d14e9652aa9658fa937732cceadc63ac42e))
+2. Run Zephyr 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/e4714d14e9652aa9658fa937732cceadc63ac42e))
    
    ```sh
    llama cli -hf TheBloke/zephyr-7B-beta-GGUF:Q4_K_M
@@ -133,13 +133,13 @@ OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/
    llama serve -hf TheBloke/zephyr-7B-beta-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/zephyr-7B-beta-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf TheBloke/zephyr-7B-beta-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Zephyr 7B beta (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/e4714d14e9652aa9658fa937732cceadc63ac42e))
+2. Run Zephyr 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/e4714d14e9652aa9658fa937732cceadc63ac42e))
    
    ```sh
    lms get https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF@Q4_K_M -y
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/zephyr-7B-beta-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -158,13 +158,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/zephyr-7
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Zephyr 7B beta (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/zephyr/tags))
+2. Run Zephyr 7B beta (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [ollama.com](https://ollama.com/library/zephyr/tags))
    
    ```sh
    ollama run zephyr:7b-beta-q4_K_M
    ```
 
-Other versions: Q8_0 (~9.19 GB) `ollama run zephyr:7b-beta-q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run zephyr:7b-beta-q8_0`
 
 Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
 

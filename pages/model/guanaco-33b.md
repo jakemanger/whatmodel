@@ -64,7 +64,7 @@ weighted average                                   = 35.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~65.06 GB, from [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged/tree/b2e78a916582935b6616d184b22ea5e9e1eb4c34))
+1. Run it as published (BF16, needs 69.9 GB memory, 65.1 GB download, from [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged/tree/b2e78a916582935b6616d184b22ea5e9e1eb4c34))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='timdettmers/guanaco-33b-merged', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

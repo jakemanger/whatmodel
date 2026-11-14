@@ -93,7 +93,7 @@ weighted average                              = 45.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
+2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
    
    ```sh
    llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                              = 45.5
    llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~25.5 GB) `llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K`
+Other versions: Q2_K (28.3 GB memory, 25.5 GB download) `llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
+2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: Q2_K (~25.5 GB) `llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q2_K -y`
+Other versions: Q2_K (28.3 GB memory, 25.5 GB download) `lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -130,7 +130,7 @@ Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/Xwi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Xwin-LM 70B v0.1 (Q4_0, needs ~38.87 GB, from [ollama.com](https://ollama.com/library/xwinlm/tags))
+2. Run Xwin-LM 70B v0.1 (Q4_0, needs 42.3 GB memory, 38.9 GB download, from [ollama.com](https://ollama.com/library/xwinlm/tags))
    
    ```sh
    ollama run xwinlm:70b-v0.1

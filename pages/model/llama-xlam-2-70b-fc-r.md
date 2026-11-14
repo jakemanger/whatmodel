@@ -57,7 +57,7 @@ weighted average                                   = 65.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
+2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
    
    ```sh
    llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 65.7
    llama serve -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q2_K`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q8_0` · Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
+2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf mradermacher/Llama-xLAM-2-70b-fc-r-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF@Q2_K -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF@Q8_0 -y` · Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/mradermacher/Llama
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
+2. Run Llama-xLAM-2-70b-fc-r (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF/tree/4bb6f88c71fe7c6bb01eae68c4e8c0b7a161f260))
    
    ```sh
    ollama run hf.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q2_K`
+Other versions: Q2_K (29.2 GB memory, 26.4 GB download) `ollama run hf.co/mradermacher/Llama-xLAM-2-70b-fc-r-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-70b-fc-r/tree/783caf5981244ba32af9c272706891b8c791fd8a))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-70b-fc-r/tree/783caf5981244ba32af9c272706891b8c791fd8a))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/Llama-xLAM-2-70b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

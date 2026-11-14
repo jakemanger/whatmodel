@@ -58,7 +58,7 @@ weighted average                                   = 46.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run speechless-starcoder2-15b (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
+2. Run speechless-starcoder2-15b (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
    
    ```sh
    llama cli -hf mradermacher/speechless-starcoder2-15b-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 46.7
    llama serve -hf mradermacher/speechless-starcoder2-15b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/speechless-starcoder2-15b-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf mradermacher/speechless-starcoder2-15b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run speechless-starcoder2-15b (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
+2. Run speechless-starcoder2-15b (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
    
    ```sh
    lms get https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/speechless-starcoder2-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF@Q8_0 -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/speec
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run speechless-starcoder2-15b (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
+2. Run speechless-starcoder2-15b (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/speechless-starcoder2-15b-GGUF/tree/d5011706f4acc486371a1ab9328f0f87e0405a8e))
    
    ```sh
    ollama run hf.co/mradermacher/speechless-starcoder2-15b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/speechless-starcoder2-15b-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `ollama run hf.co/mradermacher/speechless-starcoder2-15b-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~31.92 GB, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-starcoder2-15b/tree/e9b5baf9011d7349783cc13d37779e577bf65303))
+1. Run it as published (fp16, needs 35 GB memory, 31.9 GB download, from [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-starcoder2-15b/tree/e9b5baf9011d7349783cc13d37779e577bf65303))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-starcoder2-15b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

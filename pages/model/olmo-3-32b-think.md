@@ -106,7 +106,7 @@ weighted average                                   = 57.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Olmo 3 32B Think (Q4_K_M, needs ~19.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF/tree/6721e7e5fca656d696d4a1a8cc654c2bbada294b))
+2. Run Olmo 3 32B Think (Q4_K_M, needs 22 GB memory, 19.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF/tree/6721e7e5fca656d696d4a1a8cc654c2bbada294b))
    
    ```sh
    llama cli -hf lmstudio-community/Olmo-3-32B-Think-GGUF:Q4_K_M
@@ -118,13 +118,13 @@ weighted average                                   = 57.6
    llama serve -hf lmstudio-community/Olmo-3-32B-Think-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/Olmo-3-32B-Think-GGUF:Q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `llama cli -hf lmstudio-community/Olmo-3-32B-Think-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Olmo 3 32B Think (Q4_K_M, needs ~19.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF/tree/6721e7e5fca656d696d4a1a8cc654c2bbada294b))
+2. Run Olmo 3 32B Think (Q4_K_M, needs 22 GB memory, 19.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF/tree/6721e7e5fca656d696d4a1a8cc654c2bbada294b))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF@Q4_K_M -y
@@ -132,7 +132,7 @@ Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/Olmo-3-32B-Thi
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF@Q8_0 -y` · 4bit (~18.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-4bit -y` · 8bit (~34.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-8bit -y`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-GGUF@Q8_0 -y` · 4bit (20.5 GB memory, 18.1 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-4bit -y` · 8bit (37.4 GB memory, 34.2 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-8bit -y`
 
 ### Ollama
 
@@ -143,13 +143,13 @@ Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Olmo 3 32B Think (Q4_K_M, needs ~19.82 GB, from [ollama.com](https://ollama.com/library/olmo-3/tags))
+2. Run Olmo 3 32B Think (Q4_K_M, needs 22 GB memory, 19.5 GB download, from [ollama.com](https://ollama.com/library/olmo-3/tags))
    
    ```sh
    ollama run olmo-3:32b-think-q4_K_M
    ```
 
-Other versions: Q8_0 (~39.14 GB) `ollama run olmo-3:32b-think-q8_0`
+Other versions: Q8_0 (37.5 GB memory, 34.3 GB download) `ollama run olmo-3:32b-think-q8_0`
 
 ### MLX (Mac)
 
@@ -162,7 +162,7 @@ Other versions: Q8_0 (~39.14 GB) `ollama run olmo-3:32b-think-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Olmo 3 32B Think (4bit, needs ~18.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-4bit/tree/2b79b0e93a4684d14988115d7d5b5e75802db942))
+2. Run Olmo 3 32B Think (4bit, needs 20.5 GB memory, 18.1 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3-32B-Think-MLX-4bit/tree/2b79b0e93a4684d14988115d7d5b5e75802db942))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Olmo-3-32B-Think-MLX-4bit
@@ -174,7 +174,7 @@ Other versions: Q8_0 (~39.14 GB) `ollama run olmo-3:32b-think-q8_0`
    mlx_lm.server --model lmstudio-community/Olmo-3-32B-Think-MLX-4bit
    ```
 
-Other versions: 8bit (~34.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Olmo-3-32B-Think-MLX-8bit`
+Other versions: 8bit (37.4 GB memory, 34.2 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Olmo-3-32B-Think-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-32B-Think)
 

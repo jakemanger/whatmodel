@@ -47,7 +47,7 @@ weighted average                              = 55.6
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/BraceZHY](https://huggingface.co/BraceZHY/Llama-3-8B-Instruct-RainbowPO/tree/abda6ceac7d41156f1af1593abad6161ed1f2f40))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/BraceZHY](https://huggingface.co/BraceZHY/Llama-3-8B-Instruct-RainbowPO/tree/abda6ceac7d41156f1af1593abad6161ed1f2f40))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BraceZHY/Llama-3-8B-Instruct-RainbowPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

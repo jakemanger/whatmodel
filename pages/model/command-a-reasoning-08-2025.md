@@ -92,7 +92,7 @@ weighted average                                   = 54.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command A Reasoning (08-2025) (Q4_K_M, needs ~67.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
+2. Run Command A Reasoning (08-2025) (Q4_K_M, needs 72 GB memory, 67.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
    
    ```sh
    llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q4_K_M
@@ -104,13 +104,13 @@ weighted average                                   = 54.1
    llama serve -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~118 GB) `llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q8_0` · IQ2_XXS (~30.5 GB) `llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS`
+Other versions: Q8_0 (125 GB memory, 118 GB download) `llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q8_0` · IQ2_XXS (33.5 GB memory, 30.5 GB download) `llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command A Reasoning (08-2025) (Q4_K_M, needs ~67.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
+2. Run Command A Reasoning (08-2025) (Q4_K_M, needs 72 GB memory, 67.1 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
    
    ```sh
    lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@Q4_K_M -y
@@ -118,7 +118,7 @@ Other versions: Q8_0 (~118 GB) `llama cli -hf bartowski/CohereLabs_command-a-rea
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~118 GB) `lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@Q8_0 -y` · IQ2_XXS (~30.5 GB) `lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@IQ2_XXS -y` · 8bit (~118 GB, Mac only) `lms get https://huggingface.co/mlx-community/command-a-reasoning-08-2025-8bit -y`
+Other versions: Q8_0 (125 GB memory, 118 GB download) `lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@Q8_0 -y` · IQ2_XXS (33.5 GB memory, 30.5 GB download) `lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@IQ2_XXS -y` · 8bit (125 GB memory, 118 GB download, Mac only) `lms get https://huggingface.co/mlx-community/command-a-reasoning-08-2025-8bit -y`
 
 ### Ollama
 
@@ -129,7 +129,7 @@ Other versions: Q8_0 (~118 GB) `lms get https://huggingface.co/bartowski/CohereL
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command A Reasoning (08-2025) (IQ2_XXS, needs ~30.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
+2. Run Command A Reasoning (08-2025) (IQ2_XXS, needs 33.5 GB memory, 30.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF/tree/f87d047e4df129d235c84bb86ab22409a0385db8))
    
    ```sh
    ollama run hf.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~118 GB) `lms get https://huggingface.co/bartowski/CohereL
    pip install mlx-lm
    ```
 
-2. Run Command A Reasoning (08-2025) (8bit, needs ~118 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/command-a-reasoning-08-2025-8bit/tree/ab4a70cf5857f4515443c086833fb520a7071dc1))
+2. Run Command A Reasoning (08-2025) (8bit, needs 125 GB memory, 118 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/command-a-reasoning-08-2025-8bit/tree/ab4a70cf5857f4515443c086833fb520a7071dc1))
    
    ```sh
    mlx_lm.chat --model mlx-community/command-a-reasoning-08-2025-8bit

@@ -67,7 +67,7 @@ weighted average                                   = 56.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+2. Run Sky-T1 32B Preview (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
    
    ```sh
    llama cli -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
@@ -83,7 +83,7 @@ weighted average                                   = 56.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+2. Run Sky-T1 32B Preview (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
    
    ```sh
    lms get https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF@Q4_K_M -y
@@ -91,7 +91,7 @@ weighted average                                   = 56.4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-8bit -y`
+Other versions: 4bit (20.8 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit -y` · 8bit (38 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-8bit -y`
 
 ### Ollama
 
@@ -102,7 +102,7 @@ Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+2. Run Sky-T1 32B Preview (Q4_K_M, needs 22.4 GB memory, 19.9 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
    
    ```sh
    ollama run hf.co/bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
@@ -119,7 +119,7 @@ Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    pip install mlx-lm
    ```
 
-2. Run Sky-T1 32B Preview (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit/tree/ab7b2707012796ab42815581df96c684a915712c))
+2. Run Sky-T1 32B Preview (4bit, needs 20.8 GB memory, 18.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit/tree/ab7b2707012796ab42815581df96c684a915712c))
    
    ```sh
    mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-4bit
@@ -131,7 +131,7 @@ Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    mlx_lm.server --model mlx-community/Sky-T1-32B-Preview-4bit
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-8bit`
+Other versions: 8bit (38 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-8bit`
 
 Model repository and documentation: [huggingface.co/NovaSky-AI](https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview)
 

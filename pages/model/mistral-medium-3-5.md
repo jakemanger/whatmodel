@@ -150,7 +150,7 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mistral Medium 3.5 (128B) (ud-q2_k_xl, needs ~38.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF/tree/main))
+2. Run Mistral Medium 3.5 (128B) (ud-q2_k_xl, needs 57.1 GB memory, 53.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
@@ -166,7 +166,7 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mistral Medium 3.5 (128B) (4bit, needs ~75.4 GB, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
+2. Run Mistral Medium 3.5 (128B) (4bit, needs 79 GB memory, 75.4 GB download, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
    
    ```sh
    lms get https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit -y
@@ -174,7 +174,7 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~38.9 GB) `lms get https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (57.1 GB memory, 53.5 GB download) `lms get https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF@UD-Q2_K_XL -y`
 
 ### Ollama
 
@@ -185,7 +185,7 @@ Other versions: ud-q2_k_xl (~38.9 GB) `lms get https://huggingface.co/unsloth/Mi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mistral Medium 3.5 (128B) (Q4_K_M, needs ~77.3 GB, from [ollama.com](https://ollama.com/library/mistral-medium-3.5/tags))
+2. Run Mistral Medium 3.5 (128B) (Q4_K_M, needs 83.8 GB memory, 80.2 GB download, from [ollama.com](https://ollama.com/library/mistral-medium-3.5/tags))
    
    ```sh
    ollama run mistral-medium-3.5:128b
@@ -202,7 +202,7 @@ Other versions: ud-q2_k_xl (~38.9 GB) `lms get https://huggingface.co/unsloth/Mi
    pip install mlx-lm
    ```
 
-2. Run Mistral Medium 3.5 (128B) (4bit, needs ~75.4 GB, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
+2. Run Mistral Medium 3.5 (128B) (4bit, needs 79 GB memory, 75.4 GB download, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
    
    ```sh
    mlx_lm.chat --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit

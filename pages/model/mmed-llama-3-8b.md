@@ -53,7 +53,7 @@ weighted average                        = 38.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MMed-Llama-3-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
+2. Run MMed-Llama-3-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
    
    ```sh
    llama cli -hf Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF:q4_k_m
@@ -69,7 +69,7 @@ weighted average                        = 38.3
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MMed-Llama-3-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
+2. Run MMed-Llama-3-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
    
    ```sh
    lms get https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF@q4_k_m -y
@@ -86,7 +86,7 @@ weighted average                        = 38.3
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MMed-Llama-3-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
+2. Run MMed-Llama-3-8B (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Axcel1](https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF/tree/c2d47efc357b59c72506e3ef7c59f87ea9df72bc))
    
    ```sh
    ollama run hf.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF:q4_k_m
@@ -94,7 +94,7 @@ weighted average                        = 38.3
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~32.12 GB, from [huggingface.co/Henrychur](https://huggingface.co/Henrychur/MMed-Llama-3-8B/tree/6c3057bb49ac499970eb2891daaef9b5c14f6943))
+1. Run it as published (fp32, needs 35.2 GB memory, 32.1 GB download, from [huggingface.co/Henrychur](https://huggingface.co/Henrychur/MMed-Llama-3-8B/tree/6c3057bb49ac499970eb2891daaef9b5c14f6943))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Henrychur/MMed-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

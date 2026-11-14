@@ -149,7 +149,7 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-4-mini 3.8B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF/tree/009f2b81869a0afd6b9aae23d29fa7b7ee2dcac9))
+2. Run Phi-4-mini 3.8B (Q4_K_M, needs 4.3 GB memory, 2.49 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF/tree/009f2b81869a0afd6b9aae23d29fa7b7ee2dcac9))
    
    ```sh
    llama cli -hf lmstudio-community/Phi-4-mini-instruct-GGUF:Q4_K_M
@@ -161,13 +161,13 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
    llama serve -hf lmstudio-community/Phi-4-mini-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.1 GB) `llama cli -hf lmstudio-community/Phi-4-mini-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5.9 GB memory, 4.08 GB download) `llama cli -hf lmstudio-community/Phi-4-mini-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-4-mini 3.8B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF/tree/009f2b81869a0afd6b9aae23d29fa7b7ee2dcac9))
+2. Run Phi-4-mini 3.8B (Q4_K_M, needs 4.3 GB memory, 2.49 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF/tree/009f2b81869a0afd6b9aae23d29fa7b7ee2dcac9))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF@Q4_K_M -y
@@ -175,7 +175,7 @@ Other versions: Q8_0 (~4.1 GB) `llama cli -hf lmstudio-community/Phi-4-mini-inst
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-instruct-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-instruct-8bit -y`
+Other versions: Q8_0 (5.9 GB memory, 4.08 GB download) `lms get https://huggingface.co/lmstudio-community/Phi-4-mini-instruct-GGUF@Q8_0 -y` · 4bit (4 GB memory, 2.16 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-instruct-4bit -y` · 8bit (5.9 GB memory, 4.08 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-instruct-8bit -y`
 
 ### Ollama
 
@@ -186,13 +186,13 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-4-mini 3.8B (Q4_K_M, needs ~2.8 GB, from [ollama.com](https://ollama.com/library/phi4-mini/tags))
+2. Run Phi-4-mini 3.8B (Q4_K_M, needs 4.3 GB memory, 2.49 GB download, from [ollama.com](https://ollama.com/library/phi4-mini/tags))
    
    ```sh
    ollama run phi4-mini:3.8b
    ```
 
-Other versions: Q8_0 (~5.11 GB) `ollama run phi4-mini:3.8b-q8_0`
+Other versions: Q8_0 (5.9 GB memory, 4.08 GB download) `ollama run phi4-mini:3.8b-q8_0`
 
 ### MLX (Mac)
 
@@ -205,7 +205,7 @@ Other versions: Q8_0 (~5.11 GB) `ollama run phi4-mini:3.8b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Phi-4-mini 3.8B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-4-mini-instruct-4bit/tree/ac1c269cb4222a4e136a3d09edad301056c1f36a))
+2. Run Phi-4-mini 3.8B (4bit, needs 4 GB memory, 2.16 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-4-mini-instruct-4bit/tree/ac1c269cb4222a4e136a3d09edad301056c1f36a))
    
    ```sh
    mlx_lm.chat --model mlx-community/Phi-4-mini-instruct-4bit
@@ -217,7 +217,7 @@ Other versions: Q8_0 (~5.11 GB) `ollama run phi4-mini:3.8b-q8_0`
    mlx_lm.server --model mlx-community/Phi-4-mini-instruct-4bit
    ```
 
-Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-instruct-8bit`
+Other versions: 8bit (5.9 GB memory, 4.08 GB download, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-instruct-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 

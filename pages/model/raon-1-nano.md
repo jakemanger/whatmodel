@@ -28,13 +28,13 @@ FACTS Grounding                     44.4%  maker        <a href="https://hugging
 
 ### Other ways to run it
 
-1. Run it as published (Q4_K_M, needs 2.1 GB, from [huggingface.co/KRAFTON](https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md))
+1. Run it as published (Q4_K_M, needs 3.7 GB memory, 2.08 GB download, from [huggingface.co/KRAFTON](https://huggingface.co/KRAFTON/Raon-1-nano/blob/fcf2d1d55e84e2f9fbe7b5d724dcfc4d861cfcee/README.md))
    
    ```sh
    git clone -b raon-1-nano-preview https://github.com/krafton-ai/llama.cpp && cd llama.cpp && cmake -B build && cmake --build build --config Release -j --target llama-cli llama-server && ./build/bin/llama-server -hf KRAFTON/Raon-1-nano-gguf:Q4_K_M --ctx-size 65536 --reasoning on --chat-template-kwargs '{"enable_thinking": true}'
    ```
 
-Other versions: 4bit (1.8 GB, Mac only) `pip install "mlx==0.32.4" "mlx-lm==0.32.2" "transformers==5.20.2" && python -m mlx_lm server --model KRAFTON/Raon-1-nano-mlx --trust-remote-code --host 127.0.0.1 --port 8000 --chat-template-args '{"enable_thinking": true}'` · BF16 (7.1 GB, NVIDIA only) `VLLM_USE_PRECOMPILED=1 uv pip install "vllm @ git+https://github.com/krafton-ai/vllm.git@raon-1-nano" && vllm serve KRAFTON/Raon-1-nano --host 127.0.0.1 --port 8000 --served-model-name Raon-1-nano --trust-remote-code --dtype bfloat16 --tensor-parallel-size 1 --pipeline-parallel-size 1 --max-model-len 262144 --gpu-memory-utilization 0.85 --reasoning-parser raon_1 --enable-auto-tool-choice --tool-call-parser raon_1 --default-chat-template-kwargs '{"enable_thinking": true, "truncate_history_thinking": false}'`
+Other versions: 4bit (3.4 GB memory, 1.81 GB download, Mac only) `pip install "mlx==0.32.4" "mlx-lm==0.32.2" "transformers==5.20.2" && python -m mlx_lm server --model KRAFTON/Raon-1-nano-mlx --trust-remote-code --host 127.0.0.1 --port 8000 --chat-template-args '{"enable_thinking": true}'` · BF16 (8.9 GB memory, 7.06 GB download, NVIDIA only) `VLLM_USE_PRECOMPILED=1 uv pip install "vllm @ git+https://github.com/krafton-ai/vllm.git@raon-1-nano" && vllm serve KRAFTON/Raon-1-nano --host 127.0.0.1 --port 8000 --served-model-name Raon-1-nano --trust-remote-code --dtype bfloat16 --tensor-parallel-size 1 --pipeline-parallel-size 1 --max-model-len 262144 --gpu-memory-utilization 0.85 --reasoning-parser raon_1 --enable-auto-tool-choice --tool-call-parser raon_1 --default-chat-template-kwargs '{"enable_thinking": true, "truncate_history_thinking": false}'`
 
 Model repository and documentation: [huggingface.co/KRAFTON](https://huggingface.co/KRAFTON/Raon-1-nano)
 

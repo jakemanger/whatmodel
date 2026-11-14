@@ -47,7 +47,7 @@ weighted average                                   = 59.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~811.71 GB, from [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B/tree/34d882bb8d18be73532804ab7a73f651e61a63a1))
+1. Run it as published (BF16, needs 854 GB memory, 811.7 GB download, from [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B/tree/34d882bb8d18be73532804ab7a73f651e61a63a1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-405B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -57,7 +57,7 @@ weighted average                                   = 53.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Olmo 3 7B Think DPO (Q4_K_M, needs ~4.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
+2. Run Olmo 3 7B Think DPO (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
    
    ```sh
    llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 53.0
    llama serve -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.8 GB) `llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Olmo 3 7B Think DPO (Q4_K_M, needs ~4.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
+2. Run Olmo 3 7B Think DPO (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~7.8 GB) `llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.8 GB) `lms get https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `lms get https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~7.8 GB) `lms get https://huggingface.co/mradermacher/Olmo
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Olmo 3 7B Think DPO (Q4_K_M, needs ~4.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
+2. Run Olmo 3 7B Think DPO (Q4_K_M, needs 6.2 GB memory, 4.47 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF/tree/79e9b589eb7099ef2219801963cd700ff8dacc68))
    
    ```sh
    ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.8 GB) `ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.76 GB download) `ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO)
 

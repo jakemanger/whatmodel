@@ -70,7 +70,7 @@ weighted average                              = 59.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
+2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
    
    ```sh
    llama cli -hf mradermacher/gemma-2-9b-it-SimPO-GGUF:Q4_K_M
@@ -82,13 +82,13 @@ weighted average                              = 59.7
    llama serve -hf mradermacher/gemma-2-9b-it-SimPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf mradermacher/gemma-2-9b-it-SimPO-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf mradermacher/gemma-2-9b-it-SimPO-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
+2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF@Q4_K_M -y
@@ -96,7 +96,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf mradermacher/gemma-2-9b-it-SimPO-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF@Q8_0 -y` · 8bit (~9.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/gemma-2-9b-it-SimPO-8bit -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF@Q8_0 -y` · 8bit (11.8 GB memory, 9.82 GB download, Mac only) `lms get https://huggingface.co/mlx-community/gemma-2-9b-it-SimPO-8bit -y`
 
 ### Ollama
 
@@ -107,13 +107,13 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/mradermacher/gemm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs ~5.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
+2. Run Gemma 2 9B IT SimPO (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gemma-2-9b-it-SimPO-GGUF/tree/7278e3d41ac5c1c22145a9e583ff74c13bc2ec77))
    
    ```sh
    ollama run hf.co/mradermacher/gemma-2-9b-it-SimPO-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/mradermacher/gemma-2-9b-it-SimPO-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/mradermacher/gemma-2-9b-it-SimPO-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/mradermacher/gemma-2-9b-it-SimP
    pip install mlx-lm
    ```
 
-2. Run Gemma 2 9B IT SimPO (8bit, needs ~9.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/gemma-2-9b-it-SimPO-8bit/tree/6d20564a1218f86b3b1731a5effb5aff30f0971f))
+2. Run Gemma 2 9B IT SimPO (8bit, needs 11.8 GB memory, 9.82 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/gemma-2-9b-it-SimPO-8bit/tree/6d20564a1218f86b3b1731a5effb5aff30f0971f))
    
    ```sh
    mlx_lm.chat --model mlx-community/gemma-2-9b-it-SimPO-8bit
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/mradermacher/gemma-2-9b-it-SimP
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-SimPO/tree/8c87091f412e3aa6f74f66bd86c57fb81cbc3fde))
+1. Run it as published (BF16, needs 20.9 GB memory, 18.5 GB download, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-SimPO/tree/8c87091f412e3aa6f74f66bd86c57fb81cbc3fde))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/gemma-2-9b-it-SimPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

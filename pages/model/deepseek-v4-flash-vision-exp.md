@@ -95,7 +95,7 @@ weighted average                                   = 73.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs ~156.03 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
+2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs 165 GB memory, 156 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
@@ -107,13 +107,13 @@ weighted average                                   = 73.1
    llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~97.76 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (104 GB memory, 97.8 GB download) `llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs ~156.03 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
+2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs 165 GB memory, 156 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q4_K_XL -y
@@ -121,11 +121,11 @@ Other versions: ud-q2_k_xl (~97.76 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~97.76 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (104 GB memory, 97.8 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q2_K_XL -y`
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~167.82 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380))
+1. Run it as published (fp8 + fp4 experts, needs 178 GB memory, 167.8 GB download, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380))
    
    ```sh
    sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK

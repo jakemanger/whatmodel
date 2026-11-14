@@ -79,7 +79,7 @@ weighted average                                   = -3.2
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~0.53 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-125m/tree/21def0189f5705e2521767faed922f1f15e7d7db))
+1. Run it as published (fp32, needs 2.1 GB memory, 0.53 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-125m/tree/21def0189f5705e2521767faed922f1f15e7d7db))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

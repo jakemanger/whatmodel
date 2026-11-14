@@ -93,7 +93,7 @@ weighted average                                   = -12.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run GPT-2 Small (124M) (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
+2. Run GPT-2 Small (124M) (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
    
    ```sh
    llama cli -hf mradermacher/gpt2-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = -12.8
    llama serve -hf mradermacher/gpt2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.2 GB) `llama cli -hf mradermacher/gpt2-GGUF:Q8_0`
+Other versions: Q8_0 (1.7 GB memory, 0.18 GB download) `llama cli -hf mradermacher/gpt2-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run GPT-2 Small (124M) (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
+2. Run GPT-2 Small (124M) (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
    
    ```sh
    lms get https://huggingface.co/mradermacher/gpt2-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~0.2 GB) `llama cli -hf mradermacher/gpt2-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.2 GB) `lms get https://huggingface.co/mradermacher/gpt2-GGUF@Q8_0 -y` · 4bit (~0.1 GB, Mac only) `lms get https://huggingface.co/jesusoctavioas/gpt2-mlx-4Bit -y` · 8bit (~0.1 GB, Mac only) `lms get https://huggingface.co/jesusoctavioas/gpt2-mlx-8Bit -y`
+Other versions: Q8_0 (1.7 GB memory, 0.18 GB download) `lms get https://huggingface.co/mradermacher/gpt2-GGUF@Q8_0 -y` · 4bit (1.6 GB memory, 0.08 GB download, Mac only) `lms get https://huggingface.co/jesusoctavioas/gpt2-mlx-4Bit -y` · 8bit (1.6 GB memory, 0.14 GB download, Mac only) `lms get https://huggingface.co/jesusoctavioas/gpt2-mlx-8Bit -y`
 
 ### Ollama
 
@@ -130,13 +130,13 @@ Other versions: Q8_0 (~0.2 GB) `lms get https://huggingface.co/mradermacher/gpt2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run GPT-2 Small (124M) (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
+2. Run GPT-2 Small (124M) (Q4_K_M, needs 1.6 GB memory, 0.11 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-GGUF/tree/0cda0c2b1459ccd32256c6ddde9d230934112c1c))
    
    ```sh
    ollama run hf.co/mradermacher/gpt2-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/gpt2-GGUF:Q8_0`
+Other versions: Q8_0 (1.7 GB memory, 0.18 GB download) `ollama run hf.co/mradermacher/gpt2-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/gpt2-GGUF:Q8_0`
    pip install mlx-lm
    ```
 
-2. Run GPT-2 Small (124M) (4bit, needs ~0.1 GB, Mac only, from [huggingface.co/jesusoctavioas](https://huggingface.co/jesusoctavioas/gpt2-mlx-4Bit/tree/46091c438e8c6f3443911dc2d56f81aae8ee72ff))
+2. Run GPT-2 Small (124M) (4bit, needs 1.6 GB memory, 0.08 GB download, Mac only, from [huggingface.co/jesusoctavioas](https://huggingface.co/jesusoctavioas/gpt2-mlx-4Bit/tree/46091c438e8c6f3443911dc2d56f81aae8ee72ff))
    
    ```sh
    mlx_lm.chat --model jesusoctavioas/gpt2-mlx-4Bit
@@ -161,11 +161,11 @@ Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/gpt2-GGUF:Q8_0`
    mlx_lm.server --model jesusoctavioas/gpt2-mlx-4Bit
    ```
 
-Other versions: 8bit (~0.1 GB, Mac only) `mlx_lm.chat --model jesusoctavioas/gpt2-mlx-8Bit`
+Other versions: 8bit (1.6 GB memory, 0.14 GB download, Mac only) `mlx_lm.chat --model jesusoctavioas/gpt2-mlx-8Bit`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~0.55 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2/tree/607a30d783dfa663caf39e06633721c8d4cfcd7e))
+1. Run it as published (fp32, needs 2.1 GB memory, 0.55 GB download, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2/tree/607a30d783dfa663caf39e06633721c8d4cfcd7e))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

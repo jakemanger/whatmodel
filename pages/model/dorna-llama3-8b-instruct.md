@@ -53,7 +53,7 @@ weighted average                          = 43.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
+2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
    
    ```sh
    llama cli -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 43.2
    llama serve -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
+2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
    
    ```sh
    lms get https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf QuantFactory/Dorna-Llama3-8B-Instr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/QuantFactory/Dorn
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
+2. Run Dorna-Llama3-8B-Instruct (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/QuantFactory](https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF/tree/ea3041897ba09780a4b4f709e4b13a0a0689a0c6))
    
    ```sh
    ollama run hf.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna-Llama3-8B-Instruct/tree/fb268bb51b950b4db5b7c82c1b73d9e803020eed))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna-Llama3-8B-Instruct/tree/fb268bb51b950b4db5b7c82c1b73d9e803020eed))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna-Llama3-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

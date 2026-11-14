@@ -87,7 +87,7 @@ weighted average                                   = 54.4
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~434 GB, NVIDIA only, from [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B/tree/d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b))
+1. Run it as published (fp8, needs 461 GB memory, 437.9 GB download, NVIDIA only, from [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B/tree/d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b))
    
    ```sh
    vllm serve ai-sage/GigaChat3.5-432B-A28B --tensor-parallel-size 8

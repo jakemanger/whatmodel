@@ -84,7 +84,7 @@ weighted average                                   = 40.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen-14B-Chat (Q4_K_M, needs ~9.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
+2. Run Qwen-14B-Chat (Q4_K_M, needs 11.4 GB memory, 9.45 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
    
    ```sh
    llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
@@ -96,13 +96,13 @@ weighted average                                   = 40.1
    llama serve -hf mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.1 GB) `llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen-14B-Chat (Q4_K_M, needs ~9.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
+2. Run Qwen-14B-Chat (Q4_K_M, needs 11.4 GB memory, 9.45 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF@Q4_K_M -y
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~15.1 GB) `llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~15.1 GB) `lms get https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF@Q8_0 -y`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `lms get https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -121,17 +121,17 @@ Other versions: Q8_0 (~15.1 GB) `lms get https://huggingface.co/mradermacher/Qwe
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen-14B-Chat (Q4_K_M, needs ~9.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
+2. Run Qwen-14B-Chat (Q4_K_M, needs 11.4 GB memory, 9.45 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF/tree/ec2501e3a5c01741788a74054113337bd75b02fd))
    
    ```sh
    ollama run hf.co/mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~15.1 GB) `ollama run hf.co/mradermacher/Qwen-14B-Chat-GGUF:Q8_0`
+Other versions: Q8_0 (17.4 GB memory, 15.1 GB download) `ollama run hf.co/mradermacher/Qwen-14B-Chat-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~28.33 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-14B-Chat/blob/cdaff792392504e679496a9f386acf3c1e4333a5/README.md))
+1. Run it as published (BF16, needs 31.2 GB memory, 28.3 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-14B-Chat/blob/cdaff792392504e679496a9f386acf3c1e4333a5/README.md))
    
    ```sh
    pip install torch transformers==4.32.0 accelerate tiktoken einops scipy transformers_stream_generator==0.0.4 && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer; t=AutoTokenizer.from_pretrained('Qwen/Qwen-14B-Chat', trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained('Qwen/Qwen-14B-Chat', device_map='auto', trust_remote_code=True).eval(); print(m.chat(t, '你好', history=None)[0])"

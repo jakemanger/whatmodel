@@ -44,7 +44,7 @@ weighted average                            = 53.1
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~144 GB, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md))
+1. Run it as published (BF16, needs 153 GB memory, 144.6 GB download, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md))
    
    ```sh
    vllm serve swiss-ai/Apertus-v1.5-70B --chat-template-content-format string --tensor-parallel-size 4 --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true

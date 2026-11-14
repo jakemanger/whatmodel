@@ -82,7 +82,7 @@ weighted average                              = 54.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
+2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
    
    ```sh
    llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
@@ -94,13 +94,13 @@ weighted average                              = 54.3
    llama serve -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
    ```
 
-Other versions: IQ2_XXS (~61.5 GB) `llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:IQ2_XXS`
+Other versions: IQ2_XXS (66.1 GB memory, 61.5 GB download) `llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:IQ2_XXS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
+2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs 151 GB memory, 142.5 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
    
    ```sh
    lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@Q4_K_M -y
@@ -108,11 +108,11 @@ Other versions: IQ2_XXS (~61.5 GB) `llama cli -hf bartowski/DeepSeek-V2-Chat-062
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_XXS (~61.5 GB) `lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@IQ2_XXS -y`
+Other versions: IQ2_XXS (66.1 GB memory, 61.5 GB download) `lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@IQ2_XXS -y`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~471.49 GB, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628/tree/5d09e272c2b223830f4e84359cd9dd047a5d7c78))
+1. Run it as published (BF16, needs 497 GB memory, 471.5 GB download, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628/tree/5d09e272c2b223830f4e84359cd9dd047a5d7c78))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-V2-Chat-0628', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -60,7 +60,7 @@ weighted average                                   = -12.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Pythia 70M (Q4_K_M, needs ~0.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
+2. Run Pythia 70M (Q4_K_M, needs 1.6 GB memory, 0.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
    
    ```sh
    llama cli -hf mradermacher/pythia-70m-GGUF:Q4_K_M
@@ -72,13 +72,13 @@ weighted average                                   = -12.8
    llama serve -hf mradermacher/pythia-70m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.1 GB) `llama cli -hf mradermacher/pythia-70m-GGUF:Q8_0`
+Other versions: Q8_0 (1.6 GB memory, 0.08 GB download) `llama cli -hf mradermacher/pythia-70m-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Pythia 70M (Q4_K_M, needs ~0.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
+2. Run Pythia 70M (Q4_K_M, needs 1.6 GB memory, 0.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
    
    ```sh
    lms get https://huggingface.co/mradermacher/pythia-70m-GGUF@Q4_K_M -y
@@ -86,7 +86,7 @@ Other versions: Q8_0 (~0.1 GB) `llama cli -hf mradermacher/pythia-70m-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~0.1 GB) `lms get https://huggingface.co/mradermacher/pythia-70m-GGUF@Q8_0 -y`
+Other versions: Q8_0 (1.6 GB memory, 0.08 GB download) `lms get https://huggingface.co/mradermacher/pythia-70m-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -97,17 +97,17 @@ Other versions: Q8_0 (~0.1 GB) `lms get https://huggingface.co/mradermacher/pyth
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Pythia 70M (Q4_K_M, needs ~0.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
+2. Run Pythia 70M (Q4_K_M, needs 1.6 GB memory, 0.05 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-70m-GGUF/tree/52d6f045404c9f93418df2a0144d20c9de34316b))
    
    ```sh
    ollama run hf.co/mradermacher/pythia-70m-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~0.1 GB) `ollama run hf.co/mradermacher/pythia-70m-GGUF:Q8_0`
+Other versions: Q8_0 (1.6 GB memory, 0.08 GB download) `ollama run hf.co/mradermacher/pythia-70m-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~0.17 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-70m/tree/a39f36b100fe8a5377810d56c3f4789b9c53ac42))
+1. Run it as published (fp16, needs 1.7 GB memory, 0.17 GB download, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-70m/tree/a39f36b100fe8a5377810d56c3f4789b9c53ac42))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-70m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

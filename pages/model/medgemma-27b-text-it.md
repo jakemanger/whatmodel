@@ -55,7 +55,7 @@ weighted average                          = 57.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MedGemma 27B Text IT (Q4_K_M, needs ~16.55 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
+2. Run MedGemma 27B Text IT (Q4_K_M, needs 18.8 GB memory, 16.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
    
    ```sh
    llama cli -hf unsloth/medgemma-27b-text-it-GGUF:Q4_K_M
@@ -71,7 +71,7 @@ weighted average                          = 57.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MedGemma 27B Text IT (Q4_K_M, needs ~16.55 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
+2. Run MedGemma 27B Text IT (Q4_K_M, needs 18.8 GB memory, 16.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
    
    ```sh
    lms get https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ weighted average                          = 57.4
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~16 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/medgemma-27b-text-it-MLX-4bit -y` · 8bit (~30.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/medgemma-27b-text-it-8bit -y`
+Other versions: 4bit (18.3 GB memory, 16 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/medgemma-27b-text-it-MLX-4bit -y` · 8bit (33.2 GB memory, 30.2 GB download, Mac only) `lms get https://huggingface.co/mlx-community/medgemma-27b-text-it-8bit -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: 4bit (~16 GB, Mac only) `lms get https://huggingface.co/lmstudio
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MedGemma 27B Text IT (Q4_K_M, needs ~16.55 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
+2. Run MedGemma 27B Text IT (Q4_K_M, needs 18.8 GB memory, 16.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d))
    
    ```sh
    ollama run hf.co/unsloth/medgemma-27b-text-it-GGUF:Q4_K_M
@@ -107,7 +107,7 @@ Other versions: 4bit (~16 GB, Mac only) `lms get https://huggingface.co/lmstudio
    pip install mlx-lm
    ```
 
-2. Run MedGemma 27B Text IT (4bit, needs ~16 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-27b-text-it-MLX-4bit/tree/cc2641962c2b72cac43fe54b936823d9ac76fce5))
+2. Run MedGemma 27B Text IT (4bit, needs 18.3 GB memory, 16 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/medgemma-27b-text-it-MLX-4bit/tree/cc2641962c2b72cac43fe54b936823d9ac76fce5))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/medgemma-27b-text-it-MLX-4bit
@@ -119,7 +119,7 @@ Other versions: 4bit (~16 GB, Mac only) `lms get https://huggingface.co/lmstudio
    mlx_lm.server --model lmstudio-community/medgemma-27b-text-it-MLX-4bit
    ```
 
-Other versions: 8bit (~30.2 GB, Mac only) `mlx_lm.chat --model mlx-community/medgemma-27b-text-it-8bit`
+Other versions: 8bit (33.2 GB memory, 30.2 GB download, Mac only) `mlx_lm.chat --model mlx-community/medgemma-27b-text-it-8bit`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-27b-text-it)
 

@@ -124,7 +124,7 @@ weighted average                                   = 43.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run SmolLM3 3B (gguf-q4_k_m, needs ~2.35 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
+2. Run SmolLM3 3B (gguf-q4_k_m, needs 3.1 GB memory, 1.92 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
    
    ```sh
    llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
@@ -136,13 +136,13 @@ weighted average                                   = 43.5
    llama serve -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~4.2 GB) `llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (4.5 GB memory, 3.28 GB download) `llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run SmolLM3 3B (gguf-q4_k_m, needs ~2.35 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
+2. Run SmolLM3 3B (gguf-q4_k_m, needs 3.1 GB memory, 1.92 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/ggml-org/SmolLM3-3B-GGUF@Q4_K_M -y
@@ -150,7 +150,7 @@ Other versions: gguf-q8_0 (~4.2 GB) `llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~4.2 GB) `lms get https://huggingface.co/ggml-org/SmolLM3-3B-GGUF@Q8_0 -y` · 4bit (~1.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-4bit -y` · 8bit (~3.3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-8bit -y`
+Other versions: gguf-q8_0 (4.5 GB memory, 3.28 GB download) `lms get https://huggingface.co/ggml-org/SmolLM3-3B-GGUF@Q8_0 -y` · 4bit (2.9 GB memory, 1.73 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-4bit -y` · 8bit (4.5 GB memory, 3.27 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-8bit -y`
 
 ### Ollama
 
@@ -161,13 +161,13 @@ Other versions: gguf-q8_0 (~4.2 GB) `lms get https://huggingface.co/ggml-org/Smo
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run SmolLM3 3B (gguf-q4_k_m, needs ~2.35 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
+2. Run SmolLM3 3B (gguf-q4_k_m, needs 3.1 GB memory, 1.92 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~4.2 GB) `ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (4.5 GB memory, 3.28 GB download) `ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -180,7 +180,7 @@ Other versions: gguf-q8_0 (~4.2 GB) `ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q
    pip install mlx-lm
    ```
 
-2. Run SmolLM3 3B (4bit, needs ~1.7 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-4bit/tree/2fd55434f0dcd0f22dada2a1fbf15b3fb8ef0842))
+2. Run SmolLM3 3B (4bit, needs 2.9 GB memory, 1.73 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-4bit/tree/2fd55434f0dcd0f22dada2a1fbf15b3fb8ef0842))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/SmolLM3-3B-MLX-4bit
@@ -192,7 +192,7 @@ Other versions: gguf-q8_0 (~4.2 GB) `ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q
    mlx_lm.server --model lmstudio-community/SmolLM3-3B-MLX-4bit
    ```
 
-Other versions: 8bit (~3.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community/SmolLM3-3B-MLX-8bit`
+Other versions: 8bit (4.5 GB memory, 3.27 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/SmolLM3-3B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 

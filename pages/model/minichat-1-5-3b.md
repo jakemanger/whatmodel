@@ -75,7 +75,7 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniChat-1.5-3B (Q4_K_M, needs ~1.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
+2. Run MiniChat-1.5-3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
    
    ```sh
    llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
@@ -87,13 +87,13 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
    llama serve -hf mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.21 GB download) `llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniChat-1.5-3B (Q4_K_M, needs ~1.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
+2. Run MiniChat-1.5-3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
    
    ```sh
    lms get https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF@Q4_K_M -y
@@ -101,7 +101,7 @@ Other versions: Q8_0 (~3.2 GB) `llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (4.9 GB memory, 3.21 GB download) `lms get https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -112,17 +112,17 @@ Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/Mini
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MiniChat-1.5-3B (Q4_K_M, needs ~1.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
+2. Run MiniChat-1.5-3B (Q4_K_M, needs 3.4 GB memory, 1.85 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF/tree/723247d94664ef8a66505b288bb1f73c1b4b3ae6))
    
    ```sh
    ollama run hf.co/mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.2 GB) `ollama run hf.co/mradermacher/MiniChat-1.5-3B-GGUF:Q8_0`
+Other versions: Q8_0 (4.9 GB memory, 3.21 GB download) `ollama run hf.co/mradermacher/MiniChat-1.5-3B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~6.04 GB, from [huggingface.co/GeneZC](https://huggingface.co/GeneZC/MiniChat-1.5-3B/tree/91b66d3602d63b23e89d8edb25cf650417fb45f1))
+1. Run it as published (BF16, needs 7.8 GB memory, 6.04 GB download, from [huggingface.co/GeneZC](https://huggingface.co/GeneZC/MiniChat-1.5-3B/tree/91b66d3602d63b23e89d8edb25cf650417fb45f1))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='GeneZC/MiniChat-1.5-3B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

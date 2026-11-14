@@ -112,7 +112,7 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniMax-M2.5 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
+2. Run MiniMax-M2.5 (ud-q4_k_xl, needs 139 GB memory, 131.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
@@ -124,13 +124,13 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
    llama serve -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (91.7 GB memory, 85.9 GB download) `llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniMax-M2.5 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
+2. Run MiniMax-M2.5 (ud-q4_k_xl, needs 139 GB memory, 131.3 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q4_K_XL -y
@@ -138,7 +138,7 @@ Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2.5-GGUF:U
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q2_K_XL -y` · 4bit (~128.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit -y` · 8bit (~243 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-8bit -y`
+Other versions: ud-q2_k_xl (91.7 GB memory, 85.9 GB download) `lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q2_K_XL -y` · 4bit (137 GB memory, 128.7 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit -y` · 8bit (257 GB memory, 243 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-8bit -y`
 
 ### MLX (Mac)
 
@@ -151,7 +151,7 @@ Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/Mi
    pip install mlx-lm
    ```
 
-2. Run MiniMax-M2.5 (4bit, needs ~128.7 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit/tree/9af822e97aaa5d3d8f9a635ec2b967b0c0a9a09f))
+2. Run MiniMax-M2.5 (4bit, needs 137 GB memory, 128.7 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit/tree/9af822e97aaa5d3d8f9a635ec2b967b0c0a9a09f))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-4bit
@@ -163,7 +163,7 @@ Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/Mi
    mlx_lm.server --model lmstudio-community/MiniMax-M2.5-MLX-4bit
    ```
 
-Other versions: 8bit (~243 GB, Mac only) `mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-8bit`
+Other versions: 8bit (257 GB memory, 243 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.5)
 

@@ -79,7 +79,7 @@ weighted average                              = 47.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Tulu 2 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
+2. Run Tulu 2 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
    
    ```sh
    llama cli -hf mradermacher/tulu-2-70b-GGUF:Q4_K_M
@@ -91,13 +91,13 @@ weighted average                              = 47.1
    llama serve -hf mradermacher/tulu-2-70b-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~25.5 GB) `llama cli -hf mradermacher/tulu-2-70b-GGUF:Q2_K`
+Other versions: Q2_K (28.3 GB memory, 25.5 GB download) `llama cli -hf mradermacher/tulu-2-70b-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Tulu 2 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
+2. Run Tulu 2 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
    
    ```sh
    lms get https://huggingface.co/mradermacher/tulu-2-70b-GGUF@Q4_K_M -y
@@ -105,7 +105,7 @@ Other versions: Q2_K (~25.5 GB) `llama cli -hf mradermacher/tulu-2-70b-GGUF:Q2_K
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/tulu-2-70b-GGUF@Q2_K -y`
+Other versions: Q2_K (28.3 GB memory, 25.5 GB download) `lms get https://huggingface.co/mradermacher/tulu-2-70b-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -116,17 +116,17 @@ Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/tul
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Tulu 2 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
+2. Run Tulu 2 70B (Q4_K_M, needs 45 GB memory, 41.4 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/tulu-2-70b-GGUF/tree/0cdc0e86f122f879a9e90439e0711158d18ea7c4))
    
    ```sh
    ollama run hf.co/mradermacher/tulu-2-70b-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~25.5 GB) `ollama run hf.co/mradermacher/tulu-2-70b-GGUF:Q2_K`
+Other versions: Q2_K (28.3 GB memory, 25.5 GB download) `ollama run hf.co/mradermacher/tulu-2-70b-GGUF:Q2_K`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~137.95 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-70b/tree/be647298930cfc399d984fb36b84261de8bd9ce6))
+1. Run it as published (BF16, needs 146 GB memory, 138 GB download, from [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-70b/tree/be647298930cfc399d984fb36b84261de8bd9ce6))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

@@ -54,7 +54,7 @@ weighted average                                   = 36.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Eurus-2-7B-SFT (Q4_K_M, needs ~4.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
+2. Run Eurus-2-7B-SFT (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
    
    ```sh
    llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
@@ -66,13 +66,13 @@ weighted average                                   = 36.1
    llama serve -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Eurus-2-7B-SFT (Q4_K_M, needs ~4.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
+2. Run Eurus-2-7B-SFT (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `lms get https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -91,13 +91,13 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/mradermacher/Euru
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Eurus-2-7B-SFT (Q4_K_M, needs ~4.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
+2. Run Eurus-2-7B-SFT (Q4_K_M, needs 6.4 GB memory, 4.68 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF/tree/5cbd9868d3e16c86db4a3ddcbeeec9b1a42dd052))
    
    ```sh
    ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0`
+Other versions: Q8_0 (10 GB memory, 8.1 GB download) `ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT)
 

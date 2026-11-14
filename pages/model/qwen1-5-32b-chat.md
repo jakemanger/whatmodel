@@ -75,7 +75,7 @@ weighted average                                   = 45.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen1.5 32B Chat (Q4_K_M, needs ~19.7 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/tree/6f7c0664ab4a89b5d5c7bf14b36b66b2ceaf41d4))
+2. Run Qwen1.5 32B Chat (Q4_K_M, needs 22.2 GB memory, 19.7 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/tree/6f7c0664ab4a89b5d5c7bf14b36b66b2ceaf41d4))
    
    ```sh
    llama cli -hf Qwen/Qwen1.5-32B-Chat-GGUF:q4_k_m
@@ -87,13 +87,13 @@ weighted average                                   = 45.4
    llama serve -hf Qwen/Qwen1.5-32B-Chat-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~34.6 GB) `llama cli -hf Qwen/Qwen1.5-32B-Chat-GGUF:q8_0`
+Other versions: Q8_0 (37.8 GB memory, 34.6 GB download) `llama cli -hf Qwen/Qwen1.5-32B-Chat-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen1.5 32B Chat (Q4_K_M, needs ~19.7 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/tree/6f7c0664ab4a89b5d5c7bf14b36b66b2ceaf41d4))
+2. Run Qwen1.5 32B Chat (Q4_K_M, needs 22.2 GB memory, 19.7 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/tree/6f7c0664ab4a89b5d5c7bf14b36b66b2ceaf41d4))
    
    ```sh
    lms get https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF@q4_k_m -y
@@ -101,7 +101,7 @@ Other versions: Q8_0 (~34.6 GB) `llama cli -hf Qwen/Qwen1.5-32B-Chat-GGUF:q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.6 GB) `lms get https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF@q8_0 -y`
+Other versions: Q8_0 (37.8 GB memory, 34.6 GB download) `lms get https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF@q8_0 -y`
 
 ### Ollama
 
@@ -112,13 +112,13 @@ Other versions: Q8_0 (~34.6 GB) `lms get https://huggingface.co/Qwen/Qwen1.5-32B
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen1.5 32B Chat (Q4_0, needs ~20.01 GB, from [ollama.com](https://ollama.com/library/qwen/tags))
+2. Run Qwen1.5 32B Chat (Q4_0, needs 20.9 GB memory, 18.5 GB download, from [ollama.com](https://ollama.com/library/qwen/tags))
    
    ```sh
    ollama run qwen:32b-chat
    ```
 
-Other versions: Q8_0 (~39.51 GB) `ollama run qwen:32b-chat-v1.5-q8_0`
+Other versions: Q8_0 (37.8 GB memory, 34.6 GB download) `ollama run qwen:32b-chat-v1.5-q8_0`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)
 

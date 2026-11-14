@@ -91,7 +91,7 @@ weighted average                                   = 43.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF/tree/223c8e24dec0f863b6abe4c89bf20f6941b805e2))
+2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs 6.6 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF/tree/223c8e24dec0f863b6abe4c89bf20f6941b805e2))
    
    ```sh
    llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q4_K_M
@@ -103,13 +103,13 @@ weighted average                                   = 43.5
    llama serve -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.2 GB memory, 8.54 GB download) `llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF/tree/223c8e24dec0f863b6abe4c89bf20f6941b805e2))
+2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs 6.6 GB memory, 4.92 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF/tree/223c8e24dec0f863b6abe4c89bf20f6941b805e2))
    
    ```sh
    lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF@Q4_K_M -y
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF@Q8_0 -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit -y`
+Other versions: Q8_0 (10.2 GB memory, 8.54 GB download) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF@Q8_0 -y` · 8bit (10.2 GB memory, 8.53 GB download, Mac only) `lms get https://huggingface.co/Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit -y`
 
 ### Ollama
 
@@ -128,13 +128,13 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Hermes-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs ~5.32 GB, from [ollama.com](https://ollama.com/library/hermes3/tags))
+2. Run Hermes 3 Llama 3.1 8B (Q4_K_M, needs 6.6 GB memory, 4.92 GB download, from [ollama.com](https://ollama.com/library/hermes3/tags))
    
    ```sh
    ollama run hermes3:8b-llama3.1-q4_K_M
    ```
 
-Other versions: Q8_0 (~10.14 GB) `ollama run hermes3:8b-llama3.1-q8_0`
+Other versions: Q8_0 (10.2 GB memory, 8.54 GB download) `ollama run hermes3:8b-llama3.1-q8_0`
 
 ### MLX (Mac)
 
@@ -147,7 +147,7 @@ Other versions: Q8_0 (~10.14 GB) `ollama run hermes3:8b-llama3.1-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Hermes 3 Llama 3.1 8B (8bit, needs ~8.5 GB, Mac only, from [huggingface.co/Shaund91](https://huggingface.co/Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit/tree/835711676d37a6e55ab19b22f60bf7ebb6e778c9))
+2. Run Hermes 3 Llama 3.1 8B (8bit, needs 10.2 GB memory, 8.53 GB download, Mac only, from [huggingface.co/Shaund91](https://huggingface.co/Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit/tree/835711676d37a6e55ab19b22f60bf7ebb6e778c9))
    
    ```sh
    mlx_lm.chat --model Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit

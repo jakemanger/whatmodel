@@ -57,7 +57,7 @@ weighted average                                 = 46.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs ~5.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
+2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs 6.9 GB memory, 5.13 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
    
    ```sh
    llama cli -hf bartowski/openchat-3.5-0106-gemma-GGUF:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                 = 46.7
    llama serve -hf bartowski/openchat-3.5-0106-gemma-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.1 GB) `llama cli -hf bartowski/openchat-3.5-0106-gemma-GGUF:Q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `llama cli -hf bartowski/openchat-3.5-0106-gemma-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs ~5.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
+2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs 6.9 GB memory, 5.13 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
    
    ```sh
    lms get https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~9.1 GB) `llama cli -hf bartowski/openchat-3.5-0106-gemma-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `lms get https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -94,17 +94,17 @@ Other versions: Q8_0 (~9.1 GB) `lms get https://huggingface.co/bartowski/opencha
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs ~5.1 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
+2. Run OpenChat 3.5 0106 Gemma (Q4_K_M, needs 6.9 GB memory, 5.13 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/openchat-3.5-0106-gemma-GGUF/tree/c4495f95f5712fe6e96039da509933b6285762d7))
    
    ```sh
    ollama run hf.co/bartowski/openchat-3.5-0106-gemma-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.1 GB) `ollama run hf.co/bartowski/openchat-3.5-0106-gemma-GGUF:Q8_0`
+Other versions: Q8_0 (11 GB memory, 9.08 GB download) `ollama run hf.co/bartowski/openchat-3.5-0106-gemma-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.08 GB, from [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106-gemma/tree/5316738a9049ab32e3b9a49eb0e9dfb49de8a725))
+1. Run it as published (BF16, needs 19.5 GB memory, 17.1 GB download, from [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106-gemma/tree/5316738a9049ab32e3b9a49eb0e9dfb49de8a725))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openchat/openchat-3.5-0106-gemma', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

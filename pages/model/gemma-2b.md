@@ -94,7 +94,7 @@ weighted average                                   = 28.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Gemma 2B IT (Q4_K_M, needs ~1.5 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Gemma-2b-it-GGUF/tree/5edbf96ca7d2a2cd7b4b83fa8cb1d35ed02a94b8))
+2. Run Gemma 2B IT (Q4_K_M, needs 3.1 GB memory, 1.5 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/Gemma-2b-it-GGUF/tree/5edbf96ca7d2a2cd7b4b83fa8cb1d35ed02a94b8))
    
    ```sh
    llama cli -hf second-state/Gemma-2b-it-GGUF:Q4_K_M
@@ -106,13 +106,13 @@ weighted average                                   = 28.6
    llama serve -hf second-state/Gemma-2b-it-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.7 GB) `llama cli -hf second-state/Gemma-2b-it-GGUF:Q8_0`
+Other versions: Q8_0 (4.3 GB memory, 2.67 GB download) `llama cli -hf second-state/Gemma-2b-it-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Gemma 2B IT (Q4_K_M, needs ~1.5 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Gemma-2b-it-GGUF/tree/5edbf96ca7d2a2cd7b4b83fa8cb1d35ed02a94b8))
+2. Run Gemma 2B IT (Q4_K_M, needs 3.1 GB memory, 1.5 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/Gemma-2b-it-GGUF/tree/5edbf96ca7d2a2cd7b4b83fa8cb1d35ed02a94b8))
    
    ```sh
    lms get https://huggingface.co/second-state/Gemma-2b-it-GGUF@Q4_K_M -y
@@ -120,7 +120,7 @@ Other versions: Q8_0 (~2.7 GB) `llama cli -hf second-state/Gemma-2b-it-GGUF:Q8_0
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/second-state/Gemma-2b-it-GGUF@Q8_0 -y`
+Other versions: Q8_0 (4.3 GB memory, 2.67 GB download) `lms get https://huggingface.co/second-state/Gemma-2b-it-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -131,13 +131,13 @@ Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/second-state/Gemm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Gemma 2B IT (Q4_K_M, needs ~2.01 GB, from [ollama.com](https://ollama.com/library/gemma/tags))
+2. Run Gemma 2B IT (Q4_K_M, needs 3.3 GB memory, 1.76 GB download, from [ollama.com](https://ollama.com/library/gemma/tags))
    
    ```sh
    ollama run gemma:2b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~3.51 GB) `ollama run gemma:2b-instruct-q8_0`
+Other versions: Q8_0 (4.3 GB memory, 2.67 GB download) `ollama run gemma:2b-instruct-q8_0`
 
 Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-2b-it)
 

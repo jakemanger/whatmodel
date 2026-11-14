@@ -65,7 +65,7 @@ weighted average                              = 43.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
    
    ```sh
    llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
@@ -77,13 +77,13 @@ weighted average                              = 43.2
    llama serve -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
    
    ```sh
    lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q4_K_M -y
@@ -91,7 +91,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-G
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -102,17 +102,17 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/SILMA-9
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
    
    ```sh
    ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/silma-ai](https://huggingface.co/silma-ai/SILMA-9B-Instruct-v1.0/tree/d8f4d2b11a71e10f4231d38f0a343ee49715f392))
+1. Run it as published (BF16, needs 20.9 GB memory, 18.5 GB download, from [huggingface.co/silma-ai](https://huggingface.co/silma-ai/SILMA-9B-Instruct-v1.0/tree/d8f4d2b11a71e10f4231d38f0a343ee49715f392))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='silma-ai/SILMA-9B-Instruct-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

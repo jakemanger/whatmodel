@@ -89,7 +89,7 @@ weighted average                                   = 34.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Stable Code 3B (Q4_K_M, needs ~1.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stable-code-3b-GGUF/tree/53430e2b42177f12f2fe8c844cd47211756ca072))
+2. Run Stable Code 3B (Q4_K_M, needs 4.8 GB memory, 1.71 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stable-code-3b-GGUF/tree/53430e2b42177f12f2fe8c844cd47211756ca072))
    
    ```sh
    llama cli -hf TheBloke/stable-code-3b-GGUF:Q4_K_M
@@ -101,13 +101,13 @@ weighted average                                   = 34.5
    llama serve -hf TheBloke/stable-code-3b-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/stable-code-3b-GGUF:Q8_0`
+Other versions: Q8_0 (6.1 GB memory, 2.97 GB download) `llama cli -hf TheBloke/stable-code-3b-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Stable Code 3B (Q4_K_M, needs ~1.7 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stable-code-3b-GGUF/tree/53430e2b42177f12f2fe8c844cd47211756ca072))
+2. Run Stable Code 3B (Q4_K_M, needs 4.8 GB memory, 1.71 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/stable-code-3b-GGUF/tree/53430e2b42177f12f2fe8c844cd47211756ca072))
    
    ```sh
    lms get https://huggingface.co/TheBloke/stable-code-3b-GGUF@Q4_K_M -y
@@ -115,7 +115,7 @@ Other versions: Q8_0 (~3 GB) `llama cli -hf TheBloke/stable-code-3b-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/stable-code-3b-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/stable-code-3b-4bit -y`
+Other versions: Q8_0 (6.1 GB memory, 2.97 GB download) `lms get https://huggingface.co/TheBloke/stable-code-3b-GGUF@Q8_0 -y` · 4bit (4.9 GB memory, 1.76 GB download, Mac only) `lms get https://huggingface.co/mlx-community/stable-code-3b-4bit -y`
 
 ### Ollama
 
@@ -126,13 +126,13 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/stable-cod
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Stable Code 3B (Q4_K_M, needs ~1.7 GB, from [ollama.com](https://ollama.com/library/stable-code/tags))
+2. Run Stable Code 3B (Q4_K_M, needs 4.8 GB memory, 1.71 GB download, from [ollama.com](https://ollama.com/library/stable-code/tags))
    
    ```sh
    ollama run stable-code:3b-code-q4_K_M
    ```
 
-Other versions: Q8_0 (~3 GB) `ollama run stable-code:3b-code-q8_0`
+Other versions: Q8_0 (6.1 GB memory, 2.97 GB download) `ollama run stable-code:3b-code-q8_0`
 
 ### MLX (Mac)
 
@@ -145,7 +145,7 @@ Other versions: Q8_0 (~3 GB) `ollama run stable-code:3b-code-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Stable Code 3B (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stable-code-3b-4bit/tree/66066766c04ab275eb9b55f4b11f99a1506e6a12))
+2. Run Stable Code 3B (4bit, needs 4.9 GB memory, 1.76 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stable-code-3b-4bit/tree/66066766c04ab275eb9b55f4b11f99a1506e6a12))
    
    ```sh
    mlx_lm.chat --model mlx-community/stable-code-3b-4bit

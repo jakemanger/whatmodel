@@ -78,17 +78,17 @@ weighted average                                   = 32.6
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarCoderBase 7B (Q4_0, needs ~4.3 GB, from [ollama.com](https://ollama.com/library/starcoder/tags))
+2. Run StarCoderBase 7B (Q4_0, needs 6 GB memory, 4.3 GB download, from [ollama.com](https://ollama.com/library/starcoder/tags))
    
    ```sh
    ollama run starcoder:7b
    ```
 
-Other versions: Q4_0 (~4.3 GB) `ollama run starcoder:7b`
+Other versions: Q4_0 (6 GB memory, 4.3 GB download) `ollama run starcoder:7b`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~30.11 GB, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-7b/tree/94e20e98e189b1d6dccd56e932667bd85cc7c393))
+1. Run it as published (fp32, needs 33.1 GB memory, 30.1 GB download, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-7b/tree/94e20e98e189b1d6dccd56e932667bd85cc7c393))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-7b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"

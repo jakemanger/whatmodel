@@ -93,7 +93,7 @@ weighted average                                   = 50.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs ~8.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
+2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs 9 GB memory, 8.17 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
    
    ```sh
    llama cli -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
@@ -105,13 +105,13 @@ weighted average                                   = 50.2
    llama serve -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~12.9 GB) `llama cli -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (13.7 GB memory, 12.9 GB download) `llama cli -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs ~8.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
+2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs 9 GB memory, 8.17 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
    
    ```sh
    lms get https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ Other versions: Q8_0 (~12.9 GB) `llama cli -hf bartowski/Mellum2-12B-A2.5B-Instr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF@Q8_0 -y` · 4bit (~6.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-4bit -y` · 8bit (~12.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-8bit -y`
+Other versions: Q8_0 (13.7 GB memory, 12.9 GB download) `lms get https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF@Q8_0 -y` · 4bit (7.7 GB memory, 6.84 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-4bit -y` · 8bit (13.7 GB memory, 12.9 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-8bit -y`
 
 ### Ollama
 
@@ -130,13 +130,13 @@ Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/bartowski/Mellum
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs ~8.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
+2. Run Mellum2 12B-A2.5B Instruct (Q4_K_M, needs 9 GB memory, 8.17 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF/tree/978d3b633817824470ef48a53141e3dccf1863f0))
    
    ```sh
    ollama run hf.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (13.7 GB memory, 12.9 GB download) `ollama run hf.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -149,7 +149,7 @@ Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/bartowski/Mellum2-12B-A2.5B-In
    pip install mlx-lm
    ```
 
-2. Run Mellum2 12B-A2.5B Instruct (4bit, needs ~6.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-4bit/tree/714f4fdf47a46832e41cc80f446eb56541666ee9))
+2. Run Mellum2 12B-A2.5B Instruct (4bit, needs 7.7 GB memory, 6.84 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-4bit/tree/714f4fdf47a46832e41cc80f446eb56541666ee9))
    
    ```sh
    mlx_lm.chat --model mlx-community/Mellum2-12B-A2.5B-Instruct-4bit
@@ -161,11 +161,11 @@ Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/bartowski/Mellum2-12B-A2.5B-In
    mlx_lm.server --model mlx-community/Mellum2-12B-A2.5B-Instruct-4bit
    ```
 
-Other versions: 8bit (~12.9 GB, Mac only) `mlx_lm.chat --model mlx-community/Mellum2-12B-A2.5B-Instruct-8bit`
+Other versions: 8bit (13.7 GB memory, 12.9 GB download, Mac only) `mlx_lm.chat --model mlx-community/Mellum2-12B-A2.5B-Instruct-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~24.3 GB, NVIDIA only, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/tree/273d9c1c6882ac8e1562e5b7e043857d35a787b6))
+1. Run it as published (BF16, needs 25.1 GB memory, 24.3 GB download, NVIDIA only, from [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/tree/273d9c1c6882ac8e1562e5b7e043857d35a787b6))
    
    ```sh
    vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct

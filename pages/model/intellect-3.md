@@ -96,7 +96,7 @@ weighted average                                   = 63.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run INTELLECT-3 (Q4_K_M, needs ~71.36 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+2. Run INTELLECT-3 (Q4_K_M, needs 76.5 GB memory, 71.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
    
    ```sh
    llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
@@ -108,13 +108,13 @@ weighted average                                   = 63.9
    llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~44.71 GB) `llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K`
+Other versions: Q2_K (48.4 GB memory, 44.7 GB download) `llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run INTELLECT-3 (Q4_K_M, needs ~71.36 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+2. Run INTELLECT-3 (Q4_K_M, needs 76.5 GB memory, 71.4 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
    
    ```sh
    lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q4_K_M -y
@@ -122,7 +122,7 @@ Other versions: Q2_K (~44.71 GB) `llama cli -hf bartowski/PrimeIntellect_INTELLE
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q2_K -y` · 4bit (~60.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-4bit -y` · 8bit (~113.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-8bit -y`
+Other versions: Q2_K (48.4 GB memory, 44.7 GB download) `lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q2_K -y` · 4bit (64.6 GB memory, 60.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-4bit -y` · 8bit (121 GB memory, 113.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-8bit -y`
 
 ### Ollama
 
@@ -133,7 +133,7 @@ Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/Prime
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run INTELLECT-3 (Q2_K, needs ~44.71 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+2. Run INTELLECT-3 (Q2_K, needs 48.4 GB memory, 44.7 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
    
    ```sh
    ollama run hf.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
@@ -150,7 +150,7 @@ Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/Prime
    pip install mlx-lm
    ```
 
-2. Run INTELLECT-3 (4bit, needs ~60.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/INTELLECT-3-4bit/tree/8b6e6c7751c39f87f871451f243d1b0d0f5fbade))
+2. Run INTELLECT-3 (4bit, needs 64.6 GB memory, 60.1 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/INTELLECT-3-4bit/tree/8b6e6c7751c39f87f871451f243d1b0d0f5fbade))
    
    ```sh
    mlx_lm.chat --model mlx-community/INTELLECT-3-4bit
@@ -162,7 +162,7 @@ Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/Prime
    mlx_lm.server --model mlx-community/INTELLECT-3-4bit
    ```
 
-Other versions: 8bit (~113.6 GB, Mac only) `mlx_lm.chat --model mlx-community/INTELLECT-3-8bit`
+Other versions: 8bit (121 GB memory, 113.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/INTELLECT-3-8bit`
 
 Model repository and documentation: [huggingface.co/PrimeIntellect](https://huggingface.co/PrimeIntellect/INTELLECT-3)
 

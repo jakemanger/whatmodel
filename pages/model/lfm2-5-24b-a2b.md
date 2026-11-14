@@ -108,7 +108,7 @@ Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run LFM2.5 24B-A2B (Q4_K_M, needs ~14.4 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
+2. Run LFM2.5 24B-A2B (Q4_K_M, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
    
    ```sh
    llama cli -hf LiquidAI/LFM2.5-24B-A2B-GGUF
@@ -124,7 +124,7 @@ Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run LFM2.5 24B-A2B (Q4_K_M, needs ~14.4 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
+2. Run LFM2.5 24B-A2B (Q4_K_M, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
    
    ```sh
    lms get https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF -y
@@ -141,7 +141,7 @@ Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run LFM2.5 24B-A2B (Q4_K_M, needs ~14.4 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
+2. Run LFM2.5 24B-A2B (Q4_K_M, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md))
    
    ```sh
    ollama run hf.co/LiquidAI/LFM2.5-24B-A2B-GGUF

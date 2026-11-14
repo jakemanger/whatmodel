@@ -75,7 +75,7 @@ weighted average                                   = 55.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EXAONE Deep 32B (Q4_K_M, needs ~19.34 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF/tree/4ba3a5454685aa7fda2b77c62c810879c084d78c))
+2. Run EXAONE Deep 32B (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF/tree/4ba3a5454685aa7fda2b77c62c810879c084d78c))
    
    ```sh
    llama cli -hf LGAI-EXAONE/EXAONE-Deep-32B-GGUF:Q4_K_M
@@ -91,7 +91,7 @@ weighted average                                   = 55.1
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EXAONE Deep 32B (Q4_K_M, needs ~19.34 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF/tree/4ba3a5454685aa7fda2b77c62c810879c084d78c))
+2. Run EXAONE Deep 32B (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF/tree/4ba3a5454685aa7fda2b77c62c810879c084d78c))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF@Q4_K_M -y
@@ -108,7 +108,7 @@ weighted average                                   = 55.1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EXAONE Deep 32B (Q4_K_M, needs ~19 GB, from [ollama.com](https://ollama.com/library/exaone-deep/tags))
+2. Run EXAONE Deep 32B (Q4_K_M, needs 21.8 GB memory, 19.3 GB download, from [ollama.com](https://ollama.com/library/exaone-deep/tags))
    
    ```sh
    ollama run exaone-deep:32b

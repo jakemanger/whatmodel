@@ -162,7 +162,7 @@ api (StepFun) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [platfor
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs ~118.1 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
+2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs 126 GB memory, 118.7 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
    
    ```sh
    llama cli -hf ggml-org/Step-3.5-Flash-GGUF:Q4_K
@@ -178,7 +178,7 @@ api (StepFun) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [platfor
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs ~118.1 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
+2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs 126 GB memory, 118.7 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF@Q4_K -y
@@ -186,7 +186,7 @@ api (StepFun) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [platfor
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~110.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-4bit -y` · 8bit (~209.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-8bit -y`
+Other versions: 4bit (118 GB memory, 110.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-4bit -y` · 8bit (221 GB memory, 209.3 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-8bit -y`
 
 ### MLX (Mac)
 
@@ -199,7 +199,7 @@ Other versions: 4bit (~110.8 GB, Mac only) `lms get https://huggingface.co/mlx-c
    pip install mlx-lm
    ```
 
-2. Run Step 3.5 Flash (196B-A11B) (4bit, needs ~110.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Step-3.5-Flash-4bit/tree/caad23b0411c27d08aa3967822e61e5efcdd175c))
+2. Run Step 3.5 Flash (196B-A11B) (4bit, needs 118 GB memory, 110.8 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Step-3.5-Flash-4bit/tree/caad23b0411c27d08aa3967822e61e5efcdd175c))
    
    ```sh
    mlx_lm.chat --model mlx-community/Step-3.5-Flash-4bit
@@ -211,7 +211,7 @@ Other versions: 4bit (~110.8 GB, Mac only) `lms get https://huggingface.co/mlx-c
    mlx_lm.server --model mlx-community/Step-3.5-Flash-4bit
    ```
 
-Other versions: 8bit (~209.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Step-3.5-Flash-8bit`
+Other versions: 8bit (221 GB memory, 209.3 GB download, Mac only) `mlx_lm.chat --model mlx-community/Step-3.5-Flash-8bit`
 
 Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.5-Flash)
 

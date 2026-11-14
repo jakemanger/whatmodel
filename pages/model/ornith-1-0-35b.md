@@ -103,7 +103,7 @@ weighted average                                   = 66.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21.2 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs 23.8 GB memory, 21.2 GB download, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
    
    ```sh
    llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
@@ -115,13 +115,13 @@ weighted average                                   = 66.2
    llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~36.9 GB) `llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0`
+Other versions: Q8_0 (40.2 GB memory, 36.9 GB download) `llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21.2 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs 23.8 GB memory, 21.2 GB download, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
    
    ```sh
    lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q4_K_M -y
@@ -129,7 +129,7 @@ Other versions: Q8_0 (~36.9 GB) `llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~36.9 GB) `lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q8_0 -y` · 4bit (~20.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit -y` · 8bit (~37.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-8bit -y`
+Other versions: Q8_0 (40.2 GB memory, 36.9 GB download) `lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q8_0 -y` · 4bit (22.9 GB memory, 20.4 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit -y` · 8bit (41.1 GB memory, 37.7 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-8bit -y`
 
 ### Ollama
 
@@ -140,13 +140,13 @@ Other versions: Q8_0 (~36.9 GB) `lms get https://huggingface.co/ornith-ai/Ornith
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21 GB, from [ollama.com](https://ollama.com/library/ornith/tags))
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs 23.8 GB memory, 21.2 GB download, from [ollama.com](https://ollama.com/library/ornith/tags))
    
    ```sh
    ollama run ornith:35b
    ```
 
-Other versions: Q8_0 (~37 GB) `ollama run ornith:35b-q8_0`
+Other versions: Q8_0 (40.2 GB memory, 36.9 GB download) `ollama run ornith:35b-q8_0`
 
 ### MLX (Mac)
 
@@ -159,7 +159,7 @@ Other versions: Q8_0 (~37 GB) `ollama run ornith:35b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Ornith 1.0 35B (35B-A3B) (4bit, needs ~20.4 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit/tree/f5d815a19138fc9a75091688303a4abb959ac408))
+2. Run Ornith 1.0 35B (35B-A3B) (4bit, needs 22.9 GB memory, 20.4 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit/tree/f5d815a19138fc9a75091688303a4abb959ac408))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
@@ -171,7 +171,7 @@ Other versions: Q8_0 (~37 GB) `ollama run ornith:35b-q8_0`
    mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
    ```
 
-Other versions: 8bit (~37.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-8bit`
+Other versions: 8bit (41.1 GB memory, 37.7 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B)
 

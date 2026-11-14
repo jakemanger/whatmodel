@@ -163,7 +163,7 @@ weighted average                                   = 44.2
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3 1.7B (Q4_K_M, needs ~1.3 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/tree/daeb8e2d528a760970442092f6bf1e55c3b659eb))
+2. Run Qwen3 1.7B (Q4_K_M, needs 2.9 GB memory, 1.28 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/tree/daeb8e2d528a760970442092f6bf1e55c3b659eb))
    
    ```sh
    llama cli -hf ggml-org/Qwen3-1.7B-GGUF:Q4_K_M
@@ -175,13 +175,13 @@ weighted average                                   = 44.2
    llama serve -hf ggml-org/Qwen3-1.7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.2 GB) `llama cli -hf ggml-org/Qwen3-1.7B-GGUF:Q8_0`
+Other versions: Q8_0 (3.8 GB memory, 2.17 GB download) `llama cli -hf ggml-org/Qwen3-1.7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3 1.7B (Q4_K_M, needs ~1.3 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/tree/daeb8e2d528a760970442092f6bf1e55c3b659eb))
+2. Run Qwen3 1.7B (Q4_K_M, needs 2.9 GB memory, 1.28 GB download, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/tree/daeb8e2d528a760970442092f6bf1e55c3b659eb))
    
    ```sh
    lms get https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF@Q4_K_M -y
@@ -189,7 +189,7 @@ Other versions: Q8_0 (~2.2 GB) `llama cli -hf ggml-org/Qwen3-1.7B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2.2 GB) `lms get https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF@Q8_0 -y` · 4bit (~1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-4bit -y` · 8bit (~1.8 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-8bit -y`
+Other versions: Q8_0 (3.8 GB memory, 2.17 GB download) `lms get https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF@Q8_0 -y` · 4bit (2.6 GB memory, 0.97 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-4bit -y` · 8bit (3.4 GB memory, 1.83 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-8bit -y`
 
 ### Ollama
 
@@ -200,13 +200,13 @@ Other versions: Q8_0 (~2.2 GB) `lms get https://huggingface.co/ggml-org/Qwen3-1.
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3 1.7B (Q4_K_M, needs ~1.72 GB, from [ollama.com](https://ollama.com/library/qwen3/tags))
+2. Run Qwen3 1.7B (Q4_K_M, needs 2.9 GB memory, 1.36 GB download, from [ollama.com](https://ollama.com/library/qwen3/tags))
    
    ```sh
    ollama run qwen3:1.7b
    ```
 
-Other versions: Q8_0 (~2.94 GB) `ollama run qwen3:1.7b-q8_0`
+Other versions: Q8_0 (3.8 GB memory, 2.22 GB download) `ollama run qwen3:1.7b-q8_0`
 
 ### MLX (Mac)
 
@@ -219,7 +219,7 @@ Other versions: Q8_0 (~2.94 GB) `ollama run qwen3:1.7b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Qwen3 1.7B (4bit, needs ~1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-4bit/tree/46a51038b9871ba2ad249422905f1defe1f289f5))
+2. Run Qwen3 1.7B (4bit, needs 2.6 GB memory, 0.97 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-1.7B-MLX-4bit/tree/46a51038b9871ba2ad249422905f1defe1f289f5))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Qwen3-1.7B-MLX-4bit
@@ -231,7 +231,7 @@ Other versions: Q8_0 (~2.94 GB) `ollama run qwen3:1.7b-q8_0`
    mlx_lm.server --model lmstudio-community/Qwen3-1.7B-MLX-4bit
    ```
 
-Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-1.7B-MLX-8bit`
+Other versions: 8bit (3.4 GB memory, 1.83 GB download, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-1.7B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-1.7B)
 

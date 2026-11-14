@@ -98,13 +98,13 @@ weighted average                              = 44.1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.2 11B Vision Instruct (Q4_K_M, needs ~6.92 GB, from [ollama.com](https://ollama.com/library/llama3.2-vision/tags))
+2. Run Llama 3.2 11B Vision Instruct (Q4_K_M, needs 9.8 GB memory, 7.82 GB download, from [ollama.com](https://ollama.com/library/llama3.2-vision/tags))
    
    ```sh
    ollama run llama3.2-vision:11b-instruct-q4_K_M
    ```
 
-Other versions: Q8_0 (~13.34 GB) `ollama run llama3.2-vision:11b-instruct-q8_0`
+Other versions: Q8_0 (14.2 GB memory, 12.3 GB download) `ollama run llama3.2-vision:11b-instruct-q8_0`
 
 Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct)
 

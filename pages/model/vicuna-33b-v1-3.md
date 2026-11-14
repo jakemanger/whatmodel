@@ -78,13 +78,13 @@ weighted average                                   = 41.1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Vicuna 33B v1.3 (Q4_K_M, needs ~20.3 GB, from [ollama.com](https://ollama.com/library/vicuna/tags))
+2. Run Vicuna 33B v1.3 (Q4_K_M, needs 22.1 GB memory, 19.6 GB download, from [ollama.com](https://ollama.com/library/vicuna/tags))
    
    ```sh
    ollama run vicuna:33b-q4_K_M
    ```
 
-Other versions: Q8_0 (~40.1 GB) `ollama run vicuna:33b-q8_0`
+Other versions: Q8_0 (37.8 GB memory, 34.6 GB download) `ollama run vicuna:33b-q8_0`
 
 Model repository and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-33b-v1.3)
 

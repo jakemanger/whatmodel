@@ -65,7 +65,7 @@ api (Mistral AI) · price unknown · [docs.mistral.ai](https://docs.mistral.ai/m
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~2000 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/f12dabdc0c1e99e7f7924461a6f308859b05af4d/README.md))
+1. Run it as published (fp8, needs 1115 GB memory, 1060.6 GB download, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/f12dabdc0c1e99e7f7924461a6f308859b05af4d/README.md))
    
    ```sh
    docker run --runtime nvidia --gpus all -v ~/.cache/huggingface:/root/.cache/huggingface -p 8000:8000 --ipc=host vllm/vllm-openai:mistral-large-4 --model mistralai/Mistral-Large-4-1T-A52B --tensor-parallel-size 8 --tool-call-parser mistral --reasoning-parser mistral --enable-auto-tool-choice --gpu-memory-utilization 0.85

@@ -151,7 +151,7 @@ api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [doc
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs ~330.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
+2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs 380 GB memory, 360.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
@@ -163,13 +163,13 @@ api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [doc
    llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~165.5 GB) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL` · ud-iq1_m (~83 GB) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M`
+Other versions: ud-q2_k_xl (214 GB memory, 202.2 GB download) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL` · ud-iq1_m (199 GB memory, 188 GB download) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs ~330.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
+2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs 380 GB memory, 360.2 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q4_K_XL -y
@@ -177,7 +177,7 @@ Other versions: ud-q2_k_xl (~165.5 GB) `llama cli -hf unsloth/NVIDIA-Nemotron-3-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~165.5 GB) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (~83 GB) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-IQ1_M -y` · 4bit (~309.3 GB, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit -y` · 8bit (~583.8 GB, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit -y`
+Other versions: ud-q2_k_xl (214 GB memory, 202.2 GB download) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (199 GB memory, 188 GB download) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-IQ1_M -y` · 4bit (326 GB memory, 309.3 GB download, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit -y` · 8bit (614 GB memory, 583.8 GB download, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit -y`
 
 ### MLX (Mac)
 
@@ -190,7 +190,7 @@ Other versions: ud-q2_k_xl (~165.5 GB) `lms get https://huggingface.co/unsloth/N
    pip install mlx-lm
    ```
 
-2. Run Nemotron 3 Ultra 550B-A55B (4bit, needs ~309.3 GB, Mac only, from [huggingface.co/pipenetwork](https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit/tree/d64007dfeb7eb87eba579f34fdb03cf329077fd8))
+2. Run Nemotron 3 Ultra 550B-A55B (4bit, needs 326 GB memory, 309.3 GB download, Mac only, from [huggingface.co/pipenetwork](https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit/tree/d64007dfeb7eb87eba579f34fdb03cf329077fd8))
    
    ```sh
    mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
@@ -202,7 +202,7 @@ Other versions: ud-q2_k_xl (~165.5 GB) `lms get https://huggingface.co/unsloth/N
    mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
    ```
 
-Other versions: 8bit (~583.8 GB, Mac only) `mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit`
+Other versions: 8bit (614 GB memory, 583.8 GB download, Mac only) `mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16)
 

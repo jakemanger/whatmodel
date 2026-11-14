@@ -100,7 +100,7 @@ weighted average                                   = 42.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek LLM 67B Chat (Q4_K_M, needs ~40.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF/tree/bab8a570ac9271b502108dc7f80eae3881df430a))
+2. Run DeepSeek LLM 67B Chat (Q4_K_M, needs 43.9 GB memory, 40.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF/tree/bab8a570ac9271b502108dc7f80eae3881df430a))
    
    ```sh
    llama cli -hf TheBloke/deepseek-llm-67b-chat-GGUF:Q4_K_M
@@ -112,13 +112,13 @@ weighted average                                   = 42.7
    llama serve -hf TheBloke/deepseek-llm-67b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q2_K (~28.5 GB) `llama cli -hf TheBloke/deepseek-llm-67b-chat-GGUF:Q2_K`
+Other versions: Q2_K (31.4 GB memory, 28.5 GB download) `llama cli -hf TheBloke/deepseek-llm-67b-chat-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek LLM 67B Chat (Q4_K_M, needs ~40.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF/tree/bab8a570ac9271b502108dc7f80eae3881df430a))
+2. Run DeepSeek LLM 67B Chat (Q4_K_M, needs 43.9 GB memory, 40.4 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF/tree/bab8a570ac9271b502108dc7f80eae3881df430a))
    
    ```sh
    lms get https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF@Q4_K_M -y
@@ -126,7 +126,7 @@ Other versions: Q2_K (~28.5 GB) `llama cli -hf TheBloke/deepseek-llm-67b-chat-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q2_K (~28.5 GB) `lms get https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF@Q2_K -y`
+Other versions: Q2_K (31.4 GB memory, 28.5 GB download) `lms get https://huggingface.co/TheBloke/deepseek-llm-67b-chat-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -137,13 +137,13 @@ Other versions: Q2_K (~28.5 GB) `lms get https://huggingface.co/TheBloke/deepsee
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run DeepSeek LLM 67B Chat (Q4_0, needs ~40.7 GB, from [ollama.com](https://ollama.com/library/deepseek-llm/tags))
+2. Run DeepSeek LLM 67B Chat (Q4_0, needs 41.6 GB memory, 38.2 GB download, from [ollama.com](https://ollama.com/library/deepseek-llm/tags))
    
    ```sh
    ollama run deepseek-llm:67b-chat
    ```
 
-Other versions: Q4_K_M (~40.7 GB) `ollama run deepseek-llm:67b-chat-q4_K_M`
+Other versions: Q4_K_M (43.9 GB memory, 40.4 GB download) `ollama run deepseek-llm:67b-chat-q4_K_M`
 
 Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat)
 

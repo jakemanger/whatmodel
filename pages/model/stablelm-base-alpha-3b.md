@@ -56,7 +56,7 @@ weighted average                                   = 0.6
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~14.82 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b/tree/819657db42861818efac86e8ca60f673fa912ef8))
+1. Run it as published (fp32, needs 17 GB memory, 14.8 GB download, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b/tree/819657db42861818efac86e8ca60f673fa912ef8))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

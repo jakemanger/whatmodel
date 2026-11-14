@@ -74,7 +74,7 @@ weighted average                                   = 50.2
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~293.23 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+1. Run it as published (fp32, needs 309 GB memory, 293.2 GB download, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
    
    ```sh
    vllm serve allenai/Molmo-72B-0924 --trust-remote-code

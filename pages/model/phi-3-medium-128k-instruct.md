@@ -88,7 +88,7 @@ weighted average                                   = 46.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-3 Medium 128K Instruct (Q4_K_M, needs ~8.6 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF/tree/950c8154e91f33193217eebf1c26903af44c6e13))
+2. Run Phi-3 Medium 128K Instruct (Q4_K_M, needs 10.6 GB memory, 8.57 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF/tree/950c8154e91f33193217eebf1c26903af44c6e13))
    
    ```sh
    llama cli -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q4_K_M
@@ -100,13 +100,13 @@ weighted average                                   = 46.4
    llama serve -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~14.8 GB) `llama cli -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (16.9 GB memory, 14.8 GB download) `llama cli -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-3 Medium 128K Instruct (Q4_K_M, needs ~8.6 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF/tree/950c8154e91f33193217eebf1c26903af44c6e13))
+2. Run Phi-3 Medium 128K Instruct (Q4_K_M, needs 10.6 GB memory, 8.57 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF/tree/950c8154e91f33193217eebf1c26903af44c6e13))
    
    ```sh
    lms get https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF@Q4_K_M -y
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~14.8 GB) `llama cli -hf bartowski/Phi-3-medium-128k-instr
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~14.8 GB) `lms get https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF@Q8_0 -y` · 4bit (~7.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-4bit -y` · 8bit (~14.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-8bit -y`
+Other versions: Q8_0 (16.9 GB memory, 14.8 GB download) `lms get https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF@Q8_0 -y` · 4bit (9.9 GB memory, 7.85 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-4bit -y` · 8bit (16.9 GB memory, 14.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-8bit -y`
 
 ### Ollama
 
@@ -125,13 +125,13 @@ Other versions: Q8_0 (~14.8 GB) `lms get https://huggingface.co/bartowski/Phi-3-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-3 Medium 128K Instruct (Q4_0, needs ~8.88 GB, from [ollama.com](https://ollama.com/library/phi3/tags))
+2. Run Phi-3 Medium 128K Instruct (Q4_0, needs 10 GB memory, 7.9 GB download, from [ollama.com](https://ollama.com/library/phi3/tags))
    
    ```sh
    ollama run phi3:medium-128k
    ```
 
-Other versions: Q8_0 (~17.25 GB) `ollama run phi3:14b-medium-128k-instruct-q8_0`
+Other versions: Q8_0 (16.9 GB memory, 14.8 GB download) `ollama run phi3:14b-medium-128k-instruct-q8_0`
 
 ### MLX (Mac)
 
@@ -144,7 +144,7 @@ Other versions: Q8_0 (~17.25 GB) `ollama run phi3:14b-medium-128k-instruct-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Phi-3 Medium 128K Instruct (4bit, needs ~7.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-4bit/tree/9cffe737ae8c598cf3fca728b8417132754043f8))
+2. Run Phi-3 Medium 128K Instruct (4bit, needs 9.9 GB memory, 7.85 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-4bit/tree/9cffe737ae8c598cf3fca728b8417132754043f8))
    
    ```sh
    mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-4bit
@@ -156,7 +156,7 @@ Other versions: Q8_0 (~17.25 GB) `ollama run phi3:14b-medium-128k-instruct-q8_0`
    mlx_lm.server --model mlx-community/Phi-3-medium-128k-instruct-4bit
    ```
 
-Other versions: 8bit (~14.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-8bit`
+Other versions: 8bit (16.9 GB memory, 14.8 GB download, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-medium-128k-instruct)
 

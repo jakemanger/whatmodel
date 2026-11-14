@@ -162,7 +162,7 @@ api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [f
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Muse Glimmer 30B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF/tree/70bf1b61ac09f91b24d39038091b41c582bc5d7a))
+2. Run Muse Glimmer 30B (Q4_K_M, needs 19.4 GB memory, 18.2 GB download, from [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF/tree/70bf1b61ac09f91b24d39038091b41c582bc5d7a))
    
    ```sh
    llama cli -hf meta-models/Muse-Glimmer-30B-GGUF:Q4_K_M
@@ -178,7 +178,7 @@ api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [f
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Muse Glimmer 30B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF/tree/70bf1b61ac09f91b24d39038091b41c582bc5d7a))
+2. Run Muse Glimmer 30B (Q4_K_M, needs 19.4 GB memory, 18.2 GB download, from [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF/tree/70bf1b61ac09f91b24d39038091b41c582bc5d7a))
    
    ```sh
    lms get https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF@Q4_K_M -y
@@ -186,7 +186,7 @@ api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [f
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~19.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit -y` · 8bit (~33.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Glimmer-30B-8bit -y`
+Other versions: 4bit (20.6 GB memory, 19.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit -y` · 8bit (34.6 GB memory, 33.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Muse-Glimmer-30B-8bit -y`
 
 ### Ollama
 
@@ -197,13 +197,13 @@ Other versions: 4bit (~19.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Muse Glimmer 30B (Q4_K_M, needs ~18.38 GB, from [ollama.com](https://ollama.com/library/muse-glimmer/tags))
+2. Run Muse Glimmer 30B (Q4_K_M, needs 19.4 GB memory, 18.2 GB download, from [ollama.com](https://ollama.com/library/muse-glimmer/tags))
    
    ```sh
    ollama run muse-glimmer:30b
    ```
 
-Other versions: Q8_0 (~36.26 GB) `ollama run muse-glimmer:30b-q8_0`
+Other versions: Q8_0 (32.2 GB memory, 31 GB download) `ollama run muse-glimmer:30b-q8_0`
 
 ### MLX (Mac)
 
@@ -216,7 +216,7 @@ Other versions: Q8_0 (~36.26 GB) `ollama run muse-glimmer:30b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Muse Glimmer 30B (4bit, needs ~19.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit/tree/3e7677d7a40d348a3daba263a2b1c0aa41910710))
+2. Run Muse Glimmer 30B (4bit, needs 20.6 GB memory, 19.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit/tree/3e7677d7a40d348a3daba263a2b1c0aa41910710))
    
    ```sh
    mlx_lm.chat --model mlx-community/Muse-Glimmer-30B-4bit
@@ -228,7 +228,7 @@ Other versions: Q8_0 (~36.26 GB) `ollama run muse-glimmer:30b-q8_0`
    mlx_lm.server --model mlx-community/Muse-Glimmer-30B-4bit
    ```
 
-Other versions: 8bit (~33.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Muse-Glimmer-30B-8bit`
+Other versions: 8bit (34.6 GB memory, 33.4 GB download, Mac only) `mlx_lm.chat --model mlx-community/Muse-Glimmer-30B-8bit`
 
 Model repository and documentation: [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 

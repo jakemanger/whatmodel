@@ -90,7 +90,7 @@ weighted average                                   = 40.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run StarCoder2 15B (Q4_K_M, needs ~9.9 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-15B-GGUF/tree/4d76ffd0a6da75113a3971639b36309cde2364d7))
+2. Run StarCoder2 15B (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-15B-GGUF/tree/4d76ffd0a6da75113a3971639b36309cde2364d7))
    
    ```sh
    llama cli -hf second-state/StarCoder2-15B-GGUF:Q4_K_M
@@ -102,13 +102,13 @@ weighted average                                   = 40.4
    llama serve -hf second-state/StarCoder2-15B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `llama cli -hf second-state/StarCoder2-15B-GGUF:Q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `llama cli -hf second-state/StarCoder2-15B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run StarCoder2 15B (Q4_K_M, needs ~9.9 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-15B-GGUF/tree/4d76ffd0a6da75113a3971639b36309cde2364d7))
+2. Run StarCoder2 15B (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [huggingface.co/second-state](https://huggingface.co/second-state/StarCoder2-15B-GGUF/tree/4d76ffd0a6da75113a3971639b36309cde2364d7))
    
    ```sh
    lms get https://huggingface.co/second-state/StarCoder2-15B-GGUF@Q4_K_M -y
@@ -116,7 +116,7 @@ Other versions: Q8_0 (~17 GB) `llama cli -hf second-state/StarCoder2-15B-GGUF:Q8
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/second-state/StarCoder2-15B-GGUF@Q8_0 -y` · 4bit (~9 GB, Mac only) `lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-4bit -y` · 8bit (~17 GB, Mac only) `lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-8bit -y`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `lms get https://huggingface.co/second-state/StarCoder2-15B-GGUF@Q8_0 -y` · 4bit (10.9 GB memory, 8.98 GB download, Mac only) `lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-4bit -y` · 8bit (19.4 GB memory, 17 GB download, Mac only) `lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-8bit -y`
 
 ### Ollama
 
@@ -127,13 +127,13 @@ Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/second-state/StarC
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run StarCoder2 15B (Q4_K_M, needs ~9.9 GB, from [ollama.com](https://ollama.com/library/starcoder2/tags))
+2. Run StarCoder2 15B (Q4_K_M, needs 11.9 GB memory, 9.86 GB download, from [ollama.com](https://ollama.com/library/starcoder2/tags))
    
    ```sh
    ollama run starcoder2:15b-q4_K_M
    ```
 
-Other versions: Q8_0 (~17 GB) `ollama run starcoder2:15b-q8_0`
+Other versions: Q8_0 (19.4 GB memory, 17 GB download) `ollama run starcoder2:15b-q8_0`
 
 ### MLX (Mac)
 
@@ -146,7 +146,7 @@ Other versions: Q8_0 (~17 GB) `ollama run starcoder2:15b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run StarCoder2 15B (4bit, needs ~9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/bigcode-starcoder2-15b-4bit/tree/7b68b8f7cc25665c4cd615b631afbe2701e11380))
+2. Run StarCoder2 15B (4bit, needs 10.9 GB memory, 8.98 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/bigcode-starcoder2-15b-4bit/tree/7b68b8f7cc25665c4cd615b631afbe2701e11380))
    
    ```sh
    mlx_lm.chat --model mlx-community/bigcode-starcoder2-15b-4bit
@@ -158,7 +158,7 @@ Other versions: Q8_0 (~17 GB) `ollama run starcoder2:15b-q8_0`
    mlx_lm.server --model mlx-community/bigcode-starcoder2-15b-4bit
    ```
 
-Other versions: 8bit (~17 GB, Mac only) `mlx_lm.chat --model mlx-community/bigcode-starcoder2-15b-8bit`
+Other versions: 8bit (19.4 GB memory, 17 GB download, Mac only) `mlx_lm.chat --model mlx-community/bigcode-starcoder2-15b-8bit`
 
 Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-15b)
 

@@ -106,7 +106,7 @@ weighted average                                   = 72.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs ~54.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
+2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs 86 GB memory, 80.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL
@@ -122,7 +122,7 @@ weighted average                                   = 72.8
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs ~54.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
+2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs 86 GB memory, 80.5 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF@UD-Q2_K_XL -y
@@ -139,7 +139,7 @@ weighted average                                   = 72.8
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen3.8-Flash-Next (Q4_K_M, needs ~108.5 GB, from [ollama.com](https://ollama.com/library/qwen3.8-flash-next/tags))
+2. Run Qwen3.8-Flash-Next (Q4_K_M, needs 128 GB memory, 120.1 GB download, from [ollama.com](https://ollama.com/library/qwen3.8-flash-next/tags))
    
    ```sh
    ollama run qwen3.8-flash-next:125b-a6b-q4_K_M

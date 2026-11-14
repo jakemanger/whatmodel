@@ -56,7 +56,7 @@ weighted average                              = 56.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs ~2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
+2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
    
    ```sh
    llama cli -hf bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 56.4
    llama serve -hf bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.4 GB) `llama cli -hf bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5.1 GB memory, 3.42 GB download) `llama cli -hf bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs ~2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
+2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
    
    ```sh
    lms get https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~3.4 GB) `llama cli -hf bartowski/FuseChat-Llama-3.2-3B-In
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/FuseChat-Llama-3.2-3B-Instruct-4bit -y`
+Other versions: Q8_0 (5.1 GB memory, 3.42 GB download) `lms get https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF@Q8_0 -y` · 4bit (3.4 GB memory, 1.81 GB download, Mac only) `lms get https://huggingface.co/mlx-community/FuseChat-Llama-3.2-3B-Instruct-4bit -y`
 
 ### Ollama
 
@@ -93,13 +93,13 @@ Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/bartowski/FuseCha
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs ~2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
+2. Run FuseChat-Llama-3.2-3B-Instruct (Q4_K_M, needs 3.6 GB memory, 2.02 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF/tree/0766b98ee0eb39a77729a1c62e18b8d9248620e4))
    
    ```sh
    ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (5.1 GB memory, 3.42 GB download) `ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B-Instruct-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -112,7 +112,7 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B
    pip install mlx-lm
    ```
 
-2. Run FuseChat-Llama-3.2-3B-Instruct (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/FuseChat-Llama-3.2-3B-Instruct-4bit/tree/25a7347513c3f1127878bff6d982954f5557c08f))
+2. Run FuseChat-Llama-3.2-3B-Instruct (4bit, needs 3.4 GB memory, 1.81 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/FuseChat-Llama-3.2-3B-Instruct-4bit/tree/25a7347513c3f1127878bff6d982954f5557c08f))
    
    ```sh
    mlx_lm.chat --model mlx-community/FuseChat-Llama-3.2-3B-Instruct-4bit
@@ -126,7 +126,7 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~6.43 GB, from [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Llama-3.2-3B-Instruct/tree/db208455d103432dc8d683c242ef8b678d5b26c2))
+1. Run it as published (BF16, needs 8.3 GB memory, 6.43 GB download, from [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Llama-3.2-3B-Instruct/tree/db208455d103432dc8d683c242ef8b678d5b26c2))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FuseAI/FuseChat-Llama-3.2-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

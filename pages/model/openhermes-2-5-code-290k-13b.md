@@ -58,7 +58,7 @@ weighted average                                   = 41.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs ~7.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
+2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
    
    ```sh
    llama cli -hf mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 41.9
    llama serve -hf mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `llama cli -hf mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs ~7.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
+2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
    
    ```sh
    lms get https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf mradermacher/OpenHermes-2.5-Code-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `lms get https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/mradermacher/Ope
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs ~7.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
+2. Run OpenHermes-2.5-Code-290k-13B (Q4_K_M, needs 9.8 GB memory, 7.87 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF/tree/417e6f2dc47f531e1d9f769ef098855cdfa3ce03))
    
    ```sh
    ollama run hf.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q8_0`
+Other versions: Q8_0 (16 GB memory, 13.8 GB download) `ollama run hf.co/mradermacher/OpenHermes-2.5-Code-290k-13B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~26.03 GB, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/OpenHermes-2.5-Code-290k-13B/tree/8dcd6adc9b35c4f2912b4849ffa58f5be9a2daf5))
+1. Run it as published (BF16, needs 28.8 GB memory, 26 GB download, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/OpenHermes-2.5-Code-290k-13B/tree/8dcd6adc9b35c4f2912b4849ffa58f5be9a2daf5))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/OpenHermes-2.5-Code-290k-13B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

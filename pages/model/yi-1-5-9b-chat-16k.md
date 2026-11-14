@@ -55,7 +55,7 @@ weighted average                          = 47.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs ~5.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
+2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
    
    ```sh
    llama cli -hf mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q4_K_M
@@ -67,13 +67,13 @@ weighted average                          = 47.3
    llama serve -hf mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.4 GB) `llama cli -hf mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `llama cli -hf mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs ~5.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
+2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ Other versions: Q8_0 (~9.4 GB) `llama cli -hf mradermacher/Yi-1.5-9B-Chat-16K-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `lms get https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -92,17 +92,17 @@ Other versions: Q8_0 (~9.4 GB) `lms get https://huggingface.co/mradermacher/Yi-1
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs ~5.3 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
+2. Run Yi-1.5 9B Chat 16K (Q4_K_M, needs 7.1 GB memory, 5.33 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF/tree/317d799df22bce2cc7233a2b072eff70f75de112))
    
    ```sh
    ollama run hf.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q8_0`
+Other versions: Q8_0 (11.3 GB memory, 9.38 GB download) `ollama run hf.co/mradermacher/Yi-1.5-9B-Chat-16K-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~17.66 GB, from [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat-16K/tree/2f8753bed95bd4fede3fd64f8305428620b4b212))
+1. Run it as published (BF16, needs 20.1 GB memory, 17.7 GB download, from [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat-16K/tree/2f8753bed95bd4fede3fd64f8305428620b4b212))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-9B-Chat-16K', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

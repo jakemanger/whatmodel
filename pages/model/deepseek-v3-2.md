@@ -170,7 +170,7 @@ api (Deep Infra) · $0.29/M blended · $0.26 in / $0.38 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run DeepSeek V3.2 (ud-q4_k_xl, needs ~411.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF/tree/main))
+2. Run DeepSeek V3.2 (ud-q4_k_xl, needs 430 GB memory, 407.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/DeepSeek-V3.2-GGUF:UD-Q4_K_XL
@@ -182,13 +182,13 @@ api (Deep Infra) · $0.29/M blended · $0.26 in / $0.38 out per 1M tokens · [de
    llama serve -hf unsloth/DeepSeek-V3.2-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~206 GB) `llama cli -hf unsloth/DeepSeek-V3.2-GGUF:UD-Q2_K_XL` · ud-iq1_s (~103.25 GB) `llama cli -hf unsloth/DeepSeek-V3.2-GGUF:UD-IQ1_S`
+Other versions: ud-q2_k_xl (260 GB memory, 246.6 GB download) `llama cli -hf unsloth/DeepSeek-V3.2-GGUF:UD-Q2_K_XL` · ud-iq1_s (195 GB memory, 184.1 GB download) `llama cli -hf unsloth/DeepSeek-V3.2-GGUF:UD-IQ1_S`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run DeepSeek V3.2 (ud-q4_k_xl, needs ~411.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF/tree/main))
+2. Run DeepSeek V3.2 (ud-q4_k_xl, needs 430 GB memory, 407.8 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF@UD-Q4_K_XL -y
@@ -196,7 +196,7 @@ Other versions: ud-q2_k_xl (~206 GB) `llama cli -hf unsloth/DeepSeek-V3.2-GGUF:U
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~103.25 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF@UD-IQ1_S -y` · 5bit (~462.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3.2-mlx-5bit -y`
+Other versions: ud-q2_k_xl (260 GB memory, 246.6 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (195 GB memory, 184.1 GB download) `lms get https://huggingface.co/unsloth/DeepSeek-V3.2-GGUF@UD-IQ1_S -y` · 5bit (487 GB memory, 462.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3.2-mlx-5bit -y`
 
 ### MLX (Mac)
 
@@ -209,7 +209,7 @@ Other versions: ud-q2_k_xl (~206 GB) `lms get https://huggingface.co/unsloth/Dee
    pip install mlx-lm
    ```
 
-2. Run DeepSeek V3.2 (5bit, needs ~462.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3.2-mlx-5bit/tree/24cc22660535230a3a69d0742547519819aa1059))
+2. Run DeepSeek V3.2 (5bit, needs 487 GB memory, 462.1 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3.2-mlx-5bit/tree/24cc22660535230a3a69d0742547519819aa1059))
    
    ```sh
    mlx_lm.chat --model mlx-community/DeepSeek-V3.2-mlx-5bit

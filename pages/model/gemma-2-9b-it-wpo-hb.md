@@ -56,7 +56,7 @@ weighted average                              = 65.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
+2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
    
    ```sh
    llama cli -hf bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q4_K_M
@@ -68,13 +68,13 @@ weighted average                              = 65.1
    llama serve -hf bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `llama cli -hf bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
+2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
    
    ```sh
    lms get https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF@Q4_K_M -y
@@ -82,7 +82,7 @@ Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/gemma-2-9b-it-WPO-HB-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF@Q8_0 -y`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `lms get https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -93,17 +93,17 @@ Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/gemma-2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
+2. Run gemma-2-9b-it-WPO-HB (Q4_K_M, needs 7.5 GB memory, 5.76 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF/tree/86c5187bf170ad1c721c30206f1b6555c1436ad9))
    
    ```sh
    ollama run hf.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q8_0`
+Other versions: Q8_0 (11.8 GB memory, 9.83 GB download) `ollama run hf.co/bartowski/gemma-2-9b-it-WPO-HB-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~36.97 GB, from [huggingface.co/wzhouad](https://huggingface.co/wzhouad/gemma-2-9b-it-WPO-HB/tree/5934cb2faf589341e96e2e79aec82b2d4b7be252))
+1. Run it as published (fp32, needs 40.4 GB memory, 37 GB download, from [huggingface.co/wzhouad](https://huggingface.co/wzhouad/gemma-2-9b-it-WPO-HB/tree/5934cb2faf589341e96e2e79aec82b2d4b7be252))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/gemma-2-9b-it-WPO-HB', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

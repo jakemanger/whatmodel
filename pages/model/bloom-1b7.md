@@ -102,7 +102,7 @@ weighted average                                   = 10.8
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+2. Run BLOOM 1.7B (Q4_K_M, needs 3.1 GB memory, 1.49 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
    
    ```sh
    llama cli -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
@@ -114,13 +114,13 @@ weighted average                                   = 10.8
    llama serve -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.4 GB) `llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0`
+Other versions: Q8_0 (4 GB memory, 2.39 GB download) `llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+2. Run BLOOM 1.7B (Q4_K_M, needs 3.1 GB memory, 1.49 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
    
    ```sh
    lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q4_K_M -y
@@ -128,7 +128,7 @@ Other versions: Q8_0 (~2.4 GB) `llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~2.4 GB) `lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q8_0 -y`
+Other versions: Q8_0 (4 GB memory, 2.39 GB download) `lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -139,17 +139,17 @@ Other versions: Q8_0 (~2.4 GB) `lms get https://huggingface.co/mradermacher/bloo
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+2. Run BLOOM 1.7B (Q4_K_M, needs 3.1 GB memory, 1.49 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
    
    ```sh
    ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~2.4 GB) `ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_0`
+Other versions: Q8_0 (4 GB memory, 2.39 GB download) `ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~3.44 GB, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7/tree/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5))
+1. Run it as published (fp16, needs 5.1 GB memory, 3.44 GB download, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7/tree/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5))
    
    ```sh
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

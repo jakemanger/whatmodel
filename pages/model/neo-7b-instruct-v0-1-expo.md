@@ -44,7 +44,7 @@ weighted average                        = 39.2
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~15.59 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/neo_7b_instruct_v0.1-ExPO/tree/2b427687c60cd1e8972d8c9aa199ad935b244712))
+1. Run it as published (BF16, needs 17.9 GB memory, 15.6 GB download, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/neo_7b_instruct_v0.1-ExPO/tree/2b427687c60cd1e8972d8c9aa199ad935b244712))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/neo_7b_instruct_v0.1-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

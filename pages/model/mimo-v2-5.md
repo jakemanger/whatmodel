@@ -156,7 +156,7 @@ api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [n
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs ~186.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
+2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs 203 GB memory, 191.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
    
    ```sh
    llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
@@ -168,13 +168,13 @@ api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [n
    llama serve -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~93.5 GB) `llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (110 GB memory, 103 GB download) `llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs ~186.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
+2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs 203 GB memory, 191.6 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q4_K_XL -y
@@ -182,7 +182,7 @@ Other versions: ud-q2_k_xl (~93.5 GB) `llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~93.5 GB) `lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (110 GB memory, 103 GB download) `lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.5)
 

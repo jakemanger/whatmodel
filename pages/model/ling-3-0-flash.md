@@ -112,7 +112,7 @@ api (DeepInfra) · $0.090/M blended · $0.06 in / $0.18 out per 1M tokens · [de
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Ling 3.0 Flash (124B-A5B) (Q4_K_M, needs ~74.9 GB, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF/tree/main))
+2. Run Ling 3.0 Flash (124B-A5B) (Q4_K_M, needs 78 GB memory, 77 GB download, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF/tree/main))
    
    ```sh
    llama cli -hf inclusionAI/Ling-3.0-flash-GGUF:Q4_K_M
@@ -128,7 +128,7 @@ api (DeepInfra) · $0.090/M blended · $0.06 in / $0.18 out per 1M tokens · [de
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Ling 3.0 Flash (124B-A5B) (Q4_K_M, needs ~74.9 GB, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF/tree/main))
+2. Run Ling 3.0 Flash (124B-A5B) (Q4_K_M, needs 78 GB memory, 77 GB download, from [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF@Q4_K_M -y
@@ -136,7 +136,7 @@ api (DeepInfra) · $0.090/M blended · $0.06 in / $0.18 out per 1M tokens · [de
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: 4bit (~70 GB, Mac only) `lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-4bit -y` · 8bit (~132.2 GB, Mac only) `lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-8bit -y`
+Other versions: 4bit (71 GB memory, 70 GB download, Mac only) `lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-4bit -y` · 8bit (133 GB memory, 132.2 GB download, Mac only) `lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-8bit -y`
 
 ### MLX (Mac)
 
@@ -149,7 +149,7 @@ Other versions: 4bit (~70 GB, Mac only) `lms get https://huggingface.co/TensorFo
    pip install mlx-lm
    ```
 
-2. Run Ling 3.0 Flash (124B-A5B) (4bit, needs ~70 GB, Mac only, from [huggingface.co/TensorFold](https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-4bit/tree/cae62774492b589eea4aab2d6d36fb167a67d90c))
+2. Run Ling 3.0 Flash (124B-A5B) (4bit, needs 71 GB memory, 70 GB download, Mac only, from [huggingface.co/TensorFold](https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-4bit/tree/cae62774492b589eea4aab2d6d36fb167a67d90c))
    
    ```sh
    mlx_lm.chat --model TensorFold/Ling-3.0-flash-MLX-4bit
@@ -161,7 +161,7 @@ Other versions: 4bit (~70 GB, Mac only) `lms get https://huggingface.co/TensorFo
    mlx_lm.server --model TensorFold/Ling-3.0-flash-MLX-4bit
    ```
 
-Other versions: 8bit (~132.2 GB, Mac only) `mlx_lm.chat --model TensorFold/Ling-3.0-flash-MLX-8bit`
+Other versions: 8bit (133 GB memory, 132.2 GB download, Mac only) `mlx_lm.chat --model TensorFold/Ling-3.0-flash-MLX-8bit`
 
 Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 

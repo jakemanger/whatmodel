@@ -86,7 +86,7 @@ weighted average                                   = 40.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 8B Code Base (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
+2. Run Granite 8B Code Base (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
    
    ```sh
    llama cli -hf ibm-granite/granite-8b-code-base-4k-GGUF:Q4_K_M
@@ -102,7 +102,7 @@ weighted average                                   = 40.4
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 8B Code Base (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
+2. Run Granite 8B Code Base (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
    
    ```sh
    lms get https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF@Q4_K_M -y
@@ -119,7 +119,7 @@ weighted average                                   = 40.4
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 8B Code Base (4K) (Q4_K_M, needs ~4.88 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
+2. Run Granite 8B Code Base (4K) (Q4_K_M, needs 6.6 GB memory, 4.88 GB download, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k-GGUF/tree/ddd3138955f8f4e20970dea07a486d91e039ca72))
    
    ```sh
    ollama run hf.co/ibm-granite/granite-8b-code-base-4k-GGUF:Q4_K_M

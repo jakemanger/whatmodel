@@ -72,7 +72,7 @@ weighted average                                   = 61.0
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~1038 GB, NVIDIA only, from [huggingface.co/skt](https://huggingface.co/skt/A.X-K1/tree/bb56f50f36b6c0b7b0c108da02db47a5e3bd9ee1))
+1. Run it as published (BF16, needs 1091 GB memory, 1038 GB download, NVIDIA only, from [huggingface.co/skt](https://huggingface.co/skt/A.X-K1/tree/bb56f50f36b6c0b7b0c108da02db47a5e3bd9ee1))
    
    ```sh
    vllm serve skt/A.X-K1 --tensor-parallel-size 8

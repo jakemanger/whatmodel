@@ -90,7 +90,7 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~148 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md))
+1. Run it as published (BF16, needs 159 GB memory, 149.8 GB download, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md))
    
    ```sh
    wget https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/main/ultra_v3_reasoning_parser.py

@@ -118,7 +118,7 @@ api (Tencent Cloud TokenHub) · $1.25/M blended · $0.834 in / $2.501 out per 1M
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs ~417 GB, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
+2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs 439 GB memory, 417 GB download, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
    
    ```sh
    llama cli -hf 6block/Hy4-preview-GGUF:IQ4_XS
@@ -130,13 +130,13 @@ api (Tencent Cloud TokenHub) · $1.25/M blended · $0.834 in / $2.501 out per 1M
    llama serve -hf 6block/Hy4-preview-GGUF:IQ4_XS
    ```
 
-Other versions: IQ2_XS (~235.1 GB) `llama cli -hf 6block/Hy4-preview-GGUF:IQ2_XS`
+Other versions: IQ2_XS (248 GB memory, 235.1 GB download) `llama cli -hf 6block/Hy4-preview-GGUF:IQ2_XS`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs ~417 GB, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
+2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs 439 GB memory, 417 GB download, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
    
    ```sh
    lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ4_XS -y
@@ -144,17 +144,17 @@ Other versions: IQ2_XS (~235.1 GB) `llama cli -hf 6block/Hy4-preview-GGUF:IQ2_XS
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: IQ2_XS (~235.1 GB) `lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ2_XS -y`
+Other versions: IQ2_XS (248 GB memory, 235.1 GB download) `lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ2_XS -y`
 
 ### Other ways to run it
 
-1. Run it as published (fp8, needs ~813.77 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md))
+1. Run it as published (fp8, needs ~810 GB memory, ~770 GB download, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md))
    
    ```sh
    docker run --gpus all -p 8000:8000 --ipc=host -v ~/.cache/huggingface:/root/.cache/huggingface vllm/vllm-openai:hy4-preview tencent/Hy4-preview-FP8 --tensor-parallel-size 8 --speculative-config '{"num_speculative_tokens":3,"method":"mtp"}' --attention-backend FLASHMLA_SPARSE --tool-call-parser hy_v4 --reasoning-parser hy_v4 --enable-auto-tool-choice --port 8000 --served-model-name hy4-preview
    ```
 
-Other versions: BF16 (~1559.98 GB, NVIDIA only) `vllm serve tencent/Hy4-preview`
+Other versions: BF16 (1640 GB memory, 1560 GB download, NVIDIA only) `vllm serve tencent/Hy4-preview`
 
 Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/Hy4-preview)
 

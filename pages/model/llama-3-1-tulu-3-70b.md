@@ -85,7 +85,7 @@ weighted average                                   = 54.6
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
    
    ```sh
    llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
@@ -97,13 +97,13 @@ weighted average                                   = 54.6
    llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q4_K_M -y
@@ -111,7 +111,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/Llama-3.1-Tulu-3
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q8_0 -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q8_0 -y` · 4bit (43.2 GB memory, 39.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit -y`
 
 ### Ollama
 
@@ -122,13 +122,13 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.86 GB, from [ollama.com](https://ollama.com/library/tulu3/tags))
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [ollama.com](https://ollama.com/library/tulu3/tags))
    
    ```sh
    ollama run tulu3:70b-q4_K_M
    ```
 
-Other versions: Q8_0 (~85.22 GB) `ollama run tulu3:70b-q8_0`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `ollama run tulu3:70b-q8_0`
 
 ### MLX (Mac)
 
@@ -141,7 +141,7 @@ Other versions: Q8_0 (~85.22 GB) `ollama run tulu3:70b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run Llama 3.1 Tulu 3 70B (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit/tree/6a2fcbb258f7b01f0a9885f319cee5c9813e4738))
+2. Run Llama 3.1 Tulu 3 70B (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit/tree/6a2fcbb258f7b01f0a9885f319cee5c9813e4738))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-70B-4bit

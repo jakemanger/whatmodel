@@ -48,7 +48,7 @@ weighted average                              = 28.6
 
 ### Other ways to run it
 
-1. Run it as published (fp16, needs ~23.84 GB, from [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps/tree/275c9b71bfab4e271d1ed85515c61e317b6ef65e))
+1. Run it as published (fp16, needs 26.5 GB memory, 23.8 GB download, from [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps/tree/275c9b71bfab4e271d1ed85515c61e317b6ef65e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/pythia-12b-sft-v8-7k-steps', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

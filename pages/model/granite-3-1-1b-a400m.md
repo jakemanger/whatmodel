@@ -80,7 +80,7 @@ weighted average                                   = 31.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Granite 3.1 1B-A400M Instruct (Q4_K_M, needs ~0.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF/tree/20c8444f497d3470eb373d8978159d9e2acfc38f))
+2. Run Granite 3.1 1B-A400M Instruct (Q4_K_M, needs 2.4 GB memory, 0.82 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF/tree/20c8444f497d3470eb373d8978159d9e2acfc38f))
    
    ```sh
    llama cli -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q4_K_M
@@ -92,13 +92,13 @@ weighted average                                   = 31.0
    llama serve -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.4 GB) `llama cli -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q8_0`
+Other versions: Q8_0 (3 GB memory, 1.42 GB download) `llama cli -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Granite 3.1 1B-A400M Instruct (Q4_K_M, needs ~0.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF/tree/20c8444f497d3470eb373d8978159d9e2acfc38f))
+2. Run Granite 3.1 1B-A400M Instruct (Q4_K_M, needs 2.4 GB memory, 0.82 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF/tree/20c8444f497d3470eb373d8978159d9e2acfc38f))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF@Q4_K_M -y
@@ -106,7 +106,7 @@ Other versions: Q8_0 (~1.4 GB) `llama cli -hf lmstudio-community/granite-3.1-1b-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.4 GB) `lms get https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (3 GB memory, 1.42 GB download) `lms get https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -117,7 +117,7 @@ Other versions: Q8_0 (~1.4 GB) `lms get https://huggingface.co/lmstudio-communit
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Granite 3.1 1B-A400M Instruct (Q8_0, needs ~1.4 GB, from [ollama.com](https://ollama.com/library/granite3.1-moe/tags))
+2. Run Granite 3.1 1B-A400M Instruct (Q8_0, needs 3 GB memory, 1.42 GB download, from [ollama.com](https://ollama.com/library/granite3.1-moe/tags))
    
    ```sh
    ollama run granite3.1-moe:1b

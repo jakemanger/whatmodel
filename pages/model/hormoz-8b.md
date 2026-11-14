@@ -53,7 +53,7 @@ weighted average                          = 47.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Hormoz-8B (Q4_K_M, needs ~5.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
+2. Run Hormoz-8B (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
    
    ```sh
    llama cli -hf mradermacher/Hormoz-8B-GGUF:Q4_K_M
@@ -65,13 +65,13 @@ weighted average                          = 47.4
    llama serve -hf mradermacher/Hormoz-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Hormoz-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf mradermacher/Hormoz-8B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Hormoz-8B (Q4_K_M, needs ~5.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
+2. Run Hormoz-8B (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Hormoz-8B-GGUF@Q4_K_M -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Hormoz-8B-GGUF:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Hormoz-8B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/mradermacher/Hormoz-8B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -90,17 +90,17 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Horm
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Hormoz-8B (Q4_K_M, needs ~5.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
+2. Run Hormoz-8B (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Hormoz-8B-GGUF/tree/e53af212b619c01115a22e25f97516ec9f644bc7))
    
    ```sh
    ollama run hf.co/mradermacher/Hormoz-8B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Hormoz-8B-GGUF:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/mradermacher/Hormoz-8B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~32.11 GB, from [huggingface.co/mann-e](https://huggingface.co/mann-e/Hormoz-8B/tree/c91bcecb236c90523f70db7efa23dd794e9b4cff))
+1. Run it as published (fp32, needs 35.2 GB memory, 32.1 GB download, from [huggingface.co/mann-e](https://huggingface.co/mann-e/Hormoz-8B/tree/c91bcecb236c90523f70db7efa23dd794e9b4cff))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mann-e/Hormoz-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

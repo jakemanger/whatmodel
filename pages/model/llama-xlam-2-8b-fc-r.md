@@ -57,7 +57,7 @@ weighted average                                   = 61.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
+2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
    
    ```sh
    llama cli -hf Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q4_K_M
@@ -69,13 +69,13 @@ weighted average                                   = 61.5
    llama serve -hf Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
+2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
    
    ```sh
    lms get https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf@Q4_K_M -y
@@ -83,7 +83,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf Salesforce/Llama-xLAM-2-8b-fc-r-gg
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf@Q8_0 -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mxmcc/Llama-xLAM-2-8b-fc-r-mlx-8Bit -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf@Q8_0 -y` · 8bit (10.5 GB memory, 8.53 GB download, Mac only) `lms get https://huggingface.co/mxmcc/Llama-xLAM-2-8b-fc-r-mlx-8Bit -y`
 
 ### Ollama
 
@@ -94,13 +94,13 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/Salesforce/Llama-
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs ~4.9 GB, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
+2. Run Llama-xLAM-2-8b-fc-r (Q4_K_M, needs 6.7 GB memory, 4.92 GB download, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf/tree/f8a7dc29c8acc01da5e46f77c081538a8effb4a4))
    
    ```sh
    ollama run hf.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `ollama run hf.co/Salesforce/Llama-xLAM-2-8b-fc-r-gguf:Q8_0`
 
 ### MLX (Mac)
 
@@ -113,7 +113,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/Salesforce/Llama-xLAM-2-8b-fc-r
    pip install mlx-lm
    ```
 
-2. Run Llama-xLAM-2-8b-fc-r (8bit, needs ~8.5 GB, Mac only, from [huggingface.co/mxmcc](https://huggingface.co/mxmcc/Llama-xLAM-2-8b-fc-r-mlx-8Bit/tree/ee56c9afcae413faca7b85988acd3578b53b5145))
+2. Run Llama-xLAM-2-8b-fc-r (8bit, needs 10.5 GB memory, 8.53 GB download, Mac only, from [huggingface.co/mxmcc](https://huggingface.co/mxmcc/Llama-xLAM-2-8b-fc-r-mlx-8Bit/tree/ee56c9afcae413faca7b85988acd3578b53b5145))
    
    ```sh
    mlx_lm.chat --model mxmcc/Llama-xLAM-2-8b-fc-r-mlx-8Bit
@@ -127,7 +127,7 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/Salesforce/Llama-xLAM-2-8b-fc-r
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r/tree/a0efe39a575ef33d1d233cb2e799ae053b636c0e))
+1. Run it as published (BF16, needs 18.4 GB memory, 16.1 GB download, from [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-8b-fc-r/tree/a0efe39a575ef33d1d233cb2e799ae053b636c0e))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/Llama-xLAM-2-8b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

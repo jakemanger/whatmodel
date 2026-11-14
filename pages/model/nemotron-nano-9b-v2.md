@@ -150,7 +150,7 @@ api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens ·
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs ~5.83 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
+2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs 8.4 GB memory, 6.53 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
    
    ```sh
    llama cli -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q4_K_M
@@ -162,13 +162,13 @@ api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens ·
    llama serve -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~11.17 GB) `llama cli -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q8_0`
+Other versions: gguf-q8_0 (11.4 GB memory, 9.46 GB download) `llama cli -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs ~5.83 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
+2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs 8.4 GB memory, 6.53 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF@Q4_K_M -y
@@ -176,7 +176,7 @@ Other versions: gguf-q8_0 (~11.17 GB) `llama cli -hf bartowski/nvidia_NVIDIA-Nem
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~11.17 GB) `lms get https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF@Q8_0 -y` · 6bit (~7.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-Nano-9B-v2-6bit -y`
+Other versions: gguf-q8_0 (11.4 GB memory, 9.46 GB download) `lms get https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF@Q8_0 -y` · 6bit (9.1 GB memory, 7.22 GB download, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-Nano-9B-v2-6bit -y`
 
 ### Ollama
 
@@ -187,13 +187,13 @@ Other versions: gguf-q8_0 (~11.17 GB) `lms get https://huggingface.co/bartowski/
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs ~5.83 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
+2. Run Nemotron Nano 9B v2 (gguf-q4_k_m, needs 8.4 GB memory, 6.53 GB download, from [huggingface.co/bartowski](https://huggingface.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~11.17 GB) `ollama run hf.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q8_0`
+Other versions: gguf-q8_0 (11.4 GB memory, 9.46 GB download) `ollama run hf.co/bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -206,7 +206,7 @@ Other versions: gguf-q8_0 (~11.17 GB) `ollama run hf.co/bartowski/nvidia_NVIDIA-
    pip install mlx-lm
    ```
 
-2. Run Nemotron Nano 9B v2 (6bit, needs ~7.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-Nano-9B-v2-6bit/tree/76863058996b1f162fc4db6a0dac595fb7f06954))
+2. Run Nemotron Nano 9B v2 (6bit, needs 9.1 GB memory, 7.22 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-Nano-9B-v2-6bit/tree/76863058996b1f162fc4db6a0dac595fb7f06954))
    
    ```sh
    mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-Nano-9B-v2-6bit

@@ -58,7 +58,7 @@ weighted average                              = 41.7
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~28.97 GB, from [huggingface.co/hkust-nlp](https://huggingface.co/hkust-nlp/deita-7b-v1.0/tree/de16c0994d14f18a59fd41f1fb6cc1bc96aa1663))
+1. Run it as published (fp32, needs 32 GB memory, 29 GB download, from [huggingface.co/hkust-nlp](https://huggingface.co/hkust-nlp/deita-7b-v1.0/tree/de16c0994d14f18a59fd41f1fb6cc1bc96aa1663))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='hkust-nlp/deita-7b-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

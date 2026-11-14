@@ -53,7 +53,7 @@ weighted average                              = 49.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs ~5.1 GB, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF/tree/1671476f7098953c74b7b9ab4c1d0a53576ec59f))
+2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF/tree/1671476f7098953c74b7b9ab4c1d0a53576ec59f))
    
    ```sh
    llama cli -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q4_k_m
@@ -65,13 +65,13 @@ weighted average                              = 49.3
    llama serve -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~8.5 GB) `llama cli -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q8_0`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `llama cli -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs ~5.1 GB, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF/tree/1671476f7098953c74b7b9ab4c1d0a53576ec59f))
+2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [huggingface.co/matrixportalx](https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF/tree/1671476f7098953c74b7b9ab4c1d0a53576ec59f))
    
    ```sh
    lms get https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF@q4_k_m -y
@@ -79,7 +79,7 @@ Other versions: Q8_0 (~8.5 GB) `llama cli -hf matrixportalx/c4ai-command-r7b-ara
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF@q8_0 -y`
+Other versions: Q8_0 (10.5 GB memory, 8.54 GB download) `lms get https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF@q8_0 -y`
 
 ### Ollama
 
@@ -90,7 +90,7 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/matrixportalx/c4a
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs ~5.1 GB, from [ollama.com](https://ollama.com/library/command-r7b-arabic/tags))
+2. Run Command R7B Arabic (02-2025) (Q4_K_M, needs 6.8 GB memory, 5.06 GB download, from [ollama.com](https://ollama.com/library/command-r7b-arabic/tags))
    
    ```sh
    ollama run command-r7b-arabic:7b

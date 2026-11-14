@@ -55,7 +55,7 @@ weighted average                          = 32.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs ~1.1 GB, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
+2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs 2.7 GB memory, 1.11 GB download, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
    
    ```sh
    llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
@@ -67,13 +67,13 @@ weighted average                          = 32.4
    llama serve -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.9 GB) `llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (3.5 GB memory, 1.95 GB download) `llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs ~1.1 GB, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
+2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs 2.7 GB memory, 1.11 GB download, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
    
    ```sh
    lms get https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ Other versions: Q8_0 (~1.9 GB) `llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~1.9 GB) `lms get https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF@Q8_0 -y` · 4bit (~1.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/h2o-danube2-1.8b-chat-4bit -y`
+Other versions: Q8_0 (3.5 GB memory, 1.95 GB download) `lms get https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF@Q8_0 -y` · 4bit (2.7 GB memory, 1.15 GB download, Mac only) `lms get https://huggingface.co/mlx-community/h2o-danube2-1.8b-chat-4bit -y`
 
 ### Ollama
 
@@ -92,13 +92,13 @@ Other versions: Q8_0 (~1.9 GB) `lms get https://huggingface.co/h2oai/h2o-danube2
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs ~1.1 GB, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
+2. Run H2O-Danube2 1.8B Chat (Q4_K_M, needs 2.7 GB memory, 1.11 GB download, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF/tree/8683c1aff099497d64785336532113f61ddf161d))
    
    ```sh
    ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~1.9 GB) `ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0`
+Other versions: Q8_0 (3.5 GB memory, 1.95 GB download) `ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -111,7 +111,7 @@ Other versions: Q8_0 (~1.9 GB) `ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGU
    pip install mlx-lm
    ```
 
-2. Run H2O-Danube2 1.8B Chat (4bit, needs ~1.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/h2o-danube2-1.8b-chat-4bit/tree/6d99fb7b41c051ebd3a82051f6e39bd8fe01377d))
+2. Run H2O-Danube2 1.8B Chat (4bit, needs 2.7 GB memory, 1.15 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/h2o-danube2-1.8b-chat-4bit/tree/6d99fb7b41c051ebd3a82051f6e39bd8fe01377d))
    
    ```sh
    mlx_lm.chat --model mlx-community/h2o-danube2-1.8b-chat-4bit
@@ -125,7 +125,7 @@ Other versions: Q8_0 (~1.9 GB) `ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGU
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~3.66 GB, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat/tree/6d8114cb4160755a092babed10a7d383cc10b1db))
+1. Run it as published (BF16, needs 5.3 GB memory, 3.66 GB download, from [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat/tree/6d8114cb4160755a092babed10a7d383cc10b1db))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='h2oai/h2o-danube2-1.8b-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

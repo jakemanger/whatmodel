@@ -69,7 +69,7 @@ weighted average                                   = 46.4
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_K_M, needs ~85.6 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF/tree/8db6013940a7ed35c589cf7f2cb70893e5a15641))
+2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_K_M, needs 91.4 GB memory, 85.6 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF/tree/8db6013940a7ed35c589cf7f2cb70893e5a15641))
    
    ```sh
    llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q4_K_M
@@ -81,13 +81,13 @@ weighted average                                   = 46.4
    llama serve -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~149.4 GB) `llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q8_0` · Q2_K (~52.1 GB) `llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q2_K`
+Other versions: Q8_0 (158 GB memory, 149.4 GB download) `llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q8_0` · Q2_K (56.2 GB memory, 52.1 GB download) `llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_K_M, needs ~85.6 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF/tree/8db6013940a7ed35c589cf7f2cb70893e5a15641))
+2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_K_M, needs 91.4 GB memory, 85.6 GB download, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF/tree/8db6013940a7ed35c589cf7f2cb70893e5a15641))
    
    ```sh
    lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q4_K_M -y
@@ -95,7 +95,7 @@ Other versions: Q8_0 (~149.4 GB) `llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~149.4 GB) `lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q8_0 -y` · Q2_K (~52.1 GB) `lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q2_K -y`
+Other versions: Q8_0 (158 GB memory, 149.4 GB download) `lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q8_0 -y` · Q2_K (56.2 GB memory, 52.1 GB download) `lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q2_K -y`
 
 ### Ollama
 
@@ -106,13 +106,13 @@ Other versions: Q8_0 (~149.4 GB) `lms get https://huggingface.co/MaziyarPanahi/z
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_0, needs ~85.1 GB, from [ollama.com](https://ollama.com/library/zephyr/tags))
+2. Run Zephyr ORPO 141B-A35B v0.1 (Q4_0, needs 85 GB memory, 79.5 GB download, from [ollama.com](https://ollama.com/library/zephyr/tags))
    
    ```sh
    ollama run zephyr:141b-v0.1-q4_0
    ```
 
-Other versions: Q8_0 (~169.7 GB) `ollama run zephyr:141b-v0.1-q8_0`
+Other versions: Q8_0 (158 GB memory, 149.4 GB download) `ollama run zephyr:141b-v0.1-q8_0`
 
 Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1)
 

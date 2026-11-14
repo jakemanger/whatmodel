@@ -54,7 +54,7 @@ weighted average                                   = 50.1
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs ~42.5 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
+2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
    
    ```sh
    llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
@@ -66,13 +66,13 @@ weighted average                                   = 50.1
    llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~75 GB) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0` · Q2_K (29.2 GB memory, 26.4 GB download) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs ~42.5 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
+2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs 46.1 GB memory, 42.5 GB download, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
    
    ```sh
    lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q4_K_M -y
@@ -80,7 +80,7 @@ Other versions: Q8_0 (~75 GB) `llama cli -hf featherless-ai-quants/gradientai-Ll
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q2_K -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit -y`
+Other versions: Q8_0 (80.3 GB memory, 75 GB download) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q8_0 -y` · Q2_K (29.2 GB memory, 26.4 GB download) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q2_K -y` · 4bit (43.2 GB memory, 39.7 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit -y` · 8bit (80.3 GB memory, 75 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit -y`
 
 ### MLX (Mac)
 
@@ -93,7 +93,7 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/featherless-ai-qua
    pip install mlx-lm
    ```
 
-2. Run Llama-3-70B-Instruct-Gradient-1048k (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit/tree/83a33885f626f6ec53350f9753c6a810aa4abc18))
+2. Run Llama-3-70B-Instruct-Gradient-1048k (4bit, needs 43.2 GB memory, 39.7 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit/tree/83a33885f626f6ec53350f9753c6a810aa4abc18))
    
    ```sh
    mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
@@ -105,11 +105,11 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/featherless-ai-qua
    mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
    ```
 
-Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit`
+Other versions: 8bit (80.3 GB memory, 75 GB download, Mac only) `mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit`
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/gradientai](https://huggingface.co/gradientai/Llama-3-70B-Instruct-Gradient-1048k/tree/51bcb55df343f8e9df8484a84be39e1464642400))
+1. Run it as published (BF16, needs 150 GB memory, 141.1 GB download, from [huggingface.co/gradientai](https://huggingface.co/gradientai/Llama-3-70B-Instruct-Gradient-1048k/tree/51bcb55df343f8e9df8484a84be39e1464642400))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='gradientai/Llama-3-70B-Instruct-Gradient-1048k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

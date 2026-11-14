@@ -84,7 +84,7 @@ weighted average                                   = 60.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Devstral Small 2 24B (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF/tree/e471f62bf546b027d9f23f679bcd1a295eabf403))
+2. Run Devstral Small 2 24B (Q4_K_M, needs 17.1 GB memory, 15.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF/tree/e471f62bf546b027d9f23f679bcd1a295eabf403))
    
    ```sh
    llama cli -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q4_K_M
@@ -96,13 +96,13 @@ weighted average                                   = 60.7
    llama serve -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q8_0`
+Other versions: Q8_0 (27.8 GB memory, 25.9 GB download) `llama cli -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Devstral Small 2 24B (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF/tree/e471f62bf546b027d9f23f679bcd1a295eabf403))
+2. Run Devstral Small 2 24B (Q4_K_M, needs 17.1 GB memory, 15.2 GB download, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF/tree/e471f62bf546b027d9f23f679bcd1a295eabf403))
    
    ```sh
    lms get https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF@Q4_K_M -y
@@ -110,7 +110,7 @@ Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/Devstral-Small
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF@Q8_0 -y` · 4bit (~15.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit -y` · 8bit (~26.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit -y`
+Other versions: Q8_0 (27.8 GB memory, 25.9 GB download) `lms get https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF@Q8_0 -y` · 4bit (17 GB memory, 15.1 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit -y` · 8bit (28.5 GB memory, 26.6 GB download, Mac only) `lms get https://huggingface.co/mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit -y`
 
 ### Ollama
 
@@ -121,13 +121,13 @@ Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-communi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Devstral Small 2 24B (Q4_K_M, needs ~14.9 GB, from [ollama.com](https://ollama.com/library/devstral-small-2/tags))
+2. Run Devstral Small 2 24B (Q4_K_M, needs 17.1 GB memory, 15.2 GB download, from [ollama.com](https://ollama.com/library/devstral-small-2/tags))
    
    ```sh
    ollama run devstral-small-2:24b
    ```
 
-Other versions: Q8_0 (~29.3 GB) `ollama run devstral-small-2:24b-instruct-2512-q8_0`
+Other versions: Q8_0 (27.8 GB memory, 25.9 GB download) `ollama run devstral-small-2:24b-instruct-2512-q8_0`
 
 ### MLX (Mac)
 
@@ -140,7 +140,7 @@ Other versions: Q8_0 (~29.3 GB) `ollama run devstral-small-2:24b-instruct-2512-q
    pip install mlx-lm
    ```
 
-2. Run Devstral Small 2 24B (4bit, needs ~15.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit/tree/97228558fcbdd1adefd39d515155db3a894b37f7))
+2. Run Devstral Small 2 24B (4bit, needs 17 GB memory, 15.1 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit/tree/97228558fcbdd1adefd39d515155db3a894b37f7))
    
    ```sh
    mlx_lm.chat --model mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~29.3 GB) `ollama run devstral-small-2:24b-instruct-2512-q
    mlx_lm.server --model mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit
    ```
 
-Other versions: 8bit (~26.6 GB, Mac only) `mlx_lm.chat --model mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit`
+Other versions: 8bit (28.5 GB memory, 26.6 GB download, Mac only) `mlx_lm.chat --model mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit`
 
 Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
 

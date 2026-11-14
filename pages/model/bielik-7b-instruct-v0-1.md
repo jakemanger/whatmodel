@@ -55,7 +55,7 @@ weighted average                                   = 42.7
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
+2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
    
    ```sh
    llama cli -hf speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q4_K_M
@@ -67,13 +67,13 @@ weighted average                                   = 42.7
    llama serve -hf speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `llama cli -hf speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `llama cli -hf speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
+2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
    
    ```sh
    lms get https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF@Q4_K_M -y
@@ -81,7 +81,7 @@ Other versions: Q8_0 (~7.7 GB) `llama cli -hf speakleash/Bielik-7B-Instruct-v0.1
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF@Q8_0 -y` · 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-MLX -y`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `lms get https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF@Q8_0 -y` · 4bit (6 GB memory, 4.26 GB download, Mac only) `lms get https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-MLX -y`
 
 ### Ollama
 
@@ -92,13 +92,13 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/speakleash/Bielik
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
+2. Run Bielik 7B Instruct v0.1 (Q4_K_M, needs 6.1 GB memory, 4.37 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF/tree/b482400d6d36fa02167bc32f5f7b2d368271b4a1))
    
    ```sh
    ollama run hf.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q8_0`
+Other versions: Q8_0 (9.6 GB memory, 7.7 GB download) `ollama run hf.co/speakleash/Bielik-7B-Instruct-v0.1-GGUF:Q8_0`
 
 ### MLX (Mac)
 
@@ -111,7 +111,7 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/speakleash/Bielik-7B-Instruct-v
    pip install mlx-lm
    ```
 
-2. Run Bielik 7B Instruct v0.1 (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-MLX/tree/696af55340cf830e42a5e6c2cda602420b702270))
+2. Run Bielik 7B Instruct v0.1 (4bit, needs 6 GB memory, 4.26 GB download, Mac only, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1-MLX/tree/696af55340cf830e42a5e6c2cda602420b702270))
    
    ```sh
    mlx_lm.chat --model speakleash/Bielik-7B-Instruct-v0.1-MLX
@@ -125,7 +125,7 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/speakleash/Bielik-7B-Instruct-v
 
 ### Other ways to run it
 
-1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1/tree/ff00a0b55e9a64be87f9a8d2dcb65882f264aba4))
+1. Run it as published (BF16, needs 16.7 GB memory, 14.5 GB download, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-7B-Instruct-v0.1/tree/ff00a0b55e9a64be87f9a8d2dcb65882f264aba4))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-7B-Instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

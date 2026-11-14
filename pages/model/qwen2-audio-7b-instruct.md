@@ -62,7 +62,7 @@ weighted average                                   = 43.9
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs ~4.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
+2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs 7.3 GB memory, 5.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
    
    ```sh
    llama cli -hf mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q4_K_M
@@ -74,13 +74,13 @@ weighted average                                   = 43.9
    llama serve -hf mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.2 GB) `llama cli -hf mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (10.9 GB memory, 8.94 GB download) `llama cli -hf mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs ~4.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
+2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs 7.3 GB memory, 5.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF@Q4_K_M -y
@@ -88,7 +88,7 @@ Other versions: Q8_0 (~8.2 GB) `llama cli -hf mradermacher/Qwen2-Audio-7B-Instru
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF@Q8_0 -y`
+Other versions: Q8_0 (10.9 GB memory, 8.94 GB download) `lms get https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -99,13 +99,13 @@ Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs ~4.8 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
+2. Run Qwen2-Audio 7B Instruct (Q4_K_M, needs 7.3 GB memory, 5.48 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF/tree/e1e68850ba33e38eafbc3817919c318d9c7e757b))
    
    ```sh
    ollama run hf.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.2 GB) `ollama run hf.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q8_0`
+Other versions: Q8_0 (10.9 GB memory, 8.94 GB download) `ollama run hf.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct)
 

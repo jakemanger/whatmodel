@@ -58,7 +58,7 @@ weighted average                                   = 48.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Magicoder-S-CL-7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
+2. Run Magicoder-S-CL-7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
    
    ```sh
    llama cli -hf mradermacher/Magicoder-S-CL-7B-GGUF:Q4_K_M
@@ -70,13 +70,13 @@ weighted average                                   = 48.0
    llama serve -hf mradermacher/Magicoder-S-CL-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/Magicoder-S-CL-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `llama cli -hf mradermacher/Magicoder-S-CL-7B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Magicoder-S-CL-7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
+2. Run Magicoder-S-CL-7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
    
    ```sh
    lms get https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF@Q4_K_M -y
@@ -84,7 +84,7 @@ Other versions: Q8_0 (~7.2 GB) `llama cli -hf mradermacher/Magicoder-S-CL-7B-GGU
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF@Q8_0 -y`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `lms get https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -95,17 +95,17 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Magi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Magicoder-S-CL-7B (Q4_K_M, needs ~4.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
+2. Run Magicoder-S-CL-7B (Q4_K_M, needs 5.8 GB memory, 4.08 GB download, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Magicoder-S-CL-7B-GGUF/tree/0396f3aaf226fea507d872ca917e796293fa2090))
    
    ```sh
    ollama run hf.co/mradermacher/Magicoder-S-CL-7B-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/Magicoder-S-CL-7B-GGUF:Q8_0`
+Other versions: Q8_0 (9 GB memory, 7.16 GB download) `ollama run hf.co/mradermacher/Magicoder-S-CL-7B-GGUF:Q8_0`
 
 ### Other ways to run it
 
-1. Run it as published (fp32, needs ~26.95 GB, from [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B/tree/cf49bc9879266bfc0a0123aaa4ef644af1b20c04))
+1. Run it as published (fp32, needs 29.9 GB memory, 27 GB download, from [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B/tree/cf49bc9879266bfc0a0123aaa4ef644af1b20c04))
    
    ```sh
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ise-uiuc/Magicoder-S-CL-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"

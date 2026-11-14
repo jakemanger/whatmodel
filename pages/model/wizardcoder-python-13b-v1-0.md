@@ -59,7 +59,7 @@ weighted average                                   = 43.3
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF/tree/6bf0d04a20f89fff726044df2c23f967df613b7f))
+2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF/tree/6bf0d04a20f89fff726044df2c23f967df613b7f))
    
    ```sh
    llama cli -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q4_K_M
@@ -71,13 +71,13 @@ weighted average                                   = 43.3
    llama serve -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `llama cli -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF/tree/6bf0d04a20f89fff726044df2c23f967df613b7f))
+2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF/tree/6bf0d04a20f89fff726044df2c23f967df613b7f))
    
    ```sh
    lms get https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF@Q4_K_M -y
@@ -85,7 +85,7 @@ Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/WizardCoder-Python-13B-V
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF@Q8_0 -y`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `lms get https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -96,13 +96,13 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/WizardC
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs ~7.9 GB, from [ollama.com](https://ollama.com/library/wizardcoder/tags))
+2. Run WizardCoder Python 13B V1.0 (Q4_K_M, needs 15 GB memory, 7.87 GB download, from [ollama.com](https://ollama.com/library/wizardcoder/tags))
    
    ```sh
    ollama run wizardcoder:13b-python-q4_K_M
    ```
 
-Other versions: Q8_0 (~14 GB) `ollama run wizardcoder:13b-python-q8_0`
+Other versions: Q8_0 (20.9 GB memory, 13.8 GB download) `ollama run wizardcoder:13b-python-q8_0`
 
 Model repository and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0)
 

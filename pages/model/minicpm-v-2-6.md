@@ -63,7 +63,7 @@ weighted average                                   = 44.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run MiniCPM-V 2.6 (Q4_K_M, needs ~4.7 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf/tree/48fe6436abf57b3df6ec34f73cdc1fb4b740acb0))
+2. Run MiniCPM-V 2.6 (Q4_K_M, needs 6.8 GB memory, 5.73 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf/tree/48fe6436abf57b3df6ec34f73cdc1fb4b740acb0))
    
    ```sh
    llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q4_K_M
@@ -75,13 +75,13 @@ weighted average                                   = 44.0
    llama serve -hf openbmb/MiniCPM-V-2_6-gguf:Q4_K_M
    ```
 
-Other versions: Q8_0 (~8.1 GB) `llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q8_0`
+Other versions: Q8_0 (10.3 GB memory, 9.14 GB download) `llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run MiniCPM-V 2.6 (Q4_K_M, needs ~4.7 GB, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf/tree/48fe6436abf57b3df6ec34f73cdc1fb4b740acb0))
+2. Run MiniCPM-V 2.6 (Q4_K_M, needs 6.8 GB memory, 5.73 GB download, from [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf/tree/48fe6436abf57b3df6ec34f73cdc1fb4b740acb0))
    
    ```sh
    lms get https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf@Q4_K_M -y
@@ -89,7 +89,7 @@ Other versions: Q8_0 (~8.1 GB) `llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf@Q8_0 -y`
+Other versions: Q8_0 (10.3 GB memory, 9.14 GB download) `lms get https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf@Q8_0 -y`
 
 ### Ollama
 
@@ -100,13 +100,13 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/openbmb/MiniCPM-V
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run MiniCPM-V 2.6 (Q4_K_M, needs ~5.36 GB, from [ollama.com](https://ollama.com/library/minicpm-v/tags))
+2. Run MiniCPM-V 2.6 (Q4_K_M, needs 6.8 GB memory, 5.73 GB download, from [ollama.com](https://ollama.com/library/minicpm-v/tags))
    
    ```sh
    ollama run minicpm-v:8b-2.6-q4_K_M
    ```
 
-Other versions: Q8_0 (~10.22 GB) `ollama run minicpm-v:8b-2.6-q8_0`
+Other versions: Q8_0 (10.3 GB memory, 9.14 GB download) `ollama run minicpm-v:8b-2.6-q8_0`
 
 Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6)
 

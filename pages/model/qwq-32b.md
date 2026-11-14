@@ -135,7 +135,7 @@ weighted average                                   = 59.0
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run QwQ-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
+2. Run QwQ-32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
    
    ```sh
    llama cli -hf Qwen/QwQ-32B-GGUF:q4_k_m
@@ -147,13 +147,13 @@ weighted average                                   = 59.0
    llama serve -hf Qwen/QwQ-32B-GGUF:q4_k_m
    ```
 
-Other versions: Q8_0 (~34.8 GB) `llama cli -hf Qwen/QwQ-32B-GGUF:q8_0`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `llama cli -hf Qwen/QwQ-32B-GGUF:q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run QwQ-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
+2. Run QwQ-32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
    
    ```sh
    lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q4_k_m -y
@@ -161,7 +161,7 @@ Other versions: Q8_0 (~34.8 GB) `llama cli -hf Qwen/QwQ-32B-GGUF:q8_0`
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-8bit -y`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q8_0 -y` · 4bit (21.2 GB memory, 18.4 GB download, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-4bit -y` · 8bit (37.6 GB memory, 34.8 GB download, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-8bit -y`
 
 ### Ollama
 
@@ -172,13 +172,13 @@ Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/Qwen/QwQ-32B-GGU
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run QwQ-32B (Q4_K_M, needs ~20.16 GB, from [ollama.com](https://ollama.com/library/qwq/tags))
+2. Run QwQ-32B (Q4_K_M, needs 22.7 GB memory, 19.9 GB download, from [ollama.com](https://ollama.com/library/qwq/tags))
    
    ```sh
    ollama run qwq:32b
    ```
 
-Other versions: Q8_0 (~39.81 GB) `ollama run qwq:32b-q8_0`
+Other versions: Q8_0 (37.6 GB memory, 34.8 GB download) `ollama run qwq:32b-q8_0`
 
 ### MLX (Mac)
 
@@ -191,7 +191,7 @@ Other versions: Q8_0 (~39.81 GB) `ollama run qwq:32b-q8_0`
    pip install mlx-lm
    ```
 
-2. Run QwQ-32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QwQ-32B-4bit/tree/0e98026e38d9957ffdabff95384fd9ee096bb10d))
+2. Run QwQ-32B (4bit, needs 21.2 GB memory, 18.4 GB download, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QwQ-32B-4bit/tree/0e98026e38d9957ffdabff95384fd9ee096bb10d))
    
    ```sh
    mlx_lm.chat --model mlx-community/QwQ-32B-4bit
@@ -203,7 +203,7 @@ Other versions: Q8_0 (~39.81 GB) `ollama run qwq:32b-q8_0`
    mlx_lm.server --model mlx-community/QwQ-32B-4bit
    ```
 
-Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/QwQ-32B-8bit`
+Other versions: 8bit (37.6 GB memory, 34.8 GB download, Mac only) `mlx_lm.chat --model mlx-community/QwQ-32B-8bit`
 
 Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B)
 

@@ -88,7 +88,7 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Kimi K2.7 Code (ud-q4_k_xl, needs ~584.66 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
+2. Run Kimi K2.7 Code (ud-q4_k_xl, needs 615 GB memory, 584.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
    
    ```sh
    llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
@@ -100,13 +100,13 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
    llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
    ```
 
-Other versions: ud-q2_k_xl (~340.42 GB) `llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL`
+Other versions: ud-q2_k_xl (359 GB memory, 340.4 GB download) `llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Kimi K2.7 Code (ud-q4_k_xl, needs ~584.66 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
+2. Run Kimi K2.7 Code (ud-q4_k_xl, needs 615 GB memory, 584.7 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
    
    ```sh
    lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q4_K_XL -y
@@ -114,7 +114,7 @@ Other versions: ud-q2_k_xl (~340.42 GB) `llama cli -hf unsloth/Kimi-K2.7-Code-GG
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: ud-q2_k_xl (~340.42 GB) `lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y`
+Other versions: ud-q2_k_xl (359 GB memory, 340.4 GB download) `lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y`
 
 Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 

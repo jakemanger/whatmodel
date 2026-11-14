@@ -77,7 +77,7 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~2.49 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs 4.3 GB memory, 2.49 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
    
    ```sh
    llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
@@ -89,13 +89,13 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
    llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
    ```
 
-Other versions: Q8_0 (~4.08 GB) `llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0`
+Other versions: Q8_0 (5.9 GB memory, 4.08 GB download) `llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~2.49 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs 4.3 GB memory, 2.49 GB download, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
    
    ```sh
    lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q4_K_M -y
@@ -103,7 +103,7 @@ Other versions: Q8_0 (~4.08 GB) `llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-reasoning-8bit -y`
+Other versions: Q8_0 (5.9 GB memory, 4.08 GB download) `lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q8_0 -y` · 4bit (4 GB memory, 2.16 GB download, Mac only) `lms get https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit -y` · 8bit (5.9 GB memory, 4.08 GB download, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-reasoning-8bit -y`
 
 ### Ollama
 
@@ -114,7 +114,7 @@ Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mi
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~3.15 GB, from [ollama.com](https://ollama.com/library/phi4-mini-reasoning/tags))
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs 5 GB memory, 3.15 GB download, from [ollama.com](https://ollama.com/library/phi4-mini-reasoning/tags))
    
    ```sh
    ollama run phi4-mini-reasoning:3.8b
@@ -131,7 +131,7 @@ Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mi
    pip install mlx-lm
    ```
 
-2. Run Phi-4-mini-reasoning 3.8B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit/tree/10906e3b888052ad3c7b83ffad45ed576cacc905))
+2. Run Phi-4-mini-reasoning 3.8B (4bit, needs 4 GB memory, 2.16 GB download, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit/tree/10906e3b888052ad3c7b83ffad45ed576cacc905))
    
    ```sh
    mlx_lm.chat --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
@@ -143,7 +143,7 @@ Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mi
    mlx_lm.server --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
    ```
 
-Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit`
+Other versions: 8bit (5.9 GB memory, 4.08 GB download, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit`
 
 Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-mini-reasoning)
 

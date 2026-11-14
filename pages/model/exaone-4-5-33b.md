@@ -117,7 +117,7 @@ LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5
    irm https://llama.app/install.ps1 | iex
    ```
 
-2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs ~21.14 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
+2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs 25.2 GB memory, 22.6 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
    
    ```sh
    llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
@@ -129,13 +129,13 @@ LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5
    llama serve -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~41.78 GB) `llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (41.1 GB memory, 37.7 GB download) `llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0`
 
 ### LM Studio
 
 1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs ~21.14 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
+2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs 25.2 GB memory, 22.6 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
    
    ```sh
    lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF@Q4_K_M -y
@@ -143,7 +143,7 @@ Other versions: gguf-q8_0 (~41.78 GB) `llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Other versions: gguf-q8_0 (~41.78 GB) `lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF@Q8_0 -y`
+Other versions: gguf-q8_0 (41.1 GB memory, 37.7 GB download) `lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF@Q8_0 -y`
 
 ### Ollama
 
@@ -154,13 +154,13 @@ Other versions: gguf-q8_0 (~41.78 GB) `lms get https://huggingface.co/LGAI-EXAON
    curl -fsSL https://ollama.com/install.sh | sh
    ```
 
-2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs ~21.14 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
+2. Run EXAONE 4.5 33B (gguf-q4_k_m, needs 25.2 GB memory, 22.6 GB download, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF/tree/main))
    
    ```sh
    ollama run hf.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
    ```
 
-Other versions: gguf-q8_0 (~41.78 GB) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0`
+Other versions: gguf-q8_0 (41.1 GB memory, 37.7 GB download) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0`
 
 Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B)
 
