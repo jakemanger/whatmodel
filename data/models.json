@@ -88329,8 +88329,8 @@
     "released": "2026-11",
     "released_source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
     "source": "https://thinkingmachines.ai/news/inkling-2-small/",
-    "open_weights": false,
-    "license": "proprietary",
+    "open_weights": true,
+    "license": "apache-2.0",
     "params_b": 594,
     "active_b": 17,
     "params_note": "Model card 'Parameters: 594B total parameters, 17B active'; 48-layer MoE, 8 of 384 experts per token.",
@@ -88342,8 +88342,8 @@
       "provider": "Thinking Machines (Tinker)"
     },
     "local": null,
-    "model_repo": null,
-    "identity_note": "New, distinct second-generation model, not a revision of inkling-small (266B-A12B, open weights, July 2026). Announced 2026-11-05 ('Today we are introducing our second model generation with Inkling 2 Small'); 594B total / 17B active MoE with image input. Availability: inference and fine-tuning on Tinker (serverless inference in beta); API-only with closed weights as of 2026-11-12. Corresponds exactly to Arena entry 'Inkling 2 Small' (org 'thinky', licence 'Proprietary') on text_style_control, webdev and agent boards. Thinking Machines tested early checkpoints on OpenCode under the name 'Fledge-Alpha' (not the same label; not mapped). Licence: Model card: 'License Tinker Terms of Use'. Announcement (2026-11-05): available through Tinker 'with closed weights'; Thinking Machines 'intend[s] to make the full weights available under an Apache 2.0 license next week'. No thinkingmachines/Inkling-2-Small repo on Hugging Face as of 2026-11-12 (HF API author=thinkingmachines lists Inkling, Inkling-Small, Inkling-NVFP4, Inkling-Small-NVFP4 only). Re-check and switch to open weights + apache-2.0 only when the repo exists. List price not recorded (USD per 1M tokens, Tinker Serverless Inference (Beta) table, row 'Inkling 2 Small | thinkingmachines/Inkling-2-Small:peft:262144 | 256K | $0.30 ($0.03 cached) | $1.00'; cached prefill $0.03 excluded. Page: 'All prices are per million tokens.' Serverless inference is in beta (waitlist for production use). Not a models.dev price: at 5056efa models.dev only has free promotional listings (opencode inkling-2-small-free, kilo/openrouter inkling-2-small:free). First-party Thinking Machines docs, observed 2026-11-12.)",
+    "model_repo": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+    "identity_note": "New, distinct second-generation model, not a revision of inkling-small (266B-A12B, open weights, July 2026). Announced 2026-11-05 ('Today we are introducing our second model generation with Inkling 2 Small'); 594B total / 17B active MoE with image input. Weights published 2026-11-12: Thinking Machines' post carries a 'Nov 12, 2026 Update' saying the weights are available on Hugging Face, at thinkingmachines/Inkling-2-Small (pinned 8361e7a; repository created 2026-11-04 as a placeholder, model uploaded 2026-11-12), Apache-2.0 per the card's front matter, not gated. Also served for inference and fine-tuning on Tinker. No local run command is listed yet. List price not recorded: only the Tinker docs page states it.",
     "identity_sources": [
       "https://thinkingmachines.ai/news/inkling-2-small/",
       "https://thinkingmachines.ai/model-card/inkling-2-small/",
@@ -88363,7 +88363,8 @@
         "reported_label": "Inkling 2 Small"
       }
     ],
-    "params_b_source": "https://thinkingmachines.ai/model-card/inkling-2-small/"
+    "params_b_source": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+    "license_source": "https://huggingface.co/thinkingmachines/Inkling-2-Small/blob/8361e7a31ae7e9966a49a91d3994fde618936c2b/README.md"
   },
   {
     "id": "muse-ember",
@@ -88736,5 +88737,88 @@
         "reported_label": "SkyReels V4"
       }
     ]
+  },
+  {
+    "id": "gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog",
+    "source": "https://ai.google.dev/gemini-api/docs/changelog",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-hydrogen",
+      "provider": "Google",
+      "price_in": 1.5,
+      "price_out": 7.5,
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "USD per 1M tokens, Gemini API Standard paid tier for gemini-4-hydrogen (output includes thinking tokens), flat across the context window. Cached input $0.075 (implicit caching only) and batch prices excluded. A free tier exists. Google official pricing page, observed 2026-11-14."
+    },
+    "local": null,
+    "context_k": 1048.576,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-hydrogen",
+    "context_note": "Google's model page: 'Context window (unified input and output token limit) 1,048,576'; max output 65,536 by default. Observed 2026-11-14.",
+    "identity_note": "Gemini API changelog, November 12, 2026: 'Gemini 4 Hydrogen (gemini-4-hydrogen) generally available (GA)', on the free tier and at paid-tier pricing of $1.50 per 1M input tokens and $7.50 per 1M output tokens. Stable model code gemini-4-hydrogen; thinking levels low, medium, high (default) and xhigh. Google presents it as the successor to Gemini 3.8 Flash. Distinct from Gemini 4 Argon and Gemini 4 Carbon. Arena lists it as 'Gemini 4 Hydrogen (High)'."
+  },
+  {
+    "id": "qwen4-max-preview",
+    "name": "Qwen4-Max-Preview",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "availability": "preview",
+    "availability_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "identity_note": "Alibaba Cloud Model Studio release entry dated 2026-11-11: 'Qwen4-Max-Preview is the next-generation flagship multimodal model in the Qwen family, combining text generation, image and video understanding, and deep reasoning.' Model id qwen4-max-preview. In preview and available through Token Plan only, with no pay-as-you-go price, so no API route or price is recorded. Alibaba's model page gives a 1M-token context and a preview window ending 2026-11-25; the context is not recorded because that page is not a reviewed source. Remove the preview designation when a generally purchasable Qwen4 model is verified."
+  },
+  {
+    "id": "ernie-5-5-flash-preview",
+    "name": "ERNIE 5.5 Flash Preview (280B-A14B)",
+    "provider": "Baidu",
+    "category": "llm",
+    "released": "2026-11",
+    "released_source": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+    "source": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+    "open_weights": false,
+    "license": "proprietary",
+    "params_b": 280,
+    "active_b": 14,
+    "params_b_source": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+    "params_note": "Baidu's release post: 'It has 280B total parameters with 14B active and a 1M-token context'.",
+    "api": {
+      "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "provider": "Baidu Qianfan"
+    },
+    "local": null,
+    "identity_note": "Baidu release post dated November 11, 2026: the first post-trained model built on ERNIE 5.5 Flash Base; API model ernie-5.5-flash-preview on Qianfan. Baidu says 'the weights will be open-sourced under Apache 2.0 soon'; no public repository existed on 2026-11-14, so it is recorded as closed until the weights are published. Qianfan lists its price only in CNY, so no USD price is recorded; the 1M-token context is stated in the post but not recorded because the post is not a reviewed context source. ERNIE-5.5-Flash-Base, the pretrain-only checkpoint, is a different artifact and is not in the catalogue."
+  },
+  {
+    "id": "minimax-h3-image",
+    "name": "MiniMax H3-Image",
+    "provider": "MiniMax",
+    "category": "image",
+    "released": "2026-11",
+    "released_source": "https://www.minimax.io/blog/minimax-h3-image",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/5f90473023975e6271b0ed1dd84c4e88e4bbc6d3/README.md",
+    "open_weights": true,
+    "license": "minimax-h3-image-community",
+    "license_source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/5f90473023975e6271b0ed1dd84c4e88e4bbc6d3/LICENSE",
+    "params_b": 33.1,
+    "params_b_source": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/5f90473023975e6271b0ed1dd84c4e88e4bbc6d3/README.md",
+    "params_note": "Model card: a 33.1B-parameter DiT; generation and editing in one checkpoint.",
+    "api": {
+      "url": "https://platform.minimax.io/",
+      "provider": "MiniMax"
+    },
+    "local": null,
+    "model_repo": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+    "identity_note": "MiniMax announcement (2026-11-11): 'Today, we're releasing MiniMax H3-Image, an open-weight image generation model built on H3.' Open weights at MiniMaxAI/MiniMax-H3-Image (pinned 5f90473; repository created 2026-11-03, weights committed 2026-11-10) under the MiniMax-H3-Image Community License Agreement, a custom licence, not an OSI licence. Also served on MiniMax's API as MiniMax-H3-Image and MiniMax-H3-Image-Highspeed; MiniMax prices it per token, not per image, so no price is recorded. No run command is listed yet. Distinct from the MiniMax H3 video model. Arena lists it as 'MiniMax H3-Image' on its text-to-image and image-edit boards."
   }
 ]

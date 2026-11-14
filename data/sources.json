@@ -66,14 +66,19 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/video_edit/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-11-12",
+    "checked": "2026-11-14",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
@@ -7404,14 +7409,20 @@
       "huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet",
       "huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
       "huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
-      "huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet"
+      "huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/0135ad445cc6d27de16e3830ceebe8d15d25681c/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/495c9bbb7e3c84b98925e3da6e1be081adfa636b/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/e44f57daa8e61956e58f19005138c218f00ef800/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/16404f56adae6e50d1a6d38006023367e5a8f30c/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/abee8f419908493ffff061bebfe8e9c34c151440/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/107d15fa81cf14a0537907b7f711617e94e0be67/data/train-00000-of-00001.parquet"
     ],
     "exact": true,
     "license": "CC BY-SA 4.0",
     "terms_url": "https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/README.md",
     "license_url": "/licenses/matharena-sharealike-NOTICE.txt",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-11-14",
     "attribution": "MathArena (Jasper Dekoninck, Nikola Jovanović, Tim Gehrunger, Kári Rögnvaldsson, Ivo Petrov, Chenhao Sun, Martin Vechev; SRI Lab, ETH Zurich), model-output datasets on Hugging Face (huggingface.co/MathArena), CC BY-SA 4.0. Adapted by whatmodel.sh: per-attempt correctness aggregated to per-model mean scores (mean over problems of the per-problem mean over attempts), only complete non-harness runs, highest configured reasoning effort per model, catalogue IDs mapped. No problem statements, model answers or transcripts redistributed. No endorsement.",
     "quote": "Each pinned dataset card declares YAML 'license: cc-by-sa-4.0' and states under 'Licensing Information': 'This dataset is licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Please abide by the license when using the provided data.'",
     "scope": "Only the *_outputs datasets listed in match (ArXivMath Dec 2025-Aug 2026, BrokenArXiv Feb-Aug 2026, ArXivLean Mar and Jun 2026), each CC BY-SA 4.0 on its own card. MathArena's competition datasets (AIME, HMMT, USAMO, BRUMO, SMT, CMIMC, Kangaroo, Putnam, IMO/IMC, Apex, Project Euler and their _outputs) are CC BY-NC-SA 4.0 and are excluded. The MIT licence of the eth-sri/matharena GitHub harness is not relied on for the data; configs there are cited only for run settings.",
@@ -7671,14 +7682,15 @@
     "kind": "leaderboard",
     "match": [
       "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json",
-      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json"
+      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/5fca40ef224413d3a36e7e5592873fe8b67d83f8/leaderboard.json"
     ],
     "exact": true,
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/README.md",
     "license_url": "/licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-11-14",
     "attribution": "Miðeind ehf., Icelandic LLM Leaderboard (huggingface.co/spaces/mideind/icelandic-llm-leaderboard), CC BY 4.0. Adapted by whatmodel.sh: selected the published 'average' per model at its highest listed reasoning setting and mapped model IDs. No endorsement.",
     "quote": "README at the pinned revision: 'Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely with attribution.' Space card YAML: `license: cc-by-4.0`. Built and maintained by Miðeind.",
     "icon": "huggingface.co"
@@ -8136,13 +8148,14 @@
       "ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
       "ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview",
       "ai.google.dev/gemini-api/docs/models/gemini-4-argon",
-      "ai.google.dev/gemini-api/docs/models/gemini-4-carbon"
+      "ai.google.dev/gemini-api/docs/models/gemini-4-carbon",
+      "ai.google.dev/gemini-api/docs/models/gemini-4-hydrogen"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
     "verdict": "allowed",
-    "checked": "2026-11-12",
+    "checked": "2026-11-14",
     "exact": true,
     "icon": "ai.google.dev",
     "attribution": "Google Gemini API official model documentation, observed 2026-09-26",
@@ -11688,13 +11701,14 @@
     "name": "Terminal-Bench 4.0 official leaderboard submissions",
     "kind": "leaderboard",
     "match": [
-      "github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions"
+      "github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions",
+      "github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions"
     ],
     "license": "Apache-2.0",
     "terms_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
     "license_url": "/licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-11-14",
     "attribution": "Terminal-Bench maintainers (harbor-framework/terminal-bench), official Terminal-Bench 4.0 leaderboard submission files, Apache-2.0. Selected published accuracy per submission; model IDs mapped; percentages converted to fractions. No endorsement.",
     "quote": "Root LICENSE at the pinned commit is the Apache License, Version 2.0; the leaderboard/submissions files are in the same repository with no nested licence override.",
     "icon": "github.com"
@@ -13711,7 +13725,8 @@
     "kind": "leaderboard",
     "match": [
       "github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
-      "github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md"
+      "github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+      "github.com/vectara/hallucination-leaderboard/blob/675cea651f4e7c9f8889a15ee12b35d11e9412ad/README.md"
     ],
     "exact": true,
     "license": "Apache-2.0",
@@ -13720,7 +13735,7 @@
     "quote": "The repository LICENSE at the pinned commit is the Apache License, Version 2.0, and the leaderboard table is part of the committed README. Apache-2.0 section 2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work and Derivative Works.",
     "attribution": "Vectara, Hallucination Leaderboard (vectara/hallucination-leaderboard @af0e320), Apache-2.0. Factual consistency rates for catalogue models whose exact model the README's API details identify. Also the previous-dataset table on branch hhem-2.3-old-dataset @9ceb782.",
     "verdict": "allowed",
-    "checked": "2026-10-08",
+    "checked": "2026-11-14",
     "icon": "github.com",
     "scope": "Factual consistency rates from the README table; rows whose API identity is ambiguous, or served as a third party's own quantization, are not used."
   },
