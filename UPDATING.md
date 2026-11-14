@@ -32,8 +32,13 @@ fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw 
      a model appear on the board. An announced limited preview may use `availability: "preview"`
      with a reviewed `availability_source` URL: it appears on the default board as "limited preview",
      but cannot satisfy a local-only or price filter without a verified run route. Remove the preview
-     designation when broad access is verified. Prices may be unknown. Omitted variant `gb` can be estimated from
-     `params_b` and precision, and must be labelled as an estimate.
+     designation when broad access is verified. Prices may be unknown.
+   - Local downloads: after importing, run `npm run sizes -- --only <model id> --write`. It sums the files
+     the command fetches from the host's own listing (Hugging Face API at a pinned commit, Ollama registry)
+     and records that as `gb` with its `size_source`. Name the precision as the file does (`q4_k_m`,
+     `ud-iq1_s`, `mlx-4bit`, `fp8`, `bf16`). Only a download with no listing may have `gb` estimated from
+     `params_b` and precision, labelled as an estimate. A split download (Strata) states the GPU memory
+     and RAM its runtime needs in `needs`, from that runtime's own source.
    - Speeds: `{ model, quant, hardware, kind, offload, value, unit, engine, settings, source }`. Name the
      hardware as it appears in `data/hardware.json` so it can be matched to users' machines.
    - A model from a provider that has no logo yet needs one. See [Maker icons](#maker-icons).
@@ -165,6 +170,10 @@ A code licence does not automatically license a live service's ratings. Public a
 - `api.url` is an outbound link, not evidence. A numeric price needs a separate approved `price_source`.
   Unknown prices are permitted; do not invent zero. Keep the served provider consistent with the price.
 - Context needs `context_source`. Label estimated memory; do not imply it covers the maximum context.
+- `npm run check` fails on a download size that can't be right for its precision (bits per weight far from
+  what that format takes), on a precision name it doesn't know, and on `needs` that can't hold the download.
+  Fix the size by measuring it, or the precision name or `params_b`; never widen the check to pass.
+  `npm run sizes` (without `--write`) re-reads every listing and reports sizes more than 20% off.
 - Verify the exact checkpoint, benchmark version, reasoning/tool setting, and table column. Do not merge
   Reasoning and Instruct checkpoints or different LiveCodeBench releases.
 - A source's `allowed` verdict is our documented review decision, not a legal guarantee.

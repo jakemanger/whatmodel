@@ -62,10 +62,12 @@ test('unified memory machines give the GPU a share of RAM, and a detected GB10 i
   const spark = parseSpecs(new URLSearchParams({ ram: '128', nv: 'NVIDIA GB10, [N/A]' }), hardware)!;
   assert.equal(spark.gpu, 'unified');
   assert.equal(spark.hw?.id, 'dgx-spark');
-  assert.deepEqual(usable(spark), { fast: 96, total: 96 });
+  const u = usable(spark); // three-quarters of 128 GiB, in GB
+  assert.equal(Math.round(u.fast * 10) / 10, 103.1);
+  assert.equal(u.total, u.fast);
   const board = view('ram=128&gpu=unified');
   assert.equal(board.specs?.gpu, 'unified');
-  assert.ok(board.shown.length > 0 && board.shown.every((r) => r.where.startsWith('local') && (r.mem_gb ?? 0) <= 96));
+  assert.ok(board.shown.length > 0 && board.shown.every((r) => r.where.startsWith('local') && (r.mem_gb ?? 0) <= u.fast));
 });
 
 test('text models with fewer than 3 results are left off unless ?thin=1, and ranks close up', () => {

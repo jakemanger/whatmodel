@@ -3,7 +3,9 @@ export type Category = "llm" | "image" | "video" | "tts" | "stt" | "decision";
 export type Variant = {
   quant: string;
   gb: number; // LLMs: download size. Other categories: memory needed to run it
-  gb_estimated?: boolean; // no source gave it: params × bytes per weight (see data.ts)
+  gb_estimated?: boolean; // no source gave it: params × bits per weight for its precision (see data.ts)
+  size_source?: string; // the host's file listing the size was summed from, pinned (npm run sizes)
+  size_note?: string; // why a measured size sits outside the usual range for its precision (lib/memory.ts)
   cmd: string;
   platform?: "any" | "mac" | "nvidia" | "gpu"; // gpu: an NVIDIA or AMD graphics card, Windows or Linux
   // Runtimes that split a model across GPU memory, system RAM and SSD (Strata) state what they need

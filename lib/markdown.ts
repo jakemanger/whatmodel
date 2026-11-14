@@ -231,12 +231,12 @@ function runMarkdown(m: Model, cat: Category): string[] {
     }
     const shown = main.steps.filter((x) => !x.href); // app links don't work on GitHub; the command does the same
     const [first, ...more] = shown;
-    steps.push(`${rt.id === "other" ? "Run it as published" : `Run ${text(m.name)}`} (${versionLabel(main.v)}, needs ${needsLabel(main.v)}${main.v.source ? `, from ${repoLabel(main.v.source)}` : ""})` +
+    steps.push(`${rt.id === "other" ? "Run it as published" : `Run ${text(m.name)}`} (${versionLabel(main.v)}, needs ${needsLabel(main.v, m)}${main.v.source ? `, from ${repoLabel(main.v.source)}` : ""})` +
       (first?.cmd ? `\n\n${fence([first.cmd])}` : ""));
     for (const st of more) steps.push(st.cmd ? `${capital(st.label)}\n\n${fence([st.cmd])}` : capital(st.label));
     out.push(steps.map((x, i) => `${i + 1}. ${indent(x)}`).join("\n\n"));
     const others = sec.versions.filter((_, i) => i !== sec.preferred);
-    if (others.length) out.push(`Other versions: ${others.map((x) => `${versionLabel(x.v)} (${needsLabel(x.v)}) \`${x.steps.find((st) => st.cmd)?.cmd}\``).join(" · ")}`);
+    if (others.length) out.push(`Other versions: ${others.map((x) => `${versionLabel(x.v)} (${needsLabel(x.v, m)}) \`${x.steps.find((st) => st.cmd)?.cmd}\``).join(" · ")}`);
   });
   if (!m.api && !guide.length && !m.access) out.push("No verified API or local download yet.");
   if (m.access) out.push(`[${m.access.kind === "gated" ? "Request access" : m.access.kind === "code" ? "Implementation and setup" : "Download model files"}](${m.access.url}) · ${text(m.access.note)} [Evidence](${m.access.source}); checked ${m.access.checked}.`);
@@ -359,6 +359,7 @@ export function methodMarkdown(): string {
   ].map((l) => `- ${l}`).join("\n"));
   out.push(`## Running models locally`);
   out.push(`Memory needed is the download plus room to run it with an 8k-token conversation. For ${kvModels} text models we know the KV cache size from the model's GGUF header, read by [Local Model Explorer](https://huggingface.co/spaces/codelion/local-model-explorer) (MIT), so that room is the KV cache as llama.cpp sizes it, sliding-window layers included, plus llama.cpp's scratch buffers. For the rest it is a flat allowance of 5% of the download plus 1.5 GB. It is an estimate, not a measured peak: longer conversations need more, and a listed context window is the provider's ceiling, not a promise that the full window fits on your machine.`);
+  out.push(`Download sizes are the files each command fetches, added up from the host's own file list (Hugging Face at a pinned commit, or Ollama's registry), not worked out from the parameter count. A model runs at full speed when the memory it needs fits on the graphics card with half a gigabyte to spare, or in the share of a Mac's memory macOS lets the GPU use (two-thirds up to 36 GB, three-quarters above). With less, it can run partly from system RAM, all but 8 GB of it, more slowly. These rules are tested against published runs: every download measured running entirely on a known card has to fit it, and reports such as gpt-oss-120b on a 16 GB card with 64 GB of RAM have to come out the way they did.`);
   out.push(`Some downloads split a model across the graphics card, system RAM and SSD, such as [Strata](https://github.com/Niko1221/Strata) for Qwen3.8-Flash-Next. They list the GPU memory and RAM their maker says they run with instead of one size, and only run on an NVIDIA or AMD graphics card under Windows or Linux.`);
   out.push(`Scores describe the published model evaluation. A quantized download may perform differently; we currently apply no numeric quantization penalty. Unknown prices and speeds are left blank or marked unknown. Unknown prices never pass a finite budget filter. API prices use base token rates blended three input tokens to one output token; check the provider for tiers and surcharges.`);
   out.push(`Model pages list every speed measurement with its hardware, engine, precision and workload. The board's speed column shows the median measured speed for each model we have one for: on your chip when we have it (no ~), otherwise on the closest comparable machines we have, marked ~ with the machines named on hover. Nothing is estimated. A model that doesn't fit in your GPU's memory counts as slow unless a measurement on your chip, or on a comparable machine running it the same way, shows a usable speed.`);

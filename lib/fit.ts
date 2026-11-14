@@ -74,16 +74,24 @@ export const llmOverheadGb = (gb: number) => gb * 0.05 + 1.5;
 export const needGb = (v: Variant, cat: Category = "llm", kv?: Kv) =>
   cat !== "llm" ? v.gb : kv ? v.gb + kvGb(kv) + scratchGb(kv) : v.gb + llmOverheadGb(v.gb);
 
-// Memory available to a model, split into "fast" (GPU / unified) and total (with CPU offload).
+// Graphics cards and RAM are sold in binary gigabytes (a "24 GB" card holds 24 × 2^30 bytes); download sizes
+// are in billions of bytes, as Hugging Face and Ollama list them. Memory is compared in download units.
+export const GIB = 2 ** 30 / 1e9;
+
+// Memory available to a model, in GB of 10^9 bytes, split into "fast" (GPU / unified) and total (with CPU offload).
 export function usable(s: Specs): { fast: number; total: number } {
+  const ram = s.ram * GIB, vram = s.vram * GIB;
   if (s.gpu === "apple" || s.gpu === "unified") {
     // macOS lets the GPU wire ~2/3 of RAM up to 36GB, ~3/4 above that. Other unified-memory
     // machines are assumed to leave the GPU the same share.
-    const fast = s.ram * (s.ram <= 36 ? 0.67 : 0.75);
+    const fast = ram * (s.ram <= 36 ? 0.67 : 0.75);
     return { fast, total: fast };
   }
-  const sys = Math.max(0, s.ram - 4) * 0.8;
-  if (s.vram > 0) return { fast: s.vram - 0.5, total: s.vram - 0.5 + sys };
+  // System RAM a spilled model can use: all but 8 GB, left for the system and other apps. Published runs
+  // put it here: gpt-oss-120b (65 GB) runs on a 16 GB card with 64 GB of RAM, about 51 GB of it in RAM
+  // (tests/memory.test.ts lists the runs this is checked against).
+  const sys = Math.max(0, ram - 8);
+  if (s.vram > 0) return { fast: vram - 0.5, total: vram - 0.5 + sys };
   return { fast: 0, total: sys };
 }
 

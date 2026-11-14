@@ -3,7 +3,9 @@
 // library tag) and write the equivalent command for every runtime that can load that file.
 // The templates were tested on 2026-10-11 with llama.cpp b11540, LM Studio 0.4, Ollama 0.30 and
 // mlx-lm on macOS (docs/research/runtimes-2026-10-11.md).
-import type { Variant } from "./types.ts";
+import { catOf } from "./categories.ts";
+import { needGb } from "./fit.ts";
+import type { Model, Variant } from "./types.ts";
 
 export type Artifact =
   | { kind: "gguf"; repo: string; quant: string | null }
@@ -142,11 +144,17 @@ export function runGuide(variants: Variant[]): GuideSection[] {
 // A version's name as shown: quantisation codes in capitals, MLX bit widths as they are.
 export const versionLabel = (v: Variant) => { const q = v.quant.replace(/^mlx-/, ""); return /^(i?q\d|bf16|f16|f32)/i.test(q) ? q.toUpperCase() : q; };
 
-// What a download needs: its size, or for a split download (Strata) the GPU memory and RAM it runs
-// well with, and the machines it runs on.
+// What a download needs: for a text model, the memory it runs in (the download plus an 8k-token
+// conversation, as the leaderboard counts it) and the download's size; for a split download (Strata) the
+// GPU memory and RAM it runs well with; for other categories the memory to run it. Then the machines it
+// runs on.
 const ONLY = { mac: "Mac", nvidia: "NVIDIA", gpu: "NVIDIA or AMD card" } as const;
-export const needsLabel = (v: Variant) => {
+const gbLabel = (x: number) => String(x >= 100 ? Math.round(x) : Math.round(x * 10) / 10);
+export const needsLabel = (v: Variant, m?: Pick<Model, "category" | "kv">) => {
   const n = v.needs?.find((x) => !x.slow);
-  const size = n ? `${n.vram_gb} GB VRAM + ${n.ram_gb} GB RAM, ${v.gb} GB download` : `${v.gb_estimated ? "~" : ""}${v.gb} GB`;
+  const est = v.gb_estimated ? "~" : "";
+  const size = n ? `${n.vram_gb} GB VRAM + ${n.ram_gb} GB RAM, ${v.gb} GB download`
+    : m && catOf(m as Model) === "llm" ? `${est}${gbLabel(needGb(v, "llm", m.kv))} GB memory, ${est}${v.gb} GB download`
+    : `${est}${v.gb} GB`;
   return `${size}${v.platform && v.platform !== "any" ? `, ${ONLY[v.platform]} only` : ""}`;
 };

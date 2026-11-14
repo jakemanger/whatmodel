@@ -10,6 +10,7 @@ import { SOURCES, sourceIcon, sourceOf } from "../lib/sources.ts";
 import type { Benchmark, Model, Result, Speed } from "../lib/types.ts";
 import { TASKS } from "../lib/tasks.ts";
 import { catalogueOnly } from "../lib/fit.ts";
+import { memoryProblems } from "../lib/memory.ts";
 
 const load = <T>(f: string): T => JSON.parse(readFileSync(new URL(`../data/${f}`, import.meta.url), "utf8"));
 const models = load<Model[]>("models.json");
@@ -45,7 +46,10 @@ for (const m of models) {
   for (const v of m.local?.variants ?? []) {
     if (!v.cmd) errors.push(`${m.id}: variant without a command ${JSON.stringify(v)}`);
     if (!(v.gb > 0) && !m.params_b) errors.push(`${m.id}: variant ${v.quant} needs gb, or params_b on the model to estimate it`);
+    if (v.size_source && (v.gb_estimated || !/^https:\/\/(huggingface\.co\/api\/models\/[^?]+\/revision\/[0-9a-f]{40}\?blobs=true|registry\.ollama\.ai\/v2\/)/.test(v.size_source)))
+      errors.push(`${m.id}: variant ${v.quant} size_source must be a pinned file listing (npm run sizes) and its size not marked estimated`);
   }
+  errors.push(...memoryProblems(m));
   if (m.api?.tps !== undefined && (!(m.api.tps > 0) || !/^https?:\/\//.test(m.api.tps_source ?? ""))) errors.push(`${m.id}: api.tps needs a positive number and a tps_source url`);
   if (m.api && (m.api.price_in !== undefined || m.api.price_out !== undefined) &&
       !(Number.isFinite(m.api.price_in) && Number.isFinite(m.api.price_out) && m.api.price_in! >= 0 && m.api.price_out! >= 0))
@@ -149,7 +153,7 @@ const cited: [string, string][] = [
   [kv.source, "KV cache sizes"],
   ...models.flatMap((m) => [
     ...[m.api?.price_source, m.api?.tps_source, m.api?.speed_source, m.context_source].filter(Boolean).map((u): [string, string] => [u!, `metadata ${m.id}`]),
-    ...(m.local?.variants ?? []).filter((v) => !v.gb_estimated).map((v): [string, string] => [v.source ?? "", `measured memory ${m.id}/${v.quant}`]),
+    ...(m.local?.variants ?? []).filter((v) => !v.gb_estimated).map((v): [string, string] => [v.size_source ?? v.source ?? "", `measured memory ${m.id}/${v.quant}`]),
   ]),
 ];
 const bad = new Map<string, string[]>();

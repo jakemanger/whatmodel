@@ -10,20 +10,20 @@ import kvJson from "../data/kv.json" with { type: "json" };
 import { CATEGORY_IDS, catOf } from "./categories.ts";
 import type { Contributor } from "./contributors.ts";
 import { measuredFor } from "./measured.ts";
-import { bitsLabel, bitsOf, type QuantFinding, type QuantRow } from "./quant.ts";
+import { bitsLabel, bitsOf, bitsPerWeight, type QuantFinding, type QuantRow } from "./quant.ts";
 import { fit, toCells, type Fit } from "./score.ts";
 import { connectedCells } from "./comparisons.ts";
 import { sourceIcon, sourceId, sourceName, sourceOf } from "./sources.ts";
 import type { Benchmark, Category, Hardware, Kv, Model, Result, Specs, Speed, Variant } from "./types.ts";
 
-// Bytes per weight by precision name, for variants whose sources give no memory figure.
-const BYTES: [RegExp, number][] = [[/fp32|f32/, 4], [/fp16|bf16|f16/, 2], [/8.?bit|q8|int8|fp8/, 1], [/4.?bit|q4|int4|nf4|fp4/, 0.5], [/2.?bit|q2/, 0.25], [/1.?bit|iq1/, 0.125]];
+// For a download no listing gave a size for: parameters × the bits per weight downloads of its precision
+// take on disk (lib/quant.ts bitsPerWeight).
 const withMemory = (m: Model): Model => {
   if (!m.local || !m.params_b) return m;
   const variants = m.local.variants.map((v) => {
     if (v.gb > 0) return v;
-    const bytes = BYTES.find(([re]) => re.test(v.quant.toLowerCase()))?.[1] ?? 2;
-    return { ...v, gb: Math.round((m.params_b! * bytes * 1.2 + 0.5) * 10) / 10, gb_estimated: true };
+    const bpw = bitsPerWeight(v.quant) ?? 16;
+    return { ...v, gb: Math.round(m.params_b! * bpw / 8 * 10) / 10, gb_estimated: true };
   });
   return { ...m, local: { variants: variants.filter((v) => v.gb > 0) } };
 };
