@@ -6,7 +6,7 @@
 
 Meituan · released 2025-08 · 560B params (27B active) · mit
 
-**score 65.2** ±0.9 · #145 of 740 · from 23 benchmark results across 2 sources
+**score 65.1** ±0.9 · #148 of 743 · from 23 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,54 +16,54 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅●▄▅▂▁    #115 of 316     22%      5
-coding          ▁▁▁▃▆▇█●▆▃▃▁    #172 of 472     22%      4
-chat &amp; writing  ▁▁▁▃▆▄▆█▇●▇▃   #118 of 404*     12%      2
-math            ▁▁▃▅█▆▄●▅▂▁▁    #135 of 440    8.0%      3
+agent tasks     ▁▁▃▆█▄●▅▃▃▂▁    #116 of 319     22%      5
+coding          ▁▁▁▃▆▇█●▆▃▃▁    #172 of 474     22%      4
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #118 of 405*     12%      2
+math            ▁▁▃▅█▆▅●▄▁▁▁    #133 of 440    8.0%      3
 </pre>
 
-<details><summary>agent tasks · #115 of 316 · 22% of its score</summary>
+<details><summary>agent tasks · #116 of 319 · 22% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (maker)</a>           60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/140  hard · avg 17%          7.6%  sharp · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail (maker)</a>              71.3%  ▅···●·▃····▃ beats 4/6     medium · avg 41%        4.9%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom (maker)</a>             73.7%  ██··███···█● beats 6/6     very hard · avg 9.0%    4.4%  sharp · at its level · noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom (maker)</a>             73.7%  ██··███···█● beats 6/6     very hard · avg 9.1%    4.5%  sharp · at its level · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Airline (maker)</a>             58.0%  ▄·▄··▄···█●▄ beats 5/6     hard · avg 25%          3.2%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Terminal-Bench (pre-2.0 release) …</a>   39.5%  ▄·▄···▄▄···● beats 4/5     very hard · avg 12%     1.9%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Terminal-Bench (pre-2.0 release) …</a>   39.5%  ▄·▄···▄▄···● beats 4/5     very hard · avg 13%     1.9%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #172 of 472 · 22% of its score</summary>
+<details><summary>coding · #172 of 474 · 22% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Grok 4.1 Fast (Reasoning)](grok-4-1-fast-reasoning.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (maker)</a>           60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/140  hard · avg 17%      7.6%  sharp · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">LiveCodeBench (version unspecifie…</a>   48.0%  █·······▄▄▄● beats 5/5     hard · avg 21%      6.2%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MBPP+ (maker)</a>                        79.6%  ▃·····▃●▃··▃ beats 2/6     medium · avg 61%    4.4%  typical
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+ (maker)</a>                   88.4%  ▄▄●·····▄▄·█ beats 2/6     easy · avg 66%      4.1%  sharp · maxed out
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+ (maker)</a>                   88.4%  ▄▄●·····▄▄·█ beats 2/6     easy · avg 67%      4.1%  sharp · maxed out
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #118 of 404 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #118 of 405 · 12% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1400.5  ▁▁▁▂▃▂▃▆▆●█▃ beats 246/387  avg 1261          8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1400.6  ▁▁▁▂▃▂▃▆▆●█▃ beats 246/388  avg 1262          8.5%  blunt
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">IFEval (aggregation unspecified) …</a>   89.6%  █··█·█··███● beats 6/6      easy · avg 75%    3.5%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #135 of 440 · 8.0% of its score</summary>
+<details><summary>math · #133 of 440 · 8.0% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 test               result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2025 (maker)</a>   61.3%  ▄▄···▄▄··●·█ beats 4/6    hard · avg 17%         4.2%  sharp · at its level · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2024 (maker)</a>   70.4%  ▁▂·▂▁▂▂▄●▅▆▁ beats 38/86  hard · avg 31%         2.2%  sharp · at its level · noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MATH-500 (maker)</a>    96.4%  ▄·▄··●··▄·▄▄ beats 3/6    very easy · avg 87%    1.6%  maxed out · noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MATH-500 (maker)</a>    96.4%  ▄·▄··●··▄·▄▄ beats 3/6    very easy · avg 87%    1.5%  maxed out · noisy
 </pre>
 
 </details>
@@ -80,11 +80,11 @@ test               result  vs the others in its run  difficulty           counts
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MMLU (maker)</a>                         89.7%  ▄·····●▄▄▄·▄ beats 2/6    medium · avg 69%        9.5%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MMLU (maker)</a>                         89.7%  ▄·····●▄▄▄·▄ beats 2/6    medium · avg 69%         10%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">GPQA Diamond (maker)</a>                 73.2%  █·█·●··██··█ beats 2/5    hard · avg 40%          9.2%  sharp · at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MMLU-Pro (maker)</a>                     82.7%  █▄·●···▄··▄▄ beats 3/6    medium · avg 58%        7.2%  typical
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">CMMLU (maker)</a>                        84.3%  █····●··▄▄▄▄ beats 2/6    medium · avg 67%        3.8%  typical
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval (maker)</a>                       90.4%  █····▄·▄·●▄▄ beats 4/6    medium · avg 68%        3.5%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MMLU-Pro (maker)</a>                     82.7%  █▄·●···▄··▄▄ beats 3/6    medium · avg 58%        7.3%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">CMMLU (maker)</a>                        84.3%  █····●··▄▄▄▄ beats 2/6    medium · avg 68%        3.8%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval (maker)</a>                       90.4%  █····▄·▄·●▄▄ beats 4/6    medium · avg 69%        3.5%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">COLLIE (constrained text generati…</a>   57.1%  ▄···▄█▄····● beats 6/6    hard · avg 30%          3.3%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">VitaBench (maker)</a>                    24.3%  █·······▄█·● beats 6/6    very hard · avg 6.6%    3.3%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic (maker)</a>                   89.3%  █···█··██●·█ beats 4/5    medium · avg 51%        1.5%  noisy
@@ -101,9 +101,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card-meituan-longcat-flash-chat"></a><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Meituan LongCat-Flash-Chat model card (…</a>       22   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 65.2
+weighted average                                   = 65.1
 </pre>
 
 <sub>Licences: Meituan LongCat-Flash-Chat model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

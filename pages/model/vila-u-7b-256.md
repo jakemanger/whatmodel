@@ -6,7 +6,7 @@
 
 MIT Han Lab / NVIDIA · released 2024-10 · 8.12B params · mit
 
-**score 32.2** ±6.5 · #131 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±6.5 · #132 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #118 of 128*     82%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #119 of 129*     82%      1
 </pre>
 
-<details><summary>text to image · #118 of 128 · 82% of its score</summary>
+<details><summary>text to image · #119 of 129 · 82% of its score</summary>
 
 Beats [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       18% ▇▇
-weighted average                                   = 32.2
+weighted average                                   = 32.1
 </pre>
 
 <sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

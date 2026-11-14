@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 72.0** ±2.2 · #61 of 740 · from 3 benchmark results across 1 source
+**score 72.0** ±2.2 · #64 of 743 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄▆█▇▇●▃   #36 of 404*     49%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #37 of 405*     49%      1
 vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #47 of 154*     34%      1
 web search          ▂▁▂▆▅●▄▃▁▁▁▁    #30 of 85*     15%      1
 </pre>
 
-<details><summary>chat &amp; writing · #36 of 404 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #37 of 405 · 49% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank higher overall. Trails [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1471.1  ▁▁▁▂▃▂▃▆▆▇●▃ beats 347/387  avg 1261       49%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1471.1  ▁▁▁▂▃▂▃▆▆▇●▃ beats 347/388  avg 1262       49%  blunt
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1250.5  ▁▁▂▂▂▂▃▅▅▅●▇ beats 108/152  avg 1063       34%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1250.5  ▁▁▂▂▂▂▃▅▅▅●▇ beats 108/152  avg 1064       34%  blunt
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [Claude Opus 4.8](claude-opus-4-8.md), [Claude Haiku 5.5](claude-haiku-5-5
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1207.0  ▁·▁▁▂▂▁█●▃▃▂ beats 24/38  avg 1081       15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1207.0  ▁·▁▁▂▂▁█●▃▃▂ beats 24/38  avg 1083       15%  blunt
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
 weighted average                        = 72.0
 </pre>

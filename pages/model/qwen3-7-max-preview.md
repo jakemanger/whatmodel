@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅▆█▇▆●▂   #35 of 589*     96%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█▇▆●▃   #36 of 590*     96%      1
 </pre>
 
-<details><summary>chat &amp; writing · #35 of 589 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #36 of 590 · 96% of its score</summary>
 
-Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1473.8  ▁▁▁▂▃▂▃▆▆▇●▃ beats 353/387  avg 1261       96%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1473.8  ▁▁▁▂▃▂▃▆▆▇●▃ beats 353/388  avg 1262       96%  blunt
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
 weighted average                        = 72.1
 </pre>

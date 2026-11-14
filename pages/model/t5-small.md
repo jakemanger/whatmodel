@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 11.8** ±2.9 · #724 of 740 · from 8 benchmark results across 2 sources
+**score 11.8** ±2.9 · #727 of 743 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▅▂▁▁   #428 of 440*     13%      1
+math  ▁●▃▅█▆▅█▄▁▁▁   #428 of 440*     13%      1
 </pre>
 
 <details><summary>math · #428 of 440 · 13% of its score</summary>

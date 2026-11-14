@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-01
 
-**score 34.8** ±3.8 · #637 of 740 · from 3 benchmark results across 2 sources
+**score 34.8** ±3.8 · #640 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

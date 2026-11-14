@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▆▃▂▁   #234 of 542*     25%      2
-math    ▁▂▃▆█●▅▇▄▁▁▁   #253 of 540*    9.3%      1
+coding  ▁▁▁▃▅▆█●▆▃▃▁   #236 of 544*     25%      2
+math    ▁▂▃▆█●▅▇▄▁▁▁   #254 of 540*    9.2%      1
 </pre>
 
-<details><summary>coding · #234 of 542 · 25% of its score</summary>
+<details><summary>coding · #236 of 544 · 25% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #253 of 540 · 9.3% of its score</summary>
+<details><summary>math · #254 of 540 · 9.2% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   68.1%  ▁▁▁▆█▂▇▇●··▂ beats 36/38  hard · avg 31%    9.3%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   68.1%  ▁▁▁▆█▂▇▇●··▂ beats 36/38  hard · avg 31%    9.2%  sharp · at its level
 </pre>
 
 </details>

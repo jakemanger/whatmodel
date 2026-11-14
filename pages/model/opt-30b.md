@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 28.0** ±0.7 · #684 of 740 · from 48 benchmark results across 11 sources
+**score 28.0** ±0.7 · #686 of 743 · from 48 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,12 +34,12 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 91.1%  ▂··▂▃▂▂▆▃▃●▂ beats 18/19   very easy · avg 98%    2.7%  blunt · several runs
 <a href="https://arxiv.org/html/2212.12017v3">COPA (maker)</a>                         84.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 39/67   very easy · avg 95%    2.4%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (maker)</a>               28.4%  ▁▁▁●▂▄▅▆█▃▃▁ beats 7/155   medium · avg 60%       2.0%  sharp · too hard for it · noisy · small…
-<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (maker)</a>                   57.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 87/107  hard · avg 49%         1.8%  too hard for it · small run · several r…
+<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (maker)</a>                   57.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 87/107  hard · avg 49%         1.9%  too hard for it · small run · several r…
 <a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (maker)</a>               58.1%  ▅▃·▃··▅·●▅▃█ beats 6/13    medium · avg 75%       1.6%  small run
 <a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (maker)</a>               50.2%  ●·▂▁······▁▁ beats 0/13    medium · avg 71%       1.3%  sharp · too hard for it · noisy · small…
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            54.3%  ●█······▃▃·▅ beats 1/8     easy · avg 86%         1.3%  at its level
 <a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      15.0%  ▂▁▁▁▂▄▄▃●█▅▁ beats 35/68   medium · avg 39%       1.1%  small run
-<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        53.2%  █·····▂▂▃●▄▄ beats 24/38   very easy · avg 91%    1.1%  sharp · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        53.2%  █·····▂▂▃●▄▄ beats 24/38   very easy · avg 92%    1.1%  sharp · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.0%  ▂▂··▂·●···▂▂ beats 4/8     easy · avg 79%         1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2212.12017v3">BoolQ (maker)</a>                        64.0%  ▁····▁▂●▆▅▆▄ beats 31/103  easy · avg 84%         0.9%  at its level · small run
 <a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   83.5%  █▃·▅▃▃█▅●█▅▃ beats 13/21   easy · avg 92%         0.8%  blunt · at its level · small run
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   22% ▇▇▇
 <a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   20% ▇▇
 <a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-30b/opt-30b.json">EleutherAI lm-evaluation-harness result…</a>        8   19% ▇▇
-<a name="paper-2212.12017v3-opt-iml"></a><a href="https://arxiv.org/html/2212.12017v3">OPT-IML: Scaling Language Model Instruc…</a>       15   18% ▇▇
+<a name="paper-2212.12017v3-opt-iml"></a><a href="https://arxiv.org/html/2212.12017v3">OPT-IML: Scaling Language Model Instruc…</a>       15   17% ▇▇
 <a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        5    8% ▇
 <a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-522"></a><a href="https://aclanthology.org/2023.emnlp-main.522.pdf">Increasing Probability Mass on Answer C…</a>        3    4% ▇

@@ -6,7 +6,7 @@
 
 UC Berkeley (NEST) · released 2023-11 · 7.24B params · apache-2.0
 
-**score 40.9** ±1.1 · #555 of 740 · from 11 benchmark results across 8 sources
+**score 40.9** ±1.1 · #557 of 743 · from 11 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #346 of 404     65%      4
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #347 of 405     65%      4
 </pre>
 
-<details><summary>chat &amp; writing · #346 of 404 · 65% of its score</summary>
+<details><summary>chat &amp; writing · #347 of 405 · 65% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.7%  ▁▂▂▃●▆█▆▄▄▁▁ beats 37/122  medium · avg 36%     28%  sharp
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   12.8%  ▂▁▁●█▅▄▃▃▅▃▁ beats 7/60    medium · avg 47%     15%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1167.5  ▁▁▁▂●▂▃▆▆▇█▃ beats 48/387  avg 1261             11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1167.6  ▁▁▁▂●▂▃▆▆▇█▃ beats 48/388  avg 1262             11%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1099.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 44/95   avg 1189             11%  typical
 </pre>
 
@@ -37,11 +37,11 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2024-02-11%2023%3A09%3A48.144665.json">Natural Questions (closed book)</a>      28.2%  ▁·▁·▁▂▁▂·▅▂● beats 25/28    medium · avg 48%     12%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   52.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 18/95    medium · avg 65%     10%  at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2024-02-11%2023%3A09%3A48.144665.json">Natural Questions (closed book)</a>      28.2%  ▁·▁·▁▂▁▂·▅▂● beats 25/28    medium · avg 49%     12%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   52.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 18/95    easy · avg 65%       10%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      46.3%  ▁··▁▁▂▂●▅▆█▆ beats 19/70    medium · avg 62%    7.1%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 162/276  medium · avg 72%    2.7%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-22%2011%3A21%3A54.818457.json">TriviaQA</a>                             66.0%  ▁··▁█▃▃▁▄▅▄● beats 26/28    easy · avg 74%      1.3%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-22%2011%3A21%3A54.818457.json">TriviaQA</a>                             66.0%  ▁··▁█▃▃▁▄▅▄● beats 26/28    easy · avg 74%      1.4%  at its level · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-21%2009%3A43%3A40.146761.json">HaluEval QA hallucination detecti…</a>   59.7%  █▁▁·▁▁·▁▁●▁▁ beats 24/27    hard · avg 66%      1.2%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2024-02-25%2012%3A45%3A15.485715.json">TruthfulQA MC2</a>                       47.3%  ▅▃█▆●▂▅···▁▁ beats 22/31    medium · avg 57%    0.3%  blunt · at its level
 </pre>
@@ -57,7 +57,7 @@ source                                    results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   28% ▇▇▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2024-02-11%2023%3A09%3A48.144665.json">Hallucinations Leaderboard results</a>              4   15% ▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   15% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   11% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   10% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    7% ▇

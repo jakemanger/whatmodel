@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 4B params · apache-2.0
 
-**score 51.0** ±1.7 · #79 of 146 · from 5 benchmark results across 4 sources
+**score 50.9** ±1.7 · #80 of 147 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃●▄█▂▂▁▁▁   #70 of 128     75%      3
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #44 of 64*     24%      2
+text to image           ▂▅▅▃●▄█▃▂▁▁▁   #71 of 129     75%      3
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #45 of 65*     23%      2
 </pre>
 
-<details><summary>text to image · #70 of 128 · 75% of its score</summary>
+<details><summary>text to image · #71 of 129 · 75% of its score</summary>
 
-Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md), [P-Image](p-image.md), [Photon](luma-photon.md) here, though they rank lower overall.
+Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md), [Photon](luma-photon.md), [P-Image](p-image.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1030.0  ▁▁●▃▆█▃▂▂▂▁▁ beats 12/77  avg 1030           47%  typical
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    84.3%  ▄····▄●▄▄█▄█ beats 3/10   easy · avg 83%     18%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   19.6%  ▁●▂█▃▁▂▃·▁·▁ beats 2/22   hard · avg 29%     11%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1029.9  ▁▁●▃▆█▄▂▂▂▁▁ beats 12/78  avg 1030           48%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    84.3%  ▄····▄●▄▄█▄█ beats 3/10   easy · avg 83%     17%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   19.6%  ▁●▂█▃▁▂▃·▁·▁ beats 2/22   hard · avg 29%     10%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #44 of 64 · 24% of its score</summary>
+<details><summary>image to image / editing · #45 of 65 · 23% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1187.1  ▂▁▁▃●█▆▆▇▄▃▃ beats 10/55  avg 1158       17%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1031.0  ▃▂····▂█●▃▂▃ beats 9/14   avg 960       6.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1187.2  ▂▁▁▃●█▅▇█▄▃▃ beats 10/56  avg 1160       17%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1031.0  ▃▂····▂█●▃▂▃ beats 9/14   avg 961       6.6%  blunt
 </pre>
 
 </details>
@@ -51,12 +51,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   64% ▇▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   64% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   17% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   10% ▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.0
+weighted average                                   = 50.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>

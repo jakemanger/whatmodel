@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 57.3** ±0.7 · #244 of 740 · from 28 benchmark results across 3 sources
+**score 57.2** ±0.7 · #247 of 743 · from 28 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▄▅▂▁   #216 of 316*    2.0%      1
-coding              ▁▁▁▃▆▇●▆▆▃▃▁   #230 of 472*    4.0%      1
-chat &amp; writing      ▁▁▁▃▆▄▆●▇▇▇▃   #204 of 404*    2.6%      1
-math                ▁▁▃▅█▆▄●▅▂▁▁    #158 of 440     16%      4
+agent tasks         ▁▁▃▆●▄▅▅▃▃▂▁   #218 of 319*    2.0%      1
+coding              ▁▁▁▃▆▇●▆▆▃▃▁   #233 of 474*    4.0%      1
+chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #206 of 405*    2.6%      1
+math                ▁▁▃▅█▆●█▄▁▁▁    #158 of 440     16%      4
 vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #101 of 154     47%     14
 </pre>
 
-<details><summary>agent tasks · #216 of 316 · 2.0% of its score</summary>
+<details><summary>agent tasks · #218 of 319 · 2.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #230 of 472 · 4.0% of its score</summary>
+<details><summary>coding · #233 of 474 · 4.0% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -45,9 +45,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #204 of 404 · 2.6% of its score</summary>
+<details><summary>chat &amp; writing · #206 of 405 · 2.6% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -64,7 +64,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 test                          result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (maker)</a>   81.4%  ▃··▃▅·▃█▅▅●█ beats 12/16  medium · avg 69%       4.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (maker)</a>              80.3%  ▃·▃▃█··▃▅▃·● beats 10/12  medium · avg 45%       4.3%  sharp · at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>    38.1%  ▄······●▄▄·█ beats 2/6    hard · avg 31%         3.6%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>    38.1%  ▄······●▄▄·█ beats 2/6    hard · avg 32%         3.5%  at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>      95.2%  ▃·····▃···▅● beats 6/6    very easy · avg 91%    3.0%  maxed out
 </pre>
 
@@ -101,7 +101,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (maker)</a>    69.9%  ▂····▂·▂▂█●█ beats 9/14   hard · avg 49%      8.4%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (maker)</a>                     77.3%  ▄·▄·▄▄▄▄█●██ beats 8/12   medium · avg 63%    6.4%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (maker)</a>                   88.8%  ▃··▃·▃·█▃●▃▅ beats 8/11   easy · avg 79%      4.8%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (maker)</a>                    51.2%  ▄··▄·▄▄▄█●██ beats 7/11   medium · avg 37%    4.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (maker)</a>                    51.2%  ▄··▄·▄▄▄█●██ beats 7/11   medium · avg 38%    4.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (maker)</a>                 50.0%  ▃··▃▅●▃▃▃▃·█ beats 4/11   medium · avg 43%    3.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (maker)</a>                      55.8%  ▅··▃·●▃▃·█·▃ beats 3/10   hard · avg 51%      2.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (ma…</a>   71.8%  ▃··█··▅●▃▃▅▃ beats 8/13   medium · avg 66%    2.7%  blunt · at its level
@@ -120,7 +120,7 @@ source                                    results  share of the score
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>              2    7% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.3
+weighted average                                   = 57.2
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

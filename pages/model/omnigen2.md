@@ -6,7 +6,7 @@
 
 BAAI · released 2025-06 · 4B params · apache-2.0
 
-**score 41.3** ±1.7 · #106 of 146 · from 13 benchmark results across 12 sources
+**score 41.2** ±1.7 · #107 of 147 · from 13 benchmark results across 12 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅●▃▄▄█▂▂▁▁▁   #95 of 128*     21%      3
-image to image / edit…  ▁▁·●▂▃█▆▃▅▂▂     #57 of 64     57%      8
+text to image           ▂▅●▃▄▄█▃▂▁▁▁   #96 of 129*     21%      3
+image to image / edit…  ▁▁·●▂▃█▆▃▆▂▂     #58 of 65     57%      8
 </pre>
 
-<details><summary>text to image · #95 of 128 · 21% of its score</summary>
+<details><summary>text to image · #96 of 129 · 21% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md), [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>image to image / editing · #57 of 64 · 57% of its score</summary>
+<details><summary>image to image / editing · #58 of 65 · 57% of its score</summary>
 
 Beats [UNO](uno.md), [BAGEL](bagel.md), [Stable Diffusion 3.5 Large](sd-3-5-large.md) here, though they rank higher overall.
 
@@ -41,11 +41,11 @@ Beats [UNO](uno.md), [BAGEL](bagel.md), [Stable Diffusion 3.5 Large](sd-3-5-larg
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           37.6%  ▃▃▂·▃●▂█·▃·▃ beats 7/20   hard · avg 45%       23%  typical
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              61.2%  ▂····▂●▂▄·█▂ beats 2/11   easy · avg 74%       10%  at its level
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>          888.0  ▃●····▂█▂▃▂▃ beats 2/14   avg 960             6.9%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>          888.0  ▃●····▂█▂▃▂▃ beats 2/14   avg 961             6.9%  blunt
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   68.2%  ▄●▄··█··▄·▄▄ beats 1/8    easy · avg 74%      5.9%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   34.7%  ▄·●▄▄▄··█▄·▄ beats 1/8    medium · avg 51%    5.0%  at its level
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editing (…</a>   58.0%  █··●··██···█ beats 1/4    easy · avg 74%      4.2%  blunt · at its level
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   79.5%  ▃▃▃··▃·····● beats 6/6    easy · avg 65%      2.7%  at its level · noisy
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   79.5%  ▃▃▃··▃·····● beats 6/6    easy · avg 66%      2.7%  at its level · noisy
 <a href="https://arxiv.org/html/2506.18871v4">GEdit-Bench-EN overall (G_O, GPT-…</a>   72.1%  ▄·····█·▄●·▄ beats 4/5                           —  not counted yet: no other model in the …
 </pre>
 
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    2% ▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.3
+weighted average                                   = 41.2
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

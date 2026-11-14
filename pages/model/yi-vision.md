@@ -6,7 +6,7 @@
 
 01.AI · closed weights
 
-**score 43.6** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.6** ±3.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,11 +21,11 @@ vision &amp; documents  ▁▁●▃▂▃▆▅▇██▄   #190 of 207*     
 
 <details><summary>vision &amp; documents · #190 of 207 · 94% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1002.7  ▁▁▂●▂▂▃▅▅▅█▇ beats 12/152  avg 1063       94%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1002.7  ▁▁▂●▂▂▃▅▅▅█▇ beats 12/152  avg 1064       94%  blunt
 </pre>
 
 </details>

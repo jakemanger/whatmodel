@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 43.6** ±0.9 · #513 of 740 · from 25 benchmark results across 6 sources
+**score 43.5** ±0.9 · #516 of 743 · from 25 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅●▄▅▂▁   #105 of 316*    1.7%      1
-coding          ▁▁▁▃●▇█▆▆▃▃▁   #396 of 472*    2.2%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #292 of 404*    7.4%      2
-math            ▁▁▃▅●▆▄█▅▂▁▁    #272 of 440     11%      3
+agent tasks     ▁▁▃▆█▄▅●▃▃▂▁   #108 of 319*    1.7%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁   #397 of 474*    2.2%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #292 of 405*    7.5%      2
+math            ▁▁▃▅●▆▅█▄▁▁▁    #272 of 440     11%      3
 </pre>
 
-<details><summary>agent tasks · #105 of 316 · 1.7% of its score</summary>
+<details><summary>agent tasks · #108 of 319 · 1.7% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
@@ -33,9 +33,9 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>coding · #396 of 472 · 2.2% of its score</summary>
+<details><summary>coding · #397 of 474 · 2.2% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
@@ -44,13 +44,13 @@ test                      result  vs the others in its run  difficulty        co
 
 </details>
 
-<details><summary>chat &amp; writing · #292 of 404 · 7.4% of its score</summary>
+<details><summary>chat &amp; writing · #292 of 405 · 7.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>         72.4%  ●··▄▄·▄····▄ beats 1/5     easy · avg 84%    5.3%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>         72.4%  ●··▄▄·▄····▄ beats 1/5     easy · avg 84%    5.4%  typical
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▂▄▂●▄▆██▅▂▁ beats 33/145  easy · avg 80%    2.1%  at its level · small run
 </pre>
 
@@ -73,21 +73,21 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3548  ▁●▃▃▇▄█▃▅▁▁▁ beats 2/30     avg 0.420            17%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3548  ▁●▃▃▇▄█▃▅▁▁▁ beats 2/30     avg 0.421            17%  sharp
 <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                         26.3%  ●█····███··█ beats 0/5      medium · avg 53%     13%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                                 59.8%  ▄●···█·····▄ beats 1/5      medium · avg 73%    7.9%  at its level
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   35.5%  ▂●▅▂▆▃█▅█▅▃▆ beats 2/34     medium · avg 41%    6.6%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                                 59.8%  ▄●···█·····▄ beats 1/5      medium · avg 74%    7.9%  at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   35.5%  ▂●▅▂▆▃█▅█▅▃▆ beats 2/34     medium · avg 42%    6.6%  blunt · at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                             23.9%  █●█···██···█ beats 1/5      medium · avg 43%    4.3%  typical
-<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)</a>    17.9%  ●··███··█··█ beats 0/5      hard · avg 31%      4.1%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)</a>    17.9%  ●··███··█··█ beats 0/5      hard · avg 32%      4.1%  typical
 <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>          58.9%  ▄··●▄··▄···▄ beats 2/5      easy · avg 70%      3.8%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>       50.0%  ▄·●····█···▄ beats 1/5      medium · avg 59%    3.4%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 14/66    hard · avg 30%      3.2%  typical
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (maker)</a>                  64.1%  ▃●·▃···▅·▅█▃ beats 3/12     medium · avg 70%    2.6%  at its level · small run
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid)</a>   68.7%  ▄·●·█···▄··▄ beats 1/5      easy · avg 81%      2.6%  at its level
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (maker)</a>                  64.1%  ▃●·▃···▅·▅█▃ beats 3/12     medium · avg 70%    2.5%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 135/276  medium · avg 72%    2.1%  at its level · noisy
 <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                             58.9%  █·····█●█·██ beats 2/5      easy · avg 84%      2.0%  blunt · small run · several runs
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 32/100   medium · avg 67%    1.7%  sharp · at its level · noisy
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (maker)</a>                 30.8%  ●····█·····█ beats 0/2      medium · avg 39%    1.7%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (maker)</a>                 30.8%  ●····█·····█ beats 0/2      medium · avg 40%    1.7%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.7%  ▁▁▁▁▁▁▁▂●█▄▃ beats 51/146   easy · avg 82%      1.4%  at its level · noisy
 </pre>
 
@@ -100,13 +100,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report</a>                          11   41% ▇▇▇▇▇
-<a name="card2-huggingfacetb-smollm3-3b"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">HuggingFaceTB/SmolLM3-3B model card (su…</a>        8   28% ▇▇▇
+<a name="card2-huggingfacetb-smollm3-3b"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">HuggingFaceTB/SmolLM3-3B model card (su…</a>        8   27% ▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   23% ▇▇▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 43.6
+weighted average                                   = 43.5
 </pre>
 
 <sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · HuggingFaceTB/SmolLM3-3B model card ([Apache-2.0](../../licenses/HuggingFaceTB--SmolLM3-3B.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

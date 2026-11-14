@@ -4,9 +4,9 @@
 
 # Inkling 2 Small (594B-A17B)
 
-Thinking Machines · released 2026-11 · 594B params (17B active) · proprietary
+Thinking Machines · released 2026-11 · 594B params (17B active) · apache-2.0
 
-**score 74.1** ±1.3 · #41 of 740 · from 3 benchmark results across 1 source
+**score 74.8** ±1.3 · #36 of 743 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,49 +16,49 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅▅▄●▂▁      #41 of 316*     52%      5
-coding              ▁▁▁▃▆▇█▆▆▃●▁      #21 of 472*     30%      3
-chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃     #106 of 404*     17%      1
+agent tasks         ▁▁▃▆█▄▅▅▃●▂▁      #33 of 319*     51%      5
+coding              ▁▁▁▃▆▇█▆▆▃●▁      #22 of 474*     31%      3
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃     #107 of 405*     17%      1
 math                               not ranked yet       —      1
 vision &amp; documents                 not ranked yet       —      2
 web search                         not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #41 of 316 · 52% of its score</summary>
+<details><summary>agent tasks · #33 of 319 · 51% of its score</summary>
 
-Beats [GPT-5.6 Luna](gpt-5-6-luna.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Grok 4.5](grok-4-5.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0008 IPS  ▁▁▁▁▄▄●▄▂▁▁▁ beats 26/61    avg -0.395 IPS       52%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0251 IPS  ▁▁▁▃▃●▂▁▁▁·▁ beats 44/63    avg -0.403 IPS       51%  sharp
 <a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Verified (maker)</a>               82.2%  ▁▁▁▁▁▁▂▄█●▁▁ beats 134/140  hard · avg 19%         —  not counted yet: no other model in the …
-<a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Multilingual (maker)</a>           81.2%  ▁··▂▂▃▆█●▂▁▁ beats 59/69    hard · avg 17%         —  not counted yet: no other model in the …
+<a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Multilingual (maker)</a>           81.2%  ▁··▂▂▃▆█●▂▁▁ beats 59/69    hard · avg 18%         —  not counted yet: no other model in the …
 <a href="https://thinkingmachines.ai/model-card/inkling-2-small/">DeepSearchQA (maker)</a>                     90.9%  ▃·▃▃···▃▃··● beats 6/7      medium · avg 42%       —  not counted yet: no other model in the …
 <a href="https://thinkingmachines.ai/model-card/inkling-2-small/">JobBench (maker)</a>                         70.5%  ▄·▄▄···●···▄ beats 3/5                             —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #21 of 472 · 30% of its score</summary>
+<details><summary>coding · #22 of 474 · 31% of its score</summary>
 
-Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Kimi K3](kimi-k3.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1646.2  ▁▂▄▃▇█▅▆█●▂▁ beats 114/133  avg 990            30%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1647.1  ▁▂▄▃▇█▅▇▇●▂▁ beats 114/134  avg 996            31%  sharp
 <a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Verified (maker)</a>       82.2%  ▁▁▁▁▁▁▂▄█●▁▁ beats 134/140  hard · avg 19%       —  not counted yet: no other model in the …
-<a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Multilingual (maker)</a>   81.2%  ▁··▂▂▃▆█●▂▁▁ beats 59/69    hard · avg 17%       —  not counted yet: no other model in the …
+<a href="https://thinkingmachines.ai/model-card/inkling-2-small/">SWE-bench Multilingual (maker)</a>   81.2%  ▁··▂▂▃▆█●▂▁▁ beats 59/69    hard · avg 18%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #106 of 404 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #107 of 405 · 17% of its score</summary>
 
 Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1412.1  ▁▁▁▂▃▂▃▆▆●█▃ beats 260/387  avg 1261       17%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1411.8  ▁▁▁▂▃▂▃▆▆●█▃ beats 259/388  avg 1262       17%  blunt
 </pre>
 
 </details>
@@ -108,9 +108,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 74.1
+weighted average                        = 74.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -140,5 +140,7 @@ Thinking Machines mod…  <a href="https://thinkingmachines.ai/model-card/inklin
 api (Thinking Machines (Tinker)) · price unknown · [tinker-docs.thinkingmachines.ai](https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/)
 
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/5056efa2c6c71c876eff9d3f299a4001601417bc/models/thinkingmachines/inkling-2-small.toml): models.dev limit.context = 1\_048\_576 (sources: TML announcement and model card). Model card: 'Inkling 2 Small supports a context window of up to 1M tokens.' The Tinker serverless endpoint serves the 256K variant thinkingmachines/Inkling-2-Small:peft:262144.</sub>
+
+Model repository and documentation: [huggingface.co/thinkingmachines](https://huggingface.co/thinkingmachines/Inkling-2-Small)
 
 [interactive version](https://whatmodel.sh/model/inkling-2-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 33.34B params · deepseek
 
-**score 42.4** ±0.6 · #533 of 740 · from 11 benchmark results across 5 sources
+**score 42.4** ±0.6 · #536 of 743 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁    #380 of 472     84%      6
-math    ▁▁▃▅█●▄█▅▂▁▁   #264 of 440*    3.3%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #382 of 474     84%      6
+math    ▁▁▃▅●▆▅█▄▁▁▁   #265 of 440*    3.3%      1
 </pre>
 
-<details><summary>coding · #380 of 472 · 84% of its score</summary>
+<details><summary>coding · #382 of 474 · 84% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
@@ -36,9 +36,9 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #264 of 440 · 3.3% of its score</summary>
+<details><summary>math · #265 of 440 · 3.3% of its score</summary>
 
-Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

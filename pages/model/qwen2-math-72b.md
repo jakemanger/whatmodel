@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 50.4** ±1.2 · #364 of 740 · from 4 benchmark results across 2 sources
+**score 50.4** ±1.2 · #367 of 743 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▅▂▁▁   #253 of 440     37%      3
+math  ▁▁▃▅█●▅█▄▁▁▁   #253 of 440     37%      3
 </pre>
 
 <details><summary>math · #253 of 440 · 37% of its score</summary>

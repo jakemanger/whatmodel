@@ -40,7 +40,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11399v2">CommonsenseQA (maker)</a>                80.1%  █·····▂▂▃▂▄● beats 36/38    easy · avg 83%         8.3%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   54.6%  ▂··▂·▂▄▄·█●█ beats 14/18    medium · avg 61%       4.4%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">ARC Challenge (maker)</a>                60.3%  ▄▁▁▂▁▄█▇●▂▃▂ beats 107/140  medium · avg 65%       4.2%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 30%         3.4%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 30%         3.5%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">WinoGrande (maker)</a>                   82.6%  ▁▁▁▁▂▁▁▅▇█▃● beats 127/131  easy · avg 85%         3.4%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">TriviaQA (maker)</a>                     76.4%  ▁▁▂▂▄▄▃▆▅█●▂ beats 74/80    easy · avg 80%         3.1%  typical
 <a href="https://arxiv.org/html/2210.11399v2">OpenBookQA (maker)</a>                   53.6%  ▅▁▁▁▂▂▃█●▁▃▁ beats 84/107   medium · avg 55%       2.8%  at its level · small run
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>       17   58% ▇▇▇▇▇▇▇
+<a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>       17   59% ▇▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   41% ▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 47.8

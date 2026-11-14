@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-09 · closed weights
 
-**score 81.4** ±0.5 · #7 of 740 · from 39 benchmark results across 7 sources
+**score 81.5** ±0.5 · #7 of 743 · from 39 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,98 +16,100 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others        rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅▅▄▅▂●    #5 of 316     29%     10
-coding              ▁▁▁▃▆▇█▆▆▃▃●    #7 of 472     15%      5
-chat &amp; writing      ▁▁▁▃▆▄▆█▇▇▇●   #6 of 404*    2.6%      1
-math                ▁▁▃▅█▆▄█▅▂●▁    #7 of 440     26%     10
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●   #8 of 154*    2.8%      2
-web search          ▂▁▂▆▅█●▃▁▁▁▁   #18 of 85*    2.7%      2
+agent tasks         ▁▁▃▆█▄▅▅▃▃▂●    #8 of 319     28%     10
+coding              ▁▁▁▃▆▇█▆▆▃▃●    #7 of 474     14%      5
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #6 of 405*    2.6%      1
+math                ▁▁▃▅█▆▅█▄▁●▁    #8 of 440     27%     10
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●   #8 of 154*    2.7%      2
+web search          ▂▁▂▆▅█●▃▁▁▁▁   #18 of 85*    2.6%      2
 </pre>
 
-<details><summary>agent tasks · #5 of 316 · 29% of its score</summary>
+<details><summary>agent tasks · #8 of 319 · 28% of its score</summary>
 
-Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Terra](gpt-6-1-terra.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
+Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Kimi K3.1 Pro](kimi-k3-1-pro.md), [Gemini 4 Hydrogen](gemini-4-hydrogen.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1434 IPS  ▁▁▁▁▄▄█▄▂▁●▁ beats 58/61  avg -0.395 IPS          8.0%  sharp
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-anthropic-claude-fable-5-1-max-claude-code.json">Terminal-Bench 4.0</a>                       57.9%  █▅▅▅▅·▅▃▃▅●▅ beats 17/20  very hard · avg 0.7%    6.8%  sharp · at its level · several runs
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Pro (split unspecified)…</a>       81.2%  ▄█▄·▄█●··▄·▄ beats 7/10   very hard · avg 6.8%    5.2%  sharp
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Multilingual (maker)</a>           89.1%  ▃·▃·▅▅●··▃·▃ beats 6/10   hard · avg 31%          2.2%  typical
-<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174">Humanity's Last Exam with tools (…</a>       65.6%  ▂·····▂·▅●▂▂ beats 9/11   very hard · avg 13%     1.9%  at its level
-<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200">Chartography with tools (maker)</a>          88.4%  ▃·······▃▃●█ beats 5/8    very hard · avg 6.2%    1.6%  sharp
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=168">DeepSWE v1.1 (resolved) (maker)</a>          67.4%  ▄·····●▄▄▄·█ beats 1/6    hard · avg 21%          1.2%  at its level
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=194">Toolathlon-Verified (maker)</a>              77.8%  ▃·····●···▃▃ beats 2/5    medium · avg 36%        0.7%  typical
-<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206">OSWorld 2.1 (partial score) (make…</a>       80.7%  █·········●█ beats 1/2    hard · avg 30%          0.7%  small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1482 IPS  ▁▁▁▃▃█▂▁●▁·▁ beats 59/63  avg -0.403 IPS          7.8%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-anthropic-claude-fable-5-1-max-claude-code.json">Terminal-Bench 4.0</a>                       57.9%  ▁····▁▄▇▅▇█● beats 26/30  very hard · avg 0.7%    6.7%  sharp · at its level · several runs
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Pro (split unspecified)…</a>       81.2%  ▄█▄·▄█●··▄·▄ beats 7/10   very hard · avg 7.2%    5.1%  sharp
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Multilingual (maker)</a>           89.1%  ▃·▃·▅▅●··▃·▃ beats 6/10   hard · avg 31%          2.3%  typical
+<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174">Humanity's Last Exam with tools (…</a>       65.6%  ▂·····▂·▅●▂▂ beats 9/11   very hard · avg 14%     1.8%  at its level
+<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200">Chartography with tools (maker)</a>          88.4%  ▃·······▃▃●█ beats 5/8    very hard · avg 6.5%    1.5%  sharp
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=168">DeepSWE v1.1 (resolved) (maker)</a>          67.4%  ▄·····●▄▄▄·█ beats 1/6    hard · avg 23%          1.1%  at its level
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=194">Toolathlon-Verified (maker)</a>              77.8%  ▃·····●···▃▃ beats 2/5    medium · avg 37%        0.7%  blunt
+<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206">OSWorld 2.1 (partial score) (make…</a>       80.7%  █·········●█ beats 1/2    hard · avg 29%          0.7%  small run
 <a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=189">OSWorld 2.0, 2026.08.08 release (…</a>       77.9%  █····█·····● beats 2/2    hard · avg 29%          0.6%  small run
 </pre>
 
 </details>
 
-<details><summary>coding · #7 of 472 · 15% of its score</summary>
+<details><summary>coding · #7 of 474 · 14% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Pro (split unspecified)…</a>   81.2%  ▄█▄·▄█●··▄·▄ beats 7/10     very hard · avg 6.8%    5.2%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1742.1  ▁▂▄▃▇█▅▆█▅●▁ beats 127/133  avg 990                 4.7%  sharp
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Multilingual (maker)</a>       89.1%  ▃·▃·▅▅●··▃·▃ beats 6/10     hard · avg 31%          2.2%  typical
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=168">DeepSWE v1.1 (resolved) (maker)</a>      67.4%  ▄·····●▄▄▄·█ beats 1/6      hard · avg 21%          1.2%  at its level
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   83.2%  ▁▁▁▁·▁▂▃▅▃█● beats 41/49    hard · avg 17%          1.1%  sharp
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Pro (split unspecified)…</a>   81.2%  ▄█▄·▄█●··▄·▄ beats 7/10     very hard · avg 7.2%    5.1%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1741.9  ▁▂▄▃▇█▅▇▇▅●▁ beats 128/134  avg 996                 4.7%  sharp
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">SWE-bench Multilingual (maker)</a>       89.1%  ▃·▃·▅▅●··▃·▃ beats 6/10     hard · avg 31%          2.3%  typical
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=168">DeepSWE v1.1 (resolved) (maker)</a>      67.4%  ▄·····●▄▄▄·█ beats 1/6      hard · avg 23%          1.1%  at its level
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   83.2%  ▁▁▁▁·▁▂▃▅▃█● beats 41/49    hard · avg 18%          1.1%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #6 of 404 · 2.6% of its score</summary>
+<details><summary>chat &amp; writing · #6 of 405 · 2.6% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall. Trails [Muse Wonder](muse-wonder.md), [Claude Fable 5](claude-fable-5.md), [Gemini 4 Argon](gemini-4-argon.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1502.7  ▁▁▁▂▃▂▃▆▆▇█● beats 381/387  avg 1261      2.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1502.3  ▁▁▁▂▃▂▃▆▆▇█● beats 382/388  avg 1262      2.6%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #7 of 440 · 26% of its score</summary>
+<details><summary>math · #8 of 440 · 27% of its score</summary>
+
+Trails [GPT-6 Sol](gpt-6-sol.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               87.8%  ▁▂▁▁█▅▂▃●▁▁▁ beats 64/72    very hard · avg 0.1%    7.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            90.2%  ▁··▁▁▂▅▃█▅●▂ beats 85/91    very hard · avg 1.3%    4.8%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   77.5%  ▁·····▅██●·▁ beats 19/20    very hard · avg 7.8%    4.1%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   91.0%  ▂···▄·██▆▆●▂ beats 18/19    very hard · avg 5.3%    3.3%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            90.2%  ▁··▁▁▂▅▃█▅●▂ beats 85/91    very hard · avg 1.4%    4.5%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   77.5%  ▁·····▅██●·▁ beats 19/20    very hard · avg 7.9%    4.2%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   91.0%  ▂···▃·▆█▆▅●▃ beats 20/22    very hard · avg 5.4%    3.2%  sharp
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   80.3%  ▂▂▆█▃▃▂▂●··▂ beats 17/18    very hard · avg 0.9%    2.0%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   87.5%  ▁··▁▄█▄▁·●·▁ beats 15/17    very hard · avg 11%     1.3%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv">FrontierMath: Erdős problems</a>          0.0%  ●····▂···▄·▁ beats 7/14     very hard · avg 0.0%    1.2%  sharp · too hard for it · noisy
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet">MathArena ArXivMath August 2026, …</a>   87.7%  █▄·▄·······● beats 4/5      very hard · avg 6.3%    0.9%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August 2026…</a>   79.8%  ▄▄·····▄·▄·● beats 4/5      very hard · avg 7.2%    0.4%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 207/207  very hard · avg 7.3%    0.1%  sharp · maxed out · noisy
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet">MathArena ArXivMath August 2026, …</a>   87.7%  ▃▅█▃···▅●·▃▃ beats 9/12     very hard · avg 1.9%    2.0%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   87.5%  ▁··▁▄█▅▁·●·▃ beats 16/19    very hard · avg 10%     1.4%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv">FrontierMath: Erdős problems</a>          0.0%  ●····▂···▄·▁ beats 7/14     very hard · avg 0.0%    1.4%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August 2026…</a>   79.8%  ▂·▂▂▂·▄▂▂·●▂ beats 10/12    very hard · avg 2.8%    1.1%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 207/207  very hard · avg 7.4%    0.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #8 of 154 · 2.8% of its score</summary>
+<details><summary>vision &amp; documents · #8 of 154 · 2.7% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1289.3  ▁▁▂▂▂▂▃▅▅▅█● beats 140/152  avg 1063      1.8%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1498.4  ▁▃▁▃▄█▇▅█▄▄● beats 38/39    avg 1333      1.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1289.3  ▁▁▂▂▂▂▃▅▅▅█● beats 140/152  avg 1064      1.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1498.4  ▁▃▁▃▄█▇▅█▄▄● beats 38/39    avg 1334      1.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>web search · #18 of 85 · 2.7% of its score</summary>
+<details><summary>web search · #18 of 85 · 2.6% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174">Humanity's Last Exam with tools (…</a>   65.6%  ▂·····▂·▅●▂▂ beats 9/11   very hard · avg 13%    1.9%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1226.8  ▁·▁▁▂▂▁█▅▃●▂ beats 32/38  avg 1081               0.8%  blunt
+<a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174">Humanity's Last Exam with tools (…</a>   65.6%  ▂·····▂·▅●▂▂ beats 9/11   very hard · avg 14%    1.8%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1226.8  ▁·▁▁▂▂▁█▅▃●▂ beats 32/38  avg 1083               0.8%  blunt
 </pre>
 
 </details>
@@ -116,16 +118,16 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    57.1%  ▃▂▅▆▃█▅▆●▃▂▃ beats 24/30    very hard · avg 0.2%    7.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         58.0%  █·▂▁▆▆▆▆●▂▂▁ beats 74/83    very hard · avg 9.4%    6.2%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           70.0%  █▇██▁▇▁●▃▄▁▁ beats 30/38    very hard · avg 1.0%    5.9%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                48.0%  █▁▁▁▁▂▄▂▃●▂▁ beats 136/157  very hard · avg 5.6%    4.5%  sharp · at its level · noisy
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">Humanity's Last Exam (maker)</a>         60.9%  ▂····▂·▃▂●▂▂ beats 9/11     very hard · avg 5.8%    3.6%  at its level
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200">Global-MMLU (maker)</a>                  94.0%  ▄▄··▄▄·●▄··▄ beats 5/7      medium · avg 63%        1.3%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    70.8%  ▁▂▂▂▅█▄●▂··▁ beats 84/91    very hard · avg 7.2%    1.1%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   93.3%  ▁▁▁▆█▆▆▂▁●▁▁ beats 36/38    very hard · avg 2.0%    0.9%  sharp · at its level · noisy
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   69.4%  ▁▁▃▂▂▄▁▃▄▄▄● beats 36/38    very hard · avg 14%     0.9%  at its level
-<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=198">HealthBench (maker)</a>                  66.7%  █·▄·····●▄▄▄ beats 3/6      hard · avg 29%          0.7%  blunt · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    57.1%  ▃▂▅▆▃█▅▆●▃▂▃ beats 24/30    very hard · avg 0.3%    6.7%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           70.0%  █▇██▁▇▁●▃▄▁▁ beats 30/38    very hard · avg 1.0%    6.1%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         58.0%  █·▂▁▆▆▆▆●▂▂▁ beats 74/83    very hard · avg 9.4%    6.1%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                48.0%  █▁▁▁▁▂▄▂▃●▂▁ beats 136/157  very hard · avg 5.6%    4.3%  sharp · at its level · noisy
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">Humanity's Last Exam (maker)</a>         60.9%  ▂····▂·▃▂●▂▂ beats 9/11     very hard · avg 6.0%    3.4%  at its level
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200">Global-MMLU (maker)</a>                  94.0%  ▄▄··▄▄·●▄··▄ beats 5/7      medium · avg 64%        1.3%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    70.8%  ▁▂▂▂▅█▄●▂··▁ beats 84/91    very hard · avg 7.4%    1.1%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   69.4%  ▂▂▄▂▃▃▂▇▇█●▁ beats 43/47    very hard · avg 14%     1.0%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   93.3%  ▁▁▁▄█▅▅▁▁●▁▁ beats 36/38    very hard · avg 2.6%    0.8%  sharp · at its level · noisy
+<a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=198">HealthBench (maker)</a>                  66.7%  █·▄·····●▄▄▄ beats 3/6      hard · avg 30%          0.6%  blunt · at its level
 <a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174">HealthBench Professional (maker)</a>     62.1%  ▂·▂··▂▂▂█●▂▄ beats 9/13     hard · avg 21%          0.5%  blunt · at its level · small run
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   97.9%  ▁▁▃▁█▄▃▃▆▂●▂ beats 46/49    easy · avg 77%          0.4%  maxed out
 </pre>
@@ -139,14 +141,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                       10   39% ▇▇▇▇▇
-<a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">Anthropic system cards and model announ…</a>       15   24% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     6   19% ▇▇
-<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        6   12% ▇
+<a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167">Anthropic system cards and model announ…</a>       15   23% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     6   19% ▇▇
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        6   14% ▇▇
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-anthropic-claude-fable-5-1-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    3% ▇
-<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    2% ▇
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    1% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 81.4
+weighted average                                   = 81.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

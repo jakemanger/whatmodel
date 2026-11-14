@@ -6,7 +6,7 @@
 
 TII · released 2025-05 · 3.15B params · other (falcon-llm-license)
 
-**score 40.3** ±3.1 · #566 of 740 · from 3 benchmark results across 2 sources
+**score 40.3** ±3.1 · #569 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   14.4%  ▁▁●▁·▂·█▆█▇▁ beats 2/31     medium · avg 47%     44%  at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   15.0%  ▁▁·▁▂▂●█▄▅▄▄ beats 11/66    hard · avg 30%       28%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   15.0%  ▁▁·▁▂▂●█▄▅▄▄ beats 11/66    hard · avg 30%       29%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 182/276  medium · avg 72%     23%  at its level · noisy
 </pre>
 

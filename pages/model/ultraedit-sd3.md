@@ -6,7 +6,7 @@
 
 Peking University / BIGAI (UltraEdit) · released 2024-06
 
-**score 32.2** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       20% ▇▇
-weighted average                                   = 32.2
+weighted average                                   = 32.1
 </pre>
 
 <sub>Licences: EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

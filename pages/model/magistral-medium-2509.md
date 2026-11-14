@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · proprietary
 
-**score 61.7** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
+**score 61.6** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃█······●·▃▃       #3 of 7*     12%      1
-math    ▁▂▃▆██●▇▄▁▁▁   #174 of 540*     53%      2
+math    ▁▂▃▆█▇●▇▄▁▁▁   #174 of 540*     53%      2
 </pre>
 
 <details><summary>coding · #3 of 7 · 12% of its score</summary>
@@ -26,7 +26,7 @@ Trails [Magistral Small 1.2](magistral-small-2509.md), [Mistral Small 4 (119B-A6
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   75.0%  ▄█▄······▄·● beats 5/5    medium · avg 50%     12%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   75.0%  ▄█▄······▄·● beats 5/5    medium · avg 51%     12%  at its level
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.7
+weighted average                                   = 61.6
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>

@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 53.0** ±2.6 · #72 of 146 · from 6 benchmark results across 2 sources · † no independently run results verified
+**score 52.9** ±2.6 · #73 of 147 · from 6 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▂▂▁▁▁   #62 of 128     97%      6
+text to image  ▂▅▅▃▄●█▃▂▁▁▁   #63 of 129     97%      6
 </pre>
 
-<details><summary>text to image · #62 of 128 · 97% of its score</summary>
+<details><summary>text to image · #63 of 129 · 97% of its score</summary>
 
 Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [LongCat-Image](longcat-image.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ source                                    results  share of the score
 <a name="visual-llada-image"></a><a href="https://arxiv.org/html/2609.03796v1#S5.T5">LLaDA-Image: Building Strong Image Gene…</a>        5   71% ▇▇▇▇▇▇▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   27% ▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.9
 </pre>
 
 <sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

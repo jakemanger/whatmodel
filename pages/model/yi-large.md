@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▆▃▂▁   #316 of 542*     20%      1
-chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #274 of 476*     20%      1
-math            ▁▂▃●██▅▇▄▁▁▁   #461 of 540*    7.7%      1
+coding          ▁▁▁▃▅▆●▇▆▃▃▁   #318 of 544*     21%      1
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #275 of 477*     19%      1
+math            ▁▂▃●█▇▅▇▄▁▁▁   #461 of 540*    7.7%      1
 </pre>
 
-<details><summary>coding · #316 of 542 · 20% of its score</summary>
+<details><summary>coding · #318 of 544 · 21% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   60.3%  ▁▂▆▃●█▆▃▂·▁▁ beats 20/47  medium · avg 58%     20%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   60.3%  ▁▂▆▃●█▆▃▂·▁▁ beats 20/47  medium · avg 58%     21%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #274 of 476 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #275 of 477 · 19% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   63.7%  ▂▁▁▅█▅▄▃●▅▃▁ beats 43/60  medium · avg 47%     20%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   63.7%  ▂▁▁▅█▅▄▃●▅▃▁ beats 43/60  medium · avg 47%     19%  sharp · at its level
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             81.2%  ▁·▁▁▄▄▄▅●▄▂▁ beats 31/53  easy · avg 76%          32%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             18.8%  ▁▁▃▆●█▁▁·▁▁▁ beats 26/57  hard · avg 16%          12%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 43.320 WB-Score    8.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 43.352 WB-Score    8.3%  sharp
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                               results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>        4   72% ▇▇▇▇▇▇▇▇▇
-<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>           1   20% ▇▇
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>           1   19% ▇▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1    8% ▇
 prior: pull toward the middle                   0% ▇
 weighted average                              = 51.9

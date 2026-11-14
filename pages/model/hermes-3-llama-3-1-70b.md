@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 70.55B params · llama3
 
-**score 50.2** ±1.0 · #373 of 740 · from 14 benchmark results across 2 sources
+**score 50.2** ±1.0 · #376 of 743 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                               result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                40.1%  ▁▁▁▂▂▃▂█▆●▅▃ beats 44/61    medium · avg 39%     44%  at its level
-<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>              67.8%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 107/155  medium · avg 68%    9.2%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>              67.8%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 107/155  medium · avg 68%    9.1%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (maker)</a>   37.7%  ▂▁▂▂▄▃●▃▅█▃▃ beats 33/106   hard · avg 38%      8.9%  sharp · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                        79.1%  ▁▁▁▁▁▂▂▅██●▄ beats 164/215  easy · avg 78%      6.9%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>               65.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 113/140  medium · avg 68%    6.7%  sharp · at its level · small run

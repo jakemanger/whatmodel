@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 65.6** ±1.3 · #134 of 740 · from 11 benchmark results across 2 sources
+**score 65.5** ±1.3 · #138 of 743 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,48 +16,48 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▅●▅▄▅▂▁   #138 of 316     30%      5
-coding          ▁▁▁▃▆▇█▆●▃▃▁   #110 of 472     43%      4
-chat &amp; writing  ▁▁▁▃▆▄▆█▇●▇▃   #97 of 404*     16%      1
+agent tasks     ▁▁▃▆█▄●▅▃▃▂▁   #141 of 319     30%      5
+coding          ▁▁▁▃▆▇█▆●▃▃▁   #112 of 474     43%      4
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #98 of 405*     16%      1
 web search      █········█·●      #1 of 3*     11%      2
 </pre>
 
-<details><summary>agent tasks · #138 of 316 · 30% of its score</summary>
+<details><summary>agent tasks · #141 of 319 · 30% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (maker)</a>           68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/140  hard · avg 24%         9.3%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (maker)</a>           68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/140  hard · avg 24%         9.4%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (maker)</a>                45.0%  ▁▁▁▁▁▃·▁●▅▄█ beats 10/23   hard · avg 17%         6.4%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (maker)</a>       57.8%  ▁··▂▂▃●█▃▂▁▁ beats 21/69   hard · avg 23%         6.3%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (maker)</a>                   38.5%  ▁·▃▁▁▂●▄█▃▂▄ beats 12/48   hard · avg 16%         4.5%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 release) …</a>   36.7%  ▃·▃···▃▃▅·●█ beats 6/10    very hard · avg 14%    3.7%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 release) …</a>   36.7%  ▃·▃···▃▃▅·●█ beats 6/10    very hard · avg 14%    3.8%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #110 of 472 · 43% of its score</summary>
+<details><summary>coding · #112 of 474 · 43% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises, tw…</a>   76.1%  ▂▁▁▃▆▃▄▆█▃●▂ beats 63/71   very hard · avg 13%     22%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (maker)</a>           68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/140  hard · avg 24%         9.3%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises, tw…</a>   76.1%  ▂▁▁▃▆▃▄▆█▃●▂ beats 63/71   very hard · avg 13%     23%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (maker)</a>           68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/140  hard · avg 24%         9.4%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (maker)</a>       57.8%  ▁··▂▂▃●█▃▂▁▁ beats 21/69   hard · avg 23%         6.3%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspecifie…</a>   74.9%  ▁···▁▁▁█▇▃●▁ beats 34/38   medium · avg 42%       4.9%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspecifie…</a>   74.9%  ▁···▁▁▁█▇▃●▁ beats 34/38   medium · avg 43%       4.9%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #97 of 404 · 16% of its score</summary>
+<details><summary>chat &amp; writing · #98 of 405 · 16% of its score</summary>
 
 Beats [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1416.0  ▁▁▁▂▃▂▃▆▆●█▃ beats 269/387  avg 1261       16%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1416.0  ▁▁▁▂▃▂▃▆▆●█▃ beats 269/388  avg 1262       16%  blunt
 </pre>
 
 </details>
@@ -77,8 +77,8 @@ test                   result  vs the others in its run  difficulty      counts 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (maker)</a>           80.7%  ▁▁▁▁▂▃▅▆▇●█▂ beats 207/336  hard · avg 42%           13%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (maker)</a>   21.7%  ▁▁▁▄▆▇●█▆▁▂▁ beats 55/115   very hard · avg 4.7%    6.5%  small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (maker)</a>               85.0%  ▁▁·▁▁▁▃▂▄▅●▁ beats 171/189  medium · avg 58%        6.0%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (maker)</a>   21.7%  ▁▁▁▄▆▇●█▆▁▂▁ beats 55/115   very hard · avg 4.8%    6.4%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (maker)</a>               85.0%  ▁▁·▁▁▁▃▂▄▅●▁ beats 171/189  medium · avg 58%        6.1%  small run
 </pre>
 
 </details>
@@ -89,10 +89,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">DeepSeek-V3.1-Terminus model card (subm…</a>       10   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
+<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">DeepSeek-V3.1-Terminus model card (subm…</a>       10   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.6
+weighted average                                   = 65.5
 </pre>
 
 <sub>Licences: DeepSeek-V3.1-Terminus model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

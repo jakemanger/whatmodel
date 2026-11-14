@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 45.1** ±1.6 · #483 of 740 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 45.1** ±1.6 · #482 of 743 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #321 of 472*     15%      1
-math    ▁▁▃▅█●▄█▅▂▁▁   #262 of 440*     21%      1
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #323 of 474*     15%      1
+math    ▁▁▃▅●▆▅█▄▁▁▁   #263 of 440*     21%      1
 </pre>
 
-<details><summary>coding · #321 of 472 · 15% of its score</summary>
+<details><summary>coding · #323 of 474 · 15% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
@@ -31,9 +31,9 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>math · #262 of 440 · 21% of its score</summary>
+<details><summary>math · #263 of 440 · 21% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
@@ -48,7 +48,7 @@ test           result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (maker)</a>               64.3%  ▁·····▂█▂●·▁ beats 18/25  easy · avg 74%       41%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (maker)</a>                         53.6%  ▁▁▃▃▄●▄▁█··▁ beats 14/25  medium · avg 73%     18%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   60.6%  ▂··▁▃▂▂▂█▅●▂ beats 23/25  medium · avg 59%    4.1%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   60.6%  ▂··▁▃▂▂▂█▅●▂ beats 23/25  medium · avg 59%    4.2%  blunt · at its level
 </pre>
 
 </details>

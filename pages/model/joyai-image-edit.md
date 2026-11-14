@@ -6,7 +6,7 @@
 
 JD (JoyAI) · released 2026-03 · apache-2.0
 
-**score 56.0** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.9** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁▁▃▃▃●▅▃▄▂▁   #48 of 83*     97%      1
+image to image / edit…  ▁▁▁▃▃▃●▅▃▅▂▁   #49 of 84*     97%      1
 </pre>
 
-<details><summary>image to image / editing · #48 of 83 · 97% of its score</summary>
+<details><summary>image to image / editing · #49 of 84 · 97% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [LongCat-Image-Edit](longcat-image-edit.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 56.0
+weighted average                                   = 55.9
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>

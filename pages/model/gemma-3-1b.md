@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 1B params · gemma
 
-**score 33.1** ±0.7 · #650 of 740 · from 51 benchmark results across 13 sources
+**score 33.1** ±0.7 · #653 of 743 · from 51 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ●▁▃▆█▅▅▅▄▅▂▁   #316 of 316    2.3%      2
-coding          ▁▁▁●▆▇█▆▆▃▃▁   #450 of 472     10%      4
-chat &amp; writing  ▁▁▁▃▆●▆█▇▇▇▃   #309 of 404    7.5%      4
-math            ▁▁▃●█▆▄█▅▂▁▁   #378 of 440     34%      6
+agent tasks     ●▁▃▆█▄▅▅▃▃▂▁   #319 of 319    2.3%      2
+coding          ▁▁▁●▆▇█▆▆▃▃▁   #452 of 474     10%      4
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #310 of 405    7.5%      4
+math            ▁▁▃●█▆▅█▄▁▁▁   #378 of 440     34%      6
 </pre>
 
-<details><summary>agent tasks · #316 of 316 · 2.3% of its score</summary>
+<details><summary>agent tasks · #319 of 319 · 2.3% of its score</summary>
 
 Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #450 of 472 · 10% of its score</summary>
+<details><summary>coding · #452 of 474 · 10% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #309 of 404 · 7.5% of its score</summary>
+<details><summary>chat &amp; writing · #310 of 405 · 7.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md) here, though they rank lower overall.
 
@@ -71,9 +71,9 @@ test                       result  vs the others in its run   difficulty        
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       35.0%  ●▃··▃▂▅█▆▃▂▃ beats 0/22    very easy · avg 93%      21%  sharp · at its level · several runs
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM</a>                        43.6%  █···●▄··▄··▄ beats 3/6     easy · avg 83%          6.6%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.3%  ▃▃●▂▂▆·····▁ beats 8/22    easy · avg 82%          5.1%  at its level · several runs
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                    45.2%  ▄··●▄·▄···▄▄ beats 2/6     easy · avg 77%          1.1%  at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                    45.2%  ▄··●▄·▄···▄▄ beats 2/6     easy · avg 78%          1.1%  at its level · noisy
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                    1.0%  ▄●··▄···▄··█ beats 2/6     hard · avg 31%          0.5%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     1.1%  ●▃▄▃▃▃▇▆█▄▃▆ beats 10/207  very hard · avg 7.3%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     1.1%  ●▃▄▃▃▃▇▆█▄▃▆ beats 10/207  very hard · avg 7.4%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -86,7 +86,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       39.4%  ▁●·▁▁·▅█·▄▄▁ beats 1/22    easy · avg 79%          8.0%  sharp · several runs
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)</a>    20.5%  ▄·●·█······█ beats 1/6     medium · avg 38%        2.7%  several runs
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   21.9%  ●·······▄█·▄ beats 0/4     easy · avg 71%          2.4%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                             14.0%  ●···█·██·███ beats 0/6     medium · avg 52%        2.1%  small run · several runs
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                             14.0%  ●···█·██·███ beats 0/6     medium · avg 53%        2.1%  small run · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         19.9%  ●▁▁▁▂▃▅▄▄▆█▃ beats 3/221   hard · avg 37%          2.0%  sharp · too hard for it · small run · s…
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   37.5%  ▂▄●▃█▄▃▆▃▅▂▂ beats 12/81   medium · avg 57%        2.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   21.4%  ●······█··██ beats 0/3     medium · avg 61%        1.8%  at its level
@@ -97,9 +97,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   54.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 74/276  medium · avg 72%        0.8%  noisy
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified)</a>            21.1%  ●······▄▄█·▄ beats 0/6     hard · avg 37%          0.8%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro avg (m…</a>    7.2%  ●▄·█▄·▄·▄·▄▄ beats 0/8     hard · avg 18%          0.8%  too hard for it · small run
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (maker)</a>                      2.2%  ●▄▄▆█▆███·▂█ beats 0/32    very hard · avg 6.9%    0.7%  too hard for it
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                 9.6%  ●▁▁▃▃▃▁█▁▃·▄ beats 0/21    hard · avg 31%          0.7%  typical
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (maker)</a>                      2.2%  ●▄▄▆█▆███·▂█ beats 0/32    very hard · avg 7.0%    0.7%  too hard for it
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   43.7%  ▁▁▁▁▁▁●▂▄█▄▃ beats 15/146  easy · avg 82%          0.7%  at its level · noisy
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                 9.6%  ●▁▁▃▃▃▁█▁▃·▄ beats 0/21    hard · avg 31%          0.7%  typical
 <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (maker)</a>               35.9%  ●······█··██ beats 0/3     medium · avg 52%        0.7%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   94.7%  ▁▁▂▃▄●█▆▃▂▂▁ beats 58/140  very easy · avg 94%     0.6%  blunt · noisy
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       43.8%  ●▃▂·▃▃·▅█▂▅▂ beats 1/21    medium · avg 60%        0.2%  blunt · at its level

@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · 29.8B params · apache-2.0
 
-**score 68.1** ±1.0 · #102 of 740 · from 21 benchmark results across 6 sources
+**score 68.0** ±1.0 · #105 of 743 · from 21 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅●▄▅▂▁       #83 of 316     31%      6
-coding              ▁▁▁▃▆▇█▆●▃▃▁      #119 of 472     49%      5
-chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃      #86 of 404*     10%      1
+agent tasks         ▁▁▃▆█▄▅●▃▃▂▁       #85 of 319     31%      6
+coding              ▁▁▁▃▆▇█▆●▃▃▁      #122 of 474     48%      5
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃      #89 of 405*     10%      1
 math                               not ranked yet       —      1
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄       #66 of 154    8.0%      3
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄       #66 of 154    8.1%      3
 web search          ▂▁▂▆●█▄▃▁▁▁▁       #50 of 85*    2.8%      1
 </pre>
 
-<details><summary>agent tasks · #83 of 316 · 31% of its score</summary>
+<details><summary>agent tasks · #85 of 319 · 31% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecified)…</a>   51.2%  ▁·▁▁▁▁▁▄●▁▁▁ beats 31/64    very hard · avg 7.7%     10%  sharp · at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (maker)</a>           76.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 111/140  hard · avg 23%          5.9%  sharp · at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecified)…</a>   51.2%  ▁·▁▁▁▁▁▄●▁▁▁ beats 31/64    very hard · avg 8.0%     10%  sharp · at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (maker)</a>           76.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 111/140  hard · avg 24%          5.9%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▂·····▂·▂●▃▅ beats 5/12     hard · avg 21%          4.7%  at its level
 <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OSWorld-Verified (maker)</a>             65.9%  █▃·▂▅▂●▂▅▃▆▆ beats 13/28    hard · avg 26%          4.5%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MCP-Atlas (public set) (maker)</a>       75.5%  ▂·▁▂▂·▁▃█▆●▃ beats 32/41    hard · avg 30%          3.1%  at its level · small run
@@ -40,28 +40,28 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #119 of 472 · 49% of its score</summary>
+<details><summary>coding · #122 of 474 · 48% of its score</summary>
 
-Beats [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+Beats [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1354.7  ▁▂▄▃●█▅▆█▅▂▁ beats 28/133   avg 990                  19%  sharp
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecified)…</a>   51.2%  ▁·▁▁▁▁▁▄●▁▁▁ beats 31/64    very hard · avg 7.7%     10%  sharp · at its level · small run
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   68.3%  ▁▁▁▁·▁▂▃●▃█▇ beats 19/49    hard · avg 17%           10%  sharp · at its level
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (maker)</a>           76.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 111/140  hard · avg 23%          5.9%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1354.1  ▁▂▄▃●█▅▇▇▅▂▁ beats 28/134   avg 996                  19%  sharp
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecified)…</a>   51.2%  ▁·▁▁▁▁▁▄●▁▁▁ beats 31/64    very hard · avg 8.0%     10%  sharp · at its level · small run
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   68.3%  ▁▁▁▁·▁▂▃●▃█▇ beats 19/49    hard · avg 18%          9.4%  sharp · at its level
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (maker)</a>           76.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 111/140  hard · avg 24%          5.9%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▂·····▂·▂●▃▅ beats 5/12     hard · avg 21%          4.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #86 of 404 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #89 of 405 · 10% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1424.7  ▁▁▁▂▃▂▃▆▆●█▃ beats 281/387  avg 1261       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1424.6  ▁▁▁▂▃▂▃▆▆●█▃ beats 281/388  avg 1262       10%  blunt
 </pre>
 
 </details>
@@ -75,14 +75,14 @@ test               result  vs the others in its run  difficulty        counts  w
 
 </details>
 
-<details><summary>vision &amp; documents · #66 of 154 · 8.0% of its score</summary>
+<details><summary>vision &amp; documents · #66 of 154 · 8.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">CharXiv (reasoning questions) (ma…</a>   78.8%  ▂▄▃▄▅▅▅▅▅●▆▂ beats 75/105  medium · avg 42%    3.5%  small run
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (higher …</a>   75.8%  ▂··▂●▂··▂▂█▅ beats 2/13    medium · avg 55%    2.8%  small run
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (higher …</a>   75.8%  ▂··▂●▂··▂▂█▅ beats 2/13    medium · avg 55%    2.9%  small run
 <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">ScreenSpot-Pro (maker)</a>               75.4%  ▂▃▅▆██●▂▂··▂ beats 20/25   medium · avg 53%    1.7%  blunt · at its level · small run
 </pre>
 
@@ -103,13 +103,13 @@ test                  result  vs the others in its run  difficulty        counts
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   88.3%  ▁▂▂▂▃█▃▆▅▄▂● beats 95/95  medium · avg 65%       4.0%  typical
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (maker)</a>                47.6%  ▂·▄▄▆▂▄█●▂▂▂ beats 15/20  very hard · avg 15%    3.8%  at its level · small run
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.9%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 14/49  easy · avg 77%         3.7%  typical
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecified)…</a>   77.0%  ▂▆▂▃▄▄▂▃▄▆●▇ beats 76/88  medium · avg 41%       2.5%  at its level · small run
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   88.3%  ▁▂▂▂▃█▃▆▅▄▂● beats 95/95  easy · avg 65%         4.1%  typical
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (maker)</a>                47.6%  ▂·▄▄▆▂▄█●▂▂▂ beats 15/20  very hard · avg 15%    3.9%  at its level · small run
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.9%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 14/49  easy · avg 77%         3.8%  typical
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecified)…</a>   77.0%  ▂▆▂▃▄▄▂▃▄▆●▇ beats 76/88  medium · avg 42%       2.5%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Gaia2 (maker)</a>                        43.3%  █·····█····● beats 2/2    hard · avg 17%         2.5%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills) (maker)</a>    44.3%  █·········●█ beats 1/2    hard · avg 17%         2.3%  at its level · small run
-<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.1%  ▂·▂··▂·▄▂·●▆ beats 8/12   medium · avg 63%       1.6%  noisy
+<a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills) (maker)</a>    44.3%  █·········●█ beats 1/2    hard · avg 18%         2.3%  at its level · small run
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.1%  ▂·▂··▂·▄▂·●▆ beats 8/12   medium · avg 64%       1.6%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              77.7%  █·●·▅▅▃···▃▃ beats 3/10   easy · avg 70%         0.9%  blunt
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   78.2%  ▄·▄▄▄·▄█●▄█▄ beats 7/12   medium · avg 65%       0.8%  blunt
 </pre>
@@ -123,13 +123,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speed-meta-muse-glimmer-30b"></a><a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">meta-models/Muse-Glimmer-30B model card…</a>       12   45% ▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   29% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   29% ▇▇▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2   13% ▇▇
 <a name="card-qwen--qwen3.8-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Qwen/Qwen3.8-27B model card</a>                     1    5% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    4% ▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                                          3    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.1
+weighted average                                   = 68.0
 </pre>
 
 <sub>Licences: meta-models/Muse-Glimmer-30B model card ([Apache-2.0](../../licenses/speed-meta-muse-glimmer-30b-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Qwen/Qwen3.8-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.8-27B.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

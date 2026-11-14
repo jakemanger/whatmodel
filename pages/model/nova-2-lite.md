@@ -6,7 +6,7 @@
 
 Amazon · released 2025-10 · closed weights
 
-**score 57.4** ±1.4 · #239 of 740 · from 7 benchmark results across 5 sources
+**score 57.4** ±1.4 · #242 of 743 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #244 of 316*     13%      2
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #185 of 404*     19%      1
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #246 of 319*     14%      2
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #185 of 405*     19%      1
 </pre>
 
-<details><summary>agent tasks · #244 of 316 · 13% of its score</summary>
+<details><summary>agent tasks · #246 of 319 · 14% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #185 of 404 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #185 of 405 · 19% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1335.0  ▁▁▁▂▃▂▃●▆▇█▃ beats 170/387  avg 1261       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1335.0  ▁▁▁▂▃▂▃●▆▇█▃ beats 170/388  avg 1262       19%  blunt
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           67.2%  ▆▄▄●█▄▂·▄█·▄ beats 7/23   medium · avg 56%        28%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            73.9%  ▄▄▄▂●█▂▄▂█▂▄ beats 7/22   medium · avg 61%        23%  typical
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   48.2%  █···▁▁▁●▃·▆▂ beats 12/23  very hard · avg 29%     15%  sharp
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▄●▁▁ beats 90/98  very easy · avg 90%    0.0%  blunt
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           67.2%  ▆▄▄●█▄▂·▄█·▄ beats 7/23    medium · avg 56%        28%  at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            73.9%  ▄▄▄▂●█▂▄▂█▂▄ beats 7/22    medium · avg 61%        23%  typical
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   48.2%  █···▁▁▁●▃·▆▂ beats 12/23   very hard · avg 29%     15%  sharp
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▃●▁▁ beats 92/100  very easy · avg 90%    0.0%  blunt
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   66% ▇▇▇▇▇▇▇▇
+<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   67% ▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    9% ▇
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (submitted / maker-reported)</a>         1    4% ▇

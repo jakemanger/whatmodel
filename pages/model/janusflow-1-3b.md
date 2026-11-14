@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-11 · 1.3B params · deepseek
 
-**score 36.0** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.9** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂●▇▇▅█▇▂▃▁▂   #127 of 159*     83%      1
+text to image  ▁▂●▇▇▅█▇▂▃▁▂   #128 of 160*     83%      1
 </pre>
 
-<details><summary>text to image · #127 of 159 · 83% of its score</summary>
+<details><summary>text to image · #128 of 160 · 83% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   83% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            17% ▇▇
-weighted average                        = 36.0
+weighted average                        = 35.9
 </pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 28.0** ±1.0 · #683 of 740 · from 24 benchmark results across 3 sources
+**score 27.9** ±1.0 · #687 of 743 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▄▅▂▁   #303 of 316*    3.6%      2
+agent tasks     ▁▁●▆█▄▅▅▃▃▂▁   #306 of 319*    3.6%      2
 coding          ●··········█        #3 of 4     39%      7
-chat &amp; writing  ▁▁▁●▆▄▆█▇▇▇▃   #367 of 404*    7.3%      2
-math            ▁●▃▅█▆▄█▅▂▁▁    #424 of 440     26%      6
+chat &amp; writing  ▁▁▁●▅▄▆█▇▇▇▃   #368 of 405*    7.3%      2
+math            ▁●▃▅█▆▅█▄▁▁▁    #424 of 440     26%      6
 </pre>
 
-<details><summary>agent tasks · #303 of 316 · 3.6% of its score</summary>
+<details><summary>agent tasks · #306 of 319 · 3.6% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall.
 
@@ -51,7 +51,7 @@ test                  result  vs the others in its run   difficulty           co
 
 </details>
 
-<details><summary>chat &amp; writing · #367 of 404 · 7.3% of its score</summary>
+<details><summary>chat &amp; writing · #368 of 405 · 7.3% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (maker)</a>          8.5%  ●····▅·█▃▃·▅ beats 1/10    medium · avg 51%        3.7%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (maker)</a>                 13.0%  ▁·▃▁●▂▁█▄▁▃▃ beats 5/27    medium · avg 59%        3.0%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   14.7%  ●·▄▄██···█·▄ beats 0/10    medium · avg 46%        2.4%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▆█▄▃▆ beats 2/207   very hard · avg 7.3%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▆█▄▃▆ beats 2/207   very hard · avg 7.4%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -105,7 +105,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">Epoch AI</a>                                        2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 28.0
+weighted average                                   = 27.9
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-1b model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

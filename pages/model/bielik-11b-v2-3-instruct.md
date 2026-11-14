@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
-**score 50.7** ±2.0 · #360 of 740 · from 6 benchmark results across 5 sources
+**score 50.7** ±2.0 · #363 of 743 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▅▅▅▄▅▂▁   #297 of 316*     27%      2
+agent tasks  ▁▁●▆█▄▅▅▃▃▂▁   #299 of 319*     27%      2
 </pre>
 
-<details><summary>agent tasks · #297 of 316 · 27% of its score</summary>
+<details><summary>agent tasks · #299 of 319 · 27% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   72.6%  ▁▂▂▂▃█▃●▅▄▂▃ beats 60/95    medium · avg 65%     31%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   72.6%  ▁▂▂▂▃█▃●▅▄▂▃ beats 60/95    easy · avg 65%       31%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   70.9%  ▁··▁▁▂▂▆▅▆●▆ beats 54/70    medium · avg 62%     25%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 202/276  medium · avg 72%     10%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.8%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 91/146   easy · avg 82%      5.0%  noisy

@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 43.4** ±2.9 · #517 of 740 · from 3 benchmark results across 3 sources
+**score 43.3** ±2.9 · #520 of 743 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,13 +21,13 @@ vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #142 of 154     9
 
 <details><summary>vision &amp; documents · #142 of 154 · 96% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1000.5  ▁▁▂●▂▂▃▅▅▅█▇ beats 11/152  avg 1063                58%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1000.5  ▁▁▂●▂▂▃▅▅▅█▇ beats 11/152  avg 1064                58%  blunt
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   39.3%  █·●···█·█·██ beats 1/5     medium · avg 46%        30%  at its level
-<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   22.5%  ●······▃·▅·█ beats 1/7     very hard · avg 36%    7.9%  too hard for it · noisy
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   22.5%  ●······▃·▅·█ beats 1/7     very hard · avg 36%    8.0%  too hard for it · noisy
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="paper-2504.07072v2-kaleidoscope"></a><a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope: In-language Exams for Mas…</a>        1   30% ▇▇▇▇
 <a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    8% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 43.4
+weighted average                                   = 43.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

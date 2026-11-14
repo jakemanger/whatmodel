@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 45.3** ±0.6 · #471 of 740 · from 22 benchmark results across 10 sources
+**score 45.3** ±0.6 · #474 of 743 · from 22 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▄▅▂▁   #295 of 316*    0.9%      1
-coding          ▁▁▁▃▆●█▆▆▃▃▁   #355 of 472*     11%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #283 of 404*    2.8%      1
-math            ▁▁▃●█▆▄█▅▂▁▁    #366 of 440     28%      5
+agent tasks     ▁▁●▆█▄▅▅▃▃▂▁   #298 of 319*    0.9%      1
+coding          ▁▁▁▃▆●█▆▆▃▃▁   #357 of 474*     11%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #284 of 405*    2.8%      1
+math            ▁▁▃●█▆▅█▄▁▁▁    #366 of 440     28%      5
 </pre>
 
-<details><summary>agent tasks · #295 of 316 · 0.9% of its score</summary>
+<details><summary>agent tasks · #298 of 319 · 0.9% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #355 of 472 · 11% of its score</summary>
+<details><summary>coding · #357 of 474 · 11% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #283 of 404 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #284 of 405 · 2.8% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
@@ -100,7 +100,7 @@ source                                    results  share of the score
 <a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards</a>          6   15% ▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   14% ▇▇
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>               3   11% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2    8% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2    9% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    2% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    2% ▇

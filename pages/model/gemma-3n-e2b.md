@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 44.5** ±1.4 · #492 of 740 · from 12 benchmark results across 4 sources
+**score 44.5** ±1.4 · #493 of 743 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -49,9 +49,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (maker)</a>                         60.1%  ▁▁▁▁▁▂▂▅●█▆▄ beats 88/215  medium · avg 71%     10%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (maker)</a>                     40.5%  ▁▁·▁▁▁●▂▄▅█▁ beats 27/189  medium · avg 54%    7.9%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 80/276  medium · avg 72%    5.3%  at its level · noisy
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (maker)</a>                  55.1%  ●█·▃···▅·▅█▃ beats 0/12    medium · avg 64%    4.8%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (maker)</a>                  55.1%  ●█·▃···▅·▅█▃ beats 0/12    medium · avg 64%    4.7%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   66.4%  ▃·▁▁▂▁▂▅●▇▄▁ beats 42/100  medium · avg 67%    4.2%  sharp · at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.4%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 63/146  easy · avg 82%      3.3%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.4%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 63/146  easy · avg 82%      3.4%  at its level · noisy
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">GPQA Diamond (Google RelaxedAccur…</a>   24.8%  ······●····· beats 1/1                            —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Codegolf v2.2 (maker)</a>                11.0%  ●··········█ beats 0/1                            —  not counted yet: no other model in the …
 </pre>

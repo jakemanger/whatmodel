@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 36.3** ±1.1 · #623 of 740 · from 16 benchmark results across 8 sources
+**score 36.3** ±1.1 · #626 of 743 · from 16 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #446 of 472*     17%      2
-math    ▁▁▃▅●▆▄█▅▂▁▁   #335 of 440*     10%      1
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #448 of 474*     17%      2
+math    ▁▁▃▅●▆▅█▄▁▁▁   #334 of 440*     10%      1
 </pre>
 
-<details><summary>coding · #446 of 472 · 17% of its score</summary>
+<details><summary>coding · #448 of 474 · 17% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>math · #335 of 440 · 10% of its score</summary>
+<details><summary>math · #334 of 440 · 10% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
@@ -48,12 +48,12 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       36.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 26/155   medium · avg 65%     15%  sharp
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28    medium · avg 48%     12%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28    medium · avg 49%     12%  typical
 <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        57.7%  ▄▁▁▂▁▄█●▃▂▃▂ beats 102/140  easy · avg 85%      9.1%  sharp · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   61.7%  ▂·▄·▂█▄▄█▄▂● beats 20/21    easy · avg 74%      9.0%  blunt · at its level
 <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 53.5%  ▁▁▁▁▁▂▂●██▆▄ beats 62/215   easy · avg 80%      8.3%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13     medium · avg 53%    6.6%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13     medium · avg 61%    3.8%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13     medium · avg 61%    3.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 91/276   medium · avg 72%    2.6%  at its level · noisy
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               40.3%  ▁···▁▁●▁▂▂▃█ beats 3/33     medium · avg 59%    2.5%  noisy
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   49.7%  ●▁····▃▁·▁·▁ beats 0/14     hard · avg 67%      2.3%  sharp · too hard for it · noisy

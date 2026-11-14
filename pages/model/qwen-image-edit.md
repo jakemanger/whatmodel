@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 20.43B params · Apache 2.0
 
-**score 54.4** ±1.7 · #68 of 146 · from 11 benchmark results across 10 sources
+**score 54.2** ±1.7 · #71 of 147 · from 11 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #41 of 64     65%      7
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #42 of 65     65%      7
 </pre>
 
-<details><summary>image to image / editing · #41 of 64 · 65% of its score</summary>
+<details><summary>image to image / editing · #42 of 65 · 65% of its score</summary>
 
-Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.2 \[dev\]](flux-2-dev.md), [P-Image-Edit](p-image-edit.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.2 \[dev\]](flux-2-dev.md), [P-Image-Edit](p-image-edit.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1240.9  ▂▁▁▃▆●▆▆▇▄▃▃ beats 20/55  avg 1158             17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1240.9  ▂▁▁▃▆●▅▇█▄▃▃ beats 20/56  avg 1160             17%  typical
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   74.6%  ▃·········●▂ beats 4/7    medium · avg 44%     13%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   75.2%  ▄·▄···▄●█··▄ beats 4/7    easy · avg 66%      8.5%  at its level
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   75.2%  ▄·▄···▄●█··▄ beats 4/7    easy · avg 67%      8.5%  at its level
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   33.0%  ▄●····▄▄█▄·█ beats 1/8    hard · avg 35%      8.2%  at its level
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              77.3%  ▂····▂▄▂▄·●▂ beats 7/11   easy · avg 74%      7.4%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1010.0  ▃▂····▂●▂▃▂▃ beats 7/14   avg 960             6.7%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1010.0  ▃▂····▂●▂▃▂▃ beats 7/14   avg 961             6.7%  blunt
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   41.1%  ▄·▄●▄▄··█▄·▄ beats 2/8    medium · avg 51%    4.9%  at its level
 </pre>
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    50.7%  ▂··▂●▂▄▂▂·▂▂ beats 4/12   medium · avg 42%     15%  at its level
 <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing (hum…</a>   80.1%  █▄▄····●···▄ beats 4/5    easy · avg 78%      7.3%  typical
-<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   41.9%  ▂·▂▃·▂·▃●·▃█ beats 7/14   medium · avg 43%    6.1%  blunt · at its level
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   41.9%  ▂·▂▃·▂·▃●·▃█ beats 7/14   medium · avg 43%    6.2%  blunt · at its level
 <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   66.5%  █▄▄·▄▄▄▄█·●█ beats 10/12  easy · avg 65%      5.3%  at its level
 </pre>
 
@@ -55,7 +55,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   21% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   17% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   17% ▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   15% ▇▇
 <a name="visual-gebench"></a><a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench: Benchmarking Image Generation …</a>        1    8% ▇
 <a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1    7% ▇
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1    5% ▇
 <a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.4
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

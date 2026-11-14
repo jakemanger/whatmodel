@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 3B params · bigscience-bloom-rail-1.0
 
-**score 16.0** ±0.7 · #718 of 740 · from 47 benchmark results across 8 sources
+**score 16.1** ±0.7 · #721 of 743 · from 47 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··█·█·●█··█       #3 of 6*    4.1%      1
-math    ▁●▃▅█▆▄█▅▂▁▁   #431 of 440*    2.3%      1
+math    ▁●▃▅█▆▅█▄▁▁▁   #431 of 440*    2.3%      1
 </pre>
 
 <details><summary>coding · #3 of 6 · 4.1% of its score</summary>
@@ -49,14 +49,14 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">WinoGrande</a>                           58.5%  ▁····▁··●▂█▄ beats 3/26    easy · avg 88%           11%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">PIQA</a>                                 70.6%  ▁·▁··●▁▃█▅█▂ beats 2/26    easy · avg 87%          8.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">SciQ</a>                                 89.1%  ▁·▁·▁·●▅▃█▄▁ beats 4/26    very easy · avg 98%     6.8%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">HellaSwag</a>                            54.5%  ▃···●▇▅█▇▃▁▁ beats 2/26    very easy · avg 91%     6.6%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">HellaSwag</a>                            54.5%  ▃···●▇▅█▇▃▁▁ beats 2/26    very easy · avg 91%     6.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), last-wo…</a>   51.7%  ▁··●▁▁▁▂▆█▅▃ beats 1/26    very easy · avg 87%     5.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">BoolQ</a>                                61.7%  ▂▃●▅▆▂▅▆█▂▂▂ beats 3/26    easy · avg 88%          4.4%  several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-3b/results_2023-12-21%2003%3A43%3A18.750581.json">TriviaQA</a>                             17.9%  ▁··▁█▃●▁▄▅▄█ beats 10/28   medium · avg 45%        3.8%  too hard for it · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     67.8%  ▂▂▄▂·●·▆·▂█▂ beats 5/14    easy · avg 89%          2.9%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         62.0%  ▃··█▅●▃▅·▃▃▃ beats 6/12    very easy · avg 95%     2.8%  at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-3b/bloom-3b_reading_comprehension_0-shot.json">CoQA</a>                                 61.5%  ▄····▄▄·●▄·█ beats 3/6     very easy · avg 92%     1.9%  at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-3b/results_2024-05-19%2014%3A27%3A27.344882.json">Natural Questions (closed book)</a>       4.8%  ▁·▁·▁●▁▂·▅▂█ beats 5/28    medium · avg 48%        1.8%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-3b/results_2024-05-19%2014%3A27%3A27.344882.json">Natural Questions (closed book)</a>       4.8%  ▁·▁·▁●▁▂·▅▂█ beats 5/28    medium · avg 49%        1.8%  too hard for it
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-3b/bloom-3b_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   76.9%  ▄▄·▄·●··█··█ beats 3/7     very easy · avg 93%     1.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">OpenBookQA</a>                           21.8%  ●·▁▁▃·▁▃▅▇▃▄ beats 3/26    hard · avg 40%          1.4%  too hard for it · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-3b/bloom-3b_reading_comprehension_0-shot.json">RACE-high</a>                            35.2%  ▄···█··●▄··█ beats 3/6     medium · avg 51%        0.9%  blunt
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        3    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 16.0
+weighted average                                   = 16.1
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

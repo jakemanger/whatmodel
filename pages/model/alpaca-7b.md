@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂●▆██▅▇▄▁▁▁   #487 of 540*     27%      1
+math  ▁▂●▆█▇▅▇▄▁▁▁   #487 of 540*     27%      1
 </pre>
 
 <details><summary>math · #487 of 540 · 27% of its score</summary>
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   62.9%  █·█········● beats 2/2    medium · avg 77%       5.7%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   27.6%  ●···▄▄·▄▄▄·▄ beats 1/7    medium · avg 51%       4.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   15.2%  ▄······●··▄▄ beats 1/4    medium · avg 50%       3.8%  typical
-<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       19.5%  █·····●····█ beats 1/2    medium · avg 50%       3.5%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       19.5%  █·····●····█ beats 1/2    medium · avg 50%       3.4%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       39.6%  ▃···●·▃····▃ beats 1/5    medium · avg 56%       0.7%  blunt · at its level
 </pre>
 

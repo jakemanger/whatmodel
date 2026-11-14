@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 48.5** ±1.2 · #406 of 740 · from 9 benchmark results across 2 sources
+**score 48.4** ±1.2 · #410 of 743 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #314 of 472     95%      8
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #318 of 474     95%      8
 </pre>
 
-<details><summary>coding · #314 of 472 · 95% of its score</summary>
+<details><summary>coding · #318 of 474 · 95% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   39.1%  ▁·▁▂●▁▆▄█▆▂▂ beats 11/62  medium · avg 51%     28%  sharp · at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (maker)</a>                    84.1%  ▄·▄···●··█·▄ beats 3/6    easy · avg 85%       20%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 80%       17%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 81%       17%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         73.6%  █···█●█·██·█ beats 2/6    easy · avg 77%       10%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    72.1%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 70%      8.1%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (maker)</a>                        62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 66%      7.3%  at its level
@@ -55,7 +55,7 @@ source                             results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (submitted / maker-reported)</a>        8   72% ▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   28% ▇▇▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 48.5
+weighted average                            = 48.4
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

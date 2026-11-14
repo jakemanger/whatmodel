@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 52.4** ±1.7 · #333 of 740 · from 6 benchmark results across 2 sources
+**score 52.4** ±1.7 · #336 of 743 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #249 of 404*     31%      1
-math            ▁▁▃▅●▆▄█▅▂▁▁   #280 of 440*     21%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #250 of 405*     30%      1
+math            ▁▁▃▅●▆▅█▄▁▁▁   #280 of 440*     21%      1
 </pre>
 
-<details><summary>chat &amp; writing · #249 of 404 · 31% of its score</summary>
+<details><summary>chat &amp; writing · #250 of 405 · 30% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.7  ▁▁▁▂▃▂●▆▆▇█▃ beats 116/387  avg 1261       31%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.8  ▁▁▁▂▃▂●▆▆▇█▃ beats 116/388  avg 1262       30%  blunt
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test           result  vs the others in its run    difficulty           counts  
 test                   result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (maker)</a>   69.2%  ▄▁▁▂▁▄█▇●▂▃▂ beats 116/140  medium · avg 66%     16%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.19146v5">MMLU (maker)</a>            80.2%  ▁▁▁▁▁▂▂▅██●▄ beats 168/215  easy · avg 76%       15%  at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (maker)</a>      84.5%  ▁▁▁▁▂▁▁▅▇█▃● beats 129/131  easy · avg 83%      8.7%  at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (maker)</a>       85.6%  ▁▁▁▂▂▂▄▆█▇●▂ beats 128/135  easy · avg 85%      7.0%  small run
+<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (maker)</a>      84.5%  ▁▁▁▁▂▁▁▅▇█▃● beats 129/131  easy · avg 83%      8.8%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (maker)</a>       85.6%  ▁▁▁▂▂▂▄▆█▇●▂ beats 128/135  easy · avg 85%      7.1%  small run
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2411.19146v5-puzzle"></a><a href="https://arxiv.org/html/2411.19146v5">Puzzle: Distillation-Based NAS for Infe…</a>        5   68% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   31% ▇▇▇▇
+<a name="paper-2411.19146v5-puzzle"></a><a href="https://arxiv.org/html/2411.19146v5">Puzzle: Distillation-Based NAS for Infe…</a>        5   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 52.4
 </pre>

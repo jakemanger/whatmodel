@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂●▆██▅▇▄▁▁▁   #497 of 540    6.6%      2
+math  ▁▂●▆█▇▅▇▄▁▁▁   #497 of 540    6.6%      2
 </pre>
 
 <details><summary>math · #497 of 540 · 6.6% of its score</summary>
@@ -38,7 +38,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        43.5%  ▄····▄···█▄● beats 5/5     easy · avg 78%          14%  sharp · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           72.0%  ▄·▄·▄▄▄··█·● beats 7/7     easy · avg 87%          10%  at its level · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            78.0%  ▄·█·█··▄▄··● beats 7/7     easy · avg 83%         8.2%  at its level · several runs
-<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        58.2%  █·····▂▂▃●▄▄ beats 26/38   very easy · avg 93%    8.1%  sharp · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        58.2%  █·····▂▂▃●▄▄ beats 26/38   very easy · avg 93%    8.0%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 39.7%  ▁···▁··●▁▅▅█ beats 3/18    easy · avg 74%         7.2%  several runs
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           33.6%  ▅·······█··● beats 5/5     hard · avg 50%         4.8%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   17.1%  █·●······▄·▄ beats 2/4     medium · avg 64%       2.9%  typical

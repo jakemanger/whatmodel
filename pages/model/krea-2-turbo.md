@@ -6,7 +6,7 @@
 
 Krea · released 2026-06 · 12B params · krea-2-community-license
 
-**score 58.5** ±2.4 · #49 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.4** ±2.4 · #50 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #46 of 128*     98%      1
+text to image  ▂▅▅▃▄▄●▃▂▁▁▁   #48 of 129*     98%      1
 </pre>
 
-<details><summary>text to image · #46 of 128 · 98% of its score</summary>
+<details><summary>text to image · #48 of 129 · 98% of its score</summary>
 
-Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank lower overall.
+Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md), [Wan 2.5 Text-to-Image Preview](wan-2-5-t2i-preview.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.6  ▁▁▃▃●█▃▂▂▂▁▁ beats 32/77  avg 1030       98%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.2  ▁▁▃▃●█▄▂▂▂▁▁ beats 31/78  avg 1030       98%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 58.5
+weighted average                        = 58.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

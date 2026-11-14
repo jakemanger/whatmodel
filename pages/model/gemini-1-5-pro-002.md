@@ -6,7 +6,7 @@
 
 Google · released 2024-09 · proprietary
 
-**score 56.9** ±0.6 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
+**score 56.8** ±0.6 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇●▇▆▃▂▁    #253 of 542     50%      5
-chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #195 of 476*    4.3%      1
-math                ▁▂▃▆█●▅▇▄▁▁▁   #258 of 540*     12%      2
-vision &amp; documents  ▁▁▃▃▂▃▅●▇██▄   #110 of 190*    4.9%      2
+coding              ▁▁▁▃▅▆●▇▆▃▃▁    #254 of 544     50%      5
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #196 of 477*    4.2%      1
+math                ▁▂▃▆█●▅▇▄▁▁▁   #257 of 540*     12%      2
+vision &amp; documents  ▁▁▃▃▂▃▅●▇██▄   #110 of 190*    4.8%      2
 </pre>
 
-<details><summary>coding · #253 of 542 · 50% of its score</summary>
+<details><summary>coding · #254 of 544 · 50% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -32,42 +32,42 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            89.0%  ▁·▁▁▃▄▆▅█●▁▁ beats 95/99  easy · avg 77%       14%  sharp
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   36.4%  ▁▁·▁▂▄▆●▅▂·▂ beats 21/31  hard · avg 24%       11%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   65.4%  ▁·▁▂▄▁▆▄●▆▂▂ beats 36/62  medium · avg 51%    7.4%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                74.6%  ▁···▁▁▂▅▇█▆● beats 71/75  easy · avg 66%      3.8%  typical
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                74.6%  ▁···▁▁▂▅▇█▆● beats 71/75  easy · avg 66%      3.9%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #195 of 476 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #196 of 477 · 4.2% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.4  ▁▁▁▂▃▂▃▆●▇█▃ beats 194/387  avg 1261      4.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.4  ▁▁▁▂▃▂▃▆●▇█▃ beats 194/388  avg 1262      4.2%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #258 of 540 · 12% of its score</summary>
+<details><summary>math · #257 of 540 · 12% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 29%          9.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▆█▄▃▆ beats 61/207  very hard · avg 7.3%    3.1%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▆█▄▃▆ beats 61/207  very hard · avg 7.4%    3.0%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #110 of 190 · 4.9% of its score</summary>
+<details><summary>vision &amp; documents · #110 of 190 · 4.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.6  ▁▁▂▂▂▂▃▅●▅█▇ beats 61/152  avg 1063      3.0%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -3.627    1.9%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.6  ▁▁▂▂▂▂▃▅●▅█▇ beats 61/152  avg 1064      2.9%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -3.525    1.9%  typical
 </pre>
 
 </details>
@@ -76,7 +76,7 @@ test                                 result  vs the others in its run   difficul
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         57.2%  ▁▁▁▁▂▃▅●▄▆█▃ beats 86/221  hard · avg 39%         7.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         57.2%  ▁▁▁▁▂▃▅●▄▆█▃ beats 86/221  hard · avg 39%         7.0%  sharp · at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-pro-002_5shots.zip">MMLU-Pro</a>                             70.2%  ▃▂▅█▃·█●▅··▂ beats 18/23   medium · avg 55%       6.8%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   20.7%  ▂·█··●▄·▂▂·▄ beats 7/13    avg 33%                3.1%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 89/97   hard · avg 32%         2.8%  blunt · at its level
@@ -102,19 +102,19 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   33% ▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   34% ▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   19% ▇▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   11% ▇
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10    8% ▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    7% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    7% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    7% ▇
 <a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-pro-002_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1    7% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    3% ▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1    2% ▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.9
+weighted average                                   = 56.8
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

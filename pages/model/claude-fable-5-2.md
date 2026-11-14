@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-11 · proprietary
 
-**score 87.3** ±0.8 · #1 of 740 · from 18 benchmark results across 3 sources
+**score 88.5** ±0.8 · #1 of 743 · from 21 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,72 +16,77 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others       rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▄▅▂●   #1 of 316     28%      6
-coding       ▁▁▁▃▆▇█▆▆▃▃●   #1 of 472     27%      4
-math         ▁▁▃▅█▆▄█▅▂▁●   #1 of 440    9.4%      3
-web search   ▂▁▂▆▅█▄▃●▁▁▁   #7 of 85*    4.2%      1
+agent tasks  ▁▁▃▆█▄▅▅▃▃▂●   #1 of 319     43%      8
+coding       ▁▁▁▃▆▇█▆▆▃▃●   #1 of 474     22%      4
+math         ▁▁▃▅█▆▅█▄▁▁●   #2 of 440    6.2%      3
+web search   ▂▁▂▆▅█▄▃●▁▁▁   #7 of 85*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #1 of 316 · 28% of its score</summary>
+<details><summary>agent tasks · #1 of 319 · 43% of its score</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Pro (split unspecified)…</a>   93.0%  ▄█▄·▄██··▄·● beats 10/10  very hard · avg 6.8%    7.9%  sharp
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=211">Terminal-Bench 4.0 (maker)</a>           67.6%  ▃·····▃··▅▅● beats 7/8    very hard · avg 0.7%    7.0%  sharp
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam with tools (…</a>   74.2%  ▂·····▂·▅█▂● beats 11/11  very hard · avg 13%     4.2%  typical
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Multilingual (maker)</a>       96.6%  ▃·▃·▅▅█··▃·● beats 10/10  hard · avg 31%          3.7%  maxed out
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=208">DeepSWE v1.1 (resolved) (maker)</a>      74.3%  ▄·····▄▄▄▄·● beats 6/6    hard · avg 21%          2.8%  typical
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=229">Chartography with tools (maker)</a>      91.6%  ▃·······▃▃█● beats 8/8    very hard · avg 6.2%    2.2%  sharp · maxed out
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.3035 IPS  ▁▁▁▃▃█▂▁▁▁·● beats 63/63  avg -0.403 IPS           18%  sharp
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Pro (split unspecified)…</a>       93.0%  ▄█▄·▄██··▄·● beats 10/10  very hard · avg 7.2%    6.0%  sharp · maxed out
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=211">Terminal-Bench 4.0 (maker)</a>               67.6%  ▃·····▃··▅▅● beats 7/8    very hard · avg 0.7%    5.2%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-anthropic-claude-fable-5-2-max-claude-code.json">Terminal-Bench 4.1</a>                       65.8%  ▂▂▂··▅·▂▅█▃● beats 20/20  very hard · avg 1.0%    3.7%  sharp · at its level · noisy
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam with tools (…</a>       74.2%  ▂·····▂·▅█▂● beats 11/11  very hard · avg 14%     3.3%  typical
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Multilingual (maker)</a>           96.6%  ▃·▃·▅▅█··▃·● beats 10/10  hard · avg 31%          3.0%  maxed out
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=208">DeepSWE v1.1 (resolved) (maker)</a>          74.3%  ▄·····▄▄▄▄·● beats 6/6    hard · avg 23%          2.1%  typical
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=229">Chartography with tools (maker)</a>          91.6%  ▃·······▃▃█● beats 8/8    very hard · avg 6.5%    1.6%  sharp · maxed out
 </pre>
 
 </details>
 
-<details><summary>coding · #1 of 472 · 27% of its score</summary>
+<details><summary>coding · #1 of 474 · 22% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1835.8  ▁▂▄▃▇█▅▆█▅▂● beats 133/133  avg 990                  12%  sharp
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Pro (split unspecified)…</a>   93.0%  ▄█▄·▄██··▄·● beats 10/10    very hard · avg 6.8%    7.9%  sharp
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Multilingual (maker)</a>       96.6%  ▃·▃·▅▅█··▃·● beats 10/10    hard · avg 31%          3.7%  maxed out
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=208">DeepSWE v1.1 (resolved) (maker)</a>      74.3%  ▄·····▄▄▄▄·● beats 6/6      hard · avg 21%          2.8%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1837.8  ▁▂▄▃▇█▅▇▇▅▂● beats 134/134  avg 996                  11%  sharp
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Pro (split unspecified)…</a>   93.0%  ▄█▄·▄██··▄·● beats 10/10    very hard · avg 7.2%    6.0%  sharp · maxed out
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">SWE-bench Multilingual (maker)</a>       96.6%  ▃·▃·▅▅█··▃·● beats 10/10    hard · avg 31%          3.0%  maxed out
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=208">DeepSWE v1.1 (resolved) (maker)</a>      74.3%  ▄·····▄▄▄▄·● beats 6/6      hard · avg 23%          2.1%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #1 of 440 · 9.4% of its score</summary>
+<details><summary>math · #2 of 440 · 6.2% of its score</summary>
+
+Trails [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     100.0%  ▁▂▁▁█▅▂▃▁▁▁● beats 71/72    very hard · avg 0.1%    5.1%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   95.1%  ▁··▁▁▂▅▃█▅▄● beats 91/91    very hard · avg 1.3%    4.2%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    99.7%  ▃▃▄▃▃▃▇▆█▄▃● beats 196/207  very hard · avg 7.3%    0.0%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     100.0%  ▁▂▁▁█▅▂▃▁▁▁● beats 71/72    very hard · avg 0.1%    3.3%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   95.1%  ▁··▁▁▂▅▃█▅▄● beats 91/91    very hard · avg 1.4%    2.8%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    99.7%  ▃▃▄▃▃▃▇▆█▄▃● beats 196/207  very hard · avg 7.4%    0.0%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>web search · #7 of 85 · 4.2% of its score</summary>
+<details><summary>web search · #7 of 85 · 3.3% of its score</summary>
 
 Trails [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4.1 mini](gpt-4-1-mini.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam with tools (…</a>   74.2%  ▂·····▂·▅█▂● beats 11/11  very hard · avg 13%    4.2%  typical
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam with tools (…</a>   74.2%  ▂·····▂·▅█▂● beats 11/11  very hard · avg 14%    3.3%  typical
 </pre>
 
 </details>
 
-<details><summary>other tests (8)</summary>
+<details><summary>other tests (9)</summary>
 
 <pre>
-test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              90.5%  ▃▂▅▆▃█▅▆▃▃▂● beats 30/30    very hard · avg 0.2%     12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     90.0%  █▇██▁▇▁▃▃▄▁● beats 38/38    very hard · avg 1.0%    9.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   90.0%  █·▂▁▆▆▆▆▅▂▂● beats 83/83    very hard · avg 9.4%    9.0%  sharp · noisy
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam (maker)</a>   73.2%  ▂····▂·▃▂█▂● beats 11/11    very hard · avg 5.8%    7.9%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          79.0%  █▁▁▁▁▂▄▂▃▃▂● beats 157/157  very hard · avg 5.6%    6.7%  sharp · noisy
-<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=248">Global-MMLU (maker)</a>            96.0%  ▄▄··▄▄·█▄··● beats 7/7      medium · avg 63%        2.5%  maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              94.0%  ▁▂▂▂▅█▄▃▂··● beats 91/91    very hard · avg 7.2%    2.1%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   93.9%  ▁▁▁▁▂▃▅▄▄▆█● beats 207/221  hard · avg 39%          0.8%  sharp · maxed out
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    90.5%  ▃▂▅▆▃█▅▆▃▃▂● beats 30/30    very hard · avg 0.3%    8.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           90.0%  █▇██▁▇▁▃▃▄▁● beats 38/38    very hard · avg 1.0%    7.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         90.0%  █·▂▁▆▆▆▆▅▂▂● beats 83/83    very hard · avg 9.4%    6.7%  sharp · noisy
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Humanity's Last Exam (maker)</a>         73.2%  ▂····▂·▃▂█▂● beats 11/11    very hard · avg 6.0%    6.2%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                79.0%  █▁▁▁▁▂▄▂▃▃▂● beats 157/157  very hard · avg 5.6%    4.9%  sharp · noisy
+<a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=248">Global-MMLU (maker)</a>                  96.0%  ▄▄··▄▄·█▄··● beats 7/7      medium · avg 64%        1.9%  maxed out
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/5fca40ef224413d3a36e7e5592873fe8b67d83f8/leaderboard.json">Icelandic LLM Leaderboard average…</a>   78.7%  ▂▂▄▂▃▃▂▇▇█▇● beats 47/47    very hard · avg 14%     1.9%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    94.0%  ▁▂▂▂▅█▄▃▂··● beats 91/91    very hard · avg 7.4%    1.7%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.9%  ▁▁▁▁▂▃▅▄▄▆█● beats 207/221  hard · avg 39%          0.6%  sharp · maxed out
 </pre>
 
 </details>
@@ -92,14 +97,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        9   49% ▇▇▇▇▇▇
-<a name="first-party-anthropic-scores"></a><a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Anthropic system cards and model announ…</a>        8   38% ▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        9   36% ▇▇▇▇
+<a name="first-party-anthropic-scores"></a><a href="https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf#page=207">Anthropic system cards and model announ…</a>        8   29% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   29% ▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-anthropic-claude-fable-5-2-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    4% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/5fca40ef224413d3a36e7e5592873fe8b67d83f8/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 87.3
+weighted average                                   = 88.5
 </pre>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

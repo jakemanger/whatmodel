@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 34.5** ±0.6 · #640 of 740 · from 15 benchmark results across 4 sources
+**score 34.5** ±0.6 · #643 of 743 · from 15 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁    #434 of 472     91%     10
-math    ▁▁▃▅●▆▄█▅▂▁▁   #329 of 440*    2.8%      1
+coding  ▁▁▁●▆▇█▆▆▃▃▁    #436 of 474     91%     10
+math    ▁▁▃▅●▆▅█▄▁▁▁   #329 of 440*    2.8%      1
 </pre>
 
-<details><summary>coding · #434 of 472 · 91% of its score</summary>
+<details><summary>coding · #436 of 474 · 91% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 52%    6.6%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 52%    6.5%  typical
 </pre>
 
 </details>

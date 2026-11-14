@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▅▇█▇▆▃▂▁   #527 of 542    6.4%      2
-math    ▁▂▃●██▅▇▄▁▁▁   #471 of 540     11%      3
+coding  ▁▁●▃▅▆█▇▆▃▃▁   #529 of 544    6.4%      2
+math    ▁▂▃●█▇▅▇▄▁▁▁   #473 of 540     11%      3
 </pre>
 
-<details><summary>coding · #527 of 542 · 6.4% of its score</summary>
+<details><summary>coding · #529 of 544 · 6.4% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test          result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #471 of 540 · 11% of its score</summary>
+<details><summary>math · #473 of 540 · 11% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
@@ -50,7 +50,7 @@ test          result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">ARC Challenge</a>                        44.6%  ▁·▁··▁▁▇▂█●▃ beats 20/26  easy · avg 82%           24%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">WinoGrande</a>                           69.9%  ▁····▁··▁▂█● beats 23/26  easy · avg 88%           10%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">WinoGrande</a>                           69.9%  ▁····▁··▁▂█● beats 23/26  easy · avg 88%           11%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">HellaSwag</a>                            76.2%  ▃···▁▇▅█●▃▁▁ beats 21/26  easy · avg 81%          7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">BoolQ</a>                                75.0%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 22/26  easy · avg 88%          5.2%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">OpenBookQA</a>                           34.4%  █·▁▁▃·▁▃▅▇●▄ beats 23/26  easy · avg 81%          5.1%  at its level · several runs
@@ -80,7 +80,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   23.4%  ▂····▂··▂·●▄ beats 4/8    medium · avg 36%        0.1%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_question_answering_0-shot.json">TruthfulQA MC2</a>                       34.1%  ●······▄▄▄▄█ beats 0/6    medium · avg 58%        0.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 25.3%  ▅▃●··▃···▃▃█ beats 4/10   hard · avg 37%          0.0%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   65.0%  █··········● beats 4/4    easy · avg 75%          0.0%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   65.0%  █··········● beats 4/4    easy · avg 76%          0.0%  blunt · at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_question_answering_0-shot.json">WebQuestions (closed book)</a>            0.0%  ●···▄··▄▄▄·▄ beats 1/6    very hard · avg 3.5%    0.0%  blunt · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   62.6%  ▅●▃█·▃··▃·▃▃ beats 3/11   hard · avg 66%          0.0%  blunt · at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_question_answering_0-shot.json">LogiQA (harness)</a>                     21.8%  ●··········▁ beats 8/14   very hard · avg 25%     0.0%  too hard for it · noisy

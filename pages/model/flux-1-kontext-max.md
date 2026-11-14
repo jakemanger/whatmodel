@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-05 · closed weights
 
-**score 54.3** ±1.8 · #70 of 146 · from 4 benchmark results across 3 sources
+**score 54.2** ±1.8 · #70 of 147 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄●█▂▂▁▁▁   #60 of 128*     72%      2
-image to image / edit…  ▁▁·▃▂●█▆▃▅▂▂    #49 of 64*     20%      1
+text to image           ▂▅▅▃▄●█▃▂▁▁▁   #61 of 129*     72%      2
+image to image / edit…  ▁▁·▃▂●█▆▃▆▂▂    #50 of 65*     20%      1
 </pre>
 
-<details><summary>text to image · #60 of 128 · 72% of its score</summary>
+<details><summary>text to image · #61 of 129 · 72% of its score</summary>
 
 Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1075.1  ▁▁▃▃●█▃▂▂▂▁▁ beats 20/77  avg 1030           55%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1075.1  ▁▁▃▃●█▄▂▂▂▁▁ beats 20/78  avg 1030           56%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   28.5%  ▆●·▂▂····▂▂█ beats 5/13   hard · avg 21%     16%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #49 of 64 · 20% of its score</summary>
+<details><summary>image to image / editing · #50 of 65 · 20% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1182.1  ▂▁▁▃●█▆▆▇▄▃▃ beats 9/55   avg 1158       20%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1182.1  ▂▁▁▃●█▅▇█▄▃▃ beats 9/56   avg 1160       20%  typical
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   53.0%  ▂·▂▃·▂·▃▂·●█ beats 8/14   medium · avg 43%    7.2%  blunt · at its level
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   53.0%  ▂·▂▃·▂·▃▂·●█ beats 8/14   medium · avg 43%    7.1%  blunt · at its level
 </pre>
 
 </details>
@@ -58,11 +58,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   16% ▇▇
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.3
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

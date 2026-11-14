@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-06 · 2B params · stabilityai-community
 
-**score 39.5** ±2.3 · #111 of 146 · from 4 benchmark results across 4 sources
+**score 39.4** ±2.3 · #112 of 147 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▂▂▁▁▁   #96 of 128     98%      4
+text to image  ▂▅●▃▄▄█▃▂▁▁▁   #97 of 129     98%      4
 </pre>
 
-<details><summary>text to image · #96 of 128 · 98% of its score</summary>
+<details><summary>text to image · #97 of 129 · 98% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              52.1%  ▅▂●▂▂▂····▂▂ beats 4/13   easy · avg 69%          47%  at its level
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              52.1%  ▅▂●▂▂▂····▂▂ beats 4/13   easy · avg 70%          47%  at its level
 <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.27 / 5  █▄·▄██▄▄●▄▄▄ beats 11/14  easy · avg 3.84 / 5     38%  at its level
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     42.0%  ▄·▆▂●█▄▆▂▄·▄ beats 8/22   medium · avg 60%        11%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    5.3100  ●·····▃··▃·█ beats 0/5    avg 10.064             1.8%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    5.3100  ●·····▃··▃·█ beats 0/5    avg 10.073             1.8%  sharp · noisy
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ source                                    results  share of the score
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   11% ▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    2% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 39.5
+weighted average                                   = 39.4
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>

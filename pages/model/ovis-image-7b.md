@@ -6,7 +6,7 @@
 
 Alibaba (AIDC-AI) · released 2025-11 · 7B params · apache-2.0
 
-**score 47.3** ±6.5 · #91 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±6.5 · #92 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▂▂▁▁▁   #76 of 128*     82%      1
+text to image  ▂▅▅▃●▄█▃▂▁▁▁   #77 of 129*     82%      1
 </pre>
 
-<details><summary>text to image · #76 of 128 · 82% of its score</summary>
+<details><summary>text to image · #77 of 129 · 82% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 

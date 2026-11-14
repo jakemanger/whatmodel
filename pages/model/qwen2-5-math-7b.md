@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.9** ±2.0 · #324 of 740 · from 3 benchmark results across 1 source · † no independently run results verified
+**score 52.9** ±2.0 · #327 of 743 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▅▂▁▁   #261 of 440     98%      3
+math  ▁▁▃▅●▆▅█▄▁▁▁   #261 of 440     98%      3
 </pre>
 
 <details><summary>math · #261 of 440 · 98% of its score</summary>

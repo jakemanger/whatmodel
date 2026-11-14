@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 33.5** ±0.7 · #646 of 740 · from 12 benchmark results across 4 sources
+**score 33.5** ±0.7 · #649 of 743 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #445 of 472     95%      9
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #447 of 474     95%      9
 </pre>
 
-<details><summary>coding · #445 of 472 · 95% of its score</summary>
+<details><summary>coding · #447 of 474 · 95% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.3%  ▄▇█●▄▇▄▁▇▃·▁ beats 14/35  medium · avg 46%    3.4%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           29.6%  ▃●█▃▃▅·▃▃▅·▅ beats 1/15   medium · avg 57%    3.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 3/15   medium · avg 54%    2.8%  blunt · at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    4.4%  ▁·●▁▄██▄█▁▅▅ beats 1/35   medium · avg 52%    2.7%  sharp
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    4.4%  ▁·●▁▄██▄█▁▅▅ beats 1/35   medium · avg 52%    2.6%  sharp
 </pre>
 
 </details>

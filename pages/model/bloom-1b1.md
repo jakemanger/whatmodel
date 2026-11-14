@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 6.9** ±1.1 · #729 of 740 · from 36 benchmark results across 6 sources
+**score 7.0** ±1.1 · #732 of 743 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··●·█·██··█       #5 of 6*    3.0%      1
-math    ▁●▃▅█▆▄█▅▂▁▁   #434 of 440*    1.4%      1
+math    ▁●▃▅█▆▅█▄▁▁▁   #434 of 440*    1.4%      1
 </pre>
 
 <details><summary>coding · #5 of 6 · 3.0% of its score</summary>
@@ -47,16 +47,16 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             51.5%  ▃·▅▃▃●·██▃██ beats 5/19   easy · avg 87%           19%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 67.2%  ▂·▄▄·●▂▆▂▄█▄ beats 6/19   easy · avg 87%           12%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           54.7%  ▄····▄▆●▄▆▆█ beats 7/19   easy · avg 88%          8.8%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.9%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.6%  ●··▁·▁▁·▁▂▁▂ beats 4/19   easy · avg 81%          7.6%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 83.3%  ▂··▂▃▂▂●▃▃█▂ beats 6/19   very easy · avg 98%     7.0%  blunt · at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     63.3%  ▂▂●▂·▂·▆·▂█▂ beats 3/14   easy · avg 89%          5.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         57.0%  ▃··█●▃▃▅·▃▃▃ beats 4/12   very easy · avg 95%     5.0%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   medium · avg 45%        4.5%  too hard for it · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">HellaSwag</a>                            34.6%  ▄·●▄·▄·▄··▄█ beats 1/7    easy · avg 81%          4.3%  typical
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     3.8%  at its level
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     3.7%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   68.5%  ▄●·▄·▄··█··█ beats 1/7    very easy · avg 93%     3.1%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 48%        1.9%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 49%        1.9%  too hard for it
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">BoolQ</a>                                59.1%  ▄··●·█▄··█·▄ beats 1/7    easy · avg 87%          1.6%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">RACE-high</a>                            32.6%  ▄···●··▄▄··█ beats 1/6    medium · avg 51%        1.4%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">DROP</a>                                  8.6%  ▄▄···●·▄·▄·▄ beats 2/6    hard · avg 34%          1.2%  blunt
@@ -81,8 +81,8 @@ source                                    results  share of the score
 <a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1    3% ▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Hallucinations Leaderboard results</a>              4    3% ▇
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        3    1% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 6.9
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 7.0
 </pre>
 
 <sub>Licences: EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 47.0** ±0.7 · #438 of 740 · from 8 benchmark results across 4 sources
+**score 47.0** ±0.7 · #441 of 743 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #319 of 472     87%      5
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #321 of 474     87%      5
 </pre>
 
-<details><summary>coding · #319 of 472 · 87% of its score</summary>
+<details><summary>coding · #321 of 474 · 87% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 77%       52%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 77%       53%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   64.6%  ▁·▁▁▁▃▄▄▄●▃▁ beats 59/99  easy · avg 71%       26%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 66%      5.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   42.7%  ▁··▁▅▂█●▁··▁ beats 15/22  medium · avg 52%    1.7%  at its level

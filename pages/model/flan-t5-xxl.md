@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 38.9** ±0.9 · #587 of 740 · from 26 benchmark results across 18 sources
+**score 39.0** ±0.9 · #588 of 743 · from 26 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃   #232 of 404*    0.0%      1
-math            ▁▁●▅█▆▄█▅▂▁▁    #406 of 440     24%      2
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #232 of 405*    0.0%      1
+math            ▁▁●▅█▆▅█▄▁▁▁    #406 of 440     24%      2
 </pre>
 
-<details><summary>chat &amp; writing · #232 of 404 · 0.0% of its score</summary>
+<details><summary>chat &amp; writing · #232 of 405 · 0.0% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
 
@@ -94,7 +94,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 38.9
+weighted average                                   = 39.0
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Unnatural Instructions: Tuning Language Models with ([CC BY 4.0](../../licenses/acl-2023-acl-long-806-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-782-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · StoryAnalogy: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-706-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

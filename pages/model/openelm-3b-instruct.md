@@ -6,7 +6,7 @@
 
 Apple · released 2024-04 · 3.04B params · apple-amlr
 
-**score 25.5** ±6.7 · #919 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.5** ±6.7 · #921 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

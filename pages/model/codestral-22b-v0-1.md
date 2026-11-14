@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 50.8** ±0.8 · #355 of 740 · from 7 benchmark results across 4 sources
+**score 50.8** ±0.8 · #358 of 743 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #270 of 472     90%      4
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #271 of 474     90%      4
 </pre>
 
-<details><summary>coding · #270 of 472 · 90% of its score</summary>
+<details><summary>coding · #271 of 474 · 90% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 

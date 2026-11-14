@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 41.5** ±1.8 · #547 of 740 · from 13 benchmark results across 1 source · † no independently run results verified
+**score 41.4** ±1.8 · #552 of 743 · from 13 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄●█▇▇▇▃   #263 of 404*    6.7%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #264 of 405*    6.7%      1
 vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #143 of 154     55%      9
 </pre>
 
-<details><summary>chat &amp; writing · #263 of 404 · 6.7% of its score</summary>
+<details><summary>chat &amp; writing · #264 of 405 · 6.7% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>vision &amp; documents · #143 of 154 · 55% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.5
+weighted average                                   = 41.4
 </pre>
 
 <sub>Licences: CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

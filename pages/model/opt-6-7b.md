@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 23.7** ±0.7 · #701 of 740 · from 40 benchmark results across 11 sources
+**score 23.7** ±0.7 · #704 of 743 · from 40 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ●▁▁▃▆▇█▆▆▃▃▁   #470 of 472*    1.8%      1
-math    ▁▁●▅█▆▄█▅▂▁▁   #419 of 440*    5.2%      1
+coding  ●▁▁▃▆▇█▆▆▃▃▁   #472 of 474*    1.8%      1
+math    ▁▁●▅█▆▅█▄▁▁▁   #419 of 440*    5.2%      1
 </pre>
 
-<details><summary>coding · #470 of 472 · 1.8% of its score</summary>
+<details><summary>coding · #472 of 474 · 1.8% of its score</summary>
 
 Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](pythia-6-9b.md) here, though they rank lower overall.
 
@@ -57,13 +57,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">HellaSwag</a>                            67.2%  ▃···▁▇●█▇▃▁▁ beats 9/26    very easy · avg 91%    2.9%  at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     74.6%  ▂▂▄▂·▂·▆·●█▂ beats 9/14    easy · avg 89%         2.4%  blunt · at its level
 <a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.5%  ●···▄··▄··▄▄ beats 1/5     easy · avg 75%         2.1%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   29.8%  ██···█●····█ beats 3/4     easy · avg 66%         1.6%  at its level
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   29.8%  ██···█●····█ beats 3/4     easy · avg 66%         1.5%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                           27.6%  █·▁▁▃·●▃▅▇▃▄ beats 10/26   hard · avg 49%         1.1%  too hard for it
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 24.6%  ●·▄····▄·▄·█ beats 0/5     easy · avg 76%         1.0%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                           42.6%  ▁···▁▃●▁▁▁·▁ beats 18/26   hard · avg 56%         0.9%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.617.pdf">COPA</a>                                 81.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 33/67   very easy · avg 96%    0.7%  at its level · small run
-<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   27.2%  ▄····▄···▄·● beats 4/4     medium · avg 48%       0.5%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 12/276  medium · avg 72%       0.5%  noisy
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   27.2%  ▄····▄···▄·● beats 4/4     medium · avg 48%       0.5%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   16.1%  ▂····▂··●·█▄ beats 2/8     medium · avg 36%       0.3%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-6.7b/opt-6.7b.json">SuperGLUE WSC (prompted)</a>             42.3%  ●·······▂·▂▃ beats 0/8     medium · avg 68%       0.2%  blunt · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-6.7b/opt-6.7b.json">LogiQA (harness)</a>                     23.5%  ●··········▁ beats 3/14    very hard · avg 25%    0.0%  too hard for it · noisy

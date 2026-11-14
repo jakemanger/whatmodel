@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.8** ±1.6 · #605 of 740 · from 6 benchmark results across 2 sources
+**score 37.8** ±1.6 · #608 of 743 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆▇█▆▆▃▃▁   #457 of 472*     19%      1
-math    ▁▁▃▅●▆▄█▅▂▁▁   #321 of 440*     19%      1
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #459 of 474*     19%      1
+math    ▁▁▃▅●▆▅█▄▁▁▁   #320 of 440*     19%      1
 </pre>
 
-<details><summary>coding · #457 of 472 · 19% of its score</summary>
+<details><summary>coding · #459 of 474 · 19% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>math · #321 of 440 · 19% of its score</summary>
+<details><summary>math · #320 of 440 · 19% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why

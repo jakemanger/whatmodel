@@ -6,7 +6,7 @@
 
 Runway · closed weights
 
-**score 49.3** ±2.4 · #85 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.3** ±2.4 · #86 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▂▂▁▁▁   #71 of 128*     98%      1
+text to image  ▂▅▅▃●▄█▃▂▁▁▁   #72 of 129*     98%      1
 </pre>
 
-<details><summary>text to image · #71 of 128 · 98% of its score</summary>
+<details><summary>text to image · #72 of 129 · 98% of its score</summary>
 
 Beats [Recraft V3](recraft-v3.md), [GLM-Image](glm-image.md) here, though they rank higher overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1024.2  ▁▁●▃▆█▃▂▂▂▁▁ beats 11/77  avg 1030       98%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1024.2  ▁▁●▃▆█▄▂▂▂▁▁ beats 11/78  avg 1030       98%  typical
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.3** ±2.9 · #368 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.3** ±2.9 · #367 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█●▅▄▄▄▁▁   #164 of 353*     41%      1
+agent tasks  ▁▁▃▆█●▅▄▃▂▂▁   #165 of 355*     41%      1
 </pre>
 
-<details><summary>agent tasks · #164 of 353 · 41% of its score</summary>
+<details><summary>agent tasks · #165 of 355 · 41% of its score</summary>
 
 Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

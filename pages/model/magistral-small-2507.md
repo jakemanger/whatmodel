@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 54.1** ±1.4 · #305 of 740 · from 4 benchmark results across 1 source · † no independently run results verified
+**score 54.1** ±1.4 · #308 of 743 · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █●········██       #3 of 4*     10%      1
-math    ▁▁▃▅█●▄█▅▂▁▁   #229 of 440*     57%      2
+math    ▁▁▃▅█●▅█▄▁▁▁   #228 of 440*     58%      2
 </pre>
 
 <details><summary>coding · #3 of 4 · 10% of its score</summary>
@@ -26,12 +26,12 @@ Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they ra
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.2%  ▄●▄······▄·▄ beats 1/5    medium · avg 50%     10%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.2%  ▄●▄······▄·▄ beats 1/5    medium · avg 51%     10%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #229 of 440 · 57% of its score</summary>
+<details><summary>math · #228 of 440 · 58% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

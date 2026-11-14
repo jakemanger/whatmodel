@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
-**score 44.9** ±1.5 · #486 of 740 · from 9 benchmark results across 2 sources · † no independently run results verified
+**score 44.8** ±1.5 · #491 of 743 · from 9 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #437 of 472*     11%      1
-math    ▁▁▃▅█●▄█▅▂▁▁    #251 of 440     55%      3
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #439 of 474*     11%      1
+math    ▁▁▃▅█●▅█▄▁▁▁    #251 of 440     55%      3
 </pre>
 
-<details><summary>coding · #437 of 472 · 11% of its score</summary>
+<details><summary>coding · #439 of 474 · 11% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">open-thoughts/OpenThinker2-7B model car…</a>        5   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="card3-open-thoughts-openthinker-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">open-thoughts/OpenThinker-7B model card…</a>        4   18% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.9
+weighted average                                   = 44.8
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

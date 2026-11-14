@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 60.0** ±3.0 · #42 of 146 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 59.9** ±3.0 · #43 of 147 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #33 of 128     96%      5
+text to image  ▂▅▅▃▄▄●▃▂▁▁▁   #34 of 129     96%      5
 </pre>
 
-<details><summary>text to image · #33 of 128 · 96% of its score</summary>
+<details><summary>text to image · #34 of 129 · 96% of its score</summary>
 
 Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Cosmos3-Super-Text2Image](cosmos3-super-text2image.md), [Imagen 4 Ultra](imagen-4-ultra.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-ernie-image"></a><a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository evaluation…</a>        5   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 60.0
+weighted average                                   = 59.9
 </pre>
 
 <sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt))</sub>

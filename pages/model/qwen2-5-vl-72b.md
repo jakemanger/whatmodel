@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 73.4B params · qwen
 
-**score 55.7** ±0.9 · #268 of 740 · from 29 benchmark results across 9 sources
+**score 55.6** ±0.9 · #273 of 743 · from 29 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅█●▄█▅▂▁▁   #203 of 440*    7.5%      1
+math                ▁▁▃▅█●▅█▄▁▁▁   #203 of 440*    7.5%      1
 vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #110 of 154     92%     20
 </pre>
 
@@ -33,7 +33,7 @@ test                          result  vs the others in its run  difficulty      
 
 <details><summary>vision &amp; documents · #110 of 154 · 92% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                 result  vs the others in its run   difficulty           counts  why
@@ -43,9 +43,9 @@ test                                 result  vs the others in its run   difficul
 <a href="https://arxiv.org/html/2502.13923v1#S3.T5">CharXiv descriptive questions (ma…</a>    87.4%  ▄··▂▂▂·▂▄▄●█ beats 10/14   easy · avg 74%         9.3%  typical
 <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (maker)</a>                      51.1%  ▃·█·▅▃●▃▅▅▃█ beats 7/16    medium · avg 46%       9.1%  at its level · several runs
 <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (maker)</a>          74.8%  ▃··▃▅·▃█●▅▅█ beats 8/16    medium · avg 69%       7.5%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1121.2  ▁▁▂▂▂▂●▅▅▅█▇ beats 36/152  avg 1063               5.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1121.2  ▁▁▂▂▂▂●▅▅▅█▇ beats 36/152  avg 1064               5.0%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>    36.6%  ▁·▁·▃▃▁●▃█·▄ beats 10/22   hard · avg 27%         3.8%  blunt · at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  35.3300  ▃▃▃·▃█·▅▃●▃▃ beats 10/12   avg -3.627             3.2%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  35.3300  ▃▃▃·▃█·▅▃●▃▃ beats 10/12   avg -3.525             3.3%  typical
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (maker)</a>                55.2%  ▃·▃·▅▃●▅▃▅█▅ beats 6/16    medium · avg 55%       3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (maker)</a>                        96.4%  ▃··▅▃▅▃█▃●▅▅ beats 13/17   very easy · avg 94%    2.8%  blunt · maxed out · several runs
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>    52.9%  █·█···█·●·██ beats 3/5     medium · avg 46%       2.8%  at its level
@@ -80,7 +80,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1#S3.T5">Qwen (submitted / maker-reported)</a>              13   67% ▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1#S3.T5">Qwen (submitted / maker-reported)</a>              13   68% ▇▇▇▇▇▇▇▇
 <a name="card2-qwen-qwen2-5-vl-32b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Qwen2.5-VL-32B-Instruct model card (sub…</a>        9   13% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    2% ▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.7
+weighted average                                   = 55.6
 </pre>
 
 <sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

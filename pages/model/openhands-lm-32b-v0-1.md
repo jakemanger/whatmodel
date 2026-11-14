@@ -6,7 +6,7 @@
 
 All Hands AI · released 2025-03 · 32.76B params · mit
 
-**score 51.3** ±3.0 · #445 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±3.0 · #446 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #280 of 486*     96%      1
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #282 of 487*     96%      1
 </pre>
 
-<details><summary>coding · #280 of 486 · 96% of its score</summary>
+<details><summary>coding · #282 of 487 · 96% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 

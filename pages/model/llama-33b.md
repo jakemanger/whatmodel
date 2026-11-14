@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▆▃▂▁   #511 of 542     13%      2
-math    ▁▂▃▆●█▅▇▄▁▁▁   #354 of 540     19%      3
+coding  ▁▁▁●▅▆█▇▆▃▃▁   #513 of 544     13%      2
+math    ▁▂▃▆●▇▅▇▄▁▁▁   #354 of 540     19%      3
 </pre>
 
-<details><summary>coding · #511 of 542 · 13% of its score</summary>
+<details><summary>coding · #513 of 544 · 13% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -49,9 +49,9 @@ test    result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">ARC Challenge</a>                        46.8%  █···▁▁·▃▁▃▁● beats 15/15  easy · avg 74%          16%  sharp · at its level · several runs
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">ARC Challenge</a>                        46.8%  █···▁▁·▃▁▃▁● beats 15/15  easy · avg 74%          17%  sharp · at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">WinoGrande</a>                           72.8%  ▂····▄·▂▄▄█● beats 15/15  easy · avg 88%         8.0%  at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                                 56.8%  ▄····▄●·▄··█ beats 2/5    easy · avg 82%         7.8%  at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                                 56.8%  ▄····▄●·▄··█ beats 2/5    easy · avg 82%         7.7%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            79.2%  ▅█······▃▃·● beats 7/8    easy · avg 81%         5.6%  at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">OpenBookQA</a>                           29.4%  █········▂●▂ beats 6/7    hard · avg 40%         3.9%  too hard for it · several runs
 <a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       49.5%  █···▄··▄··●▄ beats 4/5    easy · avg 75%         3.2%  sharp · at its level

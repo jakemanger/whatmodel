@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-03 · 6B params · apache-2.0
 
-**score 40.5** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.4** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂█●▇▅█▇▂▃▁▂   #113 of 159*     87%      2
+text to image  ▁▂█●▇▅█▇▂▃▁▂   #114 of 160*     87%      2
 </pre>
 
-<details><summary>text to image · #113 of 159 · 87% of its score</summary>
+<details><summary>text to image · #114 of 160 · 87% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall. Trails [Stable Cascade](stable-cascade.md), [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 3/9    hard · avg 24%     77%  typical
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  9.6100  ▃·····▃··●·█ beats 2/5    avg 10.064         10%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  9.6100  ▃·····▃··●·█ beats 2/5    avg 10.073         10%  sharp · noisy
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ source                         results  share of the score
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   77% ▇▇▇▇▇▇▇▇▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>              1   10% ▇
 prior: pull toward the middle            13% ▇▇
-weighted average                        = 40.5
+weighted average                        = 40.4
 </pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>

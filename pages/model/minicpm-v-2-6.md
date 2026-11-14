@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-08 · 8.1B params · minicpm-model-license
 
-**score 44.0** ±1.8 · #503 of 740 · from 5 benchmark results across 4 sources
+**score 44.0** ±1.8 · #506 of 743 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,10 +25,10 @@ Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                                  result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>          57.0%  ▄●▄▄▄·██·▄·█ beats 2/12   easy · avg 70%     43%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        962.8  ▁▁●▂▂▂▃▅▅▅█▇ beats 3/152  avg 1063           22%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>          57.0%  ▄●▄▄▄·██·▄·█ beats 2/12   easy · avg 70%     44%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        962.8  ▁▁●▂▂▂▃▅▅▅█▇ beats 3/152  avg 1064           21%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          31.0%  ▂▂▂●▃▂·▂▂··▂ beats 3/13   hard · avg 35%     16%  typical
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -38.0000  ▃▃●·▃█·▅▃▃▃▃ beats 2/12   avg -3.627         14%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -38.0000  ▃▃●·▃█·▅▃▃▃▃ beats 2/12   avg -3.525         14%  typical
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>     44.9%  ▅▃█··▅●····▃ beats 8/9    hard · avg 42%    3.5%  blunt
 </pre>
 
@@ -40,8 +40,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   59% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   60% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   14% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇

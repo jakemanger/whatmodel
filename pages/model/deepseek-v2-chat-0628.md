@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-07 · 235.74B params (21B active) · other (deepseek)
 
-**score 54.3** ±0.9 · #302 of 740 · from 6 benchmark results across 3 sources
+**score 54.3** ±0.9 · #304 of 743 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #205 of 472*     36%      2
-math    ▁▁▃▅●▆▄█▅▂▁▁   #292 of 440*    6.5%      1
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #206 of 474*     36%      2
+math    ▁▁▃▅●▆▅█▄▁▁▁   #292 of 440*    6.5%      1
 </pre>
 
-<details><summary>coding · #205 of 472 · 36% of its score</summary>
+<details><summary>coding · #206 of 474 · 36% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -49,7 +49,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             80.8%  ▁·▁▁▄▄▄▅●▄▂▁ beats 30/53  easy · avg 76%          31%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             22.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 35/57  hard · avg 16%          16%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 43.320 WB-Score    9.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 43.352 WB-Score    9.2%  sharp
 </pre>
 
 </details>

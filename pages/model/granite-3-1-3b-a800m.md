@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 3.3B params (0.8B active) · apache-2.0
 
-**score 36.7** ±1.6 · #618 of 740 · from 6 benchmark results across 1 source · † no independently run results verified
+**score 36.7** ±1.6 · #621 of 743 · from 6 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #326 of 404*    7.8%      1
-math            ▁▁▃●█▆▄█▅▂▁▁   #374 of 440*     35%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #326 of 405*    7.8%      1
+math            ▁▁▃●█▆▅█▄▁▁▁   #374 of 440*     35%      1
 </pre>
 
-<details><summary>chat &amp; writing · #326 of 404 · 7.8% of its score</summary>
+<details><summary>chat &amp; writing · #326 of 405 · 7.8% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

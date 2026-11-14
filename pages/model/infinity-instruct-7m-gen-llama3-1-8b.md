@@ -6,7 +6,7 @@
 
 BAAI · released 2024-08 · 8.03B params · llama3.1
 
-**score 49.4** ±1.5 · #508 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.4** ±1.5 · #508 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #307 of 475*     93%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #308 of 476*     93%      1
 </pre>
 
-<details><summary>chat &amp; writing · #307 of 475 · 93% of its score</summary>
+<details><summary>chat &amp; writing · #308 of 476 · 93% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 

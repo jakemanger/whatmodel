@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  █·●······█·█      #3 of 4*    2.6%      2
-math    ▁▂▃▆●█▅▇▄▁▁▁   #385 of 540     18%      3
+math    ▁▂▃▆●▇▅▇▄▁▁▁   #384 of 540     18%      3
 </pre>
 
 <details><summary>coding · #3 of 4 · 2.6% of its score</summary>
@@ -30,9 +30,9 @@ test               result  vs the others in its run   difficulty        counts  
 
 </details>
 
-<details><summary>math · #385 of 540 · 18% of its score</summary>
+<details><summary>math · #384 of 540 · 18% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -47,7 +47,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>      80.3%  ▅▃█···▅·▃●▃▅ beats 9/12     very easy · avg 94%      11%  sharp
+<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>      80.3%  ▅▃█···▅·▃●▃▅ beats 9/12     very easy · avg 94%      10%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        46.7%  ▃▅█···▅·▃●▃▅ beats 9/12     easy · avg 82%          9.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        61.9%  ▅▃▃▅··▃▃·▃●█ beats 9/12     easy · avg 83%          7.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                65.4%  █······▁·▁●▃ beats 9/12     easy · avg 88%          5.9%  sharp · at its level · several runs

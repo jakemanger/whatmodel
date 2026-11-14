@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 39.9** ±3.4 · #577 of 740 · from 5 benchmark results across 3 sources
+**score 39.9** ±3.4 · #580 of 743 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▅█▆▄█▅▂▁▁   #397 of 440*     43%      2
+math  ▁▁●▅█▆▅█▄▁▁▁   #397 of 440*     43%      2
 </pre>
 
 <details><summary>math · #397 of 440 · 43% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Comm
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 70%     26%  at its level · noisy
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 19%     17%  typical
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 20%     17%  typical
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ test                         result  vs the others in its run  difficulty      c
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 82%          20%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   58.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 31/100  medium · avg 67%        20%  sharp · at its level · noisy
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▁▃▂▂▄▁▃▄▄▄█ beats 0/38    very hard · avg 14%     12%  too hard for it
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▂▄▂▃▃▂▇▇█▇▁ beats 0/47    very hard · avg 14%     13%  too hard for it
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                 results  share of the score
 <a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   43% ▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                        2   40% ▇▇▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   12% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   13% ▇▇
 prior: pull toward the middle                     5% ▇
 weighted average                                = 39.9
 </pre>

@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.0** ±1.0 · #160 of 740 · from 9 benchmark results across 3 sources
+**score 63.9** ±1.1 · #165 of 743 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇█●▆▃▃▁   #162 of 472*    3.9%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #161 of 404*     11%      1
-math            ▁▁▃▅█▆▄█●▂▁▁     #67 of 440     22%      3
+coding          ▁▁▁▃▆▇█●▆▃▃▁   #163 of 474*    3.9%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #163 of 405*     11%      1
+math            ▁▁▃▅█▆▅█●▁▁▁     #67 of 440     22%      3
 </pre>
 
-<details><summary>coding · #162 of 472 · 3.9% of its score</summary>
+<details><summary>coding · #163 of 474 · 3.9% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -32,20 +32,20 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #161 of 404 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #163 of 405 · 11% of its score</summary>
 
 Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1355.8  ▁▁▁▂▃▂▃▆●▇█▃ beats 200/387  avg 1261       11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1355.9  ▁▁▁▂▃▂▃▆●▇█▃ beats 200/388  avg 1262       11%  blunt
 </pre>
 
 </details>
 
 <details><summary>math · #67 of 440 · 22% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall.
 
 <pre>
 test               result  vs the others in its run  difficulty           counts  why
@@ -60,9 +60,9 @@ test               result  vs the others in its run  difficulty           counts
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (maker)</a>                 74.4%  █··█●·██···█ beats 2/5      hard · avg 41%           23%  sharp · at its level
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5660  ▁▄▃▃▇▄█▃●▁▁▁ beats 24/30    avg 0.420                22%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (maker)</a>         14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.1%     12%  typical
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (maker)</a>                 74.4%  █··█●·██···█ beats 2/5      hard · avg 42%           23%  sharp · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5660  ▁▄▃▃▇▄█▃●▁▁▁ beats 24/30    avg 0.421                22%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (maker)</a>         14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.2%     11%  typical
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (maker)</a>                     81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/189  medium · avg 51%        6.2%  typical
 </pre>
 
@@ -76,9 +76,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        7   67% ▇▇▇▇▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   22% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 64.0
+weighted average                                   = 63.9
 </pre>
 
 <sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

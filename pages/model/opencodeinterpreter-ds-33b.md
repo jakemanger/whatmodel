@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · apache-2.0
 
-**score 51.2** ±0.9 · #350 of 740 · from 3 benchmark results across 1 source
+**score 51.2** ±0.9 · #353 of 743 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #264 of 472    100%      3
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #265 of 474    100%      3
 </pre>
 
-<details><summary>coding · #264 of 472 · 100% of its score</summary>
+<details><summary>coding · #265 of 474 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    79.3%  ▁·▁▁▃▄▆▅●▃▁▁ beats 82/99  easy · avg 77%     47%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   73.8%  ▁·▁▁▁▃▄▄▄●▃▁ beats 83/99  easy · avg 71%     43%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        68.5%  ▁···▁▁▂▅▇█●▂ beats 57/75  easy · avg 66%    9.5%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        68.5%  ▁···▁▁▂▅▇█●▂ beats 57/75  easy · avg 66%    9.4%  at its level
 </pre>
 
 </details>

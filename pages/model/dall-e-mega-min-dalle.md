@@ -6,7 +6,7 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 29.0** ±3.8 · #136 of 146 · from 3 benchmark results across 3 sources
+**score 29.0** ±3.8 · #137 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #121 of 128*     64%      2
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #122 of 129*     64%      2
 </pre>
 
-<details><summary>text to image · #121 of 128 · 64% of its score</summary>
+<details><summary>text to image · #122 of 129 · 64% of its score</summary>
 
 Trails [CogView2](cogview2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>       79.4%  █·······▄▄●▄ beats 4/5    very easy · avg 95%     64%  typical
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 5/14   hard · avg 28%         0.4%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 5/14   hard · avg 27%         0.4%  blunt · at its level
 </pre>
 
 </details>

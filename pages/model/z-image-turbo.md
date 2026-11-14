@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 54.9** ±1.4 · #66 of 146 · from 18 benchmark results across 7 sources
+**score 54.8** ±1.4 · #67 of 147 · from 18 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▂▂▁▁▁   #57 of 128     95%     17
+text to image  ▂▅▅▃▄●█▃▂▁▁▁   #58 of 129     95%     17
 </pre>
 
-<details><summary>text to image · #57 of 128 · 95% of its score</summary>
+<details><summary>text to image · #58 of 129 · 95% of its score</summary>
 
 Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher overall.
 
 <pre>
 test                                 result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1081.9  ▁▁▃▃●█▃▂▂▂▁▁ beats 22/77  avg 1030                32%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1081.9  ▁▁▃▃●█▄▂▂▂▁▁ beats 22/78  avg 1030                32%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     85.7%  ▄····▄█●▄█▄█ beats 4/10   easy · avg 83%          10%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 29%         8.0%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 42%       6.1%  at its level
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 29%         7.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 42%       6.0%  at its level
 <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (maker)</a>           91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.5%  small run
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>           92.6%  ▃·······█●██ beats 6/12   very easy · avg 90%    4.4%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>           92.6%  ▃·······█●██ beats 6/12   very easy · avg 90%    4.3%  maxed out · small run
 <a href="https://arxiv.org/html/2511.22699v5">GenEval (maker)</a>                       82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 29/39  easy · avg 78%         4.2%  small run
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     39.0%  ▄·●···▄▄▄▄▄▄ beats 1/8    medium · avg 37%       3.9%  blunt · at its level
-<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (maker)</a>         85.9%  ▄▄●█▄▄·▄···▄ beats 2/8    easy · avg 81%         3.5%  small run
+<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (maker)</a>         85.9%  ▄▄●█▄▄·▄···▄ beats 2/8    easy · avg 81%         3.4%  small run
 <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (maker)</a>              50.7%  ▃·▃●▃·▃··▃·▃ beats 3/8    medium · avg 40%       3.3%  at its level · small run
 <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (maker)</a>              52.8%  ▃······▃●█▅▃ beats 2/9    medium · avg 42%       3.3%  at its level · small run
 <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (maker)</a>                     84.9%  ▄·▂·▂●█▄▂▄▂▂ beats 5/17   very easy · avg 86%    3.1%  small run
-<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>    80.0%  ●······█··▄▄ beats 0/4    easy · avg 75%         2.7%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>    80.0%  ●······█··▄▄ beats 0/4    easy · avg 75%         2.6%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>    77.7%  ●···█···██·█ beats 0/4    easy · avg 71%         2.6%  small run
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.083             1.9%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.085             1.9%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    73.3%  ▄·······▄█●▄ beats 4/5    medium · avg 60%       0.5%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    87.0%  █······█●███ beats 2/5    easy · avg 85%         0.0%  blunt
 </pre>
@@ -61,15 +61,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   33% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   32% ▇▇▇▇
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   32% ▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   10% ▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    8% ▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    7% ▇
 <a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    6% ▇
 <a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                                        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.9
+weighted average                                   = 54.8
 </pre>
 
 <sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>

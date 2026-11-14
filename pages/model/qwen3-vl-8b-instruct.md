@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 54.8** ±0.7 · #290 of 740 · from 31 benchmark results across 5 sources
+**score 54.8** ±0.7 · #293 of 743 · from 31 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▄▅▂▁   #207 of 316*    3.0%      2
-coding              ▁▁▁▃▆●█▆▆▃▃▁   #343 of 472*    3.9%      1
-chat &amp; writing      ▁▁▁▃▆▄▆●▇▇▇▃   #197 of 404*    2.8%      1
-math                ▁▁▃▅█▆●█▅▂▁▁    #197 of 440     12%      4
+agent tasks         ▁▁▃▆●▄▅▅▃▃▂▁   #209 of 319*    3.0%      2
+coding              ▁▁▁▃▆●█▆▆▃▃▁   #345 of 474*    3.9%      1
+chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #198 of 405*    2.8%      1
+math                ▁▁▃▅█▆●█▄▁▁▁    #197 of 440     12%      4
 vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #111 of 154     50%     16
 </pre>
 
-<details><summary>agent tasks · #207 of 316 · 3.0% of its score</summary>
+<details><summary>agent tasks · #209 of 319 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>coding · #343 of 472 · 3.9% of its score</summary>
+<details><summary>coding · #345 of 474 · 3.9% of its score</summary>
 
 Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -46,9 +46,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #197 of 404 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #198 of 405 · 2.8% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -65,7 +65,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 test                          result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (maker)</a>   77.2%  ▃··▃▅·▃█●▅▅█ beats 9/16   medium · avg 69%    5.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (maker)</a>              45.9%  ▃·▃▃●··▃▅▃·█ beats 3/12   medium · avg 45%    4.5%  sharp · at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    32.3%  █···▄·▄·▄··● beats 6/6    hard · avg 19%      1.5%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    32.3%  █···▄·▄·▄··● beats 6/6    hard · avg 20%      1.5%  at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>      91.6%  ██····██·██● beats 6/6    easy · avg 70%      0.8%  noisy
 </pre>
 
@@ -104,7 +104,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (maker)</a>    61.9%  ▂····▂·▂▂●▆█ beats 4/14   hard · avg 49%      8.2%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (maker)</a>                     71.6%  ▄·▄·▄▄▄●█▄██ beats 5/12   medium · avg 63%    6.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (maker)</a>                   84.9%  ▃··▃·▃·●▃▅▃▅ beats 4/11   easy · avg 79%      5.3%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    44.5%  ▄··▄·▄▄●█▄██ beats 4/11   medium · avg 37%    3.8%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    44.5%  ▄··▄·▄▄●█▄██ beats 4/11   medium · avg 38%    3.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (maker)</a>                 47.6%  ▃··▃●▃▃▃▃▃·█ beats 3/11   medium · avg 43%    2.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (maker)</a>                      58.0%  ▅··▃·▅●▃·█·▃ beats 5/10   hard · avg 51%      2.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (ma…</a>   71.4%  ▃··█··▅●▃▃▅▃ beats 7/13   medium · avg 66%    2.7%  blunt · at its level

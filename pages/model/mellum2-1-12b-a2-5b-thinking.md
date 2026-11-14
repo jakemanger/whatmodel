@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-09 · 12.15B params (2.5B active) · apache-2.0
 
-**score 59.7** ±1.4 · #212 of 740 · from 11 benchmark results across 1 source · † no independently run results verified
+**score 59.7** ±1.4 · #214 of 743 · from 11 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,41 +16,41 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▄▅▂▁    #159 of 316     34%      4
-coding          ▁▁▁▃▆▇█●▆▃▃▁    #173 of 472     41%      5
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #171 of 404*    3.3%      1
+agent tasks     ▁▁▃▆█●▅▅▃▃▂▁    #163 of 319     34%      4
+coding          ▁▁▁▃▆▇█●▆▃▃▁    #175 of 474     41%      5
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #172 of 405*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #159 of 316 · 34% of its score</summary>
+<details><summary>agent tasks · #163 of 319 · 34% of its score</summary>
 
-Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (maker)</a>           17.4%  ▁·▁·▁●▄▃▅█▆█ beats 4/68    very hard · avg 6.4%     10%  sharp
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▁·▁▁▁▁●▄█▁▁▁ beats 14/64   very hard · avg 7.1%    9.3%  sharp · noisy
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/140  hard · avg 16%          8.6%  sharp · at its level · noisy
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archive) (…</a>   62.3%  ▁▁▁▂▆▆▅▆█●▄▃ beats 96/114  medium · avg 43%        6.2%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▁·▁▁▁▁●▄█▁▁▁ beats 14/64   very hard · avg 7.3%    8.9%  sharp · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/140  hard · avg 17%          8.6%  sharp · at its level · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archive) (…</a>   62.3%  ▁▁▁▂▆▆▅▆█●▄▃ beats 96/114  medium · avg 43%        6.3%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #173 of 472 · 41% of its score</summary>
+<details><summary>coding · #175 of 474 · 41% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Grok 4.1 Fast (Reasoning)](grok-4-1-fast-reasoning.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unspecif…</a>   82.0%  ▂▃▄▄▅██▆●▇▄▆ beats 48/67    medium · avg 57%         11%  typical
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▁·▁▁▁▁●▄█▁▁▁ beats 14/64    very hard · avg 7.1%    9.3%  sharp · noisy
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/140   hard · avg 16%          8.6%  sharp · at its level · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▁·▁▁▁▁●▄█▁▁▁ beats 14/64    very hard · avg 7.3%    8.9%  sharp · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/140   hard · avg 17%          8.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (maker)</a>                   91.5%  ▁·▁▁▂▃▄▄█▅▄● beats 136/145  easy · avg 81%          7.9%  sharp · maxed out
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (maker)</a>                        79.4%  ▁··▁▁▃▄█▆●▁▁ beats 108/120  easy · avg 65%          4.2%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #171 of 404 · 3.3% of its score</summary>
+<details><summary>chat &amp; writing · #172 of 405 · 3.3% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 

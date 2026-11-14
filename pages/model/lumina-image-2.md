@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-01 · 2.6B params · apache-2.0
 
-**score 42.5** ±3.6 · #100 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.4** ±3.6 · #101 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅●▄▄█▂▂▁▁▁   #84 of 128*     95%      1
+text to image  ▂▅▅●▄▄█▃▂▁▁▁   #85 of 129*     95%      1
 </pre>
 
-<details><summary>text to image · #84 of 128 · 95% of its score</summary>
+<details><summary>text to image · #85 of 129 · 95% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 42.5
+weighted average                                   = 42.4
 </pre>
 
 <sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>

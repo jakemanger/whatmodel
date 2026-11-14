@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 78.2** ±0.8 · #17 of 740 · from 12 benchmark results across 5 sources
+**score 78.2** ±0.8 · #18 of 743 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▄▅●▁   #16 of 316*     10%      2
-math         ▁▁▃▅█▆▄█▅●▁▁    #20 of 440     60%      3
+agent tasks  ▁▁▃▆█▄▅▅▃▃●▁   #25 of 319*     10%      2
+math         ▁▁▃▅█▆▅█▄●▁▁    #20 of 440     60%      3
 web search   ▂▁▂▆▅█●▃▁▁▁▁    #17 of 85*     10%      2
 </pre>
 
-<details><summary>agent tasks · #16 of 316 · 10% of its score</summary>
+<details><summary>agent tasks · #25 of 319 · 10% of its score</summary>
 
-Beats [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
+Trails [GLM-5.3](glm-5-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 11%    4.9%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   89.3%  ▄··█▄··▄·●█▄ beats 5/8    medium · avg 39%       4.7%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.8%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   89.3%  ▄··█▄··▄·●█▄ beats 5/8    medium · avg 39%       4.8%  typical
 </pre>
 
 </details>
 
 <details><summary>math · #20 of 440 · 60% of its score</summary>
 
-Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [Kimi K3.1 Pro](kimi-k3-1-pro.md), [Muse Wonder](muse-wonder.md) here, though they rank lower overall.
+Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▁█▅●▃▁▁▁▁ beats 53/72  very hard · avg 0.1%     31%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▁··▁▁▂▅▃█●▄▂ beats 75/91  very hard · avg 1.3%     20%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.7%    7.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▁█▅●▃▁▁▁▁ beats 53/72  very hard · avg 0.1%     32%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▁··▁▁▂▅▃█●▄▂ beats 75/91  very hard · avg 1.4%     20%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.7%    7.9%  at its level
 </pre>
 
 </details>
@@ -52,8 +52,8 @@ Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 11%    4.9%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   89.3%  ▄··█▄··▄·●█▄ beats 5/8    medium · avg 39%       4.7%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.8%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   89.3%  ▄··█▄··▄·●█▄ beats 5/8    medium · avg 39%       4.8%  typical
 </pre>
 
 </details>
@@ -63,12 +63,12 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                59.0%  █▁▁▁▁▂▄▂▃▃●▁ beats 147/157  very hard · avg 5.6%     13%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (maker)</a>         42.7%  ▃··▃·▃▃···▃● beats 6/7      very hard · avg 4.3%    8.8%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.3%  ▁▂▂▂▅●▄▃▂··▁ beats 51/91    very hard · avg 7.2%    3.1%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (maker)</a>         42.7%  ▃··▃·▃▃···▃● beats 6/7      very hard · avg 4.5%    8.8%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.3%  ▁▂▂▂▅●▄▃▂··▁ beats 51/91    very hard · avg 7.4%    3.1%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.6%  ▁▁▁▁▂▃▅▄▄▆█● beats 214/221  hard · avg 39%          2.8%  sharp · maxed out
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC-AGI-1 public evaluation set (…</a>   98.3%  ▁·▇▃▁·█▇▁·▇● beats 27/27    very hard · avg 4.4%    1.3%  sharp · maxed out · noisy
-<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (maker)</a>     36.7%  ██·······█·● beats 3/3      very hard · avg 8.3%    1.1%  at its level · small run
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▂▁▂▅█●▃▄▃▁▁ beats 60/98    very easy · avg 90%     0.0%  blunt
+<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (maker)</a>     36.7%  ██·······█·● beats 3/3      very hard · avg 8.3%    1.2%  at its level · small run
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▂▁▂▅█●▃▃▃▁▁ beats 62/100   very easy · avg 90%     0.0%  blunt
 </pre>
 
 </details>

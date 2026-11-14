@@ -6,7 +6,7 @@
 
 Recraft · released 2026-05 · closed weights
 
-**score 63.2** ±2.2 · #27 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.1** ±2.2 · #28 of 147 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄▄█●▂▁▁▁   #23 of 128*     85%      1
+text to image  ▂▅▅▃▄▄█●▂▁▁▁   #25 of 129*     86%      1
 </pre>
 
-<details><summary>text to image · #23 of 128 · 85% of its score</summary>
+<details><summary>text to image · #25 of 129 · 86% of its score</summary>
 
-Beats [Grok Imagine Image](grok-imagine-image.md), [Seedream 5.0 Lite](seedream-5-0-lite.md), [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank higher overall.
+Beats [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Seedream 5.0 Lite](seedream-5-0-lite.md) here, though they rank higher overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1169.3  ▁▁▃▃▆█●▂▂▂▁▁ beats 53/77  avg 1030       85%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1169.1  ▁▁▃▃▆█●▂▂▂▁▁ beats 53/78  avg 1030       86%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                   result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   953.3  ▁▁▁▄●█▂▁▁▂▁▁ beats 10/34  avg 878        12%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   953.3  ▁▁▁▄●█▂▁▁▂▁▁ beats 10/34  avg 879        12%  typical
 </pre>
 
 </details>
@@ -45,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   86% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 63.2
+weighted average                                   = 63.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

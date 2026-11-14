@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 49.8** ±1.0 · #379 of 740 · from 14 benchmark results across 2 sources
+**score 49.7** ±1.0 · #384 of 743 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅█●▄█▅▂▁▁   #259 of 440*     11%      1
+math                ▁▁▃▅█●▅█▄▁▁▁   #259 of 440*     11%      1
 vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄    #126 of 154    100%     14
 </pre>
 
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1">Qwen (submitted / maker-reported)</a>              13   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

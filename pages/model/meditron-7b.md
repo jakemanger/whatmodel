@@ -6,7 +6,7 @@
 
 EPFL LLM · released 2023-11 · 6.74B params · llama2
 
-**score 20.6** ±5.1 · #939 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 20.6** ±5.1 · #941 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

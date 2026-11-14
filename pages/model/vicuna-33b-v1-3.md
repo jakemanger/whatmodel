@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 41.1** ±1.1 · #550 of 740 · from 10 benchmark results across 8 sources
+**score 41.1** ±1.1 · #553 of 743 · from 10 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #340 of 404     80%      6
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #341 of 405     80%      6
 </pre>
 
-<details><summary>chat &amp; writing · #340 of 404 · 80% of its score</summary>
+<details><summary>chat &amp; writing · #341 of 405 · 80% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -27,9 +27,9 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama
 test                                                      result  vs the others in its run   difficulty                counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             17.6%  ▁▂▂▃▆●█▆▄▄▁▁ beats 44/122  medium · avg 36%             30%  sharp
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                          8.6%  ▂▁●▅█▅▄▃▃▅▃▁ beats 4/60    medium · avg 47%             16%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1173.0  ▁▁▁▂●▂▃▆▆▇█▃ beats 52/387  avg 1261                     12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1173.1  ▁▁▁▂●▂▃▆▆▇█▃ beats 52/388  avg 1262                     12%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1105.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 49/95   avg 1189                     11%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  7.1200 MT-Bench score (1-10)  ▆▂▂▆▆▄██●▄▄▆ beats 21/28   avg 8.566 MT-Bench scor…    8.7%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  7.1200 MT-Bench score (1-10)  ▆▂▂▆▆▄██●▄▄▆ beats 21/28   avg 8.567 MT-Bench scor…    8.7%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         89.0%  ▂▂·▆·▇▃▆●▆▄▂ beats 28/45   very easy · avg 94%         2.0%  sharp · noisy
 </pre>
 
@@ -39,7 +39,7 @@ test                                                      result  vs the others 
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   34.3%  ▅····▃▅·██·● beats 11/13    medium · avg 53%    7.4%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   34.3%  ▅····▃▅·██·● beats 11/13    medium · avg 53%    7.5%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   36.5%  ▂··▄·▂●▄▂█·▂ beats 4/14     medium · avg 54%    5.2%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   44.0%  ▃▅▃··▅▃·█●▃▅ beats 10/13    medium · avg 61%    3.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 115/276  medium · avg 72%    2.9%  at its level · noisy
@@ -55,7 +55,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   32% ▇▇▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   16% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   11% ▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2   11% ▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    9% ▇

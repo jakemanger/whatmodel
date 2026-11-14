@@ -6,7 +6,7 @@
 
 Luma AI · released 2026-05 · closed weights
 
-**score 65.6** ±2.1 · #20 of 146 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.5** ±2.1 · #21 of 147 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█●▂▁▁▁   #22 of 128*     72%      1
-image to image / edit…  ▁▁·▃▂▃█▆●▅▂▂    #20 of 64*     26%      1
+text to image           ▂▅▅▃▄▄█●▂▁▁▁   #23 of 129*     73%      1
+image to image / edit…  ▁▁·▃▂▃█▆●▆▂▂    #21 of 65*     25%      1
 </pre>
 
-<details><summary>text to image · #22 of 128 · 72% of its score</summary>
+<details><summary>text to image · #23 of 129 · 73% of its score</summary>
 
 Trails [Uni-1.1 Max](uni-1-1-max.md), [Ideogram 4.0](ideogram-4.md), [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1181.6  ▁▁▃▃▆█●▂▂▂▁▁ beats 54/77  avg 1030       72%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1181.2  ▁▁▃▃▆█●▂▂▂▁▁ beats 54/78  avg 1030       73%  typical
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #20 of 64 · 26% of its score</summary>
+<details><summary>image to image / editing · #21 of 65 · 25% of its score</summary>
 
 Beats [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md), [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md) here, though they rank higher overall. Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Uni-1.1 Max](uni-1-1-max.md), [Grok Imagine Image](grok-imagine-image.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1316.2  ▂▁▁▃▆█▆●▇▄▃▃ beats 34/55  avg 1158       26%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1315.7  ▂▁▁▃▆█▅●█▄▃▃ beats 34/56  avg 1160       25%  typical
 </pre>
 
 </details>
@@ -48,9 +48,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 65.6
+weighted average                        = 65.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 79.6** ±0.9 · #12 of 740 · from 6 benchmark results across 2 sources
+**score 79.7** ±1.0 · #12 of 743 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▄▅●▁   #15 of 316*     12%      2
-math         ▁▁▃▅█▆▄█▅▂●▁   #13 of 440*     58%      2
+agent tasks  ▁▁▃▆█▄▅▅▃▃●▁   #24 of 319*     12%      2
+math         ▁▁▃▅█▆▅█▄▁●▁   #14 of 440*     58%      2
 web search   ▂▁▂▆▅█▄●▁▁▁▁    #15 of 85*     12%      2
 </pre>
 
-<details><summary>agent tasks · #15 of 316 · 12% of its score</summary>
+<details><summary>agent tasks · #24 of 319 · 12% of its score</summary>
 
-Trails [Claude Fable 5](claude-fable-5.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank lower overall.
+Trails [GLM-5.3](glm-5-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 11%    6.5%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 39%       5.8%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    6.4%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 39%       6.0%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #13 of 440 · 58% of its score</summary>
+<details><summary>math · #14 of 440 · 58% of its score</summary>
 
-Beats [Gemini 4 Argon](gemini-4-argon.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
+Beats [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      78.0%  ▁▂▁▁█▅▂●▁▁▁▁ beats 61/72  very hard · avg 0.1%     36%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   87.7%  ▁··▁▁▂▅▃█▅●▂ beats 81/91  very hard · avg 1.3%     22%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      78.0%  ▁▂▁▁█▅▂●▁▁▁▁ beats 61/72  very hard · avg 0.1%     37%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   87.7%  ▁··▁▁▂▅▃█▅●▂ beats 81/91  very hard · avg 1.4%     22%  sharp
 </pre>
 
 </details>
@@ -51,8 +51,8 @@ Beats [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 11%    6.5%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 39%       5.8%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    6.4%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 39%       6.0%  typical
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          62.0%  █▁▁▁▁▂▄▂▃▃●▁ beats 149/157  very hard · avg 5.6%     17%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (maker)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7      very hard · avg 4.3%     12%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (maker)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7      very hard · avg 4.5%     12%  at its level
 </pre>
 
 </details>
@@ -76,7 +76,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        3   75% ▇▇▇▇▇▇▇▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-5">OpenAI vendor-reported benchmark scores…</a>        3   24% ▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 79.6
+weighted average                                   = 79.7
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

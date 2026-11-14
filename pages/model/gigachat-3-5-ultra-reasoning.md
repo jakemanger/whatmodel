@@ -6,7 +6,7 @@
 
 Sber · released 2026-09 · 438.09B params (28B active) · mit
 
-**score 65.5** ±1.3 · #138 of 740 · from 10 benchmark results across 1 source · † no independently run results verified
+**score 65.4** ±1.3 · #142 of 743 · from 10 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▅●▅▄▅▂▁    #136 of 316     27%      3
-coding       ▁▁▁▃▆▇█▆●▃▃▁   #125 of 472*     23%      2
-math         ▁▁▃▅█▆▄●▅▂▁▁    #100 of 440     41%      4
+agent tasks  ▁▁▃▆█▄●▅▃▃▂▁    #142 of 319     27%      3
+coding       ▁▁▁▃▆▇█▆●▃▃▁   #127 of 474*     23%      2
+math         ▁▁▃▅█▆▅●▄▁▁▁    #100 of 440     41%      4
 </pre>
 
-<details><summary>agent tasks · #136 of 316 · 27% of its score</summary>
+<details><summary>agent tasks · #142 of 319 · 27% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run   difficulty           counts  why
@@ -34,7 +34,7 @@ test                        result  vs the others in its run   difficulty       
 
 </details>
 
-<details><summary>coding · #125 of 472 · 23% of its score</summary>
+<details><summary>coding · #127 of 474 · 23% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (maker)</a>                    89.0%  ▁·▁▁▁▃▅▇█●▃▁ beats 110/134  medium · avg 49%     11%  sharp · small run
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (maker)</a>                    92.0%  ▁▁▁▂▂▂▆●▇▂·▁ beats 29/54    medium · avg 54%     11%  sharp · small run
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecified) (…</a>   83.1%  ▃█▇▅▇●▁·▁··▁ beats 26/32    hard · avg 32%       10%  sharp · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (maker)</a>              73.0%  ▁▁·▁▁▁●▆█▄▃▃ beats 12/45    hard · avg 31%      9.2%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (maker)</a>              73.0%  ▁▁·▁▁▁●▆█▄▃▃ beats 12/45    hard · avg 31%      9.1%  at its level · small run
 </pre>
 
 </details>
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a><a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">ai-sage/GigaChat3.5-432B-A28B-Reasoning…</a>       10   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.5
+weighted average                                   = 65.4
 </pre>
 
 <sub>Licences: ai-sage/GigaChat3.5-432B-A28B-Reasoning model card ([MIT](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md))</sub>

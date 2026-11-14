@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.7** ±4.6 · #117 of 146 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 36.6** ±4.6 · #118 of 147 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂▅●▃▄▄█▂▂▁▁▁   #101 of 128*     91%      2
+text to image  ▂▅●▃▄▄█▃▂▁▁▁   #102 of 129*     91%      2
 </pre>
 
-<details><summary>text to image · #101 of 128 · 91% of its score</summary>
+<details><summary>text to image · #102 of 129 · 91% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins again…</a>   32.0%  ●·█········█ beats 0/2    medium · avg 58%     46%  at its level · small run
-<a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>   48.0%  █····●·····█ beats 1/2    easy · avg 66%       45%  at its level · small run
+<a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>   48.0%  █····●·····█ beats 1/2    easy · avg 67%       45%  at its level · small run
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 (submitted / maker-report…</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 36.7
+weighted average                                   = 36.6
 </pre>
 
 <sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>

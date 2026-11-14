@@ -6,7 +6,7 @@
 
 PromptHero · released 2022-11 · 0.86B params · creativeml-openrail-m
 
-**score 27.8** ±2.2 · #137 of 146 · from 5 benchmark results across 5 sources
+**score 27.8** ±2.2 · #138 of 147 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ●▅▅▃▄▄█▂▂▁▁▁   #122 of 128     54%      3
+text to image  ●▅▅▃▄▄█▃▂▁▁▁   #123 of 129     54%      3
 </pre>
 
-<details><summary>text to image · #122 of 128 · 54% of its score</summary>
+<details><summary>text to image · #123 of 129 · 54% of its score</summary>
 
 Trails [CogView2](cogview2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>   853.0  ▃●··▃·▃·█·▃▃ beats 1/8    avg 1235           38%  sharp
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>   853.0  ▃●··▃·▃·█·▃▃ beats 1/8    avg 1237           38%  sharp
 <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>   50.0%  ●▄·█·······▄ beats 0/4    easy · avg 80%     16%  at its level
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.5%  ▃··▃▅·▅·▅▅●▅ beats 12/14  hard · avg 28%    0.1%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.5%  ▃··▃▅·▅·▅▅●▅ beats 12/14  hard · avg 27%    0.1%  blunt · at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.8300 mean human alignment score  █▄▄·●·▄█▄▄·▄ beats 5/11   avg 6.275 mean human al…     33%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.8300 mean human alignment score  █▄▄·●·▄█▄▄·▄ beats 5/11   avg 6.280 mean human al…     33%  typical
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              61.7%  ▁····●▁·▁··▁ beats 6/9    very easy · avg 92%          11%  sharp · at its level · noisy
 </pre>
 

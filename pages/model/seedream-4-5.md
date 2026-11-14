@@ -6,7 +6,7 @@
 
 ByteDance · closed weights
 
-**score 63.1** ±1.2 · #28 of 146 · from 8 benchmark results across 7 sources
+**score 63.0** ±1.2 · #29 of 147 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,33 +16,33 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #30 of 128     61%      3
-image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂    #26 of 64     35%      4
+text to image           ▂▅▅▃▄▄●▃▂▁▁▁   #31 of 129     61%      3
+image to image / edit…  ▁▁·▃▂▃█●▃▆▂▂    #27 of 65     35%      4
 </pre>
 
-<details><summary>text to image · #30 of 128 · 61% of its score</summary>
+<details><summary>text to image · #31 of 129 · 61% of its score</summary>
 
 Trails [FLUX.2 \[flex\]](flux-2-flex.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   59.5%  ▄█▂▂▂▂●▄·▂·▂ beats 12/16  hard · avg 27%       34%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1147.9  ▁▁▃▃▆●▃▂▂▂▁▁ beats 43/77  avg 1030             25%  typical
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   59.5%  ▄█▂▂▂▂●▄·▂·▂ beats 12/16  hard · avg 27%       33%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1147.7  ▁▁▃▃▆●▄▂▂▂▁▁ beats 43/78  avg 1030             25%  typical
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      56.8%  █▅▅·▅▅●·█··▃ beats 11/17  medium · avg 46%    2.6%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #26 of 64 · 35% of its score</summary>
+<details><summary>image to image / editing · #27 of 65 · 35% of its score</summary>
 
 Trails [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           64.4%  ▃▃▂·▃▆▂█·●·▃ beats 17/20  hard · avg 45%     18%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1302.5  ▂▁▁▃▆█▆●▇▄▃▃ beats 31/55  avg 1158          8.9%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1302.5  ▂▁▁▃▆█▅●█▄▃▃ beats 31/56  avg 1160          8.8%  typical
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   50.0%  ▄▄····▄●█▄·█ beats 3/8    hard · avg 35%    4.5%  at its level
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1089.0  ▃▂····▂█▂▃▂● beats 13/14  avg 960           3.5%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1089.0  ▃▂····▂█▂▃▂● beats 13/14  avg 961           3.5%  blunt
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1046.7  ▁▁▁▄▂█●▁▁▂▁▁ beats 25/34  avg 878       3.6%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1046.7  ▁▁▁▄▂█●▁▁▂▁▁ beats 25/34  avg 879       3.6%  typical
 </pre>
 
 </details>
@@ -62,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   34% ▇▇▇▇
-<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   34% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   34% ▇▇▇▇
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   33% ▇▇▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   18% ▇▇
 <a name="visual-gebench"></a><a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench: Benchmarking Image Generation …</a>        1    4% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    4% ▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    4% ▇
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.1
+weighted average                                   = 63.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>

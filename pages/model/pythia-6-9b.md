@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 22.8** ±0.7 · #703 of 740 · from 37 benchmark results across 8 sources
+**score 22.8** ±0.7 · #706 of 743 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆▇█▆▆▃▃▁   #463 of 472*    1.8%      1
-math    ▁▁●▅█▆▄█▅▂▁▁   #412 of 440*    2.0%      1
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #465 of 474*    1.8%      1
+math    ▁▁●▅█▆▅█▄▁▁▁   #412 of 440*    2.0%      1
 </pre>
 
-<details><summary>coding · #463 of 472 · 1.8% of its score</summary>
+<details><summary>coding · #465 of 474 · 1.8% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 44.0** ±2.7 · #501 of 740 · from 5 benchmark results across 3 sources
+**score 44.0** ±2.7 · #504 of 743 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,10 +25,10 @@ Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                                 result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>       964.0  ▁▁●▂▂▂▃▅▅▅█▇ beats 4/152  avg 1063           51%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -3.627         32%  typical
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (maker)</a>                       81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 80%    6.4%  blunt · small run
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (maker)</a>                      75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.0%  blunt · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>       964.0  ▁▁●▂▂▂▃▅▅▅█▇ beats 4/152  avg 1064           50%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -3.525         32%  typical
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (maker)</a>                       81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 80%    6.5%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (maker)</a>                      75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.1%  blunt · small run
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (maker)</a>                       84.2%  ▁▁▁▄▅▁▃·▃▃▃● beats 19/24  easy · avg 78%    2.9%  blunt · small run
 </pre>
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   51% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   50% ▇▇▇▇▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   32% ▇▇▇▇
 <a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (submitted / maker-reported)</a>           3   14% ▇▇
 prior: pull toward the middle                        3% ▇

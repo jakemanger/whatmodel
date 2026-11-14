@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 64.2** ±1.4 · #156 of 740 · from 13 benchmark results across 2 sources
+**score 64.2** ±1.4 · #159 of 743 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      4
-coding          ▁▁▁▃▆▇█▆●▃▃▁      #109 of 472     28%      5
-chat &amp; writing  ▁▁▁▃▆▄▆█▇▇●▃      #66 of 404*    6.9%      1
-math            ▁▁▃▅█▆▄●▅▂▁▁      #117 of 440     40%      4
+coding          ▁▁▁▃▆▇█▆●▃▃▁      #111 of 474     28%      5
+chat &amp; writing  ▁▁▁▃▅▄▆█▇▇●▃      #66 of 405*    6.9%      1
+math            ▁▁▃▅█▆▅●▄▁▁▁      #121 of 440     40%      4
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #109 of 472 · 28% of its score</summary>
+<details><summary>coding · #111 of 474 · 28% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -49,9 +49,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #66 of 404 · 6.9% of its score</summary>
+<details><summary>chat &amp; writing · #66 of 405 · 6.9% of its score</summary>
 
-Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md) here, though they rank higher overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
@@ -60,15 +60,15 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #117 of 440 · 40% of its score</summary>
+<details><summary>math · #121 of 440 · 40% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [gpt-oss-120b](gpt-oss-120b.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (maker)</a>            92.4%  ▁·▁▁▁▃▅▇█●▃▁ beats 122/134  easy · avg 65%       13%  sharp · maxed out
 <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (maker)</a>      79.3%  ▁▁·▁▁▁▄▆●▄▃▃ beats 22/45    medium · avg 44%     11%  typical
-<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (maker)</a>            90.9%  ▁▁▁▂▂▂▆●▇▂·▁ beats 25/54    easy · avg 66%       10%  sharp · maxed out
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (maker)</a>            90.9%  ▁▁▁▂▂▂▆●▇▂·▁ beats 25/54    easy · avg 67%       10%  sharp · maxed out
 <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (maker)</a>   94.6%  ▁▁▁▃▁▅▅▃█●▁▄ beats 25/31    easy · avg 72%      6.3%  small run
 </pre>
 
@@ -79,13 +79,13 @@ test                        result  vs the others in its run    difficulty      
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.3%  ▂·▂▂·▂·▃▃·●▃ beats 11/14    easy · avg 80%          5.9%  maxed out
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   70.8%  ▂··▂▂·▂●▆█·▄ beats 5/15     medium · avg 63%        5.6%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   70.8%  ▂··▂▂·▂●▆█·▄ beats 5/15     medium · avg 64%        5.6%  typical
 <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (maker)</a>               45.3%  ▁·▁·▁▅●▃▅▃█▃ beats 11/33    hard · avg 28%          5.1%  at its level · small run
 <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (maker)</a>                    72.5%  ▁·▁▁▁▂▁●▃█▅▄ beats 10/36    medium · avg 54%        4.3%  small run
-<a href="https://arxiv.org/html/2603.19220v2">CL-bench (maker)</a>                     12.2%  ●··········▄ beats 1/2      very hard · avg 7.3%    3.4%  blunt · small run
+<a href="https://arxiv.org/html/2603.19220v2">CL-bench (maker)</a>                     12.2%  ●··········▄ beats 1/2      very hard · avg 7.4%    3.4%  blunt · small run
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond (maker)</a>                 76.1%  ▁▁▁▁▂▃▅▆●▇█▂ beats 182/336  hard · avg 39%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Pro (maker)</a>                     79.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 125/189  medium · avg 55%           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam (maker)</a>         17.7%  ▁▁▁▄▆●▅█▆▁▂▁ beats 43/115   very hard · avg 3.8%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam (maker)</a>         17.7%  ▁▁▁▄▆●▅█▆▁▂▁ beats 43/115   very hard · avg 3.9%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Redux (maker)</a>                   86.3%  ▁▁▃▁▂▄▄●▇▅█▄ beats 26/64    easy · avg 77%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LongBench v2 (maker)</a>                 40.3%  ▂·▁·▂▂▂●▃▃█▃ beats 10/35    very hard · avg 32%        —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">IFBench prompt-level (maker)</a>         82.9%  ▄······██▄▄● beats 7/7                                 —  not counted yet: no other model in the …

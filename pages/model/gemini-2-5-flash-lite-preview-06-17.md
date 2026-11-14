@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 61.3** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 61.2** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▄▅▅▄▄▁▁   #283 of 357*     12%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #163 of 476*     51%      1
+agent tasks         ▁▁▂●█▄▅▅▃▂▂▁   #288 of 360*     12%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #164 of 477*     50%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●██▄   #105 of 190*     35%      1
 </pre>
 
-<details><summary>agent tasks · #283 of 357 · 12% of its score</summary>
+<details><summary>agent tasks · #288 of 360 · 12% of its score</summary>
 
-Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #163 of 476 · 51% of its score</summary>
+<details><summary>chat &amp; writing · #164 of 477 · 50% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1374.9  ▁▁▁▂▃▂▃▆●▇█▃ beats 218/387  avg 1261       51%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1374.9  ▁▁▁▂▃▂▃▆●▇█▃ beats 217/388  avg 1262       50%  blunt
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1188.4  ▁▁▂▂▂▂▃▅●▅█▇ beats 66/152  avg 1063       35%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1188.4  ▁▁▂▂▂▂▃▅●▅█▇ beats 66/152  avg 1064       35%  blunt
 </pre>
 
 </details>
@@ -60,10 +60,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.3
+weighted average                                   = 61.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

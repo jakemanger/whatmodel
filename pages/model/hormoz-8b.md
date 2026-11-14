@@ -6,7 +6,7 @@
 
 Mann-E · released 2025-02 · 8.03B params · mit
 
-**score 47.4** ±4.3 · #558 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.4** ±4.3 · #559 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

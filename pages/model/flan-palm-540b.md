@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▆██●▇▄▁▁▁   #207 of 540*     23%      1
+math  ▁▂▃▆█▇●▇▄▁▁▁   #207 of 540*     23%      1
 </pre>
 
 <details><summary>math · #207 of 540 · 23% of its score</summary>
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   74% ▇▇▇▇▇▇▇▇▇
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   75% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3   25% ▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 50.7

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 62.0** ±2.2 · #32 of 146 · from 5 benchmark results across 2 sources
+**score 61.9** ±2.2 · #33 of 147 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #34 of 128     89%      4
+text to image  ▂▅▅▃▄▄●▃▂▁▁▁   #35 of 129     89%      4
 </pre>
 
-<details><summary>text to image · #34 of 128 · 89% of its score</summary>
+<details><summary>text to image · #35 of 129 · 89% of its score</summary>
 
 Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md), [ERNIE-Image-Turbo](ernie-image-turbo.md), [Nano Banana (Gemini 2.5 Flash Image)](nano-banana.md) here, though they rank lower overall.
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1149.7  ▁▁▃▃▆●▃▂▂▂▁▁ beats 45/77  avg 1030             82%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.083          5.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1149.5  ▁▁▃▃▆●▄▂▂▂▁▁ beats 45/78  avg 1030             83%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.085          5.0%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    41.2%  ●·······▄█▄▄ beats 0/5    medium · avg 60%    1.3%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    89.1%  █······███●█ beats 4/5    easy · avg 85%      0.0%  blunt
 </pre>
@@ -37,7 +37,7 @@ test                                 result  vs the others in its run  difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   91.4%  ▄···█··▄···● beats 5/5    easy · avg 78%    9.2%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   91.4%  ▄···█··▄···● beats 5/5    easy · avg 78%    9.1%  typical
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4   15% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 62.0
+weighted average                                   = 61.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

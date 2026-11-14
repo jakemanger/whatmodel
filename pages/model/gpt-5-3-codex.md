@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 72.3** ±1.3 · #54 of 740 · from 8 benchmark results across 4 sources
+**score 72.3** ±1.3 · #57 of 743 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▄●▂▁   #51 of 316     99%      8
-coding       ▁▁▁▃▆▇█▆▆●▃▁   #58 of 472     46%      3
+agent tasks  ▁▁▃▆█▄▅▅●▃▂▁   #55 of 319     99%      8
+coding       ▁▁▁▃▆▇█▆▆●▃▁   #60 of 474     46%      3
 web search   ▂▁▂▆▅●▄▃▁▁▁▁   #38 of 85*     17%      1
 </pre>
 
-<details><summary>agent tasks · #51 of 316 · 99% of its score</summary>
+<details><summary>agent tasks · #55 of 319 · 99% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Claude Opus 4.6](claude-opus-4-6.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -31,22 +31,22 @@ test                                result  vs the others in its run  difficulty
 <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   77.3%  ●··█▄··▄·▄█▄ beats 0/8    medium · avg 39%         17%  typical
 <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (make…</a>   51.9%  ▃··▃··▃··●█▅ beats 3/8    very hard · avg 13%      13%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (maker)</a>           77.3%  ██···██··█●█ beats 5/6    hard · avg 16%           11%  at its level
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.9%    8.9%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 17%          8.0%  at its level
-<a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    5.1%  typical
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.9%    9.0%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 17%          7.9%  at its level
+<a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    5.0%  typical
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.9%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #58 of 472 · 46% of its score</summary>
+<details><summary>coding · #60 of 474 · 46% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Kimi K2.6](kimi-k2-6.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   74.8%  ▁··▁·▁▂▁▄●▄▁ beats 17/29  hard · avg 19%           32%  sharp
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.9%    8.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.9%    9.0%  sharp · at its level · noisy
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.9%  blunt · at its level
 </pre>
 

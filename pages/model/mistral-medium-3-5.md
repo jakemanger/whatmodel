@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 63.9** ±0.8 · #162 of 740 · from 22 benchmark results across 5 sources
+**score 63.9** ±0.8 · #164 of 743 · from 22 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅●▄▅▂▁    #103 of 316     32%      8
-coding              ▁▁▁▃▆▇█●▆▃▃▁    #164 of 472     16%      3
-chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃    #84 of 404*    6.6%      1
-math                ▁▁▃▅█▆●█▅▂▁▁   #193 of 440*    8.1%      2
-vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄    #83 of 154*    4.6%      1
+agent tasks         ▁▁▃▆█▄●▅▃▃▂▁    #123 of 319     32%      8
+coding              ▁▁▁▃▆▇█●▆▃▃▁    #166 of 474     17%      3
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #85 of 405*    6.5%      1
+math                ▁▁▃▅█▆●█▄▁▁▁   #193 of 440*    8.1%      2
+vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄    #83 of 154*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 316 · 32% of its score</summary>
+<details><summary>agent tasks · #123 of 319 · 32% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1393 IPS  ▁▁●▁▄▄█▄▂▁▁▁ beats 4/61   avg -0.395 IPS           20%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                       33.3%  ▄········█●▄ beats 3/5    very hard · avg 4.8%    3.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1373 IPS  ▁▁●▃▃█▂▁▁▁·▁ beats 4/63   avg -0.403 IPS           20%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                       33.3%  ▄········█●▄ beats 3/5    very hard · avg 4.8%    3.1%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                       6.1%  ▄▄····●···█▄ beats 2/5    very hard · avg 2.0%    2.5%  too hard for it
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                    30.7%  ▄●▄·······█▄ beats 1/5    hard · avg 20%          2.1%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                    30.7%  ▄●▄·······█▄ beats 1/5    hard · avg 20%          2.2%  at its level
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>        41.9%  ▂·▁▁··●▇█▂·▁ beats 4/25   hard · avg 28%          2.0%  blunt · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                        69.6%  ▄··········● beats 2/5    hard · avg 16%          1.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                           5.8%  ●·▄▄······▄▄ beats 0/5    very hard · avg 5.4%    0.7%  blunt
@@ -41,26 +41,26 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #164 of 472 · 16% of its score</summary>
+<details><summary>coding · #166 of 474 · 17% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1263.0  ▁▂▄●▇█▅▆█▅▂▁ beats 16/133  avg 990              12%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1263.1  ▁▂▄●▇█▅▇▇▅▂▁ beats 16/134  avg 996              12%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   84.9%  ▄······●▄▄·█ beats 1/5     medium · avg 50%    2.9%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   69.6%  ▄··········● beats 2/5     hard · avg 16%      1.8%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #84 of 404 · 6.6% of its score</summary>
+<details><summary>chat &amp; writing · #85 of 405 · 6.5% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.5  ▁▁▁▂▃▂▃▆▆●█▃ beats 284/387  avg 1261      6.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.4  ▁▁▁▂▃▂▃▆▆●█▃ beats 284/388  avg 1262      6.5%  blunt
 </pre>
 
 </details>
@@ -71,19 +71,19 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            89.0%  ▄●··▄····█·▄ beats 1/5    easy · avg 66%    5.5%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            89.0%  ▄●··▄····█·▄ beats 1/5    easy · avg 66%    5.6%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   62.9%  ●▄▄········█ beats 1/5    hard · avg 32%    2.6%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #83 of 154 · 4.6% of its score</summary>
+<details><summary>vision &amp; documents · #83 of 154 · 4.5% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1199.2  ▁▁▂▂▂▂▃▅●▅█▇ beats 72/152  avg 1063      4.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1199.2  ▁▁▂▂▂▂▃▅●▅█▇ beats 72/152  avg 1064      4.5%  blunt
 </pre>
 
 </details>
@@ -92,13 +92,13 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         77.5%  █···█●·█··██ beats 2/5    hard · avg 41%           15%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         77.5%  █···█●·█··██ beats 2/5    hard · avg 42%           15%  sharp · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             81.2%  ▄·▄●····▄··█ beats 2/5    medium · avg 55%        4.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 12.8%  █●······▄·▄▄ beats 2/5    very hard · avg 4.7%    4.5%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    69.0%  ▄···▄●··▄··█ beats 2/5    medium · avg 43%        2.9%  at its level
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   14.9%  ▁▁●▂▂▄▁▃▄▄▄█ beats 3/38   very hard · avg 14%     2.3%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 12.8%  █●······▄·▄▄ beats 2/5    very hard · avg 4.8%    4.4%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    69.0%  ▄···▄●··▄··█ beats 2/5    medium · avg 44%        2.9%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   14.9%  ▂▂●▂▃▃▂▇▇█▇▁ beats 4/47   very hard · avg 14%     2.5%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       49.8%  █··▄·●·····█ beats 3/5    hard · avg 25%          2.2%  at its level
-<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.3%  ▂·▂··▂·▄▂·●▆ beats 9/12   medium · avg 63%        1.2%  noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.3%  ▂·▂··▂·▄▂·●▆ beats 9/12   medium · avg 64%        1.3%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              76.7%  ●·▃·▅▅▃···▃▃ beats 1/10   easy · avg 70%          0.6%  blunt
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   75.7%  ▄·▄▄▄·●██▄█▄ beats 4/12   medium · avg 65%        0.5%  blunt · at its level
 </pre>
@@ -112,15 +112,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report</a>                  13   50% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   43% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   42% ▇▇▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    3% ▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                                          3    2% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 63.9
 </pre>
 
-<sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (1)</summary>
 

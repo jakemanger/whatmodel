@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ●▂█▇▇▅█▇▂▃▁▂   #158 of 159*     94%      1
+text to image  ●▂█▇▇▅█▇▂▃▁▂   #159 of 160*     94%      1
 </pre>
 
-<details><summary>text to image · #158 of 159 · 94% of its score</summary>
+<details><summary>text to image · #159 of 160 · 94% of its score</summary>
 
 Trails [CogView2](cogview2.md) here, though they rank lower overall.
 

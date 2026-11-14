@@ -6,7 +6,7 @@
 
 Skywork AI · released 2025-08 · 2B params · mit
 
-**score 43.7** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.6** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 43.7
+weighted average                                   = 43.6
 </pre>
 
 <sub>Licences: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

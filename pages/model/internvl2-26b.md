@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 47.6** ±1.4 · #420 of 740 · from 17 benchmark results across 5 sources
+**score 47.6** ±1.4 · #423 of 743 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▅▂▁▁   #274 of 440*    5.8%      1
+math                ▁▁▃▅●▆▅█▄▁▁▁   #274 of 440*    5.8%      1
 vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #133 of 154     90%     14
 </pre>
 
@@ -38,9 +38,9 @@ Beats [Nova Pro](nova-pro.md), [Nova Lite](nova-lite.md) here, though they rank 
 <pre>
 test                                 result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>         62.4%  ▄█▄●▄·██·▄·█ beats 4/12    easy · avg 70%          28%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1025.0  ▁▁▂▂●▂▃▅▅▅█▇ beats 16/152  avg 1063                15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1025.0  ▁▁▂▂●▂▃▅▅▅█▇ beats 16/152  avg 1064                15%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>         33.4%  ▂▂▂●▃▂·▂▂··▂ beats 7/13    hard · avg 35%          13%  at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -3.627             9.3%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -3.525             9.4%  typical
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (maker)</a>                    51.2%  ▁····▁▁▃●▆▆▅ beats 11/53   medium · avg 57%       6.2%  at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (maker)</a>          59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48   medium · avg 65%       5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>    43.5%  ▅▃█··●▃····▃ beats 7/9     hard · avg 42%         2.6%  blunt
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   40% ▇▇▇▇▇
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   41% ▇▇▇▇▇
 <a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OpenGVLab InternVL2 model cards (submit…</a>       12   32% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    9% ▇

@@ -6,7 +6,7 @@
 
 Meta · released 2026-11 · proprietary
 
-**score 75.6** ±2.3 · #29 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 75.6** ±1.3 · #31 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,17 +15,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <sub>● marks Muse Ember among every model on that task or test, worst to best.</sub>
 
 <pre>
-task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇█▆▆▃●▁   #33 of 486*     98%      1
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█▄▅▅▃●▂▁   #29 of 319*     67%      2
+coding       ▁▁▁▃▆▇█▆▆▃●▁   #33 of 474*     33%      1
 </pre>
 
-<details><summary>coding · #33 of 486 · 98% of its score</summary>
+<details><summary>agent tasks · #29 of 319 · 67% of its score</summary>
+
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [GLM-5.3](glm-5-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0167 IPS  ▁▁▁▃▃●▂▁▁▁·▁ beats 36/63  avg -0.403 IPS           54%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-meta-muse-ember-1-0-xhigh-muse-code.json">Terminal-Bench 4.1</a>                       30.6%  ▂▂▂··▅·▂▅●▃▆ beats 10/20  very hard · avg 1.0%     12%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>coding · #33 of 474 · 33% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1608.6  ▁▂▄▃▇█▅▆●▅▂▁ beats 101/133  avg 990        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1608.8  ▁▂▄▃▇█▅▇●▅▂▁ beats 101/134  avg 996        33%  sharp
 </pre>
 
 </details>
@@ -35,13 +48,14 @@ test                       result  vs the others in its run    difficulty  count
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             2% ▇
-weighted average                        = 75.6
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-meta-muse-ember-1-0-xhigh-muse-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1   12% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 75.6
 </pre>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt))</sub>
 
 ## How to run it
 

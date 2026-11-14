@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 3B params · apache-2.0
 
-**score 21.1** ±1.9 · #706 of 740 · from 3 benchmark results across 3 sources
+**score 21.0** ±1.9 · #709 of 743 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ●▁▁▃▆▄▆█▇▇▇▃   #403 of 404     98%      3
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #404 of 405     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #403 of 404 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #404 of 405 · 98% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             992.7  ●▁▁▂▃▂▃▆▆▇█▃ beats 3/387  avg 1261                     37%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             992.8  ●▁▁▂▃▂▃▆▆▇█▃ beats 3/388  avg 1262                     36%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         879.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 4/95   avg 1189                     35%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.0400 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 2/28   avg 8.566 MT-Bench scor…     27%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.0400 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 2/28   avg 8.567 MT-Bench scor…     27%  sharp · noisy
 </pre>
 
 </details>
@@ -38,11 +38,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   37% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   36% ▇▇▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   35% ▇▇▇▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   27% ▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 21.1
+weighted average                                   = 21.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

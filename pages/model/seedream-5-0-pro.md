@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-07 · proprietary
 
-**score 73.1** ±1.8 · #15 of 146 · from 5 benchmark results across 4 sources
+**score 73.0** ±1.8 · #15 of 147 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄█▂●▁▁▁   #13 of 128     72%      3
-image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂   #10 of 64*     19%      1
+text to image           ▂▅▅▃▄▄█▃●▁▁▁   #13 of 129     72%      3
+image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂   #10 of 65*     19%      1
 </pre>
 
-<details><summary>text to image · #13 of 128 · 72% of its score</summary>
+<details><summary>text to image · #13 of 129 · 72% of its score</summary>
 
 Beats [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1248.9  ▁▁▃▃▆█▃●▂▂▁▁ beats 62/77  avg 1030           53%  typical
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   90.0%  ▆▆·▂▂····●▂█ beats 8/13   hard · avg 21%     13%  sharp · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1248.1  ▁▁▃▃▆█▄●▂▂▁▁ beats 63/78  avg 1030           54%  typical
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   90.0%  ▆▆·▂▂····●▂█ beats 8/13   hard · avg 21%     12%  sharp · noisy
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   91.5%  ▁▂▂█▃▁▂●·▁·▁ beats 20/22  hard · avg 29%    6.2%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #10 of 64 · 19% of its score</summary>
+<details><summary>image to image / editing · #10 of 65 · 19% of its score</summary>
 
 Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md), [ChatGPT Image Latest (chatgpt-image-latest)](chatgpt-image-latest.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1391.5  ▂▁▁▃▆█▆▆▇●▃▃ beats 45/55  avg 1158       19%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1391.8  ▂▁▁▃▆█▅▇█●▃▃ beats 46/56  avg 1160       19%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   992.9  ▁▁▁▄▂●▂▁▁▂▁▁ beats 17/34  avg 878       7.8%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   992.9  ▁▁▁▄▂●▂▁▁▂▁▁ beats 17/34  avg 879       7.7%  typical
 </pre>
 
 </details>
@@ -59,12 +59,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   72% ▇▇▇▇▇▇▇▇▇
-<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   72% ▇▇▇▇▇▇▇▇▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   12% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    8% ▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 73.1
+weighted average                                   = 73.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

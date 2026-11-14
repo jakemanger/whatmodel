@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▆▃▂▁   #268 of 542     19%      3
-chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #250 of 476     17%      3
-math            ▁▂▃▆●█▅▇▄▁▁▁   #373 of 540     13%      3
+coding          ▁▁▁▃▅▆●▇▆▃▃▁   #269 of 544     20%      3
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #250 of 477     17%      3
+math            ▁▂▃▆●▇▅▇▄▁▁▁   #373 of 540     13%      3
 </pre>
 
-<details><summary>coding · #268 of 542 · 19% of its score</summary>
+<details><summary>coding · #269 of 544 · 20% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -34,14 +34,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #250 of 476 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #250 of 477 · 17% of its score</summary>
 
 Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   78.0%  ▂▁▁▅█▅▄▃▃●▃▁ beats 51/60    medium · avg 47%    9.4%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1313.3  ▁▁▁▂▃▂▃●▆▇█▃ beats 142/387  avg 1261            4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1313.3  ▁▁▁▂▃▂▃●▆▇█▃ beats 142/388  avg 1262            4.0%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1255.0  ▂▁▂▁▃▇█▆▇▄●▂ beats 90/95    avg 1189            3.9%  typical
 </pre>
 
@@ -67,8 +67,8 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           48.9%  ▁▁▁▂▂▃▂█▆▃●▃ beats 52/61   medium · avg 39%        18%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              65.1%  ▂▂▃▄▄█▁▄▅▃▁● beats 41/42   medium · avg 52%        11%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (make…</a>             41.4%  ●▃▃█·▃▃▅▃▃▃▅ beats 1/16    hard · avg 39%         6.4%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   42.3%  ▁▁▁▁▂●▅▄▄▆█▃ beats 45/221  hard · avg 39%         6.1%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  52.2775 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 42/52   avg 43.320 WB-Score    4.5%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   42.3%  ▁▁▁▁▂●▅▄▄▆█▃ beats 45/221  hard · avg 39%         6.0%  sharp · at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  52.2775 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 42/52   avg 43.352 WB-Score    4.5%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>             85.4%  ▂▂·●▄▄▂·█▂·▂ beats 4/16    easy · avg 80%         3.3%  typical
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (m…</a>             81.5%  ▂▂▄▆●█·▂···▄ beats 7/16    easy · avg 78%         0.4%  blunt
 </pre>
@@ -83,12 +83,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   18% ▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2   16% ▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2   15% ▇▇
 <a name="openai-simple-evals-readme"></a><a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">OpenAI simple-evals README benchmark re…</a>        6   15% ▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    9% ▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    8% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    4% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 54.4

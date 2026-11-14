@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 31.0** ±1.7 · #663 of 740 · from 6 benchmark results across 1 source · † no independently run results verified
+**score 31.0** ±1.7 · #666 of 743 · from 6 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #356 of 404*    9.1%      1
-math            ▁▁●▅█▆▄█▅▂▁▁   #396 of 440*     36%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #357 of 405*    9.1%      1
+math            ▁▁●▅█▆▅█▄▁▁▁   #396 of 440*     36%      1
 </pre>
 
-<details><summary>chat &amp; writing · #356 of 404 · 9.1% of its score</summary>
+<details><summary>chat &amp; writing · #357 of 405 · 9.1% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                   result  vs the others in its run   difficulty        coun
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (maker)</a>   42.7%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 62/140  easy · avg 77%       22%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (maker)</a>      62.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 46/131  medium · avg 80%     12%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (maker)</a>       66.0%  ▁▁▁▂▂▂▄●█▇▄▂ beats 57/135  easy · avg 87%       12%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (maker)</a>            26.1%  ▁●▁▁▁▂▂▅██▆▄ beats 5/215   easy · avg 74%      8.6%  typical
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (maker)</a>            26.1%  ▁●▁▁▁▂▂▅██▆▄ beats 5/215   easy · avg 74%      8.5%  typical
 </pre>
 
 </details>

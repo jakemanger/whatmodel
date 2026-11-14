@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 17.9** ±0.9 · #713 of 740 · from 47 benchmark results across 14 sources
+**score 17.9** ±0.9 · #716 of 743 · from 47 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁●▁▃▆▇█▆▆▃▃▁   #466 of 472*     20%      2
-math    ▁▁●▅█▆▄█▅▂▁▁    #409 of 440    4.0%      2
+coding  ▁●▁▃▆▇█▆▆▃▃▁   #468 of 474*     20%      2
+math    ▁▁●▅█▆▅█▄▁▁▁    #409 of 440    4.0%      2
 </pre>
 
-<details><summary>coding · #466 of 472 · 20% of its score</summary>
+<details><summary>coding · #468 of 474 · 20% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [ChatGLM-6B](chatglm-6b.md) here, though they rank higher overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     7.9%  ▁·●▁▃▄▆▅█▃▁▁ beats 2/99   easy · avg 77%     11%  sharp · too hard for it
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     7.9%  ▁·●▁▃▄▆▅█▃▁▁ beats 2/99   easy · avg 77%     12%  sharp · too hard for it
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>    6.7%  ▁·●▁▁▃▄▄▄█▃▁ beats 2/99   easy · avg 71%    8.2%  sharp · too hard for it
 </pre>
 
@@ -57,8 +57,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 72.9%  ▄▄··●·▄·▄·██ beats 2/8     easy · avg 88%         4.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 2/8     easy · avg 88%         4.3%  at its level · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   62.2%  █·▄··●··█··▄ beats 3/7     very easy · avg 88%    4.3%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-2.7B/results_2024-03-06%2021%3A19%3A57.134182.json">Natural Questions (closed book)</a>       5.7%  ▁·▁·▁▂●▂·▅▂█ beats 6/28    medium · avg 48%       3.4%  too hard for it · several runs
-<a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   40.2%  ▃···●·▃▅··▃█ beats 2/9     very easy · avg 85%    2.7%  at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-2.7B/results_2024-03-06%2021%3A19%3A57.134182.json">Natural Questions (closed book)</a>       5.7%  ▁·▁·▁▂●▂·▅▂█ beats 6/28    medium · avg 49%       3.4%  too hard for it · several runs
+<a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   40.2%  ▃···●·▃▅··▃█ beats 2/9     very easy · avg 85%    2.6%  at its level
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           23.2%  ●······▂·▆·▂ beats 1/8     easy · avg 77%         2.4%  several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   51.5%  ▂▂··●·█···▂▂ beats 2/8     easy · avg 79%         1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.0%  ●▄····█▄▄··▄ beats 1/7     medium · avg 61%       1.2%  blunt

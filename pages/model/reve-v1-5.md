@@ -6,7 +6,7 @@
 
 Reve · released 2026-02 · closed weights
 
-**score 62.3** ±2.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.2** ±2.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂█▇▇▅█●▂▃▁▂   #34 of 159*     98%      1
+text to image  ▁▂█▇▇▅█●▂▃▁▂   #35 of 160*     98%      1
 </pre>
 
-<details><summary>text to image · #34 of 159 · 98% of its score</summary>
+<details><summary>text to image · #35 of 160 · 98% of its score</summary>
 
 Beats [Seedream 4.5](seedream-4-5.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall. Trails [FLUX.2 \[flex\]](flux-2-flex.md), [FLUX.2 \[pro\]](flux-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1154.1  ▁▁▃▃▆●▃▂▂▂▁▁ beats 48/77  avg 1030       98%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1154.1  ▁▁▃▃▆●▄▂▂▂▁▁ beats 48/78  avg 1030       98%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 62.3
+weighted average                        = 62.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

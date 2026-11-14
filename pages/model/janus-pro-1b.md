@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 36.2** ±3.8 · #118 of 146 · from 3 benchmark results across 2 sources
+**score 36.1** ±3.8 · #119 of 147 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▂▂▁▁▁   #103 of 128     94%      3
+text to image  ▂▅●▃▄▄█▃▂▁▁▁   #104 of 129     94%      3
 </pre>
 
-<details><summary>text to image · #103 of 128 · 94% of its score</summary>
+<details><summary>text to image · #104 of 129 · 94% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SSD-1B](ssd-1b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ source                                    results  share of the score
 <a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (submitted / maker-reported)</a>        2   64% ▇▇▇▇▇▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   30% ▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 36.2
+weighted average                                   = 36.1
 </pre>
 
 <sub>Licences: DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.4** ±0.9 · #240 of 740 · from 24 benchmark results across 5 sources
+**score 57.4** ±0.9 · #243 of 743 · from 24 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇█●▆▃▃▁   #148 of 472*     12%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃    #183 of 404     10%      3
-math            ▁▁▃▅█▆●█▅▂▁▁    #185 of 440     19%      3
+coding          ▁▁▁▃▆▇█●▆▃▃▁   #149 of 474*     12%      3
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃    #184 of 405     10%      3
+math            ▁▁▃▅█▆●█▄▁▁▁    #185 of 440     19%      3
 </pre>
 
-<details><summary>coding · #148 of 472 · 12% of its score</summary>
+<details><summary>coding · #149 of 474 · 12% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall.
 
@@ -34,9 +34,9 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #183 of 404 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #184 of 405 · 10% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -53,8 +53,8 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [M
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (maker)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 45%    8.4%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (maker)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 56%    7.4%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (maker)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 46%    8.4%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (maker)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 57%    7.4%  sharp · small run · several runs
 <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (maker)</a>   43.8%  ▁▁▁●▁▅▅▃██▁▄ beats 4/31   hard · avg 33%      3.0%  at its level · small run
 </pre>
 
@@ -65,9 +65,9 @@ test                        result  vs the others in its run  difficulty        
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (maker)</a>                 67.1%  ●··▄··▄···█▄ beats 1/6      hard · avg 43%       20%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.420            15%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.421            15%  sharp
 <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (maker)</a>                     74.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 100/189  medium · avg 59%    8.6%  at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 14/34    medium · avg 41%    6.7%  blunt · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 14/34    medium · avg 42%    6.7%  blunt · at its level
 <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (maker)</a>     97.7%  ▄···▄····▄·● beats 3/4      easy · avg 86%      3.9%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 142/276  medium · avg 72%    1.6%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   48.7%  ▃·▁▁▂▁●▅█▇▄▁ beats 25/100   medium · avg 67%    1.2%  sharp · noisy

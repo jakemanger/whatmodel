@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 235B params (22B active) · apache-2.0
 
-**score 65.4** ±0.5 · #139 of 740 · from 92 benchmark results across 12 sources
+**score 65.4** ±0.5 · #140 of 743 · from 92 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▄▅▂▁   #160 of 316     22%      8
-coding          ▁▁▁▃▆▇█▆●▃▃▁    #96 of 472    3.6%      2
-chat &amp; writing  ▁▁▁▃▆▄▆█▇●▇▃   #116 of 404    7.2%      4
-math            ▁▁▃▅█▆▄●▅▂▁▁    #82 of 440     17%      6
+agent tasks     ▁▁▃▆█●▅▅▃▃▂▁   #162 of 319     23%      8
+coding          ▁▁▁▃▆▇█▆●▃▃▁    #97 of 474    3.6%      2
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #117 of 405    7.2%      4
+math            ▁▁▃▅█▆▅●▄▁▁▁    #83 of 440     17%      6
 </pre>
 
-<details><summary>agent tasks · #160 of 316 · 22% of its score</summary>
+<details><summary>agent tasks · #162 of 319 · 23% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">τ²-bench Telecom (maker)</a>             45.6%  ▃·█········● beats 5/6      very hard · avg 10%     11%  sharp · at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Retail</a>                      68.2%  █···●·█·██·█ beats 1/5      medium · avg 36%       3.5%  at its level · several runs
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline</a>                     58.0%  ▄·····●··▄·█ beats 2/5      hard · avg 33%         2.2%  at its level · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline</a>                     58.0%  ▄·····●··▄·█ beats 2/5      hard · avg 33%         2.3%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ-bench Retail (maker)</a>               67.8%  ▁····▃·▂▇●▂▆ beats 17/28    medium · avg 37%       2.0%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ-bench Airline (maker)</a>              46.0%  ▁▁▁·▅▄▁●▇▁▁▇ beats 15/28    hard · avg 23%         1.5%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate (maker)</a>           58.5%  ▁▁▁·▁▁●▃▃▄█▁ beats 9/39     medium · avg 38%       0.8%  at its level
@@ -40,9 +40,9 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #96 of 472 · 3.6% of its score</summary>
+<details><summary>coding · #97 of 474 · 3.6% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -52,31 +52,31 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #116 of 404 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #117 of 405 · 7.2% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">Arena-Hard v2 aggregate (maker)</a>      79.7%  ▁▁··▄▃▁▃█▁▁● beats 19/22    hard · avg 29%    3.0%  sharp · at its level · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1400.3  ▁▁▁▂▃▂▃▆▆●█▃ beats 245/387  avg 1261          2.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1400.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 245/388  avg 1262          2.1%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">IFEval (aggregation unspecified) …</a>   87.8%  ▁▂▄▂▂▄▆●█▅▂▁ beats 93/145   easy · avg 77%    1.4%  several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">IFEval prompt-level strict</a>           89.3%  ███··●·█···█ beats 3/5      easy · avg 73%    0.7%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #82 of 440 · 17% of its score</summary>
+<details><summary>math · #83 of 440 · 17% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">HMMT 2025 (edition unspecified)</a>   83.8%  ▄··▄··▄·▄··● beats 5/5      hard · avg 31%          6.6%  sharp · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">HMMT 2025 (edition unspecified)</a>   83.8%  ▄··▄··▄·▄··● beats 5/5      hard · avg 32%          6.6%  sharp · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">AIME 2025</a>                         92.5%  ▁·▁▁▁▃▅▇█▆●▁ beats 124/134  medium · avg 51%        5.3%  sharp · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">AIME 2024</a>                         93.9%  ▁▂·▂▁▂▂▄█▅●▁ beats 83/86    medium · avg 62%        2.2%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">PolyMATH (maker)</a>                  60.1%  ▁···▃▁·▇█●▄▄ beats 17/23    hard · avg 33%          1.4%  at its level · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          86.7%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 131/207  very hard · avg 7.3%    1.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          86.7%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 131/207  very hard · avg 7.4%    1.4%  sharp · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MATH-500</a>                          99.6%  █···██·█·█·● beats 5/5      very easy · avg 92%     0.5%  maxed out · noisy
 </pre>
 
@@ -88,27 +88,27 @@ test                             result  vs the others in its run    difficulty 
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         80.1%  ▁▁▁▁▂▃▅▄▄●█▃ beats 128/221  hard · avg 42%           10%  sharp · at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro</a>                             84.4%  ▄·▄···●·▄··▄ beats 2/5      medium · avg 56%        4.9%  several runs
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux</a>                           91.4%  ████··●····█ beats 4/5      medium · avg 73%        3.9%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Humanity's Last Exam (maker)</a>         18.2%  ▁▁▁▄▆●▅█▆▁▂▁ beats 47/115   very hard · avg 5.1%    3.3%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">GPQA (subset unspecified) (maker)</a>    81.1%  ▂▁▂▂▄▃▆▃▅█●▃ beats 98/106   hard · avg 49%          3.2%  sharp · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux</a>                           91.4%  ████··●····█ beats 4/5      medium · avg 74%        3.9%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Humanity's Last Exam (maker)</a>         18.2%  ▁▁▁▄▆●▅█▆▁▂▁ beats 47/115   very hard · avg 5.3%    3.3%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">GPQA (subset unspecified) (maker)</a>    81.1%  ▂▁▂▂▄▃▆▃▅█●▃ beats 98/106   hard · avg 49%          3.3%  sharp · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">INCLUDE (maker)</a>                      81.0%  ▂····▂▂▄▄▄●▄ beats 31/36    medium · avg 60%        2.8%  several runs
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench</a>                              32.1%  ▄······●▄·▄█ beats 1/5      very hard · avg 13%     2.7%  at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   60.3%  ▂▃▅▂▆▃█▅█▅●▆ beats 30/34    medium · avg 41%        1.7%  blunt · at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench</a>                              32.1%  ▄······●▄·▄█ beats 1/5      very hard · avg 13%     2.8%  at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   60.3%  ▂▃▅▂▆▃█▅█▅●▆ beats 30/34    medium · avg 42%        1.7%  blunt · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">MMLU-ProX (maker)</a>                    81.0%  ▁·▁▁▁▂▁▃▃█●▄ beats 27/36    medium · avg 61%        1.7%  several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">SuperGPQA (maker)</a>                    64.9%  ▂▁▂▂▅▆▃▇▇▇●▆ beats 41/48    medium · avg 39%        1.7%  at its level · several runs
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   32.1%  ▁▁▂▁▃▄█●▄▅▂▃ beats 25/39    very hard · avg 22%     1.6%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">WritingBench (maker)</a>                 88.3%  ▁·▁▂▁··▅█▂▂● beats 20/20    easy · avg 71%          1.5%  several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                12.0%  █▁▁▁▁●▄▂▃▃▂▁ beats 61/157   very hard · avg 5.6%    1.5%  sharp · noisy
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">Multi-IF (aggregation unspecified…</a>   80.6%  ▁▁▁▁▁▁▃▄█●▁▂ beats 33/41    medium · avg 60%        1.4%  several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                12.0%  █▁▁▁▁●▄▂▃▃▂▁ beats 61/157   very hard · avg 5.6%    1.4%  sharp · noisy
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">LiveBench 2024-11-25 (maker)</a>         78.4%  ▄··▂·▂·▂█▆●▂ beats 12/13    medium · avg 61%        1.3%  several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic</a>                           97.5%  ██··█·██···● beats 5/5      easy · avg 75%          1.1%  maxed out
-<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Creative Writing v3 (maker)</a>          86.1%  ▂····▂▆··▆●▆ beats 11/14    easy · avg 65%          1.1%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Creative Writing v3 (maker)</a>          86.1%  ▂····▂▆··▆●▆ beats 11/14    easy · avg 66%          1.1%  several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          9.0%  ●·▂▁▆▆▆▆▅▂▂▁ beats 5/83     very hard · avg 9.4%    0.9%  sharp · too hard for it · noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench</a>                            21.5%  █····●█·██·█ beats 1/5      very hard · avg 8.4%    0.9%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    40.4%  ▁▂▂▂▅●▄▃▂··▁ beats 38/91    very hard · avg 7.2%    0.8%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench</a>                            21.5%  █····●█·██·█ beats 1/5      very hard · avg 8.5%    0.9%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    40.4%  ▁▂▂▂▅●▄▃▂··▁ beats 38/91    very hard · avg 7.4%    0.8%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME</a>                           71.5%  █··▄····▄··● beats 4/5      medium · avg 42%        0.6%  at its level
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problems, A…</a>    8.0%  █·●████··█·█ beats 1/7      very hard · avg 4.3%    0.3%  typical
-<a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    56.2%  ▄··▄·●·▄▄█·▄ beats 2/7      medium · avg 36%        0.3%  blunt · at its level
+<a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    56.2%  ▄··▄·●·▄▄█·▄ beats 2/7      medium · avg 37%        0.3%  blunt · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">miniF2F (pass@1)</a>                     11.9%  ●█······▄··▄ beats 1/5      very hard · avg 14%     0.1%  blunt · at its level · noisy
 </pre>
 
@@ -127,7 +127,7 @@ source                                    results  share of the score
 <a name="card-qwen--qwen3.5-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Qwen/Qwen3.5-27B model card (submitted …</a>        5    8% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        5    8% ▇
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=22">Qwen (submitted / maker-reported)</a>               1    4% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    2% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    2% ▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1    2% ▇
 <a name="paper-2606.05104v2-kina"></a><a href="https://arxiv.org/html/2606.05104v2">Knowledge Index of Noah's Ark</a>                   1    2% ▇
 <a name="paper-2605.09063v3"></a><a href="https://arxiv.org/html/2605.09063v3">Soohak: A Mathematician-Curated Benchma…</a>        2    1% ▇

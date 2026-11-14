@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 41.1** ±1.5 · #551 of 740 · from 10 benchmark results across 7 sources
+**score 41.1** ±1.5 · #554 of 743 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆●█▆▆▃▃▁   #339 of 472     14%      4
-chat &amp; writing  ▁▁▁●▆▄▆█▇▇▇▃   #373 of 404     74%      3
+coding          ▁▁▁▃▆●█▆▆▃▃▁   #343 of 474     14%      4
+chat &amp; writing  ▁▁▁●▅▄▆█▇▇▇▃   #374 of 405     74%      3
 </pre>
 
-<details><summary>coding · #339 of 472 · 14% of its score</summary>
+<details><summary>coding · #343 of 474 · 14% of its score</summary>
 
 Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall.
 
@@ -28,20 +28,20 @@ Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qw
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   45.9%  ▃··▁▂▂▃▂●▃▄▂ beats 22/47  medium · avg 52%    5.3%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    7.7%  ▁▁▁▁●▁▂▂▃█▅▄ beats 6/47   hard · avg 32%      4.4%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   30.7%  █▂▁▁▂▂▂▃●▅▅▇ beats 26/47  hard · avg 33%      3.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   30.7%  █▂▁▁▂▂▂▃●▅▅▇ beats 26/47  hard · avg 34%      3.9%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.9%  ▁▁▁······▁▃● beats 39/47  easy · avg 67%      0.2%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #373 of 404 · 74% of its score</summary>
+<details><summary>chat &amp; writing · #374 of 405 · 74% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   15.4%  ▂▁▁●█▅▄▃▃▅▃▁ beats 9/60    medium · avg 47%     30%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.0  ▁▁▁●▃▂▃▆▆▇█▃ beats 27/387  avg 1261             23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.0  ▁▁▁●▃▂▃▆▆▇█▃ beats 27/388  avg 1262             22%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1072.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 34/95   avg 1189             21%  typical
 </pre>
 
@@ -65,7 +65,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   30% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   23% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   21% ▇▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   14% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇

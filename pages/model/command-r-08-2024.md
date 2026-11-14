@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 47.3** ±0.9 · #425 of 740 · from 16 benchmark results across 9 sources
+**score 47.3** ±0.9 · #427 of 743 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▄▅▂▁   #296 of 316*    5.9%      1
-coding          ▁▁▁▃▆●█▆▆▃▃▁    #350 of 472     37%      6
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #259 of 404*    8.4%      1
+agent tasks     ▁▁●▆█▄▅▅▃▃▂▁   #300 of 319*    5.9%      1
+coding          ▁▁▁▃▆●█▆▆▃▃▁    #352 of 474     37%      6
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #259 of 405*    8.2%      1
 </pre>
 
-<details><summary>agent tasks · #296 of 316 · 5.9% of its score</summary>
+<details><summary>agent tasks · #300 of 319 · 5.9% of its score</summary>
 
-Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+Beats [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -32,7 +32,7 @@ test                        result  vs the others in its run  difficulty      co
 
 </details>
 
-<details><summary>coding · #350 of 472 · 37% of its score</summary>
+<details><summary>coding · #352 of 474 · 37% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -43,18 +43,18 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (maker)</a>                        74.3%  █●·██···████ beats 1/7    easy · avg 79%          4.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 18%          3.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (maker)</a>               47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 48%        3.0%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 5.7%    2.5%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 5.8%    2.6%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #259 of 404 · 8.4% of its score</summary>
+<details><summary>chat &amp; writing · #259 of 405 · 8.2% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.4  ▁▁▁▂▃▂●▆▆▇█▃ beats 107/387  avg 1261      8.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.4  ▁▁▁▂▃▂●▆▆▇█▃ beats 108/388  avg 1262      8.2%  blunt
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ source                                    results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   33% ▇▇▇▇
 <a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (submitted / maker-reported)</a>             7   31% ▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   17% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇

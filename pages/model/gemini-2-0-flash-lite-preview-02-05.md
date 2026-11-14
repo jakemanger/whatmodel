@@ -6,7 +6,7 @@
 
 Google · released 2025-02 · closed weights
 
-**score 59.4** ±2.3 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 59.4** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #191 of 476*     56%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #192 of 477*     56%      1
 vision &amp; documents  ▁▁▃▃▂▃●▄▇██▄   #130 of 190*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #191 of 476 · 56% of its score</summary>
+<details><summary>chat &amp; writing · #192 of 477 · 56% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1353.6  ▁▁▁▂▃▂▃▆●▇█▃ beats 198/387  avg 1261       56%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1353.7  ▁▁▁▂▃▂▃▆●▇█▃ beats 198/388  avg 1262       56%  blunt
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1136.0  ▁▁▂▂▂▂▃●▅▅█▇ beats 41/152  avg 1063       39%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1136.0  ▁▁▂▂▂▂▃●▅▅█▇ beats 41/152  avg 1064       39%  blunt
 </pre>
 
 </details>
@@ -57,9 +57,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
-prior: pull toward the middle                 2% ▇
+prior: pull toward the middle                 3% ▇
 weighted average                            = 59.4
 </pre>
 

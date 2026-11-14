@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.19B params · apache-2.0
 
-**score 47.4** ±0.9 · #424 of 740 · from 24 benchmark results across 3 sources
+**score 47.3** ±0.9 · #431 of 743 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,8 +18,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 agent tasks     ●·▄········█       #4 of 4*    1.3%      1
 coding          ●···▄······▄        #4 of 4     32%      7
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃   #214 of 404*    4.8%      2
-math            ▁▁▃▅●▆▄█▅▂▁▁    #282 of 440     25%      5
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #215 of 405*    4.8%      2
+math            ▁▁▃▅●▆▅█▄▁▁▁    #282 of 440     25%      5
 </pre>
 
 <details><summary>agent tasks · #4 of 4 · 1.3% of its score</summary>
@@ -50,7 +50,7 @@ test                  result  vs the others in its run    difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #214 of 404 · 4.8% of its score</summary>
+<details><summary>chat &amp; writing · #215 of 405 · 4.8% of its score</summary>
 
 Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -104,7 +104,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 47.4
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-small model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.0-h-small.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

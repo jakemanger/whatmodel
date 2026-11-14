@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
-**score 25.8** ±0.8 · #691 of 740 · from 37 benchmark results across 10 sources
+**score 25.9** ±0.8 · #694 of 743 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 76.0%  ▂·▄▄·▄▂▆▂▄●▄ beats 15/19   easy · avg 87%         8.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.6%  ▂▂▄▂·▂·▆·▂●▂ beats 10/14   easy · avg 89%         4.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▃··▅▃▃▅▅▅█●█ beats 16/19   very easy · avg 87%    4.1%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 48%       3.9%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 49%       3.9%  typical
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 90.8%  ▂··▂▃▂▂▆▃▃●▂ beats 17/19   very easy · avg 98%    3.8%  blunt · several runs
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   28.4%  ██···●█····█ beats 2/4     easy · avg 66%         2.3%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   51.5%  ▁····▁●·▁·▃█ beats 2/11    hard · avg 63%         1.8%  too hard for it
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="acl-2023-findings-emnlp-100"></a><a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA: A New Dataset for Testing the …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 25.8
+weighted average                                   = 25.9
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-7-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Generative Calibration for In-context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-152-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt))</sub>

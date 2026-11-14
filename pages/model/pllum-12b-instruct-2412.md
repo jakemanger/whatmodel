@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 45.9** ±2.6 · #614 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.9** ±2.6 · #614 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,9 +21,9 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.9%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 37/95  medium · avg 65%     57%  at its level
-<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   35.9%  ▄·●▂▂··█▂▄·▄ beats 2/13   hard · avg 47%       40%  at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.9%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 37/95  easy · avg 65%     57%  at its level
+<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   35.9%  ▄·●▂▂··█▂▄·▄ beats 2/13   hard · avg 47%     40%  at its level
 </pre>
 
 </details>

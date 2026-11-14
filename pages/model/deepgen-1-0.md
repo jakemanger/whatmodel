@@ -6,7 +6,7 @@
 
 DeepGen Team · released 2026-02 · apache-2.0
 
-**score 44.4** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 44.3** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▁▂█▇▇▅█●▂▃▁▂   #44 of 159*     13%      1
-image to image / edit…  ▁▁▁▃●▃█▅▃▄▂▁    #68 of 83*     55%      1
+text to image           ▁▂█▇▇▅█●▂▃▁▂   #45 of 160*     13%      1
+image to image / edit…  ▁▁▁▃●▃█▅▃▅▂▁    #69 of 84*     55%      1
 </pre>
 
-<details><summary>text to image · #44 of 159 · 13% of its score</summary>
+<details><summary>text to image · #45 of 160 · 13% of its score</summary>
 
 Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md), [Recraft V4.1 Pro](recraft-v4-1-pro.md) here, though they rank higher overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>image to image / editing · #68 of 83 · 55% of its score</summary>
+<details><summary>image to image / editing · #69 of 84 · 55% of its score</summary>
 
 Beats [FLUX1.1 \[pro\]](flux-1-1-pro.md) here, though they rank higher overall. Trails [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   29% ▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   13% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 44.4
+weighted average                                   = 44.3
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>

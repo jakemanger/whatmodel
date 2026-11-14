@@ -6,7 +6,7 @@
 
 Google · released 2024-08 · proprietary
 
-**score 54.0** ±0.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 53.9** ±0.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▆▃▂▁   #304 of 542*     28%      2
+coding  ▁▁▁▃▅▆●▇▆▃▃▁   #305 of 544*     28%      2
 math    ▁▂▃▆█●▅▇▄▁▁▁   #308 of 540*    8.7%      1
 </pre>
 
-<details><summary>coding · #304 of 542 · 28% of its score</summary>
+<details><summary>coding · #305 of 544 · 28% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ source                               results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                  1   28% ▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>          1   12% ▇
 prior: pull toward the middle                   0% ▇
-weighted average                              = 54.0
+weighted average                              = 53.9
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

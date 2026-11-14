@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 3.3B params (0.8B active) · apache-2.0
 
-**score 36.7** ±1.0 · #619 of 740 · from 16 benchmark results across 2 sources
+**score 36.7** ±1.0 · #622 of 743 · from 16 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▆▆▃▃▁   #421 of 472*     17%      2
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #357 of 404*    3.6%      1
-math            ▁▁▃●█▆▄█▅▂▁▁   #391 of 440*     18%      2
+coding          ▁▁▁▃●▇█▆▆▃▃▁   #423 of 474*     17%      2
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #358 of 405*    3.6%      1
+math            ▁▁▃●█▆▅█▄▁▁▁   #391 of 440*     18%      2
 </pre>
 
-<details><summary>coding · #421 of 472 · 17% of its score</summary>
+<details><summary>coding · #423 of 474 · 17% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test               result  vs the others in its run  difficulty        counts  w
 
 </details>
 
-<details><summary>chat &amp; writing · #357 of 404 · 3.6% of its score</summary>
+<details><summary>chat &amp; writing · #358 of 405 · 3.6% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Comm
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (maker)</a>                       47.5%  █▄····●··█▄▄ beats 3/7    easy · avg 80%       10%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (maker)</a>                       47.5%  █▄····●··█▄▄ beats 3/7    easy · avg 81%       10%  sharp · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (maker)</a>   19.9%  ▄···▄●▄▄··█▄ beats 2/7    medium · avg 49%    8.1%  typical
 </pre>
 

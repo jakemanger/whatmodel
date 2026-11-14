@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▅▄▄▁▁   #233 of 357*     11%      2
-coding       ▁▁▁▃▅▇█●▆▃▂▁   #165 of 542*     39%      2
-math         ▁▂▃▆██●▇▄▁▁▁   #196 of 540*     22%      2
-web search   ▂▁▂▆▅█▄▄▁●▁▁      #6 of 97*    8.3%      1
+agent tasks  ▁▁▂▆●▄▅▅▃▂▂▁   #235 of 360*     11%      2
+coding       ▁▁▁▃▅▆█●▆▃▃▁   #167 of 544*     40%      2
+math         ▁▂▃▆█▇●▇▄▁▁▁   #196 of 540*     22%      2
+web search   ▂▁▂▆▅█▄▄▁●▁▁      #6 of 97*    8.4%      1
 </pre>
 
-<details><summary>agent tasks · #233 of 357 · 11% of its score</summary>
+<details><summary>agent tasks · #235 of 360 · 11% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18   very hard · avg 5.6%    8.3%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18   very hard · avg 5.7%    8.4%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              63.3%  ▁▁▁▁▁▃▅█●▄▁▁ beats 89/114  medium · avg 51%        2.5%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #165 of 542 · 39% of its score</summary>
+<details><summary>coding · #167 of 544 · 40% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   53.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 29/49  very hard · avg 8.0%     32%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   53.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 29/49  very hard · avg 8.0%     33%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   60.2%  ▁··▁·▁▁▁●█▇█ beats 14/45  hard · avg 30%          7.0%  at its level
 </pre>
 
@@ -53,18 +53,18 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 29%           13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▆█▄▃▆ beats 82/207  very hard · avg 7.3%     10%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▆█▄▃▆ beats 82/207  very hard · avg 7.4%     10%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>web search · #6 of 97 · 8.3% of its score</summary>
+<details><summary>web search · #6 of 97 · 8.4% of its score</summary>
 
 Beats [Claude Fable 5.2](claude-fable-5-2.md), [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18  very hard · avg 5.6%    8.3%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18  very hard · avg 5.7%    8.4%  sharp
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▃▅▄●▆█▃ beats 114/221  hard · avg 39%     20%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▃▅▄●▆█▃ beats 114/221  hard · avg 39%     19%  sharp · at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1037          7.5%  typical
 </pre>
 
@@ -86,9 +86,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   42% ▇▇▇▇▇
-<a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   32% ▇▇▇▇
+<a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   33% ▇▇▇▇
 <a name="paper-2508.00828v1-finance-agent-benchmark"></a><a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark</a>                         1    8% ▇
-<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    7% ▇
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    8% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇

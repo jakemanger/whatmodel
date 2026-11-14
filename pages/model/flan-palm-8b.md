@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●██▅▇▄▁▁▁   #467 of 540*     17%      1
+math  ▁▂▃●█▇▅▇▄▁▁▁   #467 of 540*     17%      1
 </pre>
 
 <details><summary>math · #467 of 540 · 17% of its score</summary>

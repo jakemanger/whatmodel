@@ -4,37 +4,111 @@
 
 # Ripple-65B Preview
 
-Ricursive Intelligence · released 2026-11
+Ricursive Intelligence · released 2026-11 · 65B params · apache-2.0
 
-BF16 instruction-tuned checkpoint (this repo, created 2026-11-04, 129.6 GB). Ricursive also publishes Ripple-65B-Preview-NVFP4 ('Experimental'; 'NVFP4 for the MLP layers while keeping attention in BF16'; 57.2 GB; its card gives no serving command), the pretrain-only Ripple-65B-Base-Preview (not added) and a DFlash2 draft. Text-only. Card: 'Our Preview release has gone through relatively light posttraining, with a focus on agentic coding.' Launch blog (ricursive.com/ripple): 'available on Hugging Face, Together AI, GMI Cloud, OpenRouter, and Fireworks' - no first-party API and the host pages were not checked, so api is null. The BF16 repo's card has no vLLM/SGLang command (only custom inference/server code), so local routes are the official Ollama library tags.
+**score 44.0** ±7.2 · #675 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
-[Catalogue source](https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md)
+## What it's good at
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+<sub>● marks Ripple-65B Preview among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                               result  reported by  source
-MMLU                                89.6%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-MMLU-Pro                            84.2%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-GPQA Diamond                        85.2%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-AIME 2024                           97.1%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-AIME 2025                           98.3%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-AIME 2026                           95.0%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-HMMT February 2026                  90.5%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-Terminal-Bench 2.1                  80.5%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-SWE-bench Verified                  76.5%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-SWE-bench Pro (split unspecified)   61.4%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-DeepSWE v1.1 (resolved)             44.3%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-SciCode (level unspecified)         39.4%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-τ³-bench Banking                    31.3%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-AutomationBench (Public)            36.4%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-MCP-Atlas (public set)              71.7%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
-IFBench (aggregation unspecified)   79.2%  maker        <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">ricursiveAI/Ripple-65B-Previe…</a>
+task                   rank  counts  tests
+agent tasks  not ranked yet       —      6
+coding       not ranked yet       —      4
+math         not ranked yet       —      4
 </pre>
 
-<sub>Licences: ricursiveAI/Ripple-65B-Preview model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<details><summary>agent tasks · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Verified (maker)</a>           76.5%  ▁▁▁▁▁▁▂▄█●▁▁ beats 114/140  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">Terminal-Bench 2.1 (maker)</a>           80.5%  ▁·▁·▁▁▄▃▅█●█ beats 46/68    very hard · avg 7.5%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Pro (split unspecified)…</a>   61.4%  ▁·▁▁▁▁▁▄●▁▁▁ beats 48/64    very hard · avg 4.0%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MCP-Atlas (public set) (maker)</a>       71.7%  ▂·▁▂▂·▁▃█●▆▃ beats 27/41    hard · avg 31%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">DeepSWE v1.1 (resolved) (maker)</a>      44.3%  ▂····●▁▁▄█▆█ beats 4/36                                —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">τ³-bench Banking (maker)</a>             31.3%  ▂▂·▅█▂▃▃▃▆▂● beats 23/25    very hard · avg 5.4%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Verified (maker)</a>           76.5%  ▁▁▁▁▁▁▂▄█●▁▁ beats 114/140  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Pro (split unspecified)…</a>   61.4%  ▁·▁▁▁▁▁▄●▁▁▁ beats 48/64    very hard · avg 4.0%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SciCode (level unspecified) (make…</a>   39.4%  ▁····▃▃▄▄●▆▃ beats 27/42    very hard · avg 13%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">DeepSWE v1.1 (resolved) (maker)</a>      44.3%  ▂····●▁▁▄█▆█ beats 4/36                                —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · 0.0% of its score</summary>
+
+<pre>
+test                        result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2025 (maker)</a>            98.3%  ▁·▁▁▁▃▅▇█▆▃● beats 134/134  medium · avg 43%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2024 (maker)</a>            97.1%  ▁▂·▂▁▂▂▄█▅▆● beats 86/86    medium · avg 59%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2026 (maker)</a>            95.0%  ▁▁▁▂▂▂▆█●▂·▁ beats 40/54    medium · avg 49%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">HMMT February 2026 (maker)</a>   90.5%  ▃▃▁▄▇▇▇█●▃▃▃ beats 32/38    hard · avg 31%         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/5fca40ef224413d3a36e7e5592873fe8b67d83f8/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▂▄▂▃▃▂▇▇█▇▁ beats 1/47     very hard · avg 14%     77%  typical
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">GPQA Diamond (maker)</a>                 85.2%  ▁▁▁▁▂▃▅▆▇●█▂ beats 235/336  hard · avg 39%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MMLU (maker)</a>                         89.6%  ▁▁▁▁▁▂▂▅██▆● beats 205/215  medium · avg 73%          —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MMLU-Pro (maker)</a>                     84.2%  ▁▁·▁▁▁▃▂▄▅●▁ beats 163/189  medium · avg 55%          —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">IFBench (aggregation unspecified)…</a>   79.2%  ▂▆▂▃▄▄▂▃▄▆█● beats 79/88    medium · avg 44%          —  not counted yet: no other model in the …
+<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AutomationBench (Public) (maker)</a>     36.4%  █····▄··●·▄▄ beats 3/5                                —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                             results  share of the score
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/5fca40ef224413d3a36e7e5592873fe8b67d83f8/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                23% ▇▇▇
+weighted average                            = 44.0
+</pre>
+
+<sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+
+<details><summary>Not counted (16)</summary>
+
+<pre>
+source                  test                            score  why
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MMLU</a>                            89.6%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MMLU-Pro</a>                        84.2%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">GPQA Diamond</a>                    85.2%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2024</a>                       97.1%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2025</a>                       98.3%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AIME 2026</a>                       95.0%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">HMMT February 2026</a>              90.5%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">Terminal-Bench 2.1</a>              80.5%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Verified</a>              76.5%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SWE-bench Pro (split unspecif…</a>  61.4%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">DeepSWE v1.1 (resolved)</a>         44.3%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">SciCode (level unspecified)</a>     39.4%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">τ³-bench Banking</a>                31.3%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">AutomationBench (Public)</a>        36.4%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">MCP-Atlas (public set)</a>          71.7%  too few models have it yet
+ricursiveAI/Ripple-65…  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/b172323ffd63e62de9ce1ba3830dfffe493c7671/README.md">IFBench (aggregation unspecif…</a>  79.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -57,4 +131,4 @@ Other versions: nvfp4-mlx (~39.5 GB, Mac only) `ollama run ripple-preview:65b-nv
 
 Model repository and documentation: [huggingface.co/ricursiveAI](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ripple-65b-preview)
+[interactive version](https://whatmodel.sh/model/ripple-65b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

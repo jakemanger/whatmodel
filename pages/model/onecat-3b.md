@@ -6,7 +6,7 @@
 
 Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
-**score 24.1** ±5.3 · #143 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.0** ±5.3 · #144 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ●▁·▃▂▃█▆▃▅▂▂   #63 of 64*     88%      1
+image to image / edit…  ●▁·▃▂▃█▆▃▆▂▂   #64 of 65*     88%      1
 </pre>
 
-<details><summary>image to image / editing · #63 of 64 · 88% of its score</summary>
+<details><summary>image to image / editing · #64 of 65 · 88% of its score</summary>
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       12% ▇
-weighted average                                   = 24.1
+weighted average                                   = 24.0
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>

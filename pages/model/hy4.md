@@ -6,7 +6,7 @@
 
 Tencent · released 2026-11 · proprietary
 
-**score 77.2** ±1.8 · #21 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 77.6** ±1.4 · #22 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,17 +15,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <sub>● marks Hy4 among every model on that task or test, worst to best.</sub>
 
 <pre>
-task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▅▅▄▄▄●▁   #20 of 353*     99%      1
+task         vs the others        rank  counts  tests
+agent tasks  ▁▁▃▆█▄▅▅▃▃●▁   #19 of 319     99%      3
 </pre>
 
-<details><summary>agent tasks · #20 of 353 · 99% of its score</summary>
+<details><summary>agent tasks · #19 of 319 · 99% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank lower overall.
+Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [DeepSeek V4.1 Flash 1017](deepseek-v4-1-flash-1017.md) here, though they rank lower overall.
 
 <pre>
-test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0466 IPS  ▁▁▁▁▄▄█●▂▁▁▁ beats 47/61  avg -0.395 IPS     99%  sharp
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0526 IPS  ▁▁▁▃▃█●▁▁▁·▁ beats 49/63  avg -0.403 IPS           60%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-openrouter-tencent-hy4-max-claude-code.json">Terminal-Bench 4.0</a>                       39.1%  ▁····▁▄▇▅●██ beats 16/30  very hard · avg 0.7%     25%  sharp · at its level
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-12-4-1-0-hy4-max-claude-code-regrade.json">Terminal-Bench 4.1</a>                       37.9%  ▂▂▂··▅·▂▅●▃▆ beats 12/20  very hard · avg 1.0%     15%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -35,13 +37,14 @@ test                                    result  vs the others in its run  diffic
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 77.2
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   60% ▇▇▇▇▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-10-openrouter-tencent-hy4-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        2   39% ▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 77.6
 </pre>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.3** ±1.2 · #303 of 740 · from 8 benchmark results across 2 sources · † no independently run results verified
+**score 54.2** ±1.2 · #306 of 743 · from 8 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆▇█●▆▃▃▁   #187 of 472*    3.9%      1
-math    ▁▁▃▅█▆●█▅▂▁▁    #192 of 440     57%      3
+coding  ▁▁▁▃▆▇█●▆▃▃▁   #189 of 474*    3.9%      1
+math    ▁▁▃▅█▆●█▄▁▁▁    #191 of 440     57%      3
 </pre>
 
-<details><summary>coding · #187 of 472 · 3.9% of its score</summary>
+<details><summary>coding · #189 of 474 · 3.9% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                      result  vs the others in its run  difficulty        co
 
 </details>
 
-<details><summary>math · #192 of 440 · 57% of its score</summary>
+<details><summary>math · #191 of 440 · 57% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   61% ▇▇▇▇▇▇▇
 <a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   38% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.3
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

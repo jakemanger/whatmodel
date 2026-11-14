@@ -6,7 +6,7 @@
 
 THUDM · released 2022-04 · apache-2.0
 
-**score 1.9** ±4.0 · #146 of 146 · from 4 benchmark results across 3 sources
+**score 1.8** ±4.0 · #147 of 147 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #115 of 128*    0.4%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #116 of 129*    0.4%      1
 </pre>
 
-<details><summary>text to image · #115 of 128 · 0.4% of its score</summary>
+<details><summary>text to image · #116 of 129 · 0.4% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [LCM-SSD-1B](lcm-ssd-1b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   26.5%  ▃··▃▅·▅·●▅█▅ beats 6/14   hard · avg 28%    0.4%  blunt
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   26.5%  ▃··▃▅·▅·●▅█▅ beats 6/14   hard · avg 27%    0.4%  blunt
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                      result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  74.0000 wins  ●·········█▄ beats 0/3    avg 524.346 wins        63%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  74.0000 wins  ●·········█▄ beats 0/3    avg 524.947 wins        63%  sharp
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>          7.4%  ●····█▁·▁··▁ beats 0/9    very easy · avg 92%     17%  sharp · noisy
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>   26.2000 FID  ●··········█ beats 0/2    avg 7.956 FID           13%  blunt · small run
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>   26.2000 FID  ●··········█ beats 0/2    avg 7.926 FID           13%  blunt · small run
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   17% ▇▇
 <a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    0% ▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 1.9
+weighted average                                   = 1.8
 </pre>
 
 <sub>Licences: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>

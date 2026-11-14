@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-06 · proprietary
 
-**score 70.4** ±1.8 · #76 of 740 · from 4 benchmark results across 1 source
+**score 70.4** ±1.8 · #79 of 743 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█▆▄█●▂▁▁   #60 of 440*    9.1%      1
+math  ▁▁▃▅█▆▅█●▁▁▁   #60 of 440*    9.3%      1
 </pre>
 
-<details><summary>math · #60 of 440 · 9.1% of its score</summary>
+<details><summary>math · #60 of 440 · 9.3% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Doubao Seed 2.1 Turbo (260628)](doubao-seed-2-1-turbo-260628.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   95.6%  ▃▃▄▃▃▃▇▆█●▃▆ beats 163/207  very hard · avg 7.3%    9.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   95.6%  ▃▃▄▃▃▃▇▆█●▃▆ beats 163/207  very hard · avg 7.4%    9.3%  sharp · noisy
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test                      result  vs the others in its run    difficulty        
 test                   result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   21.0%  █▁▁▁▁▂●▂▃▃▂▁ beats 87/157   very hard · avg 5.6%     42%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            89.3%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 171/221  hard · avg 39%           33%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       44.7%  ▁▂▂▂▅●▄▃▂··▁ beats 47/91    very hard · avg 7.2%     14%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       44.7%  ▁▂▂▂▅●▄▃▂··▁ beats 47/91    very hard · avg 7.4%     15%  at its level
 </pre>
 
 </details>

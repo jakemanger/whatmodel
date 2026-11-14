@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 29.5** ±0.8 · #674 of 740 · from 12 benchmark results across 3 sources
+**score 29.5** ±0.8 · #677 of 743 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆▇█▆▆▃▃▁    #454 of 472     96%      9
-math    ▁▁●▅█▆▄█▅▂▁▁   #411 of 440*    3.4%      1
+coding  ▁▁●▃▆▇█▆▆▃▃▁    #456 of 474     96%      9
+math    ▁▁●▅█▆▅█▄▁▁▁   #411 of 440*    3.4%      1
 </pre>
 
-<details><summary>coding · #454 of 472 · 96% of its score</summary>
+<details><summary>coding · #456 of 474 · 96% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           27.5%  ●▅█▃▃▅·▃▃▅·▅ beats 0/15   medium · avg 57%    3.6%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           27.0%  ●·▃██▅▃·▃▃▅▃ beats 0/15   medium · avg 54%    3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   11.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 2/35   medium · avg 46%    3.0%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    6.4%  ▁·▁●▄██▄█▁▅▅ beats 2/35   medium · avg 52%    2.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    6.4%  ▁·▁●▄██▄█▁▅▅ beats 2/35   medium · avg 52%    2.0%  sharp · too hard for it
 </pre>
 
 </details>

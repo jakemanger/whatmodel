@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 32.8B params · mit
 
-**score 55.5** ±0.8 · #273 of 740 · from 28 benchmark results across 11 sources
+**score 55.4** ±0.8 · #276 of 743 · from 28 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #259 of 472     21%      8
-math    ▁▁▃▅█▆●█▅▂▁▁   #184 of 440     36%      7
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #261 of 474     21%      8
+math    ▁▁▃▅█▆●█▄▁▁▁   #184 of 440     36%      7
 </pre>
 
-<details><summary>coding · #259 of 472 · 21% of its score</summary>
+<details><summary>coding · #261 of 474 · 21% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   57.2%  ▄····▄▄··▄●▄ beats 4/6    medium · avg 42%    5.4%  at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>    8.7%  ●··▁·▁▁▁▆█▇█ beats 0/45   hard · avg 30%      4.2%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>    8.7%  ●··▁·▁▁▁▆█▇█ beats 0/45   hard · avg 30%      4.3%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     32.3%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 7/31   medium · avg 41%    3.1%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.6%  █▂▁▁▂▂▂▃▅▅▅● beats 44/47  hard · avg 33%      2.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.6%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 21/47  hard · avg 32%      2.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.6%  █▂▁▁▂▂▂▃▅▅▅● beats 44/47  hard · avg 34%      2.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.6%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 21/47  hard · avg 32%      2.1%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   76.4%  ▃··▁▂▂▃▂█▃●▂ beats 39/47  medium · avg 52%    1.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2</a>                     71.2%  ▄··█·▄···▄▄● beats 6/7    medium · avg 60%    1.7%  at its level · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.2%  ▁▁▁······▁▃● beats 24/47  easy · avg 67%      0.1%  blunt · at its level · noisy
@@ -46,8 +46,8 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [M
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>                    72.6%  ▃·▃·▃▃···●·▃ beats 6/7     medium · avg 57%         13%  sharp · at its level · several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>                     94.3%  ▄·▄▄·▄▄●···▄ beats 5/7     very easy · avg 86%     7.9%  several runs
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025</a>                            50.0%  ▁·▁▁▁▃●▇█▆▃▁ beats 36/134  medium · avg 37%        7.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             55.6%  ▃▃▄▃▃▃●▆█▄▃▆ beats 83/207  very hard · avg 7.3%    4.1%  sharp · noisy
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025</a>                            50.0%  ▁·▁▁▁▃●▇█▆▃▁ beats 36/134  medium · avg 37%        7.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             55.6%  ▃▃▄▃▃▃●▆█▄▃▆ beats 83/207  very hard · avg 7.4%    4.1%  sharp · noisy
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>          38.9%  ▅···▃▃···●▃█ beats 4/8     hard · avg 24%          1.7%  at its level
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   75.9%  ▄█·●····▄▄·█ beats 3/7     easy · avg 77%          1.2%  typical
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified)</a>            92.6%  ▅····▃▃··●▃█ beats 4/8     easy · avg 73%          1.0%  noisy
@@ -88,7 +88,7 @@ source                                    results  share of the score
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    2% ▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.5
+weighted average                                   = 55.4
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

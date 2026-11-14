@@ -6,7 +6,7 @@
 
 Midjourney · released 2025-04 · closed weights
 
-**score 40.1** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.0** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂█●▇▅█▇▂▃▁▂   #117 of 159*     95%      2
+text to image  ▁▂█●▇▅█▇▂▃▁▂   #118 of 160*     95%      2
 </pre>
 
-<details><summary>text to image · #117 of 159 · 95% of its score</summary>
+<details><summary>text to image · #118 of 160 · 95% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md), [Stable Diffusion 3 Medium](sd-3-medium.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 40.1
+weighted average                                   = 40.0
 </pre>
 
 <sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>

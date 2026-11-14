@@ -6,7 +6,7 @@
 
 Large World Model (UC Berkeley) · released 2024-02
 
-**score 42.9** ±4.9 · #705 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.9** ±4.9 · #706 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 67.7** ±3.0 · #113 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 67.7** ±3.1 · #114 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▃   #77 of 475*     93%      1
+chat &amp; writing  ▁▁▁▄▆▅▇█▆▆●▃   #80 of 476*     93%      1
 </pre>
 
-<details><summary>chat &amp; writing · #77 of 475 · 93% of its score</summary>
+<details><summary>chat &amp; writing · #80 of 476 · 93% of its score</summary>
 
-Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1434.4  ▁▁▁▂▃▂▃▆▆▇●▃ beats 295/387  avg 1261       93%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1434.4  ▁▁▁▂▃▂▃▆▆▇●▃ beats 295/388  avg 1262       93%  blunt
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.2%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 89/140  very easy · avg 94%    2.6%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.2%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 89/140  very easy · avg 94%    2.7%  blunt · maxed out · noisy
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              1   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              1   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    3% ▇
 prior: pull toward the middle                 4% ▇
 weighted average                            = 67.7

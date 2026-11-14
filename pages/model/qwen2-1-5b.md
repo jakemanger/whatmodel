@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 33.4** ±0.8 · #647 of 740 · from 14 benchmark results across 7 sources
+**score 33.3** ±0.8 · #650 of 743 · from 14 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁●▃▆█▅▅▅▄▅▂▁   #311 of 316*    1.3%      1
+agent tasks     ▁●▃▆█▄▅▅▃▃▂▁   #314 of 319*    1.3%      1
 coding          █··········●       #1 of 2*    3.9%      1
 chat &amp; writing  █··········●       #1 of 2*    1.3%      1
-math            ▁▁●▅█▆▄█▅▂▁▁    #422 of 440     44%      4
+math            ▁▁●▅█▆▅█▄▁▁▁    #422 of 440     44%      4
 </pre>
 
-<details><summary>agent tasks · #311 of 316 · 1.3% of its score</summary>
+<details><summary>agent tasks · #314 of 319 · 1.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ source                                    results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.4
+weighted average                                   = 33.3
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

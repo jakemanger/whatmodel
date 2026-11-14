@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 59.5** ±2.4 · #45 of 146 · from 7 benchmark results across 3 sources
+**score 59.5** ±2.4 · #46 of 147 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #31 of 128     84%      6
+text to image  ▂▅▅▃▄▄●▃▂▁▁▁   #32 of 129     84%      6
 </pre>
 
-<details><summary>text to image · #31 of 128 · 84% of its score</summary>
+<details><summary>text to image · #32 of 129 · 84% of its score</summary>
 
 Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Cosmos3-Super-Text2Image](cosmos3-super-text2image.md), [Nano Banana (Gemini 2.5 Flash Image)](nano-banana.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   896.9  ▁▁●▄▂█▂▁▁▂▁▁ beats 3/34   avg 878        14%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   896.9  ▁▁●▄▂█▂▁▁▂▁▁ beats 3/34   avg 879        14%  typical
 </pre>
 
 </details>

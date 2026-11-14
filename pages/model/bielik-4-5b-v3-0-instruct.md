@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 4.76B params · apache-2.0
 
-**score 48.4** ±2.0 · #408 of 740 · from 5 benchmark results across 4 sources
+**score 48.4** ±2.0 · #409 of 743 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   67.5%  ▁▂▂▂▃█●▆▅▄▂▃ beats 49/95   medium · avg 65%     33%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   67.5%  ▁▂▂▂▃█●▆▅▄▂▃ beats 49/95   easy · avg 65%       33%  at its level
 <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   37.8%  ▄·▂●▂··█▂▄·▄ beats 3/13    hard · avg 47%       26%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   56.2%  ▁··▁▁▂▂▆▅●█▆ beats 32/70   medium · avg 62%     26%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   72.2%  ▃·▁▁▂▁▂▅●▇▄▁ beats 56/100  medium · avg 67%    8.4%  sharp · at its level · noisy

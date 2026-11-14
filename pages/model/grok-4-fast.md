@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-09 · closed weights
 
-**score 60.2** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 5 sources
+**score 60.1** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▄●▅▄▄▁▁   #139 of 357*    6.9%      1
-coding              ▁▁▁▃▅▇●▇▆▃▂▁   #265 of 542*     37%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #129 of 476*     21%      1
+agent tasks         ▁▁▂▆█▄●▅▃▂▂▁   #142 of 360*    6.9%      1
+coding              ▁▁▁▃▅▆●▇▆▃▃▁   #271 of 544*     37%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #130 of 477*     20%      1
 vision &amp; documents  ▁▁▃●▂▃▅▄▇██▄   #162 of 190*     13%      2
-web search          ▂▁▂▆●█▄▄▁▂▁▁     #64 of 97*    6.3%      1
+web search          ▂▁▂▆●█▄▄▁▂▁▁     #64 of 97*    6.2%      1
 </pre>
 
-<details><summary>agent tasks · #139 of 357 · 6.9% of its score</summary>
+<details><summary>agent tasks · #142 of 360 · 6.9% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,24 +34,24 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #265 of 542 · 37% of its score</summary>
+<details><summary>coding · #271 of 544 · 37% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1162.2  ▁●▄▃▇█▅▆█▅▂▁ beats 1/133  avg 990        37%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1162.6  ▁●▄▃▇█▅▇▇▅▂▁ beats 1/134  avg 996        37%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #129 of 476 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #130 of 477 · 20% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1405.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 250/387  avg 1261       21%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1405.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 250/388  avg 1262       20%  blunt
 </pre>
 
 </details>
@@ -62,19 +62,19 @@ Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.
 
 <pre>
 test                           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>   33.5%  ●·····▄▄·▄·█ beats 0/5    hard · avg 32%    8.0%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>   68.2%  ●····▄···█▄▄ beats 0/5    easy · avg 67%    5.0%  noisy
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>   33.5%  ●·····▄▄·▄·█ beats 0/5    hard · avg 32%    8.2%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>   68.2%  ●····▄···█▄▄ beats 0/5    easy · avg 67%    5.2%  noisy
 </pre>
 
 </details>
 
-<details><summary>web search · #64 of 97 · 6.3% of its score</summary>
+<details><summary>web search · #64 of 97 · 6.2% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [GPT-5 Pro](gpt-5-pro.md), [Kimi K2.6](kimi-k2-6.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1162.0  ▁·▁▁▂●▁█▅▃▃▂ beats 7/38   avg 1081      6.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1162.0  ▁·▁▁▂●▁█▅▃▃▂ beats 7/38   avg 1083      6.2%  blunt
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4-fast-reasoning">ARC-AGI-1 public evaluation set (…</a>   58.1%  ▁·▇▃▁·●▇▁·▇▃ beats 10/27  very hard · avg 4.4%     12%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4-fast-reasoning">ARC-AGI-2 public evaluation set (…</a>    4.6%  █··▂●▁▃▁▃·▁▃ beats 9/24   very hard · avg 0.4%    3.1%  sharp · too hard for it · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   79.8%  ▁●▁▂▅█▂▃▄▃▁▁ beats 4/98   very easy · avg 90%     0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   79.8%  ▁●▁▂▅█▂▃▃▃▁▁ beats 4/100  very easy · avg 90%     0.0%  blunt
 </pre>
 
 </details>
@@ -96,13 +96,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   64% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   63% ▇▇▇▇▇▇▇▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4-fast-reasoning">ARC Prize Foundation model_baseline out…</a>        2   15% ▇▇
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        2   13% ▇▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.2
+weighted average                                   = 60.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

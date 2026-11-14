@@ -58,7 +58,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   80.5%  █·····▃·▁·▄● beats 12/12    medium · avg 81%        2.4%  sharp · at its level
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (maker)</a>                   80.1%  ▄····▄··▄·█● beats 6/6      easy · avg 85%          2.4%  at its level · several runs
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.2%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 43/68    hard · avg 32%          1.9%  at its level · several runs
-<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     76.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 75/80    easy · avg 80%          1.7%  several runs
+<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     76.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 75/80    easy · avg 80%          1.8%  several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   49.0%  ▃·▅·▅▃▅·▃▃·● beats 11/12    medium · avg 53%        1.7%  at its level
 <a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (maker)</a>   58.7%  ▄······▄▄·▄● beats 4/5      medium · avg 63%        1.4%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (maker)</a>                        88.0%  ▁····▁▂█▆▅▆● beats 97/103   easy · avg 90%          1.4%  several runs

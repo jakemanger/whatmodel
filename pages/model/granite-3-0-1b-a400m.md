@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 1.3B params (0.4B active) · apache-2.0
 
-**score 29.4** ±1.1 · #677 of 740 · from 16 benchmark results across 2 sources
+**score 29.4** ±1.1 · #680 of 743 · from 16 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆▇█▆▆▃▃▁   #443 of 472*     18%      2
-chat &amp; writing  ▁▁▁●▆▄▆█▇▇▇▃   #386 of 404*    4.8%      1
-math            ▁▁●▅█▆▄█▅▂▁▁   #414 of 440*     18%      2
+coding          ▁▁▁●▆▇█▆▆▃▃▁   #444 of 474*     18%      2
+chat &amp; writing  ▁▁▁●▅▄▆█▇▇▇▃   #387 of 405*    4.8%      1
+math            ▁▁●▅█▆▅█▄▁▁▁   #413 of 440*     18%      2
 </pre>
 
-<details><summary>coding · #443 of 472 · 18% of its score</summary>
+<details><summary>coding · #444 of 474 · 18% of its score</summary>
 
-Beats [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
@@ -33,7 +33,7 @@ test               result  vs the others in its run  difficulty        counts  w
 
 </details>
 
-<details><summary>chat &amp; writing · #386 of 404 · 4.8% of its score</summary>
+<details><summary>chat &amp; writing · #387 of 405 · 4.8% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -44,13 +44,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #414 of 440 · 18% of its score</summary>
+<details><summary>math · #413 of 440 · 18% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (maker)</a>                       26.3%  ●▄····▄··█▄▄ beats 1/7    easy · avg 80%       11%  sharp
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (maker)</a>                       26.3%  ●▄····▄··█▄▄ beats 1/7    easy · avg 81%       11%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (maker)</a>   10.9%  ●···▄▄▄▄··█▄ beats 0/7    medium · avg 49%    7.2%  typical
 </pre>
 

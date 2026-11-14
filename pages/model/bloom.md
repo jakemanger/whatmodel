@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 28.5** ±1.1 · #682 of 740 · from 16 benchmark results across 7 sources
+**score 28.6** ±1.1 · #684 of 743 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    3% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 28.5
+weighted average                                   = 28.6
 </pre>
 
 <sub>Licences: GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · GLM-130B: An Open Bilingual Pre-trained Model ([CC BY 4.0](../../licenses/paper-2210.02414v2-glm130b-CC-BY-4-0.txt)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 33.7** ±1.1 · comparison only: no current run option verified · from 20 benchmark results across 11 sources
+**score 33.7** ±1.0 · comparison only: no current run option verified · from 20 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #471 of 476*     18%      2
-math            ▁▂▃●██▅▇▄▁▁▁   #429 of 540*     10%      1
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #472 of 477*     18%      2
+math            ▁▂▃●█▇▅▇▄▁▁▁   #429 of 540*     10%      1
 </pre>
 
-<details><summary>chat &amp; writing · #471 of 476 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #472 of 477 · 18% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
@@ -50,10 +50,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   35.6%  █·····●··▅·▃ beats 3/6      medium · avg 72%        15%  sharp
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">ARC Challenge</a>                        46.2%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 74/140   easy · avg 78%          14%  sharp · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                64.2%  ▁····▁▂●▆▅▆▄ beats 34/103   medium · avg 78%       4.9%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">OpenBookQA</a>                           52.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 77/107   easy · avg 77%         4.7%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">OpenBookQA</a>                           52.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 77/107   easy · avg 77%         4.8%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">HellaSwag</a>                            77.6%  ▁▁▁▂▂▂▄▆█●▄▂ beats 102/135  very easy · avg 90%    4.3%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   15.2%  ●··▄·▂▆▄▂█·▂ beats 0/14     medium · avg 54%       4.2%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">WinoGrande</a>                           66.3%  ▁▁▁▁▂▁▁▅●█▃▁ beats 69/131   easy · avg 86%         4.1%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">WinoGrande</a>                           66.3%  ▁▁▁▁▂▁▁▅●█▃▁ beats 69/131   easy · avg 87%         4.1%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">COPA</a>                                 83.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 35/67    easy · avg 92%         3.4%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       4.8%  ▂▁▁▁▂●▄▃▅█▅▁ beats 14/68    very hard · avg 13%    2.9%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   80.6%  ▃·▃·····●▃▃█ beats 2/7      easy · avg 87%         2.4%  blunt · at its level

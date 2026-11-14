@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 16B params · mit
 
-**score 49.6** ±1.9 · #84 of 146 · from 4 benchmark results across 4 sources
+**score 49.5** ±1.9 · #85 of 147 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃●▄█▂▂▁▁▁   #73 of 128     90%      9
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #45 of 64*    8.6%      1
+text to image           ▂▅▅▃●▄█▃▂▁▁▁   #74 of 129     90%      9
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #46 of 65*    8.5%      1
 </pre>
 
-<details><summary>text to image · #73 of 128 · 90% of its score</summary>
+<details><summary>text to image · #74 of 129 · 90% of its score</summary>
 
 Trails [Runway Gen-4 Image](runway-gen-4-image.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1012.1  ▁▁●▃▆█▃▂▂▂▁▁ beats 6/77   avg 1030             60%  typical
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   83.9%  ▄····▄●▄▄█▄█ beats 2/10   easy · avg 83%       24%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1012.0  ▁▁●▃▆█▄▂▂▂▁▁ beats 6/78   avg 1030             61%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   83.9%  ▄····▄●▄▄█▄█ beats 2/10   easy · avg 83%       23%  typical
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>     48.2%  ●▅▅·▅▅█·█··▃ beats 0/17   medium · avg 46%    6.2%  blunt · at its level
 <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">DPG-Bench (maker)</a>                   84.8%  ▄·▂·▂●█▄▂▄▂▂ beats 4/17                          —  not counted yet: no other model in the …
 <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">LongText-Bench (EN) (maker)</a>         95.2%  ▃·····▅██●▃▃ beats 9/12                          —  not counted yet: no other model in the …
@@ -39,13 +39,13 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>image to image / editing · #45 of 64 · 8.6% of its score</summary>
+<details><summary>image to image / editing · #46 of 65 · 8.5% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>   979.0  ▃▂····●█▂▃▂▃ beats 3/14   avg 960       8.6%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>   979.0  ▃▂····●█▂▃▂▃ beats 3/14   avg 961       8.5%  blunt
 </pre>
 
 </details>
@@ -56,12 +56,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   60% ▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   24% ▇▇▇
-<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    9% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   61% ▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   23% ▇▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    6% ▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 49.6
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 49.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>

@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▄●▅▄▄▁▁   #167 of 357*    3.3%      1
-coding       ▁▁▁▃▅▇█▇●▃▂▁   #134 of 542*     95%      2
+agent tasks  ▁▁▂▆█▄●▅▃▂▂▁   #167 of 360*    3.3%      1
+coding       ▁▁▁▃▅▆█▇●▃▃▁   #136 of 544*     95%      2
 </pre>
 
-<details><summary>agent tasks · #167 of 357 · 3.3% of its score</summary>
+<details><summary>agent tasks · #167 of 360 · 3.3% of its score</summary>
 
-Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -31,9 +31,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #134 of 542 · 95% of its score</summary>
+<details><summary>coding · #136 of 544 · 95% of its score</summary>
 
-Beats [Grok 4.3](grok-4-3.md), [DeepSeek V3.2](deepseek-v3-2.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
+Beats [Grok 4.3](grok-4-3.md), [DeepSeek V3.2](deepseek-v3-2.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why

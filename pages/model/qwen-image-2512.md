@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-12 · 20B params · apache-2.0
 
-**score 55.1** ±1.2 · #65 of 146 · from 10 benchmark results across 7 sources
+**score 55.0** ±1.2 · #65 of 147 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▂▂▁▁▁   #53 of 128     76%      8
+text to image  ▂▅▅▃▄●█▃▂▁▁▁   #54 of 129     76%      8
 </pre>
 
-<details><summary>text to image · #53 of 128 · 76% of its score</summary>
+<details><summary>text to image · #54 of 129 · 76% of its score</summary>
 
 Beats [Wan 2.7 Image](wan-2-7-image.md), [HunyuanImage 2.1](hunyuanimage-2-1.md), [Recraft V4.1 Flash](recraft-v4-1-flash.md) here, though they rank higher overall.
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    35.3%  ▄█▂▂●▂▆▄·▂·▂ beats 8/16   hard · avg 27%       35%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1123.9  ▁▁▃▃▆●▃▂▂▂▁▁ beats 34/77  avg 1030             25%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1123.9  ▁▁▃▃▆●▄▂▂▂▁▁ beats 34/78  avg 1030             26%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    68.0%  ▁▂▂█▃●▂▃·▁·▁ beats 15/22  hard · avg 29%      6.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      53.2%  ▄·····▄●▄·▄█ beats 2/7    medium · avg 42%    4.8%  at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1) (…</a>    52.1%  █▅●·▅▅█·█··▃ beats 6/17   medium · avg 46%    2.6%  blunt · at its level
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.0300  ●···█··▄·▄·▄ beats 0/5    avg 11.083          1.5%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.0300  ●···█··▄·▄·▄ beats 0/5    avg 11.085          1.6%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    71.3%  ▄·······▄●▄▄ beats 2/5    medium · avg 60%    0.4%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    90.9%  █······████● beats 5/5    easy · avg 85%      0.0%  blunt
 </pre>
@@ -41,7 +41,7 @@ test                                 result  vs the others in its run  difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    5.8%  ▃·█▅●·▅▃···▃ beats 6/10   very hard · avg 8.0%     20%  sharp
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    5.8%  ▃·█▅●·▅▃···▃ beats 6/10   very hard · avg 8.1%     19%  sharp
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   84.3%  ▄···●··▄···█ beats 2/5    easy · avg 78%          3.5%  typical
 </pre>
 
@@ -54,14 +54,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   35% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   25% ▇▇▇
-<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   20% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   26% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   19% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    6% ▇
-<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    5% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    6% ▇
 <a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    5% ▇
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.1
+weighted average                                   = 55.0
 </pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>

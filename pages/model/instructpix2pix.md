@@ -6,7 +6,7 @@
 
 UC Berkeley (Brooks, Holynski, Efros) · released 2023-01 · 0.86B params · mit
 
-**score 18.9** ±3.1 · #145 of 146 · from 6 benchmark results across 6 sources
+**score 18.8** ±3.1 · #146 of 147 · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ●▁·▃▂▃█▆▃▅▂▂   #64 of 64     81%      4
+image to image / edit…  ●▁·▃▂▃█▆▃▆▂▂   #65 of 65     81%      4
 </pre>
 
-<details><summary>image to image / editing · #64 of 64 · 81% of its score</summary>
+<details><summary>image to image / editing · #65 of 65 · 81% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   13.0%  ●·▂▃·▂·▃▂·▃█ beats 0/14   medium · avg 43%         12%  blunt
-<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    0.3%  ●·····█▅▃·▃▅ beats 0/9    very hard · avg 4.4%    2.3%  too hard for it
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    0.3%  ●·····█▅▃·▃▅ beats 0/9    very hard · avg 4.5%    2.3%  too hard for it
 </pre>
 
 </details>
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1   11% ▇
 <a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    2% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 18.9
+weighted average                                   = 18.8
 </pre>
 
 <sub>Licences: UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

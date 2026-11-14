@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 42.9** ±1.7 · #526 of 740 · from 9 benchmark results across 4 sources
+**score 42.9** ±1.7 · #528 of 743 · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▅▂▁▁   #318 of 440*    5.9%      1
+math                ▁▁▃▅●▆▅█▄▁▁▁   #318 of 440*    5.9%      1
 vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #154 of 154     99%      9
 </pre>
 
 <details><summary>math · #318 of 440 · 5.9% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty        counts  why
@@ -38,7 +38,7 @@ Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        60.5%  ▄█●▄▄·██·▄·█ beats 3/12   easy · avg 70%       42%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.0  ●▁▂▂▂▂▃▅▅▅█▇ beats 0/152  avg 1063             21%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.0  ●▁▂▂▂▂▃▅▅▅█▇ beats 0/152  avg 1064             20%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   hard · avg 35%       15%  typical
 <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (maker)</a>                   40.4%  ▁····▁●▃█▆▆▅ beats 2/53   hard · avg 49%      9.1%  small run
 <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (maker)</a>         44.5%  ▁··▁●▄▆▇▄▅█▄ beats 4/48   medium · avg 49%    5.9%  at its level · small run
@@ -56,8 +56,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   56% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇▇
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   57% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
 <a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (submitted / mak…</a>        5   18% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇

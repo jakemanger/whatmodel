@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 58.2** ±0.9 · #226 of 740 · from 29 benchmark results across 4 sources
+**score 58.2** ±0.9 · #229 of 743 · from 29 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁    #195 of 316     33%      7
-coding          ▁▁▁▃▆▇●▆▆▃▃▁   #246 of 472*    6.7%      2
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃   #201 of 404*    1.7%      1
-math            ▁▁▃▅█▆●█▅▂▁▁    #168 of 440     17%      4
+agent tasks     ▁▁▃▆●▄▅▅▃▃▂▁    #198 of 319     33%      7
+coding          ▁▁▁▃▆▇●▆▆▃▃▁   #247 of 474*    6.7%      2
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #203 of 405*    1.7%      1
+math            ▁▁▃▅█▆●█▄▁▁▁    #169 of 440     17%      4
 </pre>
 
-<details><summary>agent tasks · #195 of 316 · 33% of its score</summary>
+<details><summary>agent tasks · #198 of 319 · 33% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                     result  vs the others in its run    difficulty         
 <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>          26.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 16/89    very hard · avg 12%     9.2%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>           59.5%  ▁····▂▁▃▆●▃▁ beats 22/44    medium · avg 37%        7.2%  at its level · several runs
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>          45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 29%          5.5%  at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>        3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.1%    4.8%  sharp · too hard for it · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>        3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.2%    4.8%  sharp · too hard for it · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (maker)</a>    62.8%  ▁····▃·▂▇●▂▆ beats 13/28    medium · avg 39%        3.3%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (maker)</a>   51.5%  ▁▁▁·▅▄▁█▇●▁▇ beats 22/28    hard · avg 28%          2.4%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (maker)</a>           63.9%  ▁▁▁▁▁▃▅█●▅▄▁ beats 117/171  medium · avg 57%        0.9%  blunt · at its level · small run
@@ -39,21 +39,21 @@ test                     result  vs the others in its run    difficulty         
 
 </details>
 
-<details><summary>coding · #246 of 472 · 6.7% of its score</summary>
+<details><summary>coding · #247 of 474 · 6.7% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▆▄▇▄▆ beats 31/67  medium · avg 47%        3.7%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▆▄▇▄▆ beats 31/67  medium · avg 47%        3.6%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  █··▄▂▂●█▄·▄▆ beats 8/22   very hard · avg 3.5%    3.1%  sharp · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #201 of 404 · 1.7% of its score</summary>
+<details><summary>chat &amp; writing · #203 of 405 · 1.7% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #168 of 440 · 17% of its score</summary>
+<details><summary>math · #169 of 440 · 17% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
@@ -84,9 +84,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    32.6%  ▁···▁▃▂●▂▃▃▂ beats 11/23    hard · avg 17%          5.6%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (maker)</a>                     81.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 136/189  medium · avg 63%        4.7%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.6%  ▂·▂▂·▂·●▃·█▃ beats 5/14     easy · avg 80%          4.0%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 63%        2.9%  at its level
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (maker)</a>         10.6%  ▁▁▁▄●▇▅█▆▁▂▁ beats 21/115   very hard · avg 4.3%    2.8%  small run
-<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 30%     2.6%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 64%        2.9%  at its level
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (maker)</a>         10.6%  ▁▁▁▄●▇▅█▆▁▂▁ beats 21/115   very hard · avg 4.4%    2.8%  small run
+<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 30%     2.7%  typical
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (maker)</a>                   92.3%  ▁▁▃▁▂▄▄▅▇▅●▄ beats 47/64    easy · avg 80%          1.8%  small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 89.9%  ▁▁▁▁▁▂▂▅██▆● beats 209/215  medium · avg 68%        1.8%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            65.7%  ▁▁▁▂▂▂▄●█▇▄▂ beats 55/135   medium · avg 63%        1.7%  at its level · small run

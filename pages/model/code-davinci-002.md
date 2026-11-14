@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▆▃▂▁   #455 of 542*    1.0%      1
-math    ▁▂▃▆█●▅▇▄▁▁▁    #271 of 540     27%      2
+coding  ▁▁▁▃●▆█▇▆▃▃▁   #457 of 544*    1.0%      1
+math    ▁▂▃▆█●▅▇▄▁▁▁    #272 of 540     27%      2
 </pre>
 
-<details><summary>coding · #455 of 542 · 1.0% of its score</summary>
+<details><summary>coding · #457 of 544 · 1.0% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>math · #271 of 540 · 27% of its score</summary>
+<details><summary>math · #272 of 540 · 27% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             45.3%  █▁·▁▁·····▂● beats 12/12    medium · avg 49%        17%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             45.3%  █▁·▁▁·····▂● beats 12/12    medium · avg 49%        17%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                76.4%  ▃▅█···▅·▃▃▃● beats 11/12    easy · avg 82%          14%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        82.3%  █······▁·▁▁● beats 12/12    easy · avg 88%         8.3%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                80.4%  ▅▃▃▅··▃▃·▃▃● beats 12/12    easy · avg 83%         5.5%  sharp · several runs
@@ -67,7 +67,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.acl-long.9.pdf">ARCADE New Tasks pass@1 (notebook…</a>   23.4%  █·█········● beats 2/2      hard · avg 23%         0.5%  small run
 <a href="https://aclanthology.org/2023.acl-long.150.pdf">OpenBookQA</a>                           71.8%  ▅▁▁▁▂▂▃█▃●▃▁ beats 93/107   medium · avg 62%       0.4%  at its level · noisy · small run
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">WinoGrande</a>                           60.7%  ▁▁▁▁▂▁▁●▇█▃▁ beats 36/131   medium · avg 73%       0.4%  at its level
-<a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   58.5%  █·····●····█ beats 1/2      easy · avg 65%         0.4%  at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   58.5%  █·····●····█ beats 1/2      medium · avg 65%       0.4%  at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   84.9%  ▃·▃·····▃▃▃● beats 7/7      easy · avg 87%         0.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      47.1%  ▄▄········▄● beats 4/4      medium · avg 58%       0.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">HellaSwag</a>                            65.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 53/135   easy · avg 77%         0.3%  at its level

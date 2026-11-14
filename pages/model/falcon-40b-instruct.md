@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 31.1** ±2.0 · #662 of 740 · from 7 benchmark results across 6 sources
+**score 31.1** ±2.0 · #665 of 743 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁●▃▆▄▆█▇▇▇▃   #395 of 404     85%      3
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #396 of 405     85%      3
 </pre>
 
-<details><summary>chat &amp; writing · #395 of 404 · 85% of its score</summary>
+<details><summary>chat &amp; writing · #396 of 405 · 85% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.6%  ▁▂●▃▆▆█▆▄▄▁▁ beats 10/122  medium · avg 36%             42%  sharp · too hard for it
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.1700 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 9/28    avg 8.566 MT-Bench scor…     31%  sharp · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.6%  ▁▂●▃▆▆█▆▄▄▁▁ beats 10/122  medium · avg 36%             43%  sharp · too hard for it
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.1700 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 9/28    avg 8.567 MT-Bench scor…     31%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         45.7%  ▂▂·●·▇▃▆█▆▄▂ beats 5/45    very easy · avg 94%          12%  sharp · at its level · noisy
 </pre>
 
@@ -37,7 +37,7 @@ test                                                      result  vs the others 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>    0.7%  ●······▄·█·▄ beats 0/4    medium · avg 38%       7.1%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   54.7%  █▁····▃●·▁·▁ beats 12/14  hard · avg 67%         4.2%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   54.7%  █▁····▃●·▁·▁ beats 12/14  hard · avg 67%         4.1%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b-instruct/results_2023-12-25%2018%3A17%3A27.954000.json">TruthfulQA MC2</a>                       52.5%  ▅▃█▆▁●▅···▁▁ beats 24/31  medium · avg 57%       1.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   54.3%  █·····●····▁ beats 10/11  very hard · avg 55%    0.5%  sharp · too hard for it · noisy
 </pre>
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   54% ▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   55% ▇▇▇▇▇▇▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   31% ▇▇▇▇
 <a name="acl-2023-emnlp-main-689"></a><a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench: Using Game Play to Evaluate …</a>        1    7% ▇
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    4% ▇

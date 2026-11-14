@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 40.2** ±0.6 · #567 of 740 · from 19 benchmark results across 8 sources
+**score 40.2** ±0.6 · #570 of 743 · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▆▆▃▃▁    #386 of 472     70%      6
-chat &amp; writing  ▁●▁▃▆▄▆█▇▇▇▃   #400 of 404*    8.0%      2
-math            ▁▁▃▅█●▄█▅▂▁▁   #222 of 440*    2.8%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #388 of 474     70%      6
+chat &amp; writing  ▁●▁▃▅▄▆█▇▇▇▃   #401 of 405*    8.0%      2
+math            ▁▁▃▅█●▅█▄▁▁▁   #223 of 440*    2.7%      1
 </pre>
 
-<details><summary>coding · #386 of 472 · 70% of its score</summary>
+<details><summary>coding · #388 of 474 · 70% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #400 of 404 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #401 of 405 · 8.0% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
@@ -49,13 +49,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #222 of 440 · 2.8% of its score</summary>
+<details><summary>math · #223 of 440 · 2.7% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 96/206  easy · avg 73%    2.8%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 96/206  easy · avg 73%    2.7%  sharp · at its level
 </pre>
 
 </details>
@@ -82,9 +82,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   48% ▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   49% ▇▇▇▇▇▇
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   23% ▇▇▇
-<a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   18% ▇▇
+<a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   17% ▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2    8% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇

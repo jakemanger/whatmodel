@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 57.9** ±1.6 · #231 of 740 · from 7 benchmark results across 2 sources
+**score 57.9** ±1.6 · #234 of 743 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
 coding                         not ranked yet       —      1
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃      #190 of 404     38%      3
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃      #191 of 405     38%      3
 math            █··········●          #1 of 2     40%      3
 </pre>
 
@@ -40,14 +40,14 @@ test                                result  vs the others in its run  counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #190 of 404 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #191 of 405 · 38% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1327.8  ▁▁▁▂▃▂▃●▆▇█▃ beats 166/387  avg 1261           25%  blunt
-<a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge unspeci…</a>   88.3%  ▃▃▂▅▃▆▅█▅▅▂● beats 30/30    easy · avg 71%    7.8%  small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1327.8  ▁▁▁▂▃▂▃●▆▇█▃ beats 166/388  avg 1262           25%  blunt
+<a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge unspeci…</a>   88.3%  ▃▃▂▅▃▆▅█▅▅▂● beats 30/30    easy · avg 71%    7.9%  small run
 <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   89.2%  ▁▂▄▂▂▄▆█●▅▂▁ beats 108/145  easy · avg 80%    5.0%  small run
 </pre>
 
@@ -82,7 +82,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                               results  share of the score
 <a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (submitted / maker-reported)</a>        6   74% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   25% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   25% ▇▇▇
 prior: pull toward the middle                   1% ▇
 weighted average                              = 57.9
 </pre>

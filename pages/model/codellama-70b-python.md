@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 45.1** ±0.9 · #481 of 740 · from 4 benchmark results across 2 sources
+**score 45.0** ±0.9 · #486 of 743 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #346 of 472     74%      2
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #348 of 474     74%      2
 </pre>
 
-<details><summary>coding · #346 of 472 · 74% of its score</summary>
+<details><summary>coding · #348 of 474 · 74% of its score</summary>
 
 Beats [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   66% ▇▇▇▇▇▇▇▇
 <a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   33% ▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.1
+weighted average                                   = 45.0
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt))</sub>

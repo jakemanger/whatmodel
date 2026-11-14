@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
-**score 57.5** ±2.0 · #56 of 146 · from 11 benchmark results across 3 sources
+**score 57.4** ±2.0 · #57 of 147 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▂▂▁▁▁   #49 of 128     98%     11
+text to image  ▂▅▅▃▄▄●▃▂▁▁▁   #51 of 129     98%     11
 </pre>
 
-<details><summary>text to image · #49 of 128 · 98% of its score</summary>
+<details><summary>text to image · #51 of 129 · 98% of its score</summary>
 
-Beats [Wan 2.7 Image](wan-2-7-image.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall.
+Beats [Wan 2.7 Image](wan-2-7-image.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall. Trails [HunyuanImage 3.0](hunyuanimage-3-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   17% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.4
 </pre>
 
 <sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

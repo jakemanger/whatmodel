@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.135B params · apache-2.0
 
-**score 21.6** ±8.3 · #934 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.6** ±8.2 · #936 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   24.8%  ●▁▁▁▁▁▁▂▄█▄▃ beats 1/146  easy · avg 82%     69%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   24.8%  ●▁▁▁▁▁▁▂▄█▄▃ beats 1/146  easy · avg 82%     70%  noisy
 </pre>
 
 </details>
@@ -33,8 +33,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   69% ▇▇▇▇▇▇▇▇
-prior: pull toward the middle            31% ▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   70% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle            30% ▇▇▇▇
 weighted average                        = 21.6
 </pre>
 

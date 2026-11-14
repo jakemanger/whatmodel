@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 41.4** ±0.5 · #549 of 740 · from 23 benchmark results across 7 sources
+**score 41.4** ±0.5 · #551 of 743 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁    #382 of 472     86%     11
-math    ▁▁▃▅●▆▄█▅▂▁▁   #287 of 440*    4.8%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #384 of 474     86%     11
+math    ▁▁▃▅●▆▅█▄▁▁▁   #287 of 440*    4.8%      1
 </pre>
 
-<details><summary>coding · #382 of 472 · 86% of its score</summary>
+<details><summary>coding · #384 of 474 · 86% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 

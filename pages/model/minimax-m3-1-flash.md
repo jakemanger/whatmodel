@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-10 · proprietary
 
-**score 73.6** ±1.4 · #47 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 73.6** ±1.4 · #48 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▅▅▄▄●▁▁   #51 of 353*     62%      1
-coding       ▁▁▁▃▆▇█▆▆▃●▁   #41 of 486*     37%      1
+agent tasks  ▁▁▃▆█▄▅▄●▂▂▁   #56 of 355*     62%      1
+coding       ▁▁▁▃▆▇█▆▆▃●▁   #42 of 487*     37%      1
 </pre>
 
-<details><summary>agent tasks · #51 of 353 · 62% of its score</summary>
+<details><summary>agent tasks · #56 of 355 · 62% of its score</summary>
 
-Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0276 IPS  ▁▁▁▁▄●█▄▂▁▁▁ beats 20/61  avg -0.395 IPS     62%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0270 IPS  ▁▁▁▃●█▂▁▁▁·▁ beats 20/63  avg -0.403 IPS     62%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #41 of 486 · 37% of its score</summary>
+<details><summary>coding · #42 of 487 · 37% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1584.5  ▁▂▄▃▇█▅▆●▅▂▁ beats 96/133  avg 990        37%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1583.9  ▁▂▄▃▇█▅▇●▅▂▁ beats 96/134  avg 996        37%  sharp
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
 weighted average                        = 73.6
 </pre>

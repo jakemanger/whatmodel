@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 61.5** ±1.1 · comparison only: no current run option verified · from 16 benchmark results across 7 sources
+**score 61.4** ±1.1 · comparison only: no current run option verified · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▅▄▄▁▁   #243 of 357*     12%      1
-coding       ▁▁▁▃▅▇█●▆▃▂▁    #156 of 542     50%      3
-math         ▁▂▃▆██▅●▄▁▁▁   #164 of 540*     11%      1
+agent tasks  ▁▁▂▆●▄▅▅▃▂▂▁   #246 of 360*     12%      1
+coding       ▁▁▁▃▅▆█●▆▃▃▁    #158 of 544     50%      3
+math         ▁▂▃▆█▇●▇▄▁▁▁   #164 of 540*     10%      1
 </pre>
 
-<details><summary>agent tasks · #243 of 357 · 12% of its score</summary>
+<details><summary>agent tasks · #246 of 360 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,26 +32,26 @@ test              result  vs the others in its run  difficulty            counts
 
 </details>
 
-<details><summary>coding · #156 of 542 · 50% of its score</summary>
+<details><summary>coding · #158 of 544 · 50% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   55.1%  ▂·▂▃▅▂▃●▆▄▂▂ beats 30/49  very hard · avg 8.0%     34%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   61.9%  ▃▃▅▃··▃▅●▅▅▃ beats 8/15   hard · avg 25%          8.5%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   61.9%  ▃▃▅▃··▃▅●▅▅▃ beats 8/15   hard · avg 25%          8.4%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   63.4%  ▁··▁·▁▁▁▆●▇█ beats 18/45  hard · avg 30%          7.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #164 of 540 · 11% of its score</summary>
+<details><summary>math · #164 of 540 · 10% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▄▃▆ beats 102/207  very hard · avg 7.3%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▄▃▆ beats 102/207  very hard · avg 7.4%     10%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -84,12 +84,12 @@ source                                    results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   34% ▇▇▇▇
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   22% ▇▇▇
 <a name="card-moonshotai-kimi-k2-instruct"></a><a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">Moonshot AI Kimi-K2-Instruct model card</a>         1   12% ▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">Epoch AI</a>                                        1   11% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">Epoch AI</a>                                        1   10% ▇
 <a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official website results</a>          1    8% ▇
-<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    8% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>             1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.5
+weighted average                                   = 61.4
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Moonshot AI Kimi-K2-Instruct model card ([Modified MIT License (Kimi K2)](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

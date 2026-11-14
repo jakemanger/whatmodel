@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 38.2** ±1.6 · #601 of 740 · from 6 benchmark results across 5 sources
+**score 38.2** ±1.6 · #604 of 743 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.3181 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 5/52    avg 43.320 WB-Score     28%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.3181 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 5/52    avg 43.352 WB-Score     27%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        33.8%  ▂▁▁▄●▅▇█▆▂▂▂ beats 14/58   medium · avg 49%        25%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        25.5%  ▃●·▆▆██▆▅▃▃▃ beats 2/33    medium · avg 39%        23%  typical
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                 5.2%  ●··▁▁▂▂▆▅▆█▆ beats 0/70    medium · avg 62%        15%  at its level
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                  results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                            2   48% ▇▇▇▇▇▇
-<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                 1   28% ▇▇▇
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                 1   27% ▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   15% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1    6% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>             1    3% ▇

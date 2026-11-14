@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 39.1** ±0.7 · #583 of 740 · from 13 benchmark results across 8 sources
+**score 39.1** ±0.7 · #586 of 743 · from 13 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▆▆▃▃▁    #412 of 472     75%      3
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #358 of 404*     10%      2
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #414 of 474     75%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #359 of 405*     10%      2
 </pre>
 
-<details><summary>coding · #412 of 472 · 75% of its score</summary>
+<details><summary>coding · #414 of 474 · 75% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #358 of 404 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #359 of 405 · 10% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1152.5  ▁▁▁▂●▂▃▆▆▇█▃ beats 42/387  avg 1261      5.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1152.6  ▁▁▁▂●▂▃▆▆▇█▃ beats 42/388  avg 1262      4.8%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1064.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 31/95   avg 1189      4.7%  typical
 </pre>
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   57.6%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 24/95    medium · avg 65%    4.2%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   57.6%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 24/95    easy · avg 65%      4.2%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">MedQA (USMLE, 4 options)</a>             54.7%  ▁▁··▄▁▁··▄▃● beats 13/17    medium · avg 71%    4.0%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.4%  ▁··▁▁▂▂▆▅●█▆ beats 35/70    medium · avg 62%    3.0%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">MedMCQA</a>                              47.4%  ▂▂··▄▄▂▂·▄●█ beats 10/17    medium · avg 63%    1.8%  at its level
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   75% ▇▇▇▇▇▇▇▇▇
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">Open Medical-LLM Leaderboard results</a>            3    6% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    5% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    4% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    3% ▇

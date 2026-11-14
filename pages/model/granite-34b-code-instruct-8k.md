@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 47.0** ±1.1 · #437 of 740 · from 11 benchmark results across 4 sources
+**score 47.0** ±1.1 · #440 of 743 · from 11 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #310 of 472     65%      7
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #314 of 474     65%      7
 </pre>
 
-<details><summary>coding · #310 of 472 · 65% of its score</summary>
+<details><summary>coding · #314 of 474 · 65% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -29,8 +29,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.9%  ▄▇█▃▄▇▄▁▇●·▁ beats 33/35  medium · avg 46%     16%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   50.2%  ▁·▁▁▄██▄█▁▅● beats 32/35  medium · avg 52%     16%  sharp · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   19.3%  ▃··▁▂▂●▂█▃▄▂ beats 13/47  medium · avg 52%    4.1%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   20.7%  █▂▁▁▂▂▂●▅▅▅▇ beats 20/47  hard · avg 33%      3.9%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   35.4%  ▁▁▁▁▁▁▂▂▃█●▄ beats 33/47  hard · avg 32%      3.1%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   20.7%  █▂▁▁▂▂▂●▅▅▅▇ beats 20/47  hard · avg 34%      3.9%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   35.4%  ▁▁▁▁▁▁▂▂▃█●▄ beats 33/47  hard · avg 32%      3.2%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   72.3%  ▁▁▁······▁▃● beats 22/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 

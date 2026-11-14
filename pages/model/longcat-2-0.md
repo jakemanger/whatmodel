@@ -6,7 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 71.4** ±1.8 · #67 of 740 · from 7 benchmark results across 2 sources
+**score 71.3** ±1.8 · #71 of 743 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅▅●▅▂▁      #73 of 316*     23%      6
+agent tasks     ▁▁▃▆█▄▅●▃▃▂▁      #78 of 319*     24%      6
 coding                         not ranked yet       —      2
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃     #140 of 404*    5.2%      1
-math            ▁▁▃▅█▆▄█●▂▁▁      #61 of 440*     15%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃     #140 of 405*    5.2%      1
+math            ▁▁▃▅█▆▅█●▁▁▁      #61 of 440*     15%      1
 web search      ▂▁▂▆▅●▄▃▁▁▁▁       #41 of 85*     13%      2
 </pre>
 
-<details><summary>agent tasks · #73 of 316 · 23% of its score</summary>
+<details><summary>agent tasks · #78 of 319 · 24% of its score</summary>
 
-Beats [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [GLM-5.1](glm-5-1.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (maker)</a>                     78.8%  ██●█··█····█ beats 2/5    medium · avg 46%         13%  typical
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>   44.5%  ▂·▁▁··●▇█▂·▁ beats 9/25   hard · avg 28%           11%  blunt · at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual (maker)</a>       77.3%  ▁··▂▂▃▆●▃▂▁▁ beats 53/69  hard · avg 17%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">Terminal-Bench 2.1 (maker)</a>           70.8%  ▁·▁·▁▁▄▃▅●▆█ beats 40/68  very hard · avg 7.4%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual (maker)</a>       77.3%  ▁··▂▂▃▆●▃▂▁▁ beats 53/69  hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">Terminal-Bench 2.1 (maker)</a>           70.8%  ▁·▁·▁▁▄▃▅●▆█ beats 40/68  very hard · avg 7.5%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">BrowseComp (maker)</a>                   79.9%  ▁·▃▁▁▂▆▄█●▂▄ beats 40/48  very hard · avg 11%        —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Pro (maker)</a>                59.5%  ▄▂▂▂▄▂▆●·▂·▂ beats 14/16                             —  not counted yet: no other model in the …
 </pre>
@@ -43,13 +43,13 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                            result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual (maker)</a>   77.3%  ▁··▂▂▃▆●▃▂▁▁ beats 53/69  hard · avg 17%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual (maker)</a>   77.3%  ▁··▂▂▃▆●▃▂▁▁ beats 53/69  hard · avg 18%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Pro (maker)</a>            59.5%  ▄▂▂▂▄▂▆●·▂·▂ beats 14/16                       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #140 of 404 · 5.2% of its score</summary>
+<details><summary>chat &amp; writing · #140 of 405 · 5.2% of its score</summary>
 
 Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -66,14 +66,14 @@ Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](d
 
 <pre>
 test                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (maker)</a>   81.8%  ▁▁·▁▁▁▄▆●▄▃▃ beats 28/45  hard · avg 25%     15%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (maker)</a>   81.8%  ▁▁·▁▁▁▄▆●▄▃▃ beats 28/45  hard · avg 26%     15%  typical
 </pre>
 
 </details>
 
 <details><summary>web search · #41 of 85 · 13% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
@@ -89,7 +89,7 @@ test                result  vs the others in its run  difficulty           count
 test                      result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (maker)</a>       88.9%  ▁▁▁▁▂▃▅▆▇▇●▂ beats 269/336  hard · avg 39%       28%  sharp · small run
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (maker)</a>   73.2%  ▄···●·····▄█ beats 2/5      medium · avg 39%     14%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (maker)</a>       83.8%  ▁·▁▂▁··●█▂▂▁ beats 8/20     medium · avg 55%     13%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (maker)</a>       83.8%  ▁·▁▂▁··●█▂▂▁ beats 8/20     medium · avg 55%     14%  typical
 </pre>
 
 </details>
@@ -103,7 +103,7 @@ source                                    results  share of the score
 <a name="card-meituan-longcat--longcat-2.0"></a><a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 model card …</a>        6   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1   11% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 71.4
+weighted average                                   = 71.3
 </pre>
 
 <sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

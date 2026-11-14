@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 35.7** ±0.5 · #628 of 740 · from 37 benchmark results across 8 sources
+**score 35.7** ±0.5 · #631 of 743 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁   #422 of 472     79%     11
-math    ▁▁▃●█▆▄█▅▂▁▁   #371 of 440    8.6%      2
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #424 of 474     79%     11
+math    ▁▁▃●█▆▅█▄▁▁▁   #371 of 440    8.6%      2
 </pre>
 
-<details><summary>coding · #422 of 472 · 79% of its score</summary>
+<details><summary>coding · #424 of 474 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -58,9 +58,9 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25    easy · avg 74%      3.0%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25    medium · avg 73%    2.5%  at its level · several runs
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58    medium · avg 49%    2.5%  at its level
-<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▄▁▁▂▁●█▇▃▂▃▂ beats 35/140  easy · avg 75%      1.2%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25    medium · avg 73%    2.5%  at its level · several runs
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▄▁▁▂▁●█▇▃▂▃▂ beats 35/140  easy · avg 76%      1.2%  sharp · at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                           62.3%  ▁▁▁▁▂▁▁●▇█▃▁ beats 45/131  easy · avg 84%      0.7%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▂▁▁▁▂▄▄●▅█▅▁ beats 28/68   medium · avg 45%    0.6%  typical
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">HellaSwag</a>                            62.9%  ▁▁▁▂▂▂▄●█▇▄▂ beats 49/135  easy · avg 88%      0.5%  at its level

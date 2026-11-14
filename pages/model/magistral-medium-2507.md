@@ -26,7 +26,7 @@ Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they ra
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.4%  ▄●▄······▄·▄ beats 2/5    medium · avg 50%     10%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.4%  ▄●▄······▄·▄ beats 2/5    medium · avg 51%     10%  at its level
 </pre>
 
 </details>

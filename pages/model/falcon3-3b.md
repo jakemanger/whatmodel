@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 3.23B params · falcon-llm
 
-**score 38.3** ±2.8 · #597 of 740 · from 7 benchmark results across 3 sources
+**score 38.3** ±2.8 · #599 of 743 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁●▃▆█▅▅▅▄▅▂▁   #309 of 316*     40%      2
-coding       ▁▁▁▃●▇█▆▆▃▃▁    #388 of 472     39%      4
+agent tasks  ▁●▃▆█▄▅▅▃▃▂▁   #311 of 319*     40%      2
+coding       ▁▁▁▃●▇█▆▆▃▃▁    #390 of 474     39%      4
 </pre>
 
-<details><summary>agent tasks · #309 of 316 · 40% of its score</summary>
+<details><summary>agent tasks · #311 of 319 · 40% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #388 of 472 · 39% of its score</summary>
+<details><summary>coding · #390 of 474 · 39% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   19.5%  ▃··▁▂▂●▂█▃▄▂ beats 14/47  medium · avg 52%     15%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   14.2%  ▁▁▁▁▁▁●▂▃█▅▄ beats 8/47   hard · avg 32%       14%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.7%  █▂●▁▂▂▂▃▅▅▅▇ beats 11/47  hard · avg 33%       10%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.7%  █▂●▁▂▂▂▃▅▅▅▇ beats 11/47  hard · avg 34%       10%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.0%  ▁▁▁······●▃█ beats 5/47   easy · avg 67%      0.8%  blunt · at its level · noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 65.5** ±6.5 · #148 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 65.4** ±6.6 · #151 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▅▅●▄▄▁▁   #116 of 353*     81%      1
+agent tasks  ▁▁▃▆█▄●▄▃▂▂▁   #116 of 355*     81%      1
 </pre>
 
-<details><summary>agent tasks · #116 of 353 · 81% of its score</summary>
+<details><summary>agent tasks · #116 of 355 · 81% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                   results  share of the score
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (submitted / maker-reported)</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                      19% ▇▇
-weighted average                                  = 65.5
+weighted average                                  = 65.4
 </pre>
 
 <sub>Licences: Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

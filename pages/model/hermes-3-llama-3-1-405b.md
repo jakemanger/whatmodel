@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 53.3** ±1.2 · #317 of 740 · from 14 benchmark results across 2 sources
+**score 53.3** ±1.2 · #319 of 743 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇●▆▆▃▃▁   #232 of 472*     27%      1
+coding          ▁▁▁▃▆▇●▆▆▃▃▁   #234 of 474*     27%      1
 chat &amp; writing  █········█·●       #1 of 3*    2.4%      1
 </pre>
 
-<details><summary>coding · #232 of 472 · 27% of its score</summary>
+<details><summary>coding · #234 of 474 · 27% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -51,8 +51,8 @@ test                               result  vs the others in its run    difficult
 <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/189   medium · avg 48%    7.4%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 50%      5.0%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 84%      4.9%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 88%      3.5%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.4%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 88%      3.6%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (maker)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (maker)</a>                        86.0%  ▁▁▁▂▂▃▅█▅▃●▁ beats 121/123  easy · avg 85%      1.4%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (maker)</a>              65.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 64/79    medium · avg 59%    0.4%  blunt · at its level · small run

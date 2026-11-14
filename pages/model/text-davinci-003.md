@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #462 of 476*    0.3%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #463 of 477*    0.3%      1
 math            ▁▂▃▆█●▅▇▄▁▁▁    #286 of 540     29%      2
 </pre>
 
-<details><summary>chat &amp; writing · #462 of 476 · 0.3% of its score</summary>
+<details><summary>chat &amp; writing · #463 of 477 · 0.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">COPA</a>                                 93.2%  ▁·▁▁▁▅▅█▆▂●▁ beats 63/67    very easy · avg 96%    1.5%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   68.4%  █·········▄● beats 3/3      medium · avg 68%       1.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.7%  ▂··▄·▂▆●▂█·▂ beats 7/14     medium · avg 54%       1.4%  at its level
-<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.4%  at its level
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.3%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   15.8%  ▄······●·█·▄ beats 1/4      medium · avg 38%       1.3%  sharp · at its level
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   31.2%  █······●··██ beats 1/3      medium · avg 47%       1.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>   12.2%  █··●····█··█ beats 1/3      very hard · avg 21%    0.9%  too hard for it
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.0%  ▃····▃·▃▃●▅▅ beats 5/10     easy · avg 82%         0.8%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   41.4%  █···▄▄·▄▄▄·● beats 7/7      medium · avg 51%       0.7%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.530.pdf">Anthropic HH helpful preference c…</a>   63.0%  █········█·● beats 2/2      hard · avg 65%         0.7%  at its level · small run
-<a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   60.4%  █·····█····● beats 2/2      easy · avg 65%         0.7%  at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   60.4%  █·····█····● beats 2/2      medium · avg 65%       0.7%  at its level · small run
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">WinoGrande</a>                           73.5%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 108/131  medium · avg 73%       0.7%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   70.7%  ▄····▄·█···● beats 4/4      hard · avg 65%         0.6%  noisy
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   84.2%  ▃·▃·····▃▃▃● beats 5/7      easy · avg 87%         0.6%  blunt · at its level
@@ -87,7 +87,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.emnlp-main.706.pdf">StoryAnalogy multiple-choice stor…</a>   37.1%  █·······●··█ beats 1/2      hard · avg 42%         0.2%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   33.5%  ▄·█··●█·▄▄▄▄ beats 4/10     medium · avg 43%       0.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval summarization hallucinat…</a>   48.1%  ●··········▃ beats 1/3      very hard · avg 50%    0.0%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.307.pdf">Natural Questions (closed book)</a>      29.9%  ▂▁▁▁▂▄▄▃▅█●▁ beats 60/68    medium · avg 48%          —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.acl-long.307.pdf">Natural Questions (closed book)</a>      29.9%  ▂▁▁▁▂▄▄▃▅█●▁ beats 60/68    medium · avg 49%          —  not counted yet: no other model in the …
 </pre>
 
 </details>

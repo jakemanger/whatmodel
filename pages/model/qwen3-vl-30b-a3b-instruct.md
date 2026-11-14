@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 31.1B params (3B active) · apache-2.0
 
-**score 57.3** ±0.7 · #243 of 740 · from 26 benchmark results across 2 sources
+**score 57.2** ±0.7 · #246 of 743 · from 26 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▄▅▂▁   #198 of 316*    2.1%      1
-coding              ▁▁▁▃▆●█▆▆▃▃▁   #323 of 472*    4.2%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #180 of 404*    2.8%      1
-math                ▁▁▃▅█▆●█▅▂▁▁   #175 of 440*    9.5%      2
+agent tasks         ▁▁▃▆●▄▅▅▃▃▂▁   #201 of 319*    2.1%      1
+coding              ▁▁▁▃▆●█▆▆▃▃▁   #324 of 474*    4.2%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #181 of 405*    2.8%      1
+math                ▁▁▃▅█▆●█▄▁▁▁   #176 of 440*    9.5%      2
 vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #105 of 154     47%     13
 </pre>
 
-<details><summary>agent tasks · #198 of 316 · 2.1% of its score</summary>
+<details><summary>agent tasks · #201 of 319 · 2.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -34,9 +34,9 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #323 of 472 · 4.2% of its score</summary>
+<details><summary>coding · #324 of 474 · 4.2% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -45,9 +45,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #180 of 404 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #181 of 405 · 2.8% of its score</summary>
 
-Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -56,7 +56,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #175 of 440 · 9.5% of its score</summary>
+<details><summary>math · #176 of 440 · 9.5% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
@@ -99,7 +99,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Pro (maker)</a>                     77.8%  ▄·▄·▄▄▄▄█▄●█ beats 9/12   medium · avg 63%    6.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Redux (maker)</a>                   88.4%  ▃··▃·▃·█▃●▃▅ beats 7/11   easy · avg 79%      5.0%  typical
 <a href="https://arxiv.org/html/2604.18224v1">WebCompass (overall)</a>                 28.1%  ●·▃▃▃···▃·▃█ beats 0/9    hard · avg 19%      4.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (maker)</a>                    53.1%  ▄··▄·▄▄▄█▄●█ beats 8/11   medium · avg 37%    4.2%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (maker)</a>                    53.1%  ▄··▄·▄▄▄█▄●█ beats 8/11   medium · avg 38%    4.2%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (maker)</a>                 54.3%  ▃··▃▅▃▃●▃▃·█ beats 6/11   medium · avg 43%    3.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (maker)</a>                      62.5%  ▅··▃·▅▃▃·●·▃ beats 7/10   hard · avg 51%      3.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (ma…</a>   74.5%  ▃··█··▅█▃●▅▃ beats 10/13  medium · avg 66%    2.8%  blunt · at its level
@@ -117,7 +117,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=16">Qwen (submitted / maker-reported)</a>              25   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2604.18224v1-webcompass"></a><a href="https://arxiv.org/html/2604.18224v1">WebCompass: Towards Multimodal Web Codi…</a>        1    5% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.3
+weighted average                                   = 57.2
 </pre>
 
 <sub>Licences: WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

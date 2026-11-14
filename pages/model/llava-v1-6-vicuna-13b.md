@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 34.0** ±5.5 · #857 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 34.0** ±5.5 · #858 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

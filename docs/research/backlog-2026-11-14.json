@@ -1,0 +1,1195 @@
+{
+  "note": "Releases found by the 14 November 2026 second pass and not yet added. Identities only, from makers' own pages; no scores were collected.",
+  "missing": [
+    {
+      "rank": 5,
+      "in_window": true,
+      "tier": "notable",
+      "name": "NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (Nemotron 3.5 Transcribe)",
+      "maker": "NVIDIA",
+      "category": "stt",
+      "released": "2026-10-28 (Release Date on build.nvidia.com, GitHub, Hugging Face and NGC per model card; HF repo created 2026-10-07)",
+      "availability": "open weights (OpenMDW-1.1), BF16/FP8/NVFP4; also on build.nvidia.com",
+      "context_window": "65,536 tokens; recordings up to 1 hour",
+      "primary_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "quote": "Nemotron 3.5 Transcribe is an open-weight, offline speech and audio model for transcription in 40 languages ... Release Date - Build.Nvidia.com 10/28/2026 - Github 10/28/2026 ... - Hugging Face 10/28/2026",
+      "hf": {
+        "repo": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+        "sha": "c17667641642c4265ff2b7037dd101b7d4567634",
+        "created": "2026-10-07T22:50:21Z (placeholder)",
+        "weights_commit": "16ec754cea 'NVIDIA Nemotron 3.5 Transcribe' 2026-10-27T12:22:40Z",
+        "lastModified": "2026-10-29T23:04:39Z",
+        "license": "other (OpenMDW-1.1 per card)",
+        "params_hub": 33697781029,
+        "likes": 3297
+      }
+    },
+    {
+      "rank": 6,
+      "in_window": true,
+      "tier": "notable",
+      "name": "Scribe v3",
+      "maker": "ElevenLabs",
+      "category": "stt",
+      "released": "2026-11-09 (changelog entry date)",
+      "availability": "GA in the Speech to Text API",
+      "api_model_id": "scribe_v3",
+      "price": "$0.20 per hour (keyterm prompting $0.050/hour extra)",
+      "primary_url": "https://elevenlabs.io/docs/changelog",
+      "quote": "Scribe v3 and Scribe v3 Live, the most accurate ElevenLabs speech recognition models, are now available"
+    },
+    {
+      "rank": 7,
+      "in_window": true,
+      "tier": "notable",
+      "name": "Scribe v3 Live",
+      "maker": "ElevenLabs",
+      "category": "stt",
+      "released": "2026-11-09 (changelog entry date)",
+      "availability": "GA in the Speech to Text API (realtime)",
+      "api_model_id": "scribe_v3_live",
+      "price": "$0.22 per hour (keyterm prompting $0.080/hour, keyterm library $0.080/hour extra)",
+      "primary_url": "https://elevenlabs.io/docs/changelog",
+      "quote": "Scribe v3 and Scribe v3 Live, the most accurate ElevenLabs speech recognition models, are now available"
+    },
+    {
+      "rank": 8,
+      "in_window": true,
+      "tier": "notable",
+      "name": "Doubao Seedream 5.5 (international name: Dola Seedream 5.5)",
+      "maker": "ByteDance Seed (Volcengine Ark / BytePlus ModelArk)",
+      "category": "image",
+      "released": "2026-10 (listed under '202610' in Ark model release log; model-id date suffix 261028 suggests 2026-10-28, exact day not stated)",
+      "availability": "GA API on Volcengine Ark (China) and BytePlus ModelArk (international)",
+      "api_model_id": "doubao-seedream-5-5-261028 (BytePlus: dola-seedream-5-5-261028)",
+      "price": "Ark: 0.05 元 per input image; output 0.13 元/image (P <= 2.61MP) or 0.23 元/image (2.61MP < P <= 4.63MP)",
+      "primary_url": "https://docs.volcengine.com/docs/zh/ark/model-release-announcement.md",
+      "quote": "/字节跳动 /doubao-seedream-5-5-261028 /图片生成模型 /新发布 /Doubao Seedream 5.5 是豆包最新图像创作模型，增强多轮精准编辑能力，支持原生 RGBA 图片生成。"
+    },
+    {
+      "rank": 9,
+      "in_window": true,
+      "tier": "notable",
+      "name": "GPT-6 Cyber",
+      "maker": "OpenAI",
+      "category": "llm",
+      "released": "2026-11-05 (API changelog entry date; openai.com news RSS pubDate Thu, 05 Nov 2026)",
+      "availability": "limited - organizations approved for Daybreak Red trusted access",
+      "api_model_id": "gpt-6-cyber",
+      "price": "$20 input / $2 cached input / $100 output per 1M tokens for requests up to 272K input tokens; $40 / $4 / $150 above 272K; cache writes $25 (30 min) or $50 (12 h) per 1M",
+      "context_window": "1,050,000 tokens (max input 922,000; max output 128,000)",
+      "primary_url": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+      "quote": "Changelog, Nov 5: \"Use GPT-6 Cyber to investigate vulnerabilities, reproduce them in an authorized test environment, and verify fixes.\" Model page: \"Your organization needs Daybreak Red access and approval to use GPT-6 Cyber.\""
+    },
+    {
+      "rank": 10,
+      "in_window": true,
+      "tier": "notable",
+      "name": "MAI Image 2.7",
+      "maker": "Microsoft AI",
+      "category": "image",
+      "released": "2026-10-27 (announcement date)",
+      "availability": "preview (image editing only; on Arena, Artificial Analysis and MAI Playground; text-to-image 'coming soon'; no Foundry/API or price stated)",
+      "primary_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "quote": "MAI Image 2.7, our latest image editing model, launches with even stronger control for edits that are hardest to get right. It launches in preview at No. 3 on Arena Edit"
+    },
+    {
+      "rank": 11,
+      "in_window": true,
+      "tier": "notable",
+      "name": "Pika H3 Flex",
+      "maker": "Pika",
+      "category": "video",
+      "released": "2026-10-29 (Pika blog post date; HF repo Pika-Labs/Pika-H3-Flex created 2026-10-29T17:08:44Z, sha ca45d99f9b1d1859ffb9dc1cd6bfaaa994257f56, last modified 2026-11-07; Turbo LoRA repo sha dcacd93a50f714ba1cd61c7ca2cc5f65e9a1ec60)",
+      "availability": "Pika API now (app from 2026-11-02 per post); open weights for the generator adapters (LoRA rank 128 on MiniMax-H3) + inference code under the MiniMax H3 Community License; upsampling/stems/prompt enhancement remain hosted",
+      "api_model_id": "null (dev.pika.art slug pika/pika-h3-flex; no id stated)",
+      "price": "dev.pika.art: text-to-video and image-to-video 'from $0.01 / sec'; reference-to-video 'from $0.03 / sec'; audio stems '$0.001 / sec'; prompt rewriter '$0.02 / request'",
+      "primary_url": "https://pika.art/blog/pika-h3-flex",
+      "quote": "Today, we’re introducing Pika H3 Flex: our post-trained MiniMax H3 model"
+    },
+    {
+      "rank": 12,
+      "in_window": true,
+      "tier": "notable",
+      "name": "ZONOS3-Mini",
+      "maker": "Zyphra",
+      "category": "tts",
+      "released": "2026-11-09 (Zyphra blog post date; HF Zyphra/ZONOS3-Mini created 2026-11-09T05:03:57Z, sha d2d142a86b1e6aeb4252679673c86ecd86177bf8, modified 2026-11-14; transformers port Zyphra/ZONOS3-Mini-hf created 2026-11-11, sha e39d30df560125d9c434acd5cb0e83e4c2d64e0d)",
+      "availability": "open weights (Apache-2.0) + hosted on Zyphra Cloud",
+      "api_model_id": "null (Zyphra Cloud path zyphra/ZONOS3-Mini; no id or price rendered)",
+      "context_window": "32,768 positions; up to 10 minutes of audio per generation (model card)",
+      "primary_url": "https://www.zyphra.com/our-work/zonos3-mini",
+      "quote": "We are excited to announce ZONOS3-Mini, our next-generation real-time Text-To-Speech (TTS) model",
+      "hf": {
+        "repo": "Zyphra/ZONOS3-Mini",
+        "sha": "d2d142a86b1e6aeb4252679673c86ecd86177bf8",
+        "created": "2026-11-09T05:03:57Z",
+        "weights_commit": "d78708d603 'Zonos 3 Mini' 2026-11-09T22:01:45Z",
+        "lastModified": "2026-11-14T05:48:23Z",
+        "license": "apache-2.0"
+      }
+    },
+    {
+      "rank": 13,
+      "in_window": true,
+      "tier": "notable",
+      "name": "SOV-Transcribe-1",
+      "maker": "Salesforce (Salesforce Sovereign Intelligence)",
+      "category": "stt",
+      "released": "2026-11-12 (HF blog date; weights uploaded 2026-11-10T13:46Z 'Upload 27 files')",
+      "availability": "open weights, Apache-2.0",
+      "context_window": "audio up to 30 minutes (tested), per card",
+      "primary_url": "https://huggingface.co/blog/salesforce-sovereign-intelligence/sov-transcribe-1",
+      "quote": "We’re releasing the weights today on Hugging Face under the Apache 2.0 license.",
+      "hf": {
+        "repo": "salesforce-sovereign-intelligence/SOV-Transcribe-1",
+        "sha": "505d8fae243924c0d8acdc622f7f0abab344eba3",
+        "created": "2026-11-10T00:53:53Z",
+        "lastModified": "2026-11-11T23:26:17Z",
+        "license": "apache-2.0"
+      }
+    },
+    {
+      "rank": 14,
+      "in_window": true,
+      "tier": "notable",
+      "name": "LFM3-Omni-2B",
+      "maker": "Liquid AI",
+      "category": "llm",
+      "released": "2026-10-27 (LFM3 launch blog date; HF repo created 2026-10-21)",
+      "availability": "open weights (LFM Open License v1.0, 'lfm1.0'); also Liquid AI API and Playground",
+      "context_window": "32K tokens (input + output)",
+      "primary_url": "https://www.liquid.ai/blog/lfm3",
+      "quote": "LFM3-Omni-2B is our first omni model, bringing vision, audio, and language together in a single model that can see, listen, and talk back ... The base and post-trained models are open-weight and available today on Hugging Face , our Playground , and the Liquid AI API .",
+      "hf": {
+        "repo": "LiquidAI/LFM3-Omni-2B",
+        "sha": "21d75123f86c1f7ffb4bef1ea202710c4e7ebe67",
+        "created": "2026-10-21T16:58:40Z",
+        "lastModified": "2026-11-03T07:41:18Z",
+        "license": "other (LFM Open License v1.0)",
+        "params_hub": 2166928384
+      }
+    },
+    {
+      "rank": 15,
+      "in_window": true,
+      "tier": "notable",
+      "name": "LFM3-Audio-2B",
+      "maker": "Liquid AI",
+      "category": "tts",
+      "released": "2026-10-27 (LFM3 launch blog date; HF repo created 2026-09-08 privately, public with launch)",
+      "availability": "open weights (LFM Open License v1.0); Liquid AI API",
+      "context_window": "32K tokens (input + output)",
+      "primary_url": "https://www.liquid.ai/blog/lfm3",
+      "quote": "LFM3-Audio-2B is a compact, fully featured audio model that runs locally on laptops and edge devices. It takes text or audio as input and responds with text, speech, or both.",
+      "hf": {
+        "repo": "LiquidAI/LFM3-Audio-2B",
+        "sha": "2d6c1f99c129b3ef07a8d168bc0ff08e2bdb93f1",
+        "created": "2026-09-08T18:23:36Z (private until launch)",
+        "lastModified": "2026-11-03T07:40:58Z",
+        "license": "other (LFM Open License v1.0)",
+        "params_hub": 2002332928
+      }
+    },
+    {
+      "rank": 16,
+      "in_window": true,
+      "tier": "notable",
+      "name": "AssemblyAI-TTS-1",
+      "maker": "AssemblyAI",
+      "category": "tts",
+      "released": "2026-10-27 (launch date stated in AssemblyAI models/pricing reference)",
+      "availability": "GA via Text-to-Speech API (streaming WebSocket + HTTP); public docs 'not yet public'",
+      "price": "$15 per 1M characters (input characters; same for cloned voices and EU)",
+      "primary_url": "https://www.assemblyai.com/llms/models.md",
+      "quote": "**Model:** AssemblyAI-TTS-1 **Launched:** October 27, 2026"
+    },
+    {
+      "rank": 17,
+      "in_window": true,
+      "tier": "notable",
+      "name": "SenseNova 6.8 Flash",
+      "maker": "SenseTime",
+      "category": "llm",
+      "released": "2026-11-02 (正式版; date from a reprint of SenseTime's official WeChat article — not shown on sensenova.cn)",
+      "availability": "GA (正式版) via SenseNova Token Plan / platform, SenseNova Studio and 商汤小浣熊 app; API pricing not stated",
+      "primary_url": "https://www.sensenova.cn/",
+      "quote": "SenseNova 6.8 Flash 新一代多模态智能体模型，面向办公智能与持续任务场景，强化长期记忆、主动交互及动态内容创作能力"
+    },
+    {
+      "rank": 18,
+      "in_window": true,
+      "tier": "notable",
+      "name": "Gemini Decision 1",
+      "maker": "Google",
+      "category": "other",
+      "released": "2026-11-11 (Gemini API changelog date and deprecations-table release date; Google blog post the same day)",
+      "availability": "GA on Gemini API (free tier and paid tier; Batch API not supported)",
+      "api_model_id": "gemini-decision-1",
+      "price": "$0.10 per 1M input tokens (text, image, video, audio, PDF); output not applicable (0 output tokens)",
+      "context_window": "shared input up to 262,144 tokens; up to 1,000 questions per request",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/models/gemini-decision-1",
+      "quote": "Changelog, November 11, 2026: \"Released Gemini Decision 1 (gemini-decision-1) and the Decisions API for fast, calibrated binary, categorical, and rubric decisions across text, images, audio, video, and PDFs with zero output tokens.\""
+    },
+    {
+      "rank": 19,
+      "in_window": true,
+      "tier": "minor",
+      "name": "pplx-decider-v1.3",
+      "maker": "Perplexity",
+      "category": "other",
+      "released": "2026-11 (changelog heading 'November 2026', no day; HF repo created 2026-11-09)",
+      "availability": "GA on Decisions API (pplx-decider-latest now points to it) + open weights Apache-2.0 on HF",
+      "api_model_id": "pplx-decider-v1.3",
+      "price": "$0.02 per 1M input tokens (same as v1.2, per changelog)",
+      "primary_url": "https://docs.perplexity.ai/changelog",
+      "quote": "`pplx-decider-v1.3` (27B) and `pplx-decider-flash-v1.3` (4B) are the new decision models"
+    },
+    {
+      "rank": 20,
+      "in_window": true,
+      "tier": "minor",
+      "name": "pplx-decider-flash-v1.3",
+      "maker": "Perplexity",
+      "category": "other",
+      "released": "2026-11 (changelog heading 'November 2026'; HF repo created 2026-11-09)",
+      "availability": "GA on Decisions API (pplx-decider-flash-latest) + open weights Apache-2.0 on HF (base Qwen3.5-4B)",
+      "api_model_id": "pplx-decider-flash-v1.3",
+      "price": "$0.01 per 1M input tokens (same as v1.2, per changelog)",
+      "primary_url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3",
+      "quote": "pplx-decider-flash-v1.3 is the small version of the v1.3 decider family, on Qwen3.5-4B."
+    },
+    {
+      "rank": 21,
+      "in_window": true,
+      "tier": "minor",
+      "name": "d1-2B",
+      "maker": "Liquid AI",
+      "category": "other",
+      "released": "2026-10-27 (LFM3 launch blog; HF repo created 2026-10-24)",
+      "availability": "open weights (LFM Open License v1.0)",
+      "context_window": "128K tokens",
+      "primary_url": "https://www.liquid.ai/blog/lfm3",
+      "quote": "This release also brings two new decision models: d1-2B , built on LFM3-VL-2B, reads text and pictures, and d1-Omni-2B , built on LFM3-Omni-2B, also listens."
+    },
+    {
+      "rank": 22,
+      "in_window": true,
+      "tier": "minor",
+      "name": "d1-Omni-2B",
+      "maker": "Liquid AI",
+      "category": "other",
+      "released": "2026-10-27 (LFM3 launch blog; HF repo created 2026-10-24)",
+      "availability": "open weights (LFM Open License v1.0)",
+      "context_window": "128K tokens",
+      "primary_url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+      "quote": "d1-Omni-2B is a decision model for text, pictures, and audio, built on LFM3-Omni-2B. It returns calibrated answers in one forward pass, without generating tokens."
+    },
+    {
+      "rank": 23,
+      "in_window": true,
+      "tier": "minor",
+      "name": "kanana-2-v-decide-3b-2611",
+      "maker": "Kakao"
+    },
+    {
+      "rank": 24,
+      "in_window": true,
+      "tier": "minor",
+      "name": "GPT-6 Rosalind",
+      "maker": "OpenAI",
+      "category": "llm",
+      "released": "2026-10-30 (API changelog entry date)",
+      "availability": "limited - organizations approved for Rosalind Research via the trusted-access program",
+      "api_model_id": "gpt-6-rosalind",
+      "price": "short context: $15.00 input / $75.00 output / $1.50 cached input per 1M tokens; long context: $30.00 / $112.50 / $3.00 (pricing page, Life Sciences - Trusted Access)",
+      "primary_url": "https://developers.openai.com/api/docs/changelog",
+      "quote": "Released GPT-6 Rosalind, bringing specialized biological reasoning with scientific tool use to complex life sciences research. Access is available to organizations approved for Rosalind Research through the trusted-access program for internal research by authorized users."
+    },
+    {
+      "rank": 25,
+      "in_window": true,
+      "tier": "minor",
+      "name": "DeepSeek TTS (Text to Speech API)",
+      "maker": "DeepSeek",
+      "category": "tts",
+      "released": "2026-11-13 (DeepSeek Full-Suite App API Release news date)",
+      "availability": "GA standalone API (POST /v1/tools/tts and WebSocket); no model name or version given",
+      "api_model_id": "endpoint https://api.deepseek.com/v1/tools/tts (voices: stella, tide)",
+      "price": "$0.45 per 10,000 characters list; limited-time $0.225 (50% off)",
+      "primary_url": "https://api-docs.deepseek.com/guides/tts",
+      "quote": "Search, Fetch, OCR, ASR, and TTS are also available as standalone APIs for custom workflows."
+    },
+    {
+      "rank": 26,
+      "in_window": true,
+      "tier": "minor",
+      "name": "DeepSeek ASR (Speech to Text API)",
+      "maker": "DeepSeek",
+      "category": "stt",
+      "released": "2026-11-13 (DeepSeek Full-Suite App API Release news date)",
+      "availability": "GA standalone API (POST /v1/tools/asr); no model name given; 21 languages, max 120 s per request",
+      "api_model_id": "endpoint https://api.deepseek.com/v1/tools/asr",
+      "price": "$0.116 per hour of audio list; limited-time $0.058",
+      "primary_url": "https://api-docs.deepseek.com/guides/asr",
+      "quote": "Transcribe an audio file into text, for example for voice input in a chatbot. POST https://api.deepseek.com/v1/tools/asr"
+    },
+    {
+      "rank": 27,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Recraft V4.1 Flash V2",
+      "maker": "Recraft",
+      "category": "image",
+      "released": "November 2026 (exact day not on page)",
+      "availability": "GA via Recraft API",
+      "api_model_id": "recraftv4_1_flash_v2 (alias recraftv4_1_flash_v2_raster)",
+      "price": "$0.007 per image (raster, 1K)",
+      "primary_url": "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1-flash-v2.md",
+      "quote": "Recraft V4.1 Flash V2, released in November 2026, is the next step in the Flash model line first introduced in September 2026"
+    },
+    {
+      "rank": 28,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Live 3",
+      "maker": "Fish Audio",
+      "category": "other",
+      "released": "2026-11-10 (blog post date)",
+      "availability": "Fish Agent Platform + Fish Audio API; on-prem for enterprises; English only; weights/licence not stated",
+      "primary_url": "https://fish.audio/blog/introducing-live-3/",
+      "quote": "Today, we’re introducing Live 3, Fish Audio’s full-duplex voice model."
+    },
+    {
+      "rank": 29,
+      "in_window": "uncertain",
+      "tier": "minor",
+      "name": "ERNIE-Light-DT-1.0",
+      "maker": "Baidu",
+      "category": "llm",
+      "released": "date not on Baidu pages (Qianfan model list and pricing pages updated 2026-11-11; OpenRouter lead says 2026-11-10)",
+      "availability": "API on Qianfan (deep-thinking and text-generation lists)",
+      "api_model_id": "ernie-light-dt-1.0",
+      "price": "input 0.008 / cache hit 0.0008 / output 0.028 元/千tokens",
+      "context_window": "1M; max output 128k",
+      "primary_url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+      "quote": "ERNIE-Light-DT-1.0 ernie-light-dt-1.0 1M 1M 128k RPM = 60 TPM = 1000000"
+    },
+    {
+      "rank": 30,
+      "in_window": "uncertain",
+      "tier": "minor",
+      "name": "GLM-5.3-FlashX-Legal (GLM-Legal)",
+      "maker": "Z.ai",
+      "category": "llm",
+      "released": "date not on page (image asset path dated 20261021; aggregators give 2026-10-12 / 10-23 / OpenRouter 2026-11-02)",
+      "availability": "API (Z.ai)",
+      "api_model_id": "glm-5.3-flashx-legal",
+      "price": "$0.37 input / $0.075 cached input / $1.25 output per M tokens",
+      "context_window": "1M (per GLM-5.3-Flash family page)",
+      "primary_url": "https://docs.z.ai/guides/vlm/glm-5.3-flash.md",
+      "quote": "GLM-5.3-FlashX-Legal (GLM-Legal) is a model optimized for professional legal workflows, with a focus on document understanding, legal reasoning, and task execution."
+    },
+    {
+      "rank": 31,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Gemini 4 Carbon for cyber",
+      "maker": "Google",
+      "category": "llm",
+      "released": "2026-11-10 (Gemini Enterprise Agent Platform release notes, GA together with Gemini 4 Carbon)",
+      "availability": "GA behind the Fairwind Program allowlist (Agent Platform)",
+      "api_model_id": "gemini-4-carbon-cyber-permissive",
+      "primary_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#November_10_2026",
+      "quote": "Gemini 4 Carbon (gemini-4-carbon) and Gemini 4 Carbon for cyber (gemini-4-carbon-cyber-permissive) are generally available (GA). ... Gemini 4 Carbon for cyber is a defensive cybersecurity variant available behind the Fairwind Program allowlist."
+    },
+    {
+      "rank": 32,
+      "in_window": true,
+      "tier": "minor",
+      "name": "MAI Cyber 1.1 Flash",
+      "maker": "Microsoft AI",
+      "category": "llm",
+      "released": "2026-10-27 (announcement date)",
+      "availability": "limited (MDASH only, verified customers)",
+      "primary_url": "https://microsoft.ai/news/mai-cyber-1-1-flash/",
+      "quote": "MAI Cyber 1.1 Flash is available through MDASH to verified customers, with safeguards in place to support responsible use"
+    },
+    {
+      "rank": 33,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Granite-4.1-8B-LLMON-preview (and Granite-4.1-3B-LLMON-preview)",
+      "maker": "IBM",
+      "category": "llm",
+      "released": "2026-11-12 (Release Date on model card; repos created 2026-10-01)",
+      "availability": "open weights (Apache 2.0), experimental preview",
+      "primary_url": "https://huggingface.co/ibm-granite/granite-4.1-8b-llmon-preview",
+      "quote": "Granite-4.1-8B-LLMON-preview is an 8B-parameter instruct model fine-tuned from Granite-4.1-8B-base to consume prompts in LLMON (LLM Object Notation) instead of a conventional chat template. ... Release Date: November 12, 2026"
+    },
+    {
+      "rank": 34,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Granite Switch 4.1.1 (granite-switch-4.1-8b / -30b)",
+      "maker": "IBM",
+      "category": "llm",
+      "released": "2026-10-27 (revision 4.1.1; revision 4.1 was 2026-10-14) per model card",
+      "availability": "open weights (Apache 2.0)",
+      "context_window": "128K (base granite-4.1-8b)",
+      "primary_url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+      "quote": "Granite Switch 4.1.1 8B is a modular LLM that composes a base model, multiple adapters and an encoder together ... Release Date: October 27, 2026 (revision 4.1.1); October 14, 2026 (revision 4.1)"
+    },
+    {
+      "rank": 35,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Edge0-145B / Edge0-120B (NVFP4, q3k)",
+      "maker": "Edge0 (edge0.ai)",
+      "category": "llm"
+    },
+    {
+      "rank": 36,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Hydrogen-1.0",
+      "maker": "Deep Principle (deep-principle)",
+      "category": "llm"
+    },
+    {
+      "rank": 37,
+      "in_window": true,
+      "tier": "minor",
+      "name": "maya2-native",
+      "maker": "Maya Research",
+      "category": "tts"
+    },
+    {
+      "rank": 38,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Bielik 11B v3.1 Instruct",
+      "maker": "SpeakLeash",
+      "category": "llm"
+    },
+    {
+      "rank": 39,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Haru-4B",
+      "maker": "higurashi-ai",
+      "category": "other (full-duplex speech-to-speech base model)"
+    },
+    {
+      "rank": 40,
+      "in_window": true,
+      "tier": "minor",
+      "name": "MiniMax-H3 video derivatives",
+      "maker": "various",
+      "category": "video"
+    },
+    {
+      "rank": 41,
+      "in_window": true,
+      "tier": "minor",
+      "name": "SFX v3",
+      "maker": "ElevenLabs",
+      "category": "other",
+      "released": "2026-11-02 (changelog entry date)",
+      "availability": "GA to every workspace (API + ElevenCreative default)",
+      "api_model_id": "eleven_text_to_sound_v3",
+      "price": "Sound Effects '$0.12' per minute (pricing page does not name the version)",
+      "primary_url": "https://elevenlabs.io/docs/changelog",
+      "quote": "SFX v3 (eleven_text_to_sound_v3), our newest sound effects model, is now available to every workspace."
+    },
+    {
+      "rank": 42,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Praxis-1",
+      "maker": "Runway",
+      "category": "other",
+      "released": "2026-11-11 (Runway research post date); HF runwayml/praxis-1-yam created 2026-11-05 (sha b72c4bbc0430d40ef9bc26c49ae6d9773298ee07), praxis-1-base-lerobot 2026-11-10 (sha ea79f5afe3ae26da1dc57b78db33ed32a00d5316), praxis-1-so101 2026-11-12",
+      "availability": "open weights (Apache-2.0 on HF, gated 'auto')",
+      "primary_url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control",
+      "quote": "With Praxis-1, we turn a 27B-parameter video foundation model into an open weight world model"
+    },
+    {
+      "rank": 43,
+      "in_window": true,
+      "tier": "minor",
+      "name": "Hume Audio Decision Model (Audio Decision API)",
+      "maker": "Hume AI",
+      "category": "other",
+      "released": "2026-11-02 (blog post date)",
+      "availability": "limited (waitlist)",
+      "primary_url": "https://www.hume.ai/blog/introducing-hume-audio-decision-api",
+      "quote": "Hume's Audio Decision API, the first audio-native model that answers questions about speech and sound"
+    },
+    {
+      "rank": 44,
+      "in_window": false,
+      "tier": "flagship",
+      "name": "Kling 4.0 (and Kling 4.0 Flash)",
+      "maker": "Kuaishou (Kling AI)",
+      "category": "video",
+      "released": "2026-09-30 blog (early access; Kling 4.0 Flash for Ultra Yearly subscribers from 2026-09-28; 'wider rollout coming in October'). PRE-WINDOW but absent from DB",
+      "availability": "early access then wider rollout in October (GA date not on maker page; aggregators say 2026-10-15); API availability not confirmed (API docs are JS-only)",
+      "primary_url": "https://kling.ai/blog/kling40-kling-visual-realism-creative-control-introducing-storytelling",
+      "quote": "Kling 4.0 is entering early access, with a wider rollout coming in October."
+    },
+    {
+      "rank": 45,
+      "in_window": false,
+      "tier": "flagship",
+      "name": "FLUX 3 Image",
+      "maker": "Black Forest Labs",
+      "category": "image",
+      "released": "2026-10-01 (BFL API release-notes entry date; pre-window but absent from DB)",
+      "availability": "GA via BFL API (release note makes no preview statement); closed weights (only the 5.6B Klein version has open weights)",
+      "api_model_id": "flux-3-image (POST /v1/flux-3-image)",
+      "price": "per image by resolution: $0.041 (768sq), $0.048 (1k), $0.100 (2k), $0.607 (4k)",
+      "primary_url": "https://docs.bfl.ai/release-notes",
+      "quote": "FLUX 3 Image gives you maximum control over every pixel. Generate an image from a prompt, edit specific parts of an image, and combine up to ten references, all through one endpoint."
+    },
+    {
+      "rank": 46,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Mercury 3",
+      "maker": "Inception",
+      "category": "llm",
+      "released": "2026-10-19 (blog post date; PRE-WINDOW by 6 days)",
+      "availability": "GA-style 'available today' on Inception API, OpenRouter, Baseten, Vercel (no GA/preview label)",
+      "api_model_id": "mercury-3",
+      "price": "$0.20 / 1M input, $0.70 / 1M output (launch: 50% off at $0.10 / $0.35; cached input 90% off)",
+      "context_window": "1M tokens, up to 131,072 output tokens",
+      "primary_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "quote": "Mercury 3 is available today on the Inception API Platform and through OpenRouter, Baseten, and Vercel."
+    },
+    {
+      "rank": 47,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Doubao Seed 2.1 Lite (260915)",
+      "maker": "ByteDance Seed",
+      "category": "llm",
+      "released": "2026-09 (Ark release log '202609'; id suffix 260915) - pre-window",
+      "availability": "GA API on Volcengine Ark",
+      "api_model_id": "doubao-seed-2-1-lite-260915",
+      "price": "input 0.80 元/M tokens (non-audio), 12.00 元/M (audio); cache hit 0.16; output 2.70 元/M (input length [0,1024]K tier)",
+      "context_window": "1024K; max output 256K",
+      "primary_url": "https://docs.volcengine.com/docs/zh/ark/model-release-announcement.md",
+      "quote": "/字节跳动 /doubao-seed-2-1-lite-260915 /深度思考模型 /新发布 /新一代全模态大模型，原生支持文本、视觉、音频统一理解，具备 1M 超长上下文窗口"
+    },
+    {
+      "rank": 48,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Krea 3",
+      "maker": "Krea",
+      "category": "image",
+      "released": "2026-10-15 (blog post date; pre-window by 10 days but absent from DB)",
+      "availability": "GA in Krea app and Krea API; partners fal, Hedra, Together AI, Nous Research, OpenRouter, Replicate; open weights not stated (none on HF)",
+      "price": "$0.06 per image at 2K, $0.03 per image at 1K",
+      "primary_url": "https://www.krea.ai/blog/introducing-krea-3",
+      "quote": "Krea 3 is our new image editing model. Edits take under 8 seconds at native 2K, and products and characters stay consistent from one image to the next."
+    },
+    {
+      "rank": 49,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Vidu Q4 Preview",
+      "maker": "ShengShu (Vidu)",
+      "category": "video",
+      "released": "2026-10-07 (Vidu API 'Update Notice' date; pre-window but absent from DB)",
+      "availability": "preview via Vidu API",
+      "primary_url": "https://platform.vidu.com/docs/api-reference/updates",
+      "quote": "[New Models]-Vidu Q4 preview："
+    },
+    {
+      "rank": 50,
+      "in_window": false,
+      "tier": "notable",
+      "name": "MAI Voice 2.1 / MAI Voice 2.1 Flash / MAI Transcribe 2 Streaming",
+      "maker": "Microsoft AI",
+      "category": "tts",
+      "released": "2026-10-01 (announcement date; PRE-WINDOW)",
+      "availability": "GA status not stated; available in Microsoft Foundry (also OpenRouter, MAI Playground, Vercel for Voice)",
+      "price": "MAI Voice 2.1 $22 per 1M characters; MAI Voice 2.1 Flash $15 per 1M characters; MAI Transcribe 2 Streaming $0.54 per audio hour (introductory, through end of 2026)",
+      "primary_url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "quote": "MAI Transcribe 2 Streaming is available at an introductory price of $0.54 per hour of audio through the end of the year."
+    },
+    {
+      "rank": 51,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Qwen-Audio-3.1-TTS-Plus",
+      "maker": "Alibaba (Qwen)",
+      "category": "tts",
+      "released": "2026-10-21 (Model Studio Singapore and Beijing entries) - just before window",
+      "availability": "GA API (Model Studio)",
+      "api_model_id": "qwen-audio-3.1-tts-plus",
+      "primary_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "quote": "Qwen-Audio-3.1-TTS-Plus is a high-quality, professional text-to-speech model for premium voices and content creation."
+    },
+    {
+      "rank": 52,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Granite Speech 5.0 2B (granite-speech-5.0-2b)",
+      "maker": "IBM",
+      "category": "stt",
+      "released": "2026-10-20 (Release Date on model card; PRE-WINDOW by 5 days)",
+      "availability": "open weights (Apache 2.0)",
+      "primary_url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
+      "quote": "Granite Speech 5.0 2B is a compact and efficient speech-language model, specifically designed for multilingual automatic speech recognition (ASR) and bidirectional automatic speech translation (AST) ... Release Date: October 20, 2026"
+    },
+    {
+      "rank": 53,
+      "in_window": false,
+      "tier": "notable",
+      "name": "Motif 3 (314B-A13B)",
+      "maker": "Motif Technologies"
+    },
+    {
+      "rank": 54,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Oak 1",
+      "maker": "Speechmatics",
+      "category": "stt",
+      "released": "2026-10-14 (announcement post, API batch); realtime added 2026-10-27 (changelog 2026.10.27 Realtime SaaS); on-prem containers 2026-11-10",
+      "availability": "GA via Speechmatics API (batch + realtime), on-prem container",
+      "api_model_id": "oak-1 (with language 'multi')",
+      "primary_url": "https://speechmatics.featurebase.app/en/changelog",
+      "quote": "New Oak 1, a medical model, is now available for real-time transcription."
+    },
+    {
+      "rank": 55,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Melia 1",
+      "maker": "Speechmatics",
+      "category": "stt",
+      "released": "2026-06-17 (batch, 'production preview', changelog 2026.06.17 Batch SaaS); realtime launched 2026-10-19 (changelog 2026.10.19 Realtime SaaS); on-prem realtime container 2026-11-10",
+      "availability": "batch + realtime via Speechmatics API (production preview per June entry; docs list it alongside Standard/Enhanced with no preview label)",
+      "api_model_id": "melia-1 (with language 'multi')",
+      "primary_url": "https://speechmatics.featurebase.app/en/changelog/20260617-batch-saas",
+      "quote": "Introducing Melia 1 - our brand new model for multilingual transcription. This model has now entered production preview - capable of handling production scale traffic for multilingual use cases."
+    },
+    {
+      "rank": 56,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Eleven Realtime (v1 Mini, v1 Max)",
+      "maker": "ElevenLabs",
+      "category": "other",
+      "released": "introduced 2026-10-19 with gradual rollout (pre-window); available to every workspace 2026-11-02",
+      "availability": "GA for ElevenAgents voice agents (Realtime API/WebSocket) from 2026-11-02",
+      "api_model_id": "eleven_realtime_v1_mini, eleven_realtime_v1_max",
+      "price": "Mini: '$0.08+ LLM usage' per minute, input $0.20 / output $6.00 per 1M tokens; Max: '$0.08+ LLM usage' per minute, input $1.80 / output $9.00 per 1M tokens; burst $0.160/min",
+      "primary_url": "https://elevenlabs.io/docs/changelog",
+      "quote": "Eleven Realtime is a new family of models for ElevenAgents voice agents, rolling out gradually across workspaces."
+    },
+    {
+      "rank": 57,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Phonon TTS (31M en; 40M en/fr/de/es/pt/multilingual)",
+      "maker": "Gradium"
+    },
+    {
+      "rank": 58,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Qwen-Image-2.1-Pro",
+      "maker": "Alibaba (Qwen)",
+      "category": "image",
+      "released": "2026-10-02 (Model Studio entry) - pre-window",
+      "availability": "GA API (Model Studio)",
+      "api_model_id": "qwen-image-2.1-pro",
+      "primary_url": "https://help.aliyun.com/zh/model-studio/newly-released-models",
+      "quote": "Qwen-Image-2.1-Pro 是通义千问（Qwen）系列中一个统一的文本到图像生成与图像编辑模型。"
+    },
+    {
+      "rank": 59,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Solar Mini 4 (solar-mini4-260922)",
+      "maker": "Upstage",
+      "category": "llm",
+      "released": "2026-09-22 (PRE-WINDOW)",
+      "availability": "GA-style ('Solar Mini 4 is live'), Upstage Console/API, on-prem",
+      "api_model_id": "solar-mini4-260922 (alias solar-mini4)",
+      "price": "$0.10 / 1M input, $0.40 / 1M output, $0.01 / 1M cached",
+      "context_window": "512K input, up to 128K output",
+      "primary_url": "https://console.upstage.ai/docs/models/solar-mini-4",
+      "quote": "Released on 2026-09-22."
+    },
+    {
+      "rank": 60,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Doubao Seedream 5.0 Flash (260915)",
+      "maker": "ByteDance Seed",
+      "category": "image",
+      "released": "2026-09 (Ark release log '202609'; BytePlus as dola-seedream-5-0-flash-260915) - pre-window",
+      "availability": "GA API",
+      "api_model_id": "doubao-seedream-5-0-flash-260915",
+      "price": "Ark: input images free; 0.12 元 per output image",
+      "primary_url": "https://docs.volcengine.com/docs/zh/ark/model-release-announcement.md",
+      "quote": "能力与 Seedream 5.0 pro 完全一致，支持交互编辑、图层拆分、原生多语种生成等特色能力；Seedream 5.0 flash 生图速度更快、价格更低"
+    },
+    {
+      "rank": 61,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Qwen-Audio-3.1-TTS-Flash",
+      "maker": "Alibaba (Qwen)",
+      "category": "tts",
+      "released": "2026-10-12 international (Beijing region 2026-09-18) - pre-window",
+      "availability": "GA API (Model Studio)",
+      "api_model_id": "qwen-audio-3.1-tts-flash",
+      "primary_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "quote": "Qwen-Audio-3.1-TTS-Flash is a speech synthesis model for real-time interactions."
+    },
+    {
+      "rank": 62,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Qwen-Audio-3.1-TTS-Next",
+      "maker": "Alibaba (Qwen)",
+      "category": "tts",
+      "released": "2026-10-22 international (Beijing region 2026-09-21) - pre-window",
+      "availability": "GA API (Model Studio)",
+      "api_model_id": "qwen-audio-3.1-tts-next",
+      "primary_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "quote": "Qwen-Audio-3.1-TTS-Next is an AudioGen model designed for unified audio generation."
+    },
+    {
+      "rank": 63,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Qwen-Audio-3.1-ASR-Flash (also -Flash-Streaming, -Flash-Filetrans, -Flash-Message)",
+      "maker": "Alibaba (Qwen)",
+      "category": "stt",
+      "released": "2026-09-21 (Beijing region entry; no international entry seen) - pre-window",
+      "availability": "GA API (Model Studio, China Beijing region)",
+      "api_model_id": "qwen-audio-3.1-asr-flash",
+      "primary_url": "https://help.aliyun.com/zh/model-studio/newly-released-models",
+      "quote": "Qwen-Audio-3.1-ASR-Flash 是一款支持短语音高效识别的大模型，面向高质量、多语种及文化内容转写场景。"
+    },
+    {
+      "rank": 64,
+      "in_window": false,
+      "tier": "minor",
+      "name": "StepAudio 3 TTS (with StepAudio 3 ASR / Realtime / Gen / Music)",
+      "maker": "StepFun",
+      "category": "tts",
+      "released": "date not on page (technical report arXiv 2609.12945 implies Sept 2026) - likely pre-window",
+      "availability": "GA API",
+      "api_model_id": "stepaudio-3-tts",
+      "price": "2.5 元 / 万字符 (voice clone 9.9 元 per voice); StepAudio 3 ASR 2.8 元/小时",
+      "primary_url": "https://platform.stepfun.com/docs/zh/guides/models/stepaudio-3-tts.md",
+      "quote": "/ 模型 ID / `stepaudio-3-tts` /"
+    },
+    {
+      "rank": 65,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Clover-35B-A3B-Preview",
+      "maker": "Diffuspace",
+      "category": "llm"
+    },
+    {
+      "rank": 66,
+      "in_window": false,
+      "tier": "minor",
+      "name": "Hy-Nomas",
+      "maker": "Tencent Hunyuan",
+      "category": "video (interactive world model)"
+    }
+  ],
+  "status_changes": [
+    {
+      "db_name": "Inkling 2 Small (594B-A17B)",
+      "change": "weights",
+      "detail": "Open weights released under Apache-2.0 on 2026-11-12 (HF 'upload model' commit 78cb6c0ef68e at 2026-11-12T19:53:15Z). DB row inkling-2-small is 'closed'; switch to open, licence Apache-2.0. NVFP4 main checkpoint (thinkingmachines/Inkling-2-Small) and MXFP8 (thinkingmachines/Inkling-2-Small-MXFP8). Third-party API hosts named in the update: NVIDIA, Fireworks, Together, Baseten, Nebius, Modal, Cloudflare.",
+      "date": "2026-11-12",
+      "primary_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "quote": "Inkling 2 Small's weights are now available for download on HuggingFace."
+    },
+    {
+      "db_name": "(held) ERNIE-5.5-Flash-Base",
+      "change": "other",
+      "detail": "Held because it was pretrain-only. Baidu released the post-trained chat model ERNIE 5.5 Flash Preview on 2026-11-11 (API on Qianfan; weights promised 'soon' under Apache 2.0). Add the Preview (see missing); the Base remains out.",
+      "date": "2026-11-11",
+      "primary_url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+      "quote": "Today we are releasing ERNIE 5.5 Flash Preview, the first post-trained model built on the ERNIE 5.5 Flash Base"
+    },
+    {
+      "db_name": "GPT Image 2",
+      "change": "deprecation",
+      "detail": "gpt-image-2 and gpt-image-2-2026-04-21 deprecated; shutdown Feb 10, 2027; replacement gpt-image-2.6-sunburst or gpt-image-2.6-flare. Notice dated Nov 10, 2026, two days before the first pass.",
+      "date": "2026-11-10 (notice); 2027-02-10 (shutdown)",
+      "primary_url": "https://developers.openai.com/api/docs/deprecations",
+      "quote": "/ **Feb 10, 2027** / `gpt-image-2`, `gpt-image-2-2026-04-21` / Deprecated / `gpt-image-2.6-sunburst` or `gpt-image-2.6-flare` / Nov 10, 2026 /"
+    },
+    {
+      "db_name": "Gemini 2.5 Pro",
+      "change": "deprecation",
+      "detail": "Deprecated and removed from the AI Studio picker; API access is limited to existing users. From Dec 1, 2026, gemini-2.5-pro requests auto-route to gemini-3.8-flash at 3.8 Flash rates.",
+      "date": "2026-11-02 (changelog notice); 2026-12-01 (routing / shutdown date)",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "quote": "`gemini-2.5-pro` is deprecated and is no longer available to select in Google AI Studio. Access through the API is limited to existing users who have actively used it in the past. Effective December 1, 2026, all API requests to `gemini-2.5-pro` will automatically route to gemini-3.8-flash and be billed at Gemini 3.8 F…"
+    },
+    {
+      "db_name": "Gemini 2.5 Flash",
+      "change": "deprecation",
+      "detail": "Deprecated; from Dec 1, 2026, requests auto-route to gemini-3.5-flash-lite at 3.5 Flash-Lite rates. gemini-2.5-flash-lite is not deprecated.",
+      "date": "2026-11-02 (changelog notice); 2026-12-01 (routing / shutdown date)",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "quote": "`gemini-2.5-flash` is deprecated and is no longer available to select in Google AI Studio. Effective December 1, 2026, all API requests to `gemini-2.5-flash` will automatically route to gemini-3.5-flash-lite and be billed at Gemini 3.5 Flash-Lite rates."
+    },
+    {
+      "db_name": "Gemini Omni 1.1 Flash",
+      "change": "deprecation",
+      "detail": "Routing notice: from Dec 3, 2026, gemini-omni-1.1-flash requests route to gemini-omni-1.2-flash. The deprecations table lists Dec 3, 2026 as the shutdown date.",
+      "date": "2026-11-05 (notice); 2026-12-03 (routing)",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "quote": "Gemini Omni 1.1 Flash automatic routing notice: Effective December 3, 2026, API requests to gemini-omni-1.1-flash will automatically route to gemini-omni-1.2-flash at Gemini Omni 1.2 Flash rates."
+    },
+    {
+      "db_name": "Grok Imagine Image Pro",
+      "change": "shutdown",
+      "detail": "grok-imagine-image-pro and grok-imagine-image-quality retired on Nov 2, 2026. Requests are now served by grok-imagine-image-2.0 at quality=low (reported as grok-imagine-image-2.0-low) at a lower per-image price. grok-imagine-image (1.0) is not affected.",
+      "date": "2026-11-02",
+      "primary_url": "https://docs.x.ai/developers/release-notes",
+      "quote": "Requests to `grok-imagine-image-quality` and `grok-imagine-image-pro` are now served by `grok-imagine-image-2.0-low`: `grok-imagine-image-2.0` with `quality` set to `low`, at a lower per-image price."
+    },
+    {
+      "db_name": "Gemini 3.1 Flash TTS Preview; Gemini 2.5 Flash Preview TTS; Gemini 2.5 Pro Preview TTS",
+      "change": "deprecation",
+      "detail": "Gemini API deprecations table gives a shutdown date of December 18, 2026 for gemini-3.1-flash-tts-preview, gemini-2.5-flash-preview-tts and gemini-2.5-pro-preview-tts (replacement gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts). The page does not state when this was announced; may predate the window.",
+      "date": "notice date not stated on page; shutdown 2026-12-18",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "quote": "`gemini-3.1-flash-tts-preview` / February 26, 2026 / December 18, 2026 / `gemini-3.8-flash-tts` or `gemini-3.8-flash-lite-tts`"
+    },
+    {
+      "db_name": "Veo 3.1; Veo 3.1 Fast",
+      "change": "shutdown",
+      "detail": "Pre-window (Oct 22, 2026): the Gemini API preview ids veo-3.1-generate-preview, veo-3.1-fast-generate-preview and veo-3.1-lite-generate-preview were shut down (replacement gemini-omni-1.2-flash). The Veo 3.1 GA models remain on the Gemini Enterprise Agent Platform, so this is an API-surface change, not a full retirement.",
+      "date": "2026-10-22",
+      "primary_url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "quote": "`veo-3.1-generate-preview` / October 15, 2025 / October 22, 2026 / `gemini-omni-1.2-flash`"
+    },
+    {
+      "db_name": "GPT Image 1; o1 (2024-12-17); o3-mini; o4-mini; GPT-4 Turbo (2024-04-09); GPT-4 (0613); GPT-4 Turbo Preview (1106); GPT-4.1 nano; GPT-4o (2024-05-13); GPT-3.5 Turbo (0125)",
+      "change": "shutdown",
+      "detail": "Pre-window (Oct 23, 2026), listed under OpenAI 'Past deprecations'. These API models are shut down. Include only if the DB records availability.",
+      "date": "2026-10-23",
+      "primary_url": "https://developers.openai.com/api/docs/deprecations",
+      "quote": "/ **Oct 23, 2026** / `gpt-image-1` / `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` /"
+    },
+    {
+      "db_name": "Gemini 3.8 Flash TTS; Gemini 3.8 Flash-Lite TTS",
+      "change": "GA",
+      "detail": "GA on Gemini Enterprise Agent Platform (Vertex) on Oct 26, 2026; they were already GA on the Gemini API since Sep 22, 2026. Voice design/replication remain Preview. Minor.",
+      "date": "2026-10-26",
+      "primary_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#October_26_2026",
+      "quote": "Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS are available in General Availability (GA) in the global location and the us and eu multi-regions."
+    },
+    {
+      "db_name": "Mistral Large 4 (October 29 weights) / Mistral Large 4 (public preview)",
+      "change": "GA",
+      "detail": "Mistral docs model page now shows Mistral Large 4 v26.10 as GA dated November 5, 2026, API id mistral-large-4 (alias mistral-large-4-0), 1M context, list price $0.70 input / $0.07 cached input / $2.10 output per 1M tokens. The DB row mistral-large-4-2610 says 'unknown API price omitted' and neither row records GA. The Oct 29 news post already stated the same price ('Starting today, Mistral Large 4 is priced at $0.70 input / M, $0.07 cached input / M, and $2.10 output / M tokens.').",
+      "date": "2026-11-05",
+      "primary_url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "quote": "November 5, 2026 GA Mistral Ecosystem Open Weight License v 26.10 ... $0.7 Input /M Tokens $0.07 Cached input /M Tokens $2.1 Output /M Tokens"
+    },
+    {
+      "db_name": "Mistral Medium 3.5 (128B); Mistral Large 3 (675B-A41B); Voxtral TTS (4B); Voxtral Mini Transcribe V2; Voxtral Mini 4B Realtime (2602)",
+      "change": "deprecation",
+      "detail": "Mistral's Deprecated & retired table: mistral-medium-3-5 (26.04), mistral-large-2512 (25.12), voxtral-mini-tts-2603 (26.03), voxtral-mini-2602 (26.02) and voxtral-mini-transcribe-realtime-2602 (26.02) deprecated 10/31/2026, retirement 4/30/2027; replacements Mistral Large 4 / Voxtral TTS 3 / Voxtral Mini Transcribe 3 / Voxtral Mini Transcribe Realtime 3. API-only change (open weights unaffected). No deprecation text in the DB rows.",
+      "date": "2026-10-31 (deprecation); 2027-04-30 (retirement)",
+      "primary_url": "https://docs.mistral.ai/models",
+      "quote": "Mistral Medium 3.5 ↗ 26.04 mistral-medium-3-5 10/31/2026 4/30/2027 Mistral Large 4 Voxtral TTS ↗ 26.03 voxtral-mini-tts-2603 10/31/2026 4/30/2027 Voxtral TTS 3"
+    },
+    {
+      "db_name": "MAI-Image-2.6",
+      "change": "other",
+      "detail": "Microsoft Foundry October roundup (published 2026-11-05): MAI Image 2.6 available in Foundry as a Global Standard preview in six regions. DB row has api null. Caution: the same paragraph says 'We announced the model on October 27', which conflicts with the DB's 2026-08 release and with microsoft.ai's Oct 27 post being MAI Image 2.7 - possibly a Foundry-blog mix-up.",
+      "date": "2026-11-05 (roundup publication)",
+      "primary_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-october-2026/",
+      "quote": "it is available in Microsoft Foundry as a Global Standard preview in East US, West Central US, West US, Sweden Central, West Europe, and South India."
+    },
+    {
+      "db_name": "Polly Generative",
+      "change": "other",
+      "detail": "PRE-WINDOW: AWS put a new (unnamed) model behind the Polly Generative engine with 14 new voices and 2 new languages; same engine name, so earlier results may describe the previous model.",
+      "date": "2026-10-20",
+      "primary_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/polly-generative/",
+      "quote": "Today, we are introducing a new model behind the Amazon Polly Generative engine that delivers more natural-sounding, accurate"
+    },
+    {
+      "db_name": "Kimi K2.7 Code",
+      "change": "deprecation",
+      "detail": "kimi-k2.7-code and kimi-k2.7-code-highspeed closed to users registered after Nov 1; deprecation expected late December 2026",
+      "date": "2026-11-01 (new-user cutoff); shutdown late Dec 2026",
+      "primary_url": "https://platform.kimi.ai/docs/models.md",
+      "quote": "No longer available to newly registered users; users registered before November 1 can continue using it. Deprecation expected in late December 2026."
+    },
+    {
+      "db_name": "Kimi K2.6",
+      "change": "deprecation",
+      "detail": "kimi-k2.6 same notice as K2.7 Code",
+      "date": "2026-11-01 (new-user cutoff); shutdown late Dec 2026",
+      "primary_url": "https://platform.kimi.ai/docs/models.md",
+      "quote": "No longer available to newly registered users; users registered before November 1 can continue using it. Deprecation expected in late December 2026."
+    },
+    {
+      "db_name": "Kimi K2.5",
+      "change": "shutdown",
+      "detail": "Retired on all Kimi platforms in August 2026 (old change; listed in case DB lacks it)",
+      "date": "2026-08",
+      "primary_url": "https://platform.kimi.ai/docs/platform-changelog.md",
+      "quote": "The `kimi-k2.5` and all `moonshot-v1` series models (including `-vision-preview` and `moonshot-v1-auto`) were retired across all platforms."
+    },
+    {
+      "db_name": "Doubao Seed 2.0 Pro (260215)",
+      "change": "shutdown",
+      "detail": "Volcengine Ark 10th deprecation batch: EOM 2026-09-24, EOS 2026-11-24 14:00 UTC+8; migrate to doubao-seed-2-1-lite-260915. Same batch: doubao-seedream-4-5-251128 (Seedream 4.5), doubao-seedream-5-0-lite-260128 (Seedream 5.0 Lite), doubao-seedream-4-0-250828 (Seedream 4.0), doubao-seedance-1-0-pro-250528 (Seedance 1.0 Pro), doubao-seedance-1-0-pro-fast-251015 (Seedance 1.0 Pro Fast) all EOS 2026-11-24; doubao-seed-2-0-lite-260215 EOS was 2026-10-22. Announced 2026-09-22, not new since 11-12, but shutdowns fall on 2026-11-24.",
+      "date": "2026-11-24 (EOS)",
+      "primary_url": "https://docs.volcengine.com/docs/zh/ark/model-deprecation-notice.md",
+      "quote": "/**EOS**<br><br>模型服务下线 /**2026-11-24 14:00**（UTC+8）"
+    },
+    {
+      "db_name": "DeepSeek V4 Flash (0731)",
+      "change": "shutdown",
+      "detail": "deepseek-v4-flash and deepseek-v4-flash-vision-exp retired on DeepSeek API 2026-09-10; requests now served by DeepSeek-V4.1-Flash-1017 at Flash price (also affects 'DeepSeek V4 Flash Vision (Exp)'). Old change, listed in case DB lacks it.",
+      "date": "2026-09-10",
+      "primary_url": "https://api-docs.deepseek.com/updates",
+      "quote": "The previous-generation models V4 Flash and V4 Flash Vision Exp have been retired;"
+    },
+    {
+      "db_name": "Step 5 Preview",
+      "change": "price",
+      "detail": "Pay-as-you-go cache-hit input raised from 0.35 to 0.70 元/M tokens from 2026-10-14 00:30 Beijing time; cache-miss input 7 元/M and output 20 元/M unchanged",
+      "date": "2026-10-14",
+      "primary_url": "https://platform.stepfun.com/docs/zh/announcements/step-5-preview-price-adjustment.md",
+      "quote": "自北京时间 2026 年 10 月 14 日 00:30 起，开放平台调整 Step 5 Preview 按量付费 API 的缓存命中输入价格。"
+    },
+    {
+      "db_name": "Step 3",
+      "change": "shutdown",
+      "detail": "step-3 (and step-1v-32k, also in DB) retired 2026-07-08; replacement step-3.7-flash. Old change.",
+      "date": "2026-07-08",
+      "primary_url": "https://platform.stepfun.com/docs/zh/guides/models/deprecations.md",
+      "quote": "/ `step-3` / [`step-3.7-flash`](https://platform.stepfun.com/docs/zh/guides/models/step-3.7-flash) /"
+    },
+    {
+      "db_name": "Recraft V4.1 Flash",
+      "change": "other",
+      "detail": "Superseded in the Recraft API by Recraft V4.1 Flash V2 (November 2026). Docs do not say whether the old recraftv4_1_flash id is retired.",
+      "date": "November 2026",
+      "primary_url": "https://www.recraft.ai/docs/api-reference/models/overview.md",
+      "quote": "Replaced V4.1 Flash: about 1.1 seconds and \\$0.007 per image, better with text in images and fine details"
+    },
+    {
+      "db_name": "Nova-3",
+      "change": "other",
+      "detail": "Model updates, no new name: Nova-3 multilingual now one model for 55 languages with language hinting (2026-10-23); improved Nova-3 monolingual Catalan and Japanese models (2026-11-12).",
+      "date": "2026-10-23 / 2026-11-12",
+      "primary_url": "https://developers.deepgram.com/changelog",
+      "quote": "We've released improved Nova-3 monolingual models for Catalan and Japanese."
+    },
+    {
+      "db_name": "Eleven v4",
+      "change": "other",
+      "detail": "Professional Voice Clone fine-tuning for Eleven v4 and Eleven v4 Turbo opened to every workspace (minor availability change).",
+      "date": "2026-11-02",
+      "primary_url": "https://elevenlabs.io/docs/changelog",
+      "quote": "fine-tuning for Eleven v4 and Eleven v4 Turbo is now available to every workspace."
+    }
+  ],
+  "could_not_check": [
+    {
+      "source_sweep": "A",
+      "maker": "OpenAI",
+      "reason": "openai.com article pages return HTTP 403 to WebFetch (not worked around). The RSS feed and developers.openai.com docs (.md) were readable and used instead, so coverage is good. Partial only for article-body details such as the GPT-6 Cyber launch post.",
+      "urls_tried": [
+        "https://openai.com/index/introducing-gpt-6-cyber"
+      ]
+    },
+    {
+      "source_sweep": "A",
+      "maker": "xAI",
+      "reason": "x.ai/news, x.ai/rss.xml and x.ai/sitemap.xml return HTTP 403 (not worked around). docs.x.ai release notes and model pages were used instead. Some release-note entries carry only a month, not a day.",
+      "urls_tried": [
+        "https://x.ai/news",
+        "https://x.ai/rss.xml",
+        "https://x.ai/sitemap.xml"
+      ]
+    },
+    {
+      "source_sweep": "B",
+      "maker": "LG AI Research",
+      "reason": "lgresearch.ai/news renders no items without JavaScript; covered via HF org LGAI-EXAONE and web search only",
+      "urls_tried": [
+        "https://www.lgresearch.ai/news"
+      ]
+    },
+    {
+      "source_sweep": "B",
+      "maker": "Inception",
+      "reason": "news page 404 (blog page used instead - not a gap)",
+      "urls_tried": [
+        "https://www.inceptionlabs.ai/news"
+      ]
+    },
+    {
+      "source_sweep": "B",
+      "maker": "Samsung",
+      "reason": "news.samsung.com/global page timed out in WebFetch; RSS feed worked and was used",
+      "urls_tried": [
+        "https://news.samsung.com/global/"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Alibaba (Qwen blog)",
+      "reason": "qwen.ai is a JS shell (sitemap/llms.txt return the app shell); qwenlm.github.io blog stops at 2025. Covered via Model Studio release notes instead.",
+      "urls_tried": [
+        "https://qwen.ai/research",
+        "https://qwen.ai/sitemap.xml",
+        "https://qwen.ai/llms.txt",
+        "https://qwenlm.github.io/blog/"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "ByteDance Seed (seed.bytedance.com)",
+      "reason": "JS shell; covered via Volcengine/BytePlus docs instead.",
+      "urls_tried": [
+        "https://seed.bytedance.com/en/blog"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "iFLYTEK",
+      "reason": "iflytek.com 403; xinghuo.xfyun.cn JS shell; xfyun Spark docs not updated since 2026-02-09; no iFLYTEK HF org found under 'iflytek'/'iFlytekSpark'.",
+      "urls_tried": [
+        "https://www.iflytek.com/en/news-events/news/",
+        "https://xinghuo.xfyun.cn/sparkapi",
+        "https://www.xfyun.cn/doc/spark/X1http.html",
+        "https://www.xfyun.cn/doc/spark/X2.html"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Kuaishou (Kling)",
+      "reason": "Release notes, API model list and developer pricing are JS shells; ir.kuaishou.com 403. Blog posts reachable via sitemap.",
+      "urls_tried": [
+        "https://kling.ai/release-notes",
+        "https://kling.ai/document-api/guides/get-started/overview",
+        "https://kling.ai/dev/pricing",
+        "https://ir.kuaishou.com/news-releases"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Ant Group (Ling)",
+      "reason": "Developer site and homepage are JS shells; models endpoint requires auth (401).",
+      "urls_tried": [
+        "https://developer.ant-ling.com/",
+        "https://www.ant-ling.com/",
+        "https://api.ant-ling.com/v1/models"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "SenseTime",
+      "reason": "platform.sensenova.cn/docs is a JS shell; sensetime.com news index 404. Homepage and HF org checked.",
+      "urls_tried": [
+        "https://platform.sensenova.cn/docs",
+        "https://www.sensetime.com/cn/news-index"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Xiaomi (API platform)",
+      "reason": "platform.xiaomimimo.com is a JS shell; mimo.xiaomi.com checked instead.",
+      "urls_tried": [
+        "https://platform.xiaomimimo.com/",
+        "https://platform.xiaomimimo.com/docs/llms.txt"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Tencent (TokenHub docs)",
+      "reason": "Old Hunyuan docs frozen after migration to TokenHub; only TokenHub product page read (no dated changelog found).",
+      "urls_tried": [
+        "https://cloud.tencent.com/document/product/1729/97765",
+        "https://intl.cloud.tencent.com/products/tokenhub"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "Z.ai blog",
+      "reason": "z.ai/blog returns 404; docs release notes used instead.",
+      "urls_tried": [
+        "https://z.ai/blog"
+      ]
+    },
+    {
+      "source_sweep": "C",
+      "maker": "01.AI and Baichuan API platforms",
+      "reason": "Not fetched directly for time; checked via HF API and web search only (no 2026-10/11 activity found).",
+      "urls_tried": [
+        "https://huggingface.co/api/models?author=01-ai",
+        "https://huggingface.co/api/models?author=baichuan-inc"
+      ]
+    },
+    {
+      "source_sweep": "D",
+      "maker": "Midjourney",
+      "reason": "docs.midjourney.com returns 403; updates.midjourney.com serves only a Ghost landing page (no posts; /rss/ returns the same HTML). Did not work around.",
+      "urls_tried": [
+        "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version",
+        "https://updates.midjourney.com/",
+        "https://updates.midjourney.com/rss/",
+        "https://updates.midjourney.com/v8-1-alpha/"
+      ]
+    },
+    {
+      "source_sweep": "D",
+      "maker": "PlayHT",
+      "reason": "Domains do not resolve (getaddrinfo ENOTFOUND / curl 000); no HF org models.",
+      "urls_tried": [
+        "https://play.ht/blog/",
+        "https://www.play.ht/",
+        "https://playht.com/",
+        "https://huggingface.co/api/models?author=playht"
+      ]
+    },
+    {
+      "source_sweep": "D",
+      "maker": "Leonardo.Ai (partial)",
+      "reason": "News page 403; checked API docs llms.txt instead (no new own model listed).",
+      "urls_tried": [
+        "https://leonardo.ai/news/",
+        "https://docs.leonardo.ai/llms.txt"
+      ]
+    },
+    {
+      "source_sweep": "D",
+      "maker": "Haiper (partial)",
+      "reason": "Homepage renders only a title; no news/changelog found; status unclear.",
+      "urls_tried": [
+        "https://haiper.ai/",
+        "https://huggingface.co/api/models?author=haiper-ai"
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅▇▄▁▁▁   #516 of 540*    6.9%      1
+math  ▁●▃▆█▇▅▇▄▁▁▁   #516 of 540*    6.9%      1
 </pre>
 
 <details><summary>math · #516 of 540 · 6.9% of its score</summary>
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.7%  ······●····· beats 1/5    very hard · avg 25%    4.3%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             19.6%  █···█·█●█··█ beats 3/5    easy · avg 68%         4.2%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.2%  ●·▄······▄·▄ beats 0/4    medium · avg 64%       3.7%  typical
-<a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           29.0%  ▅·······●··▃ beats 3/5    hard · avg 50%         3.4%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           29.0%  ▅·······●··▃ beats 3/5    hard · avg 50%         3.3%  too hard for it
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 77.9%  █··▃··▃▃·●·▃ beats 6/7    easy · avg 88%         3.2%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             68.2%  ▄···▄··●·▄·▄ beats 3/5    easy · avg 87%         2.6%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 91.8%  ██····█●█··█ beats 3/5    very easy · avg 98%    2.3%  blunt

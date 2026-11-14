@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · proprietary
 
-**score 71.9** ±1.9 · #16 of 146 · from 3 benchmark results across 2 sources
+**score 71.8** ±1.9 · #16 of 147 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█▂●▁▁▁   #15 of 128*     63%      1
-image to image / edit…  ▁▁·▃▂▃█▆●▅▂▂    #21 of 64*     23%      1
+text to image           ▂▅▅▃▄▄█▃●▁▁▁   #15 of 129*     64%      1
+image to image / edit…  ▁▁·▃▂▃█▆●▆▂▂    #22 of 65*     22%      1
 </pre>
 
-<details><summary>text to image · #15 of 128 · 63% of its score</summary>
+<details><summary>text to image · #15 of 129 · 64% of its score</summary>
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1249.2  ▁▁▃▃▆█▃●▂▂▁▁ beats 63/77  avg 1030       63%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1249.0  ▁▁▃▃▆█▄●▂▂▁▁ beats 64/78  avg 1030       64%  typical
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #21 of 64 · 23% of its score</summary>
+<details><summary>image to image / editing · #22 of 65 · 22% of its score</summary>
 
 Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Uni-1.1 Max](uni-1-1-max.md), [Grok Imagine Image](grok-imagine-image.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1312.7  ▂▁▁▃▆█▆●▇▄▃▃ beats 33/55  avg 1158       23%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1312.8  ▂▁▁▃▆█▅●█▄▃▃ beats 33/56  avg 1160       22%  typical
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    7.4%  ▄·▄···█·●▄·▄ beats 4/6    very hard · avg 0.6%     13%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    7.4%  ▄·▄···█·●▄·▄ beats 4/6    very hard · avg 0.6%     12%  sharp · too hard for it
 </pre>
 
 </details>
@@ -55,10 +55,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">Verifiable Visual Rewards Transfer from…</a>        1   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">Verifiable Visual Rewards Transfer from…</a>        1   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 71.9
+weighted average                                   = 71.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

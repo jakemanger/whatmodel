@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▄●▅▄▄▁▁   #127 of 357*     11%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #125 of 476*     50%      1
+agent tasks         ▁▁▂▆█▄●▅▃▂▂▁   #130 of 360*     11%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #126 of 477*     50%      1
 vision &amp; documents  ▁▁▃▃▂▃▅●▇██▄   #120 of 190*     35%      1
 </pre>
 
-<details><summary>agent tasks · #127 of 357 · 11% of its score</summary>
+<details><summary>agent tasks · #130 of 360 · 11% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #125 of 476 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #126 of 477 · 50% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1408.1  ▁▁▁▂▃▂▃▆▆●█▃ beats 252/387  avg 1261       50%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1408.1  ▁▁▁▂▃▂▃▆▆●█▃ beats 252/388  avg 1262       50%  blunt
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1159.6  ▁▁▂▂▂▂▃●▅▅█▇ beats 53/152  avg 1063       35%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1159.6  ▁▁▂▂▂▂▃●▅▅█▇ beats 53/152  avg 1064       35%  blunt
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.6%  ▁▁▂●▄▄█▆▃▂▂▁ beats 18/140  very easy · avg 94%    1.7%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.6%  ▁▁▂●▄▄█▆▃▂▂▁ beats 18/140  very easy · avg 94%    1.8%  blunt · maxed out · noisy
 </pre>
 
 </details>
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                1   11% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
 prior: pull toward the middle                 2% ▇

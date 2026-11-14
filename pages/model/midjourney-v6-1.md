@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂█▇●▅█▇▂▃▁▂   #103 of 159*     94%      1
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #104 of 160*     94%      1
 </pre>
 
-<details><summary>text to image · #103 of 159 · 94% of its score</summary>
+<details><summary>text to image · #104 of 160 · 94% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
 

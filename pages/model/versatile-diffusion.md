@@ -6,7 +6,7 @@
 
 SHI Labs · released 2022-11 · mit
 
-**score 29.4** ±4.4 · #135 of 146 · from 3 benchmark results across 2 sources
+**score 29.3** ±4.4 · #136 of 147 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #114 of 128*    0.6%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #115 of 129*    0.5%      1
 </pre>
 
-<details><summary>text to image · #114 of 128 · 0.6% of its score</summary>
+<details><summary>text to image · #115 of 129 · 0.5% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [LCM-SSD-1B](lcm-ssd-1b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   26.6%  ▃··▃▅·▅·●▅█▅ beats 7/14   hard · avg 28%    0.6%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   26.6%  ▃··▃▅·▅·●▅█▅ beats 7/14   hard · avg 27%    0.5%  blunt · at its level
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                       result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  340.0000 wins  ▄·········●▄ beats 1/3    avg 524.346 wins     76%  sharp
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>    18.4000 FID  ▄··········● beats 1/2    avg 7.956 FID        16%  blunt · small run
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  340.0000 wins  ▄·········●▄ beats 1/3    avg 524.947 wins     76%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>    18.4000 FID  ▄··········● beats 1/2    avg 7.926 FID        16%  blunt · small run
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="visual-imagereward"></a><a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward: Learning and Evaluating Hu…</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    1% ▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 29.4
+weighted average                                   = 29.3
 </pre>
 
 <sub>Licences: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>

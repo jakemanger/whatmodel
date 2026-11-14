@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 80.7** ±1.3 · #10 of 740 · from 6 benchmark results across 2 sources
+**score 80.6** ±1.3 · #10 of 743 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▄▅●▁   #11 of 316     62%      3
-coding       ▁▁▁▃▆▇█▆▆▃▃●   #8 of 472*     31%      1
+agent tasks  ▁▁▃▆█▄▅▅▃▃●▁   #14 of 319     62%      3
+coding       ▁▁▁▃▆▇█▆▆▃▃●   #8 of 474*     32%      1
 </pre>
 
-<details><summary>agent tasks · #11 of 316 · 62% of its score</summary>
+<details><summary>agent tasks · #14 of 319 · 62% of its score</summary>
 
-Trails [Claude Opus 5](claude-opus-5.md) here, though they rank lower overall.
+Trails [Kimi K3.1 Pro](kimi-k3-1-pro.md), [Gemini 4 Hydrogen](gemini-4-hydrogen.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0909 IPS  ▁▁▁▁▄▄█▄●▁▁▁ beats 53/61  avg -0.395 IPS     53%  sharp
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         75.3%  █·█····█···● beats 3/3    hard · avg 26%    5.1%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0896 IPS  ▁▁▁▃▃█▂●▁▁·▁ beats 54/63  avg -0.403 IPS     53%  sharp
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         75.3%  █·█····█···● beats 3/3    hard · avg 26%    5.2%  at its level
 <a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (make…</a>       78.4%  ██·····●··██ beats 2/4    hard · avg 29%    3.3%  small run
 </pre>
 
 </details>
 
-<details><summary>coding · #8 of 472 · 31% of its score</summary>
+<details><summary>coding · #8 of 474 · 32% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [Gemini 4 Argon](gemini-4-argon.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1723.4  ▁▂▄▃▇█▅▆█▅●▁ beats 126/133  avg 990        31%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1723.5  ▁▂▄▃▇█▅▇▇▅●▁ beats 127/134  avg 996        32%  sharp
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test                       result  vs the others in its run    difficulty  count
 
 <pre>
 test                              result  vs the others in its run  difficulty           counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (maker)</a>    59.0%  ██·█·█···█·● beats 5/5    very hard · avg 11%    3.2%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 21%         2.7%  blunt · at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (maker)</a>    59.0%  ██·█·█···█·● beats 5/5    very hard · avg 11%    3.3%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 22%         2.7%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -60,10 +60,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   14% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   15% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 80.7
+weighted average                                   = 80.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Unisound · released 2026-09 · proprietary
 
-**score 75.6** ±2.3 · #30 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 75.8** ±2.3 · #29 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task         vs the others            rank  counts  tests
 agent tasks                 not ranked yet       —      3
-coding       ▁▁▁▃▆▇█▆▆▃●▁      #32 of 486*     98%      3
+coding       ▁▁▁▃▆▇█▆▆▃●▁      #33 of 487*     98%      3
 math                        not ranked yet       —      2
 </pre>
 
@@ -25,21 +25,21 @@ math                        not ranked yet       —      2
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://maas.unisound.com/models/u2-flash">SWE-bench Pro (split unspecified)…</a>   61.6%  ▁·▁▁▁▁▁▄●▁▁▁ beats 49/64  very hard · avg 3.9%       —  not counted yet: no other model in the …
+<a href="https://maas.unisound.com/models/u2-flash">SWE-bench Pro (split unspecified)…</a>   61.6%  ▁·▁▁▁▁▁▄●▁▁▁ beats 49/64  very hard · avg 4.0%       —  not counted yet: no other model in the …
 <a href="https://maas.unisound.com/models/u2-flash">DeepSWE v1.1 (resolved) (maker)</a>      64.6%  ▂····▃▁▁▄●▆█ beats 13/36                             —  not counted yet: no other model in the …
 <a href="https://maas.unisound.com/models/u2-flash">Terminal-Bench 3.0 (maker)</a>           24.3%  █·█··██···●█ beats 4/5                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #32 of 486 · 98% of its score</summary>
+<details><summary>coding · #33 of 487 · 98% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1610.6  ▁▂▄▃▇█▅▆●▅▂▁ beats 103/133  avg 990                  98%  sharp
-<a href="https://maas.unisound.com/models/u2-flash">SWE-bench Pro (split unspecified)…</a>   61.6%  ▁·▁▁▁▁▁▄●▁▁▁ beats 49/64    very hard · avg 3.9%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1612.8  ▁▂▄▃▇█▅▇●▅▂▁ beats 103/134  avg 996                  98%  sharp
+<a href="https://maas.unisound.com/models/u2-flash">SWE-bench Pro (split unspecified)…</a>   61.6%  ▁·▁▁▁▁▁▄●▁▁▁ beats 49/64    very hard · avg 4.0%       —  not counted yet: no other model in the …
 <a href="https://maas.unisound.com/models/u2-flash">DeepSWE v1.1 (resolved) (maker)</a>      64.6%  ▂····▃▁▁▄●▆█ beats 13/36                               —  not counted yet: no other model in the …
 </pre>
 
@@ -70,9 +70,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 75.6
+weighted average                        = 75.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅●█▇▆▃▂▁   #381 of 542     51%      2
-chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #358 of 476     30%      5
-math            ▁▂▃●██▅▇▄▁▁▁   #464 of 540    9.0%      3
+coding          ▁▁▁▃▅●█▇▆▃▃▁   #384 of 544     52%      2
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #359 of 477     30%      5
+math            ▁▂▃●█▇▅▇▄▁▁▁   #464 of 540    8.9%      3
 </pre>
 
-<details><summary>coding · #381 of 542 · 51% of its score</summary>
+<details><summary>coding · #384 of 544 · 52% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    69.5%  ▁·▁▁▃▄▆●█▃▁▁ beats 55/99  easy · avg 77%     29%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   61.6%  ▁·▁▁▁▃▄▄●█▃▁ beats 54/99  easy · avg 71%     22%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   61.6%  ▁·▁▁▁▃▄▄●█▃▁ beats 54/99  easy · avg 71%     23%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #358 of 476 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #359 of 477 · 30% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -42,13 +42,13 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             28.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 75/122  medium · avg 36%             14%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.0%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 22/60   medium · avg 47%            8.9%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1164.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 73/95   avg 1189                    3.6%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.566 MT-Bench scor…    2.8%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.567 MT-Bench scor…    2.8%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         91.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 33/45   very easy · avg 94%         0.4%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #464 of 540 · 9.0% of its score</summary>
+<details><summary>math · #464 of 540 · 8.9% of its score</summary>
 
 Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-
 test                      result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 10/92    hard · avg 29%          5.1%  sharp
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (maker)</a>              88.0%  ▂▂▂▂▃▄▅▇██●▄ beats 171/206  very easy · avg 90%     3.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▆█▄▃▆ beats 20/207   very hard · avg 7.3%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▆█▄▃▆ beats 20/207   very hard · avg 7.4%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.7%  ▁▁▁▁●▃▅▄▄▆█▃ beats 27/221   hard · avg 39%         3.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.7%  ▁▁▁▁●▃▅▄▄▆█▃ beats 27/221   hard · avg 39%         2.9%  sharp
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (maker)</a>                91.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 138/140  very easy · avg 90%    2.7%  sharp · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         78.5%  ▁▁▁▁▁▂▂▅██●▄ beats 163/215  easy · avg 81%         2.5%  at its level · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (maker)</a>                     87.5%  ▁▁▂▂▄▄▃▆▅█▅● beats 80/80    easy · avg 85%         1.2%  small run
@@ -84,7 +84,7 @@ source                                    results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   14% ▇▇
 <a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">Anthropic system cards and model announ…</a>        5   13% ▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    9% ▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3    9% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3    8% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    4% ▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇

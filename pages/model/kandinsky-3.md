@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-11 · 3B params · apache-2.0
 
-**score 48.3** ±10.3 · #87 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.2** ±10.3 · #88 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▂▂▁▁▁   #74 of 128*     55%      7
+text to image  ▂▅▅▃●▄█▃▂▁▁▁   #75 of 129*     55%      7
 </pre>
 
-<details><summary>text to image · #74 of 128 · 55% of its score</summary>
+<details><summary>text to image · #75 of 129 · 55% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md) here, though they rank higher overall.
 
@@ -44,7 +44,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2502.10663v1-real"></a><a href="https://arxiv.org/html/2502.10663v1">REAL: Realism Evaluation of Text-to-Ima…</a>        1   55% ▇▇▇▇▇▇▇
 prior: pull toward the middle                       45% ▇▇▇▇▇
-weighted average                                   = 48.3
+weighted average                                   = 48.2
 </pre>
 
 <sub>Licences: REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 AllenAI / UW · released 2022-05 · 11B params · apache-2.0
 
-**score 26.3** ±4.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 26.4** ±4.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-806"></a><a href="https://aclanthology.org/2023.acl-long.806.pdf">Unnatural Instructions: Tuning Language…</a>        2   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1   11% ▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 26.3
+weighted average                                   = 26.4
 </pre>
 
 <sub>Licences: Unnatural Instructions: Tuning Language Models with ([CC BY 4.0](../../licenses/acl-2023-acl-long-806-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

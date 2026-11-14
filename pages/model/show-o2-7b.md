@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
-**score 41.3** ±2.4 · #105 of 146 · from 4 benchmark results across 3 sources
+**score 41.2** ±2.4 · #106 of 147 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅●▄▄█▂▂▁▁▁   #86 of 128     97%      4
+text to image  ▂▅▅●▄▄█▃▂▁▁▁   #87 of 129     97%      4
 </pre>
 
-<details><summary>text to image · #86 of 128 · 97% of its score</summary>
+<details><summary>text to image · #87 of 129 · 97% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
 
@@ -43,7 +43,7 @@ source                                    results  share of the score
 <a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (submitted / mak…</a>        2   22% ▇▇▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   12% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 41.3
+weighted average                                   = 41.2
 </pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

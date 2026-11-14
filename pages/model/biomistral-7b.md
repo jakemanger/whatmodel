@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 39.2** ±3.0 · #582 of 740 · from 3 benchmark results across 3 sources
+**score 39.2** ±3.0 · #585 of 743 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

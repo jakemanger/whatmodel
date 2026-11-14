@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-02 · closed weights
 
-**score 63.8** ±1.5 · #25 of 146 · from 9 benchmark results across 8 sources
+**score 63.6** ±1.5 · #27 of 147 · from 9 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #26 of 128     54%      4
-image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂   #22 of 64*     15%      2
+text to image           ▂▅▅▃▄▄●▃▂▁▁▁   #27 of 129     55%      4
+image to image / edit…  ▁▁·▃▂▃█●▃▆▂▂   #23 of 65*     15%      2
 </pre>
 
-<details><summary>text to image · #26 of 128 · 54% of its score</summary>
+<details><summary>text to image · #27 of 129 · 55% of its score</summary>
 
-Trails [FLUX.2 \[max\]](flux-2-max.md), [Recraft V4.1 Utility Pro](recraft-v4-1-utility-pro.md) here, though they rank lower overall.
+Beats [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank higher overall. Trails [FLUX.2 \[max\]](flux-2-max.md), [Recraft V4.1 Utility Pro](recraft-v4-1-utility-pro.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1140.6  ▁▁▃▃▆●▃▂▂▂▁▁ beats 40/77  avg 1030             38%  typical
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>    71.6%  ▄·····▄█▄·●█ beats 5/7    medium · avg 42%    7.0%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1141.1  ▁▁▃▃▆●▄▂▂▂▁▁ beats 40/78  avg 1030             39%  typical
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>    71.6%  ▄·····▄█▄·●█ beats 5/7    medium · avg 42%    6.9%  at its level
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>   57.5%  ▄·█···▄▄●▄▄▄ beats 5/8    medium · avg 37%    4.8%  blunt · at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>     57.2%  █▅▅·▅▅●·█··▃ beats 12/17  medium · avg 46%    4.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #22 of 64 · 15% of its score</summary>
+<details><summary>image to image / editing · #23 of 65 · 15% of its score</summary>
 
-Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md) here, though they rank higher overall. Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank lower overall.
+Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1293.6  ▂▁▁▃▆█●▆▇▄▃▃ beats 27/55  avg 1158                 14%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1293.3  ▂▁▁▃▆█●▇█▄▃▃ beats 27/56  avg 1160                 14%  typical
 <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>   16.7%  ▄········●█▄ beats 1/4    very hard · avg 7.4%    1.5%  typical
 </pre>
 
@@ -50,9 +50,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    5.0%  ▄··▄●····▄▄▄ beats 3/6    very hard · avg 1.5%     13%  sharp
+<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    5.0%  ▄··▄●····▄▄▄ beats 3/6    very hard · avg 1.6%     13%  sharp
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    71.1%  ▂··▂█▂▄●▂·▂▂ beats 9/12   medium · avg 42%         11%  at its level
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1013.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 22/34  avg 878                 5.6%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1013.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 22/34  avg 879                 5.6%  typical
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   52% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   53% ▇▇▇▇▇▇
 <a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   13% ▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   11% ▇
 <a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    7% ▇
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    4% ▇
 <a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.8
+weighted average                                   = 63.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>

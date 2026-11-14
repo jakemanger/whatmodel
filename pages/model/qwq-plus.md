@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 60.9** ±2.2 · #225 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 60.8** ±2.3 · #227 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▆▄●▅▂▁▁   #159 of 442*    7.3%      1
+math  ▁▁▃▅█▆●█▄▁▁▁   #158 of 442*    7.4%      1
 </pre>
 
-<details><summary>math · #159 of 442 · 7.3% of its score</summary>
+<details><summary>math · #158 of 442 · 7.4% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 77%    7.3%  typical
+<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 77%    7.4%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    7% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 60.9
+weighted average                                   = 60.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

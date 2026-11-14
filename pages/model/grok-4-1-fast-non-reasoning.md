@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · proprietary
 
-**score 65.1** ±4.3 · #158 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 65.0** ±4.3 · #160 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▅●▄▄▄▁▁   #144 of 353*     92%      1
+agent tasks  ▁▁▃▆█▄●▄▃▂▂▁   #145 of 355*     92%      1
 </pre>
 
-<details><summary>agent tasks · #144 of 353 · 92% of its score</summary>
+<details><summary>agent tasks · #145 of 355 · 92% of its score</summary>
 
 Beats [o3](o3.md), [watt-tool-70B](watt-tool-70b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   82.2%  ▁▂●▂▅█▂▃▄▃▁▁ beats 9/98   very easy · avg 90%    0.1%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   82.2%  ▁▂●▂▅█▂▃▃▃▁▁ beats 9/100  very easy · avg 90%    0.1%  blunt
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 65.1
+weighted average                                   = 65.0
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

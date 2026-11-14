@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 43.8** ±1.3 · #512 of 740 · from 4 benchmark results across 4 sources
+**score 43.8** ±1.3 · #514 of 743 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▅▂▁▁   #349 of 440*    4.6%      1
+math  ▁▁▃●█▆▅█▄▁▁▁   #350 of 440*    4.6%      1
 </pre>
 
-<details><summary>math · #349 of 440 · 4.6% of its score</summary>
+<details><summary>math · #350 of 440 · 4.6% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why

@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.34B params · apache-2.0
 
-**score 28.9** ±1.0 · #680 of 740 · from 21 benchmark results across 1 source · † no independently run results verified
+**score 28.8** ±1.0 · #683 of 743 · from 21 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #284 of 316*    1.7%      1
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #287 of 319*    1.7%      1
 coding          ●··········█        #4 of 4     39%      7
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #339 of 404*    7.2%      2
-math            ▁▁●▅█▆▄█▅▂▁▁    #416 of 440     26%      5
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #340 of 405*    7.2%      2
+math            ▁▁●▅█▆▅█▄▁▁▁    #416 of 440     26%      5
 </pre>
 
-<details><summary>agent tasks · #284 of 316 · 1.7% of its score</summary>
+<details><summary>agent tasks · #287 of 319 · 1.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 
@@ -50,7 +50,7 @@ test                  result  vs the others in its run   difficulty           co
 
 </details>
 
-<details><summary>chat &amp; writing · #339 of 404 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #340 of 405 · 7.2% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
@@ -99,7 +99,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ibm-granite-granite-4-0-h-1b"></a><a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">ibm-granite/granite-4.0-h-1b model card…</a>       21  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 28.9
+weighted average                                   = 28.8
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-1b model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md))</sub>

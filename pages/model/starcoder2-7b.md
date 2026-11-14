@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
-**score 36.5** ±0.6 · #621 of 740 · from 19 benchmark results across 5 sources
+**score 36.5** ±0.5 · #623 of 743 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #425 of 472     86%      9
-math    ▁▁▃▅●▆▄█▅▂▁▁   #319 of 440    4.8%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #427 of 474     86%      9
+math    ▁▁▃▅●▆▅█▄▁▁▁   #322 of 440    4.8%      2
 </pre>
 
-<details><summary>coding · #425 of 472 · 86% of its score</summary>
+<details><summary>coding · #427 of 474 · 86% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -39,9 +39,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #319 of 440 · 4.8% of its score</summary>
+<details><summary>math · #322 of 440 · 4.8% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why

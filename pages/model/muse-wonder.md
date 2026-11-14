@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 77.6** ±0.7 · #19 of 740 · from 14 benchmark results across 3 sources
+**score 77.9** ±0.6 · #20 of 743 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,56 +16,58 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅▅▄●▂▁    #26 of 316     16%      3
-coding          ▁▁▁▃▆▇█▆▆▃●▁   #20 of 472*    7.9%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█▇▇▇●    #3 of 404*    4.4%      1
-math            ▁▁▃▅█▆▄█▅●▁▁    #18 of 440     36%      3
+agent tasks     ▁▁▃▆█▄▅▅▃▃●▁    #15 of 319     23%      5
+coding          ▁▁▁▃▆▇█▆▆▃●▁   #21 of 474*    7.4%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█▇▇▇●    #3 of 405*    4.1%      1
+math            ▁▁▃▅█▆▅█▄●▁▁    #18 of 440     32%      3
 </pre>
 
-<details><summary>agent tasks · #26 of 316 · 16% of its score</summary>
+<details><summary>agent tasks · #15 of 319 · 23% of its score</summary>
 
-Trails [Grok 4.7](grok-4-7.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md) here, though they rank higher overall.
 
 <pre>
-test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0193 IPS  ▁▁▁▁▄▄●▄▂▁▁▁ beats 38/61  avg -0.395 IPS     13%  sharp
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         70.5%  █·█····●···█ beats 2/3    hard · avg 26%    1.4%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (make…</a>       72.6%  ●█·····█··██ beats 0/4    hard · avg 29%    0.9%  at its level · small run
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0177 IPS  ▁▁▁▃▃●▂▁▁▁·▁ beats 37/63  avg -0.403 IPS           12%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-05-meta-muse-wonder-xhigh-muse-code.json">Terminal-Bench 4.0</a>                       47.0%  ▁····▁▄▇▅▇●█ beats 21/30  very hard · avg 0.7%    5.2%  sharp · at its level
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-13-4-1-0-muse-wonder-xhigh-muse-code-regrade.json">Terminal-Bench 4.1</a>                       47.0%  ▂▂▂··▅·▂▅█●▆ beats 15/20  very hard · avg 1.0%    3.1%  sharp · at its level · noisy
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         70.5%  █·█····●···█ beats 2/3    hard · avg 26%          1.3%  at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (make…</a>       72.6%  ●█·····█··██ beats 0/4    hard · avg 29%          0.8%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #20 of 472 · 7.9% of its score</summary>
+<details><summary>coding · #21 of 474 · 7.4% of its score</summary>
 
-Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Kimi K3](kimi-k3.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank lower overall.
+Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Kimi K3](kimi-k3.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1648.6  ▁▂▄▃▇█▅▆█●▂▁ beats 115/133  avg 990       7.9%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1647.4  ▁▂▄▃▇█▅▇▇●▂▁ beats 115/134  avg 996       7.4%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #3 of 404 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #3 of 405 · 4.1% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1511.0  ▁▁▁▂▃▂▃▆▆▇█● beats 385/387  avg 1261      4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1510.9  ▁▁▁▂▃▂▃▆▆▇█● beats 386/388  avg 1262      4.1%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #18 of 440 · 36% of its score</summary>
+<details><summary>math · #18 of 440 · 32% of its score</summary>
 
-Beats [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall. Trails [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank lower overall.
+Beats [GPT-5.4 Pro](gpt-5-4-pro.md), [Kimi K3.1 Pro](kimi-k3-1-pro.md) here, though they rank higher overall. Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      70.7%  ▁▂▁▁█▅▂●▁▁▁▁ beats 56/72    very hard · avg 0.1%     21%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   82.1%  ▁··▁▁▂▅▃█●▄▂ beats 73/91    very hard · avg 1.3%     14%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    99.4%  ▃▃▄▃▃▃▇▆█▄▃● beats 191/207  very hard · avg 7.3%    0.3%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      70.7%  ▁▂▁▁█▅▂●▁▁▁▁ beats 56/72    very hard · avg 0.1%     19%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   82.1%  ▁··▁▁▂▅▃█●▄▂ beats 73/91    very hard · avg 1.4%     12%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    99.4%  ▃▃▄▃▃▃▇▆█▄▃● beats 191/207  very hard · avg 7.4%    0.2%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -74,12 +76,12 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                              result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                  31.4%  ▃▂▅▆▃●▅▆▃▃▂▃ beats 16/30  very hard · avg 0.2%     12%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>         54.2%  █▇██▁●▁▃▃▄▁▁ beats 24/38  very hard · avg 1.0%     11%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                  31.4%  ▃▂▅▆▃●▅▆▃▃▂▃ beats 16/30  very hard · avg 0.3%     10%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>       51.0%  █·▂▁▆▆▆▆●▂▂▁ beats 69/83  very hard · avg 9.4%     10%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                 45.6%  ▁▁▁▆█●▆▂▁▁▁▁ beats 19/38  very hard · avg 2.0%    1.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                 45.6%  ▁▁▁▄█●▅▁▁▁▁▁ beats 19/38  very hard · avg 2.6%    1.4%  sharp · at its level · noisy
 <a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (maker)</a>    50.0%  ██·█·█···●·█ beats 4/5    very hard · avg 11%     0.8%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%          0.7%  blunt · at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 22%          0.6%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -90,14 +92,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        7   70% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   26% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        7   64% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   24% ▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-05-meta-muse-wonder-xhigh-muse-code.json">Terminal-Bench 4.0 official leaderboard…</a>        2    8% ▇
 <a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 77.6
+weighted average                                   = 77.9
 </pre>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt))</sub>
 
 ## How to run it
 

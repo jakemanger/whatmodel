@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●██▅▇▄▁▁▁   #433 of 540*     67%      2
+math  ▁▂▃●█▇▅▇▄▁▁▁   #434 of 540*     67%      2
 </pre>
 
-<details><summary>math · #433 of 540 · 67% of its score</summary>
+<details><summary>math · #434 of 540 · 67% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅●█▇▆▃▂▁   #356 of 542     33%      5
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #393 of 476     14%      3
-math            ▁▂▃▆█●▅▇▄▁▁▁   #236 of 540    7.9%      3
+coding          ▁▁▁▃▅●█▇▆▃▃▁   #358 of 544     33%      5
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #394 of 477     14%      3
+math            ▁▂▃▆█●▅▇▄▁▁▁   #237 of 540    7.9%      3
 </pre>
 
-<details><summary>coding · #356 of 542 · 33% of its score</summary>
+<details><summary>coding · #358 of 544 · 33% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -29,27 +29,27 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 65/99  easy · avg 77%       15%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           66.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 63/99  easy · avg 71%       13%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 27/62  medium · avg 51%    4.3%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 27/62  medium · avg 51%    4.4%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.4%  ▃▃▃·▆▃▃█▃▂▂● beats 25/25  easy · avg 84%      1.0%  sharp
 <a href="https://aclanthology.org/2023.emnlp-industry.73.pdf">MBPP</a>                                 59.7%  ▁▁▁▄▅█▆▅●▁▂▁ beats 77/86  easy · avg 68%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #393 of 476 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #394 of 477 · 14% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       18.1%  ▁▂▂▃▆●█▆▄▄▁▁ beats 48/122  medium · avg 36%       8.2%  sharp · at its level
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       18.1%  ▁▂▂▃▆●█▆▄▄▁▁ beats 48/122  medium · avg 36%       8.1%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   18.1%  ▂▁▁●█▅▄▃▃▅▃▁ beats 12/60   medium · avg 47%       5.2%  sharp · at its level
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   89.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 30/45   very easy · avg 94%    0.2%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #236 of 540 · 7.9% of its score</summary>
+<details><summary>math · #237 of 540 · 7.9% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
@@ -97,14 +97,14 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.findings-acl.50.pdf">Zero-shot relation extraction, va…</a>   40.1%  ●····▄····█▄ beats 1/5      medium · avg 51%       0.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   83.5%  ▂▂▄··▂▂●▄··▂ beats 7/12     easy · avg 90%         0.2%  noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   24.4%  ▂····▂··▂·●▄ beats 5/8      medium · avg 36%       0.2%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">HellaSwag</a>                            43.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 77/135   easy · avg 81%         0.2%  at its level · noisy · small run
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">HellaSwag</a>                            43.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 77/135   easy · avg 80%         0.2%  at its level · noisy · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">CAIL charge prediction, zero-shot…</a>   46.6%  █···●··█···█ beats 1/3      medium · avg 54%       0.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.81.pdf">ARC Easy</a>                             65.4%  ▁▃▂▄▆█▅▃▁··● beats 98/100   easy · avg 85%         0.1%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   27.1%  ▄·●··██·▄▄▄▄ beats 2/10     medium · avg 43%       0.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.81.pdf">Story Cloze Test</a>                     77.3%  ▃▃▃▂▅●▅▂▁··▂ beats 28/50    easy · avg 90%         0.1%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.emnlp-main.81.pdf">SciQ</a>                                 60.7%  ●·▁▂▂▃▆▃▇▆█▂ beats 1/51     very easy · avg 97%    0.0%  blunt · maxed out · noisy · small run
 <a href="https://aclanthology.org/2023.findings-acl.29.pdf">TriviaQA</a>                             85.9%  ▁▁▂▂▄▄▃▆▅█▅● beats 78/80    easy · avg 74%            —  not counted yet: no other model in the …
-<a href="https://aclanthology.org/2023.findings-acl.29.pdf">Natural Questions (closed book)</a>      48.1%  ▂▁▁▁▂▄▄▃▅█▅● beats 68/68    medium · avg 48%          —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">Natural Questions (closed book)</a>      48.1%  ▂▁▁▁▂▄▄▃▅█▅● beats 68/68    medium · avg 49%          —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2023.emnlp-main.392.pdf">DROP</a>                                 57.6%  ▃▅█▅·▃·●▄▂▁▃ beats 28/44    medium · avg 58%          —  not counted yet: no other model in the …
 </pre>
 

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 53.8** ±0.9 · #312 of 740 · from 6 benchmark results across 3 sources
+**score 53.8** ±0.9 · #315 of 743 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▅▅▅▄▅▂▁   #249 of 316*    2.1%      1
-coding       ▁▁▁▃▆▇█●▆▃▃▁   #201 of 472*     39%      2
-math         ▁▁▃▅●▆▄█▅▂▁▁   #313 of 440*    7.3%      1
+agent tasks  ▁▁▃●█▄▅▅▃▃▂▁   #251 of 319*    2.1%      1
+coding       ▁▁▁▃▆▇█●▆▃▃▁   #202 of 474*     40%      2
+math         ▁▁▃▅●▆▅█▄▁▁▁   #313 of 440*    7.3%      1
 </pre>
 
-<details><summary>agent tasks · #249 of 316 · 2.1% of its score</summary>
+<details><summary>agent tasks · #251 of 319 · 2.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #201 of 472 · 39% of its score</summary>
+<details><summary>coding · #202 of 474 · 40% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

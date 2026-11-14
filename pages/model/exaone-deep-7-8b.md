@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 7.82B params · exaone
 
-**score 53.6** ±1.5 · #315 of 740 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 53.6** ±1.5 · #318 of 743 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,14 +17,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  █●·········█      #2 of 3*    9.2%      1
-math    ▁▁▃▅█●▄█▅▂▁▁   #232 of 440     57%      3
+math    ▁▁▃▅█●▅█▄▁▁▁   #232 of 440     57%      3
 </pre>
 
 <details><summary>coding · #2 of 3 · 9.2% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▁█●▃▄▁ beats 21/38  medium · avg 45%    9.2%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▁█●▃▄▁ beats 21/38  medium · avg 46%    9.2%  at its level · small run
 </pre>
 
 </details>

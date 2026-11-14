@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 37.2** ±0.5 · #612 of 740 · from 59 benchmark results across 10 sources
+**score 37.2** ±0.5 · #615 of 743 · from 59 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #436 of 472     40%      4
-math    ▁▁▃▅●▆▄█▅▂▁▁   #283 of 440    8.7%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #438 of 474     40%      4
+math    ▁▁▃▅●▆▅█▄▁▁▁   #283 of 440    8.7%      2
 </pre>
 
-<details><summary>coding · #436 of 472 · 40% of its score</summary>
+<details><summary>coding · #438 of 474 · 40% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (maker)</a>                         62.5%  ▄····▄▄·●··█ beats 3/5     easy · avg 82%         4.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">WinoGrande</a>                           74.0%  ▁····▁··▁▂█● beats 26/26   easy · avg 87%         4.2%  at its level · several runs
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       41.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 78/155  medium · avg 65%       4.1%  sharp · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Natural Questions (closed book)</a>      30.1%  ▁·▁·▁▂▁▂·▅▂● beats 26/28   medium · avg 48%       3.5%  at its level · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Natural Questions (closed book)</a>      30.1%  ▁·▁·▁▂▁▂·▅▂● beats 26/28   medium · avg 49%       3.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">HellaSwag</a>                            81.1%  ▃···▁▇▅█▇●▁▁ beats 24/26   very easy · avg 91%    2.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">BoolQ</a>                                83.6%  ▂▃▂▅▆▂▅▆█▂▂● beats 26/26   easy · avg 88%         2.0%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2023-12-28%2011%3A09%3A06.178683.json">TriviaQA</a>                             70.9%  ▁··▁█▃▃▁▄▅▄● beats 28/28   easy · avg 83%         1.8%  at its level · several runs
@@ -89,7 +89,7 @@ source                                    results  share of the score
 <a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   11% ▇
 <a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1">Mistral 7B (submitted / maker-reported)</a>        12    9% ▇
 <a name="paper-gemma-2403.08295v4"></a><a href="https://arxiv.org/html/2403.08295v4#S3.T6">Gemma report</a>                                    7    7% ▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Hallucinations Leaderboard results</a>              4    2% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Hallucinations Leaderboard results</a>              4    3% ▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇

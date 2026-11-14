@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 44.6** ±0.5 · #490 of 740 · from 38 benchmark results across 10 sources
+**score 44.5** ±0.5 · #495 of 743 · from 38 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #241 of 316*    0.4%      1
-coding          ▁▁▁▃▆●█▆▆▃▃▁    #342 of 472     12%      5
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #245 of 319*    0.4%      1
+coding          ▁▁▁▃▆●█▆▆▃▃▁    #344 of 474     12%      5
 chat &amp; writing  ●··········█       #2 of 2*    0.4%      1
-math            ▁▁▃●█▆▄█▅▂▁▁    #373 of 440     21%      5
+math            ▁▁▃●█▆▅█▄▁▁▁    #373 of 440     21%      5
 </pre>
 
-<details><summary>agent tasks · #241 of 316 · 0.4% of its score</summary>
+<details><summary>agent tasks · #245 of 319 · 0.4% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
@@ -33,7 +33,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>coding · #342 of 472 · 12% of its score</summary>
+<details><summary>coding · #344 of 474 · 12% of its score</summary>
 
 Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -85,8 +85,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (maker)</a>               63.1%  ██▄·●▄·▄▄··▄ beats 5/10     medium · avg 72%       3.5%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (maker)</a>                   81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 86%         2.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (maker)</a>                     47.4%  █▄▄·█●▄▄·▄·▄ beats 6/10     medium · avg 55%       2.5%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   40.2%  ▁▂●▂▃█▃▆▅▄▂▃ beats 9/95     medium · avg 65%       2.3%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (ma…</a>   51.8%  █▄●██··█···▄ beats 3/10     medium · avg 63%       2.2%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   40.2%  ▁▂●▂▃█▃▆▅▄▂▃ beats 9/95     easy · avg 65%         2.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (ma…</a>   51.8%  █▄●██··█···▄ beats 3/10     medium · avg 64%       2.2%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    6.4%  ▁▁●▆██▁▁·▁▁▁ beats 3/57     hard · avg 16%         1.9%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.4%  ▁▁▁▁▁▂●▃▄▆█▃ beats 20/97    hard · avg 32%         1.5%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (maker)</a>                    72.2%  ▃●█·▃▃▃···▃▃ beats 1/10     easy · avg 82%         1.1%  at its level
@@ -115,7 +115,7 @@ source                                    results  share of the score
 <a name="card-microsoft-phi-4-mini-instruct"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">microsoft/Phi-4-mini-instruct model car…</a>       16   38% ▇▇▇▇▇
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   31% ▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   10% ▇
-<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3    9% ▇
+<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   10% ▇
 <a name="report-2503.01743v2"></a><a href="https://arxiv.org/html/2503.01743v2">Microsoft (submitted / maker-reported)</a>          8    6% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    2% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    1% ▇
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 <a name="libra-leaderboard"></a><a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">ai-forever LIBRA leaderboard</a>                    1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.5
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

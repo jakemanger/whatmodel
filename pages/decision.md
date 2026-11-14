@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · [stt](stt.md) · **decision**
 
-updated 2026-11-12 03:20 UTC · 357 models · scores combine 238 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
+updated 2026-11-14 06:42 UTC · 357 models · scores combine 238 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
 
 Run `curl "whatmodel.sh/decision?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/decision` for this list in your terminal.
 

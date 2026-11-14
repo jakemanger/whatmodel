@@ -6,7 +6,7 @@
 
 UCLA AGI (SPPO) · released 2024-06 · 8.03B params · apache-2.0
 
-**score 50.9** ±1.5 · #454 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.9** ±1.5 · #455 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #287 of 475*     94%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #287 of 476*     94%      1
 </pre>
 
-<details><summary>chat &amp; writing · #287 of 475 · 94% of its score</summary>
+<details><summary>chat &amp; writing · #287 of 476 · 94% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty        counts  why

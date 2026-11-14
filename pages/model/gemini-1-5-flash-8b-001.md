@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #328 of 476*     32%      1
-math                ▁▂▃▆●█▅▇▄▁▁▁   #366 of 540*    6.1%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #329 of 477*     32%      1
+math                ▁▂▃▆●▇▅▇▄▁▁▁   #366 of 540*    6.2%      1
 vision &amp; documents  ▁▁▃▃●▃▅▄▇██▄   #155 of 190*     22%      1
 </pre>
 
-<details><summary>chat &amp; writing · #328 of 476 · 32% of its score</summary>
+<details><summary>chat &amp; writing · #329 of 477 · 32% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1258.9  ▁▁▁▂▃▂●▆▆▇█▃ beats 93/387  avg 1261       32%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1258.9  ▁▁▁▂▃▂●▆▆▇█▃ beats 93/388  avg 1262       32%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #366 of 540 · 6.1% of its score</summary>
+<details><summary>math · #366 of 540 · 6.2% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▆█▄▃▆ beats 30/207  very hard · avg 7.3%    6.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▆█▄▃▆ beats 30/207  very hard · avg 7.4%    6.2%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1071.5  ▁▁▂▂▂●▃▅▅▅█▇ beats 25/152  avg 1063       22%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1071.5  ▁▁▂▂▂●▃▅▅▅█▇ beats 25/152  avg 1064       22%  blunt
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                             result  vs the others in its run   difficulty  
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         33.0%  ▁▁▁▁●▃▅▄▄▆█▃ beats 22/221   hard · avg 39%       31%  sharp
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 228/276  medium · avg 72%    7.8%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 228/276  medium · avg 72%    8.0%  at its level · noisy
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>            2   54% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>            2   54% ▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                               2   37% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    8% ▇
 prior: pull toward the middle               1% ▇

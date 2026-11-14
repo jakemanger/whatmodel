@@ -6,7 +6,7 @@
 
 Swiss AI · released 2026-07 · 72.01B params · apache-2.0
 
-**score 52.9** ±6.0 · #404 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.1** ±5.8 · #399 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   17.5%  ▁▁▃●▂▄▁▃▄▄▄█ beats 5/38   very hard · avg 14%     84%  typical
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   17.5%  ▂▂●▂▃▃▂▇▇█▇▁ beats 6/47   very hard · avg 14%     85%  typical
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                16% ▇▇
-weighted average                            = 52.9
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                15% ▇▇
+weighted average                            = 53.1
 </pre>
 
 <sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

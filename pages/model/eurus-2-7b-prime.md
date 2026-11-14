@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 45.2** ±2.3 · #474 of 740 · from 4 benchmark results across 2 sources
+**score 45.2** ±2.3 · #476 of 743 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others     rank  counts  tests
-math  █··········●   #1 of 2     62%      3
+math  █··········●   #1 of 2     63%      3
 </pre>
 
-<details><summary>math · #1 of 2 · 62% of its score</summary>
+<details><summary>math · #1 of 2 · 63% of its score</summary>
 
 <pre>
 test                  result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (maker)</a>      26.7%  ▁▂·▂▁●▂▄█▅▆▁ beats 14/86  medium · avg 40%        27%  sharp · at its level · small run
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (maker)</a>   38.6%  ▁·▃▁▁▂▁●▄▁▃▃ beats 16/27  medium · avg 56%        18%  at its level · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (maker)</a>       79.2%  ▁▃▂▃●▇▅▇█▄▂▁ beats 21/85  very easy · avg 86%     17%  small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (maker)</a>       79.2%  ▁▃▂▃●▇▅▇█▄▂▁ beats 21/85  very easy · avg 87%     17%  small run
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (s…</a>        3   62% ▇▇▇▇▇▇▇
+<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (s…</a>        3   63% ▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   35% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 45.2

@@ -6,7 +6,7 @@
 
 JasperV13 · released 2025-04 · 7B params · apache-2.0
 
-**score 55.8** ±3.8 · #319 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.8** ±3.8 · #320 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-05 · 11.17B params · apache-2.0
 
-**score 53.6** ±2.7 · #386 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 53.6** ±2.7 · #387 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   69.5%  ▁▂▂▂▃█▃●▅▄▂▃ beats 52/95  medium · avg 65%     54%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   69.5%  ▁▂▂▂▃█▃●▅▄▂▃ beats 52/95  easy · avg 65%       55%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   72.4%  ▁··▁▁▂▂▆▅▆█● beats 60/70  medium · avg 62%     42%  at its level
 </pre>
 
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   54% ▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   55% ▇▇▇▇▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   42% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 53.6

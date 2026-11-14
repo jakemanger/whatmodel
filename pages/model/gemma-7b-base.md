@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 37.0** ±0.5 · #615 of 740 · from 37 benchmark results across 9 sources
+**score 37.0** ±0.5 · #618 of 743 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #428 of 472     70%      7
-math    ▁▁▃▅█●▄█▅▂▁▁   #230 of 440    5.6%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #430 of 474     70%      7
+math    ▁▁▃▅█●▅█▄▁▁▁   #230 of 440    5.5%      2
 </pre>
 
-<details><summary>coding · #428 of 472 · 70% of its score</summary>
+<details><summary>coding · #430 of 474 · 70% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #230 of 440 · 5.6% of its score</summary>
+<details><summary>math · #230 of 440 · 5.5% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 
@@ -66,7 +66,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (maker)</a>                     63.4%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 54/80    easy · avg 81%         0.7%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (m…</a>   41.7%  ▄··········● beats 2/2      medium · avg 62%       0.7%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 109/276  medium · avg 72%       0.6%  at its level · noisy
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (maker)</a>                    81.2%  ▁▁▁▂▂▂▄▆█▇●▂ beats 117/135  easy · avg 89%         0.6%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (maker)</a>                    81.2%  ▁▁▁▂▂▂▄▆█▇●▂ beats 117/135  very easy · avg 89%    0.6%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (maker)</a>                        83.2%  ▁····▁▂█▆▅●▄ beats 84/103   easy · avg 89%         0.6%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 98/146   easy · avg 82%         0.5%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   33.5%  ▃·▁▁●▁▂▅█▇▄▁ beats 17/100   medium · avg 67%       0.4%  sharp · noisy

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 60.8** ±1.7 · #37 of 146 · from 3 benchmark results across 2 sources
+**score 60.7** ±1.7 · #38 of 147 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄●█▂▂▁▁▁   #54 of 128*     47%      1
-image to image / edit…  ▁▁·▃▂▃█●▃▅▂▂    #27 of 64*     51%      2
+text to image           ▂▅▅▃▄●█▃▂▁▁▁   #55 of 129*     48%      1
+image to image / edit…  ▁▁·▃▂▃█●▃▆▂▂    #28 of 65*     51%      2
 </pre>
 
-<details><summary>text to image · #54 of 128 · 47% of its score</summary>
+<details><summary>text to image · #55 of 129 · 48% of its score</summary>
 
 Trails [Qwen-Image-2512](qwen-image-2512.md), [HunyuanImage 3.0](hunyuanimage-3-0.md), [Z-Image (Base)](z-image-base.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1099.9  ▁▁▃▃●█▃▂▂▂▁▁ beats 25/77  avg 1030       47%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1099.9  ▁▁▃▃●█▄▂▂▂▁▁ beats 25/78  avg 1030       48%  typical
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #27 of 64 · 51% of its score</summary>
+<details><summary>image to image / editing · #28 of 65 · 51% of its score</summary>
 
 Beats [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 \[flex\]](flux-2-flex.md) here, though they rank higher overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%  ▃▃▂·▃▆▂█·●·▃ beats 18/20  hard · avg 45%     35%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1300.4  ▂▁▁▃▆█●▆▇▄▃▃ beats 28/55  avg 1158           17%  typical
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%  ▃▃▂·▃▆▂█·●·▃ beats 18/20  hard · avg 45%     34%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1300.8  ▂▁▁▃▆█●▇█▄▃▃ beats 28/56  avg 1160           17%  typical
 </pre>
 
 </details>
@@ -49,10 +49,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   64% ▇▇▇▇▇▇▇▇
-<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   35% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   34% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.8
+weighted average                                   = 60.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>

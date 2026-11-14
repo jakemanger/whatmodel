@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-02 · proprietary
 
-**score 70.1** ±1.1 · #82 of 740 · from 15 benchmark results across 2 sources
+**score 70.1** ±1.2 · #84 of 743 · from 15 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         █··········●       #1 of 2     23%      4
+agent tasks         █··········●       #1 of 2     24%      4
 coding              █··········●      #1 of 2*     14%      2
-math                ▁▁▃▅█▆▄█●▂▁▁   #66 of 440*    4.0%      1
+math                ▁▁▃▅█▆▅█●▁▁▁   #66 of 440*    4.1%      1
 vision &amp; documents  ●··········█       #2 of 2     13%      3
-web search          █··········●      #1 of 2*    3.4%      1
+web search          █··········●      #1 of 2*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #1 of 2 · 23% of its score</summary>
+<details><summary>agent tasks · #1 of 2 · 24% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://seed.bytedance.com/en/seed2">SWE-bench Pro (split unspecified)…</a>   46.9%  ▁·▁▁▁▁▁●█▁▁▁ beats 28/64  very hard · avg 6.2%    9.1%  sharp · at its level · small run
-<a href="https://seed.bytedance.com/en/seed2">Terminal-Bench 2.0 (maker)</a>           55.8%  ▁▁▄▄▇█▇●▅▁▃▃ beats 24/38  very hard · avg 11%     5.7%  at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">SWE-bench Pro (split unspecified)…</a>   46.9%  ▁·▁▁▁▁▁●█▁▁▁ beats 28/64  very hard · avg 6.4%    9.0%  sharp · at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">Terminal-Bench 2.0 (maker)</a>           55.8%  ▁▁▄▄▇█▇●▅▁▃▃ beats 24/38  very hard · avg 11%     5.8%  at its level · small run
 <a href="https://seed.bytedance.com/en/seed2">SWE-bench Multilingual (maker)</a>       71.7%  ▁··▂▂▃▆●▃▂▁▁ beats 42/69  hard · avg 25%          5.2%  at its level · small run
-<a href="https://seed.bytedance.com/en/seed2">BrowseComp (maker)</a>                   77.3%  ▁·▃▁▁▂▆▄█●▂▄ beats 37/48  hard · avg 27%          3.4%  at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">BrowseComp (maker)</a>                   77.3%  ▁·▃▁▁▂▆▄█●▂▄ beats 37/48  hard · avg 28%          3.5%  at its level · small run
 </pre>
 
 </details>
@@ -39,19 +39,19 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://seed.bytedance.com/en/seed2">SWE-bench Pro (split unspecified)…</a>   46.9%  ▁·▁▁▁▁▁●█▁▁▁ beats 28/64  very hard · avg 6.2%    9.1%  sharp · at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">SWE-bench Pro (split unspecified)…</a>   46.9%  ▁·▁▁▁▁▁●█▁▁▁ beats 28/64  very hard · avg 6.4%    9.0%  sharp · at its level · small run
 <a href="https://seed.bytedance.com/en/seed2">SWE-bench Multilingual (maker)</a>       71.7%  ▁··▂▂▃▆●▃▂▁▁ beats 42/69  hard · avg 25%          5.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #66 of 440 · 4.0% of its score</summary>
+<details><summary>math · #66 of 440 · 4.1% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [Inkling Small (266B-A12B)](inkling-small.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [Inkling Small (266B-A12B)](inkling-small.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   93.9%  ▃▃▄▃▃▃▇▆█●▃▆ beats 158/207  very hard · avg 7.3%    4.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   93.9%  ▃▃▄▃▃▃▇▆█●▃▆ beats 158/207  very hard · avg 7.4%    4.1%  sharp · noisy
 </pre>
 
 </details>
@@ -62,18 +62,18 @@ Trails [Doubao Seed 2.0 Lite (260428)](doubao-seed-2-0-lite-260428.md) here, tho
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://seed.bytedance.com/en/seed2">CharXiv (reasoning questions) (ma…</a>   80.5%  ▂▄▃▄▅▅▅▅▅●▆▂ beats 80/105  medium · avg 41%    4.5%  small run
-<a href="https://seed.bytedance.com/en/seed2">CharXiv descriptive questions (ma…</a>   93.5%  ▂▄▄▅▇▄██▇●▂▂ beats 57/61   easy · avg 72%      4.4%  maxed out · small run
-<a href="https://seed.bytedance.com/en/seed2">MMMU Pro (maker)</a>                     78.2%  ▁▂▁▂▅▃▃▆▂█●▃ beats 47/55   medium · avg 46%    3.7%  small run
+<a href="https://seed.bytedance.com/en/seed2">CharXiv (reasoning questions) (ma…</a>   80.5%  ▂▄▃▄▅▅▅▅▅●▆▂ beats 80/105  medium · avg 42%    4.6%  small run
+<a href="https://seed.bytedance.com/en/seed2">CharXiv descriptive questions (ma…</a>   93.5%  ▂▄▄▅▇▄██▇●▂▂ beats 57/61   easy · avg 72%      4.5%  maxed out · small run
+<a href="https://seed.bytedance.com/en/seed2">MMMU Pro (maker)</a>                     78.2%  ▁▂▁▂▅▃▃▆▂█●▃ beats 47/55   medium · avg 47%    3.7%  small run
 </pre>
 
 </details>
 
-<details><summary>web search · #1 of 2 · 3.4% of its score</summary>
+<details><summary>web search · #1 of 2 · 3.5% of its score</summary>
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://seed.bytedance.com/en/seed2">BrowseComp (maker)</a>   77.3%  ▁·▃▁▁▂▆▄█●▂▄ beats 37/48  hard · avg 27%    3.4%  at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">BrowseComp (maker)</a>   77.3%  ▁·▃▁▁▂▆▄█●▂▄ beats 37/48  hard · avg 28%    3.5%  at its level · small run
 </pre>
 
 </details>
@@ -83,10 +83,10 @@ test                result  vs the others in its run  difficulty      counts  wh
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   88.2%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 164/221  hard · avg 39%           25%  sharp · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂●▂▃▃▂▁ beats 78/157   very hard · avg 5.6%     17%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              39.4%  ▁▂▂▂▅●▄▃▂··▁ beats 36/91    very hard · avg 7.2%    5.9%  at its level
-<a href="https://seed.bytedance.com/en/seed2">Humanity's Last Exam (maker)</a>   32.4%  ▁▁▁▄▆▇▅●▆▁▂▁ beats 85/115   very hard · avg 5.1%    5.6%  at its level · small run
-<a href="https://seed.bytedance.com/en/seed2">MultiChallenge (maker)</a>         68.3%  ▁·▁·▁▅█▃▅▃█● beats 32/33    hard · avg 33%          3.0%  at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂●▂▃▃▂▁ beats 78/157   very hard · avg 5.6%     16%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              39.4%  ▁▂▂▂▅●▄▃▂··▁ beats 36/91    very hard · avg 7.4%    5.9%  at its level
+<a href="https://seed.bytedance.com/en/seed2">Humanity's Last Exam (maker)</a>   32.4%  ▁▁▁▄▆▇▅●▆▁▂▁ beats 85/115   very hard · avg 5.3%    5.6%  at its level · small run
+<a href="https://seed.bytedance.com/en/seed2">MultiChallenge (maker)</a>         68.3%  ▁·▁·▁▅█▃▅▃█● beats 32/33    hard · avg 33%          3.1%  at its level · small run
 <a href="https://seed.bytedance.com/en/seed2">SuperGPQA (maker)</a>              68.7%  ▂▁▂▂▅▆▃▇▇▇█● beats 46/48    medium · avg 37%        3.0%  at its level · small run
 </pre>
 
@@ -99,7 +99,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="first-party-bytedance-seed-scores"></a><a href="https://seed.bytedance.com/en/seed2">ByteDance Seed model page (submitted / …</a>       11   59% ▇▇▇▇▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                                        4   41% ▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                                        4   40% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 70.1
 </pre>

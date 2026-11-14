@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 49.4** ±1.3 · #390 of 740 · from 8 benchmark results across 5 sources
+**score 49.4** ±1.3 · #390 of 743 · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▆▆▃▃▁   #297 of 472     84%      6
+coding  ▁▁▁▃▆●█▆▆▃▃▁   #299 of 474     84%      6
 </pre>
 
-<details><summary>coding · #297 of 472 · 84% of its score</summary>
+<details><summary>coding · #299 of 474 · 84% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 20/62  medium · avg 51%     35%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   23.5%  ▁▁·▁▂●▆█▅▂·▂ beats 8/31   hard · avg 24%       32%  sharp
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.9%  █▂▁▁●▂▂▃▅▅▅▇ beats 13/47  hard · avg 33%      6.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.9%  █▂▁▁●▂▂▃▅▅▅▇ beats 13/47  hard · avg 34%      6.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   33.0%  ▃··▁▂▂▃●█▃▄▂ beats 18/47  medium · avg 52%    5.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 27/47  hard · avg 32%      4.6%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.1%  ▁▁▁······●▃█ beats 6/47   easy · avg 67%      0.2%  blunt · at its level · noisy

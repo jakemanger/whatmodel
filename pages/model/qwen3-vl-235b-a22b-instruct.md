@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 62.9** ±0.7 · #176 of 740 · from 40 benchmark results across 5 sources
+**score 62.8** ±0.7 · #180 of 743 · from 40 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▄▅▂▁   #177 of 316*    0.6%      1
-coding              ▁▁▁▃▆▇█●▆▃▃▁   #182 of 472*    2.8%      2
-chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃    #105 of 404    9.0%      3
-math                ▁▁▃▅█▆▄●▅▂▁▁    #107 of 440     10%      3
+agent tasks         ▁▁▃▆█●▅▅▃▃▂▁   #183 of 319*    0.6%      1
+coding              ▁▁▁▃▆▇█●▆▃▃▁   #185 of 474*    2.8%      2
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #106 of 405    8.9%      3
+math                ▁▁▃▅█▆▅●▄▁▁▁    #106 of 440     10%      3
 vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄     #81 of 154     45%     15
 </pre>
 
-<details><summary>agent tasks · #177 of 316 · 0.6% of its score</summary>
+<details><summary>agent tasks · #183 of 319 · 0.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,34 +34,34 @@ test             result  vs the others in its run    difficulty        counts  w
 
 </details>
 
-<details><summary>coding · #182 of 472 · 2.8% of its score</summary>
+<details><summary>coding · #185 of 474 · 2.8% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">LiveCodeBench v6 (Feb–May 2025) (…</a>   54.3%  ▁▁▃▁●▅▄▇▅▅▃█ beats 7/38   hard · avg 31%    1.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MultiPL-E (maker)</a>                    86.1%  ▃··▄·▅▅▇▄█▃● beats 29/31  easy · avg 67%    1.3%  small run
+<a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MultiPL-E (maker)</a>                    86.1%  ▃··▄·▅▅▇▄█▃● beats 29/31  easy · avg 68%    1.3%  small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #105 of 404 · 9.0% of its score</summary>
+<details><summary>chat &amp; writing · #106 of 405 · 8.9% of its score</summary>
 
 Beats [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1413.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 261/387  avg 1261            5.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1413.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 261/388  avg 1262            4.9%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Arena-Hard v2 aggregate (maker)</a>      77.4%  ▁▁··▄▃▁▃█▁●▇ beats 17/22    medium · avg 38%    3.0%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">IFEval (aggregation unspecified) …</a>   87.8%  ▁▂▄▂▂▄▆●█▅▂▁ beats 92/145   easy · avg 77%      1.0%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #107 of 440 · 10% of its score</summary>
+<details><summary>math · #106 of 440 · 10% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -74,7 +74,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>vision &amp; documents · #81 of 154 · 45% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
@@ -84,10 +84,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">MMMU Pro (maker)</a>                     68.1%  ▃·█·▅▃▃▃▅▅▃● beats 16/16   medium · avg 46%       4.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">CharXiv descriptive questions (ma…</a>   89.4%  ▄··▂▂▂·▂▄▄▂● beats 11/14   easy · avg 74%         4.0%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">MathVista (testmini) (maker)</a>         84.9%  ▃··▃▅·▃█▅▅▅● beats 15/16   medium · avg 69%       3.7%  typical
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1214.5  ▁▁▂▂▂▂▃▅▅●█▇ beats 80/152  avg 1063               3.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1214.5  ▁▁▂▂▂▂▃▅▅●█▇ beats 80/152  avg 1064               3.4%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   46.0%  ▁·▁·▃▃▁▇▃●·▄ beats 17/22   hard · avg 27%         2.8%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">HallusionBench (maker)</a>               63.2%  ▃·▃·▅▃▅▅▃●█▅ beats 11/16   medium · avg 55%       1.9%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=15">RealWorldQA (maker)</a>                  79.2%  ▅▃·▃▅▅·█·▃▅● beats 16/16   easy · avg 70%         1.2%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=15">RealWorldQA (maker)</a>                  79.2%  ▅▃·▃▅▅·█·▃▅● beats 16/16   easy · avg 70%         1.3%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">ChartQA (maker)</a>                      90.3%  ▂··▂·▂▃·▅▂▆● beats 16/17   easy · avg 85%         1.2%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">ScreenSpot-Pro (maker)</a>               62.0%  ▂····▂▄··▂█● beats 11/11   medium · avg 46%       1.1%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=15">DocVQA (maker)</a>                       97.1%  ▃··▅▃▅▃█▃█▅● beats 17/17   very easy · avg 94%    1.0%  blunt · maxed out
@@ -130,11 +130,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=15">Qwen (submitted / maker-reported)</a>              18   55% ▇▇▇▇▇▇▇
 <a name="card2-qwen-qwen3-vl-235b-a22b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Qwen3-VL-235B-A22B-Instruct model card …</a>       18   29% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    9% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    8% ▇
 <a name="paper-2604.18224v1-webcompass"></a><a href="https://arxiv.org/html/2604.18224v1">WebCompass: Towards Multimodal Web Codi…</a>        1    5% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 62.9
+weighted average                                   = 62.8
 </pre>
 
 <sub>Licences: Qwen3-VL-235B-A22B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

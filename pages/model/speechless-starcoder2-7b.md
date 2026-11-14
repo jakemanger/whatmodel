@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 7.17B params · apache-2.0
 
-**score 43.1** ±0.8 · #521 of 740 · from 3 benchmark results across 1 source
+**score 43.1** ±0.8 · #524 of 743 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁   #365 of 472    100%      3
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #367 of 474    100%      3
 </pre>
 
-<details><summary>coding · #365 of 472 · 100% of its score</summary>
+<details><summary>coding · #367 of 474 · 100% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    56.1%  ▁·▁▁▃▄●▅█▃▁▁ beats 42/99  easy · avg 77%     51%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   51.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 44/99  easy · avg 71%     41%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        56.3%  ▁···▁▁▂▅●█▆▂ beats 31/75  easy · avg 66%    7.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        56.3%  ▁···▁▁▂▅●█▆▂ beats 31/75  easy · avg 66%    7.8%  at its level
 </pre>
 
 </details>

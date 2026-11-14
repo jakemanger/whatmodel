@@ -6,7 +6,7 @@
 
 Midjourney · released 2023-12 · proprietary
 
-**score 45.0** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂█▇●▅█▇▂▃▁▂   #96 of 159*     81%      1
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #97 of 160*     81%      1
 </pre>
 
-<details><summary>text to image · #96 of 159 · 81% of its score</summary>
+<details><summary>text to image · #97 of 160 · 81% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                results  share of the score
 <a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   19% ▇▇
-weighted average                               = 45.0
+weighted average                               = 44.9
 </pre>
 
 <sub>Licences: Kwai-Kolors/Kolors repository README ([Apache-2.0](../../licenses/visual-kolors-readme.txt))</sub>

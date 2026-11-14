@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 73.2** ±2.3 · #47 of 740 · from 8 benchmark results across 2 sources
+**score 73.1** ±2.3 · #52 of 743 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,43 +16,43 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅▅▄●▂▁     #44 of 316     58%      4
-coding              ▁▁▁▃▆▇█▆●▃▃▁    #81 of 472*     11%      1
-vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄   #128 of 154*    1.0%      1
+agent tasks         ▁▁▃▆█▄▅▅▃●▂▁     #42 of 319     58%      4
+coding              ▁▁▁▃▆▇█▆●▃▃▁    #82 of 474*     11%      1
+vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄   #128 of 154*    1.1%      1
 </pre>
 
-<details><summary>agent tasks · #44 of 316 · 58% of its score</summary>
+<details><summary>agent tasks · #42 of 319 · 58% of its score</summary>
 
-Beats [GPT-5.6 Luna](gpt-5-6-luna.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Grok 4.5](grok-4-5.md) here, though they rank lower overall.
+Beats [Muse Spark 1.3](muse-spark-1-3.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (maker)</a>           83.9%  ▁·▁·▁▁▄▃▅█●█ beats 52/68  hard · avg 25%           27%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (maker)</a>      59.3%  ▂····▃▁▁●█▆█ beats 10/36  hard · avg 23%           11%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▄▂▂▂▂▄▄ beats 4/15   very hard · avg 7.6%     11%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (maker)</a>          75.9%  ▂·▂▂▅▃···▃●█ beats 13/19  medium · avg 35%        9.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▄▂▂▂▂▄▄ beats 4/15   very hard · avg 7.7%     11%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (maker)</a>      59.3%  ▂····▃▁▁●█▆█ beats 10/36  hard · avg 24%           11%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (maker)</a>          75.9%  ▂·▂▂▅▃···▃●█ beats 13/19  medium · avg 36%        8.9%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #81 of 472 · 11% of its score</summary>
+<details><summary>coding · #82 of 474 · 11% of its score</summary>
 
-Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
+Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (maker)</a>   59.3%  ▂····▃▁▁●█▆█ beats 10/36  hard · avg 23%     11%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (maker)</a>   59.3%  ▂····▃▁▁●█▆█ beats 10/36  hard · avg 24%     11%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #128 of 154 · 1.0% of its score</summary>
+<details><summary>vision &amp; documents · #128 of 154 · 1.1% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   50.1%  ●·▁·▂▂▅█·▁▂▂ beats 0/22   medium · avg 62%    1.0%  blunt · at its level
+<a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   50.1%  ●·▁·▂▂▅█·▁▂▂ beats 0/22   medium · avg 62%    1.1%  blunt · at its level
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">deepseek-ai/DeepSeek-V4-Flash-Vision-Ex…</a>        7   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    1% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 73.2
+weighted average                                   = 73.1
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

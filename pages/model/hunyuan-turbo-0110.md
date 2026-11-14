@@ -6,7 +6,7 @@
 
 Tencent · proprietary
 
-**score 58.3** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.2** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #243 of 589*     96%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▃   #244 of 590*     96%      1
 </pre>
 
-<details><summary>chat &amp; writing · #243 of 589 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #244 of 590 · 96% of its score</summary>
 
-Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1340.7  ▁▁▁▂▃▂▃▆●▇█▃ beats 178/387  avg 1261       96%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1340.7  ▁▁▁▂▃▂▃▆●▇█▃ beats 178/388  avg 1262       96%  blunt
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 58.3
+weighted average                        = 58.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

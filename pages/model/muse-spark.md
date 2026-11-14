@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #15 of 476*     34%      1
-math                ▁▂▃▆██▅●▄▁▁▁   #90 of 540*    4.9%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #15 of 477*     34%      1
+math                ▁▂▃▆█▇▅●▄▁▁▁   #89 of 540*    5.0%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇██●   #16 of 190*     36%      2
 </pre>
 
-<details><summary>chat &amp; writing · #15 of 476 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #15 of 477 · 34% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.1  ▁▁▁▂▃▂▃▆▆▇█● beats 374/387  avg 1261       34%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.2  ▁▁▁▂▃▂▃▆▆▇█● beats 374/388  avg 1262       34%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #90 of 540 · 4.9% of its score</summary>
+<details><summary>math · #89 of 540 · 5.0% of its score</summary>
 
 Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 143/207  very hard · avg 7.3%    4.9%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 143/207  very hard · avg 7.4%    5.0%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT
 
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1294.4  ▁▁▂▂▂▂▃▅▅▅█● beats 147/152  avg 1063       23%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1466.7  ▁▃▁▃▄█▇●█▄▄▅ beats 21/39    avg 1333       12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1294.4  ▁▁▂▂▂▂▃▅▅▅█● beats 147/152  avg 1064       23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1466.7  ▁▃▁▃▄█▇●█▄▄▅ beats 21/39    avg 1334       12%  blunt
 </pre>
 
 </details>
@@ -70,9 +70,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   29% ▇▇▇
-prior: pull toward the middle             1% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   29% ▇▇▇▇
+prior: pull toward the middle             2% ▇
 weighted average                        = 73.5
 </pre>
 

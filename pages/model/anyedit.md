@@ -6,7 +6,7 @@
 
 Zhejiang University / NUS (AnyEdit) · released 2025-02 · apache-2.0
 
-**score 29.9** ±3.4 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 29.8** ±3.4 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁●▁▃▃▃█▅▃▄▂▁   #81 of 83*     51%      1
+image to image / edit…  ▁●▁▃▃▃█▅▃▅▂▁   #82 of 84*     51%      1
 </pre>
 
-<details><summary>image to image / editing · #81 of 83 · 51% of its score</summary>
+<details><summary>image to image / editing · #82 of 84 · 51% of its score</summary>
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   25% ▇▇▇
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   19% ▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 29.9
+weighted average                                   = 29.8
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

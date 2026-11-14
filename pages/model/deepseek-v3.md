@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 671B params (37B active) · deepseek
 
-**score 59.4** ±0.6 · #216 of 740 · from 46 benchmark results across 16 sources
+**score 59.4** ±0.6 · #218 of 743 · from 46 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #232 of 316    8.6%      4
-coding          ▁▁▁▃▆▇█●▆▃▃▁   #158 of 472     43%     10
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #157 of 404     10%      4
-math            ▁▁▃▅█●▄█▅▂▁▁   #240 of 440     10%      4
+agent tasks     ▁▁▃▆●▄▅▅▃▃▂▁   #234 of 319    8.6%      4
+coding          ▁▁▁▃▆▇█●▆▃▃▁   #159 of 474     43%     10
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #158 of 405     10%      4
+math            ▁▁▃▅█●▅█▄▁▁▁   #240 of 440     10%      4
 </pre>
 
-<details><summary>agent tasks · #232 of 316 · 8.6% of its score</summary>
+<details><summary>agent tasks · #234 of 319 · 8.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -36,18 +36,18 @@ test                result  vs the others in its run   difficulty        counts 
 
 </details>
 
-<details><summary>coding · #158 of 472 · 43% of its score</summary>
+<details><summary>coding · #159 of 474 · 43% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   48.4%  ▂·▂▃▅▂▃●▆▄▂▂ beats 25/49  very hard · avg 8.0%     17%  sharp · at its level · several runs
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   48.9%  ▁▁·▁▂▄▆█▅●·▂ beats 28/31  hard · avg 24%          8.5%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   48.9%  ▁▁·▁▂▄▆█▅●·▂ beats 28/31  hard · avg 24%          8.6%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   45.8%  ▃···▃·▃·▃█·● beats 7/7    hard · avg 18%          6.2%  sharp · at its level · several runs
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    3.1%  ▃···█··●·▃·▂ beats 12/17  very hard · avg 1.0%    2.5%  sharp · too hard for it
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   33.5%  ▄▄·▄·····█▄● beats 7/7    hard · avg 18%          2.4%  at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   58.5%  ▁··▁·▁▁▁●█▇█ beats 12/45  hard · avg 30%          2.0%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   58.5%  ▁··▁·▁▁▁●█▇█ beats 12/45  hard · avg 30%          2.1%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                                90.0%  ██·██···███● beats 7/7    easy · avg 79%          1.2%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     87.2%  ▃▁▁█▁▄▅▃▄●▁▄ beats 25/31  medium · avg 41%        1.1%  sharp · noisy
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                       53.1%  ▄··▄·▄·●··▄█ beats 4/7    medium · avg 48%        1.1%  at its level
@@ -56,14 +56,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #157 of 404 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #158 of 405 · 10% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   85.5%  ▂▁▁▅█▅▃▃▃▅●▂ beats 59/62    medium · avg 52%    3.7%  sharp · small run
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1358.4  ▁▁▁▂▃▂▃▆●▇█▃ beats 202/387  avg 1261            3.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1358.5  ▁▁▁▂▃▂▃▆●▇█▃ beats 202/388  avg 1262            3.2%  blunt
 <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>           85.8%  ▄▄··▄·▄··●·▄ beats 5/6      easy · avg 73%      2.0%  several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlled (m…</a>   70.0%  ▁▁▃▄▆██▆▃●▁▁ beats 149/155  medium · avg 49%    1.4%  sharp · at its level · small run
 </pre>
@@ -77,7 +77,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 55/92   hard · avg 29%          5.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   15.8%  ▃▃▄▃●▃▇▆█▄▃▆ beats 53/207  very hard · avg 7.3%    2.8%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   15.8%  ▃▃▄▃●▃▇▆█▄▃▆ beats 53/207  very hard · avg 7.4%    2.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>          39.2%  ▃·●·▃▃···█·▃ beats 1/7     medium · avg 51%        0.7%  sharp · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>           90.2%  ▄·▄●·▄▄█···▄ beats 2/7     very easy · avg 91%     0.5%  maxed out
 </pre>
@@ -88,17 +88,17 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.5%  ▁▁▁▁▂▃▅●▄▆█▃ beats 83/221   hard · avg 39%         8.4%  sharp · at its level · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.5%  ▁▁▁▁▂▃▅●▄▆█▃ beats 83/221   hard · avg 39%         8.2%  sharp · at its level · several runs
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   42.1%  ▁▁▃▆██●▁·▁▁▁ beats 52/57    hard · avg 16%         7.8%  sharp · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    34.3%  ▁···▁▃▂●▂▃▃▂ beats 13/23    hard · avg 17%         2.4%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   80.5%  ▁▂▂▂▃█▃▆▅●▂▃ beats 82/95    medium · avg 65%       1.9%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   80.5%  ▁▂▂▂▃█▃▆▅●▂▃ beats 82/95    easy · avg 65%         1.9%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU (maker)</a>                         88.5%  ▁▁▁▁▁▂▂▅██▆● beats 204/215  easy · avg 74%         1.6%  small run
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>              48.6%  ▄··▄▄···▄▄█● beats 7/7      hard · avg 35%         1.6%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>          92.2%  ▄▄▄··▄▄··▄·● beats 6/7      easy · avg 80%         1.5%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Pro (maker)</a>                     75.9%  ▁▁·▁▁▁▃▂▄●█▁ beats 105/189  medium · avg 59%       1.3%  at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-chat-v3_openai_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   88.6%  ▂·▂▂▂▆▅▆▆▆▃● beats 28/29    easy · avg 75%         1.2%  typical
+<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     37.3%  ▂···█▂▆●██▆▂ beats 9/23     very hard · avg 30%    1.2%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (maker)</a>                       86.5%  ▁···▁▁▂▁▂▂●█ beats 16/33    easy · avg 75%         1.1%  small run
-<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     37.3%  ▂···█▂▆●██▆▂ beats 9/23     very hard · avg 30%    1.1%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SimpleQA (maker)</a>                     24.9%  ▄▄▄▆█▆██●·▂█ beats 24/32    very hard · avg 11%    1.1%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Redux (maker)</a>                   89.1%  ▁▁▃▁▂▄▄▅●▅█▄ beats 32/64    easy · avg 80%         1.1%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (maker)</a>              68.0%  ▄··▄▄●··▄··█ beats 3/6      medium · avg 48%       0.8%  at its level · small run
@@ -107,7 +107,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">DROP (maker)</a>                         91.6%  ▃▅█▅·▃·▆▄▂▁● beats 43/44    easy · avg 65%         0.3%  blunt · at its level · small run
 <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>       92.1%  ▅▂▆█▆·▃·▂▅·● beats 23/23    easy · avg 81%         0.2%  blunt · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.1%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 88/140   very easy · avg 94%    0.1%  blunt · maxed out · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.9%  ▁▂▁▂▅█▂▃●▃▁▁ beats 76/98    very easy · avg 90%    0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.9%  ▁▂▁▂▅█▂▃●▃▁▁ beats 78/100   very easy · avg 90%    0.0%  blunt
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">CLUEWSC (maker)</a>                      90.9%  ●··········█ beats 0/1                                —  not counted yet: no other model in the …
 </pre>
 
@@ -126,8 +126,8 @@ source                                    results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1    8% ▇
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1    8% ▇
 <a name="acl-kcl-2026"></a><a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchmark: Towar…</a>        2    4% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     2    3% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
 <a name="scicode-readme-leaderboard"></a><a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode leaderboard</a>                             1    2% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    2% ▇
 <a name="opencompass-compassacademic-space-predictions"></a><a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">OpenCompass CompassAcademic leaderboard</a>         2    2% ▇
@@ -139,7 +139,7 @@ prior: pull toward the middle                        0% ▇
 weighted average                                   = 59.4
 </pre>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · deepseek-ai/DeepSeek-V3-0324 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3-0324.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · deepseek-ai/DeepSeek-V3-0324 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3-0324.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (1)</summary>
 

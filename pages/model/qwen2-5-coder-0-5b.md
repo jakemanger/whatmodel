@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 0.49B params · apache-2.0
 
-**score 38.3** ±1.1 · #598 of 740 · from 9 benchmark results across 2 sources
+**score 38.3** ±1.1 · #601 of 743 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁   #413 of 472     96%      8
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #415 of 474     96%      8
 </pre>
 
-<details><summary>coding · #413 of 472 · 96% of its score</summary>
+<details><summary>coding · #415 of 474 · 96% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (maker)</a>                    61.6%  ●·▄···█··█·▄ beats 0/6    easy · avg 85%       27%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 80%       20%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 81%       20%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   14.3%  ●·▁▂▄▁▆▄█▆▂▂ beats 0/62   medium · avg 51%     17%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         52.4%  ●···███·██·█ beats 0/6    easy · avg 77%       12%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    49.6%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 70%      8.3%  at its level

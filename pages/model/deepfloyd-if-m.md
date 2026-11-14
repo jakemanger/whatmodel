@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 0.4B params · deepfloyd-if-license
 
-**score 31.6** ±2.5 · #133 of 146 · from 3 benchmark results across 3 sources
+**score 31.6** ±2.5 · #134 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #113 of 128*     43%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #114 of 129*     43%      1
 </pre>
 
-<details><summary>text to image · #113 of 128 · 43% of its score</summary>
+<details><summary>text to image · #114 of 129 · 43% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [LCM-SSD-1B](lcm-ssd-1b.md) here, though they rank higher overall. Trails [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test     result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0800 mean human alignment score  █▄▄·█·▄●▄▄·▄ beats 7/11   avg 6.275 mean human al…     41%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0800 mean human alignment score  █▄▄·█·▄●▄▄·▄ beats 7/11   avg 6.280 mean human al…     41%  typical
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              56.6%  ▁····●▁·▁··▁ beats 3/9    very easy · avg 92%          12%  sharp · at its level · noisy
 </pre>
 

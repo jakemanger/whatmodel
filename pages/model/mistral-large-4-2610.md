@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1000B params (52B active) · Mistral Ecosystem Open-Weight License
 
-**score 71.4** ±1.1 · #68 of 740 · from 7 benchmark results across 1 source
+**score 71.4** ±1.1 · #70 of 743 · from 7 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█▆▄█▅●▁▁   #32 of 440*    3.0%      1
+math  ▁▁▃▅█▆▅█●▁▁▁   #31 of 440*    3.0%      1
 </pre>
 
-<details><summary>math · #32 of 440 · 3.0% of its score</summary>
+<details><summary>math · #31 of 440 · 3.0% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Gemini 3.7 Flash](gemini-3-7-flash.md) here, though they rank higher overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   99.4%  ▃▃▄▃▃▃▇▆█▄▃● beats 189/207  very hard · avg 7.3%    3.0%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   99.4%  ▃▃▄▃▃▃▇▆█▄▃● beats 189/207  very hard · avg 7.4%    3.0%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -34,12 +34,12 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     30.8%  █●██▁▇▁▃▃▄▁▁ beats 10/38    very hard · avg 1.0%     25%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              18.1%  ▃▂▅▆●█▅▆▃▃▂▃ beats 10/30    very hard · avg 0.2%     19%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          29.0%  █▁▁▁▁▂▄●▃▃▂▁ beats 105/157  very hard · avg 5.6%     19%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     30.8%  █●██▁▇▁▃▃▄▁▁ beats 10/38    very hard · avg 1.0%     26%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              18.1%  ▃▂▅▆●█▅▆▃▃▂▃ beats 10/30    very hard · avg 0.3%     18%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          29.0%  █▁▁▁▁▂▄●▃▃▂▁ beats 105/157  very hard · avg 5.6%     18%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%  █·▂▁▆●▆▆▅▂▂▁ beats 34/83    very hard · avg 9.4%     16%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   90.2%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 180/221  hard · avg 39%           12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              22.4%  ▁▂▂●▅█▄▃▂··▁ beats 15/91    very hard · avg 7.2%    5.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              22.4%  ▁▂▂●▅█▄▃▂··▁ beats 15/91    very hard · avg 7.4%    5.9%  at its level
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 54.3** ±1.6 · #69 of 146 · from 7 benchmark results across 6 sources
+**score 54.2** ±1.6 · #69 of 147 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄●█▂▂▁▁▁   #63 of 128     68%      3
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #35 of 64*     22%      2
+text to image           ▂▅▅▃▄●█▃▂▁▁▁   #64 of 129     68%      3
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #36 of 65*     21%      2
 </pre>
 
-<details><summary>text to image · #63 of 128 · 68% of its score</summary>
+<details><summary>text to image · #64 of 129 · 68% of its score</summary>
 
 Trails [LongCat-Image](longcat-image.md), [LLaDA-Image-Turbo](llada-image-turbo.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1070.0  ▁▁▃●▆█▃▂▂▂▁▁ beats 19/77  avg 1030           43%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1070.0  ▁▁▃●▆█▄▂▂▂▁▁ beats 19/78  avg 1030           44%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    87.1%  ▄····▄█▄▄●▄█ beats 6/10   easy · avg 83%     14%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   22.9%  ▁▂●█▃▁▂▃·▁·▁ beats 3/22   hard · avg 29%     11%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #35 of 64 · 22% of its score</summary>
+<details><summary>image to image / editing · #36 of 65 · 21% of its score</summary>
 
 Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.4  ▂▁▁▃▆●▆▆▇▄▃▃ beats 16/55  avg 1158       15%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1039.0  ▃▂····▂█▂●▂▃ beats 11/14  avg 960       6.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.4  ▂▁▁▃▆●▅▇█▄▃▃ beats 16/56  avg 1160       15%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1039.0  ▃▂····▂█▂●▂▃ beats 11/14  avg 961       6.1%  blunt
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                         result  vs the others in its run  difficulty  count
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   925.3  ▁▁▁●▂█▂▁▁▂▁▁ beats 6/34   avg 878                 6.3%  typical
-<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.5%  ▃·····●▅▃·▃▅ beats 1/9    very hard · avg 4.4%    3.0%  too hard for it
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   925.3  ▁▁▁●▂█▂▁▁▂▁▁ beats 6/34   avg 879                 6.3%  typical
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.5%  ▃·····●▅▃·▃▅ beats 1/9    very hard · avg 4.5%    3.0%  too hard for it
 </pre>
 
 </details>
@@ -61,14 +61,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   59% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   59% ▇▇▇▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   14% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    6% ▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    6% ▇
 <a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.3
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

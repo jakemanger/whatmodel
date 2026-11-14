@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-10 · closed weights
 
-**score 63.0** ±0.7 · #172 of 740 · from 28 benchmark results across 15 sources
+**score 63.0** ±0.7 · #174 of 743 · from 28 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▅●▅▄▅▂▁    #132 of 316     32%     10
-coding              ▁▁▁▃▆▇█▆●▃▃▁    #132 of 472     28%      4
-chat &amp; writing      ▁▁▁▃▆▄▆█▇●▇▃   #100 of 404*    5.5%      1
-math                ▁▁▃▅█▆▄●▅▂▁▁   #116 of 440*     10%      2
+agent tasks         ▁▁▃▆█▄●▅▃▃▂▁    #139 of 319     32%     10
+coding              ▁▁▁▃▆▇█▆●▃▃▁    #134 of 474     28%      4
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #100 of 405*    5.4%      1
+math                ▁▁▃▅█▆▅●▄▁▁▁   #115 of 440*     10%      2
 vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄    #69 of 154*    2.0%      1
-web search          ●▁▂▆▅█▄▃▁▁▁▁     #84 of 85*    3.8%      1
+web search          ●▁▂▆▅█▄▃▁▁▁▁     #84 of 85*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #132 of 316 · 32% of its score</summary>
+<details><summary>agent tasks · #139 of 319 · 32% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (maker)</a>       67.4%  ●·▃·▅▅█··▃·▃ beats 0/10   hard · avg 31%           11%  at its level
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (maker)</a>       8.8%  ●·······▃▃██ beats 0/8    very hard · avg 6.2%    5.3%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   18.7%  ●·····▂·▅█▂▂ beats 0/11   very hard · avg 13%     3.8%  at its level
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   28.3%  ▃··▃·▃▃█●▅▃▅ beats 7/14   very hard · avg 6.3%    3.6%  sharp
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      68.7%  ▁▁▁▂██▅▅▆▂●▂ beats 73/77  hard · avg 31%          2.7%  at its level
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (maker)</a>            0.0%  ●·····▃··▅▅█ beats 0/8    very hard · avg 0.7%    1.8%  sharp · too hard for it
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (maker)</a>       67.4%  ●·▃·▅▅█··▃·▃ beats 0/10   hard · avg 31%           12%  at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (maker)</a>       8.8%  ●·······▃▃██ beats 0/8    very hard · avg 6.5%    5.2%  sharp · at its level
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   28.3%  ▃··▃·▃▃█●▅▃▅ beats 7/14   very hard · avg 6.4%    3.7%  sharp
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   18.7%  ●·····▂·▅█▂▂ beats 0/11   very hard · avg 14%     3.6%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      68.7%  ▁▁▁▂██▅▅▆▂●▂ beats 73/77  hard · avg 31%          2.8%  at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (maker)</a>            0.0%  ●·····▃··▅▅█ beats 0/8    very hard · avg 0.7%    1.6%  sharp · too hard for it
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   11.4%  ▃··▃·●██▃▃▃█ beats 2/14   very hard · avg 2.9%    1.5%  sharp · noisy
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     53.4%  ▂··●···▂▄▄█▄ beats 1/13   medium · avg 45%        1.1%  at its level
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    2.7%  ▁▁·▁●▁▁▅▃█▅█ beats 3/27   very hard · avg 2.4%    0.8%  too hard for it
@@ -44,39 +44,39 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #132 of 472 · 28% of its score</summary>
+<details><summary>coding · #134 of 474 · 28% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (maker)</a>       67.4%  ●·▃·▅▅█··▃·▃ beats 0/10    hard · avg 31%           11%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1330.2  ▁▂▄▃●█▅▆█▅▂▁ beats 23/133  avg 990                  10%  sharp
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   59.6%  ▁▁▁▁·▁▂●▅▃█▇ beats 15/49   hard · avg 17%          5.3%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (maker)</a>       67.4%  ●·▃·▅▅█··▃·▃ beats 0/10    hard · avg 31%           12%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1330.4  ▁▂▄▃●█▅▇▇▅▂▁ beats 23/134  avg 996                  10%  sharp
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   59.6%  ▁▁▁▁·▁▂●▅▃█▇ beats 15/49   hard · avg 18%          5.2%  sharp · at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   11.4%  ▃··▃·●██▃▃▃█ beats 2/14    very hard · avg 2.9%    1.5%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #100 of 404 · 5.5% of its score</summary>
+<details><summary>chat &amp; writing · #100 of 405 · 5.4% of its score</summary>
 
-Beats [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+Beats [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1414.1  ▁▁▁▂▃▂▃▆▆●█▃ beats 262/387  avg 1261      5.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1414.0  ▁▁▁▂▃▂▃▆▆●█▃ beats 262/388  avg 1262      5.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #116 of 440 · 10% of its score</summary>
+<details><summary>math · #115 of 440 · 10% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               96.4%  ▂▂▅▆▄█▆▃▅▂●▄ beats 84/92   hard · avg 29%          5.8%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   66.7%  ▃▃▄▃▃▃●▆█▄▃▆ beats 95/207  very hard · avg 7.3%    4.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   66.7%  ▃▃▄▃▃▃●▆█▄▃▆ beats 95/207  very hard · avg 7.4%    4.4%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -87,18 +87,18 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                               result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1418.7  ▁●▁▃▄█▇▅█▄▄▅ beats 2/39   avg 1333      2.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1418.7  ▁●▁▃▄█▇▅█▄▄▅ beats 2/39   avg 1334      2.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>web search · #84 of 85 · 3.8% of its score</summary>
+<details><summary>web search · #84 of 85 · 3.6% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   18.7%  ●·····▂·▅█▂▂ beats 0/11   very hard · avg 13%    3.8%  at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   18.7%  ●·····▂·▅█▂▂ beats 0/11   very hard · avg 14%    3.6%  at its level
 </pre>
 
 </details>
@@ -107,18 +107,18 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         71.2%  ▁▁▁▁▂▃▅▄●▆█▃ beats 107/221  hard · avg 39%          9.1%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (maker)</a>         10.2%  ●····▂·▃▂█▂▂ beats 0/11     very hard · avg 5.8%    5.0%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         71.2%  ▁▁▁▁▂▃▅▄●▆█▃ beats 107/221  hard · avg 39%          9.0%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (maker)</a>         10.2%  ●····▂·▃▂█▂▂ beats 0/11     very hard · avg 6.0%    4.8%  typical
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-haiku-4-5-20251001-thinking-32k">ARC-AGI-1 public evaluation set (…</a>   62.9%  ▁·▇▃▁·●▇▁·▇▃ beats 14/27    very hard · avg 4.4%    4.0%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   65.8%  ▁▁·▁▂▂▄█▄▅●▄ beats 52/66    hard · avg 30%          3.3%  at its level
-<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1000.0  ●··▄█··▄·▄·▄ beats 0/7      avg 828                 2.9%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 5.0%  ●▁▁▁▁▂▄▂▃▃▂▁ beats 1/157    very hard · avg 5.6%    2.7%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1000.0  ●··▄█··▄·▄·▄ beats 0/7      avg 829                 2.9%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 5.0%  ●▁▁▁▁▂▄▂▃▃▂▁ beats 1/157    very hard · avg 5.6%    2.6%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.5%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 12/49    easy · avg 77%          2.6%  typical
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   15.7%  ▁▁●▂▂▄▁▃▄▄▄█ beats 4/38     very hard · avg 14%     1.9%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    12.6%  ▁●▂▂▅█▄▃▂··▁ beats 6/91     very hard · avg 7.2%    1.8%  typical
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   15.7%  ▂▂●▂▃▃▂▇▇█▇▁ beats 5/47     very hard · avg 14%     2.1%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    12.6%  ▁●▂▂▅█▄▃▂··▁ beats 6/91     very hard · avg 7.4%    1.8%  typical
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-haiku-4-5-20251001-thinking-32k">ARC-AGI-2 public evaluation set (…</a>    5.1%  █··▂●▁▃▁▃·▁▃ beats 10/24    very hard · avg 0.4%    1.5%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.5%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 77/140   very easy · avg 94%     0.2%  blunt · maxed out · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.2%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 45/98    very easy · avg 90%     0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.2%  ▁▂▁▂▅●▂▃▃▃▁▁ beats 47/100   very easy · avg 90%     0.0%  blunt
 </pre>
 
 </details>
@@ -131,15 +131,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Anthropic system cards and model announ…</a>        5   27% ▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        5   24% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   17% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   17% ▇▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    8% ▇
-<a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-haiku-4-5-20251001-thinking-32k">ARC Prize Foundation model_baseline out…</a>        2    5% ▇
+<a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-haiku-4-5-20251001-thinking-32k">ARC Prize Foundation model_baseline out…</a>        2    6% ▇
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1    4% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
 <a name="paper-2602.17831v2"></a><a href="https://arxiv.org/html/2602.17831v2">The Token Games: Evaluating Language Mo…</a>        1    3% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    3% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
-<a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    1% ▇
+<a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    2% ▇
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI</a>                                      1    1% ▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇

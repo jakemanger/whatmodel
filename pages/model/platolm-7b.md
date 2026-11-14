@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2023-08 · apache-2.0
 
-**score 37.4** ±2.2 · #815 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.4** ±2.2 · #817 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▃   #435 of 475*     98%      2
+chat &amp; writing  ▁▁▁●▆▅▇█▆▆▆▃   #436 of 476*     98%      2
 </pre>
 
-<details><summary>chat &amp; writing · #435 of 475 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #436 of 476 · 98% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Playground · released 2024-02 · 2.57B params · playground-v2dot5-community
 
-**score 40.8** ±1.7 · #107 of 146 · from 7 benchmark results across 7 sources
+**score 40.8** ±1.7 · #108 of 147 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅●▄▄█▂▂▁▁▁   #87 of 128     99%      7
+text to image  ▂▅▅●▄▄█▃▂▁▁▁   #88 of 129     99%      7
 </pre>
 
-<details><summary>text to image · #87 of 128 · 99% of its score</summary>
+<details><summary>text to image · #88 of 129 · 99% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              50.5%  ▅●█▂▂▂····▂▂ beats 3/13   easy · avg 69%          26%  at its level
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>    1150.0  ▃▃··▃·▃·█·▃● beats 8/8    avg 1235                22%  sharp
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              50.5%  ▅●█▂▂▂····▂▂ beats 3/13   easy · avg 70%          26%  at its level
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>    1150.0  ▃▃··▃·▃·█·▃● beats 8/8    avg 1237                22%  sharp
 <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.20 / 5  █▄·▄██▄▄●▄▄▄ beats 10/14  easy · avg 3.84 / 5     21%  at its level
 <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       46.0%  ▄·▄·█▄▄●···▄ beats 6/7    easy · avg 66%          18%  at its level
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     49.0%  ▄·▆▂▆█●▆▂▄·▄ beats 13/22  medium · avg 60%       6.1%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     49.0%  ▄·▆▂▆█●▆▂▄·▄ beats 13/22  medium · avg 60%       6.0%  at its level
 <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.37 / 5  ▄·●········█ beats 1/3    easy · avg 3.87 / 5    5.3%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.2700  ▃·····▃··▃·● beats 3/5    avg 10.064             1.0%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.2700  ▃·····▃··▃·● beats 3/5    avg 10.073             1.0%  sharp · noisy
 </pre>
 
 </details>

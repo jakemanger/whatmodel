@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 48.2** ±0.9 · #412 of 740 · from 17 benchmark results across 7 sources
+**score 48.2** ±0.9 · #414 of 743 · from 17 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #279 of 316*    6.2%      1
-coding          ▁▁▁▃▆●█▆▆▃▃▁    #340 of 472     37%      6
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #260 of 404*    8.2%      1
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #284 of 319*    6.2%      1
+coding          ▁▁▁▃▆●█▆▆▃▃▁    #341 of 474     37%      6
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #260 of 405*    8.0%      1
 </pre>
 
-<details><summary>agent tasks · #279 of 316 · 6.2% of its score</summary>
+<details><summary>agent tasks · #284 of 319 · 6.2% of its score</summary>
 
-Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -32,29 +32,29 @@ test                        result  vs the others in its run  difficulty      co
 
 </details>
 
-<details><summary>coding · #340 of 472 · 37% of its score</summary>
+<details><summary>coding · #341 of 474 · 37% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   38.3%  ▁·▁▂●▁▆▄█▆▂▂ beats 10/62  medium · avg 51%         16%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   38.3%  ▁·▁▂●▁▆▄█▆▂▂ beats 10/62  medium · avg 51%         17%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (maker)</a>           17.0%  ▃···▃·●·▃█·▃ beats 2/7    hard · avg 18%          6.2%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (maker)</a>                        78.8%  ██·●█···████ beats 2/7    easy · avg 79%          4.7%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   14.4%  ▄▄·●·····█▄█ beats 2/7    hard · avg 18%          4.0%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (maker)</a>               52.7%  ▄··▄·▄·●··▄█ beats 3/7    medium · avg 48%        3.0%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.2%  ●▄··█·█····▄ beats 1/7    very hard · avg 5.7%    2.9%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.2%  ●▄··█·█····▄ beats 1/7    very hard · avg 5.8%    2.9%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #260 of 404 · 8.2% of its score</summary>
+<details><summary>chat &amp; writing · #260 of 405 · 8.0% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▂●▆▆▇█▃ beats 106/387  avg 1261      8.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▂●▆▆▇█▃ beats 106/388  avg 1262      8.0%  blunt
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (maker)</a>                 27.8%  ▂·●·▂▂▂▃▃▃█▃ beats 2/35    very hard · avg 33%    2.0%  small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            85.4%  ▁▁·▁·▂▃▄●▂·▁ beats 16/22   easy · avg 82%         1.9%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   94.6%  ▁▁▂▃▄●█▆▃▂▂▁ beats 56/140  very easy · avg 94%    0.6%  blunt · maxed out · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▄▃▁▁ beats 72/98   very easy · avg 90%    0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▃▃▁▁ beats 74/100  very easy · avg 90%    0.0%  blunt
 </pre>
 
 </details>
@@ -84,7 +84,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (submitted / maker-reported)</a>             9   35% ▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   33% ▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   16% ▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   17% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    3% ▇

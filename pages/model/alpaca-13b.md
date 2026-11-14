@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #459 of 476     69%      3
-math            ▁▂▃●██▅▇▄▁▁▁   #476 of 540*     30%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #460 of 477     69%      3
+math            ▁▂▃●█▇▅▇▄▁▁▁   #476 of 540*     30%      1
 </pre>
 
-<details><summary>chat &amp; writing · #459 of 476 · 69% of its score</summary>
+<details><summary>chat &amp; writing · #460 of 477 · 69% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.5  ▁▁●▂▃▂▃▆▆▇█▃ beats 11/387  avg 1261                     26%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         955.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 10/95   avg 1189                     24%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5300 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 7/28    avg 8.566 MT-Bench scor…     19%  sharp · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.5  ▁▁●▂▃▂▃▆▆▇█▃ beats 11/388  avg 1262                     25%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         955.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 10/95   avg 1189                     25%  typical
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5300 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 7/28    avg 8.567 MT-Bench scor…     19%  sharp · noisy
 </pre>
 
 </details>
@@ -51,8 +51,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="acl-2023-emnlp-main-216"></a><a href="https://aclanthology.org/2023.emnlp-main.216.pdf">INFORM : Information eNtropy based mult…</a>        1   30% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   26% ▇▇▇
-<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   24% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   25% ▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   25% ▇▇▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   19% ▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 29.0

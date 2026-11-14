@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6B params · apache-2.0
 
-**score 53.0** ±3.4 · #73 of 146 · from 3 benchmark results across 3 sources
+**score 52.9** ±3.4 · #74 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▂▂▁▁▁   #61 of 128     95%      7
+text to image  ▂▅▅▃▄●█▃▂▁▁▁   #62 of 129     95%      7
 </pre>
 
-<details><summary>text to image · #61 of 128 · 95% of its score</summary>
+<details><summary>text to image · #62 of 129 · 95% of its score</summary>
 
 Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md), [LLaDA-Image-Turbo](llada-image-turbo.md) here, though they rank higher overall.
 
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   23% ▇▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (submitted / maker-repo…</a>        1    3% ▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.9
 </pre>
 
 <sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt))</sub>

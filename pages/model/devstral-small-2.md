@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 60.7** ±1.9 · #202 of 740 · from 6 benchmark results across 4 sources
+**score 60.7** ±1.9 · #205 of 743 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▅●▅▄▅▂▁   #140 of 316     81%      3
-coding       ▁▁▁▃▆▇█●▆▃▃▁   #146 of 472     66%      2
+agent tasks  ▁▁▃▆█▄●▅▃▃▂▁   #143 of 319     81%      3
+coding       ▁▁▁▃▆▇█●▆▃▃▁   #148 of 474     65%      2
 </pre>
 
-<details><summary>agent tasks · #140 of 316 · 81% of its score</summary>
+<details><summary>agent tasks · #143 of 319 · 81% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/140  hard · avg 23%          51%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/140  hard · avg 24%          51%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (maker)</a>       22.5%  ▁▁●▄▇█▇█▅▁▃▃ beats 3/38    very hard · avg 11%     16%  at its level · small run
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   55.7%  ▁··▂▂▃●█▃▂▁▁ beats 17/69   hard · avg 30%          15%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #146 of 472 · 66% of its score</summary>
+<details><summary>coding · #148 of 474 · 65% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/140  hard · avg 23%     51%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/140  hard · avg 24%     51%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   55.7%  ▁··▂▂▃●█▃▂▁▁ beats 17/69   hard · avg 30%     15%  at its level · small run
 </pre>
 

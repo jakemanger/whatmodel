@@ -6,7 +6,7 @@
 
 UCSC VLAA · released 2025-04 · 8.03B params · apache-2.0
 
-**score 35.7** ±4.6 · #839 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.6** ±4.6 · #841 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             9% ▇
-weighted average                        = 35.7
+weighted average                        = 35.6
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

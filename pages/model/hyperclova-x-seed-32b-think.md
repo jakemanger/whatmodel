@@ -6,7 +6,7 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 61.9** ±1.7 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † no independently run results verified
+**score 61.8** ±1.7 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▄●▅▄▄▁▁   #155 of 357     85%      5
+agent tasks  ▁▁▂▆█▄●▅▃▂▂▁   #158 of 360     85%      5
 web search   ●▁▂▆▅█▄▄▁▂▁▁    #97 of 97*     11%      1
 </pre>
 
-<details><summary>agent tasks · #155 of 357 · 85% of its score</summary>
+<details><summary>agent tasks · #158 of 360 · 85% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (maker)</a>           9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.1%     24%  sharp · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (maker)</a>           9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.2%     24%  sharp · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (maker)</a>             65.1%  ▁·▅█▆●▂▃▃▂▃▁ beats 52/89  very hard · avg 12%      21%  sharp · at its level
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (maker)</a>              71.6%  ▁····▂▁▃▆●▃▁ beats 30/44  medium · avg 37%         16%  at its level
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (maker)</a>             58.0%  ▁▁·▂▁▃▂▁●▅▂▃ beats 21/42  hard · avg 29%           13%  at its level
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think (submitted / mak…</a>        7   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1   11% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.9
+weighted average                                   = 61.8
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

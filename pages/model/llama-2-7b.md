@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 31.8** ±0.5 · #659 of 740 · from 73 benchmark results across 12 sources
+**score 31.8** ±0.5 · #662 of 743 · from 73 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▆▇█▆▆▃▃▁   #462 of 472     12%      3
-math    ▁▁▃●█▆▄█▅▂▁▁   #384 of 440    8.5%      2
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #464 of 474     11%      3
+math    ▁▁▃●█▆▅█▄▁▁▁   #384 of 440    8.5%      2
 </pre>
 
-<details><summary>coding · #462 of 472 · 12% of its score</summary>
+<details><summary>coding · #464 of 474 · 11% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [GPT-J 6B](gpt-j-6b.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
@@ -50,13 +50,13 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Challenge</a>                        46.2%  ▁·▁··▁▁▇▂█●▃ beats 21/26   easy · avg 82%          25%  sharp · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                           69.6%  ▁····▁··▁▂█● beats 22/26   easy · avg 87%         8.8%  at its level · several runs
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.8%  ▁▁●▃▄█▄▁█··▁ beats 3/25    easy · avg 82%         6.4%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                           69.6%  ▁····▁··▁▂█● beats 22/26   easy · avg 87%         8.9%  at its level · several runs
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.8%  ▁▁●▃▄█▄▁█··▁ beats 3/25    easy · avg 82%         6.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">HellaSwag</a>                            75.9%  ▃···▁▇▅█●▃▁▁ beats 19/26   very easy · avg 91%    6.0%  at its level · several runs
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       39.3%  ▁·····●█▂▅·▁ beats 2/25    medium · avg 65%       4.8%  sharp · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">BoolQ</a>                                77.7%  ▂▃▂▅▆▂▅▆█●▂▂ beats 24/26   easy · avg 88%         4.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Easy</a>                             74.5%  ▁▁·▁▁▄▅▄█▅●▃ beats 24/26   easy · avg 85%         4.1%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2024-02-11%2021%3A35%3A55.239271.json">Natural Questions (closed book)</a>      27.1%  ▁·▁·▁▂▁▂·▅▂● beats 23/28   medium · avg 48%       3.8%  several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2024-02-11%2021%3A35%3A55.239271.json">Natural Questions (closed book)</a>      27.1%  ▁·▁·▁▂▁▂·▅▂● beats 23/28   medium · avg 49%       3.8%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">OpenBookQA</a>                           31.4%  █·▁▁▃·▁▃▅●▃▄ beats 19/26   easy · avg 81%         3.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                                 77.7%  ▁·▁··▁▁▃█●█▂ beats 17/26   easy · avg 87%         2.8%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-22%2004%3A21%3A19.624624.json">TriviaQA</a>                              9.2%  ▁··▁●▃▃▁▄▅▄█ beats 4/28    easy · avg 83%         2.4%  at its level · several runs

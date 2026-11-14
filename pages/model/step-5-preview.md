@@ -6,7 +6,7 @@
 
 StepFun · proprietary
 
-**score 72.4** ±1.2 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 72.3** ±1.2 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,41 +16,41 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█▄▅▅●▄▁▁   #52 of 357*     46%      1
-coding              ▁▁▁▃▅▇█▇▆●▂▁   #42 of 542*     27%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #62 of 476*     15%      1
+agent tasks         ▁▁▂▆█▄▅▅●▂▂▁   #61 of 360*     46%      1
+coding              ▁▁▁▃▅▆█▇▆●▃▁   #44 of 544*     28%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #65 of 477*     15%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▄   #58 of 190*     11%      1
 </pre>
 
-<details><summary>agent tasks · #52 of 357 · 46% of its score</summary>
+<details><summary>agent tasks · #61 of 360 · 46% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [Hunyuan Hy3 (295B-A21B)](hy3.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0343 IPS  ▁▁▁▁▄●█▄▂▁▁▁ beats 18/61  avg -0.395 IPS     46%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0374 IPS  ▁▁▁▃●█▂▁▁▁·▁ beats 18/63  avg -0.403 IPS     46%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #42 of 542 · 27% of its score</summary>
+<details><summary>coding · #44 of 544 · 28% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [DeepSeek V4 Flash (0731)](deepseek-v4-flash.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1573.4  ▁▂▄▃▇█▅●█▅▂▁ beats 91/133  avg 990        27%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1572.5  ▁▂▄▃▇█▅●▇▅▂▁ beats 91/134  avg 996        28%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #62 of 476 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #65 of 477 · 15% of its score</summary>
 
-Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Inkling 2 Small (594B-A17B)](inkling-2-small.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1448.3  ▁▁▁▂▃▂▃▆▆▇●▃ beats 319/387  avg 1261       15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1448.5  ▁▁▁▂▃▂▃▆▆▇●▃ beats 319/388  avg 1262       15%  blunt
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Beats [GPT-6 Luna](gpt-6-luna.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1245.5  ▁▁▂▂▂▂▃▅▅▅●▇ beats 101/152  avg 1063       11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1245.5  ▁▁▂▂▂▂▃▅▅▅●▇ beats 101/152  avg 1064       11%  blunt
 </pre>
 
 </details>
@@ -72,9 +72,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 72.4
+weighted average                        = 72.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

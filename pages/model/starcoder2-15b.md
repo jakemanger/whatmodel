@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 40.4** ±0.5 · #564 of 740 · from 17 benchmark results across 5 sources
+**score 40.4** ±0.5 · #567 of 743 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁    #402 of 472     87%      9
-math    ▁▁▃▅█●▄█▅▂▁▁   #249 of 440*    2.8%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #404 of 474     87%      9
+math    ▁▁▃▅█●▅█▄▁▁▁   #249 of 440*    2.8%      1
 </pre>
 
-<details><summary>coding · #402 of 472 · 87% of its score</summary>
+<details><summary>coding · #404 of 474 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -32,8 +32,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.4%  ▁·▂▁▂▆▅█●▄▁▂ beats 26/35  medium · avg 62%    4.8%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      33.8%  ▄▄·▄██▄█·●·▄ beats 10/12  medium · avg 49%    2.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 12/35  medium · avg 46%    2.9%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 57%    2.8%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 52%    2.7%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 57%    2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 52%    2.6%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           46.7%  ▃·▃██▅▃·▃▃▅● beats 15/15  medium · avg 54%    2.2%  blunt · at its level · several runs
 </pre>
 

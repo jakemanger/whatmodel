@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.6** ±0.9 · #530 of 740 · from 19 benchmark results across 5 sources
+**score 42.6** ±0.9 · #533 of 743 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁    #403 of 472     51%      7
-math    ▁▁▃▅█▆●█▅▂▁▁   #196 of 440*     11%      2
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #405 of 474     51%      7
+math    ▁▁▃▅█▆●█▄▁▁▁   #196 of 440*     11%      2
 </pre>
 
-<details><summary>coding · #403 of 472 · 51% of its score</summary>
+<details><summary>coding · #405 of 474 · 51% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (maker)</a>   74.4%  █···█·██··█● beats 5/5    easy · avg 82%    6.9%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    28.4%  █·█·█·██···● beats 5/5    hard · avg 32%    4.1%  typical
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    28.4%  █·█·█·██···● beats 5/5    hard · avg 32%    4.0%  typical
 </pre>
 
 </details>
@@ -53,13 +53,13 @@ test           result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (maker)</a>                59.7%  ▄···▄···█▄·● beats 5/5      easy · avg 77%         8.5%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (maker)</a>                59.7%  ▄···▄···█▄·● beats 5/5      easy · avg 78%         8.5%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (maker)</a>                         70.6%  ▄····▄▄·▄··● beats 5/5      easy · avg 82%         8.1%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (maker)</a>                   77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.4%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (maker)</a>                   77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.5%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book) (…</a>   30.6%  █·····▄▄▄··● beats 5/5      medium · avg 42%       4.4%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (maker)</a>                     71.5%  █···██··█·●█ beats 4/5      easy · avg 83%         3.8%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (maker)</a>                    84.4%  █···██···█●█ beats 4/5      very easy · avg 91%    3.0%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 141/276  medium · avg 72%       1.8%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 141/276  medium · avg 72%       1.9%  at its level · noisy
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (maker)</a>                     83.1%  ▄···▄···█▄·● beats 5/5      easy · avg 86%         1.6%  blunt
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   87.2%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 105/146  easy · avg 82%         1.2%  at its level · noisy
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (maker)</a>                         83.6%  ▄····▄··█▄·● beats 5/5      easy · avg 87%         1.1%  blunt · at its level

@@ -6,7 +6,7 @@
 
 Kuaishou · closed weights
 
-**score 52.6** ±6.8 · #74 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.6** ±6.8 · #75 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄●█▂▂▁▁▁   #65 of 128*     81%      1
+text to image  ▂▅▅▃▄●█▃▂▁▁▁   #66 of 129*     81%      1
 </pre>
 
-<details><summary>text to image · #65 of 128 · 81% of its score</summary>
+<details><summary>text to image · #66 of 129 · 81% of its score</summary>
 
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why

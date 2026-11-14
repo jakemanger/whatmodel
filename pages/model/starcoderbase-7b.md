@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 7.53B params · bigcode-openrail-m
 
-**score 32.6** ±0.7 · #655 of 740 · from 16 benchmark results across 4 sources
+**score 32.6** ±0.7 · #658 of 743 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #447 of 472     94%      9
-math    ▁▁●▅█▆▄█▅▂▁▁   #402 of 440    5.9%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #449 of 474     94%      9
+math    ▁▁●▅█▆▅█▄▁▁▁   #402 of 440    5.9%      2
 </pre>
 
-<details><summary>coding · #447 of 472 · 94% of its score</summary>
+<details><summary>coding · #449 of 474 · 94% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md) here, though they rank lower overall.
 

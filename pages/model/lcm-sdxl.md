@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · 2.57B params · openrail++
 
-**score 34.1** ±2.5 · #125 of 146 · from 3 benchmark results across 3 sources
+**score 34.1** ±2.5 · #126 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #111 of 128*     44%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #112 of 129*     44%      1
 </pre>
 
-<details><summary>text to image · #111 of 128 · 44% of its score</summary>
+<details><summary>text to image · #112 of 129 · 44% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [IF-L](deepfloyd-if-l.md), [SDXL-Turbo](sdxl-turbo.md) here, though they rank lower overall.
 
@@ -34,8 +34,8 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1800 mean human alignment score  █▄▄·█·▄█●▄·▄ beats 9/11   avg 6.275 mean human al…     40%  typical
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.831 FID               13%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1800 mean human alignment score  █▄▄·█·▄█●▄·▄ beats 9/11   avg 6.280 mean human al…     40%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.784 FID               13%  typical
 </pre>
 
 </details>

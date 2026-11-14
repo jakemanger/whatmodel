@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.783B params · apache-2.0
 
-**score 31.5** ±1.1 · #661 of 740 · from 18 benchmark results across 11 sources
+**score 31.5** ±1.1 · #664 of 743 · from 18 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▅▂▁▁   #432 of 440*     19%      2
+math  ▁●▃▅█▆▅█▄▁▁▁   #432 of 440*     19%      2
 </pre>
 
 <details><summary>math · #432 of 440 · 19% of its score</summary>
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    33.6%  ▂▂··▂·●··▂█▄ beats 3/10   medium · avg 56%       3.0%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   32.6%  █···▄●·▄▄▄·▄ beats 3/7    medium · avg 51%       2.7%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   81.7%  ▁●▂▃▄▄█▆▃▂▂▁ beats 6/140  very easy · avg 94%    1.8%  blunt · noisy
-<a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">HateCheck functional tests, zero-…</a>   70.9%  ●·····█·█··█ beats 0/3    easy · avg 84%         1.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.136.pdf">PopQA</a>                                 7.2%  ●▂▁▃▃█▂█▆▅▁▆ beats 0/40   hard · avg 31%         1.8%  typical
+<a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">HateCheck functional tests, zero-…</a>   70.9%  ●·····█·█··█ beats 0/3    easy · avg 84%         1.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   71.5%  ▂▂▄··▂●█▄··▂ beats 5/12   easy · avg 90%         1.5%  at its level · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   20.1%  ▃··▃·●▃·█▃·▃ beats 4/10   hard · avg 29%         1.4%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   33.1%  ▄·█··●█·▄▄▄▄ beats 3/10   medium · avg 43%       0.5%  blunt · at its level

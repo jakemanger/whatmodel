@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.3** ±0.5 · #596 of 740 · from 23 benchmark results across 7 sources
+**score 38.3** ±0.5 · #598 of 743 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁    #411 of 472     87%     11
-math    ▁▁▃▅●▆▄█▅▂▁▁   #334 of 440*    4.7%      1
+coding  ▁▁▁▃●▇█▆▆▃▃▁    #413 of 474     87%     11
+math    ▁▁▃▅●▆▅█▄▁▁▁   #335 of 440*    4.7%      1
 </pre>
 
-<details><summary>coding · #411 of 472 · 87% of its score</summary>
+<details><summary>coding · #413 of 474 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -34,16 +34,16 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>                   42.5%  ▁··▁▅▂●▇▁··▁ beats 14/22  medium · avg 57%    3.0%  at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              25.1%  ▄▄·▄██●█·█·▄ beats 7/12   medium · avg 49%    2.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (maker)</a>                   39.7%  ▁·▂▃▁●▁▂···▁ beats 9/22   medium · avg 54%    2.6%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 10/35  medium · avg 46%    2.6%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    9.5%  ▁·▁▁●██▄█▁▅▅ beats 5/35   medium · avg 52%    2.3%  sharp
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 10/35  medium · avg 46%    2.5%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    9.5%  ▁·▁▁●██▄█▁▅▅ beats 5/35   medium · avg 52%    2.2%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            69.8%  ▃▃▃·▆▃▃●▃▂▂▅ beats 18/25  easy · avg 84%      2.0%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #334 of 440 · 4.7% of its score</summary>
+<details><summary>math · #335 of 440 · 4.7% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Falcon 40B (base)](falcon-40b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 24.6** ±1.1 · #698 of 740 · from 12 benchmark results across 2 sources
+**score 24.6** ±1.1 · #701 of 743 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

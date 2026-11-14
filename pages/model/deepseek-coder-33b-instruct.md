@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 33.34B params · deepseek
 
-**score 50.9** ±0.6 · #354 of 740 · from 16 benchmark results across 7 sources
+**score 50.9** ±0.6 · #357 of 743 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇●▆▆▃▃▁   #269 of 472     74%     10
+coding  ▁▁▁▃▆▇●▆▆▃▃▁   #270 of 474     74%     10
 </pre>
 
-<details><summary>coding · #269 of 472 · 74% of its score</summary>
+<details><summary>coding · #270 of 474 · 74% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   21.9%  ▁▁·▁▂●▆█▅▂·▂ beats 7/31   hard · avg 24%      8.1%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                70.1%  ▁···▁▁▂▅▇█●▂ beats 65/75  easy · avg 66%      4.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           46.5%  ▁··▁▅▂█●▁··▁ beats 17/22  medium · avg 52%    1.5%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.2%  █▂▁●▂▂▂▃▅▅▅▇ beats 12/47  hard · avg 33%      1.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.2%  █▂▁●▂▂▂▃▅▅▅▇ beats 12/47  hard · avg 34%      1.5%  sharp · at its level · noisy
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           49.9%  ▁·▂▃▁█▁●···▁ beats 21/22  medium · avg 51%    1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    9.0%  ▃··▁●▂▃▂█▃▄▂ beats 8/47   medium · avg 52%    1.3%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.8%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 28/47  hard · avg 32%      1.1%  at its level

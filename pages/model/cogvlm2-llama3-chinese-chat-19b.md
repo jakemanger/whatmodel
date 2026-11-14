@@ -27,7 +27,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 
 test              result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (maker)</a>    74.7%  ▁··▁▁▁▁▁●▅▅█ beats 8/44   easy · avg 80%     36%  blunt · small run
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (maker)</a>   78.0%  ▁·▃▁●▅▂█▅█▁▃ beats 5/37   easy · avg 82%     28%  blunt · small run
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (maker)</a>    85.0%  ▁▁▁▄▅▁▃·▃▃▃● beats 22/24  easy · avg 78%     16%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (maker)</a>    85.0%  ▁▁▁▄▅▁▃·▃▃▃● beats 22/24  easy · avg 78%     17%  blunt · small run
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 37.3** ±2.1 · #610 of 740 · from 7 benchmark results across 3 sources
+**score 37.3** ±2.1 · #613 of 743 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▆▆▃▃▁    #408 of 472     21%      4
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #281 of 404*     38%      2
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #412 of 474     21%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #282 of 405*     38%      2
 </pre>
 
-<details><summary>coding · #408 of 472 · 21% of its score</summary>
+<details><summary>coding · #412 of 474 · 21% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
@@ -28,13 +28,13 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 52%    7.8%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.8%  ▁●▁▁▁▁▂▂▃█▅▄ beats 2/47   hard · avg 32%      7.5%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   hard · avg 33%      5.0%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   hard · avg 34%      5.0%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 67%      0.5%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #281 of 404 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #282 of 405 · 38% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall.
 
@@ -49,8 +49,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   medium · avg 65%     39%  at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   easy · avg 65%     39%  at its level
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   39% ▇▇▇▇▇
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   38% ▇▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   21% ▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   21% ▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 37.3
 </pre>

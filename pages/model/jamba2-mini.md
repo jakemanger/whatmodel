@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2026-01 · 52B params (12B active) · apache-2.0
 
-**score 51.6** ±14.9 · #437 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±14.9 · #433 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,8 +21,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.7%  ▁▂▁▂▅█▂▃▄●▁▁ beats 85/98  very easy · avg 90%    1.0%  blunt
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.7%  ▁▂▁▂▅█▂▃▃●▁▁ beats 87/100  very easy · avg 90%    1.0%  blunt
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
 prior: pull toward the middle                99% ▇▇▇▇▇▇▇▇▇▇▇▇
-weighted average                            = 51.6
+weighted average                            = 51.7
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

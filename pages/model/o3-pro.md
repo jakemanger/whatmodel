@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 69.2** ±1.5 · #89 of 740 · from 5 benchmark results across 4 sources
+**score 69.2** ±1.5 · #91 of 743 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▅●▅▄▅▂▁   #131 of 316*     10%      1
-coding       ▁▁▁▃▆▇█▆●▃▃▁    #72 of 472*     40%      1
-math         ▁▁▃▅█▆▄█●▂▁▁    #79 of 440*     13%      1
+agent tasks  ▁▁▃▆█▄●▅▃▃▂▁   #134 of 319*     10%      1
+coding       ▁▁▁▃▆▇█▆●▃▃▁    #75 of 474*     40%      1
+math         ▁▁▃▅█▆▅●▄▁▁▁    #79 of 440*     13%      1
 </pre>
 
-<details><summary>agent tasks · #131 of 316 · 10% of its score</summary>
+<details><summary>agent tasks · #134 of 319 · 10% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.1%     10%  sharp · at its level
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.3%     10%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #72 of 472 · 40% of its score</summary>
+<details><summary>coding · #75 of 474 · 40% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>math · #79 of 440 · 13% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
@@ -59,7 +59,7 @@ test               result  vs the others in its run  difficulty        counts  w
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (maker)</a>                 84.0%  ▁▁▁▁▂▃▅▆▇●█▂ beats 228/336  hard · avg 38%          36%  sharp
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▄▃▁▁ beats 2/98     very easy · avg 90%    0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▃▃▁▁ beats 2/100    very easy · avg 90%    0.0%  blunt
 </pre>
 
 </details>

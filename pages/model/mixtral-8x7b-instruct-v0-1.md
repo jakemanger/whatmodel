@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.1** ±0.4 · #537 of 740 · from 32 benchmark results across 21 sources
+**score 42.1** ±0.4 · #540 of 743 · from 32 benchmark results across 21 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▄▅▂▁   #292 of 316*    0.4%      1
-coding          ▁▁▁▃●▇█▆▆▃▃▁    #397 of 472     52%      8
-chat &amp; writing  ▁▁▁▃▆●▆█▇▇▇▃    #316 of 404     13%      6
-math            ▁▁●▅█▆▄█▅▂▁▁   #395 of 440*    5.7%      2
+agent tasks     ▁▁●▆█▄▅▅▃▃▂▁   #294 of 319*    0.4%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #399 of 474     52%      8
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #317 of 405     13%      6
+math            ▁▁●▅█▆▅█▄▁▁▁   #395 of 440*    5.7%      2
 </pre>
 
-<details><summary>agent tasks · #292 of 316 · 0.4% of its score</summary>
+<details><summary>agent tasks · #294 of 319 · 0.4% of its score</summary>
 
-Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #397 of 472 · 52% of its score</summary>
+<details><summary>coding · #399 of 474 · 52% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #316 of 404 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #317 of 405 · 13% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -59,8 +59,8 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Cod
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       23.7%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 61/122  medium · avg 36%       5.3%  sharp
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   23.4%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 21/60   medium · avg 47%       2.9%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1197.3  ▁▁▁▂▃●▃▆▆▇█▃ beats 67/387  avg 1261               2.0%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1114.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 56/95   avg 1189               1.9%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1197.3  ▁▁▁▂▃●▃▆▆▇█▃ beats 67/388  avg 1262               1.9%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1114.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 56/95   avg 1189               1.8%  typical
 <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecified)</a>     55.1%  ▁▂●▂▂▄▆██▅▂▁ beats 18/145  easy · avg 70%         0.4%  at its level · small run
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   94.8%  ▂▂·▆·▇▃▆█▆●▂ beats 41/45   very easy · avg 94%    0.3%  sharp · noisy
 </pre>
@@ -85,14 +85,14 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             63.2%  ▁·▁▁●▄▄▅█▄▂▁ beats 5/53     easy · avg 76%          10%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              29.3%  ▂▂▃▄●█▁▄▅▃▁▃ beats 14/42    medium · avg 52%       5.2%  at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mixtral-8x7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                                       41.9%  ▃▂▅●▃·█▃▅··▂ beats 8/23     medium · avg 55%       2.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.4703 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 18/52    avg 43.320 WB-Score    2.1%  sharp
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             54.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 20/95    medium · avg 65%       1.7%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                58.6%  ▁··▁▁▂▂▆▅●█▆ beats 40/70    medium · avg 62%       1.2%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mixtral-8x7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                                       41.9%  ▃▂▅●▃·█▃▅··▂ beats 8/23     medium · avg 55%       3.0%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.4703 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 18/52    avg 43.352 WB-Score    2.1%  sharp
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             54.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 20/95    easy · avg 65%         1.7%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                58.6%  ▁··▁▁▂▂▆▅●█▆ beats 40/70    medium · avg 62%       1.3%  at its level
 <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 45.3%  ▁▁▁▁▂▄●▆█▃▃▁ beats 50/155   medium · avg 63%       1.2%  sharp · at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              8.7%  ▁▁●▆██▁▁·▁▁▁ beats 6/57     hard · avg 16%         1.0%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             46.1%  ▂▄▂●█▄▃▆▃▅▂▂ beats 20/81    medium · avg 57%       1.0%  blunt · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   30.6%  ▁▁▁▁●▃▅▄▄▆█▃ beats 17/221   hard · avg 39%         0.9%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   30.6%  ▁▁▁▁●▃▅▄▄▆█▃ beats 17/221   hard · avg 39%         0.8%  sharp · too hard for it
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>             17.8%  ▁▁●▁▃▄█▆▄▅▂▃ beats 2/39     very hard · avg 22%    0.6%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 205/276  medium · avg 72%       0.5%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>             87.3%  ▁▁▁▁▁▁▁▂▄█●▃ beats 106/146  easy · avg 82%         0.3%  at its level · noisy
@@ -116,7 +116,7 @@ source                                    results  share of the score
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    3% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    2% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2    2% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    2% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    2% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    2% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    2% ▇
 <a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a><a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">HuggingFaceH4 zephyr-orpo-141b-A35b-v0.…</a>        2    2% ▇

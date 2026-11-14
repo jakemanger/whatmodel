@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 1.54B params · apache-2.0
 
-**score 46.1** ±1.8 · #458 of 740 · from 3 benchmark results across 1 source · † no independently run results verified
+**score 46.1** ±1.8 · #461 of 743 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅●▆▄█▅▂▁▁   #332 of 440     99%      3
+math  ▁▁▃▅●▆▅█▄▁▁▁   #332 of 440     99%      3
 </pre>
 
 <details><summary>math · #332 of 440 · 99% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [StarCoder2 7B](starcoder2-7b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why

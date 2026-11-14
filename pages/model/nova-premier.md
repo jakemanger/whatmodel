@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 54.9** ±1.5 · #287 of 740 · from 9 benchmark results across 2 sources · † no independently run results verified
+**score 54.9** ±1.5 · #288 of 743 · from 9 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▄▅▂▁   #171 of 316*     24%      2
-coding              ▁▁▁▃▆▇●▆▆▃▃▁   #261 of 472*    5.9%      1
+agent tasks         ▁▁▃▆█●▅▅▃▃▂▁   #173 of 319*     24%      2
+coding              ▁▁▁▃▆▇●▆▆▃▃▁   #262 of 474*    5.9%      1
 math                █··········●       #1 of 2*     23%      2
 vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄   #115 of 154*     16%      2
 </pre>
 
-<details><summary>agent tasks · #171 of 316 · 24% of its score</summary>
+<details><summary>agent tasks · #173 of 319 · 24% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   34.0%  █····███·██● beats 6/6      very hard · avg 15%     21%  sharp
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BFCL v3 (maker)</a>                      63.7%  ▁▁▁▁▁▃▅█●▅▄▁ beats 115/171  medium · avg 58%       2.8%  blunt · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BFCL v3 (maker)</a>                      63.7%  ▁▁▁▁▁▃▅█●▅▄▁ beats 115/171  medium · avg 58%       2.9%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #261 of 472 · 5.9% of its score</summary>
+<details><summary>coding · #262 of 474 · 5.9% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty      counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (maker)</a>   28.1%  ▅····▃·●▃▅█▃ beats 3/12   hard · avg 26%    5.9%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (maker)</a>   28.1%  ▅····▃·●▃▅█▃ beats 3/12   hard · avg 27%    5.9%  at its level · small run
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                  result  vs the others in its run    difficulty      counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (maker)</a>   57.1%  ▁▁▁▁▂▃▅●▇▇█▂ beats 106/336  hard · avg 46%     20%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (maker)</a>   57.1%  ▁▁▁▁▂▃▅●▇▇█▂ beats 106/336  hard · avg 46%     19%  sharp · at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (maker)</a>           87.4%  ▁▁▁▁▁▂▂▅██▆● beats 199/215  easy · avg 81%     10%  small run
 </pre>
 

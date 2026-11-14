@@ -6,7 +6,7 @@
 
 Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
-**score 64.7** ±1.2 · #150 of 740 · from 12 benchmark results across 3 sources
+**score 64.6** ±1.2 · #154 of 743 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,67 +16,67 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅●▄▅▂▁   #114 of 316*     17%      2
-coding          ▁▁▁▃▆▇█●▆▃▃▁   #147 of 472*     33%      2
-chat &amp; writing  ▁▁▁▃▆▄▆█▇●▇▃   #132 of 404*     15%      1
-math            ▁▁▃▅█▆▄●▅▂▁▁    #123 of 440     19%      4
-web search      █●···█····██       #4 of 5*    8.8%      1
+agent tasks     ▁▁▃▆█▄●▅▃▃▂▁   #115 of 319*     17%      2
+coding          ▁▁▁▃▆▇█●▆▃▃▁   #150 of 474*     33%      2
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #133 of 405*     14%      1
+math            ▁▁▃▅█▆▅●▄▁▁▁    #123 of 440     19%      4
+web search      █●···█····██       #4 of 5*    8.9%      1
 </pre>
 
-<details><summary>agent tasks · #114 of 316 · 17% of its score</summary>
+<details><summary>agent tasks · #115 of 319 · 17% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>        51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 21%      8.8%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>   84.1%  ▄······●█·▄▄ beats 1/5    medium · avg 52%    7.7%  typical
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>        51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 21%      8.9%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>   84.1%  ▄······●█·▄▄ beats 1/5    medium · avg 52%    7.8%  typical
 </pre>
 
 </details>
 
-<details><summary>coding · #147 of 472 · 33% of its score</summary>
+<details><summary>coding · #150 of 474 · 33% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1291.9  ▁▂▄●▇█▅▆█▅▂▁ beats 19/133  avg 990              26%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1291.8  ▁▂▄●▇█▅▇▇▅▂▁ beats 19/134  avg 996              26%  sharp
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unspecif…</a>   81.6%  ▂▃▄▄▅██▆●▇▄▆ beats 47/67   medium · avg 49%    6.6%  small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #132 of 404 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #133 of 405 · 14% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1386.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 226/387  avg 1261       15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1386.2  ▁▁▁▂▃▂▃▆▆●█▃ beats 226/388  avg 1262       14%  blunt
 </pre>
 
 </details>
 
 <details><summary>math · #123 of 440 · 19% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-120b](gpt-oss-120b.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025</a>            95.1%  ▁·▁▁▁▃▅▇█▆●▁ beats 129/134  easy · avg 70%       10%  sharp · maxed out · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>      80.9%  ▁▁·▁▁▁▄▆●▄▃▃ beats 26/45    medium · avg 37%    5.3%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>   91.0%  ▁▁····▁▅▃●▇▁ beats 16/23    easy · avg 67%      2.4%  noisy
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>   95.4%  ▁▁▁▃▁▅▅▃█●▁▄ beats 27/31    medium · avg 62%    1.7%  noisy · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>   95.4%  ▁▁▁▃▁▅▅▃█●▁▄ beats 27/31    medium · avg 62%    1.8%  noisy · small run
 </pre>
 
 </details>
 
-<details><summary>web search · #4 of 5 · 8.8% of its score</summary>
+<details><summary>web search · #4 of 5 · 8.9% of its score</summary>
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 21%    8.8%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 21%    8.9%  at its level
 </pre>
 
 </details>
@@ -85,9 +85,9 @@ test           result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                   result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>           30.8%  ▃·▅●█·▅█▅▃▃▃ beats 3/17   very hard · avg 12%    6.8%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>         54.3%  ●██··██·█··█ beats 0/6    hard · avg 33%         6.0%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>   78.2%  ▃▃····█●···▃ beats 5/6    medium · avg 49%       3.0%  at its level
+<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>           30.8%  ▃·▅●█·▅█▅▃▃▃ beats 3/17   very hard · avg 12%    6.9%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>         54.3%  ●██··██·█··█ beats 0/6    hard · avg 33%         6.1%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>   78.2%  ▃▃····█●···▃ beats 5/6    medium · avg 50%       3.0%  at its level
 </pre>
 
 </details>
@@ -98,11 +98,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card</a>            9   51% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   41% ▇▇▇▇▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card</a>            9   52% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   41% ▇▇▇▇▇
 <a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.7
+weighted average                                   = 64.6
 </pre>
 
 <sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

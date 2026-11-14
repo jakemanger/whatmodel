@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂●▆██▅▇▄▁▁▁   #511 of 540    9.3%      3
+math  ▁▂●▆█▇▅▇▄▁▁▁   #511 of 540    9.3%      3
 </pre>
 
 <details><summary>math · #511 of 540 · 9.3% of its score</summary>
@@ -78,8 +78,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.02311v5">WiC (prompted) (maker)</a>               47.0%  ●·▂▁······▁▁ beats 6/13    hard · avg 60%          0.3%  sharp · too hard for it · noisy · small…
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (maker)</a>                    42.3%  ▂▄·▂▂▂▂▂▆●▂█ beats 11/17   medium · avg 53%        0.3%  blunt · small run
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 3 (prompted) (maker)</a>      34.5%  ▂·▆●██·▄··▂▂ beats 4/16    hard · avg 44%          0.3%  too hard for it · small run
-<a href="https://arxiv.org/html/2204.02311v5">CommitmentBank (prompted) (maker)</a>    41.1%  ▂▃·▂●▂▂▂·▂·▂ beats 5/13    medium · avg 60%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">OpenBookQA (maker)</a>                   48.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 63/107  medium · avg 59%        0.2%  noisy · small run
+<a href="https://arxiv.org/html/2204.02311v5">CommitmentBank (prompted) (maker)</a>    41.1%  ▂▃·▂●▂▂▂·▂·▂ beats 5/13    medium · avg 60%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">WebQuestions (closed book) (maker)</a>    6.7%  ▅▅▃▅▃·▃▃●█▅▃ beats 10/17   very hard · avg 4.1%    0.0%  blunt · too hard for it · small run
 </pre>
 

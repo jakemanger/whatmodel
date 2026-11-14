@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · 7B params · qwen-research
 
-**score 68.3** ±1.9 · #18 of 146 · from 3 benchmark results across 2 sources
+**score 68.2** ±1.9 · #18 of 147 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█●▂▁▁▁   #18 of 128*     77%      2
-image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂    #15 of 64*     21%      1
+text to image           ▂▅▅▃▄▄█●▂▁▁▁   #18 of 129*     78%      2
+image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂    #15 of 65*     21%      1
 </pre>
 
-<details><summary>text to image · #18 of 128 · 77% of its score</summary>
+<details><summary>text to image · #18 of 129 · 78% of its score</summary>
 
 Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1226.8  ▁▁▃▃▆█▃●▂▂▁▁ beats 59/77  avg 1030           59%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1226.9  ▁▁▃▃▆█▄●▂▂▁▁ beats 60/78  avg 1030           60%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   47.1%  ▆▆·●▂····▂▂█ beats 6/13   hard · avg 21%     18%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #15 of 64 · 21% of its score</summary>
+<details><summary>image to image / editing · #15 of 65 · 21% of its score</summary>
 
 Beats [Reve 2.0](reve-2-0.md), [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md), [GPT Image 1.5](gpt-image-1-5.md) here, though they rank higher overall. Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1362.8  ▂▁▁▃▆█▆▆●▄▃▃ beats 39/55  avg 1158       21%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1363.4  ▂▁▁▃▆█▅▇●▄▃▃ beats 40/56  avg 1160       21%  typical
 </pre>
 
 </details>
@@ -49,10 +49,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                  1   18% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.3
+weighted average                        = 68.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE))</sub>

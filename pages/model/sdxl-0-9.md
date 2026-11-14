@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 39.7** ±6.2 · #110 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.7** ±6.3 · #111 of 147 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #105 of 128*     83%      2
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #106 of 129*     83%      2
 </pre>
 
-<details><summary>text to image · #105 of 128 · 83% of its score</summary>
+<details><summary>text to image · #106 of 129 · 83% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [Show-o (show-o-demo-512)](show-o-demo-512.md), [SSD-1B](ssd-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   43.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 9/22   medium · avg 60%     82%  at its level
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.7%  ▃··▃▅·▅·▅▅█● beats 13/14  hard · avg 28%      1.2%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.7%  ▃··▃▅·▅·▅▅█● beats 13/14  hard · avg 27%      1.1%  blunt · at its level
 </pre>
 
 </details>

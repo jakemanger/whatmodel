@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 66.3** ±1.5 · #125 of 740 · from 7 benchmark results across 3 sources
+**score 66.2** ±1.6 · #128 of 743 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅●▄▅▂▁   #118 of 316*    8.6%      1
-coding       ▁▁▁▃▆▇█●▆▃▃▁   #149 of 472*    8.6%      1
-math         ▁▁▃▅█▆▄●▅▂▁▁    #96 of 440*     14%      1
+agent tasks  ▁▁▃▆█▄●▅▃▃▂▁   #122 of 319*    8.9%      1
+coding       ▁▁▁▃▆▇█●▆▃▃▁   #151 of 474*    8.9%      1
+math         ▁▁▃▅█▆▅●▄▁▁▁    #96 of 440*     14%      1
 </pre>
 
-<details><summary>agent tasks · #118 of 316 · 8.6% of its score</summary>
+<details><summary>agent tasks · #122 of 319 · 8.9% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   15.7%  ▃··▃·▃●█▃▃▃█ beats 5/14   very hard · avg 2.9%    8.6%  sharp · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   15.7%  ▃··▃·▃●█▃▃▃█ beats 5/14   very hard · avg 2.9%    8.9%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>coding · #149 of 472 · 8.6% of its score</summary>
+<details><summary>coding · #151 of 474 · 8.9% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   15.7%  ▃··▃·▃●█▃▃▃█ beats 5/14   very hard · avg 2.9%    8.6%  sharp · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   15.7%  ▃··▃·▃●█▃▃▃█ beats 5/14   very hard · avg 2.9%    8.9%  sharp · noisy
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 129/207  very hard · avg 7.3%     14%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▆●▄▃▆ beats 129/207  very hard · avg 7.4%     14%  sharp · noisy
 </pre>
 
 </details>
@@ -61,8 +61,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         84.8%  ▁▁▁▁▂▃▅▄▄●█▃ beats 144/221  hard · avg 39%           35%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 9.0%  █▁▁●▁▂▄▂▃▃▂▁ beats 53/157   very hard · avg 5.6%     19%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         16.0%  █·▂▁●▆▆▆▅▂▂▁ beats 23/83    very hard · avg 9.4%     13%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▂▂●▅█▄▃▂··▁ beats 17/91    very hard · avg 7.2%     10%  at its level
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.3%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 36/98    very easy · avg 90%     0.0%  blunt
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▂▂●▅█▄▃▂··▁ beats 17/91    very hard · avg 7.4%     10%  at its level
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.3%  ▁▂▁▂▅●▂▃▃▃▁▁ beats 37/100   very easy · avg 90%     0.0%  blunt
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ source                             results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                          1    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>        1    0% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 66.3
+weighted average                            = 66.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

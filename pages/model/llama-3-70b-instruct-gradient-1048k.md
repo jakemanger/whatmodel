@@ -6,7 +6,7 @@
 
 Gradient AI · released 2024-05 · 70.55B params · llama3
 
-**score 50.1** ±5.4 · #483 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.1** ±5.4 · #484 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

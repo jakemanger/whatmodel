@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 51.0** ±1.1 · #352 of 740 · from 11 benchmark results across 1 source
+**score 51.0** ±1.1 · #355 of 743 · from 11 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▅▂▁▁   #231 of 440     31%      4
+math  ▁▁▃▅█●▅█▄▁▁▁   #231 of 440     31%      4
 </pre>
 
 <details><summary>math · #231 of 440 · 31% of its score</summary>
@@ -26,7 +26,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         87.2%  █····█··●·▄█ beats 4/7    very easy · avg 86%     14%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     83.9%  █▄··▄●▄····▄ beats 5/7    easy · avg 81%         7.4%  typical
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     83.9%  █▄··▄●▄····▄ beats 5/7    easy · avg 81%         7.5%  typical
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   29.3%  ▄··▄█●··▄··▄ beats 5/7    hard · avg 29%         5.1%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       67.8%  ▄·▄·▄●▄·▄··█ beats 3/7    easy · avg 69%         4.6%  at its level
 </pre>

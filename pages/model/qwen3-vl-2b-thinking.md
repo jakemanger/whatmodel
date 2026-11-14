@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 49.0** ±0.7 · #396 of 740 · from 26 benchmark results across 2 sources
+**score 48.9** ±0.7 · #399 of 743 · from 26 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▄▅▂▁   #243 of 316*    2.1%      1
-coding              ▁▁▁▃●▇█▆▆▃▃▁   #385 of 472*    3.5%      1
-chat &amp; writing      ▁▁▁▃▆▄●█▇▇▇▃   #262 of 404*    3.4%      1
-math                ▁▁▃▅█●▄█▅▂▁▁   #234 of 440*     10%      2
+agent tasks         ▁▁▃●█▄▅▅▃▃▂▁   #247 of 319*    2.1%      1
+coding              ▁▁▁▃●▇█▆▆▃▃▁   #387 of 474*    3.5%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #262 of 405*    3.4%      1
+math                ▁▁▃▅█●▅█▄▁▁▁   #234 of 440*     10%      2
 vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄    #127 of 154     51%     14
 </pre>
 
-<details><summary>agent tasks · #243 of 316 · 2.1% of its score</summary>
+<details><summary>agent tasks · #247 of 319 · 2.1% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #385 of 472 · 3.5% of its score</summary>
+<details><summary>coding · #387 of 474 · 3.5% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #262 of 404 · 3.4% of its score</summary>
+<details><summary>chat &amp; writing · #262 of 405 · 3.4% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -99,7 +99,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (maker)</a>                     62.3%  ▄·▄·●▄▄▄█▄██ beats 2/12   medium · avg 63%    7.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (maker)</a>    49.5%  ▂····▂·●▂█▆█ beats 2/14   hard · avg 49%      7.0%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (maker)</a>                   76.9%  ▃··●·▃·█▃▅▃▅ beats 1/11   easy · avg 79%      6.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (maker)</a>                    34.6%  ▄··●·▄▄▄█▄██ beats 1/11   medium · avg 37%    3.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (maker)</a>                    34.6%  ▄··●·▄▄▄█▄██ beats 1/11   medium · avg 38%    3.6%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (maker)</a>                 46.1%  ▃··▃●▃▃▃▃▃·█ beats 2/11   medium · avg 43%    2.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (ma…</a>   62.1%  ▃··●··▅█▃▃▅▃ beats 2/13   medium · avg 66%    2.8%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (maker)</a>                      47.6%  ●··▃·▅▃▃·█·▃ beats 1/10   hard · avg 51%      2.5%  at its level
@@ -117,7 +117,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=18">Qwen (submitted / maker-reported)</a>              25   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.0
+weighted average                                   = 48.9
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

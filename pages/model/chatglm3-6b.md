@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 29.9** ±2.0 · #669 of 740 · from 4 benchmark results across 4 sources
+**score 29.9** ±2.0 · #672 of 743 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▄▅▂▁   #298 of 316*     10%      1
-chat &amp; writing  ▁▁●▃▆▄▆█▇▇▇▃   #396 of 404*     81%      2
+agent tasks     ▁▁●▆█▄▅▅▃▃▂▁   #301 of 319*     11%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #397 of 405*     81%      2
 </pre>
 
-<details><summary>agent tasks · #298 of 316 · 10% of its score</summary>
+<details><summary>agent tasks · #301 of 319 · 11% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (maker)</a>   57.9%  ●·········██ beats 0/5    easy · avg 77%     10%  blunt · at its level
+<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (maker)</a>   57.9%  ●·········██ beats 0/5    easy · avg 77%     11%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #396 of 404 · 81% of its score</summary>
+<details><summary>chat &amp; writing · #397 of 405 · 81% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1056.7  ▁▁●▂▃▂▃▆▆▇█▃ beats 8/387  avg 1261       42%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   946.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 9/95   avg 1189       39%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1056.8  ▁▁●▂▃▂▃▆▆▇█▃ beats 8/388  avg 1262       41%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   946.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 9/95   avg 1189       40%  typical
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 79/276  medium · avg 72%    6.7%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 79/276  medium · avg 72%    6.8%  noisy
 </pre>
 
 </details>
@@ -58,9 +58,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   42% ▇▇▇▇▇
-<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   39% ▇▇▇▇▇
-<a name="paper-2406.12793v2-chatglm"></a><a href="https://arxiv.org/html/2406.12793v2#S3.T7">ChatGLM: A Family of Large Language Mod…</a>        1   10% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   40% ▇▇▇▇▇
+<a name="paper-2406.12793v2-chatglm"></a><a href="https://arxiv.org/html/2406.12793v2#S3.T7">ChatGLM: A Family of Large Language Mod…</a>        1   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    7% ▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 29.9

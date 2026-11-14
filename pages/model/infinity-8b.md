@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂█▇●▅█▇▂▃▁▂   #93 of 159*     88%      1
+text to image  ▁▂█▇●▅█▇▂▃▁▂   #93 of 160*     88%      1
 </pre>
 
-<details><summary>text to image · #93 of 159 · 88% of its score</summary>
+<details><summary>text to image · #93 of 160 · 88% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 AWS (aws-prototyping) · released 2024-07 · 7.24B params · apache-2.0
 
-**score 49.1** ±4.1 · #395 of 740 · from 3 benchmark results across 2 sources
+**score 49.1** ±4.1 · #397 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

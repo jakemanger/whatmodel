@@ -6,7 +6,7 @@
 
 IBM · released 2025-02 · 8.17B params · apache-2.0
 
-**score 44.9** ±1.2 · #485 of 740 · from 11 benchmark results across 3 sources
+**score 44.9** ±1.2 · #487 of 743 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #275 of 316*    5.6%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #280 of 404*     12%      2
-math            ▁▁▃▅●▆▄█▅▂▁▁    #320 of 440     41%      3
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #278 of 319*    5.7%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #281 of 405*     12%      2
+math            ▁▁▃▅●▆▅█▄▁▁▁    #319 of 440     40%      3
 </pre>
 
-<details><summary>agent tasks · #275 of 316 · 5.6% of its score</summary>
+<details><summary>agent tasks · #278 of 319 · 5.7% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   26.9%  ▁▁▁▂●█▅▅▆▂▂▂ beats 18/77  hard · avg 31%    5.6%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   26.9%  ▁▁▁▂●█▅▅▆▂▂▂ beats 18/77  hard · avg 31%    5.7%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #280 of 404 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #281 of 405 · 12% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #320 of 440 · 41% of its score</summary>
+<details><summary>math · #319 of 440 · 40% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty            counts  why

@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 42.3** ±1.8 · #535 of 740 · from 19 benchmark results across 4 sources
+**score 42.3** ±1.8 · #537 of 743 · from 19 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▅▂▁▁   #268 of 440*     14%      1
+math                ▁▁▃▅●▆▅█▄▁▁▁   #268 of 440*     14%      1
 vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄    #149 of 154     84%     13
 </pre>
 
@@ -37,7 +37,7 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      958.5  ▁▁●▂▂▂▃▅▅▅█▇ beats 2/152  avg 1063                24%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      958.5  ▁▁●▂▂▂▃▅▅▅█▇ beats 2/152  avg 1064                24%  blunt
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                           44.2%  ▁····▁▁●█▆▆▅ beats 6/53   medium · avg 51%        19%  several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>                 53.7%  ▁··▁▄▄●▇▄▅█▄ beats 12/48  medium · avg 65%        14%  at its level · small run · several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                              78.8%  ▁··▁▁▁▁▁▂●▅█ beats 17/44  easy · avg 82%         4.6%  blunt · small run · several runs
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                              66.2%  ▁▁▁▄▅▁●·▃▃▃█ beats 11/24  easy · avg 75%         3.2%  blunt · at its level · several runs
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (maker)</a>                  60.7%  ▁▃●▇▃▇▇▅█▁▅▅ beats 3/39   easy · avg 71%         2.9%  blunt · at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                            77.3%  ▁▁▅▇●▇·▄·█·▃ beats 11/28  easy · avg 84%         2.6%  blunt · small run · several runs
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (maker)</a>                     78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.4%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (maker)</a>                     78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.5%  blunt · small run
 <a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv (reasoning questions) (ma…</a>   24.5%  ●▄▃▄▅▅▅▅▅█▆▂ beats 1/105  hard · avg 35%            —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descriptive questions (ma…</a>   48.0%  ●▄▄▅▇▄██▇▃▂▂ beats 0/61   easy · avg 70%            —  not counted yet: no other model in the …
 </pre>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 22.3** ±4.1 · #704 of 740 · from 3 benchmark results across 2 sources
+**score 22.3** ±4.1 · #707 of 743 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆▇█▆▆▃▃▁   #460 of 472*     75%      4
+coding  ▁▁●▃▆▇█▆▆▃▃▁   #462 of 474*     75%      4
 </pre>
 
-<details><summary>coding · #460 of 472 · 75% of its score</summary>
+<details><summary>coding · #462 of 474 · 75% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 

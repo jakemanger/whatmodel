@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 14.2** ±0.8 · #719 of 740 · from 61 benchmark results across 11 sources
+**score 14.3** ±0.8 · #722 of 743 · from 61 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▅▂▁▁   #370 of 440*    0.7%      1
+math  ▁▁▃●█▆▅█▄▁▁▁   #370 of 440*    0.7%      1
 </pre>
 
 <details><summary>math · #370 of 440 · 0.7% of its score</summary>
@@ -81,7 +81,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 14.2
+weighted average                                   = 14.3
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization ([CC BY 4.0](../../licenses/paper-2212.12017v3-opt-iml-CC-BY-4-0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Tunable Soft Prompts are Messengers in Federated Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-976-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Symbolic Chain-of-Thought Distillation: Small Models Can Also \`\`Think'' Step-by-Step ([CC BY 4.0](../../licenses/acl-2023-acl-long-150-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

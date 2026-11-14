@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 30B params · apache-2.0
 
-**score 56.7** ±1.0 · #255 of 740 · from 21 benchmark results across 1 source · † no independently run results verified
+**score 56.6** ±1.0 · #258 of 743 · from 21 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▄▅▂▁   #163 of 316*    1.5%      1
-coding          ▁▁▁▃▆▇●▆▆▃▃▁    #221 of 472     29%      7
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #158 of 404*    2.3%      1
+agent tasks     ▁▁▃▆█●▅▅▃▃▂▁   #166 of 319*    1.5%      1
+coding          ▁▁▁▃▆▇●▆▆▃▃▁    #223 of 474     29%      7
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #159 of 405*    2.3%      1
 math            ▄··········●        #2 of 3     23%      5
 </pre>
 
-<details><summary>agent tasks · #163 of 316 · 1.5% of its score</summary>
+<details><summary>agent tasks · #166 of 319 · 1.5% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -33,14 +33,14 @@ test             result  vs the others in its run    difficulty        counts  w
 
 </details>
 
-<details><summary>coding · #221 of 472 · 29% of its score</summary>
+<details><summary>coding · #223 of 474 · 29% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval (maker)</a>      88.4%  ▁▁▁▁▂▂▆▆█▅●▁ beats 199/205  easy · avg 78%      7.5%  sharp · small run
-<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval+ (maker)</a>     85.4%  ▁·▁▁▂▃▄▄█▅●▃ beats 119/145  easy · avg 73%      6.9%  sharp · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval+ (maker)</a>     85.4%  ▁·▁▁▂▃▄▄█▅●▃ beats 119/145  easy · avg 74%      6.9%  sharp · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">BigCodeBench (maker)</a>   38.8%  ▅····▃·█▃▅●▃ beats 9/12     hard · avg 30%      3.4%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MBPP (maker)</a>           85.5%  ▁▁▁▄▅█▆▅▄▁●▁ beats 83/86    easy · avg 75%      3.4%  small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MultiPL-E (maker)</a>      62.3%  ▃··▄·▅▅●▄█▃▄ beats 14/31    medium · avg 54%    3.4%  at its level · small run
@@ -50,7 +50,7 @@ test                  result  vs the others in its run    difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #158 of 404 · 2.3% of its score</summary>
+<details><summary>chat &amp; writing · #159 of 405 · 2.3% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -82,8 +82,8 @@ test                                result  vs the others in its run    difficul
 test                               result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">GPQA (subset unspecified) (maker)</a>   45.8%  ▂▁▂▂▄▃▆●▅█▃▃ beats 49/106   very hard · avg 35%     9.3%  sharp · at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">BIG-Bench Hard (maker)</a>              83.7%  ▁▁▁▁▂▄▅▆█▃●▁ beats 142/155  medium · avg 72%        7.8%  sharp · small run
-<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MMLU (maker)</a>                        80.2%  ▁▁▁▁▁▂▂▅██●▄ beats 167/215  medium · avg 67%        6.7%  at its level · small run
-<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">SimpleQA (maker)</a>                     6.8%  ▄▄▄●█▆███·▂█ beats 8/32     very hard · avg 4.2%    5.7%  too hard for it · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MMLU (maker)</a>                        80.2%  ▁▁▁▁▁▂▂▅██●▄ beats 167/215  medium · avg 68%        6.7%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">SimpleQA (maker)</a>                     6.8%  ▄▄▄●█▆███·▂█ beats 8/32     very hard · avg 4.3%    5.7%  too hard for it · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MMLU-Pro (maker)</a>                    64.1%  ▁▁·▁▁▁▃▂●▅█▁ beats 71/189   medium · avg 50%        5.3%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">INCLUDE (maker)</a>                     67.3%  ▂····▂▂▄●▄█▄ beats 16/36    medium · avg 54%        4.6%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MMMLU (maker)</a>                       73.7%  ▂▁▁▂▃▂▄▄●██▃ beats 22/46    medium · avg 60%        4.1%  at its level · small run
@@ -99,7 +99,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-ibm-granite-granite-4-1-8b"></a><a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">ibm-granite/granite-4.1-8b model card (…</a>       21  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.7
+weighted average                                   = 56.6
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.1-8b model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.1-8b.txt))</sub>

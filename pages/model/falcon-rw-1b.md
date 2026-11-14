@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 19.4** ±1.9 · #711 of 740 · from 12 benchmark results across 2 sources
+**score 19.5** ±1.9 · #714 of 743 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        28.2%  ▅····▃●···▅█ beats 3/8    easy · avg 76%       17%  sharp · too hard for it
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Natural Questions (closed book)</a>       9.3%  ▁·▁·▁▂▁●·▅▂█ beats 9/28   medium · avg 48%     14%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Natural Questions (closed book)</a>       9.3%  ▁·▁·▁▂▁●·▅▂█ beats 9/28   medium · avg 49%     14%  typical
 <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           60.7%  █··●···█▄▄·▄ beats 2/8    easy · avg 87%       12%  typical
 <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                63.2%  ▄█●···▄··█▄▄ beats 3/8    easy · avg 88%       12%  at its level
 <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            46.6%  ▃▃▃··●····▃█ beats 3/8    easy · avg 81%       11%  at its level
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   80% ▇▇▇▇▇▇▇▇▇▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Hallucinations Leaderboard results</a>              4   18% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 19.4
+weighted average                                   = 19.5
 </pre>
 
 <sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

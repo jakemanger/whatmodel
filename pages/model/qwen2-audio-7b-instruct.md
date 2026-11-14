@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-07 · 8.4B params · apache-2.0
 
-**score 43.9** ±2.4 · #510 of 740 · from 10 benchmark results across 1 source
+**score 43.9** ±2.4 · #512 of 743 · from 10 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   39.9%  ▂·●··▆▄·▂▂·▄ beats 4/13   avg 33%                 45%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   23.3%  ●·▄··▂▂·▄▂█▄ beats 0/13   medium · avg 52%        22%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   23.3%  ●·▄··▂▂·▄▂█▄ beats 0/13   medium · avg 52%        23%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   11.3%  ▃···▃·●▃▅▃▅█ beats 2/13   avg 11%                 11%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   20.9%  ●·······▆█▆▆ beats 0/13   very hard · avg 57%    5.4%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   72.4%  ▃█▃▅▃·▃·▃▅●▃ beats 12/13  medium · avg 57%       4.3%  blunt · at its level

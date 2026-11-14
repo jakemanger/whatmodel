@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 70.1** ±0.9 · #80 of 740 · from 7 benchmark results across 2 sources
+**score 70.0** ±0.9 · #85 of 743 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇█▆▆●▃▁   #65 of 472*     14%      1
-math    ▁▁▃▅█▆▄█●▂▁▁    #64 of 440     64%      3
+coding  ▁▁▁▃▆▇█▆▆●▃▁   #67 of 474*     14%      1
+math    ▁▁▃▅█▆▅█●▁▁▁    #64 of 440     64%      3
 </pre>
 
-<details><summary>coding · #65 of 472 · 14% of its score</summary>
+<details><summary>coding · #67 of 474 · 14% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1474.3  ▁▂▄▃▇█●▆█▅▂▁ beats 67/133  avg 990        14%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1474.2  ▁▂▄▃▇█●▇▇▅▂▁ beats 67/134  avg 996        14%  sharp
 </pre>
 
 </details>
 
 <details><summary>math · #64 of 440 · 64% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%  ▁··▁▁▂▅●█▅▄▂ beats 38/91    very hard · avg 1.3%     40%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%  ▁··▁▁▂▅●█▅▄▂ beats 38/91    very hard · avg 1.4%     39%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%  ▁▂▁●█▅▂▃▁▁▁▁ beats 12/72    very hard · avg 0.1%     22%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%  ▃▃▄▃▃▃▇▆█●▃▆ beats 165/207  very hard · avg 7.3%    2.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%  ▃▃▄▃▃▃▇▆█●▃▆ beats 165/207  very hard · avg 7.4%    2.4%  sharp · noisy
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                       result  vs the others in its run    difficulty       
 <pre>
 test                   result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   14.0%  █▁▁▁▁●▄▂▃▃▂▁ beats 68/157   very hard · avg 5.6%     10%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            87.9%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 160/221  hard · avg 39%          8.1%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       36.5%  ▁▂▂▂●█▄▃▂··▁ beats 34/91    very hard · avg 7.2%    3.5%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            87.9%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 160/221  hard · avg 39%          8.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       36.5%  ▁▂▂▂●█▄▃▂··▁ beats 34/91    very hard · avg 7.4%    3.5%  at its level
 </pre>
 
 </details>
@@ -61,10 +61,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             6   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   14% ▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             6   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   14% ▇▇
 prior: pull toward the middle             0% ▇
-weighted average                        = 70.1
+weighted average                        = 70.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

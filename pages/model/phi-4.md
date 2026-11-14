@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-12 · 14.7B params · mit
 
-**score 53.0** ±0.6 · #321 of 740 · from 49 benchmark results across 17 sources
+**score 52.9** ±0.6 · #325 of 743 · from 49 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #281 of 316*    2.7%      2
-coding          ▁▁▁▃▆▇●▆▆▃▃▁    #235 of 472     18%      7
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃    #278 of 404     12%      4
-math            ▁▁▃▅█●▄█▅▂▁▁    #241 of 440     16%      5
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #283 of 319*    2.7%      2
+coding          ▁▁▁▃▆▇●▆▆▃▃▁    #237 of 474     18%      7
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃    #279 of 405     12%      4
+math            ▁▁▃▅█●▅█▄▁▁▁    #241 of 440     16%      5
 </pre>
 
-<details><summary>agent tasks · #281 of 316 · 2.7% of its score</summary>
+<details><summary>agent tasks · #283 of 319 · 2.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #235 of 472 · 18% of its score</summary>
+<details><summary>coding · #237 of 474 · 18% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2412.08905v1">HumanEval+ (maker)</a>                   82.8%  ▁·▁▁▂▃▄▄█●▄▃ beats 116/145  easy · avg 77%       11%  sharp · several runs
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (maker)</a>                    82.6%  ▁▁▁▁▂▂▆▆█●▂▁ beats 183/205  easy · avg 72%      2.1%  sharp · small run
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   44.8%  █▂▁▁▂▂▂▃▅▅●▇ beats 34/47    hard · avg 33%      1.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   44.8%  █▂▁▁▂▂▂▃▅▅●▇ beats 34/47    hard · avg 34%      1.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.5%  ▃··▁▂▂▃▂█▃●▂ beats 42/47    medium · avg 52%    1.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals) (maker)</a>     82.6%  ▂●▆█▅▃··▂··▂ beats 3/19     easy · avg 76%      1.2%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   37.1%  ▁▁▁▁▁▁▂▂▃█●▄ beats 37/47    hard · avg 32%      1.1%  at its level
@@ -51,14 +51,14 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #278 of 404 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #279 of 405 · 12% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2412.08905v1">Arena-Hard (version/judge unspeci…</a>   75.4%  ▃▃▂▅▃▆▅█●▅▂▃ beats 23/30   medium · avg 60%    5.9%  at its level · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1256.3  ▁▁▁▂▃▂●▆▆▇█▃ beats 92/387  avg 1261            3.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1256.4  ▁▁▁▂▃▂●▆▆▇█▃ beats 92/388  avg 1262            3.8%  blunt
 <a href="https://arxiv.org/html/2412.08905v1">IFEval (aggregation unspecified) …</a>   63.0%  ▁▂▄●▂▄▆██▅▂▁ beats 24/145  easy · avg 74%      1.3%  several runs
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   62.3%  ●·········██ beats 0/2     easy · avg 67%      0.8%  at its level · small run
 </pre>
@@ -74,7 +74,7 @@ test                               result  vs the others in its run   difficulty
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                        64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 56/92   hard · avg 29%          8.7%  sharp · at its level
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM (maker)</a>                        80.6%  ▂·▁▁▁▁▁▂▅█▃● beats 41/42   easy · avg 73%          2.7%  sharp · small run
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (maker)</a>   80.4%  ▂▄▄▃█▇▅●▄▃▄▁ beats 54/80   easy · avg 72%          1.6%  small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            13.8%  ▃▃▄●▃▃▇▆█▄▃▆ beats 52/207  very hard · avg 7.3%    1.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            13.8%  ▃▃▄●▃▃▇▆█▄▃▆ beats 52/207  very hard · avg 7.4%    1.6%  sharp · noisy
 <a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals) (maker)</a>         80.6%  ▁·▁●·▁▇▃█▁▃▁ beats 2/20    easy · avg 81%          1.1%  typical
 </pre>
 
@@ -87,15 +87,15 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro (maker)</a>                     70.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 92/189   medium · avg 59%        7.3%  at its level · several runs
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           59.2%  ▆▄●▄█▄▂·▄█·▄ beats 5/23     medium · avg 56%        6.4%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            59.2%  ▄▄●▂▂█▂▄▂█▂▄ beats 4/22     medium · avg 61%        5.4%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▃▅●▄▆█▃ beats 81/221   hard · avg 39%          5.3%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▃▅●▄▆█▃ beats 81/221   hard · avg 39%          5.2%  sharp · at its level
 <a href="https://arxiv.org/html/2412.08905v1">GPQA Diamond (simple-evals) (make…</a>   56.1%  ▁·····▄█●▂▃▃ beats 13/22    hard · avg 40%          3.2%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.1%  ▁▂▂▂▃█●▆▅▄▂▃ beats 46/95    medium · avg 65%        2.8%  at its level
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (maker)</a>     82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          2.4%  sharp · noisy · several runs
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.1%  ▁▂▂▂▃█●▆▅▄▂▃ beats 46/95    easy · avg 65%          2.8%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.1%  ▁▁▁▁▁▂▂▃▄●█▃ beats 51/97    hard · avg 32%          2.4%  blunt · at its level
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (maker)</a>     82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          2.4%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   30.0%  ▁▁·▁▂▂▄●▄▅▄▄ beats 26/66    hard · avg 30%          2.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      64.4%  ▁··▁▁▂▂▆▅▆●▆ beats 44/70    medium · avg 62%        2.2%  at its level
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified) (maker)</a>    56.1%  ▂▁▂▂▄▃▆▃●█▃▃ beats 60/106   hard · avg 44%          1.9%  sharp · at its level · small run
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (maker)</a>                         84.8%  ▁▁▁▁▁▂▂▅██●▄ beats 185/215  easy · avg 77%          1.8%  small run
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (maker)</a>                         84.8%  ▁▁▁▁▁▂▂▅██●▄ beats 185/215  easy · avg 78%          1.8%  small run
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 29%     1.8%  sharp · too hard for it
 <a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT…</a>   84.8%  ▁···▂▁●█▂▂▃▁ beats 5/22     easy · avg 80%          1.4%  typical
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (maker)</a>                      3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 4.7%    1.2%  too hard for it · small run
@@ -106,7 +106,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 1.0%  ●▁▁▁▁▂▄▂▃▃▂▁ beats 35/157   very hard · avg 5.6%    0.3%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.3%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 67/140   very easy · avg 94%     0.2%  blunt · maxed out · noisy
 <a href="https://arxiv.org/html/2412.08905v1">DROP F1, 3-shot (simple-evals) (m…</a>   75.5%  ●▂▆█▆·▃·▂▅·▂ beats 1/23     easy · avg 79%          0.2%  blunt
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   96.3%  ▁▂▁▂▅█▂▃▄▃▁● beats 96/98    very easy · avg 90%     0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   96.3%  ▁▂▁▂▅█▂▃▃▃▁● beats 98/100   very easy · avg 90%     0.0%  blunt
 <a href="https://arxiv.org/html/2412.08905v1">LiveBench (release not stated) (m…</a>   47.6%  no other model yet                                     —  not counted yet: no other model in the …
 </pre>
 
@@ -124,8 +124,8 @@ source                                    results  share of the score
 <a name="card-microsoft-phi-4"></a><a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">microsoft/phi-4 model card (submitted /…</a>        6   11% ▇
 <a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (submitted / maker-reported)</a>          5   11% ▇
 <a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (s…</a>        5    9% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    4% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    3% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    3% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    2% ▇
@@ -136,10 +136,10 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.9
 </pre>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft Research ([CC BY 4.0](../../licenses/report-2412.08905v1.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · microsoft/phi-4 model card ([MIT](../../licenses/card-microsoft-phi-4.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft Research ([CC BY 4.0](../../licenses/report-2412.08905v1.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · microsoft/phi-4 model card ([MIT](../../licenses/card-microsoft-phi-4.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (1)</summary>
 

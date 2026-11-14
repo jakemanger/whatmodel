@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 2.7B params · opt-175b-license-noncommercial
 
-**score 18.6** ±0.7 · #712 of 740 · from 40 benchmark results across 9 sources
+**score 18.6** ±0.7 · #715 of 743 · from 40 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▅▂▁▁   #352 of 440*    0.7%      1
+math  ▁▁▃●█▆▅█▄▁▁▁   #352 of 440*    0.7%      1
 </pre>
 
 <details><summary>math · #352 of 440 · 0.7% of its score</summary>

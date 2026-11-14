@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 6.94B params (1B active) · apache-2.0
 
-**score 48.5** ±0.9 · #405 of 740 · from 24 benchmark results across 3 sources
+**score 48.5** ±0.9 · #407 of 743 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,8 +18,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 agent tasks     ▄·●········█       #3 of 4*    1.4%      1
 coding          █···●······▄        #2 of 4     32%      7
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃   #244 of 404*    4.7%      2
-math            ▁▁▃▅█●▄█▅▂▁▁    #256 of 440     25%      5
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #243 of 405*    4.7%      2
+math            ▁▁▃▅█●▅█▄▁▁▁    #256 of 440     25%      5
 </pre>
 
 <details><summary>agent tasks · #3 of 4 · 1.4% of its score</summary>
@@ -48,7 +48,7 @@ test                  result  vs the others in its run    difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #244 of 404 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #243 of 405 · 4.7% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -79,11 +79,11 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (maker)</a>    32.6%  ▂▁▂▂▄●▆▃▅█▃▃ beats 29/106   very hard · avg 36%    7.2%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (maker)</a>    32.6%  ▂▁▂▂▄●▆▃▅█▃▃ beats 29/106   very hard · avg 36%    7.1%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (maker)</a>               66.3%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 103/155  easy · avg 75%         7.0%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (maker)</a>                         68.7%  ▁▁▁▁▁▂▂▅█●▆▄ beats 130/215  medium · avg 73%       6.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (maker)</a>                     44.9%  ▁▁·▁▁▁●▂▄▅█▁ beats 40/189   medium · avg 51%       5.0%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (maker)</a>                      53.1%  ▂····▂▂●▄▄█▄ beats 9/36     medium · avg 57%       4.2%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (maker)</a>                      53.1%  ▂····▂▂●▄▄█▄ beats 9/36     medium · avg 57%       4.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (maker)</a>                        61.9%  ▂▁▁▂▃▂▄●▅██▃ beats 15/46    medium · avg 63%       3.7%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   70.4%  ▃·▁▁▂▁▂▅●▇▄▁ beats 51/100   medium · avg 67%       1.6%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   81.2%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 71/146   easy · avg 82%         1.1%  at its level · noisy

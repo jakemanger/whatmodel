@@ -6,7 +6,7 @@
 
 CompVis · released 2022-04 · 1.45B params · apache-2.0
 
-**score 48.3** ±14.8 · #86 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.4** ±14.8 · #87 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #117 of 128*    6.6%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #118 of 129*    6.5%      1
 </pre>
 
-<details><summary>text to image · #117 of 128 · 6.6% of its score</summary>
+<details><summary>text to image · #118 of 129 · 6.5% of its score</summary>
 
 Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 4/14   hard · avg 28%    6.6%  blunt · at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 4/14   hard · avg 27%    6.5%  blunt · at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>        1    7% ▇
 prior: pull toward the middle              93% ▇▇▇▇▇▇▇▇▇▇▇
-weighted average                          = 48.3
+weighted average                          = 48.4
 </pre>
 
 <sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>

@@ -6,7 +6,7 @@
 
 Jan (Menlo Research) · released 2025-08 · 4.02B params · apache-2.0
 
-**score 51.9** ±5.9 · #429 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.9** ±5.9 · #430 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-01 · 23.57B params · apache-2.0
 
-**score 53.6** ±1.0 · #313 of 740 · from 18 benchmark results across 12 sources
+**score 53.6** ±1.0 · #316 of 743 · from 18 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,41 +16,41 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇●▆▆▃▃▁   #244 of 472*    4.6%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▇▇▇▃   #261 of 404*     10%      1
-math            ▁▁▃▅●▆▄█▅▂▁▁   #296 of 440*     26%      2
+coding          ▁▁▁▃▆▇●▆▆▃▃▁   #248 of 474*    4.7%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #263 of 405*    9.4%      1
+math            ▁▁▃▅●▆▅█▄▁▁▁   #295 of 440*     26%      2
 </pre>
 
-<details><summary>coding · #244 of 472 · 4.6% of its score</summary>
+<details><summary>coding · #248 of 474 · 4.7% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>   55.5%  ▃▁▁█▁●▅▃▄▇▁▄ beats 12/31  medium · avg 41%    4.6%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>   55.5%  ▃▁▁█▁●▅▃▄▇▁▄ beats 12/31  medium · avg 41%    4.7%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #261 of 404 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #263 of 405 · 9.4% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1274.4  ▁▁▁▂▃▂●▆▆▇█▃ beats 105/387  avg 1261       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1274.5  ▁▁▁▂▃▂●▆▆▇█▃ beats 105/388  avg 1262      9.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #296 of 440 · 26% of its score</summary>
+<details><summary>math · #295 of 440 · 26% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               44.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 36/92   hard · avg 29%           22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.7%  ▃▃●▃▃▃▇▆█▄▃▆ beats 38/207  very hard · avg 7.3%    4.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.7%  ▃▃●▃▃▃▇▆█▄▃▆ beats 38/207  very hard · avg 7.4%    4.4%  sharp · noisy
 </pre>
 
 </details>
@@ -59,10 +59,10 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▃●▄▄▆█▃ beats 57/221   hard · avg 39%           14%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    medium · avg 65%        6.8%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▃●▄▄▆█▃ beats 57/221   hard · avg 39%           13%  sharp · at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    easy · avg 65%          6.9%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.9  ▁·▂▁●▅▅▃█▄▁▁ beats 7/62     avg 1037                6.1%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.5%  ▁▁▁▁▁▂▂▃▄●█▃ beats 57/97    hard · avg 32%          5.9%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.5%  ▁▁▁▁▁▂▂▃▄●█▃ beats 57/97    hard · avg 32%          6.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   39.8%  ▁▁·▁▂▂▄█●▅▄▄ beats 36/66    hard · avg 30%          5.8%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   50.3%  ▁▁▁▁·▂·●▆█▇▁ beats 7/31     medium · avg 47%        5.4%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      70.5%  ▁··▁▁▂▂▆▅▆●▆ beats 53/70    medium · avg 62%        5.3%  at its level
@@ -72,7 +72,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.3%  ▁▁▁▁▁▁▁▂▄█▄● beats 136/146  easy · avg 82%          1.0%  noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▄▂▃▃▂▁ beats 11/157   very hard · avg 5.6%    0.9%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.9%  ▁▁▂▃▄▄█●▃▂▂▁ beats 100/140  very easy · avg 94%     0.5%  blunt · maxed out · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▄●▁▁ beats 89/98    very easy · avg 90%     0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▃●▁▁ beats 91/100   very easy · avg 90%     0.0%  blunt
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        4   41% ▇▇▇▇▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             2   11% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   10% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    7% ▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    6% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    6% ▇

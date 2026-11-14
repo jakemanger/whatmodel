@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 45.1** ±0.6 · #477 of 740 · from 40 benchmark results across 10 sources
+**score 45.0** ±0.6 · #484 of 743 · from 40 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁●▃▆█▅▅▅▄▅▂▁   #310 of 316    2.4%      3
-coding          ▁▁▁▃▆●█▆▆▃▃▁   #320 of 472    7.2%      4
+agent tasks     ▁●▃▆█▄▅▅▃▃▂▁   #313 of 319    2.4%      3
+coding          ▁▁▁▃▆●█▆▆▃▃▁   #322 of 474    7.2%      4
 chat &amp; writing  █··········●      #1 of 2*    0.6%      1
-math            ▁▁▃▅●▆▄█▅▂▁▁   #317 of 440     22%      5
+math            ▁▁▃▅●▆▅█▄▁▁▁   #317 of 440     22%      5
 </pre>
 
-<details><summary>agent tasks · #310 of 316 · 2.4% of its score</summary>
+<details><summary>agent tasks · #313 of 319 · 2.4% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #320 of 472 · 7.2% of its score</summary>
+<details><summary>coding · #322 of 474 · 7.2% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>math · #317 of 440 · 22% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty           counts  why
@@ -77,15 +77,15 @@ test               result  vs the others in its run  difficulty           counts
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (maker)</a>                83.7%  ▂▂▂●▂···▄··▂ beats 6/10     very easy · avg 89%    7.5%  sharp
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           42.8%  ●▄▄▄█▄▂·▄█·▄ beats 0/23     medium · avg 56%       7.2%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (maker)</a>                83.7%  ▂▂▂●▂···▄··▂ beats 6/10     very easy · avg 89%    7.6%  sharp
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           42.8%  ●▄▄▄█▄▂·▄█·▄ beats 0/23     medium · avg 56%       7.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (maker)</a>                         67.3%  █▄█▄●▄·▄▄··▄ beats 6/10     easy · avg 75%         6.6%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.5%  ●▄▄▂▂█▂▄▂█▂▄ beats 1/22     medium · avg 61%       6.6%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (maker)</a>               70.4%  ██▄·█▄·●▄··▄ beats 8/10     medium · avg 72%       5.4%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (maker)</a>               70.4%  ██▄·█▄·●▄··▄ beats 8/10     medium · avg 72%       5.3%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (maker)</a>                   79.2%  ▂··●█▂·▂···▄ beats 1/10     easy · avg 86%         4.2%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (maker)</a>                     52.8%  █▄▄·█▄▄●·▄·▄ beats 8/10     medium · avg 55%       3.8%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   43.4%  ▁▂●▂▃█▃▆▅▄▂▃ beats 11/95    medium · avg 65%       3.5%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (ma…</a>   49.3%  █●▄██··█···▄ beats 2/10     medium · avg 63%       3.3%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   43.4%  ▁▂●▂▃█▃▆▅▄▂▃ beats 11/95    easy · avg 65%         3.5%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (ma…</a>   49.3%  █●▄██··█···▄ beats 2/10     medium · avg 64%       3.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      50.8%  ▁··▁▁▂▂▆●▆█▆ beats 25/70    medium · avg 62%       2.7%  at its level
 <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond (maker)</a>                 36.9%  ▁▁▁▁▂●▅▆▇▇█▂ beats 38/336   hard · avg 49%         2.6%  sharp
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   24.5%  ▁▁▁▁▁▂●▃▄▆█▃ beats 17/97    hard · avg 32%         2.2%  blunt · at its level
@@ -103,7 +103,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (maker)</a>                         77.6%  ▃·▅·▃●·▃▅··▃ beats 4/10     medium · avg 82%       0.4%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.6%  ▁▁▂▃▄▄█●▃▂▂▁ beats 96/140   very easy · avg 94%    0.3%  blunt · maxed out · noisy
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2 (maker)</a>               66.4%  ▂·█▂●▄····▂▂ beats 6/10     medium · avg 64%       0.2%  blunt · at its level
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.5%  ●▂▁▂▅█▂▃▄▃▁▁ beats 1/98     very easy · avg 90%    0.0%  blunt
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.5%  ●▂▁▂▅█▂▃▃▃▁▁ beats 1/100    very easy · avg 90%    0.0%  blunt
 </pre>
 
 </details>
@@ -114,10 +114,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-microsoft-phi-4-mini-instruct"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">microsoft/Phi-4-mini-instruct model car…</a>       16   58% ▇▇▇▇▇▇▇
-<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   14% ▇▇
+<a name="card-microsoft-phi-4-mini-instruct"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">microsoft/Phi-4-mini-instruct model car…</a>       16   57% ▇▇▇▇▇▇▇
+<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   15% ▇▇
 <a name="report-2503.01743v2"></a><a href="https://arxiv.org/html/2503.01743v2">Microsoft (submitted / maker-reported)</a>         11   14% ▇▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    3% ▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    4% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    3% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    2% ▇
 <a name="acl-kcl-2026"></a><a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchmark: Towar…</a>        2    2% ▇
@@ -125,7 +125,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.1
+weighted average                                   = 45.0
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

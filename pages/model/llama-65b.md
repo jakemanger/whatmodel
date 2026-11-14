@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▆▃▂▁   #500 of 542     15%      2
+coding  ▁▁▁●▅▆█▇▆▃▃▁   #502 of 544     15%      2
 math    ▁▂▃▆█●▅▇▄▁▁▁   #293 of 540     15%      2
 </pre>
 
-<details><summary>coding · #500 of 542 · 15% of its score</summary>
+<details><summary>coding · #502 of 544 · 15% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test          result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 63.3%  ▄·▄····▄·▄·● beats 5/5     easy · avg 80%          14%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">ARC Challenge</a>                        46.3%  ▄····▄·▄▄·▄● beats 6/6     easy · avg 74%          14%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       58.1%  █···▄··▄··▄● beats 5/5     easy · avg 75%         6.0%  sharp · at its level
+<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       58.1%  █···▄··▄··▄● beats 5/5     easy · avg 75%         5.9%  sharp · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">WinoGrande</a>                           77.1%  ▃·▃▃▃▅·█···● beats 9/9     easy · avg 87%         5.8%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   36.2%  ▄···█·▄●··▄▄ beats 4/7     medium · avg 56%       4.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            80.7%  ▅█······▃▃·● beats 8/8     very easy · avg 92%    4.1%  several runs
@@ -63,7 +63,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   52.4%  ▃▅▃··▅▃·█▃▃● beats 13/13   medium · avg 61%       1.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Spider dev execution accuracy, ze…</a>   12.2%  █·█●··▄····▄ beats 4/6     medium · avg 54%       1.3%  sharp · at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">PIQA</a>                                 80.8%  ▄··▄··▄█··▄● beats 6/6     easy · avg 87%         1.3%  blunt · at its level · several runs
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 7/14    hard · avg 67%         1.3%  sharp · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 7/14    hard · avg 67%         1.2%  sharp · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">ARC Easy</a>                             58.8%  ▃··●···▃·▃·▃ beats 1/6     easy · avg 87%         1.2%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   57.9%  ██···██···█● beats 5/5     easy · avg 74%         1.1%  blunt · at its level
 <a href="https://arxiv.org/html/2302.13971v1">Social IQA (maker)</a>                   52.3%  ▁·▁██▄●▁▂▃▇▁ beats 39/59   medium · avg 63%       0.8%  blunt · at its level

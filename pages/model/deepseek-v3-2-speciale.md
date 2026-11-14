@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▆██▅▇▄●▁▁   #31 of 540*     67%      2
+math  ▁▂▃▆█▇▅▇●▁▁▁   #31 of 540*     67%      2
 </pre>
 
 <details><summary>math · #31 of 540 · 67% of its score</summary>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                          result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (maker)</a>   30.6%  ▁▁▁▄▆▇▅●▆▁▂▁ beats 79/115  very hard · avg 4.6%     30%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (maker)</a>   30.6%  ▁▁▁▄▆▇▅●▆▁▂▁ beats 79/115  very hard · avg 4.8%     30%  at its level · small run
 </pre>
 
 </details>

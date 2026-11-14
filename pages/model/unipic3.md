@@ -6,7 +6,7 @@
 
 Skywork AI · released 2026-01 · mit
 
-**score 51.3** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.1** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁▁▃▃●█▅▃▄▂▁   #61 of 83*     96%      1
+image to image / edit…  ▁▁▁▃▃●█▅▃▅▂▁   #62 of 84*     96%      1
 </pre>
 
-<details><summary>image to image / editing · #61 of 83 · 96% of its score</summary>
+<details><summary>image to image / editing · #62 of 84 · 96% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 51.3
+weighted average                                   = 51.1
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>

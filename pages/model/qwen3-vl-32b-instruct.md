@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 59.5** ±0.7 · #215 of 740 · from 26 benchmark results across 2 sources
+**score 59.5** ±0.7 · #217 of 743 · from 26 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▄▅▂▁   #175 of 316*    2.1%      1
-coding              ▁▁▁▃▆●█▆▆▃▃▁   #317 of 472*    4.3%      1
-chat &amp; writing      ▁▁▁▃▆▄▆●▇▇▇▃   #188 of 404*    2.6%      1
-math                ▁▁▃▅█▆●█▅▂▁▁   #169 of 440*    9.0%      2
+agent tasks         ▁▁▃▆█●▅▅▃▃▂▁   #178 of 319*    2.1%      1
+coding              ▁▁▁▃▆●█▆▆▃▃▁   #319 of 474*    4.3%      1
+chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #188 of 405*    2.6%      1
+math                ▁▁▃▅█▆●█▄▁▁▁   #170 of 440*    9.0%      2
 vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #93 of 154     46%     13
 </pre>
 
-<details><summary>agent tasks · #175 of 316 · 2.1% of its score</summary>
+<details><summary>agent tasks · #178 of 319 · 2.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #317 of 472 · 4.3% of its score</summary>
+<details><summary>coding · #319 of 474 · 4.3% of its score</summary>
 
 Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -45,9 +45,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #188 of 404 · 2.6% of its score</summary>
+<details><summary>chat &amp; writing · #188 of 405 · 2.6% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -56,7 +56,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #169 of 440 · 9.0% of its score</summary>
+<details><summary>math · #170 of 440 · 9.0% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv (reasoning questions) (ma…</a>   62.8%  ▄▂▄▆▄▄●··▄█▂ beats 12/21  medium · avg 39%        10%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (maker)</a>                   76.0%  ▂···▆▂▂▂▄▄▄● beats 13/16  medium · avg 61%       7.4%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (maker)</a>                   76.0%  ▂···▆▂▂▂▄▄▄● beats 13/16  medium · avg 61%       7.5%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv descriptive questions (ma…</a>   90.5%  ▄··▂▂▂·▂▄▄▂● beats 13/14  easy · avg 74%         5.5%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMStar (maker)</a>                       77.7%  ▂··▄▂▂·▄█▂▄● beats 14/16  medium · avg 65%       5.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (maker)</a>         83.8%  ▃··▃▅·▃█▅▅▅● beats 14/16  medium · avg 69%       4.8%  typical
@@ -97,9 +97,9 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">GPQA (subset unspecified) (maker)</a>    68.9%  ▂····▂·▂▂█●█ beats 8/14   hard · avg 49%      8.8%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Pro (maker)</a>                     78.6%  ▄·▄·▄▄▄▄█▄●█ beats 10/12  medium · avg 63%    6.4%  typical
-<a href="https://arxiv.org/html/2604.18224v1">WebCompass (overall)</a>                 35.2%  ▅·●▃▃···▃·▃█ beats 2/9    hard · avg 19%      5.2%  at its level
+<a href="https://arxiv.org/html/2604.18224v1">WebCompass (overall)</a>                 35.2%  ▅·●▃▃···▃·▃█ beats 2/9    hard · avg 19%      5.3%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Redux (maker)</a>                   89.8%  ▃··▃·▃·█▃▅●▅ beats 9/11   easy · avg 79%      4.7%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (maker)</a>                    54.6%  ▄··▄·▄▄▄█▄●█ beats 9/11   medium · avg 37%    4.4%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (maker)</a>                    54.6%  ▄··▄·▄▄▄█▄●█ beats 9/11   medium · avg 38%    4.4%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (maker)</a>                 57.3%  ▃··▃▅▃▃▃▃●·█ beats 8/11   medium · avg 43%    3.2%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (maker)</a>                      63.8%  ▅··▃·▅▃▃·●·▃ beats 9/10   hard · avg 51%      3.2%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (ma…</a>   76.6%  ▃··█··▅█▃▃●▃ beats 11/13  medium · avg 66%    2.8%  blunt · at its level

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.01B params · apache-2.0
 
-**score 12.2** ±1.3 · #722 of 740 · from 18 benchmark results across 4 sources
+**score 12.2** ±1.3 · #725 of 743 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (maker)</a>                   53.7%  ▄····▄●▂▄▆▆█ beats 5/19   easy · avg 87%          14%  several runs
 <a href="https://arxiv.org/html/2304.01373v2">PIQA (maker)</a>                         70.7%  ▂·▄▄·▄▂●▂▄█▄ beats 8/19   easy · avg 87%          11%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (maker)</a>                24.4%  ●··▁·▁▁·▁▂▁▂ beats 6/19   medium · avg 71%        10%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                            44.7%  ●·····▂▂·▂·█ beats 0/8    very easy · avg 91%    8.9%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                            44.7%  ●·····▂▂·▂·█ beats 0/8    very easy · avg 91%    8.8%  at its level
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   56.2%  ▃··▅▃▃▅▅●███ beats 9/19   very easy · avg 87%    6.2%  blunt · at its level
 <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                           37.8%  ●·····▄▄▄██▄ beats 0/8    easy · avg 81%         4.2%  typical
 <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                                61.8%  ●····▃··█▃·▃ beats 2/8    easy · avg 88%         3.9%  typical

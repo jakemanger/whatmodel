@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2025-12 · closed weights
 
-**score 59.4** ±3.9 · #46 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.2** ±3.9 · #47 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #32 of 64*     93%      1
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #33 of 65*     93%      1
 </pre>
 
-<details><summary>image to image / editing · #32 of 64 · 93% of its score</summary>
+<details><summary>image to image / editing · #33 of 65 · 93% of its score</summary>
 
 Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1250.3  ▂▁▁▃▆●▆▆▇▄▃▃ beats 22/55  avg 1158       93%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1250.4  ▂▁▁▃▆●▅▇█▄▃▃ beats 22/56  avg 1160       93%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             7% ▇
-weighted average                        = 59.4
+weighted average                        = 59.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

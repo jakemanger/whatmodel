@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 53.9** ±1.0 · #307 of 740 · from 11 benchmark results across 4 sources
+**score 53.9** ±1.0 · #309 of 743 · from 11 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆▇█●▆▃▃▁   #152 of 472*    8.3%      1
+coding  ▁▁▁▃▆▇█●▆▃▃▁   #154 of 474*    8.3%      1
 math    █·····●····█        #2 of 3     36%      2
 </pre>
 
-<details><summary>coding · #152 of 472 · 8.3% of its score</summary>
+<details><summary>coding · #154 of 474 · 8.3% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
@@ -45,9 +45,9 @@ test               result  vs the others in its run   difficulty      counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (maker)</a>                 66.8%  ▁▁▁▁▂▃▅●▇▇█▂ beats 144/336  medium · avg 53%     25%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4312  ▁▄▃●▇▄█▃▅▁▁▁ beats 7/30     avg 0.420            19%  sharp
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.1%  ▂▃▅▂●▃█▅█▅▃▆ beats 7/34     medium · avg 41%    8.6%  blunt · at its level
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (maker)</a>                 66.8%  ▁▁▁▁▂▃▅●▇▇█▂ beats 144/336  medium · avg 54%     25%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4312  ▁▄▃●▇▄█▃▅▁▁▁ beats 7/30     avg 0.421            20%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.1%  ▂▃▅▂●▃█▅█▅▃▆ beats 7/34     medium · avg 42%    8.6%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   58.5%  ▂···▂▂·▃▂▃●█ beats 11/17    medium · avg 53%    2.5%  at its level
 </pre>
 

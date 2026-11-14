@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇█●▆▃▂▁    #175 of 542     79%      3
-math                ▁▂▃▆██▅●▄▁▁▁   #160 of 540*     16%      1
+coding              ▁▁▁▃▅▆█●▆▃▃▁    #176 of 544     79%      3
+math                ▁▂▃▆█▇▅●▄▁▁▁   #159 of 540*     16%      1
 vision &amp; documents  ▁▁▃▃▂▃▅●▇██▄   #113 of 190*    3.3%      1
 </pre>
 
-<details><summary>coding · #175 of 542 · 79% of its score</summary>
+<details><summary>coding · #176 of 544 · 79% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -34,13 +34,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #160 of 540 · 16% of its score</summary>
+<details><summary>math · #159 of 540 · 16% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   73.1%  ▃▃▄▃▃▃▇●█▄▃▆ beats 106/207  very hard · avg 7.3%     16%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   73.1%  ▃▃▄▃▃▃▇●█▄▃▆ beats 106/207  very hard · avg 7.4%     16%  sharp · at its level · noisy
 </pre>
 
 </details>

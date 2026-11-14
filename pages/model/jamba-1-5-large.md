@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 51.5** ±1.1 · #347 of 740 · from 12 benchmark results across 3 sources
+**score 51.5** ±1.1 · #349 of 743 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅●▅▄▅▂▁   #120 of 316*    2.3%      1
-coding          █··········●       #1 of 2*    7.5%      1
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃    #243 of 404     19%      3
-math            ▁▁▃▅●▆▄█▅▂▁▁   #284 of 440*     11%      1
+agent tasks     ▁▁▃▆█▄●▅▃▃▂▁   #120 of 319*    2.3%      1
+coding          █··········●       #1 of 2*    7.6%      1
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃    #245 of 405     19%      3
+math            ▁▁▃▅●▆▅█▄▁▁▁   #284 of 440*     11%      1
 </pre>
 
-<details><summary>agent tasks · #120 of 316 · 2.3% of its score</summary>
+<details><summary>agent tasks · #120 of 319 · 2.3% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
@@ -33,22 +33,22 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>coding · #1 of 2 · 7.5% of its score</summary>
+<details><summary>coding · #1 of 2 · 7.6% of its score</summary>
 
 <pre>
 test               result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (maker)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 69%    7.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (maker)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 70%    7.6%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #243 of 404 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #245 of 405 · 19% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1289.5  ▁▁▁▂▃▂▃●▆▇█▃ beats 121/387  avg 1261             12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1289.6  ▁▁▁▂▃▂▃●▆▇█▃ beats 122/388  avg 1262             12%  blunt
 <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge unspeci…</a>   65.4%  ▃▃▂▅▃▆●█▅▅▂▃ beats 15/30    medium · avg 55%    4.1%  at its level · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecified) …</a>   81.5%  ▁▂▄▂▂▄●██▅▂▁ beats 56/145   easy · avg 80%      2.8%  small run
 </pre>
@@ -73,7 +73,7 @@ test                               result  vs the others in its run    difficult
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                            49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 55%        28%  at its level · several runs
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (maker)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▃▃ beats 32/106   very hard · avg 35%     11%  sharp · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (maker)</a>              65.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 98/155   medium · avg 61%        10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (maker)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/215  easy · avg 75%         8.1%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (maker)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/215  easy · avg 75%         8.2%  at its level · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (maker)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 77%         1.9%  sharp · at its level · noisy · small run
 </pre>
 
@@ -87,7 +87,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2408.12570v1-jamba15"></a><a href="https://arxiv.org/html/2408.12570v1#S6.T2">Jamba-1.5: Hybrid Transformer-Mamba Mod…</a>       10   66% ▇▇▇▇▇▇▇▇
 <a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   21% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 51.5
 </pre>

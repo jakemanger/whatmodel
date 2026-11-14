@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 63.8** ±2.2 · #26 of 146 · from 3 benchmark results across 3 sources
+**score 63.7** ±2.2 · #26 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄●▂▂▁▁▁   #27 of 128*     83%      1
-image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂    #14 of 64*    3.3%      1
+text to image           ▂▅▅▃▄▄●▃▂▁▁▁   #28 of 129*     83%      1
+image to image / edit…  ▁▁·▃▂▃█▆▃●▂▂    #14 of 65*    3.2%      1
 </pre>
 
-<details><summary>text to image · #27 of 128 · 83% of its score</summary>
+<details><summary>text to image · #28 of 129 · 83% of its score</summary>
 
-Trails [FLUX.2 \[max\]](flux-2-max.md), [Recraft V4.1 Utility Pro](recraft-v4-1-utility-pro.md) here, though they rank lower overall.
+Trails [FLUX.2 \[max\]](flux-2-max.md), [Recraft V4.1 Utility Pro](recraft-v4-1-utility-pro.md), [Seedream 5.0 Lite](seedream-5-0-lite.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1160.0  ▁▁▃▃▆●▃▂▂▂▁▁ beats 50/77  avg 1030       83%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1159.9  ▁▁▃▃▆●▄▂▂▂▁▁ beats 50/78  avg 1030       83%  typical
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #14 of 64 · 3.3% of its score</summary>
+<details><summary>image to image / editing · #14 of 65 · 3.2% of its score</summary>
 
 Beats [Reve 2.0](reve-2-0.md), [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md), [GPT Image 1.5](gpt-image-1-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>   20.0%  ▄········▄●▄ beats 3/4    very hard · avg 7.4%    3.3%  typical
+<a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>   20.0%  ▄········▄●▄ beats 3/4    very hard · avg 7.4%    3.2%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1009.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 20/34  avg 878        12%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1009.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 20/34  avg 879        12%  typical
 </pre>
 
 </details>
@@ -57,11 +57,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   83% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   12% ▇
 <a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 63.8
+weighted average                                   = 63.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>

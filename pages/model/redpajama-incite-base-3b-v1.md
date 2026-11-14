@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 24.8** ±3.0 · #695 of 740 · from 5 benchmark results across 2 sources
+**score 24.8** ±3.0 · #698 of 743 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (maker)</a>                    63.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 50/135  very easy · avg 89%     27%  at its level · small run
 <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), last-wo…</a>   65.4%  ▁·····▁▁▃▃●█ beats 39/86   very easy · avg 87%     12%  blunt · at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 3/276   medium · avg 72%        11%  noisy
-<a href="https://arxiv.org/html/2411.12372v1">PIQA (maker)</a>                         74.7%  ▁▁▁▂▂▃●█▅▃▁▁ beats 43/123  easy · avg 86%         9.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.12372v1">PIQA (maker)</a>                         74.7%  ▁▁▁▂▂▃●█▅▃▁▁ beats 43/123  easy · avg 87%         9.4%  blunt · at its level · small run
 </pre>
 
 </details>

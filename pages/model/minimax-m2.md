@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 63.5** ±1.1 · #164 of 740 · from 7 benchmark results across 5 sources
+**score 63.4** ±1.1 · #167 of 743 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅▅●▄▅▂▁    #117 of 316     30%      3
-coding          ▁▁▁▃▆▇█●▆▃▃▁   #144 of 472*     23%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #175 of 404*     13%      1
+agent tasks     ▁▁▃▆█▄●▅▃▃▂▁    #119 of 319     30%      3
+coding          ▁▁▁▃▆▇█●▆▃▃▁   #146 of 474*     22%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #176 of 405*     12%      1
 </pre>
 
-<details><summary>agent tasks · #117 of 316 · 30% of its score</summary>
+<details><summary>agent tasks · #119 of 319 · 30% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -29,29 +29,29 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   53.5%  ▆··▆▄▂▄▂●▆█▄ beats 14/23  very hard · avg 14%      11%  sharp · at its level
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (maker)</a>             87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 39%         11%  sharp · small run
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 6.3%    8.6%  sharp
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 6.4%    8.7%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #144 of 472 · 23% of its score</summary>
+<details><summary>coding · #146 of 474 · 22% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1299.1  ▁▂▄●▇█▅▆█▅▂▁ beats 20/133  avg 990        23%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1299.4  ▁▂▄●▇█▅▇▇▅▂▁ beats 20/134  avg 996        22%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #175 of 404 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #176 of 405 · 12% of its score</summary>
 
 Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.6  ▁▁▁▂▃▂▃▆●▇█▃ beats 185/387  avg 1261       13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.7  ▁▁▁▂▃▂▃▆●▇█▃ beats 185/388  avg 1262       12%  blunt
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5708  ▁▄▃▃▇▄█▃●▁▁▁ beats 26/30  avg 0.420            24%  sharp
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   57.1%  ▂▃▅▂▆▃█▅█●▃▆ beats 27/34  medium · avg 41%     10%  blunt · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5708  ▁▄▃▃▇▄█▃●▁▁▁ beats 26/30  avg 0.421            24%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   57.1%  ▂▃▅▂▆▃█▅█●▃▆ beats 27/34  medium · avg 42%     10%  blunt · at its level
 </pre>
 
 </details>
@@ -72,13 +72,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   35% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   35% ▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   35% ▇▇▇▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1   11% ▇
 <a name="first-party-minimax-scores"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">MiniMax vendor-reported benchmark score…</a>        1   11% ▇
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.5
+weighted average                                   = 63.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt))</sub>

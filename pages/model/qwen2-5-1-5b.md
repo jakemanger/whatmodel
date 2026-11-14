@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 37.9** ±0.9 · #604 of 740 · from 29 benchmark results across 12 sources
+**score 37.9** ±0.9 · #606 of 743 · from 29 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #280 of 316*    1.8%      1
-coding          ▁▁▁▃●▇█▆▆▃▃▁    #368 of 472    9.2%      5
-chat &amp; writing  ▁▁▁●▆▄▆█▇▇▇▃    #385 of 404    6.5%      3
-math            ▁▁▃●█▆▄█▅▂▁▁    #372 of 440     23%      2
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #281 of 319*    1.8%      1
+coding          ▁▁▁▃●▇█▆▆▃▃▁    #370 of 474    9.3%      5
+chat &amp; writing  ▁▁▁●▅▄▆█▇▇▇▃    #386 of 405    6.4%      3
+math            ▁▁▃●█▆▅█▄▁▁▁    #372 of 440     23%      2
 </pre>
 
-<details><summary>agent tasks · #280 of 316 · 1.8% of its score</summary>
+<details><summary>agent tasks · #281 of 319 · 1.8% of its score</summary>
 
-Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall.
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
@@ -33,22 +33,22 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #368 of 472 · 9.2% of its score</summary>
+<details><summary>coding · #370 of 474 · 9.3% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                            30.5%  ▁▁▁▁▂▂●▆█▅▂▁ beats 49/205  easy · avg 76%      5.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                            30.5%  ▁▁▁▁▂▂●▆█▅▂▁ beats 49/205  easy · avg 76%      5.4%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   37.8%  ▃··▁▂▂▃●█▃▄▂ beats 20/47   medium · avg 52%    1.4%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.0%  ▁▁▁▁▁▁▂●▃█▅▄ beats 11/47   hard · avg 32%      1.3%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.2%  █●▁▁▂▂▂▃▅▅▅▇ beats 10/47   hard · avg 33%      0.9%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.0%  ▁▁▁▁▁▁▂●▃█▅▄ beats 11/47   hard · avg 32%      1.4%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.2%  █●▁▁▂▂▂▃▅▅▅▇ beats 10/47   hard · avg 34%      0.9%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.2%  ▁▁▁······▁▃● beats 40/47   easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #385 of 404 · 6.5% of its score</summary>
+<details><summary>chat &amp; writing · #386 of 405 · 6.4% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -79,10 +79,10 @@ test                       result  vs the others in its run  difficulty         
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       45.8%  ▁▄·●▁·▅█·▄▄▁ beats 4/22     medium · avg 73%        15%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 59.7%  ▁▂·▁·●▁█·▃▃▅ beats 4/22     easy · avg 76%          13%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     medium · avg 65%       6.8%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     easy · avg 65%         6.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      27.8%  ▁··▁▁●▂▆▅▆█▆ beats 6/70     medium · avg 62%       4.7%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 9/81     medium · avg 57%       3.9%  blunt · at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 32%         3.6%  blunt
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 32%         3.7%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   13.2%  ▁▁·▁▂●▄█▄▅▄▄ beats 9/66     hard · avg 30%         1.9%  typical
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                            60.9%  ▁▁▁▂▂▂▄●█▇▄▂ beats 43/135   easy · avg 82%         1.9%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 117/276  medium · avg 72%       1.8%  at its level · noisy
@@ -91,7 +91,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.6%  ▃·▁▁▂▁▂●█▇▄▁ beats 40/100   medium · avg 67%       1.2%  sharp · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   84.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 12/140   very easy · avg 94%    0.9%  blunt · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                                 73.2%  ▁▁▁▂▂●▅█▅▃▁▁ beats 34/123   easy · avg 84%         0.8%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       46.5%  ▃●▂·▃▃·▅█▂▅▂ beats 3/21     medium · avg 60%       0.3%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       46.5%  ▃●▂·▃▃·▅█▂▅▂ beats 3/21     medium · avg 60%       0.4%  blunt · at its level
 </pre>
 
 </details>

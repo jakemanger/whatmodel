@@ -6,7 +6,7 @@
 
 H2O.ai · released 2024-04 · 1.83B params · apache-2.0
 
-**score 32.4** ±3.1 · #876 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.4** ±3.1 · #878 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   32.8%  ●▂▂▂▃█▃▆▅▄▂▃ beats 2/95    medium · avg 65%     77%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   32.8%  ●▂▂▂▃█▃▆▅▄▂▃ beats 2/95    easy · avg 65%       77%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   47.7%  ▃▁▁▁▁▁▁●▂█▅▁ beats 63/276  medium · avg 72%     18%  noisy
 </pre>
 

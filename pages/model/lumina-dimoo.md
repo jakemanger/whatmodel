@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · 8B params · apache-2.0
 
-**score 32.3** ±4.1 · #130 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.2** ±4.1 · #131 of 147 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁●·▃▂▃█▆▃▅▂▂   #62 of 64*     84%      1
+image to image / edit…  ▁●·▃▂▃█▆▃▆▂▂   #63 of 65*     84%      1
 </pre>
 
-<details><summary>image to image / editing · #62 of 64 · 84% of its score</summary>
+<details><summary>image to image / editing · #63 of 65 · 84% of its score</summary>
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    9% ▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 32.3
+weighted average                                   = 32.2
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

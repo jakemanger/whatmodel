@@ -6,7 +6,7 @@
 
 BAAI · released 2024-10 · 3.88B params · mit
 
-**score 33.8** ±4.3 · #126 of 146 · from 3 benchmark results across 3 sources
+**score 33.8** ±4.3 · #127 of 147 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·●▂▃█▆▃▅▂▂   #61 of 64*     17%      1
+image to image / edit…  ▁▁·●▂▃█▆▃▆▂▂   #62 of 65*     17%      1
 </pre>
 
-<details><summary>image to image / editing · #61 of 64 · 17% of its score</summary>
+<details><summary>image to image / editing · #62 of 65 · 17% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   43.4%  ▃●▃··▃·····█ beats 1/6    easy · avg 65%     17%  at its level · noisy
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   43.4%  ▃●▃··▃·····█ beats 1/6    easy · avg 66%     17%  at its level · noisy
 </pre>
 
 </details>

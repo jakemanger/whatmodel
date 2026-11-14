@@ -6,7 +6,7 @@
 
 Team-ACE (Huawei Noah's Ark & USTC) · released 2024-08 · 8.03B params · apache-2.0
 
-**score 55.1** ±6.0 · #338 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±6.0 · #342 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▅▅▄▄▄▁▁   #258 of 353*     84%      1
+agent tasks  ▁▁▃▆●▄▅▄▃▂▂▁   #257 of 355*     84%      1
 </pre>
 
-<details><summary>agent tasks · #258 of 353 · 84% of its score</summary>
+<details><summary>agent tasks · #257 of 355 · 84% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 55.1
+weighted average                                   = 55.0
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

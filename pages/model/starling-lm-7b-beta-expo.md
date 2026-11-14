@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 45.7** ±1.5 · #618 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.7** ±1.5 · #619 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▃   #343 of 475*     75%      1
+chat &amp; writing  ▁▁▁▄▆●▇█▆▆▆▃   #344 of 476*     75%      1
 </pre>
 
-<details><summary>chat &amp; writing · #343 of 475 · 75% of its score</summary>
+<details><summary>chat &amp; writing · #344 of 476 · 75% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 43.320 WB-Score     24%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 43.352 WB-Score     24%  sharp
 </pre>
 
 </details>

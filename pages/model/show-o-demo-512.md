@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2024-10 · 1.3B params · apache-2.0
 
-**score 36.1** ±3.3 · #120 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.0** ±3.3 · #121 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂▅●▃▄▄█▂▂▁▁▁   #104 of 128*     95%      1
+text to image  ▂▅●▃▄▄█▃▂▁▁▁   #105 of 129*     95%      1
 </pre>
 
-<details><summary>text to image · #104 of 128 · 95% of its score</summary>
+<details><summary>text to image · #105 of 129 · 95% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty      counts  why
-<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>   42.8%  ●▂█▂▂▂····▂▂ beats 2/13   easy · avg 69%     95%  at its level
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>   42.8%  ●▂█▂▂▂····▂▂ beats 2/13   easy · avg 70%     95%  at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 36.1
+weighted average                                   = 36.0
 </pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt))</sub>

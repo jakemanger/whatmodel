@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 7.62B params · apache-2.0
 
-**score 49.4** ±1.9 · #392 of 740 · from 3 benchmark results across 1 source · † no independently run results verified
+**score 49.4** ±1.9 · #394 of 743 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅●▆▄█▅▂▁▁   #301 of 440     98%      3
+math  ▁▁▃▅●▆▅█▄▁▁▁   #300 of 440     98%      3
 </pre>
 
-<details><summary>math · #301 of 440 · 98% of its score</summary>
+<details><summary>math · #300 of 440 · 98% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 

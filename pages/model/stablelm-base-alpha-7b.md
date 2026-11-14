@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
-**score 8.3** ±1.4 · #727 of 740 · from 16 benchmark results across 4 sources
+**score 8.3** ±1.4 · #730 of 743 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆▇█▆▆▃▃▁   #471 of 472     18%      2
+coding  ●▁▁▃▆▇█▆▆▃▃▁   #473 of 474     18%      2
 </pre>
 
-<details><summary>coding · #471 of 472 · 18% of its score</summary>
+<details><summary>coding · #473 of 474 · 18% of its score</summary>
 
 Beats [Zyte-1B](zyte-1b.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Challenge (maker)</a>                27.0%  ▁·●··▁▁▇▂█▆▃ beats 1/26   easy · avg 82%          12%  sharp · too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">HellaSwag (maker)</a>                    41.2%  ●···▁▇▅█▇▃▁▁ beats 1/26   very easy · avg 91%     10%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Easy (maker)</a>                     44.9%  ▁●·▁▁▄▅▄█▅▁▃ beats 1/26   easy · avg 85%         9.0%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">BoolQ (maker)</a>                        60.1%  ▂●▂▅▆▂▅▆█▂▂▂ beats 1/26   easy · avg 88%         8.0%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">BoolQ (maker)</a>                        60.1%  ▂●▂▅▆▂▅▆█▂▂▂ beats 1/26   easy · avg 88%         7.9%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">WinoGrande (maker)</a>                   50.1%  ●····▁··▁▂█▄ beats 0/26   easy · avg 87%         7.2%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">PIQA (maker)</a>                         66.8%  ▁·●··▁▁▃█▅█▂ beats 1/26   easy · avg 87%         6.8%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">LAMBADA (OpenAI version), last-wo…</a>   55.1%  ▁··▂●▁▁▂▆█▅▃ beats 3/26   very easy · avg 86%    5.4%  blunt · at its level

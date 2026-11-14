@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · 1.33B params · openrail++
 
-**score 32.3** ±3.6 · #129 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.2** ±3.6 · #130 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▂▂▁▁▁   #116 of 128*     94%      1
+text to image  ▂●▅▃▄▄█▃▂▁▁▁   #117 of 129*     94%      1
 </pre>
 
-<details><summary>text to image · #116 of 128 · 94% of its score</summary>
+<details><summary>text to image · #117 of 129 · 94% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 32.3
+weighted average                                   = 32.2
 </pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>

@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 2.53B params · apache-2.0
 
-**score 38.5** ±0.9 · #591 of 740 · from 18 benchmark results across 5 sources
+**score 38.5** ±0.9 · #594 of 743 · from 18 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #334 of 404     18%      3
-math            ▁▁▃●█▆▄█▅▂▁▁   #367 of 440     35%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #335 of 405     17%      3
+math            ▁▁▃●█▆▅█▄▁▁▁   #367 of 440     35%      3
 </pre>
 
-<details><summary>chat &amp; writing · #334 of 404 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #335 of 405 · 17% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1179.0  ▁▁▁▂●▂▃▆▆▇█▃ beats 55/387  avg 1261            8.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1179.0  ▁▁▁▂●▂▃▆▆▇█▃ beats 55/388  avg 1262            8.3%  blunt
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   63.6%  ▄●·▄······▄█ beats 1/5     easy · avg 78%      6.0%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   23.3%  ●·▄··▄·····█ beats 0/5     medium · avg 55%    3.1%  at its level
 </pre>
@@ -53,9 +53,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (maker)</a>                         57.1%  ▄●········▄█ beats 1/5     easy · avg 77%          11%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (maker)</a>               61.8%  ●·▄·····▄▄·▄ beats 1/5     easy · avg 82%          10%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (maker)</a>                54.6%  ▄▁▁▂▁▄█●▃▂▃▂ beats 97/140  easy · avg 77%         7.9%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   38.9%  ▁●▂▂▃█▃▆▅▄▂▃ beats 7/95    medium · avg 65%       7.1%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   38.9%  ▁●▂▂▃█▃▆▅▄▂▃ beats 7/95    easy · avg 65%         7.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (maker)</a>                   67.5%  ▁▁▁▁▂▁▁▅●█▃▁ beats 75/131  medium · avg 80%       3.9%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (maker)</a>                    75.1%  ▁▁▁▂▂▂▄▆█●▄▂ beats 91/135  easy · avg 87%         2.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (maker)</a>                    75.1%  ▁▁▁▂▂▂▄▆█●▄▂ beats 91/135  easy · avg 87%         3.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (maker)</a>                        20.5%  ▄·●······▄·█ beats 1/5     hard · avg 33%         2.9%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   84.3%  ▁▁●▃▄▄█▆▃▂▂▁ beats 13/140  very easy · avg 94%    0.9%  blunt · noisy
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (maker)</a>                         21.0%  ●▃·····▃···█ beats 0/5     medium · avg 54%       0.4%  blunt · at its level
@@ -70,8 +70,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card2-ibm-granite-granite-3-3-8b-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">ibm-granite/granite-3.3-8b-instruct mod…</a>        9   52% ▇▇▇▇▇▇
-<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ibm-granite/granite-3.1-3b-a800m-instru…</a>        6   31% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
+<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ibm-granite/granite-3.1-3b-a800m-instru…</a>        6   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇

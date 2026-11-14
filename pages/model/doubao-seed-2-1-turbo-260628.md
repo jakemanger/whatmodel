@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-06 · proprietary
 
-**score 70.4** ±1.8 · #77 of 740 · from 4 benchmark results across 1 source
+**score 70.3** ±1.8 · #80 of 743 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█▆▄█●▂▁▁   #57 of 440*    9.2%      1
+math  ▁▁▃▅█▆▅█●▁▁▁   #57 of 440*    9.5%      1
 </pre>
 
-<details><summary>math · #57 of 440 · 9.2% of its score</summary>
+<details><summary>math · #57 of 440 · 9.5% of its score</summary>
 
-Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
+Beats [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   96.1%  ▃▃▄▃▃▃▇▆█●▃▆ beats 170/207  very hard · avg 7.3%    9.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   96.1%  ▃▃▄▃▃▃▇▆█●▃▆ beats 170/207  very hard · avg 7.4%    9.5%  sharp · noisy
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                   result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   26.0%  █▁▁▁▁▂▄●▃▃▂▁ beats 99/157   very hard · avg 5.6%     42%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   26.0%  █▁▁▁▁▂▄●▃▃▂▁ beats 99/157   very hard · avg 5.6%     41%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            89.6%  ▁▁▁▁▂▃▅▄▄▆●▃ beats 174/221  hard · avg 39%           33%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       29.7%  ▁▂▂▂●█▄▃▂··▁ beats 20/91    very hard · avg 7.2%     14%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       29.7%  ▁▂▂▂●█▄▃▂··▁ beats 20/91    very hard · avg 7.4%     15%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                             4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 70.4
+weighted average                        = 70.3
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

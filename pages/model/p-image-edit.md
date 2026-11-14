@@ -6,7 +6,7 @@
 
 Pruna · released 2025-12 · proprietary
 
-**score 55.2** ±3.9 · #64 of 146 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±3.9 · #66 of 147 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #43 of 64*     93%      1
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #44 of 65*     93%      1
 </pre>
 
-<details><summary>image to image / editing · #43 of 64 · 93% of its score</summary>
+<details><summary>image to image / editing · #44 of 65 · 93% of its score</summary>
 
-Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image-Edit](qwen-image-edit.md) here, though they rank lower overall.
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [Qwen-Image-Edit](qwen-image-edit.md), [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1209.8  ▂▁▁▃●█▆▆▇▄▃▃ beats 13/55  avg 1158       93%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1209.7  ▂▁▁▃●█▅▇█▄▃▃ beats 13/56  avg 1160       93%  typical
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             7% ▇
-weighted average                        = 55.2
+weighted average                        = 55.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

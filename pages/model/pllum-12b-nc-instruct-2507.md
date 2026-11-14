@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-07 · 12.25B params · other (pllum-1.0)
 
-**score 50.9** ±3.5 · #453 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.9** ±3.5 · #454 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,8 +21,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.5%  ▁▂▂▂▃█●▆▅▄▂▃ beats 47/95  medium · avg 65%     95%  at its level
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.5%  ▁▂▂▂▃█●▆▅▄▂▃ beats 47/95  easy · avg 65%     95%  at its level
 </pre>
 
 </details>

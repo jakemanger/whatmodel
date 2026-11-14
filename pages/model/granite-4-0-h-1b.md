@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 41.8** ±0.8 · #542 of 740 · from 29 benchmark results across 2 sources
+**score 41.8** ±0.8 · #545 of 743 · from 29 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▅▅▅▄▅▂▁   #261 of 316*    1.8%      1
+agent tasks     ▁▁▃●█▄▅▅▃▃▂▁   #264 of 319*    1.8%      1
 coding          █··········●        #1 of 4     25%      7
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃    #247 of 404    6.3%      3
-math            ▁▁▃▅●▆▄█▅▂▁▁    #342 of 440     30%      7
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃    #248 of 405    6.3%      3
+math            ▁▁▃●█▆▅█▄▁▁▁    #344 of 440     30%      7
 </pre>
 
-<details><summary>agent tasks · #261 of 316 · 1.8% of its score</summary>
+<details><summary>agent tasks · #264 of 319 · 1.8% of its score</summary>
 
-Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall.
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall.
 
 <pre>
 test     result  vs the others in its run  difficulty        counts  why
@@ -50,7 +50,7 @@ test                  result  vs the others in its run    difficulty           c
 
 </details>
 
-<details><summary>chat &amp; writing · #247 of 404 · 6.3% of its score</summary>
+<details><summary>chat &amp; writing · #248 of 405 · 6.3% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -63,9 +63,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #342 of 440 · 30% of its score</summary>
+<details><summary>math · #344 of 440 · 30% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -75,7 +75,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (maker)</a>                 65.7%  ▃▃····●·▅▅█▃ beats 2/10   easy · avg 78%         2.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   27.5%  █·●▄██···█·▄ beats 2/10   medium · avg 46%       2.1%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                             1.0%  ▄●··▄···▄··█ beats 1/6    hard · avg 31%         1.8%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                             47.2%  ▄··█●·▄···▄▄ beats 3/6    easy · avg 77%         1.6%  at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                             47.2%  ▄··█●·▄···▄▄ beats 3/6    easy · avg 78%         1.6%  at its level · noisy
 </pre>
 
 </details>

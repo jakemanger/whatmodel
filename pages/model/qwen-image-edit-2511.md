@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-12 · 20.43B params · Apache 2.0
 
-**score 57.1** ±1.7 · #59 of 146 · from 8 benchmark results across 8 sources
+**score 56.9** ±1.7 · #61 of 147 · from 8 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▃●▆▃▅▂▂   #34 of 64     68%      4
+image to image / edit…  ▁▁·▃▂▃●▆▃▆▂▂   #35 of 65     68%      4
 </pre>
 
-<details><summary>image to image / editing · #34 of 64 · 68% of its score</summary>
+<details><summary>image to image / editing · #35 of 65 · 68% of its score</summary>
 
 Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           53.8%  ▃▃▂·▃▆▂●·▃·▃ beats 16/20  hard · avg 45%       37%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1233.1  ▂▁▁▃▆●▆▆▇▄▃▃ beats 18/55  avg 1158             18%  typical
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1038.0  ▃▂····▂█▂●▂▃ beats 10/14  avg 960             7.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1233.1  ▂▁▁▃▆●▅▇█▄▃▃ beats 18/56  avg 1160             18%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1038.0  ▃▂····▂█▂●▂▃ beats 10/14  avg 961             7.3%  blunt
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   64.3%  ▄·▄▄▄▄··●▄·▄ beats 6/8    medium · avg 51%    5.3%  at its level
 </pre>
 
@@ -38,8 +38,8 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    60.3%  ▂··▂█▂●▂▂·▂▂ beats 7/12   medium · avg 42%         16%  at its level
-<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    0.4%  ●··▄█····▄▄▄ beats 0/6    very hard · avg 1.5%    8.1%  sharp · too hard for it
-<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    6.7%  ▃·····█▅●·▃▅ beats 6/9    very hard · avg 4.4%    4.0%  too hard for it
+<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    0.4%  ●··▄█····▄▄▄ beats 0/6    very hard · avg 1.6%    8.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    6.7%  ▃·····█▅●·▃▅ beats 6/9    very hard · avg 4.5%    4.0%  too hard for it
 <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   25.8%  ▂···▂·▂●▆▅·▂ beats 5/15   hard · avg 31%          2.9%  at its level
 </pre>
 
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   37% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   16% ▇▇
 <a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1    8% ▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    7% ▇
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    4% ▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.1
+weighted average                                   = 56.9
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Upstage · released 2026-08 · closed weights
 
-**score 62.6** ±1.3 · #180 of 740 · from 3 benchmark results across 1 source
+**score 62.8** ±1.3 · #178 of 743 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,40 +16,40 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▅●▅▄▅▂▁   #146 of 316*     52%      1
-coding          ▁▁▁▃▆▇█▆●▃▃▁   #114 of 472*     30%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█▇●▇▃   #130 of 404*     17%      1
+agent tasks     ▁▁▃▆█●▅▅▃▃▂▁   #154 of 319*     51%      1
+coding          ▁▁▁▃▆▇█▆●▃▃▁   #116 of 474*     31%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #131 of 405*     17%      1
 </pre>
 
-<details><summary>agent tasks · #146 of 316 · 52% of its score</summary>
+<details><summary>agent tasks · #154 of 319 · 51% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.2284 IPS  ●▁▁▁▄▄█▄▂▁▁▁ beats 0/61   avg -0.395 IPS     52%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.2260 IPS  ●▁▁▃▃█▂▁▁▁·▁ beats 0/63   avg -0.403 IPS     51%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #114 of 472 · 30% of its score</summary>
+<details><summary>coding · #116 of 474 · 31% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1369.1  ▁▂▄▃●█▅▆█▅▂▁ beats 35/133  avg 990        30%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1369.3  ▁▂▄▃●█▅▇▇▅▂▁ beats 35/134  avg 996        31%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #130 of 404 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #131 of 405 · 17% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.5  ▁▁▁▂▃▂▃▆▆●█▃ beats 229/387  avg 1261       17%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.5  ▁▁▁▂▃▂▃▆▆●█▃ beats 230/388  avg 1262       17%  blunt
 </pre>
 
 </details>
@@ -60,9 +60,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 62.6
+weighted average                        = 62.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

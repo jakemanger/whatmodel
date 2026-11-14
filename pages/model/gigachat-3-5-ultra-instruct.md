@@ -6,7 +6,7 @@
 
 Sber · released 2026-07 · 433.77B params (28B active) · mit
 
-**score 54.5** ±1.2 · #298 of 740 · from 10 benchmark results across 1 source · † no independently run results verified
+**score 54.4** ±1.2 · #301 of 743 · from 10 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▄▅▂▁    #182 of 316     21%      3
-coding       ▁▁▁▃▆▇●▆▆▃▃▁   #255 of 472*     23%      2
-math         ▁▁▃▅█●▄█▅▂▁▁    #227 of 440     46%      4
+agent tasks  ▁▁▃▆●▄▅▅▃▃▂▁    #187 of 319     21%      3
+coding       ▁▁▁▃▆▇●▆▆▃▃▁   #258 of 474*     23%      2
+math         ▁▁▃▅█●▅█▄▁▁▁    #229 of 440     46%      4
 </pre>
 
-<details><summary>agent tasks · #182 of 316 · 21% of its score</summary>
+<details><summary>agent tasks · #187 of 319 · 21% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                        result  vs the others in its run   difficulty       
 
 </details>
 
-<details><summary>coding · #255 of 472 · 23% of its score</summary>
+<details><summary>coding · #258 of 474 · 23% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #227 of 440 · 46% of its score</summary>
+<details><summary>math · #229 of 440 · 46% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a><a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">ai-sage/GigaChat3.5-432B-A28B-Reasoning…</a>       10   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.5
+weighted average                                   = 54.4
 </pre>
 
 <sub>Licences: ai-sage/GigaChat3.5-432B-A28B-Reasoning model card ([MIT](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md))</sub>

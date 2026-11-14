@@ -6,7 +6,7 @@
 
 ByteDance · released 2024-02 · 2.57B params · openrail++
 
-**score 37.1** ±3.1 · #116 of 146 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.0** ±3.1 · #117 of 147 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▂▂▁▁▁   #94 of 128*     74%      1
+text to image  ▂▅●▃▄▄█▃▂▁▁▁   #95 of 129*     74%      1
 </pre>
 
-<details><summary>text to image · #94 of 128 · 74% of its score</summary>
+<details><summary>text to image · #95 of 129 · 74% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1053.0  ▃▃··▃·▃·●·▃▃ beats 5/8    avg 1235       74%  sharp
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1053.0  ▃▃··▃·▃·●·▃▃ beats 5/8    avg 1237       74%  sharp
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  22.3000 FID  █··●█······█ beats 1/3    avg 11.831 FID     22%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  22.3000 FID  █··●█······█ beats 1/3    avg 11.784 FID     22%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   74% ▇▇▇▇▇▇▇▇▇
 <a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   22% ▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 37.1
+weighted average                                   = 37.0
 </pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

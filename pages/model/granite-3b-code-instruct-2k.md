@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 39.5** ±1.4 · #580 of 740 · from 6 benchmark results across 3 sources
+**score 39.5** ±1.4 · #583 of 743 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁   #384 of 472     71%      3
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #386 of 474     71%      3
 </pre>
 
-<details><summary>coding · #384 of 472 · 71% of its score</summary>
+<details><summary>coding · #386 of 474 · 71% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 

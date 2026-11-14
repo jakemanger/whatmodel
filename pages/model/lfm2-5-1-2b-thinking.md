@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 49.4** ±1.7 · #389 of 740 · from 10 benchmark results across 2 sources
+**score 49.3** ±1.7 · #395 of 743 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▅▅▅▄▅▂▁   #231 of 316*    3.1%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #146 of 404*    8.3%      1
-math            ▁▁▃▅█●▄█▅▂▁▁    #225 of 440     38%      3
+agent tasks     ▁▁▃▆●▄▅▅▃▃▂▁   #233 of 319*    3.1%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #147 of 405*    8.4%      1
+math            ▁▁▃▅█●▅█▄▁▁▁    #225 of 440     38%      3
 </pre>
 
-<details><summary>agent tasks · #231 of 316 · 3.1% of its score</summary>
+<details><summary>agent tasks · #233 of 319 · 3.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #146 of 404 · 8.3% of its score</summary>
+<details><summary>chat &amp; writing · #147 of 405 · 8.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (mak…</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 86%    8.3%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (mak…</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 86%    8.4%  typical
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 test               result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (maker)</a>       85.6%  █····▄▄▄···● beats 6/6    very easy · avg 87%     20%  sharp
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (maker)</a>   31.7%  ▄█··▄···▄··● beats 5/6    hard · avg 31%          13%  sharp · at its level · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (maker)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 77%         5.5%  noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (maker)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 78%         5.5%  noisy
 </pre>
 
 </details>
@@ -76,9 +76,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card-liquidai-lfm2-5-1-2b-thinking"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">LiquidAI/LFM2.5-1.2B-Thinking model car…</a>        8   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    9% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   10% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.4
+weighted average                                   = 49.3
 </pre>
 
 <sub>Licences: LiquidAI/LFM2.5-1.2B-Thinking model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

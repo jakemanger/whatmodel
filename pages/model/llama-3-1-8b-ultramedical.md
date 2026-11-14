@@ -6,7 +6,7 @@
 
 Tsinghua C3I · released 2024-09 · 8.03B params · llama3
 
-**score 38.1** ±4.4 · #802 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.1** ±4.4 · #804 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-12 · cc-by-nc-nd-4.0
 
-**score 43.1** ±0.8 · #696 of 972 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.1** ±0.8 · #698 of 974 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▆▆▃▃▁   #372 of 486*    100%      2
+coding  ▁▁▁▃●▇█▆▆▃▃▁   #373 of 487*    100%      2
 </pre>
 
-<details><summary>coding · #372 of 486 · 100% of its score</summary>
+<details><summary>coding · #373 of 487 · 100% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

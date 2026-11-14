@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 35.0** ±0.9 · #635 of 740 · from 14 benchmark results across 5 sources
+**score 35.0** ±0.9 · #638 of 743 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁    #431 of 472     91%      8
-math    ▁▁▃●█▆▄█▅▂▁▁   #379 of 440*    7.0%      1
+coding  ▁▁▁●▆▇█▆▆▃▃▁    #433 of 474     91%      8
+math    ▁▁▃●█▆▅█▄▁▁▁   #379 of 440*    7.0%      1
 </pre>
 
-<details><summary>coding · #431 of 472 · 91% of its score</summary>
+<details><summary>coding · #433 of 474 · 91% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-10 · 2800B params (104B active) · kimi-k3.1-pro-license
 
-**score 77.5** ±0.7 · #20 of 740 · from 12 benchmark results across 3 sources
+**score 78.1** ±0.6 · #19 of 743 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▅▅▅▄▅●▁      #18 of 316*     14%      6
-coding              ▁▁▁▃▆▇█▆▆▃●▁      #10 of 472*    8.1%      2
-chat &amp; writing      ▁▁▁▃▆▄▆█▇▇▇●      #21 of 404*    4.5%      1
-math                ▁▁▃▅█▆▄█▅●▁▁       #19 of 440     37%      3
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●       #2 of 154*    2.1%      2
+agent tasks         ▁▁▃▆█▄▅▅▃▃▂●        #5 of 319     21%      7
+coding              ▁▁▁▃▆▇█▆▆▃●▁      #11 of 474*    7.6%      2
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●      #19 of 405*    4.2%      1
+math                ▁▁▃▅█▆▅█▄●▁▁       #19 of 440     32%      3
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇█●       #2 of 154*    1.9%      2
 web search                         not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #18 of 316 · 14% of its score</summary>
+<details><summary>agent tasks · #5 of 319 · 21% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall.
+Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0524 IPS  ▁▁▁▁▄▄█●▂▁▁▁ beats 48/61  avg -0.395 IPS           14%  sharp
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>       70.0%  ▁·▁▂▁▂▃▂█▅▄● beats 63/64  hard · avg 15%             —  not counted yet: no other model in the …
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Terminal-Bench 4.0 (maker)</a>               65.7%  ▁·▁··▁▅▅▅█▇● beats 33/36  very hard · avg 0.6%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0490 IPS  ▁▁▁▃▃█●▁▁▁·▁ beats 48/63  avg -0.403 IPS           13%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-10-30-moonshotai-kimi-k3-1-pro-max-claude-code.json">Terminal-Bench 4.0</a>                       60.9%  ▁····▁▄▇▅▇█● beats 28/30  very hard · avg 0.7%    5.3%  sharp · at its level
+<a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-11-12-4-1-0-kimi-k3-1-pro-max-claude-code-regrade.json">Terminal-Bench 4.1</a>                       59.7%  ▂▂▂··▅·▂▅█▃● beats 19/20  very hard · avg 1.0%    3.2%  sharp · at its level · noisy
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>       70.0%  ▁·▁▂▁▂▃▂█▅▄● beats 63/64  hard · avg 16%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">DeepSWE v1.1 (resolved) (maker)</a>          75.5%  ▂····▃▁▁▄█▆● beats 34/36                             —  not counted yet: no other model in the …
 <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Agents' Last Exam (metric/harness…</a>       43.2%  ▂·▂·█▄▂▂●▂▄▄ beats 10/15                             —  not counted yet: no other model in the …
 <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Chartography with tools (maker)</a>          90.2%  ▂·······▂▆▆● beats 9/11                              —  not counted yet: no other model in the …
@@ -40,49 +41,49 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #10 of 472 · 8.1% of its score</summary>
+<details><summary>coding · #11 of 474 · 7.6% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [Gemini 4 Argon](gemini-4-argon.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>        1687.7  ▁▂▄▃▇█▅▆█●▂▁ beats 124/133  avg 990       8.1%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>        1687.2  ▁▂▄▃▇█▅▇▇●▂▁ beats 124/134  avg 996       7.6%  sharp
 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">DeepSWE v1.1 (resolved) (maker)</a>   75.5%  ▂····▃▁▁▄█▆● beats 34/36                     —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #21 of 404 · 4.5% of its score</summary>
+<details><summary>chat &amp; writing · #19 of 405 · 4.2% of its score</summary>
 
-Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
+Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1483.0  ▁▁▁▂▃▂▃▆▆▇█● beats 367/387  avg 1261      4.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1484.7  ▁▁▁▂▃▂▃▆▆▇█● beats 368/388  avg 1262      4.2%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #19 of 440 · 37% of its score</summary>
+<details><summary>math · #19 of 440 · 32% of its score</summary>
 
-Beats [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall. Trails [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank lower overall.
+Beats [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall. Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      65.9%  ▁▂▁▁█▅●▃▁▁▁▁ beats 55/72    very hard · avg 0.1%     22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.2%  ▁··▁▁▂▅▃█●▄▂ beats 69/91    very hard · avg 1.3%     15%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 195/207  very hard · avg 7.3%    0.3%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      65.9%  ▁▂▁▁█▅●▃▁▁▁▁ beats 55/72    very hard · avg 0.1%     20%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.2%  ▁··▁▁▂▅▃█●▄▂ beats 69/91    very hard · avg 1.4%     12%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▆█▄▃● beats 195/207  very hard · avg 7.4%    0.2%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #2 of 154 · 2.1% of its score</summary>
+<details><summary>vision &amp; documents · #2 of 154 · 1.9% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">CharXiv (reasoning questions) (ma…</a>   89.0%  ▂▄▃▄▅▅▅▅▅█▆● beats 104/105  medium · avg 39%    2.1%  typical
+<a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">CharXiv (reasoning questions) (ma…</a>   89.0%  ▂▄▃▄▅▅▅▅▅█▆● beats 104/105  medium · avg 39%    1.9%  typical
 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">MMMU Pro (maker)</a>                     84.1%  ▁▂▁▂▅▃▃▆▂█▄● beats 55/55                           —  not counted yet: no other model in the …
 </pre>
 
@@ -92,7 +93,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>   70.0%  ▁·▁▂▁▂▃▂█▅▄● beats 63/64  hard · avg 15%       —  not counted yet: no other model in the …
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>   70.0%  ▁·▁▂▁▂▃▂█▅▄● beats 63/64  hard · avg 16%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -102,11 +103,11 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           55.8%  █▇██▁●▁▃▃▄▁▁ beats 26/38    very hard · avg 1.0%     11%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         42.0%  █·▂▁▆▆▆●▅▂▂▁ beats 64/83    very hard · avg 9.4%     11%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                45.0%  █▁▁▁▁▂▄▂▃●▂▁ beats 129/157  very hard · avg 5.6%    8.8%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    62.2%  ▁▂▂▂▅█▄●▂··▁ beats 75/91    very hard · avg 7.2%    2.1%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.2%  ▁▁▁▁▂▃▅▄▄▆█● beats 210/221  hard · avg 39%          2.0%  sharp · maxed out
-<a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">Humanity's Last Exam (maker)</a>         51.1%  ▁▁▁▄▆▇▅█▆●▂▁ beats 108/115  very hard · avg 3.8%       —  not counted yet: no other model in the …
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         42.0%  █·▂▁▆▆▆●▅▂▂▁ beats 64/83    very hard · avg 9.4%     10%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                45.0%  █▁▁▁▁▂▄▂▃●▂▁ beats 129/157  very hard · avg 5.6%    7.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    62.2%  ▁▂▂▂▅█▄●▂··▁ beats 75/91    very hard · avg 7.4%    1.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.2%  ▁▁▁▁▂▃▅▄▄▆█● beats 210/221  hard · avg 39%          1.7%  sharp · maxed out
+<a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">Humanity's Last Exam (maker)</a>         51.1%  ▁▁▁▄▆▇▅█▆●▂▁ beats 108/115  very hard · avg 3.9%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">BabyVision with tools (maker)</a>        95.4%  ▄·····▄··▄█● beats 5/5      hard · avg 31%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">ProgramBench (Almost@1) (maker)</a>      31.5%  ██·█·●···█·█ beats 3/5                                 —  not counted yet: no other model in the …
 <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">ZeroBench main with tools (pass@5…</a>   63.0%  ▄········█·● beats 3/3                                 —  not counted yet: no other model in the …
@@ -120,20 +121,21 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        8   71% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   26% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        8   65% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   25% ▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/e49d6d19222b8e7bc2b1da99bf92fe73ab520789/leaderboard/submissions/2026-10-30-moonshotai-kimi-k3-1-pro-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        2    9% ▇
 <a name="first-party-moonshot-scores"></a><a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/d9e99b0792a5e93b78ea9bea62a68167e36ddd9e/README.md">Moonshot AI vendor-reported benchmark s…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 77.5
+weighted average                                   = 78.1
 </pre>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt))</sub>
 
 <details><summary>Not counted (11)</summary>
 
 <pre>
 source                  test                            score  why
-Moonshot AI vendor-re…  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Terminal-Bench 4.0</a>              65.7%  too few models have it yet
+Moonshot AI vendor-re…  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Terminal-Bench 4.0</a>              65.7%  only model in this source's run
 Moonshot AI vendor-re…  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with too…</a>  70.0%  too few models have it yet
 Moonshot AI vendor-re…  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Chartography with tools</a>         90.2%  too few models have it yet
 Moonshot AI vendor-re…  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">ZeroBench main with tools (pa…</a>  63.0%  too few models have it yet

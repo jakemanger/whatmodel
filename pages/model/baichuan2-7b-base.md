@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-08 · other
 
-**score 30.4** ±1.0 · #667 of 740 · from 11 benchmark results across 2 sources
+**score 30.4** ±1.0 · #670 of 743 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

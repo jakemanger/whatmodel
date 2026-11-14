@@ -6,7 +6,7 @@
 
 Mistral · released 2024-05 · 7.25B params · apache-2.0
 
-**score 40.9** ±1.0 · #554 of 740 · from 15 benchmark results across 10 sources
+**score 40.8** ±1.0 · #559 of 743 · from 15 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ●··········█       #2 of 2*    7.7%      2
-chat &amp; writing  ▁▁▁▃▆●▆█▇▇▇▃   #319 of 404*     28%      2
-math            ▁▁●▅█▆▄█▅▂▁▁    #420 of 440    7.7%      3
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #320 of 405*     28%      2
+math            ▁▁●▅█▆▅█▄▁▁▁    #420 of 440    7.7%      3
 </pre>
 
 <details><summary>coding · #2 of 2 · 7.7% of its score</summary>
@@ -31,7 +31,7 @@ test               result  vs the others in its run   difficulty      counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #319 of 404 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #320 of 405 · 28% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher 
 test                               result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         3.6%  ●▂▅▆▄█▆▃▅▂▃▄ beats 1/92   hard · avg 29%          4.7%  sharp · too hard for it
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (maker)</a>   13.2%  ●▄▄▃█▇▅▆▄▃▄▁ beats 2/80   medium · avg 64%        2.7%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             0.3%  ●▃▄▃▃▃▇▆█▄▃▆ beats 0/207  very hard · avg 7.3%    0.3%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             0.3%  ●▃▄▃▃▃▇▆█▄▃▆ beats 0/207  very hard · avg 7.4%    0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ test                               result  vs the others in its run  difficulty 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 21.3%  ▁▁▁▂▂●▂█▆▃▅▃ beats 16/61    medium · avg 39%         30%  typical
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   55.3%  ▁▂▂▂●█▃▆▅▄▂▃ beats 22/95    medium · avg 65%        8.5%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   55.3%  ▁▂▂▂●█▃▆▅▄▂▃ beats 22/95    easy · avg 65%          8.6%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      45.2%  ▁··▁▁▂▂●▅▆█▆ beats 15/70    medium · avg 62%        6.3%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   41.0%  ▂▄●▃█▄▃▆▃▅▂▂ beats 14/81    medium · avg 57%        4.9%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>    5.1%  ▁▁·▁●▂▄█▄▅▄▄ beats 3/66     hard · avg 30%          3.0%  typical
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.9
+weighted average                                   = 40.8
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

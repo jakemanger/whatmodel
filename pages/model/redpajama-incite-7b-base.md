@@ -6,7 +6,7 @@
 
 Together · released 2023-06 · 6.9B params · apache-2.0
 
-**score 27.6** ±0.9 · #687 of 740 · from 21 benchmark results across 4 sources
+**score 27.6** ±0.9 · #690 of 743 · from 21 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

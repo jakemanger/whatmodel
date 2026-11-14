@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-03 · 7.24B params · cc-by-nc-4.0
 
-**score 42.7** ±2.5 · #708 of 972 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † no independently run results verified
+**score 42.7** ±2.5 · #710 of 974 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   57.7%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 25/95  medium · avg 65%     55%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   57.7%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 25/95  easy · avg 65%       55%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   34.3%  ▁··▁▁▂●▆▅▆█▆ beats 8/70   medium · avg 62%     42%  at its level
 </pre>
 

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 49.6** ±1.5 · #382 of 740 · from 5 benchmark results across 1 source · † no independently run results verified
+**score 49.5** ±1.5 · #388 of 743 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●█·········█      #3 of 3*    9.0%      1
-math    ▁▁▃▅●▆▄█▅▂▁▁   #269 of 440     61%      3
+coding  ●█·········█      #3 of 3*    8.9%      1
+math    ▁▁▃▅●▆▅█▄▁▁▁   #269 of 440     61%      3
 </pre>
 
-<details><summary>coding · #3 of 3 · 9.0% of its score</summary>
+<details><summary>coding · #3 of 3 · 8.9% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▁●▇▃▄▁ beats 14/38  medium · avg 45%    9.0%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▁●▇▃▄▁ beats 14/38  medium · avg 46%    8.9%  at its level · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.6
+weighted average                                   = 49.5
 </pre>
 
 ## How to run it

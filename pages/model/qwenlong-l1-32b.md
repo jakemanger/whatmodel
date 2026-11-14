@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi Zhiwen) · released 2025-05 · 32.76B params · apache-2.0
 
-**score 56.9** ±3.8 · #296 of 972 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.9** ±3.8 · #296 of 974 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

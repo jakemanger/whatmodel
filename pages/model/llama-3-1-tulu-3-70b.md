@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 54.6** ±1.4 · #293 of 740 · from 10 benchmark results across 2 sources
+**score 54.6** ±1.4 · #295 of 743 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▇▇▇▃    #248 of 404     36%      3
-math            ▁▁▃▅●▆▄█▅▂▁▁   #278 of 440*     26%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃    #249 of 405     36%      3
+math            ▁▁▃▅●▆▅█▄▁▁▁   #279 of 440*     26%      2
 </pre>
 
-<details><summary>chat &amp; writing · #248 of 404 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #249 of 405 · 36% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.1  ▁▁▁▂▃▂●▆▆▇█▃ beats 114/387  avg 1261             21%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.2  ▁▁▁▂▃▂●▆▆▇█▃ beats 114/388  avg 1262             21%  blunt
 <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (m…</a>   49.8%  ▁▁▃▄▆██●▃▃▁▁ beats 128/155  medium · avg 44%     10%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (maker)</a>    83.2%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 18/25    easy · avg 78%      5.2%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #278 of 440 · 26% of its score</summary>
+<details><summary>math · #279 of 440 · 26% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -49,10 +49,10 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test                    result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (maker)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 75%       16%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (maker)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 75%       17%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MMLU (maker)</a>             83.1%  ▁▁▁▁▁▂▂▅██●▄ beats 178/215  easy · avg 77%       13%  small run
 <a href="https://arxiv.org/html/2411.15124v5">PopQA (maker)</a>            46.5%  ▁▂▁▃▃█▂█▆▅▁● beats 38/40    hard · avg 35%      5.2%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">DROP (maker)</a>             74.3%  ▃▅█▅·▃·▆●▂▁▃ beats 38/44    medium · avg 62%    1.9%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP (maker)</a>             74.3%  ▃▅█▅·▃·▆●▂▁▃ beats 38/44    medium · avg 62%    2.0%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (maker)</a>   67.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 69/79    medium · avg 60%    0.6%  blunt · at its level · small run
 </pre>
 
@@ -65,7 +65,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   78% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4217986c2fa1163d072e7a3dda637bb56cce8d79/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4ca698d9bb5780db156459679d5c7e6dff4edbd3/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 54.6
 </pre>

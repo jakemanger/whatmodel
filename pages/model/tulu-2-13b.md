@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 40.1** ±1.6 · #572 of 740 · from 6 benchmark results across 2 sources
+**score 40.1** ±1.6 · #574 of 743 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁   #440 of 472*     17%      1
-math    ▁▁▃▅●▆▄█▅▂▁▁   #293 of 440*     20%      1
+coding  ▁▁▁●▆▇█▆▆▃▃▁   #442 of 474*     17%      1
+math    ▁▁▃▅●▆▅█▄▁▁▁   #293 of 440*     20%      1
 </pre>
 
-<details><summary>coding · #440 of 472 · 17% of its score</summary>
+<details><summary>coding · #442 of 474 · 17% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Gemma 7B IT](gemma-7b.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (maker)</a>               49.5%  ▁·····▂●▂▅·▁ beats 14/25    easy · avg 74%       36%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (maker)</a>                         55.4%  ▁▁▃▃▄█●▁█··▁ beats 16/25    medium · avg 73%     16%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.5%  ▃▁▁▁▁▁▁▁●█▅▁ beats 103/276  medium · avg 72%    6.1%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   53.2%  ▂··▁▃▂▂▂●▅▁▂ beats 17/25    medium · avg 59%    3.9%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   53.2%  ▂··▁▃▂▂▂●▅▁▂ beats 17/25    medium · avg 59%    4.0%  blunt · at its level
 </pre>
 
 </details>

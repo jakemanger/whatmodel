@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 30.8** ±0.6 · #664 of 740 · from 37 benchmark results across 9 sources
+**score 30.8** ±0.6 · #667 of 743 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▆▆▃▃▁    #449 of 472     67%      7
-math    ▁▁▃▅●▆▄█▅▂▁▁   #338 of 440*    3.9%      2
+coding  ▁▁▁●▆▇█▆▆▃▃▁    #451 of 474     67%      7
+math    ▁▁▃▅●▆▅█▄▁▁▁   #340 of 440*    3.9%      2
 </pre>
 
-<details><summary>coding · #449 of 472 · 67% of its score</summary>
+<details><summary>coding · #451 of 474 · 67% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -31,13 +31,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   17.2%  ▁·●▁▂▆▅█▄▄▁▂ beats 1/35   medium · avg 62%    4.6%  typical
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                34.1%  ▁···▁●▂▅▇█▆▂ beats 2/75   easy · avg 66%      4.1%  at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (maker)</a>                         29.2%  ▁▁●▄▅█▆▅▄▁▂▁ beats 7/86   easy · avg 72%      3.2%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 1/35   medium · avg 46%    2.1%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 1/35   medium · avg 46%    2.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    1.9%  ●·▁▁▄██▄█▁▅▅ beats 0/35   medium · avg 52%    1.5%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #338 of 440 · 3.9% of its score</summary>
+<details><summary>math · #340 of 440 · 3.9% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
 
@@ -54,7 +54,7 @@ test           result  vs the others in its run   difficulty        counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    12.8%  ●▂▃▄▄█▁▄▅▃▁▃ beats 0/42    medium · avg 52%       5.6%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-2b/results_2024-04-04%2021%3A13%3A00.669268.json">Natural Questions (closed book)</a>      14.8%  ▁·▁·▁▂▁▂·●▂█ beats 13/28   medium · avg 48%       3.6%  several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-2b/results_2024-04-04%2021%3A13%3A00.669268.json">Natural Questions (closed book)</a>      14.8%  ▁·▁·▁▂▁▂·●▂█ beats 13/28   medium · avg 49%       3.6%  several runs
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (maker)</a>                65.3%  █·····▂▂▃▂●▄ beats 27/38   very easy · avg 94%    2.9%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (maker)</a>               35.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 24/155  easy · avg 79%         2.0%  sharp · small run
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-2b/results_2024-05-18%2022%3A12%3A37.308839.json">MedQA (USMLE, 4 options)</a>             29.2%  ▁▁··▄●▁··▄▃█ beats 5/17    medium · avg 71%       1.9%  sharp
@@ -65,7 +65,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (maker)</a>                   65.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 62/131  easy · avg 84%         1.0%  at its level · small run
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-2b/results_2024-05-18%2022%3A12%3A37.308839.json">MedMCQA</a>                              30.2%  ▂▂··●▄▂▂·▄██ beats 2/17    medium · avg 63%       1.0%  typical
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (m…</a>   24.2%  ●··········█ beats 0/2     medium · avg 62%       0.9%  at its level · small run
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (maker)</a>                    71.4%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 72/135  easy · avg 89%         0.9%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (maker)</a>                    71.4%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 72/135  very easy · avg 89%    0.9%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (maker)</a>                        69.4%  ▁····▁▂█●▅▆▄ beats 50/103  easy · avg 89%         0.8%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   44.1%  ▃▁▁▁▁▁●▁▂█▅▁ beats 54/276  medium · avg 72%       0.6%  noisy
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (maker)</a>                     73.2%  ▁▃▂▄▆█●▃▁··▁ beats 74/100  easy · avg 87%         0.5%  blunt · at its level · small run

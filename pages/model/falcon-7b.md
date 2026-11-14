@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 30.6** ±0.7 · #666 of 740 · from 37 benchmark results across 10 sources
+**score 30.6** ±0.7 · #668 of 743 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">OpenBookQA</a>                           30.6%  █·▁▁▃·▁▃▅●▃▄ beats 17/26   easy · avg 81%         6.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Easy</a>                             70.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 20/26   easy · avg 85%         5.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">PIQA</a>                                 79.5%  ▁·▁··▁▁▃█▅█● beats 25/26   easy · avg 87%         4.0%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-29%2010%3A59%3A00.762080.json">Natural Questions (closed book)</a>      22.1%  ▁·▁·▁▂▁▂·▅●█ beats 17/28   medium · avg 48%       3.8%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-29%2010%3A59%3A00.762080.json">Natural Questions (closed book)</a>      22.1%  ▁·▁·▁▂▁▂·▅●█ beats 17/28   medium · avg 49%       3.8%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">SciQ</a>                                 94.0%  ▁·▁·▁·▃▅▃●▄▁ beats 21/26   very easy · avg 98%    3.7%  blunt · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   55.7%  ▂·▄·▂█▄▄█●▂▆ beats 17/21   easy · avg 74%         3.7%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 13/26   medium · avg 61%       2.3%  blunt · several runs

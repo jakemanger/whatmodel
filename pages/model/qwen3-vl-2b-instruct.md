@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 44.3** ±0.6 · #496 of 740 · from 41 benchmark results across 5 sources
+**score 44.3** ±0.6 · #497 of 743 · from 41 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▅▅▅▄▅▂▁   #251 of 316*    1.9%      1
-coding              ▁▁▁●▆▇█▆▆▃▃▁   #427 of 472*    2.5%      1
-chat &amp; writing      ▁▁▁▃▆▄●█▇▇▇▃   #289 of 404*    4.3%      1
-math                ▁▁▃▅●▆▄█▅▂▁▁   #312 of 440*    8.8%      2
+agent tasks         ▁▁▃●█▄▅▅▃▃▂▁   #254 of 319*    1.9%      1
+coding              ▁▁▁●▆▇█▆▆▃▃▁   #429 of 474*    2.5%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #290 of 405*    4.3%      1
+math                ▁▁▃▅●▆▅█▄▁▁▁   #312 of 440*    8.8%      2
 vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #138 of 154     53%     19
 </pre>
 
-<details><summary>agent tasks · #251 of 316 · 1.9% of its score</summary>
+<details><summary>agent tasks · #254 of 319 · 1.9% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #427 of 472 · 2.5% of its score</summary>
+<details><summary>coding · #429 of 474 · 2.5% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #289 of 404 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #290 of 405 · 4.3% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>math · #312 of 440 · 8.8% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty        counts  why
@@ -70,7 +70,7 @@ test                          result  vs the others in its run  difficulty      
 
 <details><summary>vision &amp; documents · #138 of 154 · 53% of its score</summary>
 
-Beats [Gemma 4 E2B](gemma-4-e2b.md), [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md) here, though they rank higher overall.
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -79,7 +79,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (maker)</a>                   53.4%  ▂···●▂▂▂▄▄▄█ beats 2/16   medium · avg 61%       6.4%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (maker)</a>                       58.3%  ▂··●▂▂·▄█▂▄▆ beats 2/16   medium · avg 65%       6.1%  at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (maker)</a>         61.3%  ▃··▃●·▃█▅▅▅█ beats 2/16   medium · avg 69%       5.3%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (maker)</a>                     36.5%  ▃·●·▅▃▃▃▅▅▃█ beats 1/16   medium · avg 46%       3.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (maker)</a>                     36.5%  ▃·●·▅▃▃▃▅▅▃█ beats 1/16   medium · avg 46%       3.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (maker)</a>               51.4%  ▃·▃·●▃▅▅▃▅█▅ beats 3/16   medium · avg 55%       2.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (maker)</a>                      79.1%  ▂··●·▂▃·▅▂▆█ beats 1/17   easy · avg 85%         1.9%  blunt · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (maker)</a>                  63.9%  ●▃·▃▅▅·█·▃▅█ beats 1/16   easy · avg 70%         1.9%  blunt · at its level · several runs
@@ -104,10 +104,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (maker)</a>                     49.0%  ●·▄·▄▄▄▄█▄██ beats 0/12   medium · avg 63%    9.2%  at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (maker)</a>                   66.5%  ●··▃·▃·█▃▅▃▅ beats 0/11   easy · avg 79%      6.6%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (maker)</a>    42.0%  ▂····●·▂▂█▆█ beats 1/14   hard · avg 49%      4.6%  sharp
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    24.3%  ●··▄·▄▄▄█▄██ beats 0/11   medium · avg 37%    2.8%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    24.3%  ●··▄·▄▄▄█▄██ beats 0/11   medium · avg 38%    2.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (ma…</a>   61.9%  ▃··●··▅█▃▃▅▃ beats 1/13   medium · avg 66%    2.5%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (maker)</a>                 36.4%  ●··▃▅▃▃▃▃▃·█ beats 0/11   medium · avg 43%    2.4%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 63.0%  ▄·····▄▄··●█ beats 3/5    medium · avg 69%    2.4%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 63.0%  ▄·····▄▄··●█ beats 3/5    medium · avg 69%    2.3%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (maker)</a>                      47.4%  ●··▃·▅▃▃·█·▃ beats 0/10   hard · avg 51%      2.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (maker)</a>                      61.7%  ●▂▂·▂█··▆▄·▂ beats 0/13   medium · avg 67%    1.0%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   52.3%  ▄·▄··█●····▄ beats 4/5    medium · avg 58%    0.8%  at its level
